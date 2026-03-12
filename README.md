@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# ForeverCraft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ForeverCraft is a Minecraft datapack and resource pack that adds new features and content to the game. The datapack includes new advancements, functions, and loot tables, while the resource pack adds new textures and models for items and blocks. The project is designed to enhance the gameplay experience for Minecraft players by introducing new mechanics and visual elements.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- New advancements to challenge players and provide goals.
+- Custom functions to add new mechanics and interactions.
+- Unique loot tables to diversify rewards and gameplay.
+- New textures and models for items and blocks to enhance visual appeal.
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Download the ForeverCraft datapack and resource pack from the repository.
+2. Place the datapack in the `datapacks` folder of your Minecraft world.
+3. Place the resource pack in the `resourcepacks` folder of your Minecraft directory.
+4. Enable the resource pack in the Minecraft settings.
+5. Start your Minecraft world and enjoy the new features and content!
 
-## Expanding the ESLint configuration
+## Contributing
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Contributions to ForeverCraft are welcome! If you have ideas for new features, improvements, or
+bug fixes, please submit a pull request or open an issue in the repository. Make sure to follow the contribution guidelines and code of conduct.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## License
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+ForeverCraft is licensed under the MIT License. See the LICENSE file for more information.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Contact
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+If you have any questions, suggestions, or feedback about ForeverCraft, please feel free to reach out to the project maintainers through the repository's issue tracker or contact information provided in the repository. We appreciate your support and look forward to hearing from you!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Acknowledgments
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+We would like to thank the Minecraft community for their support and inspiration in creating ForeverCraft. Special thanks to all contributors who have helped make this project possible. Your creativity and dedication are what drive the success of ForeverCraft. We also want to acknowledge the developers of Minecraft for providing a platform that allows for such creativity and innovation. Thank you all for being a part of this journey!
