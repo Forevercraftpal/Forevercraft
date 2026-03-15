@@ -68,12 +68,31 @@ forevercraft/
 
 ### Planned Features (for you!)
 
-- [ ] **Add actual datapacks to the website** — Replace/expand the hardcoded fake data in `src/data/artifacts.ts` with real ForeverCraft datapack content. Eventually wire this up to Convex backend queries.
+- [ ] **Add actual datapacks to the website** — Replace/expand the hardcoded fake data in `src/data/artifacts.ts` with real ForeverCraft datapack content. The data lives in your own repo — see the download strategy decision below.
 - [ ] **Update logo/icon** — Replace the default Vite/React assets in `public/` and `src/assets/` with ForeverCraft branding.
+
+### Decision Needed: Datapack Download Strategy
+
+Users should be able to **download datapacks** from the website. There are two approaches — pick whichever you prefer:
+
+**Option A: Keep Convex (recommended for polish)**
+- Store datapack metadata in Convex, use Convex file storage for the actual .zip files
+- Users download directly from the ForeverCraft site — no leaving the page
+- You get download counts, version tracking, and a cleaner UX
+- Convex has a generous free tier so cost isn't a concern early on
+- Requires writing Convex queries/mutations and upload logic
+
+**Option B: Link to GitHub (zero backend)**
+- Remove Convex entirely — the site becomes fully static
+- "Download" buttons link to your GitHub repo's releases page
+- GitHub handles file hosting and bandwidth for free
+- Simpler to maintain, but users leave the site to download
+- You still get basic download stats from GitHub release analytics
+
+Deiontre's preference is Option A (cleaner UX staying on-site), but it's your call since you own the datapack content.
 
 ### Other TODOs
 
-- [ ] **Convex backend functions** — Schema exists (`convex/schema.ts`) but no queries or mutations are written yet. When ready, create functions to fetch artifacts from the database instead of the hardcoded array.
 - [ ] **More pages** — The Home page references Classes, Companions, Quests, and World sections but there are no dedicated pages for those yet.
 - [ ] **Merge PR** — The `claude/infallible-hypatia` branch has the Minecraft styling + fake data + Tailwind fix. It should be merged to `main`.
 
