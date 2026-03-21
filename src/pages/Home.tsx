@@ -1,242 +1,265 @@
+import { Link } from 'react-router-dom'
+import ParticleField from '../components/effects/ParticleField'
+import ScrollReveal from '../components/effects/ScrollReveal'
+import StatCounter from '../components/ui/StatCounter'
+import Card3D from '../components/ui/Card3D'
+import { STATS } from '../data/constants'
+
+const SYSTEM_CARDS = [
+  { title: 'DREAM RATE', desc: 'The backbone of everything. A custom RNG system that ties your entire journey together.', icon: '✦', to: '/dream-rate', color: '#FBBF24' },
+  { title: 'ARTIFACTS', desc: '358 unique items across six tiers — each with handcrafted abilities.', icon: '⚔️', to: '/artifacts', color: '#FB923C' },
+  { title: 'SPIRIT WEAPONS', desc: '14 legendary endgame weapons with twin forms and metamorphosis.', icon: '🗡️', to: '/spirit-weapons', color: '#C084FC' },
+  { title: 'COMPANIONS', desc: '106 companions that fight, level, evolve, and bond with you.', icon: '🐾', to: '/companions', color: '#4ADE80' },
+  { title: 'CLASSES', desc: '14 weapon classes from Rogue to the secret Dual Swordsman.', icon: '⚡', to: '/classes', color: '#60A5FA' },
+  { title: 'RAID BOSSES', desc: '14 multi-phase bosses with puzzles, phases, and unique loot.', icon: '💀', to: '/raid-bosses', color: '#DC2626' },
+  { title: 'SKILL TREES', desc: '13 skill trees with 25 levels each, prestige, and synergies.', icon: '🌳', to: '/skill-trees', color: '#22C55E' },
+  { title: 'ARMOR SETS', desc: '27 armor sets with 2-piece, 4-piece, and mythical 5-piece bonuses.', icon: '🛡️', to: '/armor-sets', color: '#9CA3AF' },
+  { title: 'QUESTS', desc: '250 quests across 6 tiers. Village reputation. Patron bounties.', icon: '📜', to: '/quests', color: '#D97706' },
+]
+
+const DR_MILESTONES = [
+  { dr: 0, title: 'Your journey begins', desc: 'Every block mined, every fish caught starts building your Dream Rate.' },
+  { dr: 5, title: 'Common structures unlock', desc: 'Villages, shipwrecks, and pillager outposts yield their secrets.' },
+  { dr: 10, title: 'Spirit Raids become available', desc: 'Enter the deepest floors of every structure. Face the bosses.' },
+  { dr: 15, title: 'Rare structures awaken', desc: 'Trial Chambers, Nether Fortresses, Ocean Monuments open their gates.' },
+  { dr: 17.5, title: 'Ancient City & End City', desc: 'The deepest, most dangerous structures. The rarest artifacts.' },
+  { dr: 30, title: 'Night Terrors stalk you', desc: 'On new moon nights, a scaled mini-boss spawns near you. Glowing dark red.' },
+  { dr: 50, title: 'Dream Transcendent', desc: 'Maximum Dream Rate. The world bends to your will. Everything drops.' },
+]
+
 export default function Home() {
   return (
-    <>
-      <link
-        href='https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap'
-        rel='stylesheet'
-      />
-      <div className='min-h-screen bg-stone-950 text-stone-200'>
-        {/* Hero */}
-        <div className='relative border-b border-yellow-900/40 bg-[radial-gradient(ellipse_at_top,_#2a1a0a_0%,_#0a0906_70%)]'>
-          <div className='max-w-4xl mx-auto px-6 py-24 text-center'>
-            <p className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-600 tracking-[0.3em] mb-6 uppercase">
-              A Fantasy Minecraft Overhaul
-            </p>
-            <h1 className="font-['Press_Start_2P'] text-3xl md:text-5xl text-yellow-400 mb-6 leading-tight drop-shadow-[0_0_30px_rgba(200,140,40,0.4)]">
-              FOREVERCRAFT
-            </h1>
-            <p className="font-['Crimson_Pro'] italic text-xl text-stone-400 mb-10">
-              Every world has loot. This one has dreams.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3 text-[0.6rem] font-['Press_Start_2P']">
-              {[
-                '334 Artifacts',
-                '100 Companions',
-                '13 Skill Trees',
-                '250 Quests',
-                '904 Lore',
-                '7,375 Functions'
-              ].map((stat) => (
-                <span
-                  key={stat}
-                  className='bg-yellow-950/60 border border-yellow-800/50 text-yellow-500 px-3 py-2 rounded'
-                >
-                  {stat}
-                </span>
-              ))}
-            </div>
+    <div className="bg-stone-950 text-stone-200">
+      {/* ── Hero ─────────────────────────────────────── */}
+      <div className="relative min-h-[90vh] flex items-center justify-center border-b border-yellow-900/40 bg-[radial-gradient(ellipse_at_top,_#2a1a0a_0%,_#0a0906_70%)] overflow-hidden">
+        <ParticleField count={40} />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <p className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-700 tracking-[0.4em] mb-6 uppercase animate-[fade-in-up_0.8s_ease-out_both]">
+            A Fantasy Minecraft Overhaul
+          </p>
+          <h1 className="font-['Press_Start_2P'] text-4xl md:text-6xl text-yellow-400 mb-6 leading-tight drop-shadow-[0_0_40px_rgba(200,140,40,0.5)] animate-[fade-in-up_0.8s_ease-out_0.2s_both]">
+            FOREVERCRAFT
+          </h1>
+          <p className="font-['Crimson_Pro'] italic text-xl md:text-2xl text-stone-400 mb-12 animate-[fade-in-up_0.8s_ease-out_0.4s_both]">
+            Every world has loot. This one has dreams.
+          </p>
+
+          {/* Stat Counters */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 animate-[fade-in-up_0.8s_ease-out_0.6s_both]">
+            <StatCounter end={STATS.totalArtifacts} label="Artifacts" />
+            <StatCounter end={STATS.totalCompanions} label="Companions" />
+            <StatCounter end={STATS.totalSpiritWeapons} label="Spirit Weapons" />
+            <StatCounter end={STATS.totalQuests} label="Quests" />
+            <StatCounter end={STATS.totalLoreFragments} label="Lore" />
+            <StatCounter end={STATS.totalFunctions} label="Functions" />
           </div>
         </div>
 
-        {/* Bio */}
-        <div className="max-w-4xl mx-auto px-6 py-16 space-y-16 font-['Crimson_Pro'] text-lg leading-relaxed">
-          {/* Intro */}
-          <Section title='The Vision'>
-            <p>
-              Forevercraft is a complete Fantasy transformation of vanilla
-              Minecraft — built over hundreds of hours, one function at a time.
-              It doesn't replace the game you love. It gives it depth. A reason
-              to keep mining after diamonds. A reason to fish in the rain. A
-              reason to walk into a structure you've seen a hundred times and
-              feel something new.
-            </p>
-            <p className='mt-4'>
-              At its core is the{' '}
-              <span className='text-yellow-500 font-semibold'>Dream Rate</span>{' '}
-              — a custom RNG system that ties your entire journey together.
-              Everything you do builds toward it. The artifacts you wear, the
-              pets you raise, the potions you brew, the constellations you
-              complete, the time of day, even the phase of the moon. Start at
-              zero. Reach for 50. The world opens up as you do.
-            </p>
-          </Section>
-
-          <Divider />
-
-          {/* Artifacts */}
-          <Section title='Artifacts'>
-            <p>
-              334 unique items across six tiers — from a humble Bone Slingshot
-              to the Dragon Fan, a mythical sword with seven distinct abilities.
-              Every artifact has handcrafted abilities instead of vanilla
-              enchantments, which means you're free to enchant them however you
-              like on top of what they already do.
-            </p>
-            <p className='mt-4'>
-              46 accessories grant passive effects just by sitting in your
-              inventory. 13 rings with their own passive system. 27 full armor
-              sets with 2-piece and 4-piece bonuses — seven mythical sets that
-              permanently raise your Dream Rate.
-            </p>
-            <p className='mt-4'>
-              The{' '}
-              <span className='text-yellow-500 font-semibold'>
-                Patina system
-              </span>{' '}
-              tracks how long you've worn each artifact. Over time, a fresh
-              artifact becomes Worn, then Seasoned, then Storied, and finally
-              Legendary — gaining a permanent stat bonus. It's a system that
-              rewards loyalty to the gear you love.
-            </p>
-          </Section>
-
-          <Divider />
-
-          {/* Classes */}
-          <Section title='Classes'>
-            <p>
-              Four weapon classes let you commit to a fighting style and push it
-              further than any single artifact could.
-            </p>
-            <div className='mt-6 grid grid-cols-1 md:grid-cols-2 gap-4'>
-              {[
-                {
-                  name: 'Rogue',
-                  desc: 'Dual-wield daggers with auto-swing, 30% speed bonus, and scaling multi-target strikes across 12 daggers.'
-                },
-                {
-                  name: 'Beastlord',
-                  desc: 'Spears that transform your tamed animals into a war pack. Warp Strike. Rally Cry. Nine spears across five tiers.'
-                },
-                {
-                  name: 'Berserker',
-                  desc: 'Dual axes trading armor for raw power. Rage mode, auto-Haste below half health, and a Dancer subclass for survivability.'
-                },
-                {
-                  name: 'Archer',
-                  desc: 'Overcharge your shots past full draw for bonus damage. Twelve bows with passive abilities. Disengage to escape danger.'
-                }
-              ].map((cls) => (
-                <div
-                  key={cls.name}
-                  className='bg-stone-900/60 border border-yellow-900/40 rounded p-4'
-                >
-                  <h4 className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-500 mb-2">
-                    {cls.name.toUpperCase()}
-                  </h4>
-                  <p className='text-stone-400 text-base'>{cls.desc}</p>
-                </div>
-              ))}
-            </div>
-          </Section>
-
-          <Divider />
-
-          {/* Companions */}
-          <Section title='Companions'>
-            <p>
-              100 companions, each one different. A Worm that makes you mine
-              faster. An Owl that grants night vision and +5 permanent Dreams at
-              max level. A Claude that detects ores through walls. A Golden
-              Dragon that wraps you in dream rate, resistance, and fire immunity
-              just by existing.
-            </p>
-            <p className='mt-4'>
-              Companions level from 1 to 100. Feed them, build a relationship,
-              reach{' '}
-              <span className='text-yellow-500 font-semibold'>
-                Eternal Bond
-              </span>{' '}
-              and every ability hits 50% harder. Neglect them and the bond
-              decays. They feel like they matter — because they do.
-            </p>
-          </Section>
-
-          <Divider />
-
-          {/* The World */}
-          <Section title='The World'>
-            <p>
-              Days last three times longer than vanilla. Four seasons cycle
-              across a 64-day year, each bringing its own resource pack and
-              transforming the visual landscape. Five named World Events can
-              sweep across the land without warning — a Starfall, The Dreaming,
-              an Abyssal Tremor, an Aurora Bloom, a Rift Echo.
-            </p>
-            <p className='mt-4'>
-              Night Terrors stalk players who push their Dream Rate past 30. On
-              New Moon nights, a scaled mini-boss spawns near you — glowing dark
-              red, fire-resistant, and hunting. Kill it for a reward. Run and it
-              despawns at dawn. The higher your Dream Rate, the more the world
-              notices you.
-            </p>
-          </Section>
-
-          <Divider />
-
-          {/* Quests */}
-          <Section title='Quests & Bounties'>
-            <p>
-              250 quests across six tiers — Errand, Task, Contract, Commission,
-              Expedition, and Heroic — offered daily at village quest boards.
-              Each village tracks your reputation independently, rising from
-              Stranger through Acquaintance, Friend, Ally, Hero, all the way to
-              Legend.
-            </p>
-            <p className='mt-4'>
-              The{' '}
-              <span className='text-yellow-500 font-semibold'>
-                Patron Bounty system
-              </span>{' '}
-              spawns named elite mobs in specific biomes, glowing red and
-              waiting for you. Four bounty tiers with escalating difficulty and
-              time limits. Kill the target and claim your reward. Fail and you
-              walk home empty-handed.
-            </p>
-          </Section>
-
-          <Divider />
-
-          {/* Closing */}
-          <section className='text-center py-8'>
-            <p className="font-['Crimson_Pro'] italic text-2xl text-stone-400 max-w-2xl mx-auto leading-relaxed">
-              "Somewhere in the middle of all of it, you're just playing
-              Minecraft — except now, every single thing you do is quietly,
-              gently, pulling you forward."
-            </p>
-            <p className="mt-6 font-['Press_Start_2P'] text-[0.5rem] text-yellow-700 tracking-widest">
-              184,747 LINES OF CODE · 13,302 FILES · 7,375 FUNCTIONS
-            </p>
-          </section>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <span className="text-yellow-800 text-2xl">⌄</span>
         </div>
       </div>
-    </>
+
+      {/* ── Systems Carousel ─────────────────────────── */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <ScrollReveal>
+          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
+            Explore the Systems
+          </h2>
+          <p className="font-['Crimson_Pro'] italic text-stone-400 text-center mb-12 text-lg">
+            95 interconnected systems. Every one handcrafted.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {SYSTEM_CARDS.map((card, i) => (
+            <ScrollReveal key={card.title} delay={i * 80}>
+              <Link to={card.to} className="no-underline block h-full">
+                <Card3D className="h-full rounded border border-yellow-900/40 bg-stone-900/50 p-6 hover:border-yellow-700/60 transition-colors">
+                  <div className="flex items-start gap-3 mb-3">
+                    <span className="text-2xl" style={{ filter: `drop-shadow(0 0 8px ${card.color}40)` }}>
+                      {card.icon}
+                    </span>
+                    <h3 className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-500 tracking-wider leading-relaxed pt-1">
+                      {card.title}
+                    </h3>
+                  </div>
+                  <p className="font-['Crimson_Pro'] text-stone-400 text-base leading-relaxed">
+                    {card.desc}
+                  </p>
+                </Card3D>
+              </Link>
+            </ScrollReveal>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Divider ──────────────────────────────────── */}
+      <Divider />
+
+      {/* ── Dream Rate Journey ───────────────────────── */}
+      <section className="max-w-4xl mx-auto px-6 py-20">
+        <ScrollReveal>
+          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
+            The Dream Rate Journey
+          </h2>
+          <p className="font-['Crimson_Pro'] italic text-stone-400 text-center mb-14 text-lg">
+            From zero to transcendent. The world opens as you do.
+          </p>
+        </ScrollReveal>
+
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-yellow-900/0 via-yellow-700/50 to-yellow-900/0" />
+
+          {DR_MILESTONES.map((m, i) => (
+            <ScrollReveal key={m.dr} delay={i * 100}>
+              <div className={`relative flex items-start gap-6 mb-10 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                {/* Node */}
+                <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-yellow-600 border-2 border-yellow-400 shadow-[0_0_12px_rgba(234,179,8,0.4)] z-10" />
+
+                {/* Content */}
+                <div className={`ml-14 md:ml-0 md:w-[45%] ${i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
+                  <div className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-500 mb-1">
+                    DR {m.dr}
+                  </div>
+                  <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-stone-200 mb-2 leading-relaxed">
+                    {m.title}
+                  </h3>
+                  <p className="font-['Crimson_Pro'] text-stone-400 text-base">
+                    {m.desc}
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ── The Vision ───────────────────────────────── */}
+      <section className="max-w-4xl mx-auto px-6 py-20 font-['Crimson_Pro'] text-lg leading-relaxed">
+        <ScrollReveal>
+          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-8 uppercase">
+            The Vision
+          </h2>
+          <p className="text-stone-300">
+            Forevercraft is a complete fantasy transformation of vanilla Minecraft — built over
+            hundreds of hours, one function at a time. It doesn't replace the game you love.
+            It gives it depth. A reason to keep mining after diamonds. A reason to fish in the rain.
+            A reason to walk into a structure you've seen a hundred times and feel something new.
+          </p>
+          <p className="mt-4 text-stone-400">
+            At its core is the{' '}
+            <span className="text-yellow-500 font-semibold">Dream Rate</span> — a custom RNG
+            system that connects every system. The artifacts you wear, the pets you raise, the
+            constellations you complete, the time of day, even the phase of the moon — everything
+            feeds into it. Start at zero. Reach for fifty. The world opens as you do.
+          </p>
+        </ScrollReveal>
+      </section>
+
+      <Divider />
+
+      {/* ── Feature Highlights ───────────────────────── */}
+      <section className="max-w-4xl mx-auto px-6 py-20 space-y-16 font-['Crimson_Pro'] text-lg leading-relaxed">
+        <FeatureSection title="Spirit Weapons">
+          <p className="text-stone-300">
+            14 legendary weapons — one for each class. Dropped at 5% from raid bosses at the bottom
+            of every structure. They start at Common tier and progress through seven stages all the
+            way to Spirit. Each has two triggerable abilities, passive effects, and a metamorphosis
+            system with unique requirements per weapon.
+          </p>
+          <p className="mt-4 text-stone-400">
+            Seven of them have twin forms — a second weapon revealed by the Dream Storm Crystal.
+            Nite and Deih. Firebrand and Aqualoch. Hollow Fangs and Ghost Fang.
+            When both twins are held, they unlock their true power.
+          </p>
+        </FeatureSection>
+
+        <FeatureSection title="Companions">
+          <p className="text-stone-300">
+            106 companions, each one different. A Moldwarp that makes you mine faster.
+            An Oracle that grants night vision. A Claude that detects ores through walls.
+            A Golden Dragon that wraps you in dream rate, resistance, and fire immunity
+            just by existing.
+          </p>
+          <p className="mt-4 text-stone-400">
+            Companions level from 1 to 100. Feed them, build a relationship, reach{' '}
+            <span className="text-yellow-500 font-semibold">Eternal Bond</span> and every ability
+            hits harder. 37 mythical companions can evolve into Ascended forms with unique abilities.
+          </p>
+        </FeatureSection>
+
+        <FeatureSection title="The World">
+          <p className="text-stone-300">
+            Days last three times longer than vanilla. Four seasons cycle across a 64-day year,
+            each bringing its own resource pack. Five World Events sweep across the land —
+            a Starfall, The Dreaming, an Abyssal Tremor, an Aurora Bloom, a Rift Echo.
+          </p>
+          <p className="mt-4 text-stone-400">
+            Night Terrors stalk players past Dream Rate 30. On new moon nights, a scaled mini-boss
+            spawns nearby — glowing dark red, fire-resistant, hunting. The higher your Dream Rate,
+            the more the world notices you.
+          </p>
+        </FeatureSection>
+
+        <FeatureSection title="Classes & Combat">
+          <p className="text-stone-300">
+            14 weapon classes let you commit to a fighting style. Rogues dual-wield daggers with
+            auto-swing and stealth kills. Berserkers trade armor for raw power with Rage mode.
+            Archers overcharge past full draw. Beastlords turn tamed animals into a war pack.
+          </p>
+          <p className="mt-4 text-stone-400">
+            The{' '}
+            <span className="text-yellow-500 font-semibold">Dual Swordsman</span> — the secret
+            14th class — can only be obtained by defeating The Gatekeeper in the Stronghold raid.
+            Double damage, Whirlwind ability, and at Spirit tier with both twins: instant attack speed.
+          </p>
+        </FeatureSection>
+      </section>
+
+      {/* ── Closing ──────────────────────────────────── */}
+      <section className="border-t border-yellow-900/30 bg-[radial-gradient(ellipse_at_bottom,_#1a1200_0%,_#0a0906_70%)]">
+        <div className="max-w-3xl mx-auto px-6 py-20 text-center">
+          <ScrollReveal>
+            <p className="font-['Crimson_Pro'] italic text-2xl text-stone-400 leading-relaxed mb-8">
+              "Somewhere in the middle of all of it, you're just playing Minecraft — except
+              now, every single thing you do is quietly, gently, pulling you forward."
+            </p>
+            <p className="font-['Press_Start_2P'] text-[0.4rem] text-yellow-800 tracking-widest">
+              {STATS.totalLines.toLocaleString()} LINES OF CODE · {STATS.totalFiles.toLocaleString()} FILES · {STATS.totalSystems} SYSTEMS
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+    </div>
   )
 }
 
-function Section({
-  title,
-  children
-}: {
-  title: string
-  children: React.ReactNode
-}) {
+function FeatureSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section>
-      <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-6 uppercase">
-        {title}
-      </h2>
+    <ScrollReveal>
+      <div className="flex items-center gap-4 mb-4">
+        <div className="flex-1 h-px bg-yellow-900/30" />
+        <h2 className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-600 tracking-widest uppercase shrink-0">
+          {title}
+        </h2>
+        <div className="flex-1 h-px bg-yellow-900/30" />
+      </div>
       {children}
-    </section>
+    </ScrollReveal>
   )
 }
 
 function Divider() {
   return (
-    <div className='flex items-center gap-4'>
-      <div className='flex-1 h-px bg-yellow-900/30' />
-      <span className='text-yellow-800 text-xs'>⛏</span>
-      <div className='flex-1 h-px bg-yellow-900/30' />
+    <div className="flex items-center gap-4 max-w-4xl mx-auto px-6">
+      <div className="flex-1 h-px bg-yellow-900/30" />
+      <span className="text-yellow-800 text-xs">⛏</span>
+      <div className="flex-1 h-px bg-yellow-900/30" />
     </div>
   )
 }
