@@ -1,564 +1,380 @@
-export type Tier =
-  | 'Common'
-  | 'Uncommon'
-  | 'Rare'
-  | 'Ornate'
-  | 'Exquisite'
-  | 'Mythical'
-export type ArtifactType = 'Weapon' | 'Armor' | 'Accessory' | 'Ring' | 'Healer'
+import type { Artifact, Tier, ArtifactType } from './types'
 
-export interface Artifact {
-  id: number
-  name: string
-  tier: Tier
-  type: ArtifactType
-  description: string
-  abilities: string[]
-}
+export const TIERS: Tier[] = ['Common', 'Uncommon', 'Rare', 'Ornate', 'Exquisite', 'Mythical']
+export const TYPES: ArtifactType[] = ['Weapon', 'Armor', 'Accessory', 'Ring', 'Healer', 'Tool', 'Shield']
 
 export const artifacts: Artifact[] = [
-  // ── COMMON ──────────────────────────────────────────────
-  {
-    id: 1,
-    name: 'Bone Slingshot',
-    tier: 'Common',
-    type: 'Weapon',
-    description: 'A crude but reliable ranged weapon crafted from bone.',
-    abilities: ['Fires projectiles at nearby enemies', 'Chance to slow on hit']
-  },
-  {
-    id: 2,
-    name: 'Medicinal Bandages',
-    tier: 'Common',
-    type: 'Healer',
-    description: 'Simple wrappings infused with healing herbs.',
-    abilities: ['Restores 1 heart on use', 'Short cooldown']
-  },
-  {
-    id: 3,
-    name: 'Wooden Buckler',
-    tier: 'Common',
-    type: 'Armor',
-    description: 'A splintered shield that barely holds together.',
-    abilities: ['Blocks 15% of incoming damage', 'Breaks after 50 hits']
-  },
-  {
-    id: 4,
-    name: 'Copper Charm',
-    tier: 'Common',
-    type: 'Accessory',
-    description: 'A dull charm that hums when danger is near.',
-    abilities: ['Warns of hostile mobs within 16 blocks']
-  },
-  {
-    id: 5,
-    name: 'Pebble Ring',
-    tier: 'Common',
-    type: 'Ring',
-    description: 'A ring carved from river stone. Smooth to the touch.',
-    abilities: ['Grants Haste I while mining']
-  },
-  {
-    id: 6,
-    name: 'Iron Shortsword',
-    tier: 'Common',
-    type: 'Weapon',
-    description: 'A stubby blade favored by novice adventurers.',
-    abilities: ['Quick swing speed', '10% chance to disarm on hit']
-  },
-
-  // ── UNCOMMON ────────────────────────────────────────────
-  {
-    id: 7,
-    name: 'Amethyst Ring',
-    tier: 'Uncommon',
-    type: 'Ring',
-    description: 'A polished ring that sharpens your sight in darkness.',
-    abilities: ['Grants permanent Night Vision']
-  },
-  {
-    id: 8,
-    name: 'Mossy Cloak',
-    tier: 'Uncommon',
-    type: 'Armor',
-    description: 'A cloak woven from living moss. It breathes with the forest.',
-    abilities: [
-      'Regeneration I in forest biomes',
-      'Camouflage: mobs lose aggro faster'
-    ]
-  },
-  {
-    id: 9,
-    name: 'Lantern of the Lost',
-    tier: 'Uncommon',
-    type: 'Accessory',
-    description: 'A ghostly lantern that guides you toward buried treasure.',
-    abilities: [
-      'Points toward nearest chest within 64 blocks',
-      'Glows brighter near rare loot'
-    ]
-  },
-  {
-    id: 10,
-    name: 'Thorn Dagger',
-    tier: 'Uncommon',
-    type: 'Weapon',
-    description: 'A dagger grown from a rosebush. Its thorns never dull.',
-    abilities: [
-      'Applies Poison I on hit',
-      'Deals bonus damage to Arthropods'
-    ]
-  },
-  {
-    id: 11,
-    name: 'Honeycomb Salve',
-    tier: 'Uncommon',
-    type: 'Healer',
-    description: 'Sweet-smelling salve that mends wounds over time.',
-    abilities: [
-      'Applies Regeneration I for 10 seconds',
-      'Removes Poison effect'
-    ]
-  },
-  {
-    id: 12,
-    name: 'Featherfall Boots',
-    tier: 'Uncommon',
-    type: 'Armor',
-    description: 'Boots lined with phantom membrane. Light as air.',
-    abilities: [
-      'Negates all fall damage',
-      'Grants Slow Falling for 3 seconds after jumping'
-    ]
-  },
-
-  // ── RARE ────────────────────────────────────────────────
-  {
-    id: 13,
-    name: 'Ocean Trident',
-    tier: 'Rare',
-    type: 'Weapon',
-    description: 'A biome-specific weapon forged for ocean fighters.',
-    abilities: [
-      'Deals bonus damage in water',
-      'Chance to summon a wave on hit',
-      'Lifesteal in rain'
-    ]
-  },
-  {
-    id: 14,
-    name: 'Frost Bow',
-    tier: 'Rare',
-    type: 'Weapon',
-    description: 'A bow carved from frozen wood, found only in icy biomes.',
-    abilities: [
-      'Freezes enemies on hit',
-      'Overcharge for bonus knockback',
-      'Passive frost aura'
-    ]
-  },
-  {
-    id: 15,
-    name: 'Warden\'s Pendant',
-    tier: 'Rare',
-    type: 'Accessory',
-    description: 'A sculk pendant that pulses with deep dark energy.',
-    abilities: [
-      'Grants Darkness immunity',
-      'Sonic Pulse: stuns nearby enemies every 30 seconds',
-      'Vibration Sense: highlights invisible mobs'
-    ]
-  },
-  {
-    id: 16,
-    name: 'Crimson Chainmail',
-    tier: 'Rare',
-    type: 'Armor',
-    description: 'Nether-forged chainmail that smells of sulfur and ambition.',
-    abilities: [
-      'Fire Resistance in the Nether',
-      'Thorns II passively',
-      '2-piece bonus: +10% movement speed'
-    ]
-  },
-  {
-    id: 17,
-    name: 'Emerald Signet',
-    tier: 'Rare',
-    type: 'Ring',
-    description: 'A ring favored by wandering traders. It reeks of profit.',
-    abilities: [
-      'Villager trades cost 20% less',
-      'Passive emerald generation (1 per 10 minutes)',
-      'Luck I while worn'
-    ]
-  },
-  {
-    id: 18,
-    name: 'Moonwell Vial',
-    tier: 'Rare',
-    type: 'Healer',
-    description: 'Water drawn from a pool that only appears under full moons.',
-    abilities: [
-      'Heals 4 hearts instantly',
-      'Grants Absorption II for 30 seconds',
-      'Enhanced healing under moonlight'
-    ]
-  },
-
-  // ── ORNATE ──────────────────────────────────────────────
-  {
-    id: 19,
-    name: 'Gilded Rapier',
-    tier: 'Ornate',
-    type: 'Weapon',
-    description: 'An ornate blade with gold filigree. Style meets substance.',
-    abilities: [
-      'Critical hits deal 3x damage',
-      'Parry: right-click to deflect projectiles',
-      'Lunge: dash forward 5 blocks on sneak-attack',
-      '+2 Dream Rate while equipped'
-    ]
-  },
-  {
-    id: 20,
-    name: 'Astral Plate',
-    tier: 'Ornate',
-    type: 'Armor',
-    description: 'Armor etched with constellations that shift with the night sky.',
-    abilities: [
-      'Protection IV at night',
-      'Starlight Shield: absorbs one lethal hit per night',
-      '2-piece: Night Vision',
-      '4-piece: +5 Dream Rate'
-    ]
-  },
-  {
-    id: 21,
-    name: 'Whispering Amulet',
-    tier: 'Ornate',
-    type: 'Accessory',
-    description: 'Murmurs secrets of nearby ores and hidden rooms.',
-    abilities: [
-      'Highlights ores within 12 blocks through walls',
-      'Reveals hidden structure rooms',
-      'Passive +1 Dream Rate'
-    ]
-  },
-  {
-    id: 22,
-    name: 'Band of Seasons',
-    tier: 'Ornate',
-    type: 'Ring',
-    description: 'A ring that shifts color with the in-game season.',
-    abilities: [
-      'Spring: Regeneration I',
-      'Summer: Fire Resistance',
-      'Autumn: Luck II',
-      'Winter: Frost Aura (slows nearby enemies)'
-    ]
-  },
-  {
-    id: 23,
-    name: 'Phoenix Tears',
-    tier: 'Ornate',
-    type: 'Healer',
-    description: 'Tears crystallized from a dying phoenix. Warm to the touch.',
-    abilities: [
-      'Revives one nearby player from death',
-      'Restores 6 hearts to all allies within 16 blocks',
-      'Applies Fire Resistance for 1 minute',
-      '5-minute cooldown'
-    ]
-  },
-  {
-    id: 24,
-    name: 'Thornweave Armor',
-    tier: 'Ornate',
-    type: 'Armor',
-    description: 'Living armor that grows thorns when threatened.',
-    abilities: [
-      'Thorns V passively',
-      'Absorbs 30% of melee damage as health',
-      'Roots nearby enemies when below 3 hearts',
-      '2-piece: Poison immunity'
-    ]
-  },
-
-  // ── EXQUISITE ───────────────────────────────────────────
-  {
-    id: 25,
-    name: 'Fireforged Chestplate',
-    tier: 'Exquisite',
-    type: 'Armor',
-    description: 'Part of the Phoenix Rebirth set. Burns with an inner fire.',
-    abilities: [
-      'Phoenix Rebirth: auto-revive on death once per life',
-      '2-piece: Fire Resistance',
-      '4-piece: Strength I passively'
-    ]
-  },
-  {
-    id: 26,
-    name: 'Void Ring',
-    tier: 'Exquisite',
-    type: 'Ring',
-    description: 'A ring forged in the void itself.',
-    abilities: ['Resistance I', 'Fire Immunity', 'Slow Falling — all passive']
-  },
-  {
-    id: 27,
-    name: 'Endless Ambrosia',
-    tier: 'Exquisite',
-    type: 'Healer',
-    description: 'A divine healer that restores all nearby allies.',
-    abilities: [
-      'Fully restores health within 32 blocks',
-      'Long cooldown',
-      "Healer's Oath applies"
-    ]
-  },
-  {
-    id: 28,
-    name: 'Stormcaller Halberd',
-    tier: 'Exquisite',
-    type: 'Weapon',
-    description: 'A polearm that commands the sky. Thunder follows its swing.',
-    abilities: [
-      'Summons lightning on every 5th hit',
-      'Charged Strike: hold attack for AoE thunder slam',
-      'Grants Channeling to all nearby allies',
-      'Passive +3 Dream Rate',
-      'Storm Shield: lightning immunity'
-    ]
-  },
-  {
-    id: 29,
-    name: 'Mirage Cowl',
-    tier: 'Exquisite',
-    type: 'Armor',
-    description: 'A shimmering cloak that bends light around the wearer.',
-    abilities: [
-      'Invisibility for 5 seconds after taking damage',
-      'Afterimage: leaves a decoy when dodging',
-      '2-piece: Speed II',
-      '4-piece: +5 Dream Rate permanently'
-    ]
-  },
-  {
-    id: 30,
-    name: 'Celestial Compass',
-    tier: 'Exquisite',
-    type: 'Accessory',
-    description: 'Points not north, but toward your destiny.',
-    abilities: [
-      'Guides you to the nearest World Event',
-      'Reveals all structures within 256 blocks',
-      'Passive Luck III',
-      '+5 Dream Rate while exploring new chunks'
-    ]
-  },
-
-  // ── MYTHICAL ────────────────────────────────────────────
-  {
-    id: 31,
-    name: 'Dragon Fan',
-    tier: 'Mythical',
-    type: 'Weapon',
-    description:
-      'A mythical sword of devastating power with seven distinct abilities.',
-    abilities: [
-      'Launches mobs into the sky',
-      'Breathes fire in a 15-block line',
-      'Deals more damage the closer you are to death',
-      'Chain lightning on hit',
-      'Lifesteal',
-      'Pulls enemies toward you',
-      'Permanently raises Dream Rate when worn'
-    ]
-  },
-  {
-    id: 32,
-    name: 'Butterfly Wings',
-    tier: 'Mythical',
-    type: 'Accessory',
-    description: 'Delicate wings that carry a deadly secret.',
-    abilities: [
-      'Chaos Wings: 5% chance to instantly kill any enemy on hit',
-      'Passive evasion boost'
-    ]
-  },
-  {
-    id: 33,
-    name: 'Crown of the Dreamer',
-    tier: 'Mythical',
-    type: 'Armor',
-    description:
-      'A crown that exists between waking and sleep. It hums with raw Dream energy.',
-    abilities: [
-      '+10 Dream Rate permanently',
-      'Dream Shield: immune to all damage for 3 seconds every minute',
-      'Aura of Dreams: all nearby players gain +3 Dream Rate',
-      'Nightmare Banish: instantly removes Night Terrors',
-      'Undying Will: prevents death once, then shatters (repairs at dawn)'
-    ]
-  },
-  {
-    id: 34,
-    name: 'The Worldseed',
-    tier: 'Mythical',
-    type: 'Ring',
-    description:
-      'A ring containing a seed of pure creation. Reality bends around it.',
-    abilities: [
-      'Terraforms a 16-block area into a chosen biome',
-      'Passive +8 Dream Rate',
-      'All seasons grant their bonus simultaneously',
-      'World Events have double rewards while worn',
-      'The final ring — only one can exist per world'
-    ]
-  },
-  {
-    id: 35,
-    name: 'Tears of Eternity',
-    tier: 'Mythical',
-    type: 'Healer',
-    description:
-      'Crystallized tears of a god who wept for the mortal world. They never run dry.',
-    abilities: [
-      'Fully heals all players on the server',
-      'Grants Absorption V for 2 minutes to all allies',
-      'Revives all dead players within 64 blocks',
-      'Cleanses all negative effects server-wide',
-      'One use per real-life day — the cooldown is cosmic'
-    ]
-  },
-  {
-    id: 36,
-    name: 'Abyssal Scythe',
-    tier: 'Mythical',
-    type: 'Weapon',
-    description:
-      'A scythe forged from the bones of the Abyss itself. It reaps more than wheat.',
-    abilities: [
-      'Cleave: hits all enemies in a 180-degree arc',
-      'Soul Harvest: killed mobs restore 1 heart each',
-      'Void Step: teleport 10 blocks in facing direction',
-      'Death Mark: marked enemies take 2x damage for 10 seconds',
-      'Reaper Form: transform into a shadow for 15 seconds (invulnerable, +50% speed)',
-      'Permanently raises Dream Rate when worn'
-    ]
-  },
-
-  // ── MORE VARIETY ────────────────────────────────────────
-  {
-    id: 37,
-    name: 'Sandstone Gauntlets',
-    tier: 'Common',
-    type: 'Armor',
-    description: 'Heavy gloves made from desert sandstone. They crunch when you clench.',
-    abilities: ['Punch damage +1', 'Mining speed +5% in deserts']
-  },
-  {
-    id: 38,
-    name: 'Echo Flute',
-    tier: 'Uncommon',
-    type: 'Accessory',
-    description: 'A flute carved from ancient coral. Its melody lingers.',
-    abilities: [
-      'Calms hostile mobs in a 10-block radius for 5 seconds',
-      'Attracts passive animals from 32 blocks away'
-    ]
-  },
-  {
-    id: 39,
-    name: 'Blightborn Mace',
-    tier: 'Rare',
-    type: 'Weapon',
-    description: 'A mace dripping with swamp corruption. Nothing it touches stays clean.',
-    abilities: [
-      'Applies Wither I on hit',
-      'Splash damage in a 3-block radius',
-      'Bonus damage in swamp biomes'
-    ]
-  },
-  {
-    id: 40,
-    name: 'Prism Lens',
-    tier: 'Ornate',
-    type: 'Accessory',
-    description: 'A crystalline lens that fractures light into hidden truths.',
-    abilities: [
-      'See through walls for 3 seconds (30s cooldown)',
-      'Highlights all entities in a 24-block radius',
-      'Passive +2 Dream Rate'
-    ]
-  },
-  {
-    id: 41,
-    name: 'Tidecaller Staff',
-    tier: 'Exquisite',
-    type: 'Weapon',
-    description: 'A coral staff that commands the tides. The ocean answers.',
-    abilities: [
-      'Summons a water wall that blocks projectiles',
-      'Tidal Surge: launches a wave that pushes all mobs 20 blocks',
-      'Grants Water Breathing and Dolphins Grace passively',
-      '+4 Dream Rate in ocean biomes'
-    ]
-  },
-  {
-    id: 42,
-    name: 'Ironbark Shield',
-    tier: 'Uncommon',
-    type: 'Armor',
-    description: 'A shield grown from a sacred oak. It regrows overnight.',
-    abilities: [
-      'Blocks 40% of incoming damage',
-      'Self-repairs 1 durability per minute',
-      'Thorns I when blocking'
-    ]
-  }
+  { id: 1, name: 'Bone Slingshot', tier: 'Common', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 2, name: 'Boneclub', tier: 'Common', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 3, name: 'Broadsword', tier: 'Common', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 4, name: 'Deku Shield', tier: 'Common', type: 'Shield', description: '', abilities: [] },
+  { id: 5, name: 'Highland Mace', tier: 'Common', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 6, name: 'Hunting Bow', tier: 'Common', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 7, name: 'Mauler', tier: 'Common', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 8, name: 'Mechanical Shortbow', tier: 'Common', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 9, name: 'Norroen Sword', tier: 'Common', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 10, name: 'Plunger', tier: 'Common', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 11, name: 'Slingshot', tier: 'Common', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 12, name: 'Dagger', tier: 'Common', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 13, name: 'Rapid Crossbow', tier: 'Common', type: 'Weapon',  subtype: 'Crossbow', description: '', abilities: [] },
+  { id: 14, name: 'Highland Axe', tier: 'Common', type: 'Tool',  subtype: 'Lumberfell', description: '', abilities: [] },
+  { id: 15, name: 'Hammer', tier: 'Common', type: 'Tool', description: '', abilities: [] },
+  { id: 16, name: 'Ladle', tier: 'Common', type: 'Tool', description: '', abilities: [] },
+  { id: 17, name: 'Scythe', tier: 'Common', type: 'Tool', description: '', abilities: [] },
+  { id: 18, name: 'Wooden Fishing Rod', tier: 'Common', type: 'Tool',  subtype: 'Sirencall', description: '', abilities: [] },
+  { id: 19, name: 'Fox Chestplate', tier: 'Common', type: 'Armor', description: '', abilities: [] },
+  { id: 20, name: 'Ocelot Leggings', tier: 'Common', type: 'Armor', description: '', abilities: [] },
+  { id: 21, name: 'Wolf Boots', tier: 'Common', type: 'Armor', description: '', abilities: [] },
+  { id: 22, name: 'Thief Helmet', tier: 'Common', type: 'Armor', description: '', abilities: [] },
+  { id: 23, name: 'Renegade Chestplate', tier: 'Common', type: 'Armor', description: '', abilities: [] },
+  { id: 24, name: 'Pebble of Dreams', tier: 'Common', type: 'Accessory', description: '', abilities: [] },
+  { id: 25, name: 'Travelers Charm', tier: 'Common', type: 'Accessory', description: '', abilities: [] },
+  { id: 26, name: 'Rabbit\'s Dreaming Foot', tier: 'Common', type: 'Accessory', description: '', abilities: [] },
+  { id: 27, name: 'Worn Compass', tier: 'Common', type: 'Accessory', description: '', abilities: [] },
+  { id: 28, name: 'Medicinal Bandages', tier: 'Common', type: 'Healer', description: '', abilities: [] },
+  { id: 29, name: 'Herbal Poultice', tier: 'Common', type: 'Healer', description: '', abilities: [] },
+  { id: 30, name: 'Anchor', tier: 'Uncommon', type: 'Weapon',  subtype: 'Axe', description: '', abilities: [] },
+  { id: 31, name: 'Battle Bow', tier: 'Uncommon', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 32, name: 'Chargin\' Targe', tier: 'Uncommon', type: 'Shield', description: '', abilities: [] },
+  { id: 33, name: 'Dust Storm', tier: 'Uncommon', type: 'Weapon',  subtype: 'Crossbow', description: '', abilities: [] },
+  { id: 34, name: 'Fantasy Axe', tier: 'Uncommon', type: 'Weapon',  subtype: 'Axe', description: '', abilities: [] },
+  { id: 35, name: 'Frying Pan', tier: 'Uncommon', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 36, name: 'Hellenic Sword', tier: 'Uncommon', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 37, name: 'Kemetian Sword', tier: 'Uncommon', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 38, name: 'Lance', tier: 'Uncommon', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 39, name: 'Longbow', tier: 'Uncommon', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 40, name: 'Morning Star', tier: 'Uncommon', type: 'Weapon',  subtype: 'Axe', description: '', abilities: [] },
+  { id: 41, name: 'Norroen Trident', tier: 'Uncommon', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 42, name: 'Sinitic Sword', tier: 'Uncommon', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 43, name: 'Drill', tier: 'Uncommon', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 44, name: 'Kemetian Shovel', tier: 'Uncommon', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 45, name: 'Kemetian Hoe', tier: 'Uncommon', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 46, name: 'Double Axe', tier: 'Uncommon', type: 'Tool',  subtype: 'Lumberfell', description: '', abilities: [] },
+  { id: 47, name: 'Bone Fishing Rod', tier: 'Uncommon', type: 'Tool',  subtype: 'Sirencall', description: '', abilities: [] },
+  { id: 48, name: 'Guard Helmet', tier: 'Uncommon', type: 'Armor', description: '', abilities: [] },
+  { id: 49, name: 'Ore Helmet', tier: 'Uncommon', type: 'Armor', description: '', abilities: [] },
+  { id: 50, name: 'Dark Chestplate', tier: 'Uncommon', type: 'Armor', description: '', abilities: [] },
+  { id: 51, name: 'Royal Leggings', tier: 'Uncommon', type: 'Armor', description: '', abilities: [] },
+  { id: 52, name: 'Creed Boots', tier: 'Uncommon', type: 'Armor', description: '', abilities: [] },
+  { id: 53, name: 'Featherweight Stone', tier: 'Uncommon', type: 'Accessory', description: '', abilities: [] },
+  { id: 54, name: 'Glowstone Pendant', tier: 'Uncommon', type: 'Accessory', description: '', abilities: [] },
+  { id: 55, name: 'Iron Talisman', tier: 'Uncommon', type: 'Accessory', description: '', abilities: [] },
+  { id: 56, name: 'Firebolt Thrower', tier: 'Uncommon', type: 'Weapon',  subtype: 'Crossbow', description: '', abilities: [] },
+  { id: 57, name: 'Smelling Salts', tier: 'Uncommon', type: 'Healer', description: '', abilities: [] },
+  { id: 58, name: 'Soothing Balm', tier: 'Uncommon', type: 'Healer', description: '', abilities: [] },
+  { id: 59, name: 'Acacia Ballista', tier: 'Rare', type: 'Weapon',  subtype: 'Crossbow', description: '', abilities: [] },
+  { id: 60, name: 'Vanguard Shield', tier: 'Rare', type: 'Shield', description: '', abilities: [] },
+  { id: 61, name: 'Ancient Trident', tier: 'Rare', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 62, name: 'Battlestaff', tier: 'Rare', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 63, name: 'Bone Cudgel', tier: 'Rare', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 64, name: 'Burning Skull', tier: 'Rare', type: 'Shield', description: '', abilities: [] },
+  { id: 65, name: 'Combat Mace', tier: 'Rare', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 66, name: 'Cutlass', tier: 'Rare', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 67, name: 'Hammer of Gravity', tier: 'Rare', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 68, name: 'Shivering Bow', tier: 'Rare', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 69, name: 'Mjolnir', tier: 'Rare', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 70, name: 'Ocean Tower Shield', tier: 'Rare', type: 'Shield', description: '', abilities: [] },
+  { id: 71, name: 'Plate Knuckle', tier: 'Rare', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 72, name: 'Royal Trident', tier: 'Rare', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 73, name: 'Hidden Blade', tier: 'Rare', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 74, name: 'Light Bow', tier: 'Rare', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 75, name: 'Tower Shield', tier: 'Rare', type: 'Shield', description: '', abilities: [] },
+  { id: 76, name: 'Fantasy Pickaxe', tier: 'Rare', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 77, name: 'Fantasy Shovel', tier: 'Rare', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 78, name: 'Sinitic Hoe', tier: 'Rare', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 79, name: 'Axeblade', tier: 'Rare', type: 'Tool',  subtype: 'Lumberfell', description: '', abilities: [] },
+  { id: 80, name: 'Blossom Fishing Rod', tier: 'Rare', type: 'Tool',  subtype: 'Sirencall', description: '', abilities: [] },
+  { id: 81, name: 'Marrow Caster', tier: 'Rare', type: 'Tool',  subtype: 'Sirencall', description: '', abilities: [] },
+  { id: 82, name: 'Piglin Helmet', tier: 'Rare', type: 'Armor', description: '', abilities: [] },
+  { id: 83, name: 'Plate Chestplate', tier: 'Rare', type: 'Armor', description: '', abilities: [] },
+  { id: 84, name: 'Highland Leggings', tier: 'Rare', type: 'Armor', description: '', abilities: [] },
+  { id: 85, name: 'Dragon Boots', tier: 'Rare', type: 'Armor', description: '', abilities: [] },
+  { id: 86, name: 'Opulent Chestplate', tier: 'Rare', type: 'Armor', description: '', abilities: [] },
+  { id: 87, name: 'Diamond Ring', tier: 'Rare', type: 'Accessory', description: '', abilities: [] },
+  { id: 88, name: 'Heartstone', tier: 'Rare', type: 'Accessory', description: '', abilities: [] },
+  { id: 89, name: 'Ruin Watch', tier: 'Rare', type: 'Accessory', description: '', abilities: [] },
+  { id: 90, name: 'Stormcatcher Shard', tier: 'Rare', type: 'Accessory', description: '', abilities: [] },
+  { id: 91, name: 'Mending Chalice', tier: 'Rare', type: 'Healer', description: '', abilities: [] },
+  { id: 92, name: 'Warding Incense', tier: 'Rare', type: 'Healer', description: '', abilities: [] },
+  { id: 93, name: 'Ancient Bow', tier: 'Ornate', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 94, name: 'Power Bow', tier: 'Ornate', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 95, name: 'Pwnhammer', tier: 'Ornate', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 96, name: 'Claymore', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 97, name: 'Coral Blade', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 98, name: 'Dancer\'s Sword', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 99, name: 'Caliburn', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 100, name: 'Fantasy Trident', tier: 'Ornate', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 101, name: 'Fang of Frost', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 102, name: 'Glaive', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 103, name: 'Golden Gauntlet', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 104, name: 'Gungnir', tier: 'Ornate', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 105, name: 'Golden Sword of Fire', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 106, name: 'Katana', tier: 'Ornate', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 107, name: 'Shuriken of Ice', tier: 'Ornate', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 108, name: 'Corrupted Crossbow', tier: 'Ornate', type: 'Weapon',  subtype: 'Crossbow', description: '', abilities: [] },
+  { id: 109, name: 'Dragonslayer Shield', tier: 'Ornate', type: 'Shield', description: '', abilities: [] },
+  { id: 110, name: 'Glass Pickaxe', tier: 'Ornate', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 111, name: 'Glass Shovel', tier: 'Ornate', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 112, name: 'Glass Hoe', tier: 'Ornate', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 113, name: 'Sakura Pickaxe', tier: 'Ornate', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 114, name: 'Sakura Shovel', tier: 'Ornate', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 115, name: 'Sakura Hoe', tier: 'Ornate', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 116, name: 'Prismarine Pickaxe', tier: 'Ornate', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 117, name: 'Prismarine Shovel', tier: 'Ornate', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 118, name: 'Prismarine Hoe', tier: 'Ornate', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 119, name: 'Petra\'s Pickaxe', tier: 'Ornate', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 120, name: 'Petra\'s Shovel', tier: 'Ornate', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 121, name: 'Petra\'s Hoe', tier: 'Ornate', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 122, name: 'Romeo\'s Pickaxe', tier: 'Ornate', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 123, name: 'Romeo\'s Shovel', tier: 'Ornate', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 124, name: 'Romeo\'s Sword', tier: 'Ornate', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 125, name: 'Star Pickaxe', tier: 'Ornate', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 126, name: 'Star Shovel', tier: 'Ornate', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 127, name: 'Star Hoe', tier: 'Ornate', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 128, name: 'Petalwhip', tier: 'Ornate', type: 'Tool',  subtype: 'Sirencall', description: '', abilities: [] },
+  { id: 129, name: 'Scarlet Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 130, name: 'Scarlet Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 131, name: 'Scarlet Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 132, name: 'Scarlet Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 133, name: 'Star Shield Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 134, name: 'Star Shield Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 135, name: 'Star Shield Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 136, name: 'Star Shield Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 137, name: 'Emerald Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 138, name: 'Emerald Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 139, name: 'Emerald Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 140, name: 'Emerald Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 141, name: 'Dragonslayer Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 142, name: 'Dragonslayer Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 143, name: 'Dragonslayer Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 144, name: 'Dragonslayer Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 145, name: 'Ender Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 146, name: 'Ender Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 147, name: 'Ender Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 148, name: 'Ender Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 149, name: 'Frost Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 150, name: 'Frost Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 151, name: 'Frost Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 152, name: 'Frost Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 153, name: 'Stalwart Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 154, name: 'Stalwart Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 155, name: 'Stalwart Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 156, name: 'Stalwart Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 157, name: 'Sakura Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 158, name: 'Sakura Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 159, name: 'Sakura Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 160, name: 'Sakura Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 161, name: 'Star Shield Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 162, name: 'Star Shield Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 163, name: 'Star Shield Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 164, name: 'Star Shield Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 165, name: 'Prismarine Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 166, name: 'Prismarine Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 167, name: 'Prismarine Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 168, name: 'Prismarine Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 169, name: 'Phantom Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 170, name: 'Phantom Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 171, name: 'Phantom Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 172, name: 'Phantom Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 173, name: 'Romeo\'s Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 174, name: 'Romeo\'s Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 175, name: 'Romeo\'s Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 176, name: 'Romeo\'s Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 177, name: 'Shadow Walker Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 178, name: 'Shadow Walker Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 179, name: 'Shadow Walker Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 180, name: 'Shadow Walker Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 181, name: 'Petra\'s Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 182, name: 'Petra\'s Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 183, name: 'Petra\'s Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 184, name: 'Petra\'s Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 185, name: 'Wither Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 186, name: 'Wither Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 187, name: 'Wither Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 188, name: 'Wither Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 189, name: 'Dark Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 190, name: 'Champion\'s Helmet', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 191, name: 'Heavy Chestplate', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 192, name: 'Heavy Leggings', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 193, name: 'Climber\'s Boots', tier: 'Ornate', type: 'Armor', description: '', abilities: [] },
+  { id: 194, name: 'Anglers Pearl', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 195, name: 'Berserkers Fang', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 196, name: 'Cartographers Lens', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 197, name: 'Enchanted Monocle', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 198, name: 'Farmers Almanac', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 199, name: 'Healers Salve', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 200, name: 'Merchants Coin', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 201, name: 'Miners Lantern', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 202, name: 'Phoenix Feather', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 203, name: 'Seers Compass', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 204, name: 'Soul Lantern Fragment', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 205, name: 'Spelunkers Echo', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 206, name: 'Wardens Echo', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 207, name: 'Wind Chime', tier: 'Ornate', type: 'Accessory', description: '', abilities: [] },
+  { id: 208, name: 'Phoenix Plume', tier: 'Ornate', type: 'Healer', description: '', abilities: [] },
+  { id: 209, name: 'Radiant Censer', tier: 'Ornate', type: 'Healer', description: '', abilities: [] },
+  { id: 210, name: 'Dev Hammer', tier: 'Exquisite', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 211, name: 'Call of the Void', tier: 'Exquisite', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 212, name: 'Crucuble Trident', tier: 'Exquisite', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 213, name: 'Dragonheart Mace', tier: 'Exquisite', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 214, name: 'Echo Shot', tier: 'Exquisite', type: 'Weapon',  subtype: 'Crossbow', description: '', abilities: [] },
+  { id: 215, name: 'Eyelander', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 216, name: 'Fantasy Trident', tier: 'Exquisite', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 217, name: 'Frostmourne', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 218, name: 'Glaive', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 219, name: 'Golden Gauntlet', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 220, name: 'Gungnir', tier: 'Exquisite', type: 'Weapon',  subtype: 'Spear', description: '', abilities: [] },
+  { id: 221, name: 'Heartstealer', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 222, name: 'Infinity Lance', tier: 'Exquisite', type: 'Weapon',  subtype: 'Spear', description: '', abilities: [] },
+  { id: 223, name: 'Mace of Legends', tier: 'Exquisite', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 224, name: 'Mjolnir', tier: 'Exquisite', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 225, name: 'Order of the Stone Gauntlet', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 226, name: 'Prismarine Gauntlet', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 227, name: 'Sabrewing', tier: 'Exquisite', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 228, name: 'The Soul Mirror', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 229, name: 'Stormlander', tier: 'Exquisite', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 230, name: 'Truthseeker', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 231, name: 'Void Touched Blade', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 232, name: 'Whirlwind', tier: 'Exquisite', type: 'Weapon',  subtype: 'Axe', description: '', abilities: [] },
+  { id: 233, name: 'Heavy Sword', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 234, name: 'Dragonslayer Shield', tier: 'Exquisite', type: 'Shield', description: '', abilities: [] },
+  { id: 235, name: 'Leviathan Axe', tier: 'Exquisite', type: 'Tool',  subtype: 'Lumberfell', description: '', abilities: [] },
+  { id: 236, name: 'Star Axe', tier: 'Exquisite', type: 'Tool',  subtype: 'Lumberfell', description: '', abilities: [] },
+  { id: 237, name: 'Infernal Hook', tier: 'Exquisite', type: 'Tool',  subtype: 'Sirencall', description: '', abilities: [] },
+  { id: 238, name: 'Cloaked Skull Helmet', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 239, name: 'Cloaked Skull Chestplate', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 240, name: 'Cloaked Skull Leggings', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 241, name: 'Cloaked Skull Boots', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 242, name: 'Ember Helmet', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 243, name: 'Ember Chestplate', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 244, name: 'Ember Leggings', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 245, name: 'Ember Boots', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 246, name: 'Ninja Helmet', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 247, name: 'Ninja Chestplate', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 248, name: 'Ninja Leggings', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 249, name: 'Ninja Boots', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 250, name: 'Fireforged Helmet', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 251, name: 'Fireforged Chestplate', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 252, name: 'Fireforged Leggings', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 253, name: 'Fireforged Boots', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 254, name: 'Space Helmet', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 255, name: 'Space Chestplate', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 256, name: 'Space Leggings', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 257, name: 'Space Boots', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 258, name: 'Turtle Boots', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 259, name: 'Stalwart Leggings', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 260, name: 'Shadow Walker Boots', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 261, name: 'Grim Helmet', tier: 'Exquisite', type: 'Armor', description: '', abilities: [] },
+  { id: 262, name: 'Totem of the Berserker', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 263, name: 'Blaze Core', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 264, name: 'Claudes Eye', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 265, name: 'Dragons Tear', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 266, name: 'Nether Star Shard', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 267, name: 'Phantom Charm', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 268, name: 'Ring Totem', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 269, name: 'Sculk Heart', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 270, name: 'Sea Heart Relic', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 271, name: 'Totem of Soul Protection', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 272, name: 'Void Heart', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 273, name: 'Warden Totem', tier: 'Exquisite', type: 'Accessory', description: '', abilities: [] },
+  { id: 274, name: 'Celestial Lotus', tier: 'Exquisite', type: 'Healer', description: '', abilities: [] },
+  { id: 275, name: 'Lifewarden\'s Tome', tier: 'Exquisite', type: 'Healer', description: '', abilities: [] },
+  { id: 276, name: 'Butterfly Crossbow', tier: 'Mythical', type: 'Weapon',  subtype: 'Crossbow', description: '', abilities: [] },
+  { id: 277, name: 'Command Block Sword', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 278, name: 'Dragon Fan', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 279, name: 'Dragonslayer Lance', tier: 'Mythical', type: 'Weapon',  subtype: 'Spear', description: '', abilities: [] },
+  { id: 280, name: 'Dragonmaster Sword', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 281, name: 'Droid Dancer\'s Sword', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 282, name: 'Ender Dragon Blade', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 283, name: 'Gaster Blaster', tier: 'Mythical', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 284, name: 'Golden Goliath Sword', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 285, name: 'Nocturnal Bow', tier: 'Mythical', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 286, name: 'Comet on a Stick', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 287, name: 'Longinus', tier: 'Mythical', type: 'Weapon',  subtype: 'Spear', description: '', abilities: [] },
+  { id: 288, name: 'Master Bolt', tier: 'Mythical', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 289, name: 'Titan\'s Shroud Trident', tier: 'Mythical', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
+  { id: 290, name: 'Prismarine Gauntlet', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 291, name: 'Red Gauntlet', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 292, name: 'Robot Dancer\'s Sword', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 293, name: 'Portal Staff', tier: 'Mythical', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 294, name: 'Sinister Sword', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 295, name: 'Shooting Star', tier: 'Mythical', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 296, name: 'Dragon Slayer', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 297, name: 'Adventure Sword', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 298, name: 'The Beginning and The End', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 299, name: 'The Starless Night', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 300, name: 'Void Voyage', tier: 'Mythical', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
+  { id: 301, name: 'Nameless Blade', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 302, name: 'Zantetsuken', tier: 'Mythical', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
+  { id: 303, name: 'Ellegaard\'s Shield', tier: 'Mythical', type: 'Shield', description: '', abilities: [] },
+  { id: 304, name: 'Astract', tier: 'Mythical', type: 'Shield', description: '', abilities: [] },
+  { id: 305, name: 'Ender Dragon Shield', tier: 'Mythical', type: 'Shield', description: '', abilities: [] },
+  { id: 306, name: 'Order of the Stone Shield', tier: 'Mythical', type: 'Shield', description: '', abilities: [] },
+  { id: 307, name: 'Journey Pickaxe', tier: 'Mythical', type: 'Tool',  subtype: 'Stonestrike', description: '', abilities: [] },
+  { id: 308, name: 'Journey Shovel', tier: 'Mythical', type: 'Tool',  subtype: 'Terrawarp', description: '', abilities: [] },
+  { id: 309, name: 'Hoe of Honor', tier: 'Mythical', type: 'Tool',  subtype: 'Growseer', description: '', abilities: [] },
+  { id: 310, name: 'Axe of Honor', tier: 'Mythical', type: 'Tool',  subtype: 'Lumberfell', description: '', abilities: [] },
+  { id: 311, name: 'Dragonmaster Axe', tier: 'Mythical', type: 'Tool',  subtype: 'Lumberfell', description: '', abilities: [] },
+  { id: 312, name: 'Dragonslayer Axe', tier: 'Mythical', type: 'Tool',  subtype: 'Lumberfell', description: '', abilities: [] },
+  { id: 313, name: 'Tempest Lip Ripper', tier: 'Mythical', type: 'Tool',  subtype: 'Sirencall', description: '', abilities: [] },
+  { id: 314, name: 'Dragonmaster Helmet', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 315, name: 'Dragonmaster Chestplate', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 316, name: 'Dragonmaster Leggings', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 317, name: 'Dragonmaster Boots', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 318, name: 'Dragonmaster Wings', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 319, name: 'Ender Dragon Helmet', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 320, name: 'Ender Dragon Chestplate', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 321, name: 'Ender Dragon Leggings', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 322, name: 'Ender Dragon Boots', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 323, name: 'Ender Dragon Wings', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 324, name: 'Hero\'s Helmet', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 325, name: 'Hero\'s Chestplate', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 326, name: 'Hero\'s Leggings', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 327, name: 'Hero\'s Boots', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 328, name: 'Lava Warrior Helmet', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 329, name: 'Lava Warrior Chestplate', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 330, name: 'Lava Warrior Leggings', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 331, name: 'Lava Warrior Boots', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 332, name: 'Journey Helmet', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 333, name: 'Journey Chestplate', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 334, name: 'Journey Leggings', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 335, name: 'Journey Boots', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 336, name: 'Crucuble Elytra', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 337, name: 'Splendid Helmet', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 338, name: 'Splendid Chestplate', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 339, name: 'Splendid Leggings', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 340, name: 'Splendid Boots', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 341, name: 'Amethyst Elytra', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 342, name: 'Titan\'s Shroud Helmet', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 343, name: 'Titan\'s Shroud Chestplate', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 344, name: 'Titan\'s Shroud Leggings', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 345, name: 'Titan\'s Shroud Boots', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 346, name: 'Downpour Elytra', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 347, name: 'Verdant Hood', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 348, name: 'Verdant Chestplate', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 349, name: 'Verdant Leggings', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 350, name: 'Verdant Boots', tier: 'Mythical', type: 'Armor', description: '', abilities: [] },
+  { id: 351, name: 'Verdant Elytra', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 352, name: 'Red Dragon Wings', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 353, name: 'Beacon of the Ancients', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 354, name: 'Claudes Gift', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 355, name: 'Codex of Everything', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 356, name: 'Dream Aegis', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 357, name: 'Dreamcast Compass', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 358, name: 'Ender Dragon Scale', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 359, name: 'Heart of the Void', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 360, name: 'Netherite Nexus', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 361, name: 'Prism of Light', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 362, name: 'Redstone Heart', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 363, name: 'Sculk Singularity', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 364, name: 'Temporal Hourglass', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 365, name: 'Wither Rose Crown', tier: 'Mythical', type: 'Accessory', description: '', abilities: [] },
+  { id: 366, name: 'Endless Ambrosia', tier: 'Mythical', type: 'Healer', description: '', abilities: [] },
+  { id: 367, name: 'Tears of the World Tree', tier: 'Mythical', type: 'Healer', description: '', abilities: [] },
+  { id: 368, name: 'Earthsong Spirit Pickaxe', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 369, name: 'Heartwood Spirit Axe', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 370, name: 'Bloomweaver Spirit Hoe', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 371, name: 'Dustwalker Spirit Shovel', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 372, name: 'Tidecaller\'s Line Spirit Rod', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
+  { id: 373, name: 'Silkgrasp Spirit Shears', tier: 'Mythical', type: 'Weapon', description: '', abilities: [] },
 ]
-
-export const TIERS: Tier[] = [
-  'Common',
-  'Uncommon',
-  'Rare',
-  'Ornate',
-  'Exquisite',
-  'Mythical'
-]
-export const TYPES: ArtifactType[] = [
-  'Weapon',
-  'Armor',
-  'Accessory',
-  'Ring',
-  'Healer'
-]
-
-export const TIER_COLORS: Record<Tier, string> = {
-  Common: 'text-stone-400 border-stone-600 bg-stone-900/40',
-  Uncommon: 'text-green-400 border-green-700 bg-green-950/40',
-  Rare: 'text-blue-400 border-blue-700 bg-blue-950/40',
-  Ornate: 'text-purple-400 border-purple-700 bg-purple-950/40',
-  Exquisite: 'text-orange-400 border-orange-700 bg-orange-950/40',
-  Mythical: 'text-yellow-400 border-yellow-600 bg-yellow-950/40'
-}
-
-export const TIER_BADGE: Record<Tier, string> = {
-  Common: 'bg-stone-800 text-stone-300',
-  Uncommon: 'bg-green-950 text-green-400',
-  Rare: 'bg-blue-950 text-blue-400',
-  Ornate: 'bg-purple-950 text-purple-400',
-  Exquisite: 'bg-orange-950 text-orange-400',
-  Mythical: 'bg-yellow-950 text-yellow-400'
-}
-
-export const TYPE_ICONS: Record<ArtifactType, string> = {
-  Weapon: '\u2694\uFE0F',
-  Armor: '\uD83D\uDEE1\uFE0F',
-  Accessory: '\uD83D\uDC8E',
-  Ring: '\uD83D\uDCAD',
-  Healer: '\u2764\uFE0F\u200D\uD83E\uDE79'
-}
