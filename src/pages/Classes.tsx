@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { classes } from '../data/classes'
 import PageHero from '../components/layout/PageHero'
 import ScrollReveal from '../components/effects/ScrollReveal'
+import Spoiler from '../components/ui/Spoiler'
 
 export default function Classes() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -15,6 +16,32 @@ export default function Classes() {
         subtitle="14 weapon classes. From shadowy Rogues to the secret Dual Swordsman."
         particleColor="rgba(96, 165, 250, 0.4)"
       />
+
+      {/* System Overview */}
+      <div className="max-w-4xl mx-auto px-6 py-12">
+        <ScrollReveal>
+          <div className="font-['Crimson_Pro'] text-lg text-stone-400 text-center mb-8 max-w-2xl mx-auto">
+            <p>
+              Classes define your combat identity. Each class transforms how you fight —
+              changing your weapon type, granting unique abilities, and opening a path to
+              one of the 14 Spirit Weapons. Some classes have subclasses that shift the playstyle further.
+            </p>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <Spoiler label="How classes work under the hood...">
+            <div className="space-y-3 font-['Crimson_Pro'] text-sm text-stone-400">
+              <p><span className="text-yellow-500 font-semibold">Activation:</span> Equip the class weapon type in your mainhand. The class activates automatically based on what you're holding.</p>
+              <p><span className="text-yellow-500 font-semibold">Dual-Wield Classes:</span> Rogue (daggers), Berserker (axes), Dancer (fans), Dual Swordsman (swords) require weapons in both hands. They trade armor for damage.</p>
+              <p><span className="text-yellow-500 font-semibold">Shield Classes:</span> Knight (sword+shield), Hoplite (trident+shield), Sentinel (mace+shield) gain defensive bonuses from the offhand shield.</p>
+              <p><span className="text-yellow-500 font-semibold">Spirit Weapons:</span> Each class has a corresponding Spirit Weapon dropped by a specific raid boss at 5%. These are the ultimate expression of the class.</p>
+              <p><span className="text-yellow-500 font-semibold">Twin Weapons:</span> 7 classes can obtain a second spirit weapon via Dream Storm Crystal (1% drop from Castle floor 25+). Requires Mythical tier + Spirit Tome quest 50.</p>
+              <p><span className="text-yellow-500 font-semibold">Solo Boost:</span> Classes without twins get a 25% effectiveness boost from the Crystal instead, reaching 150% at Spirit tier.</p>
+            </div>
+          </Spoiler>
+        </ScrollReveal>
+      </div>
 
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Class Grid */}
