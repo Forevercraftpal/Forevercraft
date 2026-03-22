@@ -1,6 +1,7 @@
 import PageHero from '../components/layout/PageHero'
 import ScrollReveal from '../components/effects/ScrollReveal'
 import Accordion from '../components/ui/Accordion'
+import Spoiler from '../components/ui/Spoiler'
 
 const PERMANENT = [
   { name: 'Butterfly Pet (scales Lv1-100)', value: '+0.5 to +3.0', max: 3 },
@@ -156,6 +157,19 @@ export default function DreamRate() {
               </div>
             ))}
           </div>
+        </ScrollReveal>
+        {/* How It Affects Gameplay */}
+        <ScrollReveal delay={400}>
+          <Spoiler label="How Dream Rate affects every system in detail...">
+            <div className="space-y-3 font-['Crimson_Pro'] text-sm text-stone-400">
+              <p><span className="text-yellow-500 font-semibold">Crate Quality:</span> Dream Rate multiplies bonus rolls on every crate. At DR 35 = 2.0x rolls. At DR 50 = 2.43x. Higher DR means more items per crate and better tier chances.</p>
+              <p><span className="text-yellow-500 font-semibold">Time-of-Day Bonuses:</span> Morning fishing +0.5, noon mining +1.0, night combat +0.5. These temporary bonuses stack with permanent DR.</p>
+              <p><span className="text-yellow-500 font-semibold">Moon Phase Bonuses:</span> Full Moon fishing +0.5. New Moon combat +0.5 (also 2x patron/furia spawns). Harvest Moon (1/8 chance on Full Moon) = +1.5 DR + randomTickSpeed=15 for crop growth.</p>
+              <p><span className="text-yellow-500 font-semibold">Weather:</span> Rain + fishing rod equipped = +0.5 temporary DR.</p>
+              <p><span className="text-yellow-500 font-semibold">Enchantments:</span> Fortune, Silk Touch, Luck of the Sea, Looting each contribute +0.25/level (context-specific — only when relevant to the activity).</p>
+              <p><span className="text-yellow-500 font-semibold">Check Your DR:</span> Use <code className="text-yellow-600 bg-stone-800 px-1 rounded">/trigger ec.dreams</code> in-game to see your full Dream Rate breakdown including constellation progress.</p>
+            </div>
+          </Spoiler>
         </ScrollReveal>
       </div>
     </div>
