@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
+import JSZip from 'jszip'
 import PageHero from '../components/layout/PageHero'
 import ScrollReveal from '../components/effects/ScrollReveal'
 import graphData from '../data/module-graph.json'
@@ -218,9 +219,93 @@ export default function Downloads() {
     setSelected(new Set(['core']))
   }
 
-  const downloadFull = () => {
-    // For now, link to GitHub release
-    window.open('https://github.com/Deiontre10/forevercraft/releases', '_blank')
+  const downloadFull = async () => {
+    // Select all modules and build
+    const all = new Set(modules.map(m => m.id))
+    setSelected(all)
+    // Slight delay so UI updates, then trigger build
+    setTimeout(() => {
+      setBuilding(true)
+      setBuildResult({ status: 'building', message: 'Building full Forevercraft pack...' })
+      buildFullPack(all)
+    }, 100)
+  }
+
+  const buildFullPack = async (allMods: Set<string>) => {
+    try {
+      const moduleIds = [...allMods]
+      const totalMods = moduleIds.length
+      let loaded = 0
+
+      const moduleZips = await Promise.all(
+        moduleIds.map(async (modId) => {
+          const resp = await fetch(`/modules/${modId}.zip`)
+          if (!resp.ok) throw new Error(`Failed to fetch module: ${modId}`)
+          const blob = await resp.blob()
+          loaded++
+          setBuildResult({ status: 'building', message: `Downloading modules... ${loaded}/${totalMods}` })
+          return { id: modId, zip: await JSZip.loadAsync(blob) }
+        })
+      )
+
+      setBuildResult({ status: 'building', message: 'Assembling full datapack...' })
+
+      const output = new JSZip()
+      const fragmentMap: Record<string, string[]> = {}
+
+      for (const { zip } of moduleZips) {
+        for (const [path, file] of Object.entries(zip.files)) {
+          if (file.dir) continue
+          if (path.startsWith('_fragments/')) {
+            const fragName = path.replace('_fragments/', '').replace('.txt', '')
+            if (!fragmentMap[fragName]) fragmentMap[fragName] = []
+            fragmentMap[fragName].push(await file.async('text'))
+          } else if (!output.files[path]) {
+            output.file(path, await file.async('uint8array'))
+          }
+        }
+      }
+
+      const FRAG_TARGETS: Record<string, string> = {
+        'tick': 'data/evercraft/function/tick.mcfunction',
+        'init': 'data/evercraft/function/init.mcfunction',
+        'on_join': 'data/evercraft/function/on_join.mcfunction',
+        'on_respawn': 'data/evercraft/function/on_respawn.mcfunction',
+        'on_death': 'data/evercraft/function/on_death.mcfunction',
+      }
+
+      for (const [fragName, lineArrays] of Object.entries(fragmentMap)) {
+        const target = FRAG_TARGETS[fragName]
+        if (target) {
+          output.file(target, `# Forevercraft — Full Pack\n\n` + lineArrays.join('\n\n'))
+        }
+      }
+
+      output.file('pack.mcmeta', JSON.stringify({
+        pack: { description: 'Forevercraft — Full Pack', pack_format: 94, supported_formats: { min_inclusive: 94, max_inclusive: 94 } }
+      }, null, 2))
+      output.file('data/minecraft/tags/function/tick.json', JSON.stringify({ values: ['evercraft:tick'] }, null, 2))
+      output.file('data/minecraft/tags/function/load.json', JSON.stringify({ values: ['evercraft:init'] }, null, 2))
+
+      setBuildResult({ status: 'building', message: 'Compressing...' })
+
+      const blob = await output.generateAsync({ type: 'blob', compression: 'DEFLATE', compressionOptions: { level: 6 } })
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.href = url
+      link.download = 'Forevercraft-Full.zip'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+      URL.revokeObjectURL(url)
+
+      const sizeMB = (blob.size / 1024 / 1024).toFixed(1)
+      setBuildResult({ status: 'success', message: `Downloaded! All ${moduleIds.length} modules, 18,111 files (${sizeMB} MB)` })
+    } catch (err) {
+      setBuildResult({ status: 'error', message: `Build failed: ${err instanceof Error ? err.message : 'Unknown error'}` })
+    } finally {
+      setBuilding(false)
+    }
   }
 
   const [buildResult, setBuildResult] = useState<{status: string, message?: string, downloadUrl?: string} | null>(null)
@@ -229,66 +314,108 @@ export default function Downloads() {
     setBuilding(true)
     setBuildResult(null)
     try {
-      const response = await fetch('/api/build', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ modules: [...selected] })
+      // Client-side build: download each module ZIP and merge them
+      const moduleIds = [...resolved]
+      const totalMods = moduleIds.length
+      let loaded = 0
+
+      // Download all module ZIPs in parallel
+      const moduleZips = await Promise.all(
+        moduleIds.map(async (modId) => {
+          const resp = await fetch(`/modules/${modId}.zip`)
+          if (!resp.ok) throw new Error(`Failed to fetch module: ${modId}`)
+          const blob = await resp.blob()
+          loaded++
+          setBuildResult({ status: 'building', message: `Downloading modules... ${loaded}/${totalMods}` })
+          return { id: modId, zip: await JSZip.loadAsync(blob) }
+        })
+      )
+
+      setBuildResult({ status: 'building', message: 'Assembling datapack...' })
+
+      // Merge all ZIPs into one
+      const output = new JSZip()
+
+      // Track fragment contributions per fragment file
+      const fragmentMap: Record<string, string[]> = {}
+
+      for (const { zip } of moduleZips) {
+        for (const [path, file] of Object.entries(zip.files)) {
+          if (file.dir) continue
+
+          if (path.startsWith('_fragments/')) {
+            // Collect fragment lines from each module
+            const fragName = path.replace('_fragments/', '').replace('.txt', '')
+            const content = await file.async('text')
+            if (!fragmentMap[fragName]) fragmentMap[fragName] = []
+            fragmentMap[fragName].push(content)
+          } else {
+            // Regular file — add to output (skip duplicates)
+            if (!output.files[path]) {
+              output.file(path, await file.async('uint8array'))
+            }
+          }
+        }
+      }
+
+      // Assemble fragments into their target files
+      // Fragment names encode the target path: e.g. "tick" → data/evercraft/function/tick.mcfunction
+      const FRAG_TARGETS: Record<string, string> = {
+        'tick': 'data/evercraft/function/tick.mcfunction',
+        'init': 'data/evercraft/function/init.mcfunction',
+        'on_join': 'data/evercraft/function/on_join.mcfunction',
+        'on_respawn': 'data/evercraft/function/on_respawn.mcfunction',
+        'on_death': 'data/evercraft/function/on_death.mcfunction',
+      }
+
+      for (const [fragName, lineArrays] of Object.entries(fragmentMap)) {
+        const target = FRAG_TARGETS[fragName]
+        if (target) {
+          const header = `# Forevercraft — Auto-assembled from ${moduleIds.length} modules\n# Modules: ${moduleIds.join(', ')}\n\n`
+          const combined = header + lineArrays.join('\n\n')
+          output.file(target, combined)
+        }
+      }
+
+      // Add pack.mcmeta
+      output.file('pack.mcmeta', JSON.stringify({
+        pack: {
+          description: `Forevercraft Custom (${moduleIds.length} modules)`,
+          pack_format: 94,
+          supported_formats: { min_inclusive: 94, max_inclusive: 94 }
+        }
+      }, null, 2))
+
+      // Add minecraft tick/load tags
+      output.file('data/minecraft/tags/function/tick.json', JSON.stringify({
+        values: ['evercraft:tick']
+      }, null, 2))
+      output.file('data/minecraft/tags/function/load.json', JSON.stringify({
+        values: ['evercraft:init']
+      }, null, 2))
+
+      setBuildResult({ status: 'building', message: 'Compressing...' })
+
+      // Generate final ZIP
+      const blob = await output.generateAsync({ type: 'blob', compression: 'DEFLATE', compressionOptions: { level: 6 } })
+
+      // Trigger download
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.href = url
+      link.download = `Forevercraft-Custom-${moduleIds.length}mod.zip`
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+      URL.revokeObjectURL(url)
+
+      const sizeMB = (blob.size / 1024 / 1024).toFixed(1)
+      setBuildResult({
+        status: 'success',
+        message: `Downloaded! ${moduleIds.length} modules, ${totalFiles.toLocaleString()} files (${sizeMB} MB)`
       })
-      const data = await response.json()
-
-      if (data.status === 'ready' && data.downloadUrl) {
-        // Pre-built combo available — trigger download
-        const link = document.createElement('a')
-        link.href = data.downloadUrl
-        link.download = data.filename || 'Forevercraft-Custom.zip'
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-        setBuildResult({ status: 'success', message: `✅ Downloading ${data.filename || 'Forevercraft'}! ${data.resolved?.length} modules, ~${data.totalFiles?.toLocaleString()} files.` })
-      } else if (response.ok && data.status === 'not_cached') {
-        // Custom combo not cached — show build command
-        setBuildResult({
-          status: 'manual',
-          message: `Custom build with ${data.resolved?.length || resolved.size} modules (${data.totalFiles?.toLocaleString() || totalFiles.toLocaleString()} files). Run locally:`,
-          downloadUrl: data.buildCommand
-        })
-      } else {
-        setBuildResult({ status: 'error', message: data.error || 'Build failed' })
-      }
-    } catch {
-      // API not available — try direct pre-built download as fallback
-      const hash = [...resolved].sort().join('+')
-      const FALLBACK_BUILDS: Record<string, string> = {
-        'core': '/builds/core.zip',
-        'cooking+core': '/builds/cooking.zip',
-        'core+housing': '/builds/housing.zip',
-        'core+guilds': '/builds/guilds.zip',
-        'advantage+core': '/builds/advantage.zip',
-        'bestiary+core': '/builds/bestiary.zip',
-        'core+lore': '/builds/lore.zip',
-        'core+cosmetics': '/builds/cosmetics.zip',
-        'core+milestones': '/builds/milestones.zip',
-        'artifacts+classes+combat-instances+core+crates+dream-rate+mastery': '/builds/combat-bundle.zip',
-        'core+crates+guidestones+lore+professions+world-systems': '/builds/exploration-bundle.zip',
-        'buddy-system+core+guilds+social': '/builds/social-bundle.zip',
-      }
-
-      if (FALLBACK_BUILDS[hash]) {
-        const link = document.createElement('a')
-        link.href = FALLBACK_BUILDS[hash]
-        link.download = 'Forevercraft-Custom.zip'
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-        setBuildResult({ status: 'success', message: `✅ Downloading pre-built pack! ${resolved.size} modules.` })
-      } else {
-        const moduleList = [...resolved].join(',')
-        setBuildResult({
-          status: 'manual',
-          message: `This exact combo isn't pre-built yet. Clone the repo and run locally:`,
-          downloadUrl: `python3 build/scripts/build.py --modules ${moduleList} --output ./Forevercraft`
-        })
-      }
+    } catch (err) {
+      setBuildResult({ status: 'error', message: `Build failed: ${err instanceof Error ? err.message : 'Unknown error'}` })
     } finally {
       setBuilding(false)
     }
@@ -373,14 +500,21 @@ export default function Downloads() {
           <div className={`mb-6 rounded-lg border p-4 ${
             buildResult.status === 'success' ? 'border-green-800/40 bg-green-900/15' :
             buildResult.status === 'error' ? 'border-red-800/40 bg-red-900/15' :
+            buildResult.status === 'building' ? 'border-blue-800/40 bg-blue-900/15' :
             'border-yellow-800/40 bg-yellow-900/15'
           }`}>
-            <p className="font-['Crimson_Pro'] text-base text-stone-300 mb-2">{buildResult.message}</p>
-            {buildResult.downloadUrl && buildResult.status === 'manual' && (
-              <code className="block bg-stone-900 rounded p-3 text-sm text-green-400 font-mono overflow-x-auto">
-                {buildResult.downloadUrl}
-              </code>
-            )}
+            <div className="flex items-center gap-3">
+              {buildResult.status === 'building' && (
+                <div className="w-5 h-5 border-2 border-blue-400 border-t-transparent rounded-full animate-spin shrink-0" />
+              )}
+              {buildResult.status === 'success' && (
+                <span className="text-green-400 text-xl shrink-0">&#10003;</span>
+              )}
+              {buildResult.status === 'error' && (
+                <span className="text-red-400 text-xl shrink-0">&#10007;</span>
+              )}
+              <p className="font-['Crimson_Pro'] text-base text-stone-300">{buildResult.message}</p>
+            </div>
           </div>
         )}
 
