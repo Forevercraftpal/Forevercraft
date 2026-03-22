@@ -6,7 +6,7 @@ import Card3D from '../components/ui/Card3D'
 import { STATS } from '../data/constants'
 
 const SYSTEM_CARDS = [
-  { title: 'DREAM RATE', desc: 'The backbone of everything. A custom luck system that ties your entire journey together.', icon: '✦', to: '/dream-rate', color: '#FBBF24' },
+  { title: 'DREAM RATE', desc: 'The backbone of everything. A custom RNG system that ties your entire journey together.', icon: '✦', to: '/dream-rate', color: '#FBBF24' },
   { title: 'ARTIFACTS', desc: '358 unique items across six tiers — each with handcrafted abilities.', icon: '⚔️', to: '/artifacts', color: '#FB923C' },
   { title: 'SPIRIT WEAPONS', desc: '14 legendary endgame weapons with twin forms and metamorphosis.', icon: '🗡️', to: '/spirit-weapons', color: '#C084FC' },
   { title: 'COMPANIONS', desc: '106 companions that fight, level, evolve, and bond with you.', icon: '🐾', to: '/companions', color: '#4ADE80' },

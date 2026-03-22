@@ -72,7 +72,7 @@ export default function DreamRate() {
               What is Dream Rate?
             </h2>
             <p className="text-stone-300">
-              Dream Rate is a custom luck system that connects every system in Forevercraft.
+              Dream Rate is a custom RNG system that connects every system in Forevercraft.
               It determines crate quality, artifact rarity, structure accessibility, and companion encounters.
               At 35 Dreams, you get 2x bonus rolls on every crate. At 50, you're Dream Transcendent.
             </p>
