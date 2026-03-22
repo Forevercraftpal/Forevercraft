@@ -102,7 +102,7 @@ export const STATS = {
   totalRaidBosses: 14,
   totalSkillTrees: 14,
   totalQuests: 250,
-  totalLoreFragments: 904,
+  totalLoreFragments: 894,
   totalArmorSets: 28,
   totalSystems: 95,
   dreamRateCap: 50,
