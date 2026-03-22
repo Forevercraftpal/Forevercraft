@@ -6,15 +6,18 @@ import Card3D from '../components/ui/Card3D'
 import { STATS } from '../data/constants'
 
 const SYSTEM_CARDS = [
-  { title: 'DREAM RATE', desc: 'The backbone of everything. A custom RNG system that ties your entire journey together.', icon: '✦', to: '/dream-rate', color: '#FBBF24' },
+  { title: 'DREAM RATE', desc: 'The backbone of everything. A custom luck system that ties your entire journey together.', icon: '✦', to: '/dream-rate', color: '#FBBF24' },
   { title: 'ARTIFACTS', desc: '358 unique items across six tiers — each with handcrafted abilities.', icon: '⚔️', to: '/artifacts', color: '#FB923C' },
   { title: 'SPIRIT WEAPONS', desc: '14 legendary endgame weapons with twin forms and metamorphosis.', icon: '🗡️', to: '/spirit-weapons', color: '#C084FC' },
   { title: 'COMPANIONS', desc: '106 companions that fight, level, evolve, and bond with you.', icon: '🐾', to: '/companions', color: '#4ADE80' },
   { title: 'CLASSES', desc: '14 weapon classes from Rogue to the secret Dual Swordsman.', icon: '⚡', to: '/classes', color: '#60A5FA' },
   { title: 'RAID BOSSES', desc: '14 multi-phase bosses with puzzles, phases, and unique loot.', icon: '💀', to: '/raid-bosses', color: '#DC2626' },
-  { title: 'SKILL TREES', desc: '14 skill trees with 25 levels each, prestige, and synergies.', icon: '🌳', to: '/skill-trees', color: '#22C55E' },
-  { title: 'ARMOR SETS', desc: '27 armor sets with 2-piece, 4-piece, and mythical 5-piece bonuses.', icon: '🛡️', to: '/armor-sets', color: '#9CA3AF' },
+  { title: 'SKILL TREES', desc: '14 advantage trees with 25 levels each, prestige, and synergies.', icon: '🌳', to: '/skill-trees', color: '#22C55E' },
+  { title: 'ARMOR SETS', desc: '28 armor sets with 2-piece, 4-piece, and mythical 5-piece bonuses.', icon: '🛡️', to: '/armor-sets', color: '#9CA3AF' },
   { title: 'QUESTS', desc: '75 quests across 6 tiers. Village reputation. Patron bounties.', icon: '📜', to: '/quests', color: '#D97706' },
+  { title: 'INFINITE CASTLE', desc: 'Endless escalating dungeon. Bosses every 10 floors. Dream Storm Crystals.', icon: '🏰', to: '/infinite-castle', color: '#78716C' },
+  { title: 'COOKING', desc: '11 mastery categories. Seasonal recipes. Campfire crafting.', icon: '🍳', to: '/cooking', color: '#F59E0B' },
+  { title: 'GUILDS & SOCIAL', desc: 'Guilds, parties with 9 combo abilities, duels, pet duels, buddy system.', icon: '👥', to: '/guilds', color: '#0EA5E9' },
 ]
 
 const DR_MILESTONES = [
@@ -220,6 +223,65 @@ export default function Home() {
             <span className="text-yellow-500 font-semibold">Dual Swordsman</span> — the secret
             14th class — can only be obtained by defeating The Gatekeeper in the Stronghold raid.
             Double damage, Whirlwind ability, and at Spirit tier with both twins: instant attack speed.
+          </p>
+        </FeatureSection>
+
+        <FeatureSection title="Crate & Loot System">
+          <p className="text-stone-300">
+            Seven sources feed one unified crate engine: mining, fishing, harvesting, mob kills,
+            structures, quests, and achievements. Each crate spawns as an animated barrel with
+            tier-colored particles — Common takes 0.5 seconds, Mythical takes 1.5 seconds of
+            escalating anticipation.
+          </p>
+          <p className="mt-4 text-stone-400">
+            Structure crates are per-player with 50-hour refresh timers. 25 biome-specific
+            treasure pools. Every crate has a 20% Awakening Stone drop for weapon mastery.
+            Dream Echoes mark the exact spot where a Mythical was found — clickable, drifting,
+            permanent markers of your greatest moments.
+          </p>
+        </FeatureSection>
+
+        <FeatureSection title="Professions & Villages">
+          <p className="text-stone-300">
+            12 custom villager professions populate villages: Bartender, Wise Wanderer, Artificer,
+            Retired Adventurer, Expeditionist, Spelunker, Apiarist, Archer, Technician, Zookeeper,
+            Nymph, and a daily featured profession with bonus trades. Villagers are named based
+            on their biome.
+          </p>
+          <p className="mt-4 text-stone-400">
+            Villages have their own specialization system with upgrade paths. Build reputation
+            from Stranger to Legend. Higher rep means better quests, better prices, and Iron Golem
+            allegiance. Betray a village and face exile.
+          </p>
+        </FeatureSection>
+
+        <FeatureSection title="Housing & Life Systems">
+          <p className="text-stone-300">
+            Place a Hearthstone (lodestone) to claim a 64-block zone as your home. Five upgrade
+            tiers with buffs from Regeneration to Resistance I. Auto-garden crop growth. Comfort
+            scoring at 25-block milestones. Quick Stash with labeled barrels and one-button
+            inventory sorting.
+          </p>
+          <p className="mt-4 text-stone-400">
+            The{' '}
+            <span className="text-yellow-500 font-semibold">Patina system</span> tracks how long
+            you've worn each artifact. Over time, a fresh artifact becomes Worn, then Seasoned,
+            then Storied, and finally Legendary — each stage adding flavor text and a stat bonus.
+            16 armor trim materials each have unique per-piece effects and full-set bonuses.
+          </p>
+        </FeatureSection>
+
+        <FeatureSection title="Exploration & Discovery">
+          <p className="text-stone-300">
+            894 discoverable lore fragments forming 162 sets across 4 dimensions. A Lore Collection
+            Map shows your progress. 767 custom achievements across 7 tabs with meta-goals reaching
+            Legend of Evercraft at 700. A personal journal tracks every region you've explored.
+          </p>
+          <p className="mt-4 text-stone-400">
+            Forage nodes and prospect nodes scatter across the world for hand-gathering resources.
+            The Codex system is a 751-function interactive encyclopedia tracking every artifact you've
+            found. The Bestiary catalogs every mob encounter. Guidestones create a craftable
+            teleportation network across dimensions.
           </p>
         </FeatureSection>
       </section>
