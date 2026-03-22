@@ -13,7 +13,7 @@ const TIER_EFFECTIVENESS: Record<string, string> = {
 
 export default function SpiritWeapons() {
   const [expandedId, setExpandedId] = useState<number | null>(null)
-  const [selectedTier, setSelectedTier] = useState<string | null>(null)
+  const [selectedTier, setSelectedTier] = useState<SpiritTier | null>(null)
 
   return (
     <div className="bg-stone-950 text-stone-200 min-h-screen">
@@ -141,15 +141,15 @@ export default function SpiritWeapons() {
                             {selectedTier === 'Spirit' && 'Maximum power: 125% effectiveness. All abilities at full strength. Soulbound.'}
                           </div>
                           {weapon.abilities.filter(a => {
-                            const unlockIdx = SPIRIT_TIER_ORDER.indexOf(a.unlockTier || 'Common')
-                            const selIdx2 = SPIRIT_TIER_ORDER.indexOf(selectedTier)
+                            const unlockIdx = SPIRIT_TIER_ORDER.indexOf((a.unlockTier || 'Common') as SpiritTier)
+                            const selIdx2 = SPIRIT_TIER_ORDER.indexOf(selectedTier!)
                             return unlockIdx <= selIdx2
                           }).length > 0 && (
                             <div className="mt-2 pt-2 border-t border-stone-800/50">
                               <p className="font-['Press_Start_2P'] text-[0.3rem] text-green-500 mb-1">UNLOCKED ABILITIES:</p>
                               {weapon.abilities.filter(a => {
-                                const unlockIdx = SPIRIT_TIER_ORDER.indexOf(a.unlockTier || 'Common')
-                                const selIdx2 = SPIRIT_TIER_ORDER.indexOf(selectedTier)
+                                const unlockIdx = SPIRIT_TIER_ORDER.indexOf((a.unlockTier || 'Common') as SpiritTier)
+                                const selIdx2 = SPIRIT_TIER_ORDER.indexOf(selectedTier!)
                                 return unlockIdx <= selIdx2
                               }).map(a => (
                                 <p key={a.name} className="font-['Crimson_Pro'] text-xs text-stone-400">
