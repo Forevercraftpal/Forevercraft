@@ -21,6 +21,7 @@ const CraftForever = lazy(() => import('./pages/CraftForever'))
 const Guilds = lazy(() => import('./pages/Guilds'))
 const Lore = lazy(() => import('./pages/Lore'))
 const Codex = lazy(() => import('./pages/Codex'))
+const Guide = lazy(() => import('./pages/Guide'))
 
 function Loading() {
   return (
@@ -59,6 +60,7 @@ export default function App() {
             <Route path="/guilds" element={<Guilds />} />
             <Route path="/lore" element={<Lore />} />
             <Route path="/codex" element={<Codex />} />
+            <Route path="/guide" element={<Guide />} />
           </Routes>
         </main>
       </Suspense>

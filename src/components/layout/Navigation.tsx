@@ -45,6 +45,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: 'Codex', to: '/codex' },
+  { label: 'Guide', to: '/guide' },
 ]
 
 export default function Navigation() {
