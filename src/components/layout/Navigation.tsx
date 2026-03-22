@@ -62,8 +62,8 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-stone-950/95 backdrop-blur-sm border-b-2 border-yellow-800/80 shadow-lg shadow-black/30">
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5 no-underline shrink-0">
-          <span className="text-2xl">⛏</span>
+        <Link to="/" className="flex items-center gap-2 no-underline shrink-0">
+          <img src="/icon.png" alt="Forevercraft" className="w-10 h-10 rounded" style={{ imageRendering: 'pixelated' }} />
           <span className="font-['Press_Start_2P'] text-[0.7rem] md:text-[0.8rem] text-yellow-600 tracking-wider">
             FOREVERCRAFT
           </span>

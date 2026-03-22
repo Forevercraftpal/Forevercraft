@@ -41,7 +41,13 @@ export default function Home() {
       <div className="relative min-h-[90vh] flex items-center justify-center border-b border-yellow-900/40 bg-[radial-gradient(ellipse_at_top,_#2a1a0a_0%,_#0a0906_70%)] overflow-hidden">
         <ParticleField count={40} />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <p className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-700 tracking-[0.4em] mb-6 uppercase animate-[fade-in-up_0.8s_ease-out_both]">
+          <img
+            src="/icon.png"
+            alt="Forevercraft"
+            className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 rounded-lg shadow-[0_0_40px_rgba(200,140,40,0.3)] animate-[fade-in-up_0.8s_ease-out_both]"
+            style={{ imageRendering: 'pixelated' }}
+          />
+          <p className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-700 tracking-[0.4em] mb-6 uppercase animate-[fade-in-up_0.8s_ease-out_0.1s_both]">
             A Fantasy Minecraft Overhaul
           </p>
           <h1 className="font-['Press_Start_2P'] text-4xl md:text-6xl text-yellow-400 mb-6 leading-tight drop-shadow-[0_0_40px_rgba(200,140,40,0.5)] animate-[fade-in-up_0.8s_ease-out_0.2s_both]">
@@ -355,7 +361,7 @@ function Divider() {
   return (
     <div className="flex items-center gap-4 max-w-4xl mx-auto px-6">
       <div className="flex-1 h-px bg-yellow-900/30" />
-      <span className="text-yellow-800 text-xs">⛏</span>
+      <img src="/icon.png" alt="" className="w-5 h-5 rounded opacity-40" style={{ imageRendering: 'pixelated' }} />
       <div className="flex-1 h-px bg-yellow-900/30" />
     </div>
   )
