@@ -19,9 +19,12 @@ const SYSTEM_CARDS = [
 
 const DR_MILESTONES = [
   { dr: 0, title: 'Your journey begins', desc: 'Every block mined, every fish caught starts building your Dream Rate.' },
-  { dr: 5, title: 'Common structures unlock', desc: 'Villages, shipwrecks, and pillager outposts yield their secrets.' },
-  { dr: 10, title: 'Spirit Raids become available', desc: 'Enter the deepest floors of every structure. Face the bosses.' },
-  { dr: 15, title: 'Rare structures awaken', desc: 'Trial Chambers, Nether Fortresses, Ocean Monuments open their gates.' },
+  { dr: 1, title: 'Shipwrecks unlock', desc: 'The first treasures become available. Your dreams are stirring.' },
+  { dr: 3, title: 'Villages open', desc: 'Village quest boards, professions, and hidden bounty await.' },
+  { dr: 5, title: 'Ruins & portals unlock', desc: 'Ocean ruins, igloos, trail ruins, and ruined portals yield their secrets.' },
+  { dr: 7.5, title: 'Pyramids & dungeons', desc: 'Desert pyramids, jungle temples, mineshafts, and dungeons open their gates.' },
+  { dr: 10, title: 'Fortresses & raids', desc: 'Trial chambers, nether fortresses, ocean monuments. Spirit Raids become available.' },
+  { dr: 14, title: 'Strongholds & mansions', desc: 'The most dangerous overworld structures. Bastions, strongholds, woodland mansions.' },
   { dr: 17.5, title: 'Ancient City & End City', desc: 'The deepest, most dangerous structures. The rarest artifacts.' },
   { dr: 30, title: 'Night Terrors stalk you', desc: 'On new moon nights, a scaled mini-boss spawns near you. Glowing dark red.' },
   { dr: 50, title: 'Dream Transcendent', desc: 'Maximum Dream Rate. The world bends to your will. Everything drops.' },
@@ -182,9 +185,9 @@ export default function Home() {
         <FeatureSection title="Companions">
           <p className="text-stone-300">
             106 companions, each one different. A Moldwarp that makes you mine faster.
-            An Oracle that grants night vision. A Claude that detects ores through walls.
-            A Golden Dragon that wraps you in dream rate, resistance, and fire immunity
-            just by existing.
+            A Claude that detects ores through walls. A Butterfly whose Chaos Wings
+            grant +9 permanent Dreams at max level. A Golden Dragon that wraps you
+            in resistance and fire immunity just by existing.
           </p>
           <p className="mt-4 text-stone-400">
             Companions level from 1 to 100. Feed them, build a relationship, reach{' '}
@@ -230,7 +233,7 @@ export default function Home() {
               now, every single thing you do is quietly, gently, pulling you forward."
             </p>
             <p className="font-['Press_Start_2P'] text-[0.4rem] text-yellow-800 tracking-widest">
-              {STATS.totalLines.toLocaleString()} LINES OF CODE · {STATS.totalFiles.toLocaleString()} FILES · {STATS.totalSystems} SYSTEMS
+              BUILT WITH LOVE · ONE FUNCTION AT A TIME
             </p>
           </ScrollReveal>
         </div>

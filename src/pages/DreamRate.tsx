@@ -3,14 +3,29 @@ import ScrollReveal from '../components/effects/ScrollReveal'
 import Accordion from '../components/ui/Accordion'
 
 const PERMANENT = [
+  { name: 'Butterfly Pet at Level 100', value: '+9', max: 9 },
   { name: 'Mythical Armor Pieces', value: '+0.5 each (up to +2.5)', max: 2.5 },
+  { name: 'Artifact Constellations', value: '+0.25 each (10 sets, up to +2.5)', max: 2.5 },
   { name: 'Crystal of Dreams', value: '+1 (consumable, once per player)', max: 1 },
   { name: 'Rabbit\'s Dreaming Foot', value: '+1 (Killer Bunny drop)', max: 1 },
   { name: 'Crystalized Dream Droppings', value: '+1 (5% bat drop)', max: 1 },
   { name: 'Dream Inducing Mushroom', value: '+1 (0.25% mushroom block)', max: 1 },
   { name: 'Chorus Dreaming Fruit', value: '+1 (0.25% chorus plant)', max: 1 },
-  { name: 'Owl Pet at Level 100', value: '+5', max: 5 },
-  { name: 'Artifact Constellations', value: '+0.25 each (10 sets, up to +2.5)', max: 2.5 },
+  { name: 'Crumb of Dreams', value: '+1 (rare world drop)', max: 1 },
+  { name: 'Harvester\'s Dreamy Seed', value: '+1 (farming drop)', max: 1 },
+  { name: 'Tiller\'s Dream Petal', value: '+1 (crop harvest drop)', max: 1 },
+  { name: 'Miner\'s Slumbering Geode', value: '+1 (mining drop)', max: 1 },
+  { name: 'Fisherman\'s Dozing Lure', value: '+1 (fishing drop)', max: 1 },
+  { name: 'Prospector\'s Dream Ore', value: '+1 (prospect node drop)', max: 1 },
+  { name: 'Blacksmith\'s Dreaming Ember', value: '+1 (forging drop)', max: 1 },
+  { name: 'Collector\'s Dream Relic', value: '+1 (achievement reward)', max: 1 },
+  { name: 'Wanderer\'s Dream Map', value: '+1 (exploration reward)', max: 1 },
+  { name: 'Dreamweaver\'s Thread', value: '+1 (rare crafting drop)', max: 1 },
+  { name: 'Patron\'s Dream Essence', value: '+1 (patron kill drop)', max: 1 },
+  { name: 'Dreamer\'s Quill', value: '+1 (lore discovery reward)', max: 1 },
+  { name: 'Astral Codex Page', value: '+1 (codex completion)', max: 1 },
+  { name: 'Tome of Lucid Visions', value: '+1 (rare quest reward)', max: 1 },
+  { name: '13 Raid Boss DR Items', value: '+1 each (one per boss killed)', max: 13 },
 ]
 
 const TEMPORARY = [
@@ -30,10 +45,12 @@ const TEMPORARY = [
 ]
 
 const GATES = [
-  { tier: 'T1', structures: 'Villages, Shipwrecks, Outposts', dr: 5, color: '#9CA3AF' },
-  { tier: 'T2', structures: 'Desert Pyramid, Dungeon, Mineshaft', dr: 7.5, color: '#4ADE80' },
-  { tier: 'T3', structures: 'Trial Chambers, Fortress, Monument', dr: 10, color: '#60A5FA' },
-  { tier: 'T4', structures: 'Stronghold, Mansion, Bastion', dr: 14, color: '#C084FC' },
+  { tier: 'Ship', structures: 'Shipwrecks', dr: 1, color: '#78716C' },
+  { tier: 'Vlg', structures: 'Villages', dr: 3, color: '#9CA3AF' },
+  { tier: 'T1', structures: 'Ocean Ruins, Igloos, Trail Ruins, Ruined Portals', dr: 5, color: '#9CA3AF' },
+  { tier: 'T2', structures: 'Desert Pyramid, Jungle Pyramid, Mineshaft, Dungeon, Vaults', dr: 7.5, color: '#4ADE80' },
+  { tier: 'T3', structures: 'Trial Chambers, Nether Fortress, Ocean Monument, Ominous Vaults', dr: 10, color: '#60A5FA' },
+  { tier: 'T4', structures: 'Stronghold, Woodland Mansion, Bastion Remnant', dr: 14, color: '#C084FC' },
   { tier: 'T5', structures: 'Ancient City, End City', dr: 17.5, color: '#FB923C' },
 ]
 
@@ -81,7 +98,7 @@ export default function DreamRate() {
                   <span className="font-['Crimson_Pro'] text-stone-300">{s.name}</span>
                   <div className="flex items-center gap-3">
                     <div className="w-24 bg-stone-800 rounded-sm h-2 overflow-hidden">
-                      <div className="h-full bg-yellow-500 rounded-sm" style={{ width: `${(s.max / 15) * 100}%` }} />
+                      <div className="h-full bg-yellow-500 rounded-sm" style={{ width: `${Math.min((s.max / 13) * 100, 100)}%` }} />
                     </div>
                     <span className="font-['Press_Start_2P'] text-[0.35rem] text-yellow-500 w-16 text-right">
                       {s.value.split('(')[0].trim()}
@@ -127,7 +144,7 @@ export default function DreamRate() {
                 <div className="flex-1 bg-stone-800 rounded-sm h-3 overflow-hidden">
                   <div
                     className="h-full rounded-sm transition-all duration-1000"
-                    style={{ width: `${(g.dr / 20) * 100}%`, backgroundColor: g.color }}
+                    style={{ width: `${(g.dr / 18) * 100}%`, backgroundColor: g.color }}
                   />
                 </div>
                 <div className="font-['Press_Start_2P'] text-[0.4rem] text-yellow-500 w-12 text-right shrink-0">
