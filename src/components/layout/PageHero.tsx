@@ -20,7 +20,7 @@ export default function PageHero({ title, subtitle, badge, children, particles =
             {badge}
           </p>
         )}
-        <h1 className="font-['Press_Start_2P'] text-2xl md:text-4xl text-yellow-400 mb-4 leading-tight drop-shadow-[0_0_30px_rgba(200,140,40,0.4)]">
+        <h1 className="font-['Press_Start_2P'] text-2xl md:text-4xl text-metallic-gold mb-4 leading-tight">
           {title}
         </h1>
         {subtitle && (

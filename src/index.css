@@ -96,6 +96,70 @@ body {
               inset 0 0 12px rgba(59, 130, 246, 0.05);
 }
 
+/* ── Metallic Text ─────────────────────────────────── */
+
+.text-metallic-gold {
+  background: linear-gradient(
+    180deg,
+    #fef3c7 0%,
+    #f59e0b 15%,
+    #fbbf24 30%,
+    #fef3c7 45%,
+    #d97706 55%,
+    #b45309 65%,
+    #f59e0b 80%,
+    #fef3c7 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(202, 138, 4, 0.4));
+}
+
+.text-metallic-silver {
+  background: linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #94a3b8 15%,
+    #cbd5e1 30%,
+    #f1f5f9 45%,
+    #64748b 55%,
+    #475569 65%,
+    #94a3b8 80%,
+    #f1f5f9 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 15px rgba(148, 163, 184, 0.3));
+}
+
+.text-metallic-spirit {
+  background: linear-gradient(
+    180deg,
+    #e0f2fe 0%,
+    #7dd3fc 12%,
+    #38bdf8 25%,
+    #e0f2fe 38%,
+    #a78bfa 50%,
+    #c4b5fd 62%,
+    #7dd3fc 75%,
+    #e0f2fe 88%,
+    #38bdf8 100%
+  );
+  background-size: 100% 200%;
+  animation: metallic-shimmer 4s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.3));
+}
+
+@keyframes metallic-shimmer {
+  0%, 100% { background-position: 0% 0%; }
+  50% { background-position: 0% 100%; }
+}
+
 /* ── Animations ──────────────────────────────────────── */
 
 @keyframes mythical-pulse {

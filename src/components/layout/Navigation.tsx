@@ -64,7 +64,7 @@ export default function Navigation() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 no-underline shrink-0">
           <img src="/icon.png" alt="Forevercraft" className="w-10 h-auto" style={{ imageRendering: 'pixelated' }} />
-          <span className="font-['Press_Start_2P'] text-[0.7rem] md:text-[0.8rem] text-yellow-600 tracking-wider">
+          <span className="font-['Press_Start_2P'] text-[0.7rem] md:text-[0.8rem] text-metallic-gold tracking-wider">
             FOREVERCRAFT
           </span>
         </Link>
