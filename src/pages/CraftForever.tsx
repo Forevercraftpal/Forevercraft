@@ -47,7 +47,7 @@ export default function CraftForever() {
           <div className="text-center mb-12">
             <h2 className="font-['Press_Start_2P'] text-sm text-yellow-400 mb-3">SPIRIT TOOLS</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
-              Six legendary tools, each bound to a craft. Earn them through the Artisan Tome — a 100-part quest chain per tool.
+              Six legendary tools, each bound to a craft. A 5% drop from completing Master Trials — the ultimate test at Trade Trial tier 10.
             </p>
           </div>
         </ScrollReveal>
@@ -163,7 +163,7 @@ export default function CraftForever() {
             <div className="text-center rounded-lg border border-yellow-800/30 bg-yellow-900/10 p-5 max-w-xl mx-auto">
               <p className="font-['Press_Start_2P'] text-[0.45rem] text-yellow-600 mb-2">ARTISAN TOME</p>
               <p className="font-['Crimson_Pro'] text-sm text-stone-400">
-                Each Spirit Tool has its own 100-part quest chain within the Artisan Tome. Complete the full chain to fully awaken your tool and unlock its ultimate ability.
+                Once you earn a Spirit Tool, its Artisan Tome unlocks — a 100-part quest chain that levels and awakens the tool through crafting challenges. Complete the full chain to reach its ultimate form.
               </p>
             </div>
           </ScrollReveal>
