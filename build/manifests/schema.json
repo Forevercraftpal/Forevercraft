@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Forevercraft Module Manifest",
+  "type": "object",
+  "required": ["id", "name", "description", "tier", "category", "dependencies", "files", "init", "tick"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "tier": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "category": { "enum": ["foundation", "progression", "content", "world", "endgame"] },
+    "color": { "type": "string", "description": "Hex color for the graph node" },
+    "icon": { "type": "string", "description": "Emoji icon for the graph node" },
+    "fileCount": { "type": "integer", "description": "Approximate file count for size display" },
+    "fullPackOnly": { "type": "boolean", "default": false, "description": "If true, cannot be downloaded standalone" },
+    "standaloneCodexName": { "type": "string", "description": "If standalone, rename the codex to this" },
+
+    "dependencies": {
+      "type": "object",
+      "properties": {
+        "required": { "type": "array", "items": { "type": "string" } },
+        "optional": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "module": { "type": "string" },
+              "reason": { "type": "string" },
+              "behaviorWithout": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "files": {
+      "type": "object",
+      "properties": {
+        "functions": { "type": "array", "items": { "type": "string" } },
+        "advancements": { "type": "array", "items": { "type": "string" } },
+        "lootTables": { "type": "array", "items": { "type": "string" } },
+        "predicates": { "type": "array", "items": { "type": "string" } },
+        "itemModifiers": { "type": "array", "items": { "type": "string" } },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "recipes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "init": {
+      "type": "object",
+      "properties": {
+        "scoreboards": { "type": "array", "items": { "type": "string" } },
+        "constants": { "type": "array", "items": { "type": "string" } },
+        "loadCalls": { "type": "array", "items": { "type": "string" } },
+        "loadJsonEntries": { "type": "array", "items": { "type": "string" } },
+        "scheduledFunctions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "tick": {
+      "type": "object",
+      "properties": {
+        "tickJsonEntries": { "type": "array", "items": { "type": "string" } },
+        "fragmentFile": { "type": "string", "description": "Path to tick fragment .mcfunction" },
+        "disconnectRecovery": { "type": "array", "items": { "type": "string" } },
+        "deathInterception": {
+          "type": "object",
+          "properties": {
+            "order": { "type": "integer", "description": "Order in death chain (lower = earlier)" },
+            "lines": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "triggers": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "onJoin": {
+      "type": "object",
+      "properties": {
+        "triggerEnables": { "type": "array", "items": { "type": "string" } },
+        "scoreInits": { "type": "array", "items": { "type": "string" } },
+        "calls": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "crossReferences": {
+      "type": "object",
+      "properties": {
+        "callsTo": {
+          "type": "object",
+          "additionalProperties": { "type": "array", "items": { "type": "string" } }
+        },
+        "calledBy": {
+          "type": "object",
+          "additionalProperties": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+
+    "standaloneOverrides": {
+      "type": "object",
+      "description": "Overrides when this module is downloaded standalone (class system generic weapons, etc.)",
+      "properties": {
+        "stripTextures": { "type": "boolean" },
+        "genericWeaponNames": { "type": "boolean" },
+        "addToLootTables": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
