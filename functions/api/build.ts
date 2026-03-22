@@ -57,10 +57,21 @@ function getComboHash(modules: string[]): string {
   return modules.sort().join('+')
 }
 
-// Pre-built combo mapping (hash → R2 key or GitHub release URL)
-const PRE_BUILT: Record<string, string> = {
-  // These will be populated as we pre-build common combos
-  // 'core': '/builds/forevercraft-core.zip',
+// Pre-built combo mapping (sorted module hash → static file path)
+const PRE_BUILT: Record<string, { url: string, name: string }> = {
+  'core': { url: '/builds/core.zip', name: 'Forevercraft-Core' },
+  'cooking+core': { url: '/builds/cooking.zip', name: 'Forevercraft-Cooking' },
+  'core+housing': { url: '/builds/housing.zip', name: 'Forevercraft-Housing' },
+  'core+guilds': { url: '/builds/guilds.zip', name: 'Forevercraft-Guilds' },
+  'advantage+core': { url: '/builds/advantage.zip', name: 'Forevercraft-Advantage-Trees' },
+  'bestiary+core': { url: '/builds/bestiary.zip', name: 'Forevercraft-Bestiary' },
+  'core+lore': { url: '/builds/lore.zip', name: 'Forevercraft-Lore' },
+  'core+cosmetics': { url: '/builds/cosmetics.zip', name: 'Forevercraft-Cosmetics' },
+  'core+milestones': { url: '/builds/milestones.zip', name: 'Forevercraft-Milestones' },
+  'artifacts+classes+combat-instances+core+crates+dream-rate+mastery': { url: '/builds/combat-bundle.zip', name: 'Forevercraft-Combat-Bundle' },
+  'core+crates+guidestones+lore+professions+world-systems': { url: '/builds/exploration-bundle.zip', name: 'Forevercraft-Exploration-Bundle' },
+  'buddy-system+core+guilds+social': { url: '/builds/social-bundle.zip', name: 'Forevercraft-Social-Bundle' },
+  'advantage+artifacts+bestiary+black-market+buddy-system+classes+combat-instances+cooking+core+cosmetics+craftforever+crates+dream-rate+dreaming-realm+gacha+guidestones+guilds+housing+lore+mastery+milestones+professions+quests+social+spirit-weapons+world-systems': { url: '/builds/full-customizable.zip', name: 'Forevercraft-Full-Customizable' },
 }
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
@@ -93,10 +104,12 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       }))
 
     // Check for pre-built combo
-    if (PRE_BUILT[hash]) {
+    const preBuilt = PRE_BUILT[hash]
+    if (preBuilt) {
       return new Response(JSON.stringify({
         status: 'ready',
-        downloadUrl: PRE_BUILT[hash],
+        downloadUrl: preBuilt.url,
+        filename: preBuilt.name + '.zip',
         resolved,
         totalFiles,
         warnings,

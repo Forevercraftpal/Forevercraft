@@ -237,9 +237,14 @@ export default function Downloads() {
       const data = await response.json()
 
       if (data.status === 'ready' && data.downloadUrl) {
-        // Pre-built combo available — download directly
-        window.location.href = data.downloadUrl
-        setBuildResult({ status: 'success', message: 'Download started!' })
+        // Pre-built combo available — trigger download
+        const link = document.createElement('a')
+        link.href = data.downloadUrl
+        link.download = data.filename || 'Forevercraft-Custom.zip'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+        setBuildResult({ status: 'success', message: `✅ Downloading ${data.filename || 'Forevercraft'}! ${data.resolved?.length} modules, ~${data.totalFiles?.toLocaleString()} files.` })
       } else if (response.ok && data.status === 'not_cached') {
         // Custom combo not cached — show build command
         setBuildResult({
@@ -251,13 +256,39 @@ export default function Downloads() {
         setBuildResult({ status: 'error', message: data.error || 'Build failed' })
       }
     } catch {
-      // API not available — show local build instructions
-      const moduleList = [...resolved].join(',')
-      setBuildResult({
-        status: 'manual',
-        message: `Custom pack: ${resolved.size} modules, ~${totalFiles.toLocaleString()} files. Clone the repo and run:`,
-        downloadUrl: `python3 build/scripts/build.py --modules ${moduleList} --output ./Forevercraft`
-      })
+      // API not available — try direct pre-built download as fallback
+      const hash = [...resolved].sort().join('+')
+      const FALLBACK_BUILDS: Record<string, string> = {
+        'core': '/builds/core.zip',
+        'cooking+core': '/builds/cooking.zip',
+        'core+housing': '/builds/housing.zip',
+        'core+guilds': '/builds/guilds.zip',
+        'advantage+core': '/builds/advantage.zip',
+        'bestiary+core': '/builds/bestiary.zip',
+        'core+lore': '/builds/lore.zip',
+        'core+cosmetics': '/builds/cosmetics.zip',
+        'core+milestones': '/builds/milestones.zip',
+        'artifacts+classes+combat-instances+core+crates+dream-rate+mastery': '/builds/combat-bundle.zip',
+        'core+crates+guidestones+lore+professions+world-systems': '/builds/exploration-bundle.zip',
+        'buddy-system+core+guilds+social': '/builds/social-bundle.zip',
+      }
+
+      if (FALLBACK_BUILDS[hash]) {
+        const link = document.createElement('a')
+        link.href = FALLBACK_BUILDS[hash]
+        link.download = 'Forevercraft-Custom.zip'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+        setBuildResult({ status: 'success', message: `✅ Downloading pre-built pack! ${resolved.size} modules.` })
+      } else {
+        const moduleList = [...resolved].join(',')
+        setBuildResult({
+          status: 'manual',
+          message: `This exact combo isn't pre-built yet. Clone the repo and run locally:`,
+          downloadUrl: `python3 build/scripts/build.py --modules ${moduleList} --output ./Forevercraft`
+        })
+      }
     } finally {
       setBuilding(false)
     }
