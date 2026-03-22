@@ -4,20 +4,20 @@ import ScrollReveal from '../components/effects/ScrollReveal'
 import Spoiler from '../components/ui/Spoiler'
 
 const TREES = [
-  { name: 'Agility', column: 'adventure', icon: '💨', desc: '+4% movement speed per level. Leveled by blocks walked (4k to 100k).', prestige: ['Sprint Persist — speed lingers 3s after stopping', 'Double Jump — vertical boost while airborne (1s CD)', '...the wind forgets which way you were running.'] },
-  { name: 'Dexterity', column: 'adventure', icon: '🎯', desc: '+2% block reach per level. Leveled by blocks placed (4k to 100k).', prestige: ['Quick Draw — +15% attack speed permanently', 'Dual Wield — +25% attack speed when dual-wielding', '...some say the world stretches to meet your hand.'] },
-  { name: 'Evasion', column: 'adventure', icon: '🌀', desc: '+1% dodge chance per level. Leveled by times hit by mobs (400 to 10k).', prestige: ['Shadow Counter — teleport behind attacker on dodge', 'Vanishing Dodge — invisible 2s when dodging', '...the blade passes through you. Was anything there?'] },
-  { name: 'Stealth', column: 'adventure', icon: '👁️', desc: '+4% crouch speed per level. Leveled by blocks crouched (2k to 50k).', prestige: ['Shadow Cloak — invisible while sneaking', 'Backstab — +50% melee damage while sneaking', '...they checked the room. It was empty. It was not.'] },
-  { name: 'Vitality', column: 'adventure', icon: '❤️', desc: '+1 heart per level (from Lv.5). Leveled by fruits & veggies eaten (400 to 10k).', prestige: ['Vital Regen — passive regen below 50% HP', 'Death Save — auto-heal when critically low (5min CD)', '...some wounds close before they open.'] },
-  { name: 'Taskmaster', column: 'progression', icon: '📋', desc: '+4% quest XP and reputation per level. Leveled by quests completed (100 to 2.5k).', prestige: ['Quest Mastery — quest rewards +25%', 'Renowned — permanent +1 Dream Rate', '...the world begins offering what you haven\'t asked for.'] },
-  { name: 'Beastmaster', column: 'progression', icon: '🐺', desc: 'Tamed wolves deal more damage each level. Leveled by pets at max level (1 to 25).', prestige: ['Alpha Bond — companions deal +25% damage', 'Pack Tactics — wolves gain Strength I + Resistance I aura', '...they stopped listening to you. They started listening to something else.'] },
-  { name: 'Victorian', column: 'progression', icon: '🏪', desc: '+4% crate and patron XP per level. Leveled by mobs slain (2k to 50k).', prestige: ['XP Siphon — +1 XP passively every 16 seconds', 'Bloodthirst — +50% bonus XP from mob crates', '...crates fall from things that haven\'t died yet.'] },
-  { name: 'Culinary', column: 'progression', icon: '🍳', desc: '+10% Well-Fed duration per 5 levels. Leveled by meals cooked (50 to 1.25k).', prestige: ['Hearty Harvest — +10% ingredient drop chance', 'Double Portion — 15% chance to cook for free', '...the food never runs out. You stopped buying ingredients.'] },
-  { name: 'Fishing', column: 'gathering', icon: '🎣', desc: 'Multi-catch chance +0.625% per level. Leveled by fish caught (2k to 50k).', prestige: ['Water Net — passive fish trap, auto-catches hourly', 'Second Net — deploy a second net', '...the fish come to you now. In your sleep.'] },
-  { name: 'Mining', column: 'gathering', icon: '⛏️', desc: 'Miner\'s Surge haste chance, grows stronger each tier. Leveled by blocks mined (40k to 1M).', prestige: ['Ore Magnet — nearby ore drops pulled to you (8 blocks)', 'Ore Doubling — 5% chance to double ore drops', '...the stone whispers where the gold hides.'] },
-  { name: 'Gathering', column: 'gathering', icon: '🌿', desc: 'Extra crop drops +0.625% per level. Leveled by crops harvested (1k to 25k).', prestige: ['Green Thumb — crops auto-replant on harvest', 'Fertile Aura — 25% crop growth speed in 16-block radius', '...the seeds plant themselves now. You just watch.'] },
-  { name: 'Blacksmith', column: 'gathering', icon: '🔨', desc: 'Nearby furnaces smelt faster each level. Leveled by items smelted (2k to 50k).', prestige: ['Master Alloy — 2x smelt output chance + 50% less anvil XP', 'Efficient Fuel — 50% chance to not consume fuel', '...the fire burns hotter for you. No one knows why.'] },
-  { name: 'Explorer', column: 'gathering', icon: '🧭', desc: 'Structure crate cooldown reduced by 4% per level. Leveled by structure crates looted (100 to 2.5k).', prestige: ['Structure Sense — alert within 100 blocks of structures', 'Cartographer — locate nearest structure (50hr CD)', '...you close your eyes. The path is already there.'] },
+  { name: 'Agility', column: 'adventure', icon: '💨', desc: '+4% movement speed per level. Leveled by blocks walked (4k to 100k).', scaling: (lv: number) => `+${lv * 4}% movement speed`, prestige: ['Sprint Persist — speed lingers 3s after stopping', 'Double Jump — vertical boost while airborne (1s CD)', '...the wind forgets which way you were running.'] },
+  { name: 'Dexterity', column: 'adventure', icon: '🎯', desc: '+2% block reach per level. Leveled by blocks placed (4k to 100k).', scaling: (lv: number) => `+${lv * 2}% block reach`, prestige: ['Quick Draw — +15% attack speed permanently', 'Dual Wield — +25% attack speed when dual-wielding', '...some say the world stretches to meet your hand.'] },
+  { name: 'Evasion', column: 'adventure', icon: '🌀', desc: '+1% dodge chance per level. Leveled by times hit by mobs (400 to 10k).', scaling: (lv: number) => `+${lv}% dodge chance`, prestige: ['Shadow Counter — teleport behind attacker on dodge', 'Vanishing Dodge — invisible 2s when dodging', '...the blade passes through you. Was anything there?'] },
+  { name: 'Stealth', column: 'adventure', icon: '👁️', desc: '+4% crouch speed per level. Leveled by blocks crouched (2k to 50k).', scaling: (lv: number) => `+${lv * 4}% crouch speed`, prestige: ['Shadow Cloak — invisible while sneaking', 'Backstab — +50% melee damage while sneaking', '...they checked the room. It was empty. It was not.'] },
+  { name: 'Vitality', column: 'adventure', icon: '❤️', desc: '+1 heart per level (from Lv.5). Leveled by fruits & veggies eaten (400 to 10k).', scaling: (lv: number) => lv < 5 ? 'No bonus yet' : `+${lv - 4} hearts (+${(lv - 4) * 2} HP)`, prestige: ['Vital Regen — passive regen below 50% HP', 'Death Save — auto-heal when critically low (5min CD)', '...some wounds close before they open.'] },
+  { name: 'Taskmaster', column: 'progression', icon: '📋', desc: '+4% quest XP and reputation per level. Leveled by quests completed (100 to 2.5k).', scaling: (lv: number) => `+${lv * 4}% quest XP & rep`, prestige: ['Quest Mastery — quest rewards +25%', 'Renowned — permanent +1 Dream Rate', '...the world begins offering what you haven\'t asked for.'] },
+  { name: 'Beastmaster', column: 'progression', icon: '🐺', desc: 'Tamed wolves deal more damage each level. Leveled by pets at max level (1 to 25).', scaling: (lv: number) => `+${lv} wolf damage`, prestige: ['Alpha Bond — companions deal +25% damage', 'Pack Tactics — wolves gain Strength I + Resistance I aura', '...they stopped listening to you. They started listening to something else.'] },
+  { name: 'Victorian', column: 'progression', icon: '🏪', desc: '+4% crate and patron XP per level. Leveled by mobs slain (2k to 50k).', scaling: (lv: number) => `+${lv * 4}% crate & patron XP`, prestige: ['XP Siphon — +1 XP passively every 16 seconds', 'Bloodthirst — +50% bonus XP from mob crates', '...crates fall from things that haven\'t died yet.'] },
+  { name: 'Culinary', column: 'progression', icon: '🍳', desc: '+10% Well-Fed duration per 5 levels. Leveled by meals cooked (50 to 1.25k).', scaling: (lv: number) => `+${Math.floor(lv / 5) * 10}% Well-Fed duration`, prestige: ['Hearty Harvest — +10% ingredient drop chance', 'Double Portion — 15% chance to cook for free', '...the food never runs out. You stopped buying ingredients.'] },
+  { name: 'Fishing', column: 'gathering', icon: '🎣', desc: 'Multi-catch chance +0.625% per level. Leveled by fish caught (2k to 50k).', scaling: (lv: number) => `+${(lv * 0.625).toFixed(1)}% multi-catch`, prestige: ['Water Net — passive fish trap, auto-catches hourly', 'Second Net — deploy a second net', '...the fish come to you now. In your sleep.'] },
+  { name: 'Mining', column: 'gathering', icon: '⛏️', desc: 'Miner\'s Surge haste chance, grows stronger each tier. Leveled by blocks mined (40k to 1M).', scaling: (lv: number) => `Tier ${Math.min(Math.ceil(lv / 5), 5)} Miner's Surge`, prestige: ['Ore Magnet — nearby ore drops pulled to you (8 blocks)', 'Ore Doubling — 5% chance to double ore drops', '...the stone whispers where the gold hides.'] },
+  { name: 'Gathering', column: 'gathering', icon: '🌿', desc: 'Extra crop drops +0.625% per level. Leveled by crops harvested (1k to 25k).', scaling: (lv: number) => `+${(lv * 0.625).toFixed(1)}% extra crops`, prestige: ['Green Thumb — crops auto-replant on harvest', 'Fertile Aura — 25% crop growth speed in 16-block radius', '...the seeds plant themselves now. You just watch.'] },
+  { name: 'Blacksmith', column: 'gathering', icon: '🔨', desc: 'Nearby furnaces smelt faster each level. Leveled by items smelted (2k to 50k).', scaling: (lv: number) => `+${lv * 4}% smelt speed`, prestige: ['Master Alloy — 2x smelt output chance + 50% less anvil XP', 'Efficient Fuel — 50% chance to not consume fuel', '...the fire burns hotter for you. No one knows why.'] },
+  { name: 'Explorer', column: 'gathering', icon: '🧭', desc: 'Structure crate cooldown reduced by 4% per level. Leveled by structure crates looted (100 to 2.5k).', scaling: (lv: number) => `-${lv * 4}% crate cooldown`, prestige: ['Structure Sense — alert within 100 blocks of structures', 'Cartographer — locate nearest structure (50hr CD)', '...you close your eyes. The path is already there.'] },
 ]
 
 const COLUMNS = [
@@ -28,7 +28,10 @@ const COLUMNS = [
 
 export default function SkillTrees() {
   const [selectedTree, setSelectedTree] = useState<string | null>(null)
+  const [hoveredLevel, setHoveredLevel] = useState<number | null>(null)
+  const [lockedLevel, setLockedLevel] = useState<number | null>(null)
   const selected = TREES.find(t => t.name === selectedTree)
+  const activeLevel = lockedLevel ?? hoveredLevel
 
   return (
     <div className="bg-stone-950 text-stone-200 min-h-screen">
@@ -97,25 +100,51 @@ export default function SkillTrees() {
 
               <p className="font-['Crimson_Pro'] text-stone-300 text-lg mb-6">{selected.desc}</p>
 
-              {/* Visual Level Bar */}
+              {/* Interactive Level Bar */}
               <div className="mb-6">
                 <div className="flex gap-0.5">
-                  {Array.from({ length: 25 }, (_, i) => (
-                    <div
-                      key={i}
-                      className="flex-1 h-4 rounded-sm bg-yellow-600/30 hover:bg-yellow-500/60 transition-colors cursor-pointer relative group"
-                      style={{ opacity: 0.3 + (i / 25) * 0.7 }}
-                    >
-                      <div className="absolute -top-6 left-1/2 -translate-x-1/2 font-['Press_Start_2P'] text-[0.3rem] text-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                        LV {i + 1}
-                      </div>
-                    </div>
-                  ))}
+                  {Array.from({ length: 25 }, (_, i) => {
+                    const lv = i + 1
+                    const isActive = activeLevel !== null && lv <= activeLevel
+                    const isExact = activeLevel === lv
+                    return (
+                      <div
+                        key={i}
+                        onClick={() => setLockedLevel(lockedLevel === lv ? null : lv)}
+                        onMouseEnter={() => setHoveredLevel(lv)}
+                        onMouseLeave={() => setHoveredLevel(null)}
+                        className={`flex-1 h-5 rounded-sm transition-all duration-150 cursor-pointer relative ${
+                          isActive
+                            ? isExact
+                              ? 'bg-yellow-400 shadow-[0_0_8px_rgba(234,179,8,0.5)]'
+                              : 'bg-yellow-500/70'
+                            : 'bg-yellow-600/20 hover:bg-yellow-600/40'
+                        }`}
+                      />
+                    )
+                  })}
                 </div>
                 <div className="flex justify-between mt-1">
                   <span className="font-['Press_Start_2P'] text-[0.3rem] text-stone-600">LV 1</span>
                   <span className="font-['Press_Start_2P'] text-[0.3rem] text-stone-600">LV 25</span>
                 </div>
+
+                {/* Scaling display */}
+                {activeLevel !== null && selected && (
+                  <div className="mt-3 bg-stone-900/80 border border-yellow-800/40 rounded px-4 py-3 text-center transition-all">
+                    <span className="font-['Press_Start_2P'] text-[0.45rem] text-yellow-400">
+                      LV {activeLevel}
+                    </span>
+                    <span className="font-['Crimson_Pro'] text-stone-300 text-base ml-3">
+                      {selected.scaling(activeLevel)}
+                    </span>
+                    {lockedLevel && (
+                      <span className="font-['Press_Start_2P'] text-[0.3rem] text-stone-600 ml-3">
+                        (click to unlock)
+                      </span>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Prestige */}

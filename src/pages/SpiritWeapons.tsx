@@ -13,6 +13,7 @@ const TIER_EFFECTIVENESS: Record<string, string> = {
 
 export default function SpiritWeapons() {
   const [expandedId, setExpandedId] = useState<number | null>(null)
+  const [selectedTier, setSelectedTier] = useState<string | null>(null)
 
   return (
     <div className="bg-stone-950 text-stone-200 min-h-screen">
@@ -83,29 +84,82 @@ export default function SpiritWeapons() {
                     {/* Tier Progression Bar */}
                     <div>
                       <h3 className="font-['Press_Start_2P'] text-[0.45rem] text-yellow-600 tracking-widest mb-4">
-                        TIER PROGRESSION
+                        TIER PROGRESSION — click a tier to see what unlocks
                       </h3>
                       <div className="flex gap-1">
-                        {SPIRIT_TIER_ORDER.map((tier) => (
-                          <div key={tier} className="flex-1 text-center">
+                        {SPIRIT_TIER_ORDER.map((tier) => {
+                          const tierIdx = SPIRIT_TIER_ORDER.indexOf(tier)
+                          const selIdx = selectedTier ? SPIRIT_TIER_ORDER.indexOf(selectedTier) : -1
+                          const isActive = selectedTier !== null && tierIdx <= selIdx
+                          const isExact = selectedTier === tier
+                          return (
                             <div
-                              className={`h-2 rounded-sm mb-2 transition-all ${
-                                tier === 'Spirit' ? 'animate-[mythical-pulse_2s_ease-in-out_infinite]' : ''
-                              }`}
-                              style={{
-                                background: tier === 'Spirit'
-                                  ? 'linear-gradient(90deg, #C084FC, #FBBF24, #C084FC)'
-                                  : weapon.color,
-                                opacity: 0.3 + (SPIRIT_TIER_ORDER.indexOf(tier) / SPIRIT_TIER_ORDER.length) * 0.7,
-                              }}
-                            />
-                            <TierBadge tier={tier as SpiritTier} size="sm" />
-                            <p className="font-['Press_Start_2P'] text-[0.3rem] text-stone-500 mt-1">
-                              {TIER_EFFECTIVENESS[tier]}
-                            </p>
-                          </div>
-                        ))}
+                              key={tier}
+                              className="flex-1 text-center cursor-pointer"
+                              onClick={() => setSelectedTier(selectedTier === tier ? null : tier)}
+                            >
+                              <div
+                                className={`h-3 rounded-sm mb-2 transition-all duration-200 ${
+                                  tier === 'Spirit' && isExact ? 'animate-[mythical-pulse_2s_ease-in-out_infinite]' : ''
+                                } ${isExact ? 'shadow-[0_0_10px_rgba(234,179,8,0.5)]' : ''}`}
+                                style={{
+                                  background: isActive
+                                    ? tier === 'Spirit'
+                                      ? 'linear-gradient(90deg, #C084FC, #FBBF24, #C084FC)'
+                                      : weapon.color
+                                    : `${weapon.color}30`,
+                                  opacity: isActive ? 1 : 0.3,
+                                }}
+                              />
+                              <TierBadge tier={tier as SpiritTier} size="sm" />
+                              <p className={`font-['Press_Start_2P'] text-[0.3rem] mt-1 transition-colors ${isExact ? 'text-yellow-400' : 'text-stone-500'}`}>
+                                {TIER_EFFECTIVENESS[tier]}
+                              </p>
+                            </div>
+                          )
+                        })}
                       </div>
+
+                      {/* Selected tier detail */}
+                      {selectedTier && (
+                        <div className="mt-3 bg-stone-900/80 border border-yellow-800/40 rounded px-4 py-3">
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="font-['Press_Start_2P'] text-[0.45rem] text-yellow-400">
+                              {selectedTier.toUpperCase()} TIER
+                            </span>
+                            <span className="font-['Press_Start_2P'] text-[0.4rem] text-stone-400">
+                              {TIER_EFFECTIVENESS[selectedTier]} effectiveness
+                            </span>
+                          </div>
+                          <div className="font-['Crimson_Pro'] text-sm text-stone-300">
+                            {selectedTier === 'Common' && 'No abilities unlocked. Base weapon with 50% damage scaling.'}
+                            {selectedTier === 'Uncommon' && 'Passive effects begin to activate at 60% strength.'}
+                            {selectedTier === 'Rare' && 'First triggerable ability unlocks. 70% effectiveness.'}
+                            {selectedTier === 'Ornate' && '80% effectiveness. Passive effects strengthen noticeably.'}
+                            {selectedTier === 'Exquisite' && 'Second triggerable ability unlocks. 90% effectiveness.'}
+                            {selectedTier === 'Mythical' && 'Full 100% effectiveness. Twin process becomes available via Dream Storm Crystal.'}
+                            {selectedTier === 'Spirit' && 'Maximum power: 125% effectiveness. All abilities at full strength. Soulbound.'}
+                          </div>
+                          {weapon.abilities.filter(a => {
+                            const unlockIdx = SPIRIT_TIER_ORDER.indexOf(a.unlockTier || 'Common')
+                            const selIdx2 = SPIRIT_TIER_ORDER.indexOf(selectedTier)
+                            return unlockIdx <= selIdx2
+                          }).length > 0 && (
+                            <div className="mt-2 pt-2 border-t border-stone-800/50">
+                              <p className="font-['Press_Start_2P'] text-[0.3rem] text-green-500 mb-1">UNLOCKED ABILITIES:</p>
+                              {weapon.abilities.filter(a => {
+                                const unlockIdx = SPIRIT_TIER_ORDER.indexOf(a.unlockTier || 'Common')
+                                const selIdx2 = SPIRIT_TIER_ORDER.indexOf(selectedTier)
+                                return unlockIdx <= selIdx2
+                              }).map(a => (
+                                <p key={a.name} className="font-['Crimson_Pro'] text-xs text-stone-400">
+                                  <span className="text-stone-200">{a.name}</span> — {a.description}
+                                </p>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
 
                     {/* Abilities */}
