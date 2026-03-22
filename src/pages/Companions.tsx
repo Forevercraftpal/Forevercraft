@@ -5,6 +5,7 @@ import { TIER_CARD, TIER_GLOW, TIER_ORDER } from '../data/constants'
 import PageHero from '../components/layout/PageHero'
 import TierBadge from '../components/ui/TierBadge'
 import ScrollReveal from '../components/effects/ScrollReveal'
+import Spoiler from '../components/ui/Spoiler'
 
 export default function Companions() {
   const [search, setSearch] = useState('')
@@ -31,6 +32,38 @@ export default function Companions() {
         subtitle={`${companions.length} companions. Each one different. Level 1 to 100. Eternal Bond awaits.`}
         particleColor="rgba(74, 222, 128, 0.4)"
       />
+
+      {/* System Overview */}
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          {[
+            { title: 'Levels 1-100', desc: 'Every companion levels through experience, scaling their passive abilities from minimum to maximum.' },
+            { title: 'Relationship', desc: 'Bond levels from Neutral to Eternal Bond (4500+ RP). Higher bond = 1.5x ability multiplier.' },
+            { title: 'Combat', desc: 'Companions auto-attack nearby hostiles with tier-based stats. Kill counter tracks their prowess.' },
+            { title: 'Evolution', desc: '37 mythical companions can evolve into Ascended forms with unique abilities at max level + Eternal Bond.' },
+          ].map((item, i) => (
+            <ScrollReveal key={item.title} delay={i * 80}>
+              <div className="rounded border border-stone-800 bg-stone-900/40 p-4 h-full">
+                <h3 className="font-['Press_Start_2P'] text-[0.4rem] text-yellow-500 mb-2">{item.title}</h3>
+                <p className="font-['Crimson_Pro'] text-stone-400 text-sm">{item.desc}</p>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        <ScrollReveal delay={300}>
+          <Spoiler label="Companion system deep mechanics...">
+            <div className="space-y-3 font-['Crimson_Pro'] text-sm text-stone-400">
+              <p><span className="text-yellow-500 font-semibold">Home Biomes:</span> Each companion has preferred biomes. They're 10x more likely to appear in crates opened in their home biome (7% vs 0.7% elsewhere).</p>
+              <p><span className="text-yellow-500 font-semibold">Relationship States:</span> Lonely → Neutral → Content → Happy → Joyful → Overjoyed → Eternal Bond. Feed Pet Treats and adventure together to build RP.</p>
+              <p><span className="text-yellow-500 font-semibold">Shared Memories:</span> 20+ milestone events are recorded as shared adventures — boss kills, mythical finds, biome discoveries. 5 shared memories = XP bonus.</p>
+              <p><span className="text-yellow-500 font-semibold">Pet Duels:</span> Challenge another player's companion to a 30-second 1v1 with bossbar timer. Career stats and win streaks are tracked.</p>
+              <p><span className="text-yellow-500 font-semibold">Rival Pets:</span> Some companions have natural rivalries that affect interactions.</p>
+              <p><span className="text-yellow-500 font-semibold">Companion Catalogue:</span> A floating interactive catalogue you can open anywhere to browse your entire roster.</p>
+            </div>
+          </Spoiler>
+        </ScrollReveal>
+      </div>
 
       <div className="max-w-7xl mx-auto px-6 py-10">
         {/* Filters */}
