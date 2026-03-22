@@ -24,7 +24,7 @@ export default function Classes() {
             <p>
               Classes define your combat identity. Each class transforms how you fight —
               changing your weapon type, granting unique abilities, and opening a path to
-              one of the 14 Spirit Weapons. Some classes have subclasses that shift the playstyle further.
+              one of the 14 Spirit Weapons. Class weapons are available from the very start of your journey.
             </p>
           </div>
         </ScrollReveal>
@@ -75,7 +75,7 @@ export default function Classes() {
                  cls.weaponType.includes('Mace') ? '🔨' :
                  cls.weaponType.includes('Shield') ? '🛡️' :
                  cls.weaponType.includes('Staff') ? '🪄' :
-                 cls.weaponType.includes('Sword') ? '⚔️' : '⚔️'}
+                 cls.weaponType.includes('Sword') ? '⚔️' : cls.isSecret ? '❓' : '⚔️'}
               </div>
               <p className="font-['Press_Start_2P'] text-[0.38rem] text-stone-300 leading-relaxed">
                 {cls.name.toUpperCase()}
@@ -118,21 +118,7 @@ export default function Classes() {
                     {selected.coreMechanic}
                   </p>
 
-                  {/* Subclass links */}
-                  {(selected.subclass || selected.subclassOf) && (
-                    <div className="mb-6 bg-stone-900/60 rounded border border-stone-800/50 p-3">
-                      {selected.subclassOf && (
-                        <p className="font-['Crimson_Pro'] text-stone-400 text-sm">
-                          Subclass of <span className="text-yellow-500 font-semibold">{selected.subclassOf}</span>
-                        </p>
-                      )}
-                      {selected.subclass && (
-                        <p className="font-['Crimson_Pro'] text-stone-400 text-sm">
-                          Has subclass: <span className="text-yellow-500 font-semibold">{selected.subclass}</span>
-                        </p>
-                      )}
-                    </div>
-                  )}
+                  {/* Class note */}
 
                   {/* Strengths / Weaknesses */}
                   <div className="grid md:grid-cols-2 gap-4 mb-6">

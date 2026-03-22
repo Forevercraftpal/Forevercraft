@@ -37,7 +37,7 @@ const PHASES = [
       'Visit custom profession villagers — Artificer, Expeditionist, Bartender, etc.',
       'Open every crate you find. Companions can appear in any crate.',
       'Feed companions Pet Treats to build your relationship bond.',
-      'Start the Advantage Tree system — open it with /trigger ec.advantage set 1.',
+      'Start the Advantage Tree system — open it through the Forevercraft Codex.',
       'Invest first skill points into a gathering tree (Mining, Fishing, or Gathering).',
     ],
     tips: [
@@ -105,7 +105,7 @@ const PHASES = [
       'Farm Ancient Cities and End Cities for the highest-tier loot.',
       'Collect all 7 mythical armor set pieces for one set (+0.5 DR each = +2.5 total).',
       'Complete all 10 Artifact Constellations (+2.5 total permanent DR).',
-      'Level Butterfly companion to 100 for up to +3.0 permanent Dream Rate.',
+      'Level Butterfly companion to 100 for up to +9.0 permanent Dream Rate.',
       'Max and prestige your primary skill trees (3 prestige cycles each).',
       'Start cooking advanced meals for combat buffs.',
       'Explore the Black Market for rare deals.',
@@ -117,7 +117,7 @@ const PHASES = [
       'Dream Echoes mark where mythical items were found — clickable for details.',
       'Night Terrors spawn near you at DR 30+ on New Moon nights. Kill for rewards.',
     ],
-    spoiler: 'At DR 35, you hit 2.0x loot multiplier — every crate rolls twice. This is where mythical drops become realistic. Focus on: all 10 Constellations (+2.5), a full mythical armor set (+2.5), Butterfly at 100 (+3.0), plus as many permanent consumables as you can find. The 13 raid boss DR items (+1 each = +13 total) are a massive source if you can clear all raids. The 19 world drop consumables (+1 each) add up quickly too.',
+    spoiler: 'At DR 35, you hit 2.0x loot multiplier — every crate rolls twice. This is where mythical drops become realistic. Focus on: all 10 Constellations (+2.5), a full mythical armor set (+2.5), Butterfly at 100 (+9.0), plus as many permanent consumables as you can find. The 13 raid boss DR items (+1 each = +13 total) are a massive source if you can clear all raids. The 19 world drop consumables (+1 each) add up quickly too.',
   },
   {
     phase: 6,

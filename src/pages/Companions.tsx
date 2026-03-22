@@ -39,7 +39,7 @@ export default function Companions() {
           {[
             { title: 'Levels 1-100', desc: 'Every companion levels through experience, scaling their passive abilities from minimum to maximum.' },
             { title: 'Relationship', desc: 'Bond levels from Neutral to Eternal Bond (4500+ RP). Higher bond = 1.5x ability multiplier.' },
-            { title: 'Combat', desc: 'Companions auto-attack nearby hostiles with tier-based stats. Kill counter tracks their prowess.' },
+            { title: 'Combat', desc: 'Use the whistle to command your companion to attack nearby hostiles. Kill counter tracks their prowess.' },
             { title: 'Evolution', desc: '37 mythical companions can evolve into Ascended forms with unique abilities at max level + Eternal Bond.' },
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 80}>

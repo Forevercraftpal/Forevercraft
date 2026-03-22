@@ -11,6 +11,27 @@ html {
 body {
   background: #0a0906;
   image-rendering: pixelated;
+  animation: bg-rainbow 120s ease-in-out infinite;
+}
+
+@keyframes bg-rainbow {
+  0%, 85%, 100% { background-color: #0a0906; }     /* native amber-black — rest 10s */
+  8.5%  { background-color: #0a0906; }               /* hold native */
+  12%   { background-color: #0d0608; }               /* deep rose */
+  20%   { background-color: #0d0608; }
+  22%   { background-color: #0a060d; }               /* deep violet */
+  30%   { background-color: #0a060d; }
+  32%   { background-color: #06080d; }               /* deep blue */
+  40%   { background-color: #06080d; }
+  42%   { background-color: #060d0a; }               /* deep teal */
+  50%   { background-color: #060d0a; }
+  52%   { background-color: #080d06; }               /* deep green */
+  60%   { background-color: #080d06; }
+  62%   { background-color: #0d0d06; }               /* deep yellow */
+  70%   { background-color: #0d0d06; }
+  72%   { background-color: #0d0a06; }               /* deep orange */
+  80%   { background-color: #0d0a06; }
+  83%   { background-color: #0a0906; }               /* back to native */
 }
 
 ::selection {

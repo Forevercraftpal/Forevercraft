@@ -2,24 +2,24 @@ import PageHero from '../components/layout/PageHero'
 import ScrollReveal from '../components/effects/ScrollReveal'
 
 const GUILD_FEATURES = [
-  { name: 'Guild Stone', description: 'Place a Guild Stone to establish your guild\'s headquarters. It serves as a waypoint and meeting hall.' },
-  { name: 'Charter System', description: 'Write and ratify a guild charter. Set rules, ranks, and permissions for your members.' },
-  { name: 'Guild Management', description: 'Promote officers, manage ranks, set permissions, and organize your roster.' },
+  { name: 'Guild Stone', description: 'Place a Guild Stone to establish your guild\'s headquarters. Warp to it from anywhere.' },
+  { name: 'Guild Creation', description: 'Sign a guild charter to name your guild. Pay 64 emeralds to found it.' },
+  { name: 'Members', description: 'Invite players to join your guild or kick members who aren\'t a good fit.' },
   { name: 'Guild Expeditions', description: 'Launch coordinated group missions for exclusive guild-only rewards and loot.' },
-  { name: 'Diplomacy', description: 'Form alliances or rivalries with other guilds. Shared buffs with allies, competition with rivals.' },
+  { name: 'Rank Buffs', description: '7-tier rank system with passive guild-wide buffs: XP, luck, speed, and armor bonuses.' },
   { name: 'Kick Voting', description: 'Democratic removal system. Members vote to remove problematic players — no single leader abuse.' },
 ]
 
 const COMBO_ABILITIES = [
-  { name: 'Pack Tactics', players: 2, description: 'Nearby party members deal +10% damage when attacking the same target.', color: 'text-red-400' },
-  { name: 'Shield Wall', players: 2, description: 'Adjacent party members share damage reduction. Stronger with more participants.', color: 'text-blue-400' },
-  { name: 'Field Medic', players: 2, description: 'Healing effects splash to nearby party members at 50% effectiveness.', color: 'text-green-400' },
-  { name: 'Forge Bond', players: 2, description: 'Crafting near party members grants bonus XP and increased quality chance.', color: 'text-orange-400' },
-  { name: 'Marked for Death', players: 3, description: 'Target an enemy. All party members deal +25% damage to marked target.', color: 'text-purple-400' },
-  { name: 'Blitz', players: 3, description: 'All party members gain +30% movement speed for 10 seconds. Shared cooldown.', color: 'text-yellow-400' },
-  { name: 'Rally Cry', players: 3, description: 'Restore health and clear negative effects for all party members in range.', color: 'text-cyan-400' },
-  { name: 'Shared Fortunes', players: 2, description: 'Loot luck is averaged across the party — everyone benefits from the luckiest member.', color: 'text-amber-400' },
-  { name: 'Tidal Network', players: 4, description: 'Full party combo. All buffs are amplified by 50% and cooldowns reduced by 25%.', color: 'text-indigo-400' },
+  { name: 'Shield Wall', players: 2, description: 'Vitality 15+ & Evasion 10+. Shield block grants Evasion members guaranteed dodge for 5s. (45s CD)', color: 'text-blue-400' },
+  { name: 'Field Medic', players: 2, description: 'Vitality 15+ & Taskmaster 10+. Eating golden food heals Taskmaster members 4 hearts + Regen I. (60s CD)', color: 'text-green-400' },
+  { name: 'Marked for Death', players: 2, description: 'Stealth 10+ & Victorian 10+. Sneak near a hostile to mark it with Glowing — Victorian members deal +25% for 10s. (30s CD)', color: 'text-purple-400' },
+  { name: 'Blitz', players: 2, description: 'Agility 10+ & Victorian 10+. Sprinting grants Haste I to Victorian members for 6s. (20s CD)', color: 'text-yellow-400' },
+  { name: 'Forge Bond', players: 2, description: 'Blacksmith 15+ & Dexterity 10+. Using a smithing table grants both members +50 Advantage XP. (30s CD)', color: 'text-orange-400' },
+  { name: 'Pack Tactics', players: 2, description: 'Both Beastmaster 15+. Passive: all pets gain ability boost when near another Beastmaster.', color: 'text-red-400' },
+  { name: 'Tidal Network', players: 2, description: 'Fishing 10+ & Explorer 10+. Passive: Fisher gets +1 Luck of the Sea, Explorer gets DR bonus.', color: 'text-indigo-400' },
+  { name: 'Rally Cry', players: 2, description: 'Explorer 15+. First-time crate open gives all party members within 48 blocks +2 Dream Rate for 5 min.', color: 'text-cyan-400' },
+  { name: 'Shared Fortunes', players: 2, description: 'Mining 10+ & Gathering 10+. Mining/gathering procs give 20% bonus chance to the complementary tree member. (5s CD)', color: 'text-amber-400' },
 ]
 
 const DUEL_FEATURES = [
@@ -30,13 +30,13 @@ const DUEL_FEATURES = [
 ]
 
 const BUDDY_TIERS = [
-  { tier: 1, name: 'Companion', color: 'text-stone-400' },
-  { tier: 2, name: 'Friend', color: 'text-green-400' },
-  { tier: 3, name: 'Partner', color: 'text-blue-400' },
-  { tier: 4, name: 'Soulmate', color: 'text-purple-400' },
-  { tier: 5, name: 'Bonded', color: 'text-orange-400' },
-  { tier: 6, name: 'Eternal', color: 'text-red-400' },
-  { tier: 7, name: 'Transcendent', color: 'text-yellow-400' },
+  { tier: 0, name: 'Acquaintance', color: 'text-stone-500' },
+  { tier: 1, name: 'Familiar', color: 'text-stone-400' },
+  { tier: 2, name: 'Trusted', color: 'text-green-400' },
+  { tier: 3, name: 'Devoted', color: 'text-blue-400' },
+  { tier: 4, name: 'Eternal', color: 'text-purple-400' },
+  { tier: 5, name: 'Mythic Bond', color: 'text-orange-400' },
+  { tier: 6, name: 'Spiritbound', color: 'text-yellow-400' },
 ]
 
 const FRIENDSHIP_LEVELS = [
@@ -181,6 +181,41 @@ export default function Guilds() {
                 </div>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Family & Marriage */}
+      <section className="border-t border-yellow-900/20">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <h2 className="font-['Press_Start_2P'] text-sm text-yellow-400 mb-3">FAMILY & MARRIAGE</h2>
+              <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
+                Reach Best Friend status (90+ hearts) and you can propose marriage. Married players share perks and build a family together.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <ScrollReveal delay={0}>
+              <div className="rounded-lg border border-pink-900/30 bg-pink-950/10 p-5 text-center h-full">
+                <p className="font-['Press_Start_2P'] text-[0.5rem] text-pink-400 mb-2">PROPOSAL</p>
+                <p className="font-['Crimson_Pro'] text-sm text-stone-400">Requires Best Friend status. Both players must be online to accept.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={80}>
+              <div className="rounded-lg border border-pink-900/30 bg-pink-950/10 p-5 text-center h-full">
+                <p className="font-['Press_Start_2P'] text-[0.5rem] text-pink-400 mb-2">SHARED PERKS</p>
+                <p className="font-['Crimson_Pro'] text-sm text-stone-400">Married players gain shared bonuses and can build a family together.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={160}>
+              <div className="rounded-lg border border-pink-900/30 bg-pink-950/10 p-5 text-center h-full">
+                <p className="font-['Press_Start_2P'] text-[0.5rem] text-pink-400 mb-2">DIVORCE</p>
+                <p className="font-['Crimson_Pro'] text-sm text-stone-400">If things don't work out... that's available too. No judgment.</p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>

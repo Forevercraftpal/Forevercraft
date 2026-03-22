@@ -202,8 +202,9 @@ export default function Home() {
         <FeatureSection title="The World">
           <p className="text-stone-300">
             Days last three times longer than vanilla. Four seasons cycle across a 64-day year,
-            each bringing its own resource pack. Five World Events sweep across the land —
-            a Starfall, The Dreaming, an Abyssal Tremor, an Aurora Bloom, a Rift Echo.
+            each bringing its own resource pack. World Events sweep across the land —
+            Starfall Convergence, The Dreaming, Abyssal Tremor, Aurora Bloom, Rift Echo, and the
+            Dimensional Rift — each with unique conditions and atmospheric warnings.
           </p>
           <p className="mt-4 text-stone-400">
             Night Terrors stalk players past Dream Rate 30. On new moon nights, a scaled mini-boss
@@ -229,8 +230,7 @@ export default function Home() {
           <p className="text-stone-300">
             Seven sources feed one unified crate engine: mining, fishing, harvesting, mob kills,
             structures, quests, and achievements. Each crate spawns as an animated barrel with
-            tier-colored particles — Common takes 0.5 seconds, Mythical takes 1.5 seconds of
-            escalating anticipation.
+            tier-colored particles — the higher the tier, the longer the anticipation builds.
           </p>
           <p className="mt-4 text-stone-400">
             Structure crates are per-player with 50-hour refresh timers. 25 biome-specific
@@ -249,8 +249,10 @@ export default function Home() {
           </p>
           <p className="mt-4 text-stone-400">
             Villages have their own specialization system with upgrade paths. Build reputation
-            from Stranger to Legend. Higher rep means better quests, better prices, and Iron Golem
-            allegiance. Betray a village and face exile.
+            from Stranger to Legend. Higher rep means better rewards, better prices, and Iron Golem
+            allegiance. Place a Book and Quill in a village lectern to spawn the quest book — each
+            village has its own. Betray a village and face exile. Above the quest book floats the
+            Artifact Bounty Board and the Black Market barrel.
           </p>
         </FeatureSection>
 
@@ -273,8 +275,9 @@ export default function Home() {
         <FeatureSection title="Exploration & Discovery">
           <p className="text-stone-300">
             894 discoverable lore fragments forming 162 sets across 4 dimensions. A Lore Collection
-            Map shows your progress. 767 custom achievements across 7 tabs with meta-goals reaching
-            Legend of Evercraft at 700. A personal journal tracks every region you've explored.
+            Map shows your progress — accessible through the Forevercraft Codex. Personal milestones
+            replace the vanilla achievement system entirely, tracking your journey from first steps to
+            Legend of Evercraft. A personal journal tracks every region you've explored.
           </p>
           <p className="mt-4 text-stone-400">
             Forage nodes and prospect nodes scatter across the world for hand-gathering resources.
@@ -290,8 +293,8 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">
           <ScrollReveal>
             <p className="font-['Crimson_Pro'] italic text-2xl text-stone-400 leading-relaxed mb-8">
-              "Somewhere in the middle of all of it, you're just playing Minecraft — except
-              now, every single thing you do is quietly, gently, pulling you forward."
+              "Take your time. The committed win the race to glory. The quick fall into the traps
+              the world has laid before you."
             </p>
             <p className="font-['Press_Start_2P'] text-[0.4rem] text-yellow-800 tracking-widest">
               BUILT WITH LOVE · ONE FUNCTION AT A TIME

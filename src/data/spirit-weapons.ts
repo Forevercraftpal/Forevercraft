@@ -140,7 +140,7 @@ export const spiritWeapons: SpiritWeapon[] = [
     metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 health healed in combat', 'Cleanse 5,000 negative effects', 'Keep all party members alive through a full raid', 'Heal companion to Eternal Bond'],
   },
   {
-    id: 11, name: 'Sabrewing', className: 'Archer', weaponType: 'Bow',
+    id: 11, name: 'Soulstring', className: 'Archer', weaponType: 'Bow',
     bossName: 'The Deepcrawler', structure: 'Mineshaft',
     hasTwin: false,
     lore: 'A bow that sings when drawn. Its arrows find the heart of darkness in every cavern.',

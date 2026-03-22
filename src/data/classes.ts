@@ -23,7 +23,7 @@ export const classes: GameClass[] = [
       { name: 'Bloodlust', description: 'Each kill extends Rage by 3 seconds' },
       { name: 'Tree Feller', description: 'Small chance to fell entire tree with one swing' },
     ],
-    subclass: 'Dancer', spiritWeapon: 'Firebrand', raidBoss: 'The Gilded Tyrant', color: '#DC2626',
+    spiritWeapon: 'Firebrand', raidBoss: 'The Gilded Tyrant', color: '#DC2626',
   },
   {
     id: 'dancer', name: 'Dancer', archetype: 'Agile DPS', weaponType: 'Fans / Gauntlets',
@@ -35,7 +35,7 @@ export const classes: GameClass[] = [
       { name: 'Evasion Dance', description: '3s of complete damage immunity' },
       { name: 'Grace', description: 'Permanent Haste II and +15% dodge chance' },
     ],
-    subclassOf: 'Berserker', spiritWeapon: 'Zephyr Edge', raidBoss: 'The Arbiter', color: '#EC4899',
+    spiritWeapon: 'Zephyr Edge', raidBoss: 'The Arbiter', color: '#EC4899',
   },
   {
     id: 'archer', name: 'Archer', archetype: 'Ranged DPS', weaponType: 'Bow',
@@ -47,7 +47,7 @@ export const classes: GameClass[] = [
       { name: 'Disengage', description: 'Launch backward 10 blocks + 3s Invisibility' },
       { name: 'Piercing Song', description: '+3 arrow damage + Speed I buff on hit' },
     ],
-    subclass: 'Hunter', spiritWeapon: 'Sabrewing', raidBoss: 'The Deepcrawler', color: '#22C55E',
+    spiritWeapon: 'Soulstring', raidBoss: 'The Deepcrawler', color: '#22C55E',
   },
   {
     id: 'hunter', name: 'Hunter', archetype: 'Precision Ranged', weaponType: 'Crossbow',
@@ -59,7 +59,7 @@ export const classes: GameClass[] = [
       { name: 'Precision Shot', description: 'Charged crossbow bolts pierce through enemies' },
       { name: 'Fade', description: 'Invisibility for 5s after a kill' },
     ],
-    subclassOf: 'Archer', spiritWeapon: 'Voidpiercer', raidBoss: 'The Void Architect', color: '#16A34A',
+    spiritWeapon: 'Voidpiercer', raidBoss: 'The Void Architect', color: '#16A34A',
   },
   {
     id: 'beastlord', name: 'Beastlord', archetype: 'Pet Commander', weaponType: 'Spear',
@@ -83,7 +83,7 @@ export const classes: GameClass[] = [
       { name: 'Riptide Mastery', description: 'Riptide works without rain' },
       { name: 'Depth Pressure', description: '+50% damage below sea level' },
     ],
-    subclass: 'Hoplite', spiritWeapon: 'Ellegaard\'s Trident', raidBoss: 'The Leviathan', color: '#0EA5E9',
+    spiritWeapon: 'Ellegaard\'s Trident', raidBoss: 'The Leviathan', color: '#0EA5E9',
   },
   {
     id: 'hoplite', name: 'Hoplite', archetype: 'Defensive Hybrid', weaponType: 'Trident + Shield',
@@ -95,7 +95,7 @@ export const classes: GameClass[] = [
       { name: 'Counter Strike', description: 'After blocking: next attack deals 3x damage' },
       { name: 'Shield Advance', description: 'Push all mobs in path while walking forward' },
     ],
-    subclassOf: 'Javelin', spiritWeapon: 'Royal Trident', raidBoss: 'The Iron Phalanx', color: '#0284C7',
+    spiritWeapon: 'Royal Trident', raidBoss: 'The Iron Phalanx', color: '#0284C7',
   },
   {
     id: 'knight', name: 'Knight', archetype: 'Balanced Fighter', weaponType: 'Sword + Shield',
@@ -119,7 +119,7 @@ export const classes: GameClass[] = [
       { name: 'Earthquake', description: 'Ground pound: launch + stun all nearby mobs' },
       { name: 'Combo Master', description: 'Each consecutive hit adds +10% damage, stacking' },
     ],
-    subclass: 'Sentinel', spiritWeapon: 'Pharaoh\'s Fist', raidBoss: 'The Eternal Pharaoh', color: '#F59E0B',
+    spiritWeapon: 'Pharaoh\'s Fist', raidBoss: 'The Eternal Pharaoh', color: '#F59E0B',
   },
   {
     id: 'sentinel', name: 'Sentinel', archetype: 'Heavy Tank', weaponType: 'Mace + Shield',
@@ -131,7 +131,7 @@ export const classes: GameClass[] = [
       { name: 'Consecration', description: 'AoE holy ground: heals allies, damages undead' },
       { name: 'Flame Guard', description: 'Attackers take fire damage when you block' },
     ],
-    subclassOf: 'Striker', spiritWeapon: 'Ashcrown Mace', raidBoss: 'The Ashen Lord', color: '#6B7280',
+    spiritWeapon: 'Ashcrown Mace', raidBoss: 'The Ashen Lord', color: '#6B7280',
   },
   {
     id: 'tank', name: 'Tank', archetype: 'Pure Tank', weaponType: 'Shield (Mainhand)',

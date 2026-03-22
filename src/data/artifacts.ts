@@ -230,7 +230,7 @@ export const artifacts: Artifact[] = [
   { id: 224, name: 'Mjolnir', tier: 'Exquisite', type: 'Weapon',  subtype: 'Trident', description: '', abilities: [] },
   { id: 225, name: 'Order of the Stone Gauntlet', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
   { id: 226, name: 'Prismarine Gauntlet', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
-  { id: 227, name: 'Sabrewing', tier: 'Exquisite', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
+  { id: 227, name: 'Soulstring', tier: 'Exquisite', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
   { id: 228, name: 'The Soul Mirror', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },
   { id: 229, name: 'Stormlander', tier: 'Exquisite', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
   { id: 230, name: 'Truthseeker', tier: 'Exquisite', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },

@@ -4,20 +4,20 @@ import ScrollReveal from '../components/effects/ScrollReveal'
 import Spoiler from '../components/ui/Spoiler'
 
 const TREES = [
-  { name: 'Agility', column: 'adventure', icon: '💨', desc: '+4% movement speed per level. Leveled by blocks walked (4k to 100k).', prestige: 'Phantom Sprint — brief intangibility while sprinting' },
-  { name: 'Dexterity', column: 'adventure', icon: '🎯', desc: '+2% block reach per level. Leveled by blocks placed (4k to 100k).', prestige: 'Perfect Strike — 10% chance for unblockable hits' },
-  { name: 'Evasion', column: 'adventure', icon: '🌀', desc: '+1% dodge chance per level. Leveled by times hit by mobs (400 to 10k).', prestige: 'Afterimage — dodged attacks leave a decoy for 2s' },
-  { name: 'Stealth', column: 'adventure', icon: '👁️', desc: '+4% crouch speed per level. Leveled by blocks crouched (2k to 50k).', prestige: 'Shadow Meld — become fully invisible while crouching in darkness' },
-  { name: 'Vitality', column: 'adventure', icon: '❤️', desc: '+1 heart per level (from Lv.5). Leveled by fruits & veggies eaten (400 to 10k).', prestige: 'Second Wind — auto-heal 4 hearts when dropping below 20% HP' },
-  { name: 'Taskmaster', column: 'progression', icon: '📋', desc: '+4% quest XP and reputation per level. Leveled by quests completed (100 to 2.5k).', prestige: 'Double Down — 15% chance for double quest rewards' },
-  { name: 'Beastmaster', column: 'progression', icon: '🐺', desc: 'Tamed wolves deal more damage each level. Leveled by pets at max level (1 to 25).', prestige: 'Alpha Call — summon spectral wolves to fight for 30s' },
-  { name: 'Victorian', column: 'progression', icon: '🏪', desc: '+4% crate and patron XP per level. Leveled by mobs slain (2k to 50k).', prestige: 'Merchant Prince — unlock exclusive legendary trades' },
-  { name: 'Culinary', column: 'progression', icon: '🍳', desc: '+10% Well-Fed duration per 5 levels. Leveled by meals cooked (50 to 1.25k).', prestige: 'Chef\'s Kiss — meals grant a random bonus buff' },
-  { name: 'Fishing', column: 'gathering', icon: '🎣', desc: 'Multi-catch chance +0.625% per level. Leveled by fish caught (2k to 50k).', prestige: 'Master Angler — exclusive legendary fish pool unlocked' },
-  { name: 'Mining', column: 'gathering', icon: '⛏️', desc: 'Miner\'s Surge haste chance, grows stronger each tier. Leveled by blocks mined (40k to 1M).', prestige: 'Ore Sense — nearby ores glow through walls briefly' },
-  { name: 'Gathering', column: 'gathering', icon: '🌿', desc: 'Extra crop drops +0.625% per level. Leveled by crops harvested (1k to 25k).', prestige: 'Nature\'s Bounty — double crop/forage drops 10% of time' },
-  { name: 'Blacksmith', column: 'gathering', icon: '🔨', desc: 'Nearby furnaces smelt faster each level. Leveled by items smelted (2k to 50k).', prestige: 'Master Forge — 5% chance to duplicate smelted items' },
-  { name: 'Explorer', column: 'gathering', icon: '🧭', desc: 'Structure crate cooldown reduced by 4% per level. Leveled by structure crates looted (100 to 2.5k).', prestige: 'Pathfinder — reveal nearby undiscovered structures' },
+  { name: 'Agility', column: 'adventure', icon: '💨', desc: '+4% movement speed per level. Leveled by blocks walked (4k to 100k).', prestige: ['Sprint Persist — speed lingers 3s after stopping', 'Double Jump — vertical boost while airborne (1s CD)', '...the wind forgets which way you were running.'] },
+  { name: 'Dexterity', column: 'adventure', icon: '🎯', desc: '+2% block reach per level. Leveled by blocks placed (4k to 100k).', prestige: ['Quick Draw — +15% attack speed permanently', 'Dual Wield — +25% attack speed when dual-wielding', '...some say the world stretches to meet your hand.'] },
+  { name: 'Evasion', column: 'adventure', icon: '🌀', desc: '+1% dodge chance per level. Leveled by times hit by mobs (400 to 10k).', prestige: ['Shadow Counter — teleport behind attacker on dodge', 'Vanishing Dodge — invisible 2s when dodging', '...the blade passes through you. Was anything there?'] },
+  { name: 'Stealth', column: 'adventure', icon: '👁️', desc: '+4% crouch speed per level. Leveled by blocks crouched (2k to 50k).', prestige: ['Shadow Cloak — invisible while sneaking', 'Backstab — +50% melee damage while sneaking', '...they checked the room. It was empty. It was not.'] },
+  { name: 'Vitality', column: 'adventure', icon: '❤️', desc: '+1 heart per level (from Lv.5). Leveled by fruits & veggies eaten (400 to 10k).', prestige: ['Vital Regen — passive regen below 50% HP', 'Death Save — auto-heal when critically low (5min CD)', '...some wounds close before they open.'] },
+  { name: 'Taskmaster', column: 'progression', icon: '📋', desc: '+4% quest XP and reputation per level. Leveled by quests completed (100 to 2.5k).', prestige: ['Quest Mastery — quest rewards +25%', 'Renowned — permanent +1 Dream Rate', '...the world begins offering what you haven\'t asked for.'] },
+  { name: 'Beastmaster', column: 'progression', icon: '🐺', desc: 'Tamed wolves deal more damage each level. Leveled by pets at max level (1 to 25).', prestige: ['Alpha Bond — companions deal +25% damage', 'Pack Tactics — wolves gain Strength I + Resistance I aura', '...they stopped listening to you. They started listening to something else.'] },
+  { name: 'Victorian', column: 'progression', icon: '🏪', desc: '+4% crate and patron XP per level. Leveled by mobs slain (2k to 50k).', prestige: ['XP Siphon — +1 XP passively every 16 seconds', 'Bloodthirst — +50% bonus XP from mob crates', '...crates fall from things that haven\'t died yet.'] },
+  { name: 'Culinary', column: 'progression', icon: '🍳', desc: '+10% Well-Fed duration per 5 levels. Leveled by meals cooked (50 to 1.25k).', prestige: ['Hearty Harvest — +10% ingredient drop chance', 'Double Portion — 15% chance to cook for free', '...the food never runs out. You stopped buying ingredients.'] },
+  { name: 'Fishing', column: 'gathering', icon: '🎣', desc: 'Multi-catch chance +0.625% per level. Leveled by fish caught (2k to 50k).', prestige: ['Water Net — passive fish trap, auto-catches hourly', 'Second Net — deploy a second net', '...the fish come to you now. In your sleep.'] },
+  { name: 'Mining', column: 'gathering', icon: '⛏️', desc: 'Miner\'s Surge haste chance, grows stronger each tier. Leveled by blocks mined (40k to 1M).', prestige: ['Ore Magnet — nearby ore drops pulled to you (8 blocks)', 'Ore Doubling — 5% chance to double ore drops', '...the stone whispers where the gold hides.'] },
+  { name: 'Gathering', column: 'gathering', icon: '🌿', desc: 'Extra crop drops +0.625% per level. Leveled by crops harvested (1k to 25k).', prestige: ['Green Thumb — crops auto-replant on harvest', 'Fertile Aura — 25% crop growth speed in 16-block radius', '...the seeds plant themselves now. You just watch.'] },
+  { name: 'Blacksmith', column: 'gathering', icon: '🔨', desc: 'Nearby furnaces smelt faster each level. Leveled by items smelted (2k to 50k).', prestige: ['Master Alloy — 2x smelt output chance + 50% less anvil XP', 'Efficient Fuel — 50% chance to not consume fuel', '...the fire burns hotter for you. No one knows why.'] },
+  { name: 'Explorer', column: 'gathering', icon: '🧭', desc: 'Structure crate cooldown reduced by 4% per level. Leveled by structure crates looted (100 to 2.5k).', prestige: ['Structure Sense — alert within 100 blocks of structures', 'Cartographer — locate nearest structure (50hr CD)', '...you close your eyes. The path is already there.'] },
 ]
 
 const COLUMNS = [
@@ -119,13 +119,22 @@ export default function SkillTrees() {
               </div>
 
               {/* Prestige */}
-              <div className="bg-yellow-950/20 border border-yellow-800/30 rounded p-4">
+              <div className="bg-yellow-950/20 border border-yellow-800/30 rounded p-4 space-y-3">
                 <h3 className="font-['Press_Start_2P'] text-[0.4rem] text-yellow-500 tracking-widest mb-2">
-                  PRESTIGE ABILITY
+                  PRESTIGE REWARDS
                 </h3>
-                <p className="font-['Crimson_Pro'] text-stone-300">{selected.prestige}</p>
-                <p className="font-['Crimson_Pro'] text-stone-500 text-sm mt-2">
-                  Max a tree 3 times to unlock. Each prestige retains bonuses and raises the cap.
+                {selected.prestige.map((p, idx) => (
+                  <div key={idx} className={`flex items-start gap-2 ${idx === 2 ? 'opacity-50' : ''}`}>
+                    <span className={`font-['Press_Start_2P'] text-[0.35rem] shrink-0 mt-0.5 ${idx === 2 ? 'text-stone-600' : 'text-yellow-500'}`}>
+                      P{idx + 1}
+                    </span>
+                    <p className={`font-['Crimson_Pro'] text-sm ${idx === 2 ? 'italic text-stone-600' : 'text-stone-300'}`}>
+                      {p}
+                    </p>
+                  </div>
+                ))}
+                <p className="font-['Crimson_Pro'] text-stone-500 text-xs mt-2">
+                  Each prestige retains bonuses and raises the cap.
                 </p>
               </div>
             </div>

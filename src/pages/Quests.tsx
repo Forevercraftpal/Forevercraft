@@ -12,11 +12,11 @@ const QUEST_TIERS = [
 
 const REPUTATION_LEVELS = [
   { name: 'Stranger', threshold: '0', color: 'text-stone-500', description: 'No one knows your name. Basic errands only.' },
-  { name: 'Acquaintance', threshold: '100', color: 'text-stone-400', description: 'They recognize your face. Task-tier quests unlock.' },
-  { name: 'Friend', threshold: '250', color: 'text-green-400', description: 'Villagers greet you warmly. Better prices, contract quests.' },
-  { name: 'Ally', threshold: '500', color: 'text-blue-400', description: 'You are trusted. Commission quests, village defense missions.' },
-  { name: 'Hero', threshold: '1,000', color: 'text-purple-400', description: 'Songs are sung. Expedition quests, unique dialogue.' },
-  { name: 'Legend', threshold: '2,500', color: 'text-yellow-400', description: 'Your name echoes through history. Heroic quests, legendary rewards.' },
+  { name: 'Acquaintance', threshold: '100', color: 'text-stone-400', description: 'They recognize your face. Black Market barrel unlocks.' },
+  { name: 'Friend', threshold: '250', color: 'text-green-400', description: 'Villagers greet you warmly. Better prices, contract-tier rewards.' },
+  { name: 'Ally', threshold: '500', color: 'text-blue-400', description: 'You are trusted. Better rewards, Iron Golem assistance in combat.' },
+  { name: 'Hero', threshold: '1,000', color: 'text-purple-400', description: 'Songs are sung. Noon gifts, max discounts, Village Defense Horn.' },
+  { name: 'Legend', threshold: '2,500', color: 'text-yellow-400', description: 'Your name echoes through history. 2x noon gifts, Dreamer\'s Quill (+1 permanent DR), Hero of the Village II.' },
 ]
 
 const BOUNTY_TIERS = [

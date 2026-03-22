@@ -4,7 +4,7 @@ import Accordion from '../components/ui/Accordion'
 import Spoiler from '../components/ui/Spoiler'
 
 const PERMANENT = [
-  { name: 'Butterfly Pet (scales Lv1-100)', value: '+0.5 to +3.0', max: 3 },
+  { name: 'Butterfly Pet (scales Lv1-100)', value: '+1.0 to +9.0', max: 9 },
   { name: 'Mythical Armor Pieces', value: '+0.5 each (up to +2.5)', max: 2.5 },
   { name: 'Artifact Constellations', value: '+0.25 each (10 sets, up to +2.5)', max: 2.5 },
   { name: 'Crystal of Dreams', value: '+1 (consumable, once per player)', max: 1 },
@@ -12,7 +12,7 @@ const PERMANENT = [
   { name: 'Crystalized Dream Droppings', value: '+1 (5% bat drop)', max: 1 },
   { name: 'Dream Inducing Mushroom', value: '+1 (0.25% mushroom block)', max: 1 },
   { name: 'Chorus Dreaming Fruit', value: '+1 (0.25% chorus plant)', max: 1 },
-  { name: 'Crumb of Dreams', value: '+1 (rare world drop)', max: 1 },
+  { name: 'Crumb of Dreams', value: '+1 (gacha drop only)', max: 1 },
   { name: 'Harvester\'s Dreamy Seed', value: '+1 (farming drop)', max: 1 },
   { name: 'Tiller\'s Dream Petal', value: '+1 (crop harvest drop)', max: 1 },
   { name: 'Miner\'s Slumbering Geode', value: '+1 (mining drop)', max: 1 },
@@ -167,7 +167,7 @@ export default function DreamRate() {
               <p><span className="text-yellow-500 font-semibold">Moon Phase Bonuses:</span> Full Moon fishing +0.5. New Moon combat +0.5 (also 2x patron/furia spawns). Harvest Moon (1/8 chance on Full Moon) = +1.5 DR + randomTickSpeed=15 for crop growth.</p>
               <p><span className="text-yellow-500 font-semibold">Weather:</span> Rain + fishing rod equipped = +0.5 temporary DR.</p>
               <p><span className="text-yellow-500 font-semibold">Enchantments:</span> Fortune, Silk Touch, Luck of the Sea, Looting each contribute +0.25/level (context-specific — only when relevant to the activity).</p>
-              <p><span className="text-yellow-500 font-semibold">Check Your DR:</span> Use <code className="text-yellow-600 bg-stone-800 px-1 rounded">/trigger ec.dreams</code> in-game to see your full Dream Rate breakdown including constellation progress.</p>
+              <p><span className="text-yellow-500 font-semibold">Check Your DR:</span> Right-click <span className="text-yellow-400">Forevercraft</span> in the book header to reveal a full stats breakdown alongside your Dream Rate breakdown and history.</p>
             </div>
           </Spoiler>
         </ScrollReveal>
