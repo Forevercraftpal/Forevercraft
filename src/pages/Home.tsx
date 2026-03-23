@@ -317,6 +317,32 @@ export default function Home() {
         </FeatureSection>
       </section>
 
+      {/* ── Bedrock Edition Banner ─────────────────── */}
+      <section className="border-t border-cyan-900/30">
+        <div className="max-w-[1200px] mx-auto px-6 py-16">
+          <ScrollReveal>
+            <Link
+              to="/bedrock"
+              className="block rounded-lg border border-cyan-800/40 bg-cyan-950/10 hover:bg-cyan-950/20 p-8 no-underline transition-colors group"
+            >
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                  <span className="font-['Press_Start_2P'] text-[0.55rem] text-cyan-600 tracking-widest">NOW AVAILABLE</span>
+                  <h3 className="font-['Press_Start_2P'] text-[0.9rem] text-cyan-400 mt-2 mb-2">BEDROCK EDITION</h3>
+                  <p className="font-['Crimson_Pro'] text-lg text-stone-400">
+                    129 systems. Full Java parity. Script API powered.
+                    Console, mobile, and PC — same dream, every platform.
+                  </p>
+                </div>
+                <span className="font-['Press_Start_2P'] text-[0.65rem] text-cyan-500 group-hover:text-cyan-400 transition-colors shrink-0">
+                  LEARN MORE →
+                </span>
+              </div>
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* ── Closing ──────────────────────────────────── */}
       <section className="border-t border-yellow-900/30 bg-[radial-gradient(ellipse_at_bottom,_#1a1200_0%,_#0a0906_70%)]">
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">

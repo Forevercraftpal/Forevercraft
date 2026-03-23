@@ -464,6 +464,25 @@ export default function Downloads() {
           </div>
         </ScrollReveal>
 
+        {/* Bedrock Edition Download */}
+        <ScrollReveal delay={100}>
+          <div className="rounded-lg border border-cyan-800/40 bg-gradient-to-r from-cyan-900/15 to-transparent p-8 mb-12">
+            <div className="flex flex-col items-center text-center gap-4">
+              <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-cyan-400 mb-1">BEDROCK EDITION</h2>
+              <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
+                129 systems. Full Java parity. Script API powered. Console, mobile, and PC.
+              </p>
+              <a
+                href="/builds/Forevercraft-Bedrock.mcaddon"
+                download
+                className="inline-block px-10 py-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors mt-2 no-underline"
+              >
+                DOWNLOAD BEDROCK
+              </a>
+            </div>
+          </div>
+        </ScrollReveal>
+
         {/* Custom Builder Section */}
         <ScrollReveal>
           <div className="text-center mb-8">
