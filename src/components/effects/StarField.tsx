@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom'
 
 // Generate random stars once
 const STAR_COUNT = 120
-const stars = Array.from({ length: STAR_COUNT }, (_, i) => ({
+const stars = Array.from({ length: STAR_COUNT }, () => ({
   x: Math.random() * 100,
   y: Math.random() * 100,
   size: Math.random() < 0.1 ? 2 : Math.random() < 0.3 ? 1.5 : 1,
@@ -30,7 +30,7 @@ export default function StarField() {
       // Insert before #root so it's behind everything
       document.body.insertBefore(el, document.getElementById('root'))
     }
-    containerRef.current = el
+    containerRef.current = el as HTMLDivElement
     return () => {
       // Don't remove — it's a persistent container
     }
