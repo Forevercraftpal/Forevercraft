@@ -22,7 +22,7 @@ const CREDITS = {
       note: 'Thank you for always supporting in your own way as my sister — even though you deserve a dispenser filled with Cave Sludge spamming above your house. You\'ve been there since the start of the journey, in real life and in the game.',
     },
     {
-      name: 'Deiontre3',
+      name: 'Deiontre10',
       note: 'Thank you for always helping and supporting, and for being an enormous help building the website. You probably saved me 50+ hours of headaches trying to get it all working. Couldn\'t have done it without you, my dear brother.',
     },
   ],

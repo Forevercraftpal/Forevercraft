@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { KNOWLEDGE_BASE, type KBEntry } from '../../data/knowledge-base'
 
 interface Message {
@@ -180,7 +181,9 @@ export default function ForevercraftAI() {
     return () => observer.disconnect()
   }, [])
 
-  return (
+  const portalTarget = document.getElementById('popup-root') || document.body
+
+  return createPortal(
     <>
       {/* Toggle Button */}
       <button
@@ -406,6 +409,7 @@ export default function ForevercraftAI() {
           40% { opacity: 1; transform: scale(1.2); }
         }
       `}</style>
-    </>
+    </>,
+    portalTarget
   )
 }
