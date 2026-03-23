@@ -29,6 +29,7 @@ const Downloads = lazy(() => import('./pages/Downloads'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const Terms = lazy(() => import('./pages/Terms'))
 const Support = lazy(() => import('./pages/Support'))
+const Credits = lazy(() => import('./pages/Credits'))
 
 function Loading() {
   return (
@@ -74,6 +75,7 @@ export default function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/credits" element={<Credits />} />
           </Routes>
         </main>
       </Suspense>

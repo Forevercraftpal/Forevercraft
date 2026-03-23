@@ -336,6 +336,12 @@ export default function Home() {
             <p className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-800 tracking-widest mt-10">
               BUILT WITH LOVE · ONE FUNCTION AT A TIME
             </p>
+            <Link
+              to="/credits"
+              className="inline-block mt-4 px-6 py-2 rounded border border-yellow-800/40 hover:border-yellow-600/60 font-['Press_Start_2P'] text-[0.55rem] text-stone-500 hover:text-yellow-500 tracking-widest no-underline transition-colors"
+            >
+              CREDITS
+            </Link>
           </ScrollReveal>
         </div>
       </section>
