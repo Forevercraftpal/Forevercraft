@@ -18,7 +18,7 @@ const DONATION_METHODS = [
     name: 'PayPal',
     icon: '💳',
     description: 'Direct one-time donation via PayPal. Any amount helps keep the dream alive.',
-    url: 'https://paypal.me/forevercraft',
+    url: 'https://www.paypal.com/ncp/payment/JK35QJPEJ9JH8',
     buttonText: 'DONATE VIA PAYPAL',
     tiers: [],
   },
