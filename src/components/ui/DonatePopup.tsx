@@ -4,9 +4,9 @@ import { createPortal } from 'react-dom'
 export default function DonatePopup() {
   const [visible, setVisible] = useState(false)
   const [dismissed, setDismissed] = useState(false)
+  const [fadeIn, setFadeIn] = useState(false)
 
   useEffect(() => {
-    // Don't show if already dismissed this session
     if (sessionStorage.getItem('fc-donate-dismissed')) {
       setDismissed(true)
       return
@@ -21,6 +21,8 @@ export default function DonatePopup() {
           scrollTime++
           if (scrollTime >= 15) {
             setVisible(true)
+            // Trigger fade-in on next frame
+            requestAnimationFrame(() => setFadeIn(true))
             clearInterval(interval)
           }
         }, 1000)
@@ -42,8 +44,8 @@ export default function DonatePopup() {
 
   if (!visible || dismissed) return null
 
-  // Use portal to render directly on document.body — bypasses any parent
-  // transform/backdrop-filter that would break fixed positioning
+  // 100% inline styles — no Tailwind classes on outer container
+  // No transform, no animation class, no backdrop-filter on fixed element
   return createPortal(
     <div
       style={{
@@ -51,33 +53,71 @@ export default function DonatePopup() {
         bottom: '24px',
         right: '24px',
         zIndex: 99999,
+        opacity: fadeIn ? 1 : 0,
+        transition: 'opacity 0.4s ease-out',
+        // Explicitly NO transform
       }}
-      className="animate-[slideUp_0.4s_ease-out]"
     >
-      <div className="bg-stone-900/95 backdrop-blur-sm border border-yellow-800/50 rounded-lg shadow-xl shadow-black/50 p-5 max-w-[320px]">
+      <div
+        style={{
+          background: 'rgba(28, 25, 23, 0.95)',
+          border: '1px solid rgba(133, 77, 14, 0.5)',
+          borderRadius: '8px',
+          padding: '20px',
+          maxWidth: '320px',
+          boxShadow: '0 20px 25px -5px rgba(0,0,0,0.5)',
+        }}
+      >
         <button
           onClick={dismiss}
-          className="absolute top-2 right-3 text-stone-600 hover:text-stone-400 text-sm transition-colors"
+          style={{
+            position: 'absolute',
+            top: '8px',
+            right: '12px',
+            background: 'none',
+            border: 'none',
+            color: '#57534e',
+            fontSize: '14px',
+            cursor: 'pointer',
+          }}
           aria-label="Dismiss"
         >
           &#10005;
         </button>
 
-        <div className="flex items-start gap-3">
+        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
           <img
             src="/icon.png"
             alt=""
-            className="w-10 h-10 shrink-0 mt-0.5"
-            style={{ imageRendering: 'pixelated' }}
+            style={{ width: '40px', height: '40px', flexShrink: 0, marginTop: '2px', imageRendering: 'pixelated' }}
           />
           <div>
-            <p className="font-['Crimson_Pro'] text-base text-stone-300 leading-snug mb-3">
+            <p
+              style={{
+                fontFamily: "'Crimson Pro', serif",
+                fontSize: '16px',
+                color: '#d6d3d1',
+                lineHeight: '1.4',
+                marginBottom: '12px',
+                marginTop: 0,
+              }}
+            >
               Enjoying Forevercraft? If you'd like to help us keep creating and updating the pack,
               even a small donation means the world to us.
             </p>
             <a
               href="/donate"
-              className="inline-block px-4 py-2 rounded bg-yellow-600/90 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.55rem] tracking-wider transition-colors no-underline"
+              style={{
+                display: 'inline-block',
+                padding: '8px 16px',
+                borderRadius: '4px',
+                background: 'rgba(202, 138, 4, 0.9)',
+                color: '#0c0a09',
+                fontFamily: "'Press Start 2P', cursive",
+                fontSize: '0.55rem',
+                letterSpacing: '0.05em',
+                textDecoration: 'none',
+              }}
             >
               SUPPORT US
             </a>
