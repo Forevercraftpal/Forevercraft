@@ -353,17 +353,15 @@ export default function Downloads() {
       const fragmentMap: Record<string, string[]> = {}
 
       for (const { zip } of moduleZips) {
-        for (const [path, file] of Object.entries(zip.files)) {
+        for (const [path, file] of Object.entries(zip.files) as [string, any][]) {
           if (file.dir) continue
 
           if (path.startsWith('_fragments/')) {
-            // Collect fragment lines from each module
             const fragName = path.replace('_fragments/', '').replace('.txt', '')
             const content = await file.async('text')
             if (!fragmentMap[fragName]) fragmentMap[fragName] = []
             fragmentMap[fragName].push(content)
           } else {
-            // Regular file — add to output (skip duplicates)
             if (!output.files[path]) {
               output.file(path, await file.async('uint8array'))
             }
