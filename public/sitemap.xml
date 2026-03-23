@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://forevercraft.co/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://forevercraft.co/dream-rate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://forevercraft.co/artifacts</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://forevercraft.co/armor-sets</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://forevercraft.co/spirit-weapons</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://forevercraft.co/classes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://forevercraft.co/companions</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://forevercraft.co/raid-bosses</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://forevercraft.co/infinite-castle</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://forevercraft.co/skill-trees</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://forevercraft.co/quests</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://forevercraft.co/cooking</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://forevercraft.co/guilds</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://forevercraft.co/seasons</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://forevercraft.co/lore</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://forevercraft.co/gacha</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://forevercraft.co/craftforever</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://forevercraft.co/codex</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://forevercraft.co/guide</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://forevercraft.co/bedrock</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://forevercraft.co/downloads</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://forevercraft.co/donate</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://forevercraft.co/credits</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://forevercraft.co/support</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+</urlset>

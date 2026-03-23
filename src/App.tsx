@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer'
 import ScrollProgress from './components/ui/ScrollProgress'
 import DonatePopup from './components/ui/DonatePopup'
 import StarField from './components/effects/StarField'
+import ForevercraftAI from './components/ai/ForevercraftAI'
 
 const Home = lazy(() => import('./pages/Home'))
 const Artifacts = lazy(() => import('./pages/Artifacts'))
@@ -87,6 +88,7 @@ export default function App() {
       </Suspense>
       <Footer />
       <DonatePopup />
+      <ForevercraftAI />
     </BrowserRouter>
   )
 }
