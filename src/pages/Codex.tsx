@@ -5,11 +5,25 @@ import { companions } from '../data/companions'
 import { spiritWeapons } from '../data/spirit-weapons'
 import { classes } from '../data/classes'
 
-type CategoryKey = 'all' | 'artifacts' | 'companions' | 'spirit-weapons' | 'classes'
+type CategoryKey = 'all' | 'weapons' | 'armor' | 'accessories' | 'rings' | 'healers' | 'tools' | 'shields' | 'companions' | 'spirit-weapons' | 'classes'
+
+const weaponCount = artifacts.filter(a => a.type === 'Weapon').length
+const armorCount = artifacts.filter(a => a.type === 'Armor').length
+const accessoryCount = artifacts.filter(a => a.type === 'Accessory').length
+const ringCount = artifacts.filter(a => a.type === 'Ring').length
+const healerCount = artifacts.filter(a => a.type === 'Healer').length
+const toolCount = artifacts.filter(a => a.type === 'Tool').length
+const shieldCount = artifacts.filter(a => a.type === 'Shield').length
 
 const CATEGORIES: { key: CategoryKey; label: string; count: number }[] = [
   { key: 'all', label: 'All', count: artifacts.length + companions.length + spiritWeapons.length + classes.length },
-  { key: 'artifacts', label: 'Artifacts', count: artifacts.length },
+  { key: 'weapons', label: 'Weapons', count: weaponCount },
+  { key: 'armor', label: 'Armor', count: armorCount },
+  { key: 'accessories', label: 'Accessories', count: accessoryCount },
+  { key: 'rings', label: 'Rings', count: ringCount },
+  { key: 'healers', label: 'Healers', count: healerCount },
+  { key: 'tools', label: 'Tools', count: toolCount },
+  { key: 'shields', label: 'Shields', count: shieldCount },
   { key: 'companions', label: 'Companions', count: companions.length },
   { key: 'spirit-weapons', label: 'Spirit Weapons', count: spiritWeapons.length },
   { key: 'classes', label: 'Classes', count: classes.length },
@@ -81,7 +95,13 @@ export default function Codex() {
       const matchSearch = !q || item.name.toLowerCase().includes(q) || item.detail.toLowerCase().includes(q) || item.category.toLowerCase().includes(q)
       const matchCategory =
         activeCategory === 'all' ||
-        (activeCategory === 'artifacts' && item.category === 'Artifact') ||
+        (activeCategory === 'weapons' && item.category === 'Artifact' && item.detail.includes('Weapon')) ||
+        (activeCategory === 'armor' && item.category === 'Artifact' && item.detail.includes('Armor')) ||
+        (activeCategory === 'accessories' && item.category === 'Artifact' && item.detail.includes('Accessory')) ||
+        (activeCategory === 'rings' && item.category === 'Artifact' && item.detail.includes('Ring')) ||
+        (activeCategory === 'healers' && item.category === 'Artifact' && item.detail.includes('Healer')) ||
+        (activeCategory === 'tools' && item.category === 'Artifact' && item.detail.includes('Tool')) ||
+        (activeCategory === 'shields' && item.category === 'Artifact' && item.detail.includes('Shield')) ||
         (activeCategory === 'companions' && item.category === 'Companion') ||
         (activeCategory === 'spirit-weapons' && item.category === 'Spirit Weapon') ||
         (activeCategory === 'classes' && item.category === 'Class')
