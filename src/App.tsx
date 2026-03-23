@@ -34,6 +34,7 @@ const Support = lazy(() => import('./pages/Support'))
 const Credits = lazy(() => import('./pages/Credits'))
 const Donate = lazy(() => import('./pages/Donate'))
 const Bedrock = lazy(() => import('./pages/Bedrock'))
+const PressKit = lazy(() => import('./pages/PressKit'))
 
 function Loading() {
   return (
@@ -83,6 +84,7 @@ export default function App() {
             <Route path="/credits" element={<Credits />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/bedrock" element={<Bedrock />} />
+            <Route path="/press" element={<PressKit />} />
           </Routes>
         </main>
       </Suspense>
