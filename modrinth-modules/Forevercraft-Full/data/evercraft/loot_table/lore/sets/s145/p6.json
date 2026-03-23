@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "What They Heard",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Five Records",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Exquisite Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "What They Heard",
+                  "author": "Record Keeper",
+                  "pages": [
+                    [
+                      {
+                        "text": "I have listened to all five records in sequence. I understand now why the city was abandoned. I understand why the Warden was made.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "The records are not music. They are testimony. A civilization's entire arc \u2014 joy, warning, dread, flight, silence \u2014 compressed into five discs of carved stone.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "I will not transcribe what I heard. Some testimonies are not meant to be read. They are meant to be experienced, in the dark, alone, where the truth can find you.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 14506"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 14506,
+                  "lore_set": 145,
+                  "lore_pid": 6
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

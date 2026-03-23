@@ -1,0 +1,211 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Biome Shulker Contents: taiga - mythical",
+  "pools": [
+    {
+      "comment": "Biome-themed vanilla items",
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 4,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spruce_log",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sweet_berries",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fern",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mossy_cobblestone",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:campfire",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_hide",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_mutton",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "Pack system item pool (87% chance)",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 97
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/mythical/main",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/pool_universal",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/charms/mythical",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:potions/structure/pool_mythical",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:satchel/mythical",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:alternatives",
+          "weight": 3,
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "evercraft:dungeon/key",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "evercraft:craftforever/trials/trial_pass"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:weapon_mastery/stones/mythical_stone",
+          "weight": 15
+        }
+      ]
+    },
+    {
+      "comment": "Crystal of Dreams (2% chance)",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/crystal_of_dreams",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

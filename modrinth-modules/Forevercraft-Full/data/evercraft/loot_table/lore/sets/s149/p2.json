@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Netherite Secret",
+                  "color": "green",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Alloy Almanac",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Uncommon Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "Netherite Secret",
+                  "author": "Ancient Smith",
+                  "pages": [
+                    [
+                      {
+                        "text": "Netherite is not the strongest material. It is the most stubborn. It refuses to be destroyed because it contains a Dream that refuses to end.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 14902"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 14902,
+                  "lore_set": 149,
+                  "lore_pid": 2
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

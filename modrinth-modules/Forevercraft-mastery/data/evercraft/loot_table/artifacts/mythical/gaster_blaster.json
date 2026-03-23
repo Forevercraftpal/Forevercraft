@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Gaster Blaster",
+                "minecraft:rarity": "uncommon",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A weapon from beyond the void that fires beams of pure energy.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Archer Class",
+                    "color": "#32CD32",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Overcharge: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Oblivion — Void zone AoE (5 blocks, 5s)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Disengage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Shift+Draw — backward leap",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Grove (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Bountiful Harvest (axe/hoe)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Archer: +2 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Hunter: +1 Attack Damage + Speed I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "archer_gaster_blaster",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "archer": true,
+                  "archer_id": "gaster_blaster",
+                  "artifact_set": "verdant"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

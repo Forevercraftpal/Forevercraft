@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "The Cost",
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Prophecy of Convergence",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Mythical Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "The Cost",
+                  "author": "Prophet",
+                  "pages": [
+                    [
+                      {
+                        "text": "Convergence has a cost. The Dream must be powerful enough to hold three realities in one mind. This has never been achieved.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "The Weavers tried and failed. The Patrons argued about whether it should be attempted at all. The Titans were built to hold the worlds apart, not together.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "The cost is not power \u2014 it is surrender. To dream three worlds into one, you must stop seeing them as separate. You must hold fire and void and meadow in your mind simultaneously, and love them all equally.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 16205"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 16205,
+                  "lore_set": 162,
+                  "lore_pid": 5
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

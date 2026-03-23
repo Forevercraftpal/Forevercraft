@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_grounding_blow": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"grounding_blow\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/grounding_blow"
+  }
+}

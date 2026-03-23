@@ -1,0 +1,2 @@
+# Mastery announcement tellraw (macro)
+$tellraw @a ["",{"text":"\n"},{"text":"  \u2726\u2726\u2726 ","color":"gold"},{"selector":"@s","color":"yellow","bold":true},{"text":" has achieved ","color":"gray"},{"text":"$(mastery_name) MASTERY","color":"gold","bold":true},{"text":"! \u2726\u2726\u2726","color":"gold"},{"text":"\n"},{"text":"      Title Earned: ","color":"gray"},{"text":"$(mastery_title)","color":"light_purple","bold":true},{"text":"\n"}]

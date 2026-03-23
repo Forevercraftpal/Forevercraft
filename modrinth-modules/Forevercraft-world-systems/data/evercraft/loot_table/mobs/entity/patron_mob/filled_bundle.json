@@ -1,0 +1,402 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/candles"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/logs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/redstone"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/quartz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/food"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/plants"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/corals"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/lights"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/pottery"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/copper"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/concrete"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/terracotta"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.treasure_bundle",
+                "fallback": "Treasure Bundle",
+                "color": "#58CD78",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/glass"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/colored_bundles",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.bestiary.mob_drops_bundle",
+                "fallback": "Mob Drops Bundle",
+                "color": "#E74C3C",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "evercraft:mobs/entity/patron_mob/bundle_contents/mob_drops"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

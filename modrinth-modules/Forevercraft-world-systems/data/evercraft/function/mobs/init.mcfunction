@@ -1,0 +1,2 @@
+schedule function evercraft:mobs/init 10t
+execute as @e[type=!#evercraft:mobs/invalid_for_settings,tag=!bestiary.settings.applied,tag=!bestiary.settings.exclude,limit=50] run function evercraft:mobs/get_type

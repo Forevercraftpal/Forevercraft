@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_sword",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_axe",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_spear",
+          "weight": 25
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:enchant_with_levels",
+          "levels": {
+            "min": 15,
+            "max": 25
+          },
+          "options": "#minecraft:on_random_loot"
+        }
+      ]
+    }
+  ]
+}

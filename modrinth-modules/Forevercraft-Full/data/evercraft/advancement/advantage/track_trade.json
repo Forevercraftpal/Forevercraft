@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "trade": {
+      "trigger": "minecraft:villager_trade"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:advantage/track/on_trade"
+  }
+}

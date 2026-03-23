@@ -1,0 +1,155 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Axe of Honor",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "An ancient tool wielded by the legendary woodcutters of old.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Timber: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Fells entire trees",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Nature's Wrath: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Lightning on crit",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Grove (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Bountiful Harvest (axe/hoe)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Archer: +2 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Hunter: +1 Attack Damage + Speed I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Lumberfell", "color": "dark_green", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "Berserker Class",
+                    "color": "#DC143C",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Dual Axes: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "2x speed, -7 armor, -5❤",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Rage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Right-click — 10s auto-swing + Str II",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+14 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"},
+                "minecraft:custom_data": {
+                  "artifact": "axe_of_honor",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "harvest",
+                  "ability_timber": true,
+                  "ability_lightning": true,
+                  "ability_replant": true,
+                  "craft_class": 2
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 14,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:axe_honor_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:axe_honor_speed"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

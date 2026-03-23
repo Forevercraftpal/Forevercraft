@@ -1,0 +1,8 @@
+{
+  "values": [
+    "evercraft:init",
+    "evercraft:professions/internal/init",
+    "evercraft:tomb/load",
+    "evercraft:armored_elytra/load"
+  ]
+}

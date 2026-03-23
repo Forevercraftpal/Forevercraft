@@ -1,0 +1,6 @@
+{"type": "minecraft:generic", "pools": [{"rolls": 1, "entries": [
+  {"type": "minecraft:empty", "weight": 50},
+  {"type": "minecraft:loot_table", "value": "evercraft:potions/structure/wanderers_curse", "weight": 30},
+  {"type": "minecraft:loot_table", "value": "evercraft:potions/structure/scouts_sight", "weight": 15},
+  {"type": "minecraft:loot_table", "value": "evercraft:potions/structure/treasure_seeker", "weight": 5}
+]}]}

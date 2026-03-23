@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "The Guardian's Role",
+                  "color": "light_purple",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Shattered Codex",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Ornate Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "The Guardian's Role",
+                  "author": "Codex Guardian",
+                  "pages": [
+                    [
+                      {
+                        "text": "I guard not the Codex itself, but the idea that it exists. As long as someone believes all knowledge is connected, the Codex endures.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "My role is not keeper. It is reminder. I walk the world and tell this story, and every time someone listens and believes, a new page writes itself in the margins of their mind.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 15905"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 15905,
+                  "lore_set": 159,
+                  "lore_pid": 5
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

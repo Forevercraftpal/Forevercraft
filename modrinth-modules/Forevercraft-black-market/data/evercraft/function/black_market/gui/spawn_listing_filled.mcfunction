@@ -1,0 +1,3 @@
+# Black Market — Spawn Filled Listing Row (Macro)
+$execute rotated ~ 0 positioned ^ ^$(row_y) ^1.78 run summon text_display ~ ~ ~ {brightness:{block:15,sky:15},shadow_radius:0f,Tags:["BM.El","BM.SlotEl","BM.ListRow"],billboard:"center",text:[{text:"  Listed Item",color:"white"},{text:"   $(row_price) ",color:"gray"},{text:"\u25C6",color:"dark_aqua"},{text:"  ",color:"gray"},{text:"[Reclaim]",color:"yellow",bold:true}],background:1,shadow:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.473f,0.473f,0.473f]}}
+$execute rotated ~ 0 positioned ^-0.63 ^$(row_y) ^1.78 positioned ^ ^-0.19 ^0 run summon interaction ~ ~ ~ {Tags:["BM.El","BM.SlotEl","$(row_tag)"],width:0.2f,height:0.03f,response:1b}

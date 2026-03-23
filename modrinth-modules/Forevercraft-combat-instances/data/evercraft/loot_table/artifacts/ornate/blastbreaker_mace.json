@@ -1,0 +1,116 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mace",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Pwnhammer",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Each impact creates a",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "shockwave of destruction.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "On Smash: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Small explosion",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Striker Class",
+                    "color": "#FF6B00",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Impact Charge ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Mainhand)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Explosive Impact scales with Impact",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Ground Slam ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Sneak+Hit)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Sentinel Mode",
+                    "color": "#5B9BD5",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ +Shield: Res I, Weakness I, Fortress",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "blastbreaker_mace",
+                  "is_artifact": true,
+                  "ability": "explosive_impact",
+                  "tier": "ornate",
+                  "striker": true
+                },
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

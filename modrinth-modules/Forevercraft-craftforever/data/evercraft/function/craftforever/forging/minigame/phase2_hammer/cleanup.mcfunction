@@ -1,0 +1,11 @@
+# Phase 2: HAMMER — Cleanup all phase 2 elements
+execute at @s run kill @e[type=text_display,tag=CF.PatDot,distance=..7]
+execute at @s run kill @e[type=text_display,tag=CF.PatternDisplay,distance=..7]
+execute at @s run kill @e[type=text_display,tag=CF.BtnRedText,distance=..7]
+execute at @s run kill @e[type=interaction,tag=CF.BtnRed,distance=..7]
+execute at @s run kill @e[type=text_display,tag=CF.BtnBlueText,distance=..7]
+execute at @s run kill @e[type=interaction,tag=CF.BtnBlue,distance=..7]
+execute at @s run kill @e[type=text_display,tag=CF.BtnYelText,distance=..7]
+execute at @s run kill @e[type=interaction,tag=CF.BtnYellow,distance=..7]
+execute at @s run kill @e[type=text_display,tag=CF.BtnGrnText,distance=..7]
+execute at @s run kill @e[type=interaction,tag=CF.BtnGreen,distance=..7]

@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_pickaxe",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:efficiency": {
+                    "min": 7,
+                    "max": 9
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:repair_cost": 99999,
+                  "minecraft:unbreakable": {},
+                  "minecraft:custom_name": {
+                    "text": "Stone Driller",
+                    "color": "gold",
+                    "italic": true
+                  },
+                  "minecraft:lore": [
+                    {
+                      "text": " "
+                    },
+                    {
+                      "text": "Ability:",
+                      "color": "green",
+                      "italic": false
+                    },
+                    {
+                      "text": "Insta-mines dirt and other blocks ",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],                
+                  "minecraft:custom_data": {
+                    "tool": "ec.stone_driller"
+                  },
+                  "minecraft:tool": {
+                    "rules": [
+                      {
+                        "blocks": [
+                          "minecraft:stone",
+                          "minecraft:diorite",
+                          "minecraft:andesite",
+                          "minecraft:granite",
+                          "minecraft:dirt",
+                          "minecraft:grass_block",
+                          "minecraft:mycelium",
+                          "minecraft:podzol",
+                          "minecraft:gravel",
+                          "minecraft:sand",
+                          "minecraft:coarse_dirt",
+                          "minecraft:tuff",
+                          "minecraft:coal_ore",
+                          "minecraft:iron_ore",
+                          "minecraft:copper_ore",
+                          "minecraft:gold_ore",
+                          "minecraft:redstone_ore",
+                          "minecraft:emerald_ore",
+                          "minecraft:lapis_ore",
+                          "minecraft:diamond_ore"
+                        ],
+                        "speed": 5,
+                        "correct_for_drops": true
+                      }
+                    ],
+                    "default_mining_speed": 1,
+                    "damage_per_block": 0
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "functions": []
+  }

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": "minecraft:nether_star",
+          "predicates": {
+            "minecraft:custom_data": "{forge_catalyst:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:craftforever/grand_forge/on_catalyst_use"
+  }
+}

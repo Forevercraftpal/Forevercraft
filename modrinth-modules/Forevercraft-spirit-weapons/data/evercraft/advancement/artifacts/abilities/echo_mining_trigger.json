@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_echo_mining": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"echo_mining\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/echo_mining"
+  }
+}

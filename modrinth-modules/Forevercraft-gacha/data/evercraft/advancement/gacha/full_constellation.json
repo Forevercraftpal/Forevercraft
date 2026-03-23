@@ -1,0 +1,14 @@
+{
+  "parent": "evercraft:gacha/root",
+  "display": {
+    "icon": {"id": "minecraft:amethyst_cluster"},
+    "title": {"text": "Full Constellation", "color": "#E0B0FF"},
+    "description": {"text": "Collect 3 Constellation Fragments — Permanent +0.5 Dream Rate!"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  }
+}

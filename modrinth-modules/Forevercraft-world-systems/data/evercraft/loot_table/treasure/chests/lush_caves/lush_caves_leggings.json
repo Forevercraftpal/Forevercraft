@@ -1,0 +1,4024 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Lush Caves",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies hitting the user have a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "33% chance of being hit by thorns ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "dealing 5 hearts of magic damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Radius of 10 blocks. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "lush_cave_leggings",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "lush_cave_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

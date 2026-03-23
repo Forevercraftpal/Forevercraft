@@ -1,0 +1,278 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chest",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Blessing of the Mountain",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:container",
+              "entries": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:netherite_pickaxe",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_components",
+                      "components": {
+                        "minecraft:custom_data": {}
+                      }
+                    },
+                    {
+                      "function": "minecraft:set_name",
+                      "entity": "this",
+                      "name": [
+                        {
+                          "text": "Forged Netherite Pickaxe",
+                          "color": "gold",
+                          "italic": false
+                        }
+                      ]
+                    },
+                    {
+                      "function": "minecraft:set_attributes",
+                      "modifiers": [
+                        {
+                          "id": "evercraft:treasure",
+                          "attribute": "minecraft:attack_speed",
+                          "amount": {
+                            "min": 1.4,
+                            "max": 1.4
+                          },
+                          "operation": "add_value",
+                          "slot": "mainhand"
+                        },
+                        {
+                          "id": "evercraft:treasure_2",
+                          "attribute": "minecraft:attack_speed",
+                          "amount": -4,
+                          "operation": "add_value",
+                          "slot": "mainhand"
+                        },
+                        {
+                          "id": "evercraft:treasure",
+                          "attribute": "minecraft:attack_damage",
+                          "amount": {
+                            "min": 9,
+                            "max": 9
+                          },
+                          "operation": "add_value",
+                          "slot": "mainhand"
+                        }
+                      ]
+                    },
+                    {
+                      "function": "minecraft:toggle_tooltips",
+                      "toggles": {
+                        "minecraft:attribute_modifiers": false
+                      }
+                    },
+                    {
+                      "function": "minecraft:set_enchantments",
+                      "enchantments": {
+                        "minecraft:efficiency": {
+                          "min": 3,
+                          "max": 9
+                        },
+                        "minecraft:unbreaking": {
+                          "min": 4,
+                          "max": 10
+                        },
+                        "minecraft:fortune": {
+                          "min": 1,
+                          "max": 5
+                        },
+                        "minecraft:mending": {
+                          "min": 0,
+                          "max": 1
+                        }
+                      }
+                    },
+                    {
+                      "function": "minecraft:set_lore",
+                      "lore": [
+                        {
+                          "text": " "
+                        },
+                        {
+                          "text": "When in Main Hand:",
+                          "color": "gray",
+                          "italic": false
+                        },
+                        {
+                          "text": " 10 Attack Damage",
+                          "color": "dark_green",
+                          "italic": false
+                        },
+                        {
+                          "text": " 1.4 Attack Speed",
+                          "color": "dark_green",
+                          "italic": false
+                        }
+                      ],
+                      "mode": "replace_all"
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:netherite_sword",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_components",
+                      "components": {
+                        "minecraft:custom_data": {}
+                      }
+                    },
+                    {
+                      "function": "minecraft:set_name",
+                      "entity": "this",
+                      "name": [
+                        {
+                          "text": "Forged Netherite Sword",
+                          "color": "gold",
+                          "italic": false
+                        }
+                      ]
+                    },
+                    {
+                      "function": "minecraft:set_attributes",
+                      "modifiers": [
+                        {
+                          "id": "evercraft:treasure",
+                          "attribute": "minecraft:attack_speed",
+                          "amount": {
+                            "min": 1.8,
+                            "max": 1.8
+                          },
+                          "operation": "add_value",
+                          "slot": "mainhand"
+                        },
+                        {
+                          "id": "evercraft:treasure_2",
+                          "attribute": "minecraft:attack_speed",
+                          "amount": -4,
+                          "operation": "add_value",
+                          "slot": "mainhand"
+                        },
+                        {
+                          "id": "evercraft:treasure",
+                          "attribute": "minecraft:attack_damage",
+                          "amount": {
+                            "min": 9.5,
+                            "max": 9.5
+                          },
+                          "operation": "add_value",
+                          "slot": "mainhand"
+                        }
+                      ]
+                    },
+                    {
+                      "function": "minecraft:toggle_tooltips",
+                      "toggles": {
+                        "minecraft:attribute_modifiers": false
+                      }
+                    },
+                    {
+                      "function": "minecraft:set_enchantments",
+                      "enchantments": {
+                        "minecraft:sharpness": {
+                          "min": 1,
+                          "max": 5
+                        },
+                        "minecraft:unbreaking": {
+                          "min": 1,
+                          "max": 10
+                        },
+                        "minecraft:fire_aspect": {
+                          "min": 1,
+                          "max": 3
+                        },
+                        "minecraft:knockback": {
+                          "min": 1,
+                          "max": 3
+                        },
+                        "minecraft:looting": {
+                          "min": 1,
+                          "max": 5
+                        },
+                        "minecraft:mending": {
+                          "min": 0,
+                          "max": 1
+                        }
+                      }
+                    },
+                    {
+                      "function": "minecraft:set_lore",
+                      "lore": [
+                        {
+                          "text": " "
+                        },
+                        {
+                          "text": "When in Main Hand:",
+                          "color": "gray",
+                          "italic": false
+                        },
+                        {
+                          "text": " 10.5 Attack Damage",
+                          "color": "dark_green",
+                          "italic": false
+                        },
+                        {
+                          "text": " 1.8 Attack Speed",
+                          "color": "dark_green",
+                          "italic": false
+                        }
+                      ],
+                      "mode": "replace_all"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

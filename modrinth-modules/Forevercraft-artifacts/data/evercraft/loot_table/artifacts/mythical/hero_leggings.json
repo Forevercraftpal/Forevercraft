@@ -1,0 +1,112 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Hero's Leggings",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  [
+                    {
+                      "text": "Each step echoes with the rhythm of a dance that never ends. ",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": "Speed I",
+                      "color": "green",
+                      "italic": false
+                    }
+                  ],
+                  "",
+                  {
+                    "text": "Set: Eternal (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Hero's Awakening (weapon)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Dancer: +20% Attack Speed",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Eternal Dance — Speed II + Str II",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Dancer: +35% Attack Speed + 15% Evasion",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+0.5 Dreams  ◆  +6 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "hero_leggings",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "hero",
+                  "gacha_exclusive": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 6.0,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:hero_leggings_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3.0,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:hero_leggings_toughness"
+                  },
+                  {
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:hero_leggings_kb"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

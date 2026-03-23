@@ -1,0 +1,5 @@
+# Lapis particle
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/lapis_trim/lapis_head unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:enchant ~ ~2 ~ .1 .03 .2 0.01 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/lapis_trim/lapis_chest unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:enchant ~ ~1.3 ~ .1 .03 .2 0.01 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/lapis_trim/lapis_legs unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:enchant ~ ~.8 ~ .1 .03 .2 0.01 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/lapis_trim/lapis_feet unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:enchant ~ ~.3 ~ .1 .03 .2 0.01 1 normal

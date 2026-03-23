@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 2, "max": 4}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Bogstone", "color": "#65A30D", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Uncommon Biome Material", "color": "blue", "italic": false},
+                  "",
+                  {"text": "Dense swamp clay imbued with", "color": "gray", "italic": true},
+                  {"text": "centuries of decay.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "bogstone", "cf_biome": 14}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

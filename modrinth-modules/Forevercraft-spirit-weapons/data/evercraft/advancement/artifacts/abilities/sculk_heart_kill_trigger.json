@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "any_kill": {
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/sculk_heart_kill"
+  }
+}

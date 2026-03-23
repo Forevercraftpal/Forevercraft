@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location"
+      }
+    },
+    "rewards": {
+      "function": "evercraft:mobs/database/playerheads/add/get_id"
+    }
+  }
+  

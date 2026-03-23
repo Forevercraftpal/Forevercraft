@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "hit_with_flame_strike_3": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{flame_strike:3b}"
+              }
+            }
+          }
+        },
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:player"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/melee/flame_strike_3"
+  }
+}

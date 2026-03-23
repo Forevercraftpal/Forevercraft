@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "The First Forge",
+                  "color": "green",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Alloy Almanac",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Uncommon Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "The First Forge",
+                  "author": "Ancient Smith",
+                  "pages": [
+                    [
+                      {
+                        "text": "Before iron, before gold, there was Dreamsteel \u2014 an alloy of intention and ore that could hold enchantments like a cup holds water.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 14901"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 14901,
+                  "lore_set": 149,
+                  "lore_pid": 1
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

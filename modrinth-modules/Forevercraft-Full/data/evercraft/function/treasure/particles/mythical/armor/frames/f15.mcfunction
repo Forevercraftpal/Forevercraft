@@ -1,0 +1,31 @@
+
+particle minecraft:raid_omen ^0.529 ^-0.262 ^1.379 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^0.731 ^-0.273 ^1.281 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^0.916 ^-0.284 ^1.154 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.079 ^-0.295 ^0.999 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.216 ^-0.307 ^0.823 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.325 ^-0.318 ^0.627 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.402 ^-0.329 ^0.418 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.447 ^-0.340 ^0.200 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.458 ^-0.351 ^-0.022 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.435 ^-0.362 ^-0.243 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.379 ^-0.373 ^-0.457 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.291 ^-0.385 ^-0.660 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.173 ^-0.396 ^-0.847 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^1.029 ^-0.407 ^-1.013 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^0.861 ^-0.418 ^-1.155 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^0.674 ^-0.429 ^-1.270 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^0.472 ^-0.440 ^-1.354 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^0.260 ^-0.450 ^-1.407 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^0.044 ^-0.461 ^-1.427 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-0.173 ^-0.472 ^-1.413 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-0.385 ^-0.483 ^-1.367 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-0.587 ^-0.494 ^-1.289 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-0.774 ^-0.505 ^-1.182 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-0.942 ^-0.515 ^-1.048 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-1.087 ^-0.526 ^-0.890 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-1.206 ^-0.537 ^-0.713 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-1.296 ^-0.548 ^-0.520 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-1.356 ^-0.558 ^-0.316 0 0 0 0 1 force @a
+particle minecraft:raid_omen ^-1.384 ^-0.569 ^-0.106 0 0 0 0 1 force @a
+

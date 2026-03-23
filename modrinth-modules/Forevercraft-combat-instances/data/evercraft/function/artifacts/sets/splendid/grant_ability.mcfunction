@@ -1,0 +1,3 @@
+# Grant Pathfinder's Compass to player
+give @s minecraft:recovery_compass[custom_name={text:"Pathfinders Compass",color:"gold",italic:false},custom_data={pathfinders_compass:1b,artifact:true},lore=[{text:"Splendid Set 4pc Active",color:"gray",italic:false},{text:"Right-click to open structure menu",color:"aqua",italic:false},{text:"Can only locate each structure once",color:"dark_gray",italic:false},{text:"Ancient Cities require full 5pc set",color:"dark_purple",italic:false},{text:""},{text:"Cooldown: Once per Minecraft day",color:"red",italic:false}]]
+tellraw @s {text:"The Pathfinder's Compass materializes in your inventory...",color:"gold",italic:true}

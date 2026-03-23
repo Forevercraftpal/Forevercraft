@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "hit_with_sweep_attack_1": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{sweep_attack:1b}"
+              }
+            }
+          }
+        },
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:player"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/melee/sweep_attack_1"
+  }
+}

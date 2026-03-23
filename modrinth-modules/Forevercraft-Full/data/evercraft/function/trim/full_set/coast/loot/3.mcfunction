@@ -1,0 +1,1 @@
+$loot insert ~ ~ ~ loot evercraft:trim/$(chest)

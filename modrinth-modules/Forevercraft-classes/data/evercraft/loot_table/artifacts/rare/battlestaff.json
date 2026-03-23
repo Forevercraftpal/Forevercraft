@@ -1,0 +1,132 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_spear",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": "Battlestaff",
+                "minecraft:lore": [
+                  {
+                    "text": "Rare Artifact",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A warrior's staff, balanced",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "for swift strikes.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {"text": "Flowing Strikes: ", "color": "aqua", "italic": false, "extra": [{"text": "3 hits → Haste I, 6 → Haste II", "color": "white"}]},
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+25% Attack Speed",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Beastlord Class",
+                    "color": "#2ECC71",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Aura: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Strength to nearby pets",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Warp Strike: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Pets teleport to enemies",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Rally Cry: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Shift+Use — buff all pets",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+7 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "battlestaff",
+                  "is_artifact": true,
+                  "ability": "swift_strikes",
+                  "tier": "rare",
+                  "beastlord": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 7,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_speed"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

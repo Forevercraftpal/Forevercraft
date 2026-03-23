@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{rune:\"ec.gilded\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/runes/gilded/activate"
+  }
+}

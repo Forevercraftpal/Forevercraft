@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "hit_with_tank_shield": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:shield",
+              "predicates": {
+                "minecraft:custom_data": "{tank:1b}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/shields/on_hit"
+  }
+}

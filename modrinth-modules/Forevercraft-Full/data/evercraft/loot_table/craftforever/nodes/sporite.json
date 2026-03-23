@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_mushroom",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 2}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Sporite Cap", "color": "#E879F9", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Ornate Biome Material", "color": "dark_purple", "italic": false},
+                  "",
+                  {"text": "A luminous fungal cap brimming", "color": "gray", "italic": true},
+                  {"text": "with mycelial spore energy.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "sporite", "cf_biome": 9}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

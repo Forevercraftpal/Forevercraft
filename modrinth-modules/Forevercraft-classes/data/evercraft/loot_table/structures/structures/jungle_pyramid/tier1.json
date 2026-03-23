@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/common/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/jungle_temple"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 1, "max": 2},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:bamboo", "weight": 30, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:mossy_cobblestone", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:arrow", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:tripwire_hook", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:gold_ingot", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}]}
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "JUNGLE RUNE - jungle exclusive (5%)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 95
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/briar",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

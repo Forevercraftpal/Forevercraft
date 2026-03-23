@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{miners_slumbering_geode:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/consume_miners_slumbering_geode"
+  }
+}

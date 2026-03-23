@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Grim Helmet",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Torn from the skull of an",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "ancient warden.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Night vision & darkness immunity",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Wardens ignore you",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "warden_helm",
+                  "is_artifact": true,
+                  "ability": "warden_affinity",
+                  "tier": "exquisite"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:artifact_knockback"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

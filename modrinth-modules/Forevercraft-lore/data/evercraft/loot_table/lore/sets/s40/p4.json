@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Ender Trace",
+                  "color": "aqua",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Between Worlds",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Rare Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A traveler between worlds.",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to add to collection]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 4004,
+                  "lore_set": 40,
+                  "lore_pid": 4
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:item_model": "minecraft:ender_pearl",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

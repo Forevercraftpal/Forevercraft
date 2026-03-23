@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Firebrand",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "Forged in the Gilded Tyrant's molten throne room.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Berserker Class", "color": "#DC143C", "bold": true, "italic": false},
+                  {"text": "◆ Earthshatter: ", "color": "gray", "italic": false, "extra": [{"text": "8-block shockwave + launch (10s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Rampage: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC: Speed II + kill extends (30s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Tyrant's Rage: ", "color": "gray", "italic": false, "extra": [{"text": "Below 30% HP: +50% dmg, +30% speed, 15% lifesteal", "color": "dark_gray"}]},
+                  {"text": "◆ Undying: ", "color": "gray", "italic": false, "extra": [{"text": "Death prevention once per 5m", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+14 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_berserker_firebrand",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "berserker",
+                  "spirit_id": 3,
+                  "berserker": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 14.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -2.8, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:spirit_weapon"},
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

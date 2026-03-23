@@ -1,0 +1,146 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Tower Shield",
+                "italic": true
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "An imposing shield that towers over enemies.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Provides exceptional protection at the cost of mobility.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ocean Artifact",
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "\u25c6 Tank: ",
+                  "color": "white",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "Mainhand grants Resistance I",
+                      "color": "gray"
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": {
+                  "type": "minecraft:uniform",
+                  "min": 6,
+                  "max": 10
+                },
+                "minecraft:mending": 1
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "tower_shield_armor",
+                  "attribute": "minecraft:armor",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "tower_shield_toughness",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "tower_shield_knockback_resist",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.3,
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "tower_shield_speed",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": -0.1,
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "evercraft:shield_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 3.0,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:shield_knockback",
+                  "attribute": "minecraft:attack_knockback",
+                  "amount": 1.2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "is_artifact": true,
+                  "artifact": "tower_shield",
+                  "biome": "ocean",
+                  "tank": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "comment": "Unknown Structure - Ornate Tier (rolled from End base)",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/ornate/main"
+        }
+      ]
+    },
+    {
+      "comment": "Vanilla structure loot as base",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/bastion_treasure",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/stronghold_library",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/woodland_mansion",
+          "weight": 30
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": true
+              }
+            }
+          }
+        ],
+        "item": {
+          "items": "minecraft:shield",
+          "predicates": {
+            "minecraft:custom_data": "{tank:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/shields/detect_shift_use"
+  }
+}

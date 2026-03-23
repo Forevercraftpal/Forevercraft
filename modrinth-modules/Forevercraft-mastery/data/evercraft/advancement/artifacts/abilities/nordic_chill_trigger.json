@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_nordic_chill": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"nordic_chill\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/nordic_chill"
+  }
+}

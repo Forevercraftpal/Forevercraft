@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{boss_dr_ashen:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/boss_dr/consume_ashen"
+  }
+}

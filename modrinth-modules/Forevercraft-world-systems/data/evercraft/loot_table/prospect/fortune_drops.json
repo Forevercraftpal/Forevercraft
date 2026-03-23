@@ -1,0 +1,130 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 80,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "weight": 100,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 3, "max": 6}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/scrap_metal",
+          "weight": 16
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/tempered_alloy",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/starforged_ingot",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/dreamwrought_bar",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/eternal_essence",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/eternal_essence",
+          "weight": 5,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/soulbound_core",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/soulbound_core",
+          "weight": 3,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_end"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/crystallized_ember",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/deepslate_heart",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/soul_ember",
+          "weight": 40,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/void_shard",
+          "weight": 40,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_end"}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:quartz",
+          "weight": 60,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 5}}
+          ],
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/nethercap",
+          "weight": 50,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/chorus_extract",
+          "weight": 50,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_end"}}
+          ]
+        }
+      ]
+    }
+  ]
+}

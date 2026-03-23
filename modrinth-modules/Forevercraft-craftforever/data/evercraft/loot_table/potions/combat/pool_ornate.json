@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:generic",
+  "pools": [{"rolls": 1, "entries": [
+    {"type": "minecraft:empty", "weight": 50},
+    {"type": "minecraft:loot_table", "value": "evercraft:potions/combat/cowards_tonic", "weight": 5},
+    {"type": "minecraft:loot_table", "value": "evercraft:potions/combat/warriors_draft", "weight": 10},
+    {"type": "minecraft:loot_table", "value": "evercraft:potions/combat/hunters_focus", "weight": 20},
+    {"type": "minecraft:loot_table", "value": "evercraft:potions/combat/slayers_elixir", "weight": 12},
+    {"type": "minecraft:loot_table", "value": "evercraft:treasure/potions/dreams_ornate", "weight": 3}
+  ]}]
+}

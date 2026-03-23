@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "The Legacy",
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The First Dreamers",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Mythical Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "The Legacy",
+                  "author": "Elder Dreamer",
+                  "pages": [
+                    [
+                      {
+                        "text": "Every Dream you've ever had was an echo of theirs. Every wonder you've felt was a thread they left for you to follow.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "You are not separate from the Dreamers. You are their latest expression \u2014 the Dream's newest attempt to understand itself. Every block you place, every creature you befriend, every sunset you witness is a continuation of their work.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "The Dreamers did not finish the world because they never intended to. They started it, and left the finishing to you. Dream well, new Dreamer. The world is listening.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 13908"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 13908,
+                  "lore_set": 139,
+                  "lore_pid": 8
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

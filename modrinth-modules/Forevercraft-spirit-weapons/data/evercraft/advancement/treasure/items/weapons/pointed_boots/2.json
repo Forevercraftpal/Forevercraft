@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:fall_from_height",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "feet": {
+              "predicates": {
+                "minecraft:custom_data": "{weapon:\"point\"}"
+              }
+            }
+          }
+        },
+        "distance": {
+          "absolute": {
+            "min": 14.51,
+            "max": 29.5
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/items/weapons/pointed_boots/2"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "weight": 200,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 3, "max": 6}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_ingot",
+          "weight": 150,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coal",
+          "weight": 150,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 100,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 50,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "weight": 80,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone",
+          "weight": 70,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 5}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 50,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"max": 0}}}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:quartz",
+          "weight": 50,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}
+          ],
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/magma_salt",
+          "weight": 100,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/nethercap",
+          "weight": 100,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/chorus_extract",
+          "weight": 150,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_end"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/scrap_metal",
+          "weight": 45
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/tempered_alloy",
+          "weight": 33
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/starforged_ingot",
+          "weight": 16
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/dreamwrought_bar",
+          "weight": 9
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/eternal_essence",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/eternal_essence",
+          "weight": 15,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/soulbound_core",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/soulbound_core",
+          "weight": 8,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_end"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/crystallized_ember",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/deepslate_heart",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/soul_ember",
+          "weight": 20,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/void_shard",
+          "weight": 20,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_end"}}
+          ]
+        }
+      ]
+    }
+  ]
+}

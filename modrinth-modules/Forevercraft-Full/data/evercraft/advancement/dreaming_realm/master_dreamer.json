@@ -1,0 +1,19 @@
+{
+  "parent": "evercraft:dreaming_realm/lucid_dreamer",
+  "display": {
+    "icon": {"id": "minecraft:nether_star"},
+    "title": {"text": "Master Dreamer", "color": "#FFD700"},
+    "description": {"text": "Complete all challenges and collect all Dream Lore to earn the Dreamer's Cloak"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:quests/advancement_rewards/grant_exquisite"
+  }
+}

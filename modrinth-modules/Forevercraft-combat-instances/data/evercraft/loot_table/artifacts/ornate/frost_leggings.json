@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Frost Leggings",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Crafted in the frozen peaks",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "where no warmth can reach.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Frost (0/7)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Freeze attackers",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Ice Aura + Blizzard ability",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "+6 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "frost_leggings",
+                  "is_artifact": true,
+                  "artifact_set": "frost",
+                  "tier": "ornate"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_toughness"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

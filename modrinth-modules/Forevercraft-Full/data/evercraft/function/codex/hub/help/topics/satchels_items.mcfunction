@@ -1,0 +1,32 @@
+# Help Topic: Satchels & Items
+# Run as the player (@s = player)
+
+playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.5 1.0
+
+tellraw @s [{"text":"\n"},{"text":"═══════════════════════════════════","color":"white"}]
+tellraw @s [{"text":"  "},{"text":"\u2726 Satchels & Special Items","color":"white","bold":true}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  The ","color":"white"},{"text":"Essentials Satchel","color":"aqua","bold":true},{"text":" is able to hold your","color":"white"}]
+tellraw @s [{"text":"  artifacts and continue giving their effects.","color":"white"}]
+tellraw @s [{"text":"  They are also storable in bundles, giving you","color":"white"}]
+tellraw @s [{"text":"  the ability to carry an abundance of different","color":"white"}]
+tellraw @s [{"text":"  artifacts and test combinations without your","color":"white"}]
+tellraw @s [{"text":"  inventory being cramped!","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  The ","color":"gray"},{"text":"Hero's Satchel","color":"gold","bold":true},{"text":" is special — 11 slots for","color":"gray"}]
+tellraw @s [{"text":"  boss artifacts only. Unlike normal storage,","color":"gray"}]
+tellraw @s [{"text":"  boss drops in here keep their AoE effects","color":"gray"}]
+tellraw @s [{"text":"  active just by sitting in the bag. Multiple","color":"gray"}]
+tellraw @s [{"text":"  satchels can exist with independent inventories.","color":"gray"}]
+tellraw @s [{"text":"  It's a portable boss trophy case.","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  The ","color":"gray"},{"text":"Tome of Experience","color":"green"},{"text":" is an XP bank —","color":"gray"}]
+tellraw @s [{"text":"  right-click to deposit, sneak to withdraw.","color":"gray"}]
+tellraw @s [{"text":"  Never lose levels to death again. ","color":"gray"},{"text":"Armored","color":"light_purple"}]
+tellraw @s [{"text":"  ","color":"gray"},{"text":"Elytra","color":"light_purple"},{"text":" merges armor with flight for combined","color":"gray"}]
+tellraw @s [{"text":"  stats. And ","color":"gray"},{"text":"Glyph Stones","color":"dark_purple"},{"text":" are placeable buffs","color":"gray"}]
+tellraw @s [{"text":"  for nearby players (12 types, max 3 active).","color":"gray"}]
+tellraw @s [{"text":"  Pair two of the same type for amplified effects!","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"white"}]

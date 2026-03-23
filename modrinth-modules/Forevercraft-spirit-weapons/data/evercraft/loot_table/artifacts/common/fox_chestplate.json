@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Fox Chestplate",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Tanned hide stitched with",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "a fox's cunning in mind.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+2 Armor, +2 Max Health",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+5 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_fox_chestplate",
+                  "is_artifact": true,
+                  "tier": "common"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:fox_chestplate_armor"
+                  },
+                  {
+                    "type": "minecraft:max_health",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:fox_chestplate_health"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structures": "minecraft:shipwreck"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structures": "minecraft:shipwreck_beached"
+      }
+    }
+  ]
+}

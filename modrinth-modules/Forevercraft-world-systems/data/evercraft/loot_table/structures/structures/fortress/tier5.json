@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/exquisite/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/nether_bridge"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 4, "max": 6},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:wither_skeleton_skull", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:diamond_block", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:rib_armor_trim_smithing_template", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_ingot", "weight": 12},
+        {"type": "minecraft:item", "name": "minecraft:netherite_upgrade_smithing_template", "weight": 10},
+        {"type": "minecraft:item", "name": "minecraft:nether_star", "weight": 6}
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 90},
+        {"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/main", "weight": 10}
+      ]
+    }
+  ]
+}

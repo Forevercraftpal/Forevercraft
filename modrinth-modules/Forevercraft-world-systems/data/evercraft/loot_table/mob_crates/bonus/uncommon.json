@@ -1,0 +1,201 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Bonus drops from uncommon rarity mob kills (artifacts + rings)",
+  "pools": [
+    {
+      "rolls": 1,
+      "comment": "ARTIFACT POOL - 7% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 93
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/main",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "RING POOL - 3% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 97
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/special/ring_redstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/special/ring_diamond",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/special/ring_slime",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "DUNGEON KEY POOL - 7% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 93
+        },
+        {
+          "type": "minecraft:alternatives",
+          "weight": 3,
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "evercraft:dungeon/key",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "evercraft:craftforever/trials/trial_pass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "RUNE POOL - 3% universal rune",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 97
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/pool_universal",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "SATCHEL POOL - 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:satchel/uncommon",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "BIOME COMPANION POOL",
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/pool_uncommon"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "CHARM POOL - 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/charms/uncommon",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "POTION POOL - 50% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:potions/combat/pool_uncommon",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "LUCK BONUS ROLLS",
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/luck/bonus_rolls"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "AWAKENING STONE - 20% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:weapon_mastery/stones/uncommon_stone",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "PET CRATE POOL - 0.5% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 199
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:crates/items/companion_uncommon",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "ARTIFACT CRATE POOL - 0.5% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 199
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:crates/items/artifact_uncommon",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

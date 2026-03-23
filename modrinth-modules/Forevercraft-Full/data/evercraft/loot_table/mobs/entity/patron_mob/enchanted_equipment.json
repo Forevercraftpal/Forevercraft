@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_helmet",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 40
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/equipment/chainmail",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/equipment/diamond",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/equipment/golden",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/equipment/iron",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/equipment/copper",
+          "weight": 35
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mobs/entity/patron_mob/equipment/diamond",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:looting",
+                          "levels": {
+                            "min": 3
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 50
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

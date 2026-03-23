@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "signed_charter": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:written_book",
+                        "predicates": {
+                            "minecraft:custom_data": "{guild_charter:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "evercraft:guild/create"
+    }
+}

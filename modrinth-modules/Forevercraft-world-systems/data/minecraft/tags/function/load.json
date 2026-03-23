@@ -1,0 +1,15 @@
+{
+  "values": [
+    "evercraft:init",
+    "evercraft:structures/load",
+    "evercraft:fishing/load",
+    "evercraft:harvest/load",
+    "evercraft:mobs/patrons/load",
+    "evercraft:mobs/furia/load",
+    "evercraft:mobs/load",
+    "evercraft:treasure/init",
+    "evercraft:health_bar/load",
+    "evercraft:tomb/load",
+    "evercraft:armored_elytra/load"
+  ]
+}

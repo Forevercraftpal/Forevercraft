@@ -1,0 +1,112 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Hero's Helmet",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  [
+                    {
+                      "text": "A crown worn by those who danced on the edge of forever. ",
+                      "color": "gray",
+                      "italic": true
+                    },
+                    {
+                      "text": "Night Vision",
+                      "color": "green",
+                      "italic": false
+                    }
+                  ],
+                  "",
+                  {
+                    "text": "Set: Eternal (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Hero's Awakening (weapon)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Dancer: +20% Attack Speed",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Eternal Dance — Speed II + Str II",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Dancer: +35% Attack Speed + 15% Evasion",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+0.5 Dreams  ◆  +3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "hero_helmet",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "hero",
+                  "gacha_exclusive": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3.0,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:hero_helmet_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3.0,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:hero_helmet_toughness"
+                  },
+                  {
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:hero_helmet_kb"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

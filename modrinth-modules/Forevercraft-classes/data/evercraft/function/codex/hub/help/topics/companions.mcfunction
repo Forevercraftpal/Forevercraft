@@ -1,0 +1,33 @@
+# Help Topic: Companions
+# Run as the player (@s = player)
+
+playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.5 1.0
+
+tellraw @s [{"text":"\n"},{"text":"═══════════════════════════════════","color":"yellow"}]
+tellraw @s [{"text":"  "},{"text":"\u2764 Companions","color":"yellow","bold":true}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"yellow"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  There are ","color":"white"},{"text":"100 unique companions","color":"yellow"},{"text":" — from a","color":"white"}]
+tellraw @s [{"text":"  tiny Duck to a Golden Dragon, a Snowman, a","color":"white"}]
+tellraw @s [{"text":"  Naiad, even Claude. Each has a","color":"white"}]
+tellraw @s [{"text":"  unique passive ability, and 21 have special","color":"white"}]
+tellraw @s [{"text":"  trigger abilities too. They appear in biome-","color":"white"}]
+tellraw @s [{"text":"  specific pools, 7% chance in their home biome.","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Your bond grows through feeding, petting, and","color":"gray"}]
+tellraw @s [{"text":"  adventuring together, or even leaving your","color":"gray"}]
+tellraw @s [{"text":"  companion wandering at home! Seven mood states","color":"gray"}]
+tellraw @s [{"text":"  track how they feel — Lonely all the way to Overjoyed.","color":"gray"}]
+tellraw @s [{"text":"  At Eternal Bond, ability power jumps to ","color":"gray"},{"text":"1.5x","color":"green"}]
+tellraw @s [{"text":"  ","color":"gray"},{"text":"strength","color":"green"},{"text":". Neglect them too long and the bond","color":"gray"}]
+tellraw @s [{"text":"  decays, so check in on your buddy!","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  They fight alongside you too — gaining XP,","color":"gray"}]
+tellraw @s [{"text":"  leveling up, tracking their kill count. Find or","color":"gray"}]
+tellraw @s [{"text":"  craft a ","color":"gray"},{"text":"whistle","color":"gold"},{"text":" to utilize your companion","color":"gray"}]
+tellraw @s [{"text":"  in combat! Cook ","color":"gray"},{"text":"treats","color":"gold"},{"text":" in the Campfire","color":"gray"}]
+tellraw @s [{"text":"  Kitchen to boost bond by 75-300 RP. Your","color":"gray"}]
+tellraw @s [{"text":"  companion even records shared memories of","color":"gray"}]
+tellraw @s [{"text":"  your adventures.","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"yellow"}]

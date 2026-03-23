@@ -1,0 +1,6 @@
+# Handle Harvest Crate placement - exquisite
+# Revoke advancement immediately so it can trigger again
+advancement revoke @s only evercraft:harvest/core/exquisite/place
+
+# Find the placed barrel nearby and start animation
+execute positioned ~ ~1.6 ~ run function evercraft:crate_anim/find_placed_barrel {tier:"exquisite",system_tag:"harvest_crate",plot_start:25,skin:"ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODY3NTU1NiwKICAicHJvZmlsZUlkIiA6ICJhYjNkNTgwMjVkOWM0NTcyODNkNTFlYTcwYTY4N2U1NiIsCiAgInByb2ZpbGVOYW1lIiA6ICJsdWN5X2ludGhlc2t5XyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jZmRmZjQwZmY5OThhYzIyNGNhYzYzM2FlMmJlODBjZThmNzc1YTA1ZDY1ODk4ODU0MmMwYTQ2ZDUwYzI5NDc1IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",nbt_key:"hc_rarity",nbt_val:"exquisite"}

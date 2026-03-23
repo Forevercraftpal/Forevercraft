@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Wyrmguard",
+                "minecraft:lore": [
+                  [{"text": "Spirit Twin", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "The Dragonheart's guardian shield, forged in dragonfire.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Knight Class", "color": "#FFD700", "bold": true, "italic": false},
+                  {"text": "◆ Twin: ", "color": "gray", "italic": false, "extra": [{"text": "Knight shield CD -50%", "color": "dark_gray"}]},
+                  {"text": "◆ Twin: ", "color": "gray", "italic": false, "extra": [{"text": "Dragon's Aegis heals allies", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+5 Armor", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_knight_johan_shield",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "knight",
+                  "spirit_id": 12,
+                  "spirit_twin_item": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:armor", "amount": 5.0, "operation": "add_value", "slot": "offhand", "id": "evercraft:spirit_twin_armor"}
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

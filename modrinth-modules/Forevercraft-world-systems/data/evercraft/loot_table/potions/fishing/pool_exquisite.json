@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Fishing potion pool for EXQUISITE crates - 50% chance to roll, NO bad potions",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 50, "comment": "50% no potion"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/gills", "weight": 5, "comment": "Basic: 10% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/angler", "weight": 15, "comment": "Good: 30% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/blind_seaman", "weight": 20, "comment": "Great: 40% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/potions/dreams_exquisite", "weight": 10, "comment": "Best: 20% of 50%"}
+      ]
+    }
+  ]
+}

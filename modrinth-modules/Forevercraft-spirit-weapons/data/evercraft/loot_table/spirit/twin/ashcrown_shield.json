@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Ashcrown Shield",
+                "minecraft:lore": [
+                  [{"text": "Spirit Twin", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "Shield of the Ashcrown Sentinel — dark iron and crimson rubies.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Sentinel Class", "color": "#5B9BD5", "bold": true, "italic": false},
+                  {"text": "◆ Twin: ", "color": "gray", "italic": false, "extra": [{"text": "Fortress heals allies 1 HP/s", "color": "dark_gray"}]},
+                  {"text": "◆ Twin: ", "color": "gray", "italic": false, "extra": [{"text": "Shield charge generation doubled", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+5 Armor", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_sentinel_ashcrown_shield",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "sentinel",
+                  "spirit_id": 7,
+                  "spirit_twin_item": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:armor", "amount": 5.0, "operation": "add_value", "slot": "offhand", "id": "evercraft:spirit_twin_armor"}
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

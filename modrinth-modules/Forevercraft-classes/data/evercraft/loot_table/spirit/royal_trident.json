@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Depthsworn",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "Trident of the Iron Phalanx — disciplined steel and unbreaking will.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Hoplite Class", "color": "#00CED1", "bold": true, "italic": false},
+                  {"text": "\u25c6 Aegis Wall: ", "color": "gray", "italic": false, "extra": [{"text": "Plant shield creating protection zone (12s CD)", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Phalanx Charge: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC, charge forward with shield (20s CD)", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Protection Aura: ", "color": "gray", "italic": false, "extra": [{"text": "Allies within 8 blocks take 15% less damage", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Counter Thrust: ", "color": "gray", "italic": false, "extra": [{"text": "+6 counter-attack damage on blocks", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+12 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_hoplite_royal_trident",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "hoplite",
+                  "spirit_id": 14,
+                  "hoplite": true,
+                  "javelin": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 12.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -2.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

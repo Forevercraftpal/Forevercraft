@@ -1,0 +1,126 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Fantasy Axe",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon Artifact",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A finely crafted axe from",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "a realm of legends.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Efficiency II",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Lumberfell", "color": "dark_green", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "Berserker Class",
+                    "color": "#DC143C",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Dual Axes: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "2x speed, -7 armor, -5❤",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Rage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Right-click — 10s auto-swing + Str II",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+1 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"},
+                "minecraft:custom_data": {
+                  "artifact": "uncommon_fantasy_axe",
+                  "is_artifact": true,
+                  "tier": "uncommon",
+                  "craft_class": 2
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 1.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:fantasy_axe_sharpness_damage"
+                  },
+                  {
+                    "type": "minecraft:mining_efficiency",
+                    "amount": 5.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:fantasy_axe_mining_speed"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

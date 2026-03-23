@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "The Gardener",
+                  "color": "aqua",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Tree of Stars",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Rare Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "The Gardener",
+                  "author": "Root Walker",
+                  "pages": [
+                    [
+                      {
+                        "text": "Someone tends the tree. We don't know who. But every spring, new stars bloom on its branches, and every autumn, Dreams fall like leaves.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "I found a fallen star once \u2014 a Dream that had drifted down from the branches. I held it and saw the world as it was meant to be: whole, connected, awake. Then the Dream faded, and I was left with only the memory of perfection.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 15205"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 15205,
+                  "lore_set": 152,
+                  "lore_pid": 5
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

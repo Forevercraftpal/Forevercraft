@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{pantry:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:pantry/on_use"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hit_with_rend": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"rend\"}"
+              }
+            }
+          },
+          "flags": {
+            "is_on_ground": false
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/rend"
+  }
+}

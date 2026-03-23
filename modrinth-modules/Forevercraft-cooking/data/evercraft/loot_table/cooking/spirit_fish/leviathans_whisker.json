@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Leviathan's Whisker","color":"#EF5350","italic":false,"bold":true},
+                "minecraft:lore": [
+                  {"text":"Spirit Fish","color":"#AB47BC","italic":false},
+                  "",
+                  {"text":"A barbed tendril from something","color":"gray","italic":true},
+                  {"text":"ancient and impossibly vast.","color":"gray","italic":true},
+                  "",
+                  {"text":"Used in Spirit Cuisine","color":"gold","italic":false}
+                ],
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic",
+                "minecraft:custom_data": {"spirit_fish":true,"fish_type":"leviathans_whisker"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

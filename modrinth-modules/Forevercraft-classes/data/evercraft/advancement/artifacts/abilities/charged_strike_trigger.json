@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_charged_strike": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"charged_strike\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/charged_strike"
+  }
+}

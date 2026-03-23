@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hit_undead": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"undead_slayer\"}"
+              }
+            }
+          }
+        },
+        "entity": {
+          "type": "#minecraft:undead"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/undead_slayer"
+  }
+}

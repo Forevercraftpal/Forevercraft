@@ -1,0 +1,64 @@
+{
+  "criteria": {
+    "empty": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "feet": {
+              "items": [
+                "minecraft:air"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "feet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "advancements": {
+              "evercraft:treasure/technical/armor/boots_durability": false
+            }
+          },
+          "equipment": {
+            "feet": {
+              "items": [
+                "minecraft:leather_boots",
+                "minecraft:chainmail_boots",
+                "minecraft:iron_boots",
+                "minecraft:golden_boots",
+                "minecraft:diamond_boots",
+                "minecraft:netherite_boots"
+              ]
+            }
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:leather_boots",
+              "minecraft:chainmail_boots",
+              "minecraft:iron_boots",
+              "minecraft:golden_boots",
+              "minecraft:diamond_boots",
+              "minecraft:netherite_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "empty",
+      "feet"
+    ]
+  ],
+  "rewards": {
+    "function": "evercraft:treasure/technical/armor/feet_check"
+  }
+}

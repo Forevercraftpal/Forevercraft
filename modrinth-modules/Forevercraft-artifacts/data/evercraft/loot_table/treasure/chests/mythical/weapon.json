@@ -1,0 +1,576 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "comment": "Single biome weapon piece per call - call this table twice for max 2 weapons",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "crossbow",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": {
+                    "min": 0.05,
+                    "max": 0.05
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "id": "crossbow2",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": {
+                    "min": 0.05,
+                    "max": 0.05
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:piercing": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:quick_charge": 5,
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:multishot": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/chests/default/netherite_swords",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": {
+                    "min": 2.6,
+                    "max": 2.6
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure_rm",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -4,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": {
+                    "min": 8,
+                    "max": 8
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Diamond Axe",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 9 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2.6 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:brown_shulker_box",
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:shulker_box",
+              "name": "evercraft:treasure/chests/mountain/mineshaft",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "ec.total": {
+                      "min": 200000
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:efficiency": {
+                  "min": 0,
+                  "max": 10
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 0,
+                  "max": 10
+                },
+                "minecraft:silk_touch": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:fortune": {
+                  "min": 0,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 9,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure_rm",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Forged Netherite Shovel",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 10 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spyglass",
+          "functions": [
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Laser Scope",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "weapon": "ec.laser_scope",
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Charges a laser dealing insane ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage to an entity in its scope. ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Costs 5 levels per use. ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Range of 300 blocks. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "RING POOL - 1% chance (ring_void)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/special/ring_void",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "DUNGEON KEY - 7% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 93
+        },
+        {
+          "type": "minecraft:alternatives",
+          "weight": 3,
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "evercraft:dungeon/key",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "evercraft:craftforever/trials/trial_pass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "SATCHEL POOL - 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:satchel/mythical",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "PET CRATE - 0.5% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 199
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:crates/items/companion_mythical",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "ARTIFACT CRATE - 0.5% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 199
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:crates/items/artifact_mythical",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "GUIDESTONE - 3% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 97
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:guidestone/guidestone_drop",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "HEART OF THE SEA - 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "COMPANION TREAT - 3% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 97
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/items/companion_treat",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "CHARM POOL - 12% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 88
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/charms/mythical",
+          "weight": 12
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "FOREVER COIN - 20% chance (7 coins)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 7
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Forever Coin",
+                  "color": "#E0B0FF",
+                  "italic": false,
+                  "bold": true
+                },
+                "minecraft:custom_data": {
+                  "forever_coin": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Fountain Currency",
+                    "color": "#E0B0FF",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Minted in the dreams of a forgotten age,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "each coin hums with the Fountain's promise.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Spend at the Fountain of Eternal Dreams.",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "rare"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

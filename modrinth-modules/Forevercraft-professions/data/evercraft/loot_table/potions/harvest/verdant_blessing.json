@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 65280,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 0,
+                      "duration": 6000,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:luck",
+                      "amplifier": 0,
+                      "duration": 6000,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Verdant Blessing",
+                  "color": "#00FF00",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "+100% Crop Growth radius, Regen I (5:00)",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "The earth itself blesses you",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "Crops practically leap from the soil",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

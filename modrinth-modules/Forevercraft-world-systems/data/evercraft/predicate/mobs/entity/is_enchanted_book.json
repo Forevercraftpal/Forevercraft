@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:item",
+      "nbt": "{Item:{id:\"minecraft:enchanted_book\"}}"
+    }
+  }
+  

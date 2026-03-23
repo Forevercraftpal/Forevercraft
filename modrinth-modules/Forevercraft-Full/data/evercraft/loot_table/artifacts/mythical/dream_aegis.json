@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_name": "Dream Aegis",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "Accessory — Inventory Held",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A shard of crystallized dream-stuff that bends reality to shield its bearer.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Dream Shield: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Grants brief invulnerability after taking damage",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Scales: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Duration increases with Dream Rate",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+2 Dream Rate",
+                        "color": "aqua"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "dream_aegis",
+                  "is_artifact": true,
+                  "ability": "dream_shield",
+                  "tier": "mythical",
+                  "accessory": true,
+                  "inventory_held": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

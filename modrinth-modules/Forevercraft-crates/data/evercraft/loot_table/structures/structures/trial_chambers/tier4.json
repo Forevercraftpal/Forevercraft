@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/ornate/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/trial_chambers/reward"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 3, "max": 5},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:ominous_trial_key", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:wind_charge", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 16, "max": 32}}]},
+        {"type": "minecraft:item", "name": "minecraft:diamond_block", "weight": 12},
+        {"type": "minecraft:item", "name": "minecraft:flow_armor_trim_smithing_template", "weight": 15},
+        {"type": "minecraft:item", "name": "minecraft:bolt_armor_trim_smithing_template", "weight": 15},
+        {"type": "minecraft:item", "name": "minecraft:mace", "weight": 8},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 15}
+      ]
+    }
+  ]
+}

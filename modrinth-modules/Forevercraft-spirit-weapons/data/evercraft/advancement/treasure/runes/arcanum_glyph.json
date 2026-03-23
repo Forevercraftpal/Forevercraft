@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{rune:\"ec.arcanum\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/runes/arcanum/activate"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:leather",
+          "predicates": {
+            "minecraft:custom_data": "{hero_satchel:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:hero_satchel/on_open"
+  }
+}

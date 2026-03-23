@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "took_damage": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim_effects/emerald_trim/dodge_check"
+  }
+}

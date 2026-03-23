@@ -1,0 +1,157 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Dragonmaster Axe",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Hewn from the jawbone of an elder wyrm, still warm to touch.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Lumberfell", "color": "dark_green", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "Berserker Class",
+                    "color": "#DC143C",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Wyrmfire Cleave: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "AoE fire damage on hit",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Dual Axes: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "2x speed, -7 armor, -5❤",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Rage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Right-click — 10s auto-swing + Str II",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Wyrmrider (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Dragon's Fury — Strength II (weapon)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Berserker: Speed I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Dancer: +15% Attack Speed",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Dragon Avatar — Str III + Fire Res",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Berserker: +4 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Dancer: +30% Attack Speed",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+16 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"},
+                "minecraft:custom_data": {
+                  "artifact": "dragonmaster_axe",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "dragonmaster",
+                  "ability": "wyrmfire_cleave",
+                  "looting_bonus": 3,
+                  "craft_class": 2
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 16.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragonmaster_axe_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragonmaster_axe_speed"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

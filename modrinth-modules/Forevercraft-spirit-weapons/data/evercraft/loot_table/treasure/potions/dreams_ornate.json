@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 11141290,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:luck",
+                      "amplifier": 3,
+                      "duration": 8400,
+                      "show_particles": true
+                    }
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "text": "Potion of Dreams",
+                  "color": "dark_purple",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Dream Rate +4 for 7 minutes",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases items found in chests",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Pebble of Dreams",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Accessory \u2014 Inventory Held",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A smooth stone found in a",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "river bed. Feels warm to touch.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+1 Dream Rate while in inventory",
+                        "color": "green"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "pebble_of_dreams",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "accessory": true,
+                  "inventory_held": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

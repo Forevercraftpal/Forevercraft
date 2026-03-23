@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Why We Left",
+                  "color": "aqua",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Architect's Journal",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Rare Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "Why We Left",
+                  "author": "End Architect",
+                  "pages": [
+                    [
+                      {
+                        "text": "We did not abandon the End. We became it. Our Dreams grew so vast they merged with the void itself. We are still here, dreaming.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "If you stand on the highest tower of the tallest city and close your eyes, you can feel us. We are the wind that doesn't blow. We are the light that has no source. We are the Architects, and we have never stopped building.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 14705"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 14705,
+                  "lore_set": 147,
+                  "lore_pid": 5
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

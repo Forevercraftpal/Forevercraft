@@ -1,0 +1,124 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Fireforged Leggings",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Crafted in the heart of a",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "dying star's forge.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Speed boost when on fire",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Fire Resistance",
+                        "color": "gold"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Fireforged (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "2pc: Blazing Aura — Fire damage immunity",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "4pc: Phoenix Rebirth — Auto-revive (1x/day)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+6 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "phoenix_leggings",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "artifact_set": "fireforged"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:burning_time",
+                    "amount": -0.5,
+                    "operation": "add_multiplied_total",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_burn_reduce"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

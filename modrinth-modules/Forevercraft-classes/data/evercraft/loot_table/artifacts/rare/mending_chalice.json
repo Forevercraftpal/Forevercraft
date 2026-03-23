@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honeycomb",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": "Mending Chalice",
+                "minecraft:lore": [
+                  {"text": "Rare Artifact", "color": "aqua", "italic": false},
+                  {"text": "Healer — Right-Click to Use", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "An ancient vessel that channels", "color": "gray", "italic": true},
+                  {"text": "restorative energy to the wounded.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Activate: ", "color": "white", "italic": false, "extra": [{"text": "Heal 2 hearts + Regen I 5s (16 blocks)", "color": "green"}]},
+                  {"text": "Cooldown: ", "color": "white", "italic": false, "extra": [{"text": "20 seconds", "color": "gray"}]},
+                  "",
+                  {"text": "Healer's Oath: ", "color": "red", "italic": false, "extra": [{"text": "Cannot deal damage during cooldown", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "healer_chalice",
+                  "is_artifact": true,
+                  "tier": "rare",
+                  "healer": true,
+                  "healer_id": "chalice"
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:max_stack_size": 1,
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

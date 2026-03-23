@@ -1,0 +1,19 @@
+{
+  "parent": "evercraft:dreaming_realm/dreamwalker",
+  "display": {
+    "icon": {"id": "minecraft:ender_eye"},
+    "title": {"text": "Lucid Dreamer", "color": "#2ECC71"},
+    "description": {"text": "Complete all 3 challenges in a single Dreaming Realm visit"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:quests/advancement_rewards/grant_rare"
+  }
+}

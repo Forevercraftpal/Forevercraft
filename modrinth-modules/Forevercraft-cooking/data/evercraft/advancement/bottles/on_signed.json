@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "signed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:written_book",
+            "predicates": {
+              "minecraft:custom_data": "{message_bottle:1b}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:bottles/on_signed"
+  }
+}

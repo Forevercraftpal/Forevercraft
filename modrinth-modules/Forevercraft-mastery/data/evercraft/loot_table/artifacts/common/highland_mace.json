@@ -1,0 +1,125 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mace",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Highland Mace",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A highland warrior's weapon,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "heavy and unforgiving.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+5% Attack Damage",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Striker Class",
+                    "color": "#FF6B00",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Impact Charge ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Mainhand)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Ground Slam ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Sneak+Hit)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Sentinel Mode",
+                    "color": "#5B9BD5",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ +Shield: Res I, Weakness I, Fortress",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+5% Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_highland_mace",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "striker": true
+                },
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 0.05,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_bonus_dmg"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

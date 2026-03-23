@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{fishermans_dozing_lure:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/consume_fishermans_dozing_lure"
+  }
+}

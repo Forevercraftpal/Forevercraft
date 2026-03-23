@@ -1,0 +1,139 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": "Norroen Trident",
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon Artifact",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Carved from ice-bound Nordic oak,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "still cold to the touch.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Javelin Class",
+                    "color": "#00CED1",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Melee: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Slowness I on target",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Thrown: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Frost Burst (2-block AoE)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Hoplite Class",
+                    "color": "#5B9BD5",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Resistance I ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Offhand Shield)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Aegis Burst ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(3 Hits → Absorption II, 15s CD)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+7 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "norroen_trident",
+                  "is_artifact": true,
+                  "tier": "uncommon",
+                  "javelin": true,
+                  "hoplite": true,
+                  "javelin_id": 1
+                },
+                "minecraft:enchantments": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 7,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.6,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_speed"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

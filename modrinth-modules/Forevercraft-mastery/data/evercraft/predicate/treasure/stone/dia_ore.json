@@ -1,0 +1,25 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ec.break_diamond_ore": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ec.break_d_diamond_ore": {
+            "min": 1
+          }
+        }
+      }
+    ]
+  }
+]

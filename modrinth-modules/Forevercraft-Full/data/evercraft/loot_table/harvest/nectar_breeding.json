@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Breeding crate drops - same base chance as standard crop (1 roll)",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crate"
+        }
+      ]
+    }
+  ]
+}

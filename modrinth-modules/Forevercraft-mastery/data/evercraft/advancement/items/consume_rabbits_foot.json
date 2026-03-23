@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume_foot": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{rabbits_dreaming_foot:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/consume_rabbits_dreaming_foot"
+  }
+}

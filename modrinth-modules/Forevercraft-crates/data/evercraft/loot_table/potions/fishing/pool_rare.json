@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Fishing potion pool for RARE crates - 50% chance to roll, weighted by tier",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 50, "comment": "50% no potion"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/unfavored", "weight": 10, "comment": "Bad: 20% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/gills", "weight": 15, "comment": "Basic: 30% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/angler", "weight": 17, "comment": "Good: 35% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/blind_seaman", "weight": 8, "comment": "Great: 15% of 50%"}
+      ]
+    }
+  ]
+}

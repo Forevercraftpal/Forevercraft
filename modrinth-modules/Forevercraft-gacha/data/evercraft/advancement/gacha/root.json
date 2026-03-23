@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:player_head"},
+    "title": {"text": "Fountain of Eternal Dreams", "color": "#E0B0FF"},
+    "description": {"text": "Gacha milestones"},
+    "background": "minecraft:textures/block/amethyst_block.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  }
+}

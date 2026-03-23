@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:bred_animals"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:harvest/ref/advancement/breeding"
+  }
+}

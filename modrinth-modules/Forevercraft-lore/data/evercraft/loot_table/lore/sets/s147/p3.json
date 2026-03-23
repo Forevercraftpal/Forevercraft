@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "The Ships",
+                  "color": "aqua",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Architect's Journal",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Rare Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "The Ships",
+                  "author": "End Architect",
+                  "pages": [
+                    [
+                      {
+                        "text": "Our ships were meant to sail the void between islands, carrying Dreams from one beacon to the next. We never imagined they would be tombs.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "The last ship launched with a crew of twelve and a cargo hold full of hope. It sailed into the void between islands and simply... stopped. The void had other plans.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 14703"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 14703,
+                  "lore_set": 147,
+                  "lore_pid": 3
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

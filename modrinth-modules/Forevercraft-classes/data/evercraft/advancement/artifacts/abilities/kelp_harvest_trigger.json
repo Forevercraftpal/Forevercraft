@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_kelp_harvest": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"kelp_harvest\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/kelp_harvest"
+  }
+}

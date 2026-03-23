@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Ninja Leggings",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Grants the silent step of",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "the legendary shinobi.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Ninja (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "2pc: Shadow Cloak — Speed II + stealth in dark",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "4pc: Shadow Step — Teleport behind target + backstab",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+6 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "ninja_leggings",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "artifact_set": "ninja"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:ninja_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:ninja_toughness"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

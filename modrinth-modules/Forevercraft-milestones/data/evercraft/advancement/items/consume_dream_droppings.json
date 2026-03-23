@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume_droppings": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{crystalized_dream_droppings:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/consume_crystalized_dream_droppings"
+  }
+}

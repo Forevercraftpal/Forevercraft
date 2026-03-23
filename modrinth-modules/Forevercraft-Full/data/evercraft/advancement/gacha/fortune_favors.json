@@ -1,0 +1,13 @@
+{
+  "parent": "evercraft:gacha/dedicated_dreamer",
+  "display": {
+    "icon": {"id": "minecraft:diamond"},
+    "title": {"text": "Fortune Favors the Bold", "color": "light_purple"},
+    "description": {"text": "100 pulls at the Fountain"},
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  }
+}

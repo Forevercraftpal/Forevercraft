@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_adaptive_edge": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"adaptive_edge\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/adaptive_edge"
+  }
+}

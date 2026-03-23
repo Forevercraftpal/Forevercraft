@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Ship Plank",
+                  "color": "green",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "End Ship Salvage",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Uncommon Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "From a ship that sails the void.",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to add to collection]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 12601,
+                  "lore_set": 126,
+                  "lore_pid": 1
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 1,
+                "minecraft:item_model": "minecraft:purpur_block"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

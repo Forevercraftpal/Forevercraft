@@ -1,0 +1,21 @@
+
+particle dust{color:[0.973,0.086,0.086],scale:1} ^-0.100 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^-0.080 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^-0.060 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^-0.040 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^-0.020 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.000 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.020 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.040 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.060 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.080 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.100 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.120 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.140 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.160 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.180 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.200 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.220 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.240 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.260 ^-0.500 ^-0.500 0 0 0 0 1 force @a
+particle dust{color:[0.973,0.086,0.086],scale:1} ^0.280 ^-0.500 ^-0.500 0 0 0 0 1 force @a

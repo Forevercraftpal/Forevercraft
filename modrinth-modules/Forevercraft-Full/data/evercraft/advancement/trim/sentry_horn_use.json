@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_horn": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:goat_horn",
+          "predicates": {
+            "minecraft:custom_data": "{trim_abilities_pillager_war_horn:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/single/sentry/on_use"
+  }
+}

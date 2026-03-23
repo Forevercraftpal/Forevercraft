@@ -1,0 +1,14 @@
+{
+  "parent": "evercraft:trim/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/abandoned_mineshaft"
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/full_set/coast/loot/1"
+  }
+}

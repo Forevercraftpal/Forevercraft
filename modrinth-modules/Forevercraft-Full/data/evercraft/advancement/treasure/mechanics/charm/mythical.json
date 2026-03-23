@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{ec:\"mythical_charm\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/mechanics/charm/mythical/use"
+  }
+}

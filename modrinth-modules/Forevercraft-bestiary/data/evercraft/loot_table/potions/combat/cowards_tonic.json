@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 4738096,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:weakness",
+                      "amplifier": 0,
+                      "duration": 600,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Coward's Tonic",
+                  "color": "dark_gray",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Common",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Weakness I (30s)",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Brewed from the tears of the fearful",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "\"Feeling brave? Not anymore!\"",
+                    "color": "dark_purple",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

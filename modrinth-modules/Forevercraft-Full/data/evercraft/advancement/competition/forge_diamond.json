@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "diamond_sword": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_sword"}},
+    "diamond_pickaxe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_pickaxe"}},
+    "diamond_axe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_axe"}},
+    "diamond_shovel": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_shovel"}},
+    "diamond_hoe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_hoe"}},
+    "diamond_helmet": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_helmet"}},
+    "diamond_chestplate": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_chestplate"}},
+    "diamond_leggings": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_leggings"}},
+    "diamond_boots": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:diamond_boots"}}
+  },
+  "requirements": [["diamond_sword","diamond_pickaxe","diamond_axe","diamond_shovel","diamond_hoe","diamond_helmet","diamond_chestplate","diamond_leggings","diamond_boots"]],
+  "rewards": {
+    "function": "evercraft:competition/score/forge_diamond"
+  }
+}

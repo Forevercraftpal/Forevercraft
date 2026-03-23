@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Portal Dial", "color": "gold", "bold": true, "italic": false},
+                "minecraft:lore": [
+                  {"text": "Ancient Warping Device", "color": "dark_purple", "italic": false},
+                  "",
+                  {"text": "Right-click a lodestone to bind", "color": "gray", "italic": true},
+                  {"text": "(Costs 30 levels per binding)", "color": "red", "italic": true},
+                  "",
+                  {"text": "Use to teleport to bound location", "color": "aqua", "italic": true}
+                ],
+                "minecraft:custom_data": {
+                  "portal_dial": true,
+                  "evercraft_item": true
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:consumable": {"consume_seconds": 600, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {
+                  "seconds": 5,
+                  "cooldown_group": "evercraft:portal_dial"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Black Market — Listing Row 1 (Empty)
+execute rotated ~ 0 positioned ^ ^2.72 ^1.78 run summon text_display ~ ~ ~ {brightness:{block:15,sky:15},shadow_radius:0f,Tags:["BM.El","BM.SlotEl"],billboard:"center",text:{text:"  (empty)",color:"dark_gray",italic:true},background:1,shadow:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.473f,0.473f,0.473f]}}

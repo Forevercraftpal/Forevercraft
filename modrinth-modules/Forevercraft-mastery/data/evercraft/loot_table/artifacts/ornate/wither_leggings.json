@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Wither Leggings",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Woven from the shadows",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "of souls long departed.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Wither (0/4)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Wither immunity + Lifesteal",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Wither Aura + Soul Harvest",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "+6 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "wither_leggings",
+                  "is_artifact": true,
+                  "artifact_set": "wither",
+                  "tier": "ornate"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_knockback"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

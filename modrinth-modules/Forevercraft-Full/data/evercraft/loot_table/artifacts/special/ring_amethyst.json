@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Amethyst Ring",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {"text": "Common Artifact", "color": "white", "italic": false},
+                  "",
+                  {"text": "A simple ring set with amethyst.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Effect: ", "color": "white", "italic": false, "extra": [{"text": "Night Vision", "color": "aqua"}]}
+                ],
+                "minecraft:custom_data": {"artifact": "ring_amethyst", "is_artifact": true, "ring": true, "tier": "common"},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

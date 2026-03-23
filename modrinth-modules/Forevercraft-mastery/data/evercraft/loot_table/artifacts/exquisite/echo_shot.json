@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Echo Shot",
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Exquisite Artifact", "color": "light_purple", "italic": false},
+                  "",
+                  {"text": "Each bolt fired echoes through", "color": "gray", "italic": true},
+                  {"text": "the sculk-infused mechanism.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Hunter Class", "color": "#708090", "bold": true, "italic": false},
+                  {"text": "\u25c6 Precision: ", "color": "gray", "italic": false, "extra": [{"text": "Resonance \u2014 Damage echo (8 blocks)", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Passive: ", "color": "gray", "italic": false, "extra": [{"text": "Glowing (5s) on hit", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Fade: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Load \u2014 Invis + Speed", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "echo_shot",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "hunter": true,
+                  "hunter_id": "echo_shot"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

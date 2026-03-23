@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/mythical/slayer_of_dragons"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/mythical/tears_of_world_tree"
+        }
+      ]
+    }
+  ]
+}

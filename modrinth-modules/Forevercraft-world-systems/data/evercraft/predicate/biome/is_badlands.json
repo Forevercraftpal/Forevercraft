@@ -1,0 +1,6 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "biomes": ["minecraft:badlands","minecraft:eroded_badlands","minecraft:wooded_badlands"]
+  }
+}

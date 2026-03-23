@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lodestone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": {"text": "Guidestone", "color": "light_purple", "bold": true, "italic": false},
+                "minecraft:lore": [
+                  {"text": "Place and right-click to create", "color": "gray", "italic": false},
+                  {"text": "a waypoint in the network.", "color": "gray", "italic": false},
+                  {"text": "", "italic": false},
+                  {"text": "Right-click a placed Guidestone", "color": "dark_purple", "italic": false},
+                  {"text": "to open the teleport menu.", "color": "dark_purple", "italic": false}
+                ],
+                "minecraft:custom_data": {"guidestone": true, "evercraft_item": true, "gs_color": "amethyst"},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

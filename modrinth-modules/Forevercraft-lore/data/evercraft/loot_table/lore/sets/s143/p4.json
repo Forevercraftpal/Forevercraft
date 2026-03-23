@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "The Warden",
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Sundered Portal",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Mythical Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "The Warden",
+                  "author": "Warden's Echo",
+                  "pages": [
+                    [
+                      {
+                        "text": "They created the Warden not as a guard, but as a lock. It responds to sound because the portal responds to silence.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "The logic was precise: the portal opens when the world is perfectly silent. Therefore, create something that attacks any source of sound. The Warden is not a monster \u2014 it is a key, turned the wrong way.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "Every time the Warden eliminates a noise, it is not attacking. It is locking. Keeping something shut.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 14304"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 14304,
+                  "lore_set": 143,
+                  "lore_pid": 4
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

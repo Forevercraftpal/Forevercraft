@@ -1,0 +1,1 @@
+$tellraw @s [{text:"\n"},{text:"  ★ ",color:"$(tier_color)"},{text:"BUDDY TIER UP",color:"$(tier_color)",bold:true},{text:" ★",color:"$(tier_color)"},{text:"\n"},{text:"  Your buddy has reached ",color:"yellow"},{text:"$(tier_name)",color:"$(tier_color)",bold:true},{text:"!",color:"yellow"},{text:"\n"}]

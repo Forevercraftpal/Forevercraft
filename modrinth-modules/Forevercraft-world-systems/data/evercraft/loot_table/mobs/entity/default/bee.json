@@ -1,0 +1,203 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "conditions": [
+            {
+              "condition": "killed_by_player"
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:storage",
+                "storage": "eden:settings",
+                "path": "bestiary.bee.mobhead"
+              }
+            }
+          ],
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.bee.loop",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTlhYzE2ZjI5NmI0NjFkMDVlYTA3ODVkNDc3MDMzZTUyNzM1OGI0ZjMwYzI2NmFhMDJmMDIwMTU3ZmZjYTczNiJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.bee"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "entity_properties",
+                  "predicate": {
+                    "nbt": "{anger_time:0,has_nectar:0b}"
+                  },
+                  "entity": "this"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.bee.pollinate",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjcyN2QwYWIwM2Y1Y2QwMjJmODcwNWQzZjdmMTMzY2E0OTIwZWFlOGUxZTQ3YjUwNzQ0MzNhMTM3ZTY5MWU0ZSJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.bee"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "entity_properties",
+                  "predicate": {
+                    "nbt": "{anger_time:0,has_nectar:1b}"
+                  },
+                  "entity": "this"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.bee.loop_aggressive",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQwMDIyM2YxZmE1NDc0MWQ0MjFkN2U4MDQ2NDA5ZDVmM2UxNWM3ZjQzNjRiMWI3Mzk5NDAyMDhmM2I2ODZkNCJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.bee"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "entity_properties",
+                  "predicate": {
+                    "nbt": "{has_nectar:0b}"
+                  },
+                  "entity": "this"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.bee.loop_aggressive",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZiNzRlMDUyYjc0Mjg4Nzk5YmE2ZDlmMzVjNWQwMjIxY2Y4YjA0MzMxNTQ3ZWMyZjY4ZDczNTk3YWUyYzliIn19fQ=="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.bee"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "entity_properties",
+                  "predicate": {
+                    "nbt": "{has_nectar:1b}"
+                  },
+                  "entity": "this"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honeycomb",
+          "functions": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:storage",
+            "storage": "eden:settings",
+            "path": "bestiary.mob_drops.beehoneycomb"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/drop/regular"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    }
+  ]
+}

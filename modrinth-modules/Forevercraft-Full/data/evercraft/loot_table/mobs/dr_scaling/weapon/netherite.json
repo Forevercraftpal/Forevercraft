@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_spear",
+          "weight": 25
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:enchant_with_levels",
+          "levels": {
+            "min": 30,
+            "max": 40
+          },
+          "options": "#minecraft:on_random_loot"
+        }
+      ]
+    }
+  ]
+}

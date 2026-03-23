@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:turtle_master"
+                },
+                "minecraft:custom_name": {
+                  "text": "Unfavored Potion",
+                  "color": "gray",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Common",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Slowness IV, Resistance III",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Nobody wants this...",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "\"Hey sis, catch!\"",
+                    "color": "dark_purple",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/rare/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/igloo_chest"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 2, "max": 4},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:diamond", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}]},
+        {"type": "minecraft:item", "name": "minecraft:golden_apple", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 10},
+        {"type": "minecraft:item", "name": "minecraft:potion", "weight": 18, "functions": [{"function": "minecraft:set_potion", "id": "minecraft:strong_healing"}]},
+        {"type": "minecraft:item", "name": "minecraft:splash_potion", "weight": 15, "functions": [{"function": "minecraft:set_potion", "id": "minecraft:weakness"}]},
+        {"type": "minecraft:item", "name": "minecraft:brewing_stand", "weight": 12}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Temporal Hourglass",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "Accessory — Inventory Held",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "An hourglass that bends the flow of time itself.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Time Dilation: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "50% chance to negate damage (time rewind)",
+                        "color": "gold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Chrono Field: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "All cooldowns reduced by 50%, Speed II",
+                        "color": "light_purple"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "temporal_hourglass",
+                  "is_artifact": true,
+                  "ability": "time_dilation",
+                  "tier": "mythical",
+                  "accessory": true,
+                  "inventory_held": true
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

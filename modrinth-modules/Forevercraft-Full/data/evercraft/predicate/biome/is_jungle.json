@@ -1,0 +1,6 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "biomes": ["minecraft:jungle","minecraft:sparse_jungle","minecraft:bamboo_jungle"]
+  }
+}

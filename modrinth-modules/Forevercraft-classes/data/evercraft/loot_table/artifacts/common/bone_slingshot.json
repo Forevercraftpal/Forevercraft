@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Bone Slingshot",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Crafted from skeleton remains,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "it fires with eerie precision.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Bone Rattle: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "AoE Weakness I (3s)",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "On Hit: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Punch I",
+                        "color": "green"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_bone_slingshot",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "ranged_punch": 1,
+                  "ability": "bone_rattle"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

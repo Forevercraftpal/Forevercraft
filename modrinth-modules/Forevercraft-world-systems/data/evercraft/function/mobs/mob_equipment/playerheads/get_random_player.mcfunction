@@ -1,0 +1,2 @@
+$execute store result storage eden:temp bestiary.head.playerhead.rolled_id int 1 run random value 1..$(max_id)
+function evercraft:mobs/mob_equipment/playerheads/get_storage_entry with storage eden:temp bestiary.head.playerhead

@@ -1,0 +1,1 @@
+execute at @e[type=area_effect_cloud,tag=trim_find_way_command,nbt={age:1}] as @p[tag=single_wayfinder] run function evercraft:trim/single/wayfinder/find4

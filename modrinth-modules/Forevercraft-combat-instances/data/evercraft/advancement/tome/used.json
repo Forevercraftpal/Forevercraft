@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": "minecraft:book",
+          "predicates": {
+            "minecraft:custom_data": "{tome_of_experience:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:tome/on_use"
+  }
+}

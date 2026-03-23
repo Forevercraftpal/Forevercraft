@@ -1,0 +1,4 @@
+# Artisan Tome — Replace tome with updated lore (macro)
+# Safety: verify player is still holding the tome
+execute unless items entity @s weapon.mainhand book[custom_data~{artisan_tome:true}] run return fail
+$item replace entity @s weapon.mainhand with book[custom_name={"text":"Artisan Tome","color":"green","bold":true,"italic":false},lore=[{"text":"Quest $(part) of 100","color":"gray","italic":true},{"text":"","italic":false},{"text":"A record of your spirit tool's journey.","color":"dark_green","italic":true},{"text":"Use to view and activate your next quest.","color":"dark_green","italic":true}],custom_data={artisan_tome:true,evercraft_item:true},consumable={consume_seconds:999999,sound:"intentionally_empty",has_consume_particles:false},use_cooldown={seconds:2,cooldown_group:"evercraft:artisan_tome"},max_stack_size=1,rarity=epic,enchantment_glint_override=true] 1

@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Petra's Leggings",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Crackling with static,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "each step builds power.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Storm (0/7)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Lightning immunity + Charged",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Storm Aura + Thunder Strike",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "+6 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "storm_leggings",
+                  "is_artifact": true,
+                  "artifact_set": "storm",
+                  "tier": "ornate"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_toughness"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

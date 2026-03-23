@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:breeze_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Thunderstrike Core", "color": "aqua", "bold": true, "italic": false},
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Exquisite Artifact", "color": "light_purple", "italic": false},
+                  "",
+                  {"text": "Crackling with the fury of", "color": "gray", "italic": true},
+                  {"text": "The Stormforged's eternal lightning.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Passive: ", "color": "white", "italic": false, "extra": [{"text": "Speed II + Resistance I", "color": "aqua"}]},
+                  {"text": "Dream Rate: ", "color": "white", "italic": false, "extra": [{"text": "+1.5", "color": "green"}]},
+                  {"text": "◆ Boss Exclusive", "color": "gold", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "thunderstrike_core",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "boss_exclusive": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

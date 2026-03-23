@@ -1,0 +1,3766 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Tideworn Plate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Ocean",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+2.5 Entity Reach and +5 ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Block Reach while in water. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "ocean_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:blast_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:fire_protection": {
+                  "min": 3,
+                  "max": 7
+                },
+                "minecraft:feather_falling": {
+                  "min": {
+                    "type": "minecraft:constant",
+                    "value": 1
+                  },
+                  "max": {
+                    "type": "minecraft:constant",
+                    "value": 3
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:submerged_mining_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:oxygen_bonus",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "water_movement_efficiency",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "ocean_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

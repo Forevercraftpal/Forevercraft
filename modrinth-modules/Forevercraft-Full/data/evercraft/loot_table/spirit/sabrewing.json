@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Soulstring",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "A bow that fires arrows through the void.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Archer Class", "color": "#32CD32", "bold": true, "italic": false},
+                  {"text": "◆ Rift Volley: ", "color": "gray", "italic": false, "extra": [{"text": "7 spreading rift arrows (12s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Singularity Arrow: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC, black hole arrow (25s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Pierce: ", "color": "gray", "italic": false, "extra": [{"text": "Arrows pierce 3 entities", "color": "dark_gray"}]},
+                  {"text": "◆ Void Echo: ", "color": "gray", "italic": false, "extra": [{"text": "Critical shots create delayed echo", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+0 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_archer_sabrewing",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "archer",
+                  "spirit_id": 11,
+                  "archer": true,
+                  "archer_id": "soulstring",
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

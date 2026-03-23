@@ -1,0 +1,1 @@
+$data modify entity @e[type=text_display,tag=$(slot),distance=..7,limit=1] text set value [{"text":"\u2022 ","color":"$(type_color)"},{"text":"$(type_label)","color":"$(type_color)"},{"text":" \u2014 ","color":"dark_gray"},{"text":"$(state_label)","color":"$(state_color)"}]

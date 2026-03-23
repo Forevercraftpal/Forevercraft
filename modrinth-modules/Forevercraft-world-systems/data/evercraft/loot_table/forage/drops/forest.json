@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_sapling",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fern",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:azalea",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/woodland_truffle",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/golden_root",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/starbloom_petal",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

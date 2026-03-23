@@ -1,0 +1,109 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Norroen Sword",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A northern blade forged in",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "the cold mountain winds.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Nordic Chill: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "25% — Slowness II (3s)",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Knight Class",
+                    "color": "#FFD700",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "Fencer: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "No shield — +2 Damage, +1 Reach",
+                        "color": "#C0A040"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+6 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_norroen_sword",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "knight": true,
+                  "ability": "nordic_chill"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_speed"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": "minecraft:book",
+          "predicates": {
+            "minecraft:custom_data": "{spirit_tome:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:spirit_tome/on_use"
+  }
+}

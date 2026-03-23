@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:fishing/crate_contents/ornate/1"
+                },
+                "minecraft:item_name": {
+                  "text": "Ornate Fishing Crate",
+                  "bold": true,
+                  "color": "dark_purple"
+                },
+                "minecraft:custom_data": {
+                  "fc_rarity": "ornate",
+                  "fc_stat": false
+                },
+                "minecraft:max_stack_size": 32,
+                "minecraft:custom_name": {
+                  "text": "Ornate Fishing Crate",
+                  "bold": true,
+                  "color": "dark_purple"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "A prized catch indeed!",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

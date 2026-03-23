@@ -1,0 +1,884 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "badlands",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/badlands"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "basalt_deltas",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/basalt_deltas"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "crimson_forest",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/crimson_forest"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "dark_forest",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/dark_forest"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "deep_dark",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/deep_dark"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "desert",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/desert"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "dripstone",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/dripstone"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "flower",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/flower"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "ice",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/ice"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "jungle",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/jungle"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "lush_cave",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/lush_cave"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "mountain",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/mountain"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "mushroom",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/mushroom"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "ocean",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/ocean"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "savanna",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/savanna"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "soul_valley",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/soul_valley"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "swamp",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/swamp"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "taiga",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/taiga"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "warped_forest",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/warped_forest"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "wind",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#evercraft:treasure/wind"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "default",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biomes": "#evercraft:treasure/all"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "default_end",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_end"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:air"
+              }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "treasure": 1,
+                  "biome": "default_nether",
+                  "tier": "uncommon",
+                  "animation": 15,
+                  "spawn_duration": 11,
+                  "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Mzc4ODYwMzk4OSwKICAicHJvZmlsZUlkIiA6ICIxNTUyNmU1OGZhOWE0NjBmODhhNmZhNjk1M2RlNjgzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWVkcml0YTE3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYWE4NmE3NWFlMGQwZGIyNDUxNjIxMTg0MzhjYzRmYWFiYTE0ZDg4MWIwOGY1YjU0ODhkNTJjYTFkMjc5MjMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_nether"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biomes": "#evercraft:treasure/default_nether"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

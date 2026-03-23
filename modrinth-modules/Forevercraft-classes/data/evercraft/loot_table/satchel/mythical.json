@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Essentials Satchel", "color": "gold", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Mythical Satchel", "color": "gold", "italic": false},
+                  {"text": "7 Artifact Slots", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "Store accessories inside and", "color": "gray", "italic": true},
+                  {"text": "still receive their effects.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Right-Click: ", "color": "white", "italic": false, "extra": [{"text": "Open Satchel", "color": "gold"}]},
+                  {"text": "Slots: ", "color": "white", "italic": false, "extra": [{"text": "7", "color": "aqua"}]}
+                ],
+                "minecraft:custom_data": {
+                  "satchel": true,
+                  "satchel_tier": "mythical",
+                  "max_slots": 7,
+                  "bag_id": 0,
+                  "evercraft_item": true
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic",
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 999999,
+                  "sound": "intentionally_empty",
+                  "has_consume_particles": false,
+                  "animation": "brush"
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 1,
+                  "cooldown_group": "evercraft:satchel"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

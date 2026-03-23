@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:spyglass",
+          "predicates": {
+            "minecraft:custom_data": "{artifact:\"enchanted_monocle\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/accessories/activate_monocle"
+  }
+}

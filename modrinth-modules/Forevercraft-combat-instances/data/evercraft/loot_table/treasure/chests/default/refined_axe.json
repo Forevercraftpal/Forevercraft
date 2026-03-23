@@ -1,0 +1,420 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Axe",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Tool",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "An axe forged from the finest",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "netherite, honed to perfection.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "tool": "rn_axe",
+                  "ec": "tool"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:efficiency": {
+                  "min": 1,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -3.0,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Axe",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Tool",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "An axe forged from the finest",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "netherite, honed to perfection.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "tool": "rn_axe",
+                  "ec": "tool"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:efficiency": {
+                  "min": 1,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 10.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.9,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Axe",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Tool",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "An axe forged from the finest",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "netherite, honed to perfection.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "tool": "rn_axe",
+                  "ec": "tool"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:efficiency": {
+                  "min": 1,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 11,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.8,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Axe",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Tool",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "An axe forged from the finest",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "netherite, honed to perfection.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "tool": "rn_axe",
+                  "ec": "tool"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:efficiency": {
+                  "min": 1,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 11.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.7,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Axe",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Tool",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "An axe forged from the finest",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "netherite, honed to perfection.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "tool": "rn_axe",
+                  "ec": "tool"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:efficiency": {
+                  "min": 1,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 12,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "refined_axe",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.6,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

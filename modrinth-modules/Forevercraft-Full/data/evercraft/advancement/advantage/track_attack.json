@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "attack": {
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:advantage/track/on_attack"
+  }
+}

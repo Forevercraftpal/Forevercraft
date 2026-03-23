@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:lodestone"
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:lodestone"],
+              "predicates": {
+                "minecraft:custom_data": "{guidestone:true}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:guidestone/on_place"
+  }
+}

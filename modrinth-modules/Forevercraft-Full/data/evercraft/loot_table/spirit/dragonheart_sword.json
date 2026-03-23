@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Wyrmcleaver",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "A blade that still burns with dragonfire.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Knight Class", "color": "#FFD700", "bold": true, "italic": false},
+                  {"text": "◆ Dragon's Aegis: ", "color": "gray", "italic": false, "extra": [{"text": "6-block fire protection zone (12s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Dragonheart Strike: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC, charge + slam (15s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Dragonfire: ", "color": "gray", "italic": false, "extra": [{"text": "15% chance on hit, 3 dmg/s for 3s", "color": "dark_gray"}]},
+                  {"text": "◆ Ally Shield: ", "color": "gray", "italic": false, "extra": [{"text": "Nearby allies take -20% damage", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+13 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_knight_dragonheart_sword",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "knight",
+                  "spirit_id": 12,
+                  "knight": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 13.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -1.4, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:spirit_weapon"},
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

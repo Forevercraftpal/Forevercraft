@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 790
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/scrap_metal",
+          "weight": 45
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/tempered_alloy",
+          "weight": 33
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/starforged_ingot",
+          "weight": 16
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/dreamwrought_bar",
+          "weight": 9
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/eternal_essence",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/eternal_essence",
+          "weight": 15,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_nether"}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/soulbound_core",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:craftforever/materials/soulbound_core",
+          "weight": 8,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"dimension": "minecraft:the_end"}}
+          ]
+        }
+      ]
+    }
+  ]
+}

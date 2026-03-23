@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:rabbit",
+          "nbt": "{RabbitType:99}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:mob_crates/drop/kill/killer_rabbit"
+  }
+}

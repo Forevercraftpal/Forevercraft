@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": {
+          "blocks": "#evercraft:decorative"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:housing/decoration/on_place"
+  }
+}

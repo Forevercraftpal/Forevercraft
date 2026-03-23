@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Dragonmaster Sword",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A blade that burns with the fury of a thousand dragons.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Knight Class",
+                    "color": "#FFD700",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "Fencer: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "No shield — +2 Damage, +1 Reach",
+                        "color": "#C0A040"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+15 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "dragonmaster_sword",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "dragonmaster",
+                  "flame_strike": 2,
+                  "looting_bonus": 3,
+                  "knight": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 15.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragonmaster_sword_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragonmaster_sword_speed"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

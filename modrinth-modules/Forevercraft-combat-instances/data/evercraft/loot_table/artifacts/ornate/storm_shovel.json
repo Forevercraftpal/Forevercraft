@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Petra's Shovel",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Wind follows each",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "dig like a cyclone.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Storm (0/7)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Lightning immunity + Charged",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Storm Aura + Thunder Strike",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "Ability: Gust Dig",
+                    "color": "green"
+                  },
+                  {
+                    "text": "Digging creates a small wind burst",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Terrawarp", "color": "#C2B280", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "+6 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "storm_shovel",
+                  "is_artifact": true,
+                  "artifact_set": "storm",
+                  "ability": "gust_dig",
+                  "tier": "ornate",
+                  "craft_class": 4
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:mining_efficiency",
+                    "amount": 25,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_mining"
+                  },
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_damage"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

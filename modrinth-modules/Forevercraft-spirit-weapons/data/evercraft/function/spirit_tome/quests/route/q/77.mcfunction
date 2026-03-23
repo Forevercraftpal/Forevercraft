@@ -1,0 +1,4 @@
+scoreboard players set @s ec.sq_type 2
+scoreboard players set @s ec.sq_target 15
+scoreboard players set @s ec.sq_sub 5
+data merge storage evercraft:sq_temp {name:"Expedition Victory",desc:"Complete 15 village quests.",flavor:"The guild banner flies high on the road."}

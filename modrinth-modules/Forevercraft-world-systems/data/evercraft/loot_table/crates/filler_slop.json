@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Filler slop loot — random mob drops and blocks",
+  "pools": [
+    {
+      "rolls": {"min": 2, "max": 5},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:rotten_flesh", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:bone", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:spider_eye", "weight": 8, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 3}}]},
+        {"type": "minecraft:item", "name": "minecraft:string", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 5}}]},
+        {"type": "minecraft:item", "name": "minecraft:gunpowder", "weight": 8, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 3}}]},
+        {"type": "minecraft:item", "name": "minecraft:slime_ball", "weight": 6, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 3}}]},
+        {"type": "minecraft:item", "name": "minecraft:phantom_membrane", "weight": 4, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:ender_pearl", "weight": 3},
+        {"type": "minecraft:item", "name": "minecraft:cobblestone", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"min": 4, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:dirt", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"min": 4, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:gravel", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 2, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:sand", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 2, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:clay_ball", "weight": 8, "functions": [{"function": "minecraft:set_count", "count": {"min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:flint", "weight": 8, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:andesite", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 3, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:diorite", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 3, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:granite", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 3, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:iron_nugget", "weight": 6, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 5}}]},
+        {"type": "minecraft:item", "name": "minecraft:gold_nugget", "weight": 4, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 3}}]},
+        {"type": "minecraft:item", "name": "minecraft:arrow", "weight": 8, "functions": [{"function": "minecraft:set_count", "count": {"min": 2, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:wheat_seeds", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:kelp", "weight": 8, "functions": [{"function": "minecraft:set_count", "count": {"min": 2, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:egg", "weight": 6, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:feather", "weight": 8, "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 5}}]}
+      ]
+    }
+  ]
+}

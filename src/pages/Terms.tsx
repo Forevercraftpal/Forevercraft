@@ -61,7 +61,7 @@ export default function Terms() {
 
           <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">THE WEBSITE</h2>
           <p>
-            The Forevercraft website (forevercraft.pages.dev) is provided for informational purposes
+            The Forevercraft website (forevercraft.co) is provided for informational purposes
             and as a download hub for the datapack. We strive to keep information accurate but make no
             guarantees that all stats, numbers, or descriptions are current at all times.
           </p>

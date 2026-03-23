@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Ember Helmet",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Forged in the heart of",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "an active volcano.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Ember (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "2pc: Volcanic Blood — Fire Resistance",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "4pc: Magma Core — Lava Walker + Fire AoE",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "ember_helmet",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "artifact_set": "ember"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:ember_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:ember_toughness"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

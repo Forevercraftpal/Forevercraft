@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/rare/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/buried_treasure"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 2, "max": 4},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:sponge", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:tide_armor_trim_smithing_template", "weight": 18},
+        {"type": "minecraft:item", "name": "minecraft:heart_of_the_sea", "weight": 10},
+        {"type": "minecraft:item", "name": "minecraft:trident", "weight": 12, "functions": [{"function": "minecraft:set_damage", "damage": {"type": "minecraft:uniform", "min": 0.3, "max": 0.6}}]},
+        {"type": "minecraft:item", "name": "minecraft:diamond", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 5}}]},
+        {"type": "minecraft:item", "name": "minecraft:gold_block", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}]}
+      ]
+    }
+  ]
+}

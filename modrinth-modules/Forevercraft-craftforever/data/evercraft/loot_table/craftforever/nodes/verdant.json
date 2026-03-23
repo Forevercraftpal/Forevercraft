@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 2}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Verdant Gem", "color": "#34D399", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Rare Biome Material", "color": "aqua", "italic": false},
+                  "",
+                  {"text": "A gem nurtured by the living", "color": "gray", "italic": true},
+                  {"text": "stone of lush caverns.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "verdant", "cf_biome": 10}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

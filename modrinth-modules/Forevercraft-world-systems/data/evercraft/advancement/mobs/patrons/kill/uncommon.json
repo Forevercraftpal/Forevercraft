@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "kill_patron": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"ec.patron.uncommon\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:mobs/patrons/rewards/uncommon"
+  }
+}

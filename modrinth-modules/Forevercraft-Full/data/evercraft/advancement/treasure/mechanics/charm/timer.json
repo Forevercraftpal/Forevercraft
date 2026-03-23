@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/mechanics/charm/timer"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heavy_core",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Earthshaker Core", "color": "yellow", "bold": true, "italic": false},
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Exquisite Artifact", "color": "light_purple", "italic": false},
+                  "",
+                  {"text": "The heart of the mountain,", "color": "gray", "italic": true},
+                  {"text": "torn free by The Earthshaker.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Passive: ", "color": "white", "italic": false, "extra": [{"text": "Resistance II + 50% KB Resist", "color": "yellow"}]},
+                  {"text": "Dream Rate: ", "color": "white", "italic": false, "extra": [{"text": "+1.5", "color": "green"}]},
+                  {"text": "◆ Boss Exclusive", "color": "gold", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "earthshaker_core",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "boss_exclusive": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

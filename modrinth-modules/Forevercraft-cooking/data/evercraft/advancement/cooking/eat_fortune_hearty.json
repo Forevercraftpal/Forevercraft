@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{ec_meal:true,meal_id:\"lucky_broth\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:cooking/buff/apply_fortune_hearty"
+  }
+}

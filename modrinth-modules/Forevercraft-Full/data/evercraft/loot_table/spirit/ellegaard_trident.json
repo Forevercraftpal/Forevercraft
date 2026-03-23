@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Soul Piercer",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "A trident blessed by the ocean's fury.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Javelin Class", "color": "#00CED1", "bold": true, "italic": false},
+                  {"text": "◆ Maelstrom: ", "color": "gray", "italic": false, "extra": [{"text": "Water vortex at target (12s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Poseidon's Wrath: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC, tidal wave + lightning (30s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Water/Rain Bonus: ", "color": "gray", "italic": false, "extra": [{"text": "+50% damage in water or rain", "color": "dark_gray"}]},
+                  {"text": "◆ Auto-Riptide: ", "color": "gray", "italic": false, "extra": [{"text": "Riptide effect on throw", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+12 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_javelin_ellegaard_trident",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "javelin",
+                  "spirit_id": 8,
+                  "javelin": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 12.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -2.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

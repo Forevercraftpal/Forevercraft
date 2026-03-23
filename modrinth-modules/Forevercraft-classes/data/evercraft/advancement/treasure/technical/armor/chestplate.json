@@ -1,0 +1,66 @@
+{
+  "criteria": {
+    "empty": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:air"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "chest": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "advancements": {
+              "evercraft:treasure/technical/armor/chest_durability": false
+            }
+          },
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:leather_chestplate",
+                "minecraft:chainmail_chestplate",
+                "minecraft:iron_chestplate",
+                "minecraft:golden_chestplate",
+                "minecraft:diamond_chestplate",
+                "minecraft:netherite_chestplate",
+                "minecraft:elytra"
+              ]
+            }
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:leather_chestplate",
+              "minecraft:chainmail_chestplate",
+              "minecraft:iron_chestplate",
+              "minecraft:golden_chestplate",
+              "minecraft:diamond_chestplate",
+              "minecraft:netherite_chestplate",
+              "minecraft:elytra"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "empty",
+      "chest"
+    ]
+  ],
+  "rewards": {
+    "function": "evercraft:treasure/technical/armor/chest_check"
+  }
+}

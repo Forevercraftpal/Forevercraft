@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_scute",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Speedy's Knee-pads",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "For you know who, doing you know what.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Shell-Forged Protection:",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "  +3 Dream Rate",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "  Fire Resistance",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "  Resistance I",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+3 Dreams  ◆  +3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "speedys_kneepads",
+                  "tier": "mythical",
+                  "secret": true
+                },
+                "minecraft:item_model": "evercraft:speedys_kneepads",
+                "minecraft:max_stack_size": 1,
+                "minecraft:equippable": {
+                  "slot": "legs",
+                  "asset_id": "evercraft:speedys_kneepads",
+                  "swappable": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "id": "evercraft:speedys_kneepads_armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "legs"
+                  },
+                  {
+                    "type": "minecraft:luck",
+                    "id": "evercraft:speedys_kneepads_luck",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "legs"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

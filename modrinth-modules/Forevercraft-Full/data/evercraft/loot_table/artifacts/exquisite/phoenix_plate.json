@@ -1,0 +1,125 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Fireforged Chestplate",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Infused with the essence of",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "rebirth itself.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "On Death: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Revive with 5 hearts (1x/day)",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Fire immunity",
+                        "color": "gold"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Fireforged (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "2pc: Blazing Aura — Fire damage immunity",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "4pc: Phoenix Rebirth — Auto-revive (1x/day)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+8 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "phoenix_plate",
+                  "is_artifact": true,
+                  "ability": "rebirth",
+                  "tier": "exquisite",
+                  "artifact_set": "fireforged"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:max_health",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:artifact_health"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

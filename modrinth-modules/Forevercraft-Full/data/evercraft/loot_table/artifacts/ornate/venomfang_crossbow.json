@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Corrupted Crossbow",
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Ornate Artifact", "color": "dark_purple", "italic": false},
+                  "",
+                  {"text": "Forged from the fangs of an", "color": "gray", "italic": true},
+                  {"text": "ancient cave spider queen.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Hunter Class", "color": "#708090", "bold": true, "italic": false},
+                  {"text": "\u25c6 Precision: ", "color": "gray", "italic": false, "extra": [{"text": "Blight \u2014 Wither III + Poison II AoE", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Passive: ", "color": "gray", "italic": false, "extra": [{"text": "Wither I (3s) on hit", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Fade: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Load \u2014 Invis + Speed", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "venomfang_crossbow",
+                  "is_artifact": true,
+                  "tier": "ornate",
+                  "hunter": true,
+                  "hunter_id": "venomfang_crossbow"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

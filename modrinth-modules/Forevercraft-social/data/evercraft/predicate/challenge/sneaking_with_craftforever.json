@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "flags": {
+      "is_sneaking": true
+    },
+    "equipment": {
+      "mainhand": {
+        "items": "minecraft:stick",
+        "predicates": {
+          "minecraft:custom_data": "{craftforever_codex:1b}"
+        }
+      }
+    }
+  }
+}

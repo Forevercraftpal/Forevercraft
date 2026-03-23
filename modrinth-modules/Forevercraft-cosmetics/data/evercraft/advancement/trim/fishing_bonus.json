@@ -1,0 +1,14 @@
+{
+  "parent": "evercraft:trim/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/full_set/coast/fish",
+    "loot": [
+      "minecraft:gameplay/fishing"
+    ]
+  }
+}

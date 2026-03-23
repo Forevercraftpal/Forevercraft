@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:wither_rose",
+                "minecraft:custom_name": "Wither Rose Crown",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "Accessory — Inventory Held",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A crown woven from wither roses that grants dominion over death.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Death Lord: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Undead mobs fight for you within 16 blocks",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Withering Aura: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "All enemies within 8 blocks get Wither II + you're immune",
+                        "color": "dark_purple"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "wither_rose_crown",
+                  "is_artifact": true,
+                  "ability": "death_lord",
+                  "tier": "mythical",
+                  "accessory": true,
+                  "inventory_held": true
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

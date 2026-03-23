@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 14329120,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:haste",
+                      "amplifier": 0,
+                      "duration": 3600,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Miner's Might",
+                  "color": "gold",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Rare",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Haste I (3:00)",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "Swing faster, mine harder",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

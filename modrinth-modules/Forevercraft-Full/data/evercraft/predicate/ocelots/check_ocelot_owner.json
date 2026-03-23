@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "ocelot.owner": {
+      "min": {
+        "type": "score",
+        "target": { "type": "fixed", "name": "#ocelot_search" },
+        "score": "ocelot.owner"
+      },
+      "max": {
+        "type": "score",
+        "target": { "type": "fixed", "name": "#ocelot_search" },
+        "score": "ocelot.owner"
+      }
+    }
+  }
+}

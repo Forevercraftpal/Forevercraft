@@ -1,0 +1,30 @@
+# Help Topic: Glyphforge & Transmute
+# Run as the player (@s = player)
+
+playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.5 1.0
+
+tellraw @s [{"text":"\n"},{"text":"═══════════════════════════════════","color":"dark_purple"}]
+tellraw @s [{"text":"  "},{"text":"\u2726 Glyphforge & Transmute","color":"dark_purple","bold":true}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"dark_purple"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  The ","color":"white"},{"text":"Glyphforge","color":"dark_purple","bold":true},{"text":" is a placeable workstation","color":"white"}]
+tellraw @s [{"text":"  where you permanently bind glyphs to","color":"white"}]
+tellraw @s [{"text":"  gear. 12 unique glyphs — Emberheart, Verdant,","color":"white"}]
+tellraw @s [{"text":"  Quicksilver, Obsidian, and more — each adding","color":"white"}]
+tellraw @s [{"text":"  combat effects. Forging takes real time —","color":"white"}]
+tellraw @s [{"text":"  3 days for your first, scaling up with each","color":"white"}]
+tellraw @s [{"text":"  one. No duplicate glyphs per item. Higher tier","color":"white"}]
+tellraw @s [{"text":"  gear holds more: base gets 1, Mythical holds 13!","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Something strange happens when you use a ","color":"white"},{"text":"glyph","color":"dark_purple"},{"text":"","color":"white"}]
+tellraw @s [{"text":"  on a dark polished block... something about an","color":"white"}]
+tellraw @s [{"text":"  area of effect ability. And something about","color":"white"}]
+tellraw @s [{"text":"  being removable with... iron scissors?","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  ","color":"gray"},{"text":"Transmutation Stand","color":"light_purple","bold":true},{"text":" lets you sacrifice artifacts for a","color":"gray"}]
+tellraw @s [{"text":"  higher tier. Got duplicates? Feed 5 Common in,","color":"gray"}]
+tellraw @s [{"text":"  get 1 Uncommon out. Higher tiers cost fewer","color":"gray"}]
+tellraw @s [{"text":"  (3 Exquisites = 1 Mythical). If an Artificer","color":"gray"}]
+tellraw @s [{"text":"  villager is nearby, cost drops by 1 per day.","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"dark_purple"}]

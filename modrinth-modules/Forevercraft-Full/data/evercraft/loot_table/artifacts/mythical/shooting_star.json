@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Shooting Star",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A bow that remembers the sky, each arrow a wish set free.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Archer Class",
+                    "color": "#32CD32",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "On Hit: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Dream trail particles + Levitation (2s)",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Critical: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Summon falling star (8 dmg AoE)",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+0.5 Dreams",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "shooting_star",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "ability": "shooting_star",
+                  "gacha_exclusive": true,
+                  "archer": true
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

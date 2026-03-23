@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "The Final Dream",
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Prophecy of Convergence",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Mythical Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "The Final Dream",
+                  "author": "Prophet",
+                  "pages": [
+                    [
+                      {
+                        "text": "The Convergence is not the end. It is the beginning of a Dream so vast that the word 'world' will seem quaint. We are dreaming our way home.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "Home is not a place. It is a feeling \u2014 the feeling of being complete, of having all the pieces, of knowing that nothing is missing and nothing is broken.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "We have been dreaming of home since the first Dreamer opened their eyes. The Convergence is simply the moment we arrive.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 16207"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 16207,
+                  "lore_set": 162,
+                  "lore_pid": 7
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

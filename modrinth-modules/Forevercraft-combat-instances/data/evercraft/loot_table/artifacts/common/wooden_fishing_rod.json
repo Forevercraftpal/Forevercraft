@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Wooden Fishing Rod",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A sturdy handmade rod,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "simple but reliable.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+1 Luck while held",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Awaken: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Gain scaling Lure & Luck of the Sea",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Sirencall", "color": "aqua", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "+1 Dreams",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_wooden_fishing_rod",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "craft_class": 5
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

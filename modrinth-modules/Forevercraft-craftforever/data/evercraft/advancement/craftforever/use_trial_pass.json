@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "use_pass": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{trial_pass:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:craftforever/trials/on_use_pass"
+  }
+}

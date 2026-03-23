@@ -1,0 +1,9 @@
+{
+  "values": [
+    "evercraft:init",
+    "evercraft:trim/load",
+    "evercraft:trim_effects/load",
+    "evercraft:tomb/load",
+    "evercraft:armored_elytra/load"
+  ]
+}

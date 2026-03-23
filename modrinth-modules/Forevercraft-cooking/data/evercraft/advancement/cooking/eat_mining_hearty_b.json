@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{ec_meal:true,meal_id:\"miners_porridge_b\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:cooking/buff/apply_mining_hearty_b"
+  }
+}

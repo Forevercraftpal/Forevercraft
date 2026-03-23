@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:redstone_block",
+                "minecraft:custom_name": "Redstone Heart",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "Accessory — Inventory Held",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "The ultimate redstone creation, a self-sustaining power source.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Machine Lord: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "All redstone within 32 blocks auto-powered",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Overclock: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Haste III + nearby furnaces/brewers 4x speed",
+                        "color": "dark_red"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "redstone_heart",
+                  "is_artifact": true,
+                  "ability": "machine_lord",
+                  "tier": "mythical",
+                  "accessory": true,
+                  "inventory_held": true
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:torchflower",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Thornheart Bloom", "color": "green", "bold": true, "italic": false},
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Exquisite Artifact", "color": "light_purple", "italic": false},
+                  "",
+                  {"text": "A living blossom nurtured by", "color": "gray", "italic": true},
+                  {"text": "the Verdant Warden's ancient power.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Passive: ", "color": "white", "italic": false, "extra": [{"text": "Regeneration I on natural ground", "color": "dark_green"}]},
+                  {"text": "  + Poison aura to nearby hostiles", "color": "dark_green", "italic": false},
+                  {"text": "Dream Rate: ", "color": "white", "italic": false, "extra": [{"text": "+1.5", "color": "green"}]},
+                  {"text": "◆ Boss Exclusive", "color": "gold", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "thornheart_bloom",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "boss_exclusive": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

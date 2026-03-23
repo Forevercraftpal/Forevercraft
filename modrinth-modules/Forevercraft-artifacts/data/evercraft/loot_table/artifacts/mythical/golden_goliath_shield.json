@@ -1,0 +1,172 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Order of the Stone Shield",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A shield so massive it can block the strike of a titan.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Titan's Guard: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Reflects 50% damage when blocking",
+                        "color": "gold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Immovable: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+2 Knockback Resistance when blocking",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Tank Class",
+                    "color": "#5B9BD5",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Resistance II ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Mainhand)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Taunt & Shield Bash",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Knight Class",
+                    "color": "#FFD700",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Goliath's Fury ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Offhand Shift+Use)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "  Haste III for 5s",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Set: Tempest (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Riptide Surge (trident)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Javelin: +2 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Hoplite: Resistance I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Tempest's Wrath — Conduit Power + Res II",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Hoplite: +6 Max Health",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+5 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "golden_goliath_shield",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "tank": true,
+                  "artifact_set": "titan"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 5.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:shield_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_knockback",
+                    "amount": 2.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:shield_knockback"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/common/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/end_city_treasure"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 1, "max": 2},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:chorus_fruit", "weight": 35, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:ender_pearl", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:purpur_block", "weight": 30, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:end_rod", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 4}}]}
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "END RUNE - end city exclusive (5%)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 95
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/zephyr",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

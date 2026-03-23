@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Piglin Helmet",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Rare Artifact",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Salvaged from a bastion,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "it still reeks of gold and greed.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+3 Armor, +1 Toughness",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+2 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "piglin_helmet",
+                  "is_artifact": true,
+                  "tier": "rare"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:piglin_helmet_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:piglin_helmet_toughness"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

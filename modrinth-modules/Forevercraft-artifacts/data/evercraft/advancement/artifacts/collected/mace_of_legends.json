@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{artifact:\"mace_of_legends\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:codex/grant_first_artifact"
+  }
+}

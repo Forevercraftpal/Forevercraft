@@ -1,0 +1,130 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_spear",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": "Lance",
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon Artifact",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A sturdy lance, reliable",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "in the hands of a beast tamer.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+10% Attack Speed",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Beastlord Class",
+                    "color": "#2ECC71",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Aura: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Strength to nearby pets",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Warp Strike: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Pets teleport to enemies",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Rally Cry: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Shift+Use — buff all pets",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+5 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "lance",
+                  "is_artifact": true,
+                  "tier": "uncommon",
+                  "beastlord": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.2,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_speed"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Uncommon Crate",
+                "color": "blue",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Kiosk Reward Crate",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Contains: Uncommon tier loot",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": "Right-click to open",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:treasure/chests/default/uncommon",
+                  "seed": 0
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "Chrono Shard — 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/chrono_shard",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glow_berries",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Cavern Lichen","color":"green","italic":false},
+                "minecraft:lore": [
+                  {"text":"Cooking Ingredient","color":"gray","italic":false},
+                  {"text":"Produce","color":"dark_green","italic":false},
+                  "",
+                  {"text":"A luminous growth from deep caverns.","color":"dark_gray","italic":true}
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:custom_data": {
+                  "ec_ingredient": true,
+                  "ingredient_id": "cavern_lichen",
+                  "ingredient_cat": "produce"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

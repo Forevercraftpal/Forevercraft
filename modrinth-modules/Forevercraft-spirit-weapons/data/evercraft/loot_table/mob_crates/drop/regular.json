@@ -1,0 +1,133 @@
+{
+  "type": "minecraft:entity",
+  "comment": "Regular mob drop rates (1/250 = 0.4% base). Named mobs get 5x rate (2%). Patron mobs excluded (handled by advancements).",
+  "pools": [
+    {
+      "comment": "Regular (unnamed, non-patron) mobs - 1/250 chance",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 47808
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/common",
+          "weight": 100
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/uncommon",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/rare",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/ornate",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/exquisite",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/mythical",
+          "weight": 5
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"mobs.patrons.applied\"]}"
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{CustomName:{}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "comment": "Named (non-patron) mobs - 5x higher drop rate (2%)",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 46942
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/common",
+          "weight": 500
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/uncommon",
+          "weight": 250
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/rare",
+          "weight": 100
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/ornate",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/exquisite",
+          "weight": 33
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/mythical",
+          "weight": 25
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{CustomName:{}}"
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"mobs.patrons.applied\"]}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

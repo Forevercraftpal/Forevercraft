@@ -1,0 +1,1686 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 4,
+        "max": 6
+      },
+      "comment": "VALUABLES POOL - Diamond focus, small netherite chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_ingot",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.01
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_block",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_block",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald_block",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_block",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_block",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "ANCIENT DEBRIS POOL - 5-10% chance scaled by luck",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 95
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ancient_debris",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "quality": 5
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "comment": "CONSUMABLES POOL - Premium food and consumables",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "weight": 18,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_carrot",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 18,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MOB DROPS POOL - Rare to exotic drops",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_rod",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shulker_shell",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "UTILITY POOL - Premium utility items",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 45
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shulker_box",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_chest",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:recovery_compass",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:goat_horn",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_instrument",
+              "options": "#minecraft:goat_horns"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_harming"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:name_tag",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lodestone",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spyglass",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 0,
+        "max": 2
+      },
+      "comment": "ARMOR POOL - Iron/Diamond with tiered enchanting",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 35,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 35,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 35,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 35,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.05
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.7
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "WEAPON POOL - Diamond tier with rare netherite",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 55
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 35,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 35,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 28,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 25,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MACE POOL - 1% chance for mace",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:mace",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 35
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "TOOL POOL - Diamond tier with rare netherite",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe",
+          "weight": 18,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 35,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_shovel",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:on_random_loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 25,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 25,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_pickaxe",
+          "weight": 3,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brush",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "COMPANION POOL 1 - 22% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 93
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_0",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:plains",
+                  "minecraft:sunflower_plains",
+                  "minecraft:meadow"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_1",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:forest",
+                  "minecraft:birch_forest",
+                  "minecraft:old_growth_birch_forest"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_2",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:flower_forest",
+                  "minecraft:cherry_grove"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_3",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:dark_forest",
+                  "minecraft:pale_garden"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_4",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:taiga",
+                  "minecraft:old_growth_pine_taiga",
+                  "minecraft:old_growth_spruce_taiga",
+                  "minecraft:snowy_taiga"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_5",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:windswept_hills",
+                  "minecraft:windswept_gravelly_hills",
+                  "minecraft:windswept_forest",
+                  "minecraft:stony_peaks",
+                  "minecraft:jagged_peaks",
+                  "minecraft:frozen_peaks",
+                  "minecraft:grove",
+                  "minecraft:snowy_slopes"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_6",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:jungle",
+                  "minecraft:sparse_jungle",
+                  "minecraft:bamboo_jungle"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_7",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:desert"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_8",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:savanna",
+                  "minecraft:savanna_plateau",
+                  "minecraft:windswept_savanna"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_9",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:ocean",
+                  "minecraft:deep_ocean",
+                  "minecraft:warm_ocean",
+                  "minecraft:lukewarm_ocean",
+                  "minecraft:deep_lukewarm_ocean",
+                  "minecraft:cold_ocean",
+                  "minecraft:deep_cold_ocean",
+                  "minecraft:frozen_ocean",
+                  "minecraft:deep_frozen_ocean"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_10",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:river",
+                  "minecraft:frozen_river"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_11",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:swamp",
+                  "minecraft:mangrove_swamp"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_12",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:mushroom_fields"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_13",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:snowy_plains",
+                  "minecraft:ice_spikes",
+                  "minecraft:snowy_beach"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_14",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:badlands",
+                  "minecraft:eroded_badlands",
+                  "minecraft:wooded_badlands"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_15",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:lush_caves"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_16",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:dripstone_caves"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_17",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:deep_dark"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_18",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:nether_wastes"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_19",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:crimson_forest"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_20",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:warped_forest"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_21",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:basalt_deltas"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_22",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:soul_sand_valley"
+              }
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/rolls/biome/ornate_23",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:the_end",
+                  "minecraft:end_midlands",
+                  "minecraft:end_highlands",
+                  "minecraft:end_barrens",
+                  "minecraft:small_end_islands"
+                ]
+              }
+            }
+          ],
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "ARTIFACT POOL - 25% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 75
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/ornate/main",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "CHARM POOL - 8% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 92
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/charms/ornate",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "ENCHANTED BOOK POOL - 1.5% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 985
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 45,
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "POTION POOL - 50% chance for structure potions",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:potions/structure/pool_ornate",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "SPAWNER EGG POOL - 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "evercraft:spawners/mob_essence"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "comment": "BIOME SLOTS - Reserved for biome-specific items",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 55
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/chests/default/biome_items_ornate",
+          "weight": 45
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "HORSE ARMOR - Gold/Diamond, luck-gated",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 96
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:random",
+                "min": 0,
+                "max": 100
+              },
+              "range": {
+                "min": 0,
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#luck"
+                  },
+                  "score": "evercraft.luck"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_horse_armor",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:random",
+                "min": 0,
+                "max": 100
+              },
+              "range": {
+                "min": 0,
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#luck"
+                  },
+                  "score": "evercraft.luck"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "NAUTILUS ARMOR - Iron/Golden, luck-gated",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 96
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nautilus_armor",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:random",
+                "min": 0,
+                "max": 100
+              },
+              "range": {
+                "min": 0,
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#luck"
+                  },
+                  "score": "evercraft.luck"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_nautilus_armor",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:random",
+                "min": 0,
+                "max": 100
+              },
+              "range": {
+                "min": 0,
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#luck"
+                  },
+                  "score": "evercraft.luck"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "COMPANION TREAT POOL - 3% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 97
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:companions/items/companion_treat",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "LUCK BONUS ROLLS",
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/luck/bonus_rolls"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "Crystal of Dreams (1% chance)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/crystal_of_dreams",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "AWAKENING STONE - 20% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:weapon_mastery/stones/ornate_stone",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "DREAM AEGIS - 0.01% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 9999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/mythical/dream_aegis",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "RING POOL - 2% chance (ring_nether, ring_trial)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/special/ring_nether",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/special/ring_trial",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "DUNGEON KEY - 7% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 93
+        },
+        {
+          "type": "minecraft:alternatives",
+          "weight": 3,
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "evercraft:dungeon/key",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "evercraft:craftforever/trials/trial_pass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "SATCHEL POOL - 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:satchel/ornate",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "PET CRATE - 0.5% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 199
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:crates/items/companion_ornate",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "ARTIFACT CRATE - 0.5% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 199
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:crates/items/artifact_ornate",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "GUIDESTONE - 1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:guidestone/guidestone_drop",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "HEART OF THE SEA - 1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "TOTEM OF UNDYING - 1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "NETHER STAR - 0.5% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 199
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "WITHER SKELETON SKULL - 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wither_skeleton_skull",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "FOREVER COIN - 10% chance (4 coins)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 90
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:gacha/forever_coin_4",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "Chrono Shard \u2014 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/chrono_shard",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

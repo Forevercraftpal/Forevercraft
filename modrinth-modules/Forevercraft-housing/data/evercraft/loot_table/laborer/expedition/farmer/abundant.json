@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 10, "max": 15},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:glow_berries", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 8, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:chorus_fruit", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 10}}]},
+        {"type": "minecraft:item", "name": "minecraft:golden_carrot", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:melon", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 3, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:pumpkin", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 10}}]},
+        {"type": "minecraft:item", "name": "minecraft:wheat", "weight": 14, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 20, "max": 40}}]},
+        {"type": "minecraft:item", "name": "minecraft:nether_wart", "weight": 13, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 8, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:bone_meal", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 8, "max": 16}}]}
+      ]
+    }
+  ]
+}

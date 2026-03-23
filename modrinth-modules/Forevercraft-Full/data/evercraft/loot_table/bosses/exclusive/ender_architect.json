@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_breath",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Architect's Design", "color": "light_purple", "bold": true, "italic": false},
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Mythical Artifact", "color": "gold", "italic": false},
+                  "",
+                  {"text": "A blueprint of reality from", "color": "gray", "italic": true},
+                  {"text": "The Ender Architect's grand plan.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Passive: ", "color": "white", "italic": false, "extra": [{"text": "Night Vision + Speed I", "color": "light_purple"}]},
+                  {"text": "  + Levitation aura on nearby hostiles", "color": "light_purple", "italic": false},
+                  {"text": "Dream Rate: ", "color": "white", "italic": false, "extra": [{"text": "+2.0", "color": "green"}]},
+                  {"text": "◆ Boss Exclusive", "color": "gold", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "architects_design",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "boss_exclusive": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

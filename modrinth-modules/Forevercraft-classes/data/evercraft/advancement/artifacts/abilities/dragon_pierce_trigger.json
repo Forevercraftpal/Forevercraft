@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_dragon_pierce": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"dragon_pierce\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/dragon_pierce"
+  }
+}

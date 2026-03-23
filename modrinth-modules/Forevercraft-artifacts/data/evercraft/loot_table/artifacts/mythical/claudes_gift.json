@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Claudes Gift",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "Accessory — Inventory Held",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A gift from Claude himself, containing infinite potential.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Infinite Potential:",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "  Combat: Strength III",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "  Mining: Haste III",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "  Exploring: Speed III",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Claude's Blessing:",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "  +5 Dream Rate, 2x all drops",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "  All effects enhanced by 1 level",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "claudes_gift",
+                  "is_artifact": true,
+                  "ability": "infinite_potential",
+                  "tier": "mythical",
+                  "accessory": true,
+                  "inventory_held": true
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

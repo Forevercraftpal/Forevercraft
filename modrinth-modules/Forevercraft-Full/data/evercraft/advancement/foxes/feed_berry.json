@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "feed": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:sweet_berries"
+        },
+        "entity": {
+          "type": "minecraft:fox"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:foxes/on_feed"
+  }
+}

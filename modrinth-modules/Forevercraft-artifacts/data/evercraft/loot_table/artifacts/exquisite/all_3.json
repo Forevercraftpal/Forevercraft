@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/exquisite/warden_helm"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/exquisite/warden_totem"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/exquisite/whirlwind"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/exquisite/worldbreaker"
+        }
+      ]
+    },
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/celestial_lotus"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/dragonslayer_shield"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/ember_fishing_rod"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/gungnir_spear"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/lifewardens_tome"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/mjolnir_mythical"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/order_of_the_stone_gauntlet"}]}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "values": [
+    "evercraft:tick",
+    "evercraft:trim/tick",
+    "evercraft:trim_effects/tick"
+  ]
+}

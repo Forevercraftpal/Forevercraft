@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "use_coin": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{wishing_coin:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:gacha/use_wishing_coin"
+  }
+}

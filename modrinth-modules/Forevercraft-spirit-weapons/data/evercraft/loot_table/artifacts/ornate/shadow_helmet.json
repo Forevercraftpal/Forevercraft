@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Shadow Walker Helmet",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Become one with the shadows,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "unseen and unheard.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Shadow (0/4)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Invisibility on sneak",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Shadow Cloak + Assassinate",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "+3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "shadow_helmet",
+                  "is_artifact": true,
+                  "artifact_set": "shadow",
+                  "tier": "ornate"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:movement_speed",
+                    "amount": 0.01,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:artifact_speed"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

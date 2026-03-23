@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 50},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/cave_sludge", "weight": 10},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/spelunker", "weight": 15},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/miners_might", "weight": 17},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/deepslate_elixir", "weight": 8}
+      ]
+    }
+  ]
+}

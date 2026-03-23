@@ -1,0 +1,113 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mace",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Frying Pan",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon Artifact",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "The weapon of choice for",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "angry tavern cooks everywhere.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {"text": "BONK!: ", "color": "gold", "italic": false, "bold": true, "extra": [{"text": "Comedic kill announcement", "color": "white", "bold": false}]},
+                  {
+                    "text": "On Hit: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "BONK \u2014 Knockback III",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Striker Class",
+                    "color": "#FF6B00",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Impact Charge ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Mainhand)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Ground Slam ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Sneak+Hit)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Sentinel Mode",
+                    "color": "#5B9BD5",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ +Shield: Res I, Weakness I, Fortress",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "uncommon_frying_pan",
+                  "is_artifact": true,
+                  "tier": "uncommon",
+                  "melee_knockback": 3,
+                  "striker": true,
+                  "ability": "bonk"
+                },
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

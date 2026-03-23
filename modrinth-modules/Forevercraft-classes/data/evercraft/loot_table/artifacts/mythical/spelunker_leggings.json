@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Splendid Leggings",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Leggings enchanted with the essence of ancient explorers. ",
+                    "color": "gray",
+                    "italic": true,
+                    "extra": [
+                      {
+                        "text": "Speed I",
+                        "color": "green",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Delver's (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Explorer's Fortune — +3 Dream Rate",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Rogue: +2 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Twilight Sovereign — Speed II + Night Vision",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Rogue: +2 Attack Damage + Luck II",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+0.5 Dreams  ◆  +6 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spelunker_leggings",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "splendid"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

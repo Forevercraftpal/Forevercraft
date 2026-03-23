@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Fishing potion pool for ORNATE crates - 50% chance to roll, weighted by tier",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 50, "comment": "50% no potion"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/unfavored", "weight": 5, "comment": "Bad: 10% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/gills", "weight": 10, "comment": "Basic: 20% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/angler", "weight": 20, "comment": "Good: 40% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/blind_seaman", "weight": 12, "comment": "Great: 25% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/potions/dreams_ornate", "weight": 3, "comment": "Best: 5% of 50%"}
+      ]
+    }
+  ]
+}

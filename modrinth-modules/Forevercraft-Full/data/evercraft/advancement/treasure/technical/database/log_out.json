@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "periodic_tick": 50
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/database/name/check"
+  }
+}

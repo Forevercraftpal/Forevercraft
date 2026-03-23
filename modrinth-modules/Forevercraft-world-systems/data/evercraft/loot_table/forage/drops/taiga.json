@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spruce_sapling",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fern",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sweet_berries",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mossy_cobblestone",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/frostmint",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/golden_root",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/starbloom_petal",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Throws a short-fused TNT, ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "same velocity as potion. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 16,
+                "minecraft:item_model": "host_armor_trim_smithing_template",
+                "minecraft:potion_contents": {
+                  "custom_color": 14687012
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 5,
+                  "cooldown_group": "evercraft:treasure/grenade"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "text": "Grenade",
+                "color": "aqua",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

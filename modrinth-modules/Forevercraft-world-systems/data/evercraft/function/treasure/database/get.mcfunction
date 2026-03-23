@@ -1,0 +1,1 @@
+$data modify storage evercraft:treasure/write data merge from storage evercraft:treasure/database "$(UUID)"

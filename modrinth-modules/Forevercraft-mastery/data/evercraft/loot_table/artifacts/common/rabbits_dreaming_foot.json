@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_foot",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Rabbit's Dreaming Foot",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Severed from a nightmarish",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "rabbit. It twitches in dreams.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Right-click to consume:",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Permanently gain +10% Jump Boost",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "& +1.0 Dream Rate",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "rabbits_dreaming_foot": true,
+                  "consumable_artifact": true,
+                  "tier": "common"
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:consumable": {"consume_seconds": 1, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Astral Codex Page","color":"aqua","italic":false,"bold":true},
+                "minecraft:lore": [
+                  {"text":"Mythical Item","color":"gold","italic":false},
+                  "",
+                  {"text":"A page torn from the cosmos,","color":"gray","italic":true},
+                  {"text":"revealed only to true collectors.","color":"gray","italic":true},
+                  "",
+                  {"text":"Right-click to consume:","color":"white","italic":false},
+                  {"text":"Permanently gain +1 Dream Rate","color":"aqua","italic":false},
+                  "",
+                  {"text":"\"Two hundred relics. One truth.\"","color":"dark_gray","italic":true}
+                ],
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "astral_codex_page": true,
+                  "consumable": true,
+                  "effect": "permanent_luck"
+                },
+                "minecraft:consumable": {"consume_seconds": 1, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

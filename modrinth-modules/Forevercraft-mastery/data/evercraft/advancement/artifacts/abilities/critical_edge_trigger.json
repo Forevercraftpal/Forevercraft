@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "crit_with_katana": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "flags": {
+            "is_sprinting": false
+          },
+          "movement": {
+            "fall_distance": {
+              "min": 0.1
+            }
+          },
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"critical_edge\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/critical_edge"
+  }
+}

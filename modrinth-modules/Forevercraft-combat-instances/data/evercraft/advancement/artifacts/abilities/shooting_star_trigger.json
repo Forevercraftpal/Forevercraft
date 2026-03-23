@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "hit_with_shooting_star": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"shooting_star\"}"
+              }
+            }
+          }
+        },
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "#minecraft:arrows"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/shooting_star"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume_crystal": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{crystal_of_dreams:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/consume_crystal_of_dreams"
+  }
+}

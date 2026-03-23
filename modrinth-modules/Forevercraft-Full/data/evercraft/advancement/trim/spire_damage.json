@@ -1,0 +1,11 @@
+{
+  "parent": "evercraft:trim/root",
+  "criteria": {
+    "took_damage": {
+      "trigger": "minecraft:entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/full_set/spire/check_damage"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/broadsword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/slingshot",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/boneclub",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/deku_shield",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/norroen_sword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/highland_mace",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/hunting_bow",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/mechanical_shortbow",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/windrunner",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/vex_iron_sword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/bone_slingshot",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/plunger",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/pebble_of_dreams",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/worn_compass",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/travelers_charm",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/thief_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/fox_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/ocelot_leggings",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/wolf_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/renegade_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/hammer",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/ladle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/scythe",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/highland_axe",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/wooden_fishing_rod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/special/ring_amethyst",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/medicinal_bandages",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/herbal_poultice",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/special/ring_lapis",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/common/mauler",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

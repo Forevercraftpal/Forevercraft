@@ -1,0 +1,250 @@
+  data modify storage eden:database names.villager.savanna.first.1 set value Abani
+  data modify storage eden:database names.villager.savanna.first.2 set value Binta
+  data modify storage eden:database names.villager.savanna.first.3 set value Chuma
+  data modify storage eden:database names.villager.savanna.first.4 set value Dalo
+  data modify storage eden:database names.villager.savanna.first.5 set value Eshe
+  data modify storage eden:database names.villager.savanna.first.6 set value Fari
+  data modify storage eden:database names.villager.savanna.first.7 set value Gani
+  data modify storage eden:database names.villager.savanna.first.8 set value Haki
+  data modify storage eden:database names.villager.savanna.first.9 set value Imani
+ data modify storage eden:database names.villager.savanna.first.10 set value Juma
+ data modify storage eden:database names.villager.savanna.first.11 set value Kesi
+ data modify storage eden:database names.villager.savanna.first.12 set value Lala
+ data modify storage eden:database names.villager.savanna.first.13 set value Mazi
+ data modify storage eden:database names.villager.savanna.first.14 set value Nia
+ data modify storage eden:database names.villager.savanna.first.15 set value Obi
+ data modify storage eden:database names.villager.savanna.first.16 set value Piri
+ data modify storage eden:database names.villager.savanna.first.17 set value Quasi
+ data modify storage eden:database names.villager.savanna.first.18 set value Rafi
+ data modify storage eden:database names.villager.savanna.first.19 set value Sabi
+ data modify storage eden:database names.villager.savanna.first.20 set value Tano
+ data modify storage eden:database names.villager.savanna.first.21 set value Umi
+ data modify storage eden:database names.villager.savanna.first.22 set value Vero
+ data modify storage eden:database names.villager.savanna.first.23 set value Wari
+ data modify storage eden:database names.villager.savanna.first.24 set value Xena
+ data modify storage eden:database names.villager.savanna.first.25 set value Yara
+ data modify storage eden:database names.villager.savanna.first.26 set value Zuri
+ data modify storage eden:database names.villager.savanna.first.27 set value Amara
+ data modify storage eden:database names.villager.savanna.first.28 set value Bako
+ data modify storage eden:database names.villager.savanna.first.29 set value Cora
+ data modify storage eden:database names.villager.savanna.first.30 set value Dori
+ data modify storage eden:database names.villager.savanna.first.31 set value Ekon
+ data modify storage eden:database names.villager.savanna.first.32 set value Fola
+ data modify storage eden:database names.villager.savanna.first.33 set value Gisa
+ data modify storage eden:database names.villager.savanna.first.34 set value Hara
+ data modify storage eden:database names.villager.savanna.first.35 set value Ika
+ data modify storage eden:database names.villager.savanna.first.36 set value Jaro
+ data modify storage eden:database names.villager.savanna.first.37 set value Kima
+ data modify storage eden:database names.villager.savanna.first.38 set value Lilo
+ data modify storage eden:database names.villager.savanna.first.39 set value Muni
+ data modify storage eden:database names.villager.savanna.first.40 set value Nomi
+ data modify storage eden:database names.villager.savanna.first.41 set value Osa
+ data modify storage eden:database names.villager.savanna.first.42 set value Paka
+ data modify storage eden:database names.villager.savanna.first.43 set value Qiri
+ data modify storage eden:database names.villager.savanna.first.44 set value Rina
+ data modify storage eden:database names.villager.savanna.first.45 set value Suri
+ data modify storage eden:database names.villager.savanna.first.46 set value Tali
+ data modify storage eden:database names.villager.savanna.first.47 set value Uba
+ data modify storage eden:database names.villager.savanna.first.48 set value Vala
+ data modify storage eden:database names.villager.savanna.first.49 set value Wila
+ data modify storage eden:database names.villager.savanna.first.50 set value Xara
+ data modify storage eden:database names.villager.savanna.first.51 set value Yani
+ data modify storage eden:database names.villager.savanna.first.52 set value Zane
+ data modify storage eden:database names.villager.savanna.first.53 set value Anaya
+ data modify storage eden:database names.villager.savanna.first.54 set value Biko
+ data modify storage eden:database names.villager.savanna.first.55 set value Chida
+ data modify storage eden:database names.villager.savanna.first.56 set value Dela
+ data modify storage eden:database names.villager.savanna.first.57 set value Ejiro
+ data modify storage eden:database names.villager.savanna.first.58 set value Femi
+ data modify storage eden:database names.villager.savanna.first.59 set value Gaba
+ data modify storage eden:database names.villager.savanna.first.60 set value Hilo
+ data modify storage eden:database names.villager.savanna.first.61 set value Isha
+ data modify storage eden:database names.villager.savanna.first.62 set value Jami
+ data modify storage eden:database names.villager.savanna.first.63 set value Kibo
+ data modify storage eden:database names.villager.savanna.first.64 set value Lani
+ data modify storage eden:database names.villager.savanna.first.65 set value Miri
+ data modify storage eden:database names.villager.savanna.first.66 set value Nika
+ data modify storage eden:database names.villager.savanna.first.67 set value Oyo
+ data modify storage eden:database names.villager.savanna.first.68 set value Pina
+ data modify storage eden:database names.villager.savanna.first.69 set value Qana
+ data modify storage eden:database names.villager.savanna.first.70 set value Rami
+ data modify storage eden:database names.villager.savanna.first.71 set value Sila
+ data modify storage eden:database names.villager.savanna.first.72 set value Toma
+ data modify storage eden:database names.villager.savanna.first.73 set value Ula
+ data modify storage eden:database names.villager.savanna.first.74 set value Vira
+ data modify storage eden:database names.villager.savanna.first.75 set value Wali
+ data modify storage eden:database names.villager.savanna.first.76 set value Xeno
+ data modify storage eden:database names.villager.savanna.first.77 set value Yara
+ data modify storage eden:database names.villager.savanna.first.78 set value Zuri
+ data modify storage eden:database names.villager.savanna.first.79 set value Abebi
+ data modify storage eden:database names.villager.savanna.first.80 set value Beni
+ data modify storage eden:database names.villager.savanna.first.81 set value Caya
+ data modify storage eden:database names.villager.savanna.first.82 set value Dima
+ data modify storage eden:database names.villager.savanna.first.83 set value Elin
+ data modify storage eden:database names.villager.savanna.first.84 set value Fara
+ data modify storage eden:database names.villager.savanna.first.85 set value Gado
+ data modify storage eden:database names.villager.savanna.first.86 set value Hani
+ data modify storage eden:database names.villager.savanna.first.87 set value Isi
+ data modify storage eden:database names.villager.savanna.first.88 set value Jilo
+ data modify storage eden:database names.villager.savanna.first.89 set value Kofi
+ data modify storage eden:database names.villager.savanna.first.90 set value Lira
+ data modify storage eden:database names.villager.savanna.first.91 set value Momo
+ data modify storage eden:database names.villager.savanna.first.92 set value Nala
+ data modify storage eden:database names.villager.savanna.first.93 set value Orin
+ data modify storage eden:database names.villager.savanna.first.94 set value Pemi
+ data modify storage eden:database names.villager.savanna.first.95 set value Qira
+ data modify storage eden:database names.villager.savanna.first.96 set value Riku
+ data modify storage eden:database names.villager.savanna.first.97 set value Sadi
+ data modify storage eden:database names.villager.savanna.first.98 set value Tano
+ data modify storage eden:database names.villager.savanna.first.99 set value Umi
+data modify storage eden:database names.villager.savanna.first.100 set value Vira
+data modify storage eden:database names.villager.savanna.first.101 set value Wisa
+data modify storage eden:database names.villager.savanna.first.102 set value Xara
+data modify storage eden:database names.villager.savanna.first.103 set value Yemi
+data modify storage eden:database names.villager.savanna.first.104 set value Zena
+data modify storage eden:database names.villager.savanna.first.105 set value Ajani
+data modify storage eden:database names.villager.savanna.first.106 set value Bibi
+data modify storage eden:database names.villager.savanna.first.107 set value Cheno
+data modify storage eden:database names.villager.savanna.first.108 set value Daro
+data modify storage eden:database names.villager.savanna.first.109 set value Esha
+data modify storage eden:database names.villager.savanna.first.110 set value Fola
+data modify storage eden:database names.villager.savanna.first.111 set value Gani
+data modify storage eden:database names.villager.savanna.first.112 set value Hilo
+data modify storage eden:database names.villager.savanna.first.113 set value Ika
+data modify storage eden:database names.villager.savanna.first.114 set value Jali
+data modify storage eden:database names.villager.savanna.first.115 set value Kira
+data modify storage eden:database names.villager.savanna.first.116 set value Lilo
+data modify storage eden:database names.villager.savanna.first.117 set value Mavi
+data modify storage eden:database names.villager.savanna.first.118 set value Nima
+data modify storage eden:database names.villager.savanna.first.119 set value Oni
+data modify storage eden:database names.villager.savanna.first.120 set value Piri
+data modify storage eden:database names.villager.savanna.first.121 set value Qira
+data modify storage eden:database names.villager.savanna.first.122 set value Rona
+data modify storage eden:database names.villager.savanna.first.123 set value Sura
+data modify storage eden:database names.villager.savanna.first.124 set value Tani
+data modify storage eden:database names.villager.savanna.first.125 set value Uba
+data modify storage eden:database names.villager.savanna.first.126 set value Veda
+data modify storage eden:database names.villager.savanna.first.127 set value Wale
+data modify storage eden:database names.villager.savanna.first.128 set value Xeni
+data modify storage eden:database names.villager.savanna.first.129 set value Yara
+data modify storage eden:database names.villager.savanna.first.130 set value Zuri
+data modify storage eden:database names.villager.savanna.first.131 set value Adisa
+data modify storage eden:database names.villager.savanna.first.132 set value Binu
+data modify storage eden:database names.villager.savanna.first.133 set value Chara
+data modify storage eden:database names.villager.savanna.first.134 set value Divo
+data modify storage eden:database names.villager.savanna.first.135 set value Eshe
+data modify storage eden:database names.villager.savanna.first.136 set value Fina
+data modify storage eden:database names.villager.savanna.first.137 set value Gino
+data modify storage eden:database names.villager.savanna.first.138 set value Hara
+data modify storage eden:database names.villager.savanna.first.139 set value Imani
+data modify storage eden:database names.villager.savanna.first.140 set value Juri
+data modify storage eden:database names.villager.savanna.first.141 set value Kumi
+data modify storage eden:database names.villager.savanna.first.142 set value Lano
+data modify storage eden:database names.villager.savanna.first.143 set value Mura
+data modify storage eden:database names.villager.savanna.first.144 set value Nia
+data modify storage eden:database names.villager.savanna.first.145 set value Obi
+data modify storage eden:database names.villager.savanna.first.146 set value Peni
+data modify storage eden:database names.villager.savanna.first.147 set value Qira
+data modify storage eden:database names.villager.savanna.first.148 set value Rafi
+data modify storage eden:database names.villager.savanna.first.149 set value Sela
+data modify storage eden:database names.villager.savanna.first.150 set value Tolu
+data modify storage eden:database names.villager.savanna.first.151 set value Umi
+data modify storage eden:database names.villager.savanna.first.152 set value Vani
+data modify storage eden:database names.villager.savanna.first.153 set value Wira
+data modify storage eden:database names.villager.savanna.first.154 set value Xara
+data modify storage eden:database names.villager.savanna.first.155 set value Yani
+data modify storage eden:database names.villager.savanna.first.156 set value Zane
+data modify storage eden:database names.villager.savanna.first.157 set value Akira
+data modify storage eden:database names.villager.savanna.first.158 set value Baya
+data modify storage eden:database names.villager.savanna.first.159 set value Chuka
+data modify storage eden:database names.villager.savanna.first.160 set value Dali
+data modify storage eden:database names.villager.savanna.first.161 set value Eko
+data modify storage eden:database names.villager.savanna.first.162 set value Fifi
+data modify storage eden:database names.villager.savanna.first.163 set value Gabi
+data modify storage eden:database names.villager.savanna.first.164 set value Hadi
+data modify storage eden:database names.villager.savanna.first.165 set value Isha
+data modify storage eden:database names.villager.savanna.first.166 set value Jani
+data modify storage eden:database names.villager.savanna.first.167 set value Kola
+data modify storage eden:database names.villager.savanna.first.168 set value Laya
+data modify storage eden:database names.villager.savanna.first.169 set value Mosi
+data modify storage eden:database names.villager.savanna.first.170 set value Nita
+data modify storage eden:database names.villager.savanna.first.171 set value Oke
+data modify storage eden:database names.villager.savanna.first.172 set value Pali
+data modify storage eden:database names.villager.savanna.first.173 set value Quia
+data modify storage eden:database names.villager.savanna.first.174 set value Rumi
+data modify storage eden:database names.villager.savanna.first.175 set value Sela
+data modify storage eden:database names.villager.savanna.first.176 set value Tari
+data modify storage eden:database names.villager.savanna.first.177 set value Ula
+data modify storage eden:database names.villager.savanna.first.178 set value Vira
+data modify storage eden:database names.villager.savanna.first.179 set value Wale
+data modify storage eden:database names.villager.savanna.first.180 set value Xari
+data modify storage eden:database names.villager.savanna.first.181 set value Yara
+data modify storage eden:database names.villager.savanna.first.182 set value Zuri
+data modify storage eden:database names.villager.savanna.first.183 set value Akilo
+data modify storage eden:database names.villager.savanna.first.184 set value Bani
+data modify storage eden:database names.villager.savanna.first.185 set value Chiku
+data modify storage eden:database names.villager.savanna.first.186 set value Dori
+data modify storage eden:database names.villager.savanna.first.187 set value Ebo
+data modify storage eden:database names.villager.savanna.first.188 set value Fari
+data modify storage eden:database names.villager.savanna.first.189 set value Gila
+data modify storage eden:database names.villager.savanna.first.190 set value Hila
+data modify storage eden:database names.villager.savanna.first.191 set value Ime
+data modify storage eden:database names.villager.savanna.first.192 set value Jiro
+data modify storage eden:database names.villager.savanna.first.193 set value Kofi
+data modify storage eden:database names.villager.savanna.first.194 set value Luma
+data modify storage eden:database names.villager.savanna.first.195 set value Miri
+data modify storage eden:database names.villager.savanna.first.196 set value Nila
+data modify storage eden:database names.villager.savanna.first.197 set value Osa
+data modify storage eden:database names.villager.savanna.first.198 set value Pali
+data modify storage eden:database names.villager.savanna.first.199 set value Qari
+data modify storage eden:database names.villager.savanna.first.200 set value Rina
+data modify storage eden:database names.villager.savanna.first.201 set value Suri
+data modify storage eden:database names.villager.savanna.first.202 set value Taji
+data modify storage eden:database names.villager.savanna.first.203 set value Umi
+data modify storage eden:database names.villager.savanna.first.204 set value Vali
+data modify storage eden:database names.villager.savanna.first.205 set value Wira
+data modify storage eden:database names.villager.savanna.first.206 set value Xeni
+data modify storage eden:database names.villager.savanna.first.207 set value Yara
+data modify storage eden:database names.villager.savanna.first.208 set value Zuri
+data modify storage eden:database names.villager.savanna.first.209 set value Ada
+data modify storage eden:database names.villager.savanna.first.210 set value Bumi
+data modify storage eden:database names.villager.savanna.first.211 set value Chika
+data modify storage eden:database names.villager.savanna.first.212 set value Davi
+data modify storage eden:database names.villager.savanna.first.213 set value Eri
+data modify storage eden:database names.villager.savanna.first.214 set value Fola
+data modify storage eden:database names.villager.savanna.first.215 set value Gita
+data modify storage eden:database names.villager.savanna.first.216 set value Haki
+data modify storage eden:database names.villager.savanna.first.217 set value Iman
+data modify storage eden:database names.villager.savanna.first.218 set value Jaro
+data modify storage eden:database names.villager.savanna.first.219 set value Kilo
+data modify storage eden:database names.villager.savanna.first.220 set value Loma
+data modify storage eden:database names.villager.savanna.first.221 set value Mera
+data modify storage eden:database names.villager.savanna.first.222 set value Nia
+data modify storage eden:database names.villager.savanna.first.223 set value Omo
+data modify storage eden:database names.villager.savanna.first.224 set value Pira
+data modify storage eden:database names.villager.savanna.first.225 set value Quasi
+data modify storage eden:database names.villager.savanna.first.226 set value Rafi
+data modify storage eden:database names.villager.savanna.first.227 set value Sima
+data modify storage eden:database names.villager.savanna.first.228 set value Toma
+data modify storage eden:database names.villager.savanna.first.229 set value Ula
+data modify storage eden:database names.villager.savanna.first.230 set value Vira
+data modify storage eden:database names.villager.savanna.first.231 set value Wali
+data modify storage eden:database names.villager.savanna.first.232 set value Xara
+data modify storage eden:database names.villager.savanna.first.233 set value Yemi
+data modify storage eden:database names.villager.savanna.first.234 set value Zuri
+data modify storage eden:database names.villager.savanna.first.235 set value Abiba
+data modify storage eden:database names.villager.savanna.first.236 set value Boni
+data modify storage eden:database names.villager.savanna.first.237 set value Casi
+data modify storage eden:database names.villager.savanna.first.238 set value Dori
+data modify storage eden:database names.villager.savanna.first.239 set value Eshe
+data modify storage eden:database names.villager.savanna.first.240 set value Femi
+data modify storage eden:database names.villager.savanna.first.241 set value Garo
+data modify storage eden:database names.villager.savanna.first.242 set value Hami
+data modify storage eden:database names.villager.savanna.first.243 set value Isma
+data modify storage eden:database names.villager.savanna.first.244 set value Jari
+data modify storage eden:database names.villager.savanna.first.245 set value Kira
+data modify storage eden:database names.villager.savanna.first.246 set value Lilo
+data modify storage eden:database names.villager.savanna.first.247 set value Maji
+data modify storage eden:database names.villager.savanna.first.248 set value Nala
+data modify storage eden:database names.villager.savanna.first.249 set value Osa
+data modify storage eden:database names.villager.savanna.first.250 set value Piki

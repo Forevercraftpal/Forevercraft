@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/ornate/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/bastion_treasure"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 3, "max": 5},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:gold_block", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 3, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:ancient_debris", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_scrap", "weight": 18, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_ingot", "weight": 10},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 12},
+        {"type": "minecraft:item", "name": "minecraft:snout_armor_trim_smithing_template", "weight": 15},
+        {"type": "minecraft:item", "name": "minecraft:netherite_upgrade_smithing_template", "weight": 10}
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "PIGLIN RUNE - bastion exclusive (5%)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 95
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/gilded",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

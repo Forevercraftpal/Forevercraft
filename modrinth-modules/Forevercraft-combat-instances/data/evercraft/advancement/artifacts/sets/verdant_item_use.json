@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:goat_horn",
+          "predicates": {
+            "minecraft:custom_data": "{artifact_ability:\"harvest_call\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/sets/verdant/on_item_use"
+  }
+}

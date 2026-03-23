@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "any_hit": {
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/blaze_core_hit"
+  }
+}

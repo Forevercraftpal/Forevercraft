@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_salmon",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Whisker Broth","color":"#EF5350","italic":false,"bold":true},
+                "minecraft:lore": [
+                  {"text":"Spirit Cuisine","color":"#AB47BC","italic":false},
+                  "",
+                  {"text":"Regen IV + Absorption IV","color":"gray","italic":false},
+                  {"text":"+ Resistance II for 3 min","color":"gray","italic":false},
+                  {"text":"+0.5 Dream Rate (Well-Fed)","color":"gold","italic":false}
+                ],
+                "minecraft:food": {"nutrition":12,"saturation":14.0,"can_always_eat":true},
+                "minecraft:consumable": {"consume_seconds":1.6,"animation":"eat","sound":"minecraft:entity.generic.eat","has_consume_particles":true},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic",
+                "minecraft:custom_data": {"ec_meal":true,"meal_id":"whisker_broth","meal_cat":"spirit","meal_tier":"feast"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

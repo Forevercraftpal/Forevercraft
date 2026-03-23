@@ -1,0 +1,5 @@
+# Iron particle
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/iron_trim/iron_head unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:small_gust ~ ~2 ~ .2 .03 .2 .01 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/iron_trim/iron_chest unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:small_gust ~ ~1.3 ~ .2 .02 .2 .01 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/iron_trim/iron_legs unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:small_gust ~ ~.8 ~ .2 .03 .2 .01 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/iron_trim/iron_feet unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:small_gust ~ ~.3 ~ .2 .03 .2 .01 1 normal

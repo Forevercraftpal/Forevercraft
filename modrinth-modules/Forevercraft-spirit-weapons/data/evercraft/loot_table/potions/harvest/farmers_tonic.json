@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 16733525,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:saturation",
+                      "amplifier": 0,
+                      "duration": 100,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Farmer's Tonic",
+                  "color": "green",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Saturation I (instant)",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "A hearty drink after a long day",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

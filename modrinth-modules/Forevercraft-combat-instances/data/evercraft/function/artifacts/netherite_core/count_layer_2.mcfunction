@@ -1,0 +1,26 @@
+# Count 5x5 layer (25 blocks)
+execute if block ~-2 ~ ~-2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-1 ~ ~-2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~ ~ ~-2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~1 ~ ~-2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~2 ~ ~-2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-2 ~ ~-1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-1 ~ ~-1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~ ~ ~-1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~1 ~ ~-1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~2 ~ ~-1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-2 ~ ~ minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-1 ~ ~ minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~ ~ ~ minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~1 ~ ~ minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~2 ~ ~ minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-2 ~ ~1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-1 ~ ~1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~ ~ ~1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~1 ~ ~1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~2 ~ ~1 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-2 ~ ~2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~-1 ~ ~2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~ ~ ~2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~1 ~ ~2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1
+execute if block ~2 ~ ~2 minecraft:netherite_block run scoreboard players add #anc_count anc.blocks 1

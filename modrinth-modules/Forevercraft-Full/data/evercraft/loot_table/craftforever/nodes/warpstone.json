@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 3}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Warpstone Dust", "color": "#2DD4BF", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Ornate Biome Material", "color": "dark_purple", "italic": false},
+                  "",
+                  {"text": "Dust ground from warped stone,", "color": "gray", "italic": true},
+                  {"text": "resonating with alien energy.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "warpstone", "cf_biome": 7}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

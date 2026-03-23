@@ -1,0 +1,2 @@
+$execute rotated ~ 0 positioned ^ ^1.25 ^2.26 run summon text_display ~ ~ ~ {brightness:{block:15,sky:15},shadow_radius:0f,Tags:["bd.summon_content","companion.menuelement"],billboard:"center",text:[{"text":"Page $(page)/$(max_page)","color":"gray"},{"text":"  ($(total) animals)","color":"dark_gray"}],background:0,shadow:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.27f,0.27f,0.27f]}}
+scoreboard players operation @e[type=text_display,tag=bd.summon_content,distance=..5] companion.id = #Search companion.id

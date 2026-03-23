@@ -1,0 +1,350 @@
+  data modify storage eden:database names.wandering_trader.last.1 set value Goodsell
+  data modify storage eden:database names.wandering_trader.last.2 set value Coinworth
+  data modify storage eden:database names.wandering_trader.last.3 set value Tradewind
+  data modify storage eden:database names.wandering_trader.last.4 set value Fairdeal
+  data modify storage eden:database names.wandering_trader.last.5 set value Merchstone
+  data modify storage eden:database names.wandering_trader.last.6 set value Goldbarter
+  data modify storage eden:database names.wandering_trader.last.7 set value Waresmith
+  data modify storage eden:database names.wandering_trader.last.8 set value Bargain
+  data modify storage eden:database names.wandering_trader.last.9 set value Cartwright
+ data modify storage eden:database names.wandering_trader.last.10 set value Silvercoin
+ data modify storage eden:database names.wandering_trader.last.11 set value Marketfield
+ data modify storage eden:database names.wandering_trader.last.12 set value Haggleworth
+ data modify storage eden:database names.wandering_trader.last.13 set value Wandertrade
+ data modify storage eden:database names.wandering_trader.last.14 set value Goodsbarter
+ data modify storage eden:database names.wandering_trader.last.15 set value Barterstone
+ data modify storage eden:database names.wandering_trader.last.16 set value Coincraft
+ data modify storage eden:database names.wandering_trader.last.17 set value Merchant
+ data modify storage eden:database names.wandering_trader.last.18 set value Fairtrade
+ data modify storage eden:database names.wandering_trader.last.19 set value Dealbroker
+ data modify storage eden:database names.wandering_trader.last.20 set value Stockworth
+ data modify storage eden:database names.wandering_trader.last.21 set value Coinstone
+ data modify storage eden:database names.wandering_trader.last.22 set value Barterman
+ data modify storage eden:database names.wandering_trader.last.23 set value Tradesman
+ data modify storage eden:database names.wandering_trader.last.24 set value Silvertrade
+ data modify storage eden:database names.wandering_trader.last.25 set value Cartwright
+ data modify storage eden:database names.wandering_trader.last.26 set value Fairdeal
+ data modify storage eden:database names.wandering_trader.last.27 set value Warestone
+ data modify storage eden:database names.wandering_trader.last.28 set value Tradesmith
+ data modify storage eden:database names.wandering_trader.last.29 set value Coincraft
+ data modify storage eden:database names.wandering_trader.last.30 set value Barterfield
+ data modify storage eden:database names.wandering_trader.last.31 set value Stocktrade
+ data modify storage eden:database names.wandering_trader.last.32 set value Waresmith
+ data modify storage eden:database names.wandering_trader.last.33 set value Merchantson
+ data modify storage eden:database names.wandering_trader.last.34 set value Marketwright
+ data modify storage eden:database names.wandering_trader.last.35 set value Coinhand
+ data modify storage eden:database names.wandering_trader.last.36 set value Haggleworth
+ data modify storage eden:database names.wandering_trader.last.37 set value Tradehart
+ data modify storage eden:database names.wandering_trader.last.38 set value Goodsell
+ data modify storage eden:database names.wandering_trader.last.39 set value Silverbarter
+ data modify storage eden:database names.wandering_trader.last.40 set value Dealstone
+ data modify storage eden:database names.wandering_trader.last.41 set value Tradecraft
+ data modify storage eden:database names.wandering_trader.last.42 set value Merchantson
+ data modify storage eden:database names.wandering_trader.last.43 set value Waresmith
+ data modify storage eden:database names.wandering_trader.last.44 set value Goldtrade
+ data modify storage eden:database names.wandering_trader.last.45 set value Bartercraft
+ data modify storage eden:database names.wandering_trader.last.46 set value Dealworth
+ data modify storage eden:database names.wandering_trader.last.47 set value Hagglefield
+ data modify storage eden:database names.wandering_trader.last.48 set value Coinwright
+ data modify storage eden:database names.wandering_trader.last.49 set value Tradefoot
+ data modify storage eden:database names.wandering_trader.last.50 set value Marketstone
+ data modify storage eden:database names.wandering_trader.last.51 set value Stockcraft
+ data modify storage eden:database names.wandering_trader.last.52 set value Wareman
+ data modify storage eden:database names.wandering_trader.last.53 set value Bargainhart
+ data modify storage eden:database names.wandering_trader.last.54 set value Tradefoot
+ data modify storage eden:database names.wandering_trader.last.55 set value Goldworth
+ data modify storage eden:database names.wandering_trader.last.56 set value Goodsbarter
+ data modify storage eden:database names.wandering_trader.last.57 set value Merchfield
+ data modify storage eden:database names.wandering_trader.last.58 set value Cartwright
+ data modify storage eden:database names.wandering_trader.last.59 set value Coinhart
+ data modify storage eden:database names.wandering_trader.last.60 set value Fairdeal
+ data modify storage eden:database names.wandering_trader.last.61 set value Barterworth
+ data modify storage eden:database names.wandering_trader.last.62 set value Tradebarrow
+ data modify storage eden:database names.wandering_trader.last.63 set value Silverhand
+ data modify storage eden:database names.wandering_trader.last.64 set value Waresmith
+ data modify storage eden:database names.wandering_trader.last.65 set value Marketcraft
+ data modify storage eden:database names.wandering_trader.last.66 set value Hagglefield
+ data modify storage eden:database names.wandering_trader.last.67 set value Goodworth
+ data modify storage eden:database names.wandering_trader.last.68 set value Goldtrade
+ data modify storage eden:database names.wandering_trader.last.69 set value Dealstone
+ data modify storage eden:database names.wandering_trader.last.70 set value Tradeheart
+ data modify storage eden:database names.wandering_trader.last.71 set value Coinstone
+ data modify storage eden:database names.wandering_trader.last.72 set value Merchcraft
+ data modify storage eden:database names.wandering_trader.last.73 set value Faircraft
+ data modify storage eden:database names.wandering_trader.last.74 set value Barterfield
+ data modify storage eden:database names.wandering_trader.last.75 set value Tradegood
+ data modify storage eden:database names.wandering_trader.last.76 set value Silvercraft
+ data modify storage eden:database names.wandering_trader.last.77 set value Stockman
+ data modify storage eden:database names.wandering_trader.last.78 set value Warewright
+ data modify storage eden:database names.wandering_trader.last.79 set value Cointrade
+ data modify storage eden:database names.wandering_trader.last.80 set value Haggleworth
+ data modify storage eden:database names.wandering_trader.last.81 set value Dealbarter
+ data modify storage eden:database names.wandering_trader.last.82 set value Goodsfield
+ data modify storage eden:database names.wandering_trader.last.83 set value Tradebroker
+ data modify storage eden:database names.wandering_trader.last.84 set value Merchantson
+ data modify storage eden:database names.wandering_trader.last.85 set value Fairworth
+ data modify storage eden:database names.wandering_trader.last.86 set value Waresmith
+ data modify storage eden:database names.wandering_trader.last.87 set value Stockcraft
+ data modify storage eden:database names.wandering_trader.last.88 set value Barterwright
+ data modify storage eden:database names.wandering_trader.last.89 set value Dealman
+ data modify storage eden:database names.wandering_trader.last.90 set value Silvertrade
+ data modify storage eden:database names.wandering_trader.last.91 set value Coinfield
+ data modify storage eden:database names.wandering_trader.last.92 set value Tradegood
+ data modify storage eden:database names.wandering_trader.last.93 set value Goldbarter
+ data modify storage eden:database names.wandering_trader.last.94 set value Merchantwright
+ data modify storage eden:database names.wandering_trader.last.95 set value Marketworth
+ data modify storage eden:database names.wandering_trader.last.96 set value Wareson
+ data modify storage eden:database names.wandering_trader.last.97 set value Tradecraft
+ data modify storage eden:database names.wandering_trader.last.98 set value Barterhand
+ data modify storage eden:database names.wandering_trader.last.99 set value Fairstock
+data modify storage eden:database names.wandering_trader.last.100 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.101 set value Hagglecraft
+data modify storage eden:database names.wandering_trader.last.102 set value Dealworth
+data modify storage eden:database names.wandering_trader.last.103 set value Marketstone
+data modify storage eden:database names.wandering_trader.last.104 set value Silvercraft
+data modify storage eden:database names.wandering_trader.last.105 set value Barterman
+data modify storage eden:database names.wandering_trader.last.106 set value Tradegold
+data modify storage eden:database names.wandering_trader.last.107 set value Goodsman
+data modify storage eden:database names.wandering_trader.last.108 set value Coincraft
+data modify storage eden:database names.wandering_trader.last.109 set value Tradefield
+data modify storage eden:database names.wandering_trader.last.110 set value Marketbarter
+data modify storage eden:database names.wandering_trader.last.111 set value Stockhand
+data modify storage eden:database names.wandering_trader.last.112 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.113 set value Barterworth
+data modify storage eden:database names.wandering_trader.last.114 set value Fairtrade
+data modify storage eden:database names.wandering_trader.last.115 set value Dealwright
+data modify storage eden:database names.wandering_trader.last.116 set value Coinstone
+data modify storage eden:database names.wandering_trader.last.117 set value Tradegoods
+data modify storage eden:database names.wandering_trader.last.118 set value Silverhand
+data modify storage eden:database names.wandering_trader.last.119 set value Goodsbarter
+data modify storage eden:database names.wandering_trader.last.120 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.121 set value Marketwright
+data modify storage eden:database names.wandering_trader.last.122 set value Stockcraft
+data modify storage eden:database names.wandering_trader.last.123 set value Merchantfield
+data modify storage eden:database names.wandering_trader.last.124 set value Fairstone
+data modify storage eden:database names.wandering_trader.last.125 set value Tradehart
+data modify storage eden:database names.wandering_trader.last.126 set value Barterfield
+data modify storage eden:database names.wandering_trader.last.127 set value Dealcraft
+data modify storage eden:database names.wandering_trader.last.128 set value Goodsman
+data modify storage eden:database names.wandering_trader.last.129 set value Coinbarter
+data modify storage eden:database names.wandering_trader.last.130 set value Tradecraft
+data modify storage eden:database names.wandering_trader.last.131 set value Silverwright
+data modify storage eden:database names.wandering_trader.last.132 set value Stocktrade
+data modify storage eden:database names.wandering_trader.last.133 set value Fairworth
+data modify storage eden:database names.wandering_trader.last.134 set value Barterhand
+data modify storage eden:database names.wandering_trader.last.135 set value Merchantstone
+data modify storage eden:database names.wandering_trader.last.136 set value Tradeworth
+data modify storage eden:database names.wandering_trader.last.137 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.138 set value Marketcraft
+data modify storage eden:database names.wandering_trader.last.139 set value Hagglefield
+data modify storage eden:database names.wandering_trader.last.140 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.141 set value Goodfield
+data modify storage eden:database names.wandering_trader.last.142 set value Goldtrade
+data modify storage eden:database names.wandering_trader.last.143 set value Dealstone
+data modify storage eden:database names.wandering_trader.last.144 set value Tradehand
+data modify storage eden:database names.wandering_trader.last.145 set value Silverman
+data modify storage eden:database names.wandering_trader.last.146 set value Fairbarter
+data modify storage eden:database names.wandering_trader.last.147 set value Goodsfield
+data modify storage eden:database names.wandering_trader.last.148 set value Bartercraft
+data modify storage eden:database names.wandering_trader.last.149 set value Coinstone
+data modify storage eden:database names.wandering_trader.last.150 set value Wareson
+data modify storage eden:database names.wandering_trader.last.151 set value Markettrade
+data modify storage eden:database names.wandering_trader.last.152 set value Dealwright
+data modify storage eden:database names.wandering_trader.last.153 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.154 set value Stockstone
+data modify storage eden:database names.wandering_trader.last.155 set value Merchantson
+data modify storage eden:database names.wandering_trader.last.156 set value Goldbarter
+data modify storage eden:database names.wandering_trader.last.157 set value Faircraft
+data modify storage eden:database names.wandering_trader.last.158 set value Barterwright
+data modify storage eden:database names.wandering_trader.last.159 set value Coinhand
+data modify storage eden:database names.wandering_trader.last.160 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.161 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.162 set value Marketstone
+data modify storage eden:database names.wandering_trader.last.163 set value Dealcraft
+data modify storage eden:database names.wandering_trader.last.164 set value Silvertrade
+data modify storage eden:database names.wandering_trader.last.165 set value Fairworth
+data modify storage eden:database names.wandering_trader.last.166 set value Barterman
+data modify storage eden:database names.wandering_trader.last.167 set value Tradecraft
+data modify storage eden:database names.wandering_trader.last.168 set value Goodwright
+data modify storage eden:database names.wandering_trader.last.169 set value Coinfield
+data modify storage eden:database names.wandering_trader.last.170 set value Merchantbarter
+data modify storage eden:database names.wandering_trader.last.171 set value Tradefield
+data modify storage eden:database names.wandering_trader.last.172 set value Silverworth
+data modify storage eden:database names.wandering_trader.last.173 set value Goodsman
+data modify storage eden:database names.wandering_trader.last.174 set value Marketwright
+data modify storage eden:database names.wandering_trader.last.175 set value Barterhand
+data modify storage eden:database names.wandering_trader.last.176 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.177 set value Tradegold
+data modify storage eden:database names.wandering_trader.last.178 set value Stockworth
+data modify storage eden:database names.wandering_trader.last.179 set value Fairtrade
+data modify storage eden:database names.wandering_trader.last.180 set value Dealstone
+data modify storage eden:database names.wandering_trader.last.181 set value Wareson
+data modify storage eden:database names.wandering_trader.last.182 set value Marketcraft
+data modify storage eden:database names.wandering_trader.last.183 set value Silvercraft
+data modify storage eden:database names.wandering_trader.last.184 set value Barterfield
+data modify storage eden:database names.wandering_trader.last.185 set value Tradehart
+data modify storage eden:database names.wandering_trader.last.186 set value Coinhand
+data modify storage eden:database names.wandering_trader.last.187 set value Fairworth
+data modify storage eden:database names.wandering_trader.last.188 set value Goodsbarter
+data modify storage eden:database names.wandering_trader.last.189 set value Tradecraft
+data modify storage eden:database names.wandering_trader.last.190 set value Barterman
+data modify storage eden:database names.wandering_trader.last.191 set value Marketstone
+data modify storage eden:database names.wandering_trader.last.192 set value Silvertrade
+data modify storage eden:database names.wandering_trader.last.193 set value Dealfield
+data modify storage eden:database names.wandering_trader.last.194 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.195 set value Goodworth
+data modify storage eden:database names.wandering_trader.last.196 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.197 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.198 set value Fairbarter
+data modify storage eden:database names.wandering_trader.last.199 set value Barterstone
+data modify storage eden:database names.wandering_trader.last.200 set value Stockfield
+data modify storage eden:database names.wandering_trader.last.201 set value Marketwright
+data modify storage eden:database names.wandering_trader.last.202 set value Silverhand
+data modify storage eden:database names.wandering_trader.last.203 set value Goodsfield
+data modify storage eden:database names.wandering_trader.last.204 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.205 set value Coincraft
+data modify storage eden:database names.wandering_trader.last.206 set value Dealstone
+data modify storage eden:database names.wandering_trader.last.207 set value Fairtrade
+data modify storage eden:database names.wandering_trader.last.208 set value Wareson
+data modify storage eden:database names.wandering_trader.last.209 set value Marketcraft
+data modify storage eden:database names.wandering_trader.last.210 set value Barterwright
+data modify storage eden:database names.wandering_trader.last.211 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.212 set value Coinfield
+data modify storage eden:database names.wandering_trader.last.213 set value Silverworth
+data modify storage eden:database names.wandering_trader.last.214 set value Goodwright
+data modify storage eden:database names.wandering_trader.last.215 set value Marketbarter
+data modify storage eden:database names.wandering_trader.last.216 set value Barterhand
+data modify storage eden:database names.wandering_trader.last.217 set value Fairworth
+data modify storage eden:database names.wandering_trader.last.218 set value Stockcraft
+data modify storage eden:database names.wandering_trader.last.219 set value Dealstone
+data modify storage eden:database names.wandering_trader.last.220 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.221 set value Tradecraft
+data modify storage eden:database names.wandering_trader.last.222 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.223 set value Goldtrade
+data modify storage eden:database names.wandering_trader.last.224 set value Barterman
+data modify storage eden:database names.wandering_trader.last.225 set value Merchantfield
+data modify storage eden:database names.wandering_trader.last.226 set value Silvercraft
+data modify storage eden:database names.wandering_trader.last.227 set value Goodsfield
+data modify storage eden:database names.wandering_trader.last.228 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.229 set value Faircraft
+data modify storage eden:database names.wandering_trader.last.230 set value Marketstone
+data modify storage eden:database names.wandering_trader.last.231 set value Barterwright
+data modify storage eden:database names.wandering_trader.last.232 set value Coinhand
+data modify storage eden:database names.wandering_trader.last.233 set value Wareson
+data modify storage eden:database names.wandering_trader.last.234 set value Silverworth
+data modify storage eden:database names.wandering_trader.last.235 set value Tradehart
+data modify storage eden:database names.wandering_trader.last.236 set value Dealwright
+data modify storage eden:database names.wandering_trader.last.237 set value Stockstone
+data modify storage eden:database names.wandering_trader.last.238 set value Barterfield
+data modify storage eden:database names.wandering_trader.last.239 set value Fairtrade
+data modify storage eden:database names.wandering_trader.last.240 set value Goodsman
+data modify storage eden:database names.wandering_trader.last.241 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.242 set value Coincraft
+data modify storage eden:database names.wandering_trader.last.243 set value Marketwright
+data modify storage eden:database names.wandering_trader.last.244 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.245 set value Silvertrade
+data modify storage eden:database names.wandering_trader.last.246 set value Barterhand
+data modify storage eden:database names.wandering_trader.last.247 set value Dealfield
+data modify storage eden:database names.wandering_trader.last.248 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.249 set value Goodworth
+data modify storage eden:database names.wandering_trader.last.250 set value Coinstone
+data modify storage eden:database names.wandering_trader.last.251 set value Marketcraft
+data modify storage eden:database names.wandering_trader.last.252 set value Barterman
+data modify storage eden:database names.wandering_trader.last.253 set value Silverwright
+data modify storage eden:database names.wandering_trader.last.254 set value Wareson
+data modify storage eden:database names.wandering_trader.last.255 set value Fairworth
+data modify storage eden:database names.wandering_trader.last.256 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.257 set value Stockfield
+data modify storage eden:database names.wandering_trader.last.258 set value Dealstone
+data modify storage eden:database names.wandering_trader.last.259 set value Marketstone
+data modify storage eden:database names.wandering_trader.last.260 set value Bartercraft
+data modify storage eden:database names.wandering_trader.last.261 set value Silverhand
+data modify storage eden:database names.wandering_trader.last.262 set value Goodsfield
+data modify storage eden:database names.wandering_trader.last.263 set value Tradecraft
+data modify storage eden:database names.wandering_trader.last.264 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.265 set value Fairbarter
+data modify storage eden:database names.wandering_trader.last.266 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.267 set value Markettrade
+data modify storage eden:database names.wandering_trader.last.268 set value Barterstone
+data modify storage eden:database names.wandering_trader.last.269 set value Silverworth
+data modify storage eden:database names.wandering_trader.last.270 set value Dealwright
+data modify storage eden:database names.wandering_trader.last.271 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.272 set value Coinfield
+data modify storage eden:database names.wandering_trader.last.273 set value Stockcraft
+data modify storage eden:database names.wandering_trader.last.274 set value Goodsman
+data modify storage eden:database names.wandering_trader.last.275 set value Fairtrade
+data modify storage eden:database names.wandering_trader.last.276 set value Wareson
+data modify storage eden:database names.wandering_trader.last.277 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.278 set value Barterhand
+data modify storage eden:database names.wandering_trader.last.279 set value Marketwright
+data modify storage eden:database names.wandering_trader.last.280 set value Silvercraft
+data modify storage eden:database names.wandering_trader.last.281 set value Dealstone
+data modify storage eden:database names.wandering_trader.last.282 set value Fairworth
+data modify storage eden:database names.wandering_trader.last.283 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.284 set value Tradehart
+data modify storage eden:database names.wandering_trader.last.285 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.286 set value Barterman
+data modify storage eden:database names.wandering_trader.last.287 set value Stockstone
+data modify storage eden:database names.wandering_trader.last.288 set value Goodsfield
+data modify storage eden:database names.wandering_trader.last.289 set value Silvertrade
+data modify storage eden:database names.wandering_trader.last.290 set value Fairbarter
+data modify storage eden:database names.wandering_trader.last.291 set value Tradecraft
+data modify storage eden:database names.wandering_trader.last.292 set value Coinfield
+data modify storage eden:database names.wandering_trader.last.293 set value Bartercraft
+data modify storage eden:database names.wandering_trader.last.294 set value Marketstone
+data modify storage eden:database names.wandering_trader.last.295 set value Dealwright
+data modify storage eden:database names.wandering_trader.last.296 set value Wareson
+data modify storage eden:database names.wandering_trader.last.297 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.298 set value Silverworth
+data modify storage eden:database names.wandering_trader.last.299 set value Stockfield
+data modify storage eden:database names.wandering_trader.last.300 set value Fairtrade
+data modify storage eden:database names.wandering_trader.last.301 set value Coinhand
+data modify storage eden:database names.wandering_trader.last.302 set value Barterfield
+data modify storage eden:database names.wandering_trader.last.303 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.304 set value Goodsman
+data modify storage eden:database names.wandering_trader.last.305 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.306 set value Silverwright
+data modify storage eden:database names.wandering_trader.last.307 set value Marketwright
+data modify storage eden:database names.wandering_trader.last.308 set value Dealstone
+data modify storage eden:database names.wandering_trader.last.309 set value Barterhand
+data modify storage eden:database names.wandering_trader.last.310 set value Tradecraft
+data modify storage eden:database names.wandering_trader.last.311 set value Goodworth
+data modify storage eden:database names.wandering_trader.last.312 set value Coinstone
+data modify storage eden:database names.wandering_trader.last.313 set value Stockcraft
+data modify storage eden:database names.wandering_trader.last.314 set value Barterstone
+data modify storage eden:database names.wandering_trader.last.315 set value Silvertrade
+data modify storage eden:database names.wandering_trader.last.316 set value Wareson
+data modify storage eden:database names.wandering_trader.last.317 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.318 set value Marketstone
+data modify storage eden:database names.wandering_trader.last.319 set value Dealfield
+data modify storage eden:database names.wandering_trader.last.320 set value Fairworth
+data modify storage eden:database names.wandering_trader.last.321 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.322 set value Barterman
+data modify storage eden:database names.wandering_trader.last.323 set value Silverhand
+data modify storage eden:database names.wandering_trader.last.324 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.325 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.326 set value Goodsfield
+data modify storage eden:database names.wandering_trader.last.327 set value Marketcraft
+data modify storage eden:database names.wandering_trader.last.328 set value Bartercraft
+data modify storage eden:database names.wandering_trader.last.329 set value Coinfield
+data modify storage eden:database names.wandering_trader.last.330 set value Tradehart
+data modify storage eden:database names.wandering_trader.last.331 set value Fairtrade
+data modify storage eden:database names.wandering_trader.last.332 set value Wareson
+data modify storage eden:database names.wandering_trader.last.333 set value Stockstone
+data modify storage eden:database names.wandering_trader.last.334 set value Silvercraft
+data modify storage eden:database names.wandering_trader.last.335 set value Barterwright
+data modify storage eden:database names.wandering_trader.last.336 set value Tradefair
+data modify storage eden:database names.wandering_trader.last.337 set value Goodwright
+data modify storage eden:database names.wandering_trader.last.338 set value Marketwright
+data modify storage eden:database names.wandering_trader.last.339 set value Barterhand
+data modify storage eden:database names.wandering_trader.last.340 set value Coincraft
+data modify storage eden:database names.wandering_trader.last.341 set value Fairworth
+data modify storage eden:database names.wandering_trader.last.342 set value Silvertrade
+data modify storage eden:database names.wandering_trader.last.343 set value Waresmith
+data modify storage eden:database names.wandering_trader.last.344 set value Dealstone
+data modify storage eden:database names.wandering_trader.last.345 set value Tradegood
+data modify storage eden:database names.wandering_trader.last.346 set value Coinwright
+data modify storage eden:database names.wandering_trader.last.347 set value Barterfield
+data modify storage eden:database names.wandering_trader.last.348 set value Marketstone
+data modify storage eden:database names.wandering_trader.last.349 set value Fairbarter
+data modify storage eden:database names.wandering_trader.last.350 set value Goodsman

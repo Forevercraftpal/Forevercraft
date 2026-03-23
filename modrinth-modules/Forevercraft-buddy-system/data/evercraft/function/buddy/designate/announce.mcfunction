@@ -1,0 +1,1 @@
+$tellraw @s [{text:"\n"},{text:"[Buddy] ",color:"#FFD700"},{text:"A bond has been forged! ",color:"yellow"},{text:"$(mob_type)",color:"gold",bold:true},{text:" is now your ",color:"yellow"},{text:"Buddy",color:"#FFD700",bold:true},{text:"!",color:"yellow"},{text:"\n"},{text:"Spend time together to grow your friendship.",color:"gray"},{text:"\n"}]

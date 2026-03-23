@@ -1,0 +1,109 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Eyelander",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A cursed blade that grows",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "stronger with each kill.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "On Kill: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Strength II + Speed I (15s)",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Knight Class",
+                    "color": "#FFD700",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "Fencer: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "No shield — +2 Damage, +1 Reach",
+                        "color": "#C0A040"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+9 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "eyelander",
+                  "is_artifact": true,
+                  "ability": "soul_harvest",
+                  "tier": "exquisite",
+                  "knight": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 9,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_speed"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:mob_crates/exquisite"
+                },
+                "minecraft:custom_data": {
+                  "mc_rarity": "exquisite"
+                },
+                "minecraft:max_stack_size": 64,
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_name": {"text": "Exquisite Mob Crate", "bold": true, "italic": true, "color": "light_purple"},
+                "minecraft:lore": [
+                  {"text": "Place to reveal your reward!", "color": "gray", "italic": true}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

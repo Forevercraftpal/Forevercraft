@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Bone Ring",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {"text": "Rare Artifact", "color": "aqua", "italic": false},
+                  "",
+                  {"text": "Carved from ancient remains.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Aura: ", "color": "white", "italic": false, "extra": [{"text": "Weakness to mobs (5 blocks)", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {"artifact": "ring_bone", "is_artifact": true, "ring": true, "tier": "rare"},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

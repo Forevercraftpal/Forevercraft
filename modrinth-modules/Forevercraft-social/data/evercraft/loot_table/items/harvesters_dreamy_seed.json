@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wheat_seeds",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Harvester's Dreamy Seed","color":"green","italic":false,"bold":true},
+                "minecraft:lore": [
+                  {"text":"Mythical Item","color":"gold","italic":false},
+                  "",
+                  {"text":"A seed blessed by the earth,","color":"gray","italic":true},
+                  {"text":"sprouting visions of fortune.","color":"gray","italic":true},
+                  "",
+                  {"text":"Right-click to consume:","color":"white","italic":false},
+                  {"text":"Permanently gain +1 Dream Rate","color":"aqua","italic":false},
+                  "",
+                  {"text":"\"From small seeds, great dreams grow.\"","color":"dark_gray","italic":true}
+                ],
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "harvesters_dreamy_seed": true,
+                  "consumable": true,
+                  "effect": "permanent_luck"
+                },
+                "minecraft:consumable": {"consume_seconds": 1, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{"type": "minecraft:generic", "pools": [{"rolls": 1, "entries": [
+  {"type": "minecraft:empty", "weight": 50},
+  {"type": "minecraft:loot_table", "value": "evercraft:potions/structure/scouts_sight", "weight": 5},
+  {"type": "minecraft:loot_table", "value": "evercraft:potions/structure/treasure_seeker", "weight": 15},
+  {"type": "minecraft:loot_table", "value": "evercraft:potions/structure/plunderers_fortune", "weight": 20},
+  {"type": "minecraft:loot_table", "value": "evercraft:treasure/potions/dreams_exquisite", "weight": 10}
+]}]}

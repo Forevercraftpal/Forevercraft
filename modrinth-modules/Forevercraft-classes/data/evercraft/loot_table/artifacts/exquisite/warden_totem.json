@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Warden Totem",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "Accessory \u2014 Inventory Held",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Vibrates with sculk energy,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "sensing all movement nearby.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Sneak (mainhand): ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "ALL entities glow 48 blocks (15s, 45s cd)",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Night Vision + Darkness immunity",
+                        "color": "aqua"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "warden_totem",
+                  "is_artifact": true,
+                  "ability": "sculk_sense",
+                  "tier": "exquisite",
+                  "accessory": true,
+                  "inventory_held": true
+                },
+                "minecraft:enchantment_glint_override": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

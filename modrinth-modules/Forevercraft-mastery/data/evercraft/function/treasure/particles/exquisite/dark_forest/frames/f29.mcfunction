@@ -1,0 +1,15 @@
+
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a
+particle squid_ink ^-1.000 ^-1.000 ^-1.000 0 0 0 0 1 force @a

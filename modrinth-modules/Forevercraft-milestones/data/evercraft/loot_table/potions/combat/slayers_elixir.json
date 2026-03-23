@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 11141120,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:strength",
+                      "amplifier": 1,
+                      "duration": 6000,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:luck",
+                      "amplifier": 0,
+                      "duration": 6000,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Slayer's Elixir",
+                  "color": "#8B0000",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Strength II, +1 Looting (5:00)",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "Blood calls to blood",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "More drops from your fallen foes",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

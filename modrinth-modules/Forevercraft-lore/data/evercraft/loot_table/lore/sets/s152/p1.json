@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Roots",
+                  "color": "aqua",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The Tree of Stars",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Rare Lore Fragment",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "[Right-click to read]",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:written_book_content": {
+                  "title": "Roots",
+                  "author": "Root Walker",
+                  "pages": [
+                    [
+                      {
+                        "text": "There is a tree whose roots touch all three dimensions. Its trunk is made of something older than wood \u2014 condensed Dream, bark-hard and eternal.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "Miners in the deep dark have reported striking wood instead of stone. Travelers in the Nether have found bark growing on basalt. The tree is everywhere, hidden in plain sight.",
+                        "color": "dark_gray",
+                        "italic": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\n  ",
+                        "color": "white"
+                      },
+                      {
+                        "text": "[Add to Collection]",
+                        "color": "green",
+                        "bold": true,
+                        "click_event": {
+                          "action": "run_command",
+                          "command": "/trigger ec.lore_add set 15201"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "lore_piece": true,
+                  "lore_uid": 15201,
+                  "lore_set": 152,
+                  "lore_pid": 1
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

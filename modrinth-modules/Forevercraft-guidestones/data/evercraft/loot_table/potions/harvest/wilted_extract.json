@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 5592405,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:hunger",
+                      "amplifier": 0,
+                      "duration": 600,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Wilted Extract",
+                  "color": "dark_green",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Common",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Hunger I (30s)",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Made from rotten vegetables...",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "\"Lunch time!\"",
+                    "color": "dark_purple",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

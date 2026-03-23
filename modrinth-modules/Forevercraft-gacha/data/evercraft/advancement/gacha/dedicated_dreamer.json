@@ -1,0 +1,13 @@
+{
+  "parent": "evercraft:gacha/root",
+  "display": {
+    "icon": {"id": "minecraft:experience_bottle"},
+    "title": {"text": "Dedicated Dreamer", "color": "light_purple"},
+    "description": {"text": "50 pulls at the Fountain"},
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  }
+}

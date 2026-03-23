@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_spear",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Lifewoven Branch",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "The first weapon ever entrusted to a healer.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Healer Class", "color": "#2ECC71", "bold": true, "italic": false},
+                  {"text": "◆ Sanctuary: ", "color": "gray", "italic": false, "extra": [{"text": "Healing garden, 8-block radius (15s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Life Surge: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC, massive heal wave (40s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Healing Bonus: ", "color": "gray", "italic": false, "extra": [{"text": "+50% healing output", "color": "dark_gray"}]},
+                  {"text": "◆ Auto-Pulse: ", "color": "gray", "italic": false, "extra": [{"text": "Heals low allies below 25% HP", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+6 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_healer_lifewoven_branch",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "healer",
+                  "spirit_id": 10,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 6.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -1.6, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

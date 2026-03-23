@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Ender Dragon Helmet",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A crown carved from the horns of the Ender Dragon herself. ",
+                    "color": "gray",
+                    "italic": true,
+                    "extra": [
+                      {
+                        "text": "Night Vision",
+                        "color": "green",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Voidscale (0/5)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Dragonborn — Strength II + Regen I",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Tank: Absorption I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Knight: +2 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Void Emperor — Regen II + Absorption III",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Knight: +3 Attack Damage, +1 Reach",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+0.5 Dreams  ◆  +3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "ender_dragon_helmet",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "ender_dragon"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

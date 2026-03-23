@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{ec_crate:1b,crate_tier:\"mythical\",crate_source:\"night_terror\"}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "strings": {
+                "values": ["mythical_crate"],
+                "mode": "replace_all"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {"text":"Mythical Crate","color":"gold","italic":false,"bold":true}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

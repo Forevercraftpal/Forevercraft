@@ -1,0 +1,11 @@
+{
+  "parent": "evercraft:trim/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:bred_animals"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/full_set/coast/anti_looting_faults/breeding"
+  }
+}

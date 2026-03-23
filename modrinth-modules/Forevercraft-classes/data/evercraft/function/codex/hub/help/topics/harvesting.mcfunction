@@ -1,0 +1,32 @@
+# Help Topic: Harvesting
+# Run as the player (@s = player)
+
+playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.5 1.0
+
+tellraw @s [{"text":"\n"},{"text":"═══════════════════════════════════","color":"green"}]
+tellraw @s [{"text":"  "},{"text":"\u2618 Harvesting","color":"green","bold":true}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"green"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Farming isn't just for food here. Every time","color":"white"}]
+tellraw @s [{"text":"  you break a fully grown crop there's a chance","color":"white"}]
+tellraw @s [{"text":"  to get a ","color":"white"},{"text":"harvest crate","color":"green"},{"text":" — and during the","color":"white"}]
+tellraw @s [{"text":"  Harvest Festival event, drop rates go up!","color":"white"}]
+tellraw @s [{"text":"  Same 6 tiers, Common all the way to Mythical.","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  "},{"text":"Prospect Nodes","color":"green","bold":true},{"text":" are ore deposits scattered","color":"gray"}]
+tellraw @s [{"text":"  around the world. Right-click to extract loot","color":"gray"}]
+tellraw @s [{"text":"  — each has biome-specific drops. Every player","color":"gray"}]
+tellraw @s [{"text":"  has nodes spawning around them, and who knows...","color":"gray"}]
+tellraw @s [{"text":"  maybe you'll find something ","color":"gray"},{"text":"valuable","color":"green"},{"text":" inside!","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  "},{"text":"Timber","color":"green","bold":true},{"text":" gives axes a chance to chop a whole","color":"gray"}]
+tellraw @s [{"text":"  tree in one swing — the Axe of Honor does it","color":"gray"}]
+tellraw @s [{"text":"  every time. If you have two artifact axes, the","color":"gray"}]
+tellraw @s [{"text":"  ","color":"gray"},{"text":"Berserker","color":"green"},{"text":" class has a bonus chance to Timber!","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  When a sapling lands on dirt or a crop lands","color":"gray"}]
+tellraw @s [{"text":"  on farmland, it sometimes starts to ","color":"gray"},{"text":"plant itself","color":"green"}]
+tellraw @s [{"text":"  automatically — no more tedious replanting","color":"gray"}]
+tellraw @s [{"text":"  after every harvest!","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"green"}]

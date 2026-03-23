@@ -1,0 +1,141 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Command Block Sword",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Forged from the very code that governs all of reality.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Admin Strike: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Bonus damage + Glowing (5s)",
+                        "color": "gold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Flame Strike II + Looting III",
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Knight Class",
+                    "color": "#FFD700",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "Fencer: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "No shield — +2 Damage, +1 Reach",
+                        "color": "#C0A040"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Voidscale (0/5)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Dragonborn — Strength II + Regen I",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Tank: Absorption I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Knight: +2 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Void Emperor — Regen II + Absorption III",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Knight: +3 Attack Damage, +1 Reach",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+18 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "command_block_sword",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "ability": "true_strike",
+                  "flame_strike": 2,
+                  "looting_bonus": 3,
+                  "knight": true,
+                  "artifact_set": "ender_dragon"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 18.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:command_block_sword_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:command_block_sword_speed"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

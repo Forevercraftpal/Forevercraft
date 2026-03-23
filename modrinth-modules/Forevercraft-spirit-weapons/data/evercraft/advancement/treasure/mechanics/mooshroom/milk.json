@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:bowl"
+        },
+        "entity": {
+          "type": "minecraft:mooshroom",
+          "components": {
+            "minecraft:mooshroom/variant": "brown"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/mechanics/mooshroom/milk"
+  }
+}

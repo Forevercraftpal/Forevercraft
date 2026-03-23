@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:polar_bear"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:bestiary/track/hurt_by/polar_bear"
+  }
+}

@@ -1,0 +1,1945 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 7,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 8 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 7,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 8 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 7,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 8 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 7,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 8 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 3 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 9,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 10 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 9,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 10 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 9,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 10 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 9,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 10 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 3 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 11 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 11 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 11 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 11 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 3 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 11,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 12 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 11,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 12 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 11,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 12 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 11,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 12 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 3 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 12,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 13 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 12,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 13 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 12,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 13 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 12,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 13 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 3 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 13,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 14 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 13,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 14 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 13,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 14 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 2.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -1,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:treasure",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 13,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "ec": "weapon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 14 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 3 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

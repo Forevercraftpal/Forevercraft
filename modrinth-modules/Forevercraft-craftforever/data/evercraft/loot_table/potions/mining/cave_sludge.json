@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 5592405,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 0,
+                      "duration": 600,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:mining_fatigue",
+                      "amplifier": 0,
+                      "duration": 600,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Cave Sludge",
+                  "color": "dark_gray",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Common",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Slowness I, Mining Fatigue I (30s)",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Scraped from the cave walls...",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "\"Try not to slip!\"",
+                    "color": "dark_purple",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

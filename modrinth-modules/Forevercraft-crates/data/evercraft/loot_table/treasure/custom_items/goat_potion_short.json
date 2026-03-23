@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:splash_potion",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:max_stack_size": 5,
+                  "tooltip_display": {
+                    "hidden_components": [
+                      "potion_contents"
+                    ]
+                  },
+                  "minecraft:potion_contents": {
+                    "custom_color": 14602442,
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:unluck",
+                        "amplifier": 195,
+                        "duration": 4800,
+                        "show_particles": false,
+                        "show_icon": false,
+                        "ambient": false
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "color": "white",
+                    "text": "Goat Potion",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "color": "blue",
+                    "text": "Step Height (04:00)",
+                    "italic": false
+                  },
+                  {
+                    "color": "gray",
+                    "text": "Works on players only ",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "functions": []
+  }

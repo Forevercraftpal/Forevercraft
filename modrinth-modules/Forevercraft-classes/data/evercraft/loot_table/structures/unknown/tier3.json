@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "comment": "Unknown Structure - Rare Tier (rolled from deep/nether base)",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/rare/main"
+        }
+      ]
+    },
+    {
+      "comment": "Vanilla structure loot as base",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/nether_bridge",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/desert_pyramid",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/jungle_temple",
+          "weight": 30
+        }
+      ]
+    }
+  ]
+}

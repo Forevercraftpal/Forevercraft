@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "signed_charter": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:written_book",
+                        "predicates": {
+                            "minecraft:custom_data": "{buddy_charter:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "evercraft:buddy/naming/extract_name"
+    }
+}

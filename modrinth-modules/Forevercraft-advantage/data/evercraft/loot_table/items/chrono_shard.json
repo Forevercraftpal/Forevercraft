@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Chrono Shard","color":"dark_aqua","italic":false,"bold":true},
+                "minecraft:custom_data": {"chrono_shard": true},
+                "minecraft:lore": [
+                  {"text":"Rare Reset Token","color":"blue","italic":false},
+                  "",
+                  {"text":"Right-click to activate.","color":"gray","italic":true},
+                  {"text":"Choose one progression system","color":"gray","italic":true},
+                  {"text":"to reset completely to zero.","color":"gray","italic":true},
+                  "",
+                  {"text":"\u26a0 This action is irreversible.","color":"red","italic":false}
+                ],
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic",
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "sound": "intentionally_empty",
+                  "has_consume_particles": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

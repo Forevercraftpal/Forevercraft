@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/common/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/nether_bridge"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 1, "max": 2},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:nether_brick", "weight": 30, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:blaze_rod", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}]},
+        {"type": "minecraft:item", "name": "minecraft:nether_wart", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:bone", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:magma_cream", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+$data modify storage eden:temp wandering_trader.first_name set from storage eden:database names.wandering_trader.first.$(first_name)
+$data modify storage eden:temp wandering_trader.last_name set from storage eden:database names.wandering_trader.last.$(last_name)

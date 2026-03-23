@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Hammer",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Heavy and blunt, it breaks",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "stone through sheer stubbornness.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Enhanced mining speed",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+2 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_hammer",
+                  "is_artifact": true,
+                  "tier": "common"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:mining_efficiency",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:hammer_efficiency"
+                  },
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:hammer_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:hammer_speed"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

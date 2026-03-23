@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:effects_changed",
+        "conditions": {
+          "effects": {
+            "minecraft:unluck": {
+              "amplifier": 195
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "evercraft:treasure/mechanics/step_height/apply"
+    }
+  }
+  

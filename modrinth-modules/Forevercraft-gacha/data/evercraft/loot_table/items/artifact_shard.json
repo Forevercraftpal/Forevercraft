@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Artifact Shard", "color": "light_purple", "italic": false},
+                "minecraft:lore": [
+                  {"text": "A fragment of ancient", "color": "gray", "italic": false},
+                  {"text": "artifact power.", "color": "gray", "italic": false},
+                  "",
+                  {"text": "Trade to the Artificer", "color": "yellow", "italic": false},
+                  {"text": "for rare crates!", "color": "yellow", "italic": false}
+                ],
+                "minecraft:custom_data": {"artifact_shard": true},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_model": "amethyst_shard"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

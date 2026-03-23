@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/golden_root",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/rare/starbloom_petal",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/meadow_thyme",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:plains", "minecraft:sunflower_plains", "minecraft:meadow", "minecraft:flower_forest"]}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/woodland_truffle",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:forest", "minecraft:birch_forest", "minecraft:old_growth_birch_forest", "minecraft:dark_forest"]}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/frostmint",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:taiga", "minecraft:old_growth_pine_taiga", "minecraft:old_growth_spruce_taiga", "minecraft:snowy_taiga", "minecraft:snowy_plains", "minecraft:ice_spikes", "minecraft:frozen_peaks", "minecraft:snowy_slopes"]}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/highland_sage",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:windswept_hills", "minecraft:windswept_gravelly_hills", "minecraft:windswept_forest", "minecraft:stony_peaks", "minecraft:jagged_peaks", "minecraft:grove"]}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/desert_saffron",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:desert", "minecraft:badlands", "minecraft:eroded_badlands", "minecraft:wooded_badlands"]}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/jungle_pepper",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:jungle", "minecraft:sparse_jungle", "minecraft:bamboo_jungle"]}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/sunbaked_root",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:savanna", "minecraft:savanna_plateau", "minecraft:windswept_savanna"]}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/bogmoss",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:swamp", "minecraft:mangrove_swamp"]}}
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:cooking/ingredients/cavern_lichen",
+          "weight": 4,
+          "conditions": [
+            {"condition": "minecraft:location_check", "predicate": {"biomes": ["minecraft:lush_caves", "minecraft:dripstone_caves"]}}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "open": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:chest_minecart"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:structures/interact/on_open_minecart_chest"
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "comment": "BASE POOL (1.25x) - Common 1/400, Uncommon 1/800, Rare 1/2000, Ornate 1/4000, Exquisite 1/6250, Mythical 1/7692",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99521
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/common/dummy",
+          "weight": 250
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/uncommon/dummy",
+          "weight": 125
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/rare/dummy",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/ornate/dummy",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/exquisite/dummy",
+          "weight": 16
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/mythical/dummy",
+          "weight": 13
+        }
+      ]
+    },
+    {
+      "comment": "FORTUNE 1 BONUS POOL - 0.5% increase (was 14%). Only if player has Fortune 1 but NOT Fortune 2+",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:reference",
+            "name": "evercraft:harvest/enchantments/fortune_2"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99373
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/common/dummy",
+          "weight": 313,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/uncommon/dummy",
+          "weight": 156,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/rare/dummy",
+          "weight": 63,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/ornate/dummy",
+          "weight": 48,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/exquisite/dummy",
+          "weight": 31,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/mythical/dummy",
+          "weight": 16,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "FORTUNE 2 BONUS POOL - 1% increase total (was 29%). Only if player has Fortune 2 but NOT Fortune 3",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:reference",
+            "name": "evercraft:harvest/enchantments/fortune_3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98747
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/common/dummy",
+          "weight": 625,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/uncommon/dummy",
+          "weight": 313,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/rare/dummy",
+          "weight": 125,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/ornate/dummy",
+          "weight": 94,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/exquisite/dummy",
+          "weight": 63,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/mythical/dummy",
+          "weight": 33,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "FORTUNE 3 BONUS POOL - 1.5% increase total (was 43%)",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98124
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/common/dummy",
+          "weight": 938,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/uncommon/dummy",
+          "weight": 469,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/rare/dummy",
+          "weight": 188,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/ornate/dummy",
+          "weight": 141,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/exquisite/dummy",
+          "weight": 91,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/mythical/dummy",
+          "weight": 49,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/fortune_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "SILK TOUCH BONUS POOL - 1.5% flat bonus (was ~0.75 luck equivalent)",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98124
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/common/dummy",
+          "weight": 938,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/silk_touch"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/uncommon/dummy",
+          "weight": 469,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/silk_touch"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/rare/dummy",
+          "weight": 188,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/silk_touch"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/ornate/dummy",
+          "weight": 141,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/silk_touch"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/exquisite/dummy",
+          "weight": 91,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/silk_touch"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/mythical/dummy",
+          "weight": 49,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:harvest/enchantments/silk_touch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "HARVEST FESTIVAL BONUS POOL - 0.5% increase during Harvest Festival (Fortune 1 equivalent)",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.hf_active": { "min": 1 }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99373
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/common/dummy",
+          "weight": 313
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/uncommon/dummy",
+          "weight": 156
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/rare/dummy",
+          "weight": 63
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/ornate/dummy",
+          "weight": 48
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/exquisite/dummy",
+          "weight": 31
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crates/mythical/dummy",
+          "weight": 16
+        }
+      ]
+    }
+  ]
+}

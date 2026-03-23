@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Wolf Boots",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Paws of fur over thin gold,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "silent and sure-footed.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+1 Armor, slight speed boost",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+1 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_wolf_boots",
+                  "is_artifact": true,
+                  "tier": "common"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:wolf_boots_armor"
+                  },
+                  {
+                    "type": "minecraft:movement_speed",
+                    "amount": 0.02,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:wolf_boots_speed"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+
+particle small_flame ^0.002 ^2.437 ^-0.945 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.006 ^2.440 ^-0.895 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.012 ^2.442 ^-0.845 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.021 ^2.445 ^-0.796 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.032 ^2.447 ^-0.747 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.046 ^2.450 ^-0.699 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.062 ^2.452 ^-0.652 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.081 ^2.455 ^-0.606 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.102 ^2.457 ^-0.560 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.125 ^2.460 ^-0.516 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.150 ^2.462 ^-0.473 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.178 ^2.465 ^-0.431 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.207 ^2.467 ^-0.391 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.239 ^2.470 ^-0.352 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.272 ^2.472 ^-0.314 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.307 ^2.475 ^-0.279 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.344 ^2.477 ^-0.245 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.383 ^2.480 ^-0.213 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.423 ^2.482 ^-0.184 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.464 ^2.485 ^-0.156 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.507 ^2.487 ^-0.130 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.551 ^2.490 ^-0.106 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.596 ^2.492 ^-0.085 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.643 ^2.495 ^-0.066 0.1 0.1 0.1 0.05 10 force @a
+particle small_flame ^0.690 ^2.497 ^-0.049 0.1 0.1 0.1 0.05 10 force @a

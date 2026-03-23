@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "feed_cod": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:cod"
+        },
+        "entity": {
+          "type": "minecraft:ocelot"
+        }
+      }
+    },
+    "feed_salmon": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:salmon"
+        },
+        "entity": {
+          "type": "minecraft:ocelot"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["feed_cod", "feed_salmon"]
+  ],
+  "rewards": {
+    "function": "evercraft:ocelots/on_feed"
+  }
+}

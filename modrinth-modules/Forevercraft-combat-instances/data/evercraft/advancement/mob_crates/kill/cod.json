@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:cod"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:mob_crates/drop/kill/cod"
+  }
+}

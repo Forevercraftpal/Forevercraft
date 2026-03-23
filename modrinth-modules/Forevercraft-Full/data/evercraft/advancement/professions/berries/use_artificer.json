@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "use_berry": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:glow_berries",
+          "predicates": {
+            "minecraft:custom_data": "{essence_berry:\"artificer\"}"
+          }
+        },
+        "entity": {
+          "type": "minecraft:villager"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:professions/berries/apply_artificer"
+  }
+}

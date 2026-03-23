@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_blaze_bloom": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"blaze_bloom\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/blaze_bloom"
+  }
+}

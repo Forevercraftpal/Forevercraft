@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": {
+          "min": 1
+        },
+        "item": {
+          "items": [
+            "minecraft:leather_boots",
+            "minecraft:chainmail_boots",
+            "minecraft:iron_boots",
+            "minecraft:golden_boots",
+            "minecraft:diamond_boots",
+            "minecraft:netherite_boots"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_spear",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": "Bone Cudgel",
+                "minecraft:lore": [
+                  {
+                    "text": "Rare Artifact",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Carved from giant bones,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "it crushes the undead.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "+30% damage vs Undead",
+                    "color": "white"
+                  },
+                  "",
+                  {"text": "Beastlord Class", "color": "#2ECC71", "bold": true, "italic": false},
+                  {"text": "\u25c6 Aura: ", "color": "gray", "italic": false, "extra": [{"text": "Strength to nearby pets", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Warp Strike: ", "color": "gray", "italic": false, "extra": [{"text": "Pets teleport to enemies", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Rally Cry: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Use — buff all pets", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "bone_cudgel",
+                  "is_artifact": true,
+                  "ability": "undead_slayer",
+                  "tier": "rare",
+                  "beastlord": true
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

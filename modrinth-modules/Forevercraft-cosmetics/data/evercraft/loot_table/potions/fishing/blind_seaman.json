@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 1710618,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:luck",
+                      "amplifier": 1,
+                      "duration": 6000,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:nausea",
+                      "amplifier": 0,
+                      "duration": 200,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:blindness",
+                      "amplifier": 0,
+                      "duration": 6000,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:darkness",
+                      "amplifier": 0,
+                      "duration": 6000,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Blind Seaman's Brew",
+                  "color": "dark_blue",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "+2 Luck of the Sea, +1 Lure (5:00)",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "Nausea (10s), Blindness & Darkness (5:00)",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "\"I don't need to see to feel the tug.\"",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

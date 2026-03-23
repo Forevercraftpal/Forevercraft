@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pink_petals",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Starbloom Petal","color":"gold","italic":false},
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {"text":"Rare Forage Find","color":"yellow","italic":false},
+                  "",
+                  {"text":"A shimmering petal that glows at dusk.","color":"dark_gray","italic":true},
+                  "",
+                  {"text":"Trade at a village profession.","color":"gray","italic":false}
+                ],
+                "minecraft:max_stack_size": 16,
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {"ec_rare_food":true,"rare_food_id":"starbloom_petal"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

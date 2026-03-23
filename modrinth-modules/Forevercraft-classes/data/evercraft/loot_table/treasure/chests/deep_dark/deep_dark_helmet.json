@@ -1,0 +1,3688 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Sculk Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When hit by a projectile the enemy",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "receives 2.5 seconds of stackable ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "50% movement reduction.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "deep_dark_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

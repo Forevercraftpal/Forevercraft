@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_amethyst"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_lapis"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_redstone"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_diamond"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_slime"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_emerald"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_bone"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_honey"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_nether"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_trial"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_ominous"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_warden"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ring_void"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/graviton_core"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/special/ancient_netherite_core"}]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# Help Topic: World & Travel
+# Run as the player (@s = player)
+
+playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.5 1.0
+
+tellraw @s [{"text":"\n"},{"text":"═══════════════════════════════════","color":"dark_aqua"}]
+tellraw @s [{"text":"  "},{"text":"\u2606 World & Travel","color":"dark_aqua","bold":true}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"dark_aqua"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  ","color":"white"},{"text":"Guidestones","color":"dark_aqua","bold":true},{"text":" are your fast-travel network.","color":"white"}]
+tellraw @s [{"text":"  Craft one, place it, and it joins the grid.","color":"white"}]
+tellraw @s [{"text":"  Right-click any Guidestone to see a floating","color":"white"}]
+tellraw @s [{"text":"  menu of every one in the world, sorted by","color":"white"}]
+tellraw @s [{"text":"  distance. Four color variants to organize.","color":"white"}]
+tellraw @s [{"text":"  The ","color":"white"},{"text":"Wormhole","color":"light_purple"},{"text":" teleports you 5,000-10,000","color":"white"}]
+tellraw @s [{"text":"  blocks in a random direction for 30 levels —","color":"white"}]
+tellraw @s [{"text":"  great for finding new territory.","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  The ","color":"gray"},{"text":"Portal Dial","color":"gold"},{"text":" compass binds to lodestones","color":"gray"}]
+tellraw @s [{"text":"  for direct teleport. There may be a way to","color":"gray"}]
+tellraw @s [{"text":"  upgrade the portal dial somehow...","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Days last ","color":"gray"},{"text":"1 real hour","color":"yellow"},{"text":" with 8 moon phases","color":"gray"}]
+tellraw @s [{"text":"  over 8 days. Four seasons cycle with visual","color":"gray"}]
+tellraw @s [{"text":"  changes. Five ","color":"gray"},{"text":"World Events","color":"light_purple"},{"text":" (Starfall, The","color":"gray"}]
+tellraw @s [{"text":"  Dreaming, Abyssal Tremor, Aurora Bloom, Rift","color":"gray"}]
+tellraw @s [{"text":"  Echo) bring special effects — weather omens","color":"gray"}]
+tellraw @s [{"text":"  warn you 30 seconds before they hit. 162 lore","color":"gray"}]
+tellraw @s [{"text":"  sets are scattered across all three dimensions.","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"dark_aqua"}]

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "comment": "Unknown Structure - Uncommon Tier (rolled from underground base)",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/uncommon/main"
+        }
+      ]
+    },
+    {
+      "comment": "Vanilla structure loot as base",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/shipwreck_treasure",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/pillager_outpost",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/underwater_ruin_big",
+          "weight": 30
+        }
+      ]
+    }
+  ]
+}

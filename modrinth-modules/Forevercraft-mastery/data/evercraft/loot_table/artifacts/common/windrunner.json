@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Rapid Crossbow",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {"text": "Common Artifact", "color": "white", "italic": false},
+                  "",
+                  {"text": "A lightweight crossbow built", "color": "gray", "italic": true},
+                  {"text": "for speed above all else.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Startling Shot: ", "color": "aqua", "italic": false, "extra": [{"text": "Mining Fatigue I (2s)", "color": "white"}]},
+                  "",
+                  {"text": "Hunter Class", "color": "#708090", "bold": true, "italic": false},
+                  {"text": "\u25c6 Precision: ", "color": "gray", "italic": false, "extra": [{"text": "Quickdraw \u2014 Speed III (2s)", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Fade: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Load \u2014 Invis + Speed", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "windrunner",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "hunter": true,
+                  "hunter_id": "windrunner",
+                  "ability": "startling_shot"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

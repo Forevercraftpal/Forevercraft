@@ -1,0 +1,1 @@
+$execute rotated ~ 0 positioned ^ ^1.8 ^1.78 run summon text_display ~ ~ ~ {brightness:{block:15,sky:15},shadow_radius:0f,Tags:["BM.El","BM.SlotEl","BM.PageInd"],billboard:"center",text:{text:"Page $(page)/2",color:"dark_gray"},background:1,shadow:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.405f,0.405f,0.405f]}}

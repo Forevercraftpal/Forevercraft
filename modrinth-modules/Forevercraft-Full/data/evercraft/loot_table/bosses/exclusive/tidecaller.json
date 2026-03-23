@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Abyssal Pearl", "color": "dark_aqua", "bold": true, "italic": false},
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Exquisite Artifact", "color": "light_purple", "italic": false},
+                  "",
+                  {"text": "Pulled from the deep by", "color": "gray", "italic": true},
+                  {"text": "The Tidecaller's crushing grasp.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Passive: ", "color": "white", "italic": false, "extra": [{"text": "Water Breathing + Dolphin's Grace", "color": "dark_aqua"}]},
+                  {"text": "  + Conduit Power", "color": "dark_aqua", "italic": false},
+                  {"text": "Dream Rate: ", "color": "white", "italic": false, "extra": [{"text": "+1.5", "color": "green"}]},
+                  {"text": "◆ Boss Exclusive", "color": "gold", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "abyssal_pearl",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "boss_exclusive": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

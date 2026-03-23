@@ -1,0 +1,3540 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Nature Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Flower Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "When exposed to skylight the user ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains 40% increased attack DMG & ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "damage immunity, must be sunny. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "flower_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "flower_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:respiration": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:aqua_affinity": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

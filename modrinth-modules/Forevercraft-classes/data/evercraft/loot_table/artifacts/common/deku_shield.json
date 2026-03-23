@@ -1,0 +1,130 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Deku Shield",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A lightweight wooden shield",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "carved from an ancient tree.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+0.5 Knockback Resistance",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Tank Class",
+                    "color": "#5B9BD5",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Resistance I ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Mainhand)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Taunt & Shield Bash",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Knight Class",
+                    "color": "#FFD700",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Forest's Vigor ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Offhand Shift+Use)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "  Haste II for 4s",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_deku_shield",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "tank": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "slot": "offhand",
+                    "id": "evercraft:artifact_kb_resist"
+                  },
+                  {
+                    "type": "minecraft:attack_knockback",
+                    "amount": 0.3,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:shield_knockback"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

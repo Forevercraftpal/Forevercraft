@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_beef",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Conqueror's Feast","color":"dark_purple","italic":false},
+                "minecraft:lore": [
+                  {"text":"Feast Combat Meal","color":"dark_purple","italic":false},
+                  "",
+                  {"text":"Grants Strength II + Resistance I for 210s","color":"gray","italic":false},
+                  {"text":"+0.5 Dream Rate (Well-Fed)","color":"gold","italic":false}
+                ],
+                "minecraft:food": {"nutrition":10,"saturation":14.0,"can_always_eat":true},
+                "minecraft:consumable": {"consume_seconds":1.6,"animation":"eat","sound":"minecraft:entity.generic.eat","has_consume_particles":true},
+                "minecraft:custom_data": {"ec_meal":true,"meal_id":"conquerors_feast_b","meal_cat":"combat","meal_tier":"feast"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

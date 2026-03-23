@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_key": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:trial_key"],
+          "predicates": {
+            "minecraft:custom_data": "{dungeon_key:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:dungeon/start"
+  }
+}

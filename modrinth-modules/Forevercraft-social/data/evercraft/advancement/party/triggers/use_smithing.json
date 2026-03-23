@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "smithed": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "minecraft:netherite_upgrade_smithing_template"
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:party/triggers/on_use_smithing"
+  }
+}

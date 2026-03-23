@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/dragonslayer_helmet"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/dragonslayer_chestplate"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/dragonslayer_leggings"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/dragonslayer_boots"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/storm_helmet"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/storm_chestplate"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/storm_leggings"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/storm_boots"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/frost_helmet"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/frost_chestplate"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/frost_leggings"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/frost_boots"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/blood_helmet"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/blood_chestplate"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/blood_leggings"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/blood_boots"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/nature_helmet"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/nature_chestplate"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/nature_leggings"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/nature_boots"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/shadow_helmet"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/shadow_chestplate"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/shadow_leggings"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/shadow_boots"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/wither_helmet"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/wither_chestplate"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/wither_leggings"}]}
+  ]
+}

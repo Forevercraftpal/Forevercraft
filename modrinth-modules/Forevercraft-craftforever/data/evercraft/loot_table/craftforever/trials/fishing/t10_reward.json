@@ -1,0 +1,142 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.05
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Tidecaller's Line",
+                "color": "aqua",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic",
+                "minecraft:custom_data": {
+                  "spirit_tool": "tidecaller",
+                  "st_tier": 1,
+                  "tier": "common"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Spirit Fishing Rod",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "The deep answers your call.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Luck V + Water Breathing + Conduit",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Fishing: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "No junk, 25% double catch",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "\u2726 Maelstrom ",
+                    "color": "dark_aqua",
+                    "bold": true,
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Sneak \u2014 120s)",
+                        "color": "gray",
+                        "bold": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Whirlpool: 10 auto-fish over 20s",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/chrono_shard",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

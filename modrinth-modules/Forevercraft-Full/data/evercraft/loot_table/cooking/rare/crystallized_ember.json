@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fire_charge",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Crystallized Ember","color":"gold","italic":false},
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {"text":"Rare Ore Find","color":"yellow","italic":false},
+                  "",
+                  {"text":"A shard of solidified flame from deep below.","color":"dark_gray","italic":true},
+                  "",
+                  {"text":"Trade at a village profession.","color":"gray","italic":false}
+                ],
+                "minecraft:max_stack_size": 16,
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {"ec_rare_ore":true,"rare_ore_id":"crystallized_ember"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

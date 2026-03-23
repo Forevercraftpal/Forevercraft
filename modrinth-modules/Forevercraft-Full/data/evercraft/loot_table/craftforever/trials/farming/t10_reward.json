@@ -1,0 +1,157 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_hoe",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.05
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Bloomweaver",
+                  "color": "green",
+                  "bold": true,
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Spirit Hoe",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Where it tills, life follows \u2014",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "fields bloom in its wake.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Growth Aura \u2014 crops mature in 8 blocks",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Walking: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "7x7 Harvest Storm + Auto-Replant",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Sneak+Till: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "5x5 Mass Till + Water",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "\u2726 Garden of Eden ",
+                    "color": "green",
+                    "bold": true,
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Sneak \u2014 90s)",
+                        "color": "gray",
+                        "bold": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Create 11x11 instant auto-farm",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "spirit_tool": "bloomweaver",
+                  "st_tier": 1,
+                  "tier": "common"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/chrono_shard",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

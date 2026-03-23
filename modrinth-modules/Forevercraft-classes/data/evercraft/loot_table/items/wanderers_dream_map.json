@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "filled_map",
+                "minecraft:custom_name": {"text":"Wanderer's Dream Map","color":"dark_aqua","italic":false,"bold":true},
+                "minecraft:lore": [
+                  {"text":"Mythical Item","color":"gold","italic":false},
+                  "",
+                  {"text":"Every corner of the world explored,","color":"gray","italic":true},
+                  {"text":"every ruin plundered — dreams flow freely.","color":"gray","italic":true},
+                  "",
+                  {"text":"Right-click to consume:","color":"white","italic":false},
+                  {"text":"Permanently gain +1 Dream Rate","color":"aqua","italic":false},
+                  "",
+                  {"text":"\"The world is the dreamer's canvas.\"","color":"dark_gray","italic":true}
+                ],
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "wanderers_dream_map": true,
+                  "consumable": true,
+                  "effect": "permanent_luck"
+                },
+                "minecraft:consumable": {"consume_seconds": 1, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

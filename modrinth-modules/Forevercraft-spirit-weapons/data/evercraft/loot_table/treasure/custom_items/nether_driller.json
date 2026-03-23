@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:golden_pickaxe",
+                "weight": 1,
+                "functions": [
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:efficiency": {
+                        "min": 5,
+                        "max": 7
+                      }
+                    }
+                  },
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                      "minecraft:repair_cost": 99999,
+                      "minecraft:unbreakable": {},
+                      "minecraft:custom_name": {
+                        "text": "Nether Driller",
+                        "color": "gold",
+                        "italic": true
+                      },
+                      "minecraft:lore": [
+                        {
+                          "text": " "
+                        },
+                        {
+                          "text": "Ability:",
+                          "color": "green",
+                          "italic": false
+                        },
+                        {
+                          "text": "Insta-mines nether-related blocks ",
+                          "color": "gray",
+                          "italic": false
+                        }
+                      ],                
+                      "minecraft:custom_data": {
+                        "tool": "ec.nether_driller"
+                      },
+                      "minecraft:tool": {
+                        "rules": [
+                          {
+                            "blocks": [
+                              "minecraft:netherrack",
+                              "minecraft:nether_quartz_ore",
+                              "minecraft:nether_gold_ore",
+                              "minecraft:ancient_debris",
+                              "minecraft:soul_sand",
+                              "minecraft:soul_soil",
+                              "minecraft:basalt",
+                              "minecraft:blackstone",
+                              "minecraft:crimson_nylium",
+                              "minecraft:warped_nylium",
+                              "minecraft:glowstone",
+                              "minecraft:nether_wart_block",
+                              "minecraft:magma_block",
+                              "minecraft:nether_bricks",
+                              "minecraft:red_nether_bricks",
+                              "minecraft:quartz_block",
+                              "minecraft:shroomlight"
+                            ],
+                            "speed": 5,
+                            "correct_for_drops": true
+                          }
+                        ],
+                        "default_mining_speed": 1,
+                        "damage_per_block": 0
+                      }
+                    }
+                  }
+                ]
+            }
+        ]
+      }
+    ]
+  }

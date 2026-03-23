@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "iron_sword": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_sword"}},
+    "iron_pickaxe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_pickaxe"}},
+    "iron_axe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_axe"}},
+    "iron_shovel": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_shovel"}},
+    "iron_hoe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_hoe"}},
+    "iron_helmet": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_helmet"}},
+    "iron_chestplate": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_chestplate"}},
+    "iron_leggings": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_leggings"}},
+    "iron_boots": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:iron_boots"}},
+    "shield": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:shield"}}
+  },
+  "requirements": [["iron_sword","iron_pickaxe","iron_axe","iron_shovel","iron_hoe","iron_helmet","iron_chestplate","iron_leggings","iron_boots","shield"]],
+  "rewards": {
+    "function": "evercraft:competition/score/forge_iron"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"wb.boss\"]}"
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "evercraft:passive_retaliation",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:bosses/rewards/mark_participant"
+  }
+}

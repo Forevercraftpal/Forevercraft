@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "#evercraft:cooking_pigs"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:cooking/protein/on_kill_pig"
+  }
+}

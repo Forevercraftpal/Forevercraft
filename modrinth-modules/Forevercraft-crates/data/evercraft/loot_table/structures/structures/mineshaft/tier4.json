@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/ornate/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/abandoned_mineshaft"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 3, "max": 5},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:diamond_block", "weight": 15},
+        {"type": "minecraft:item", "name": "minecraft:diamond_pickaxe", "weight": 15, "functions": [{"function": "minecraft:enchant_with_levels", "levels": {"type": "minecraft:uniform", "min": 25, "max": 35}, "options": "#minecraft:on_random_loot"}]},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 18, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_scrap", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:emerald_block", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:ancient_debris", "weight": 10}
+      ]
+    }
+  ]
+}

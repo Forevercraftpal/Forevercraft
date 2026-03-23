@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Lifewarden's Tome",
+                "minecraft:lore": [
+                  {"text": "Exquisite Artifact", "color": "light_purple", "italic": false},
+                  {"text": "Healer — Right-Click to Use", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "An ancient tome of triage that", "color": "gray", "italic": true},
+                  {"text": "prioritizes the most wounded.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Activate: ", "color": "white", "italic": false, "extra": [{"text": "Heal all 2 hearts; below 50% HP get 8 hearts (24 blocks)", "color": "green"}]},
+                  {"text": "Cooldown: ", "color": "white", "italic": false, "extra": [{"text": "26 seconds", "color": "gray"}]},
+                  "",
+                  {"text": "Healer's Oath: ", "color": "red", "italic": false, "extra": [{"text": "Cannot deal damage during cooldown", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "healer_tome",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "healer": true,
+                  "healer_id": "tome"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

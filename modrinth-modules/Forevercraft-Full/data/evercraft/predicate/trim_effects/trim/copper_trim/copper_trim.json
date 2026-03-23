@@ -1,0 +1,71 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": "#minecraft:trimmable_armor",
+              "predicates": {
+                "minecraft:trim": {
+                  "material": "minecraft:copper"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": "#minecraft:trimmable_armor",
+              "predicates": {
+                "minecraft:trim": {
+                  "material": "minecraft:copper"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "items": "#minecraft:trimmable_armor",
+              "predicates": {
+                "minecraft:trim": {
+                  "material": "minecraft:copper"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "feet": {
+              "items": "#minecraft:trimmable_armor",
+              "predicates": {
+                "minecraft:trim": {
+                  "material": "minecraft:copper"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+]

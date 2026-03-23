@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Guard Helmet",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon Artifact",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Standard issue for town watch,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "dented but dependable.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+2 Armor, +1 Toughness",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+2 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "uncommon_guard_helmet",
+                  "is_artifact": true,
+                  "tier": "uncommon"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:guard_helmet_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:guard_helmet_toughness"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

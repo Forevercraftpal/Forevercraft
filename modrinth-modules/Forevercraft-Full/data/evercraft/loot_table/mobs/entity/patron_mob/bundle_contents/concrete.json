@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 16
+      },
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "evercraft:mobs/dyeable_concrete_blocks",
+          "expand": true
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 16
+      },
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "evercraft:mobs/dyeable_concrete_powder",
+          "expand": true
+        }
+      ]
+    }
+  ]
+}

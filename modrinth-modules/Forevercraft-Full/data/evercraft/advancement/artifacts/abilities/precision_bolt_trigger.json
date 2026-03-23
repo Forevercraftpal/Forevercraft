@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "hit_with_precision_bolt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"precision_bolt\"}"
+              }
+            }
+          }
+        },
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "#minecraft:arrows"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/precision_bolt"
+  }
+}

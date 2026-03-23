@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Frost Boots",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Leave trails of frost",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "wherever you walk.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Frost (0/7)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Freeze attackers",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Ice Aura + Blizzard ability",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "+3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "frost_boots",
+                  "is_artifact": true,
+                  "artifact_set": "frost",
+                  "tier": "ornate"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:movement_speed",
+                    "amount": 0.015,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_speed"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

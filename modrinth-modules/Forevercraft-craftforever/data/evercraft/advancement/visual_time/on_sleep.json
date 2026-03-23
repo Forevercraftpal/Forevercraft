@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "slept": {
+      "trigger": "minecraft:slept_in_bed"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:visual_time/on_sleep"
+  }
+}

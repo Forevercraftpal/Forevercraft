@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Water Net crate table — guaranteed crate when rolled (no empty weight). Tier distribution matches base fishing crate ratios.",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/common/dummy",
+          "weight": 1000
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/uncommon/dummy",
+          "weight": 500
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/rare/dummy",
+          "weight": 333
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/ornate/dummy",
+          "weight": 200
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/exquisite/dummy",
+          "weight": 133
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/mythical/dummy",
+          "weight": 100
+        }
+      ]
+    }
+  ]
+}

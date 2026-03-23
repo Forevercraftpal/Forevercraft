@@ -1,0 +1,13 @@
+{
+  "parent": "evercraft:gacha/root",
+  "display": {
+    "icon": {"id": "minecraft:amethyst_shard"},
+    "title": {"text": "First Wish", "color": "gold"},
+    "description": {"text": "Earn your first Forever Coin"},
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  }
+}

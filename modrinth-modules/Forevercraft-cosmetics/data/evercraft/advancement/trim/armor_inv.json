@@ -1,0 +1,21 @@
+{
+  "parent": "evercraft:trim/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:trimmable_armor",
+            "predicates": {
+              "minecraft:trim": {}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/update/update_trim_ability"
+  }
+}

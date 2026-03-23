@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Lapis Ring",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {"text": "Common Artifact", "color": "white", "italic": false},
+                  "",
+                  {"text": "A ring of deep ocean blue.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Effect: ", "color": "white", "italic": false, "extra": [{"text": "Water Breathing", "color": "blue"}]}
+                ],
+                "minecraft:custom_data": {"artifact": "ring_lapis", "is_artifact": true, "ring": true, "tier": "common"},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

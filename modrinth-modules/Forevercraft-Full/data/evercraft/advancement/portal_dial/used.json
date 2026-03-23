@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": "minecraft:compass",
+          "predicates": {
+            "minecraft:custom_data": "{portal_dial:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:portal_dial/teleport"
+  }
+}

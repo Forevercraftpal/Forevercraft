@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_leggings",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "attribute_modifiers": [
+                      {
+                      "id": "experient_leggings",
+                      "type": "armor",
+                      "amount": 6,
+                      "operation": "add_value",
+                      "slot": "legs"
+                      }
+                    ],
+                    "minecraft:custom_name": {
+                      "text": "Experient Trousers",
+                      "color": "aqua",
+                      "italic": true
+                    },
+                    "minecraft:lore": [
+                      {
+                        "text": " "
+                      },
+                      {
+                        "text": "Ability:",
+                        "color": "green",
+                        "italic": false
+                      },
+                      {
+                        "text": "Walking gives a small ",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "amount of experience. ",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],                  
+                  "enchantments": {
+                    "protection": 4
+                  },
+                  "!max_stack_size": {},
+                  "dyed_color": 100000,
+                  "minecraft:max_damage": 500
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "functions": []
+  }

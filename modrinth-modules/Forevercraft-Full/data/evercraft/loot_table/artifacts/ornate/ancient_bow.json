@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Ancient Bow",
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Ornate Artifact", "color": "dark_purple", "italic": false},
+                  "",
+                  {"text": "Forged in forgotten fires,", "color": "gray", "italic": true},
+                  {"text": "its arrows burn with ancient fury.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Archer Class", "color": "#32CD32", "bold": true, "italic": false},
+                  {"text": "\u25c6 Overcharge: ", "color": "gray", "italic": false, "extra": [{"text": "Kindlestrike \u2014 Fire AoE (5 blocks)", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Passive: ", "color": "gray", "italic": false, "extra": [{"text": "Fire (3s) on hit", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Disengage: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Draw \u2014 backward leap", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "archer_ancient_bow",
+                  "is_artifact": true,
+                  "tier": "ornate",
+                  "archer": true,
+                  "archer_id": "ancient_bow"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Guild Invite — Notify target of pending invite
+# $(guild_name) = guild name, target = player with ec.guild_inv_from set
+$tellraw @a[scores={ec.guild_inv_from=1..}] [{text:"[Guild] ",color:"green"},{selector:"@p[tag=ec.guild_inviter]"},{text:" invites you to join ",color:"gold"},{text:"$(guild_name)",color:"green",bold:true},{text:"!",color:"gold"},{text:" "},{text:"[ACCEPT]",color:"green",bold:true,click_event:{action:"run_command",command:"/trigger ec.guild_inv set 1"},hover_event:{action:"show_text",value:{text:"Join this guild!",color:"green"}}},{text:" "},{text:"[DECLINE]",color:"red",bold:true,click_event:{action:"run_command",command:"/trigger ec.guild_inv set 2"},hover_event:{action:"show_text",value:{text:"Decline this invite",color:"red"}}}]

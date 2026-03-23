@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Dark Chestplate",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon Artifact",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Blackened links that drink in",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "the light around them.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+4 Armor, +1 Toughness",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+5 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "uncommon_dark_chestplate",
+                  "is_artifact": true,
+                  "tier": "uncommon"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:dark_chestplate_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:dark_chestplate_toughness"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

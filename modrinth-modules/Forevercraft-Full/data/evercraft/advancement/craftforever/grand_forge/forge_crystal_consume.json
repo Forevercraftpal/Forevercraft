@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": "minecraft:emerald",
+          "predicates": {
+            "minecraft:custom_data": "{forge_crystal:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:craftforever/grand_forge/on_crystal_use"
+  }
+}

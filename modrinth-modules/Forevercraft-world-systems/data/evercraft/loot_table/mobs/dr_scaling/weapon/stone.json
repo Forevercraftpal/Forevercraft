@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_spear",
+          "weight": 25
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:enchant_with_levels",
+          "levels": {
+            "min": 10,
+            "max": 20
+          },
+          "options": "#minecraft:on_random_loot"
+        }
+      ]
+    }
+  ]
+}

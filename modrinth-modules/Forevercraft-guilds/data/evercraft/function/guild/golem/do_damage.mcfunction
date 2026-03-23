@@ -1,0 +1,1 @@
+$damage @e[type=!player,type=!snow_golem,type=!snowball,type=!marker,type=!item,type=!experience_orb,type=!item_display,type=!text_display,type=!interaction,type=!armor_stand,type=!area_effect_cloud,distance=..1.5,limit=1,sort=nearest] $(gs_dmg) minecraft:mob_attack

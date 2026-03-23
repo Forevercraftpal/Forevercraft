@@ -1,0 +1,127 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Broadsword",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A sturdy iron blade, wide",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "enough to block as it cuts.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Stalwart Stance: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "25% — +2 DMG + Resistance (1s)",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+1 Armor while held",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Knight Class",
+                    "color": "#FFD700",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "Fencer: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "No shield — +2 Damage, +1 Reach",
+                        "color": "#C0A040"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+6 Damage  ◆  +1 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_broadsword",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "knight": true,
+                  "ability": "stalwart_stance"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:broadsword_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:broadsword_speed"
+                  },
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:broadsword_armor"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

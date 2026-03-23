@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_horn": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:goat_horn",
+          "predicates": {
+            "minecraft:custom_data": "{village_defense:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:dungeon/village/start"
+  }
+}

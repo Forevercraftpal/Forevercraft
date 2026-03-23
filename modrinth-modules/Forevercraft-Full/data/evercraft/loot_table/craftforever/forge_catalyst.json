@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Forge Catalyst", "color": "green", "bold": true, "italic": false},
+                "minecraft:lore": [
+                  {"text": "A crystallized spark of artisan will.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Right-click to ignite the Grand Forge.", "color": "dark_green", "italic": true},
+                  {"text": "Five phases. All your skills tested.", "color": "dark_green", "italic": true},
+                  "",
+                  {"text": "Requires Artisan Rank 15+", "color": "red", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "forge_catalyst": true,
+                  "evercraft_item": true
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {"seconds": 5, "cooldown_group": "evercraft:forge_catalyst"},
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

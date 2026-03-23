@@ -1,0 +1,17 @@
+{
+  "parent": "evercraft:trim/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"single_ward\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/single/ward/xp"
+  }
+}

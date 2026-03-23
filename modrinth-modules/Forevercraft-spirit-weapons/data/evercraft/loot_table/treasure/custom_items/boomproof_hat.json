@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:structure_block",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "attribute_modifiers": [
+                    {
+                      "type": "minecraft:armor",
+                      "id": "boomproof_hat",
+                      "amount": 3,
+                      "operation": "add_value",
+                      "slot": "head"
+                    },
+                    {
+                      "type": "minecraft:block_interaction_range",
+                      "id": "ec.interaction_off",
+                      "amount": -100,
+                      "operation": "add_value",
+                      "slot": "offhand"
+                    },
+                    {
+                      "type": "minecraft:block_interaction_range",
+                      "id": "ec.interaction",
+                      "amount": -100,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "minecraft:custom_name": {
+                    "text": "Boomproof Hat",
+                    "color": "aqua",
+                    "italic": true
+                  },
+                  "minecraft:lore": [
+                    {
+                      "text": " "
+                    },
+                    {
+                      "text": "Ability:",
+                      "color": "green",
+                      "italic": false
+                    },
+                    {
+                      "text": "Full immunity to explosions, ",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": "breaks if user is damaged. ",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],
+                  "enchantments": {
+                    "protection": 4
+                  },
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:item_model": "orange_stained_glass",
+                  "damage": 0,
+                  "minecraft:max_damage": 1,
+                  "minecraft:equippable": {
+                    "slot": "head",
+                    "swappable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

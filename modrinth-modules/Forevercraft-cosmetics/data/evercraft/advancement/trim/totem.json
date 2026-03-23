@@ -1,0 +1,17 @@
+{
+  "parent": "evercraft:trim/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:used_totem",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"full_set_vex\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/full_set/vex/totem"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "head": {
+        "predicates": {
+  "minecraft:custom_data": {"armor": "dripstone_helmet"}
+      }      }
+    }
+  }
+}

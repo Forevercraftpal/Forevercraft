@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/rare/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/woodland_mansion"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 2, "max": 4},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:totem_of_undying", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:emerald_block", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:diamond", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 5}}]},
+        {"type": "minecraft:item", "name": "minecraft:vex_armor_trim_smithing_template", "weight": 15},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 10},
+        {"type": "minecraft:item", "name": "minecraft:diamond_axe", "weight": 15, "functions": [{"function": "minecraft:enchant_with_levels", "levels": {"type": "minecraft:uniform", "min": 15, "max": 25}, "options": "#minecraft:on_random_loot"}]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+execute if score @s ec.tq_mine_dirt matches 5000.. run scoreboard players add @s ec.st_obj_done 1
+execute if score @s ec.tq_mine_sand matches 2000.. run scoreboard players add @s ec.st_obj_done 1
+execute if score @s ec.tq_mine_gravel matches 1000.. run scoreboard players add @s ec.st_obj_done 1
+execute if score @s ach.blocks_placed matches 3000.. run scoreboard players add @s ec.st_obj_done 1
+execute if score @s ec.cf_rank matches 15.. run scoreboard players add @s ec.st_obj_done 1
+execute if score @s ach.biomes_visited matches 15.. run scoreboard players add @s ec.st_obj_done 1
+execute if score @s ec.tq_part matches 50.. run scoreboard players add @s ec.st_obj_done 1
+execute if score @s ach.prospects_done matches 20.. run scoreboard players add @s ec.st_obj_done 1
+execute if score @s ach.crates_opened matches 150.. run scoreboard players add @s ec.st_obj_done 1

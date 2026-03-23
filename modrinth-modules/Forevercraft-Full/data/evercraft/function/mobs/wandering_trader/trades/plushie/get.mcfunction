@@ -1,0 +1,1 @@
+$data modify storage eden:temp trader.plushie.entry set from storage eden:database trades.plushie.$(id)

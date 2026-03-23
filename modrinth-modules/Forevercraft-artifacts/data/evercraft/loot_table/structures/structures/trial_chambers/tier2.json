@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/uncommon/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/trial_chambers/reward"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 2, "max": 3},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:trial_key", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:ominous_trial_key", "weight": 10},
+        {"type": "minecraft:item", "name": "minecraft:copper_block", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}]},
+        {"type": "minecraft:item", "name": "minecraft:wind_charge", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:iron_ingot", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:flow_armor_trim_smithing_template", "weight": 10}
+      ]
+    }
+  ]
+}

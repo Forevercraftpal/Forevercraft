@@ -1,0 +1,3215 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Royal Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Desert",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Increases attack damage by ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "20% when under 5 hearts and ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "40% when under 2.5 hearts. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "desert_chestplate",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 3,
+                  "max": 9
+                },
+                "minecraft:blast_protection": {
+                  "min": 5,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "desert_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

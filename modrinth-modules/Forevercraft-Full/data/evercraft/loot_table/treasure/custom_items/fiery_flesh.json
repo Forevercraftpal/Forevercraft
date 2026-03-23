@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:rotten_flesh",
+                "weight": 1,
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1
+                  },
+                  {
+                    "function": "minecraft:set_name",
+                    "entity": "this",
+                    "name": [
+                      {
+                        "text": "Fiery Flesh",
+                        "color": "aqua",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                      {
+                        "text": "Gives the user Strength I and ",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "Fire Resistance for 2 minutes. ",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "mode": "replace_all"
+                  },
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                      "minecraft:food": {
+                        "nutrition": 2,
+                        "saturation": 5,
+                        "can_always_eat": true
+                      },
+                      "minecraft:consumable": {"consume_seconds": 1, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false}
+                    }
+                  }
+                ]
+            }
+        ]
+      }
+    ]
+  }

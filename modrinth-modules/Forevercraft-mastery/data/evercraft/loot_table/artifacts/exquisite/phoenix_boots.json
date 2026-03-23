@@ -1,0 +1,125 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Fireforged Boots",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Walk upon embers as if",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "they were cool stone.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Lava walking (magma block immunity)",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Fire Resistance",
+                        "color": "gold"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Fireforged (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "2pc: Blazing Aura — Fire damage immunity",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "4pc: Phoenix Rebirth — Auto-revive (1x/day)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "phoenix_boots",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "artifact_set": "fireforged"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:safe_fall_distance",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_fall"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

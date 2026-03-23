@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/smelling_salts"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/soothing_balm"}]
+    }
+  ]
+}

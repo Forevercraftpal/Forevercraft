@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Romeo's Pickaxe",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Echoes of the deep",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "guide its strikes.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Sculk (0/7)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Darkness immunity + Vibration sense",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Warden's Might + Sonic Boom",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "Ability: Echo Mining",
+                    "color": "green"
+                  },
+                  {
+                    "text": "Reveals nearby ores through vibration",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Stonestrike", "color": "gold", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "+7 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "sculk_pickaxe",
+                  "is_artifact": true,
+                  "artifact_set": "sculk",
+                  "ability": "echo_mining",
+                  "tier": "ornate",
+                  "craft_class": 1
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:mining_efficiency",
+                    "amount": 25,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_mining"
+                  },
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 7,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:artifact_damage"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

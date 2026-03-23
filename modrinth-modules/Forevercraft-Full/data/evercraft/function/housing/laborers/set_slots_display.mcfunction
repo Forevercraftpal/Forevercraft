@@ -1,0 +1,1 @@
+$data modify entity @e[type=text_display,tag=HS.LbSlots,distance=..7,limit=1] text set value [{"text":"Slots: ","color":"gray"},{"text":"$(count)","color":"#AB47BC","bold":true},{"text":" / ","color":"dark_gray"},{"text":"$(max)","color":"#AB47BC","bold":true}]

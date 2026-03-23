@@ -1,0 +1,134 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Highland Axe",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Rough-hewn from highland oak,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "it chops with surprising force.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Enhanced chopping speed",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Lumberfell", "color": "dark_green", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "Berserker Class",
+                    "color": "#DC143C",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Dual Axes: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "2x speed, -7 armor, -5❤",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Rage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Right-click — 10s auto-swing + Str II",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+5 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"},
+                "minecraft:custom_data": {
+                  "artifact": "common_highland_axe",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "craft_class": 2
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:mining_efficiency",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:highland_axe_efficiency"
+                  },
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:highland_axe_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -3.2,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:highland_axe_speed"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

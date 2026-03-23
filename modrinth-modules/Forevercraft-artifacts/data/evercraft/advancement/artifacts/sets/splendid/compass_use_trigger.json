@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_compass": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:recovery_compass",
+          "predicates": {
+            "minecraft:custom_data": "{pathfinders_compass:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/sets/splendid/structure_menu"
+  }
+}

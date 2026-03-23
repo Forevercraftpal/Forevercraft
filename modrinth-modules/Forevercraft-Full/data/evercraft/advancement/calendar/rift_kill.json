@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"RIFT.Mob\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:calendar/events/dimensional_rift/on_kill"
+  }
+}

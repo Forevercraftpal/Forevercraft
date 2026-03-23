@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Contraband Crate", "color": "dark_red", "italic": false, "bold": true},
+                "minecraft:custom_data": {"heist_crate": true},
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:heist/contraband_loot"
+                },
+                "minecraft:lore": [
+                  {"text": "Seized from the black market vault.", "color": "gray", "italic": true},
+                  {"text": "Place and open for rare+ rewards.", "color": "dark_gray", "italic": false},
+                  {"text": "", "italic": false},
+                  {"text": "\u2620 Contraband", "color": "dark_red", "italic": false}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

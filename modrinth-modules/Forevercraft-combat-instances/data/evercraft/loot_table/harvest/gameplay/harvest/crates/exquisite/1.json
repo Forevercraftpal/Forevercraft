@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:harvest/crate_contents/exquisite/1"
+                },
+                "minecraft:item_name": {
+                  "text": "Exquisite Harvest Crate",
+                  "bold": true,
+                  "color": "light_purple"
+                },
+                "minecraft:custom_data": {
+                  "hc_rarity": "exquisite",
+                  "hc_stat": false
+                },
+                "minecraft:max_stack_size": 64,
+                "minecraft:custom_name": {
+                  "text": "Exquisite Harvest Crate",
+                  "bold": true,
+                  "color": "light_purple"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The land yields its finest!",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:enchantment_glint_override": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/anchor"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/chargin_targe"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/fantasy_axe"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/featherweight_stone"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/frying_pan"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/glowstone_pendant"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/hellenic_sword"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/iron_talisman"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/kemetian_sword"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/longbow"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/battle_bow"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/air_strike"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/morning_star"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/uncommon/sinitic_sword"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/guard_helmet"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/dark_chestplate"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/royal_leggings"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/creed_boots"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/ore_helmet"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/drill"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/kemetian_shovel"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/kemetian_hoe"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/double_axe"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/bone_fishing_rod"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/dust_storm"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/lance"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/uncommon/norroen_trident"}]
+    }
+  ]
+}

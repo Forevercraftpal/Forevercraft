@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:beacon",
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": {"text": "Ancient Netherite Core", "color": "#8c0691", "bold": true, "italic": true},
+                "minecraft:lore": [
+                  {"text": "An artifact of immense power", "color": "gray", "italic": false},
+                  {"text": "forged in the depths of the Nether.", "color": "gray", "italic": false},
+                  "",
+                  {"text": "Level 4 - PERFECTED", "color": "gold", "bold": true, "italic": false},
+                  "",
+                  {"text": "Effects (ALL Level II):", "color": "aqua", "italic": false},
+                  {"text": "  Speed II, Haste II, Resistance II", "color": "yellow", "italic": false},
+                  {"text": "  Strength II, Jump Boost II", "color": "yellow", "italic": false},
+                  {"text": "  Regeneration I", "color": "white", "italic": false},
+                  "",
+                  {"text": "Maximum Power Achieved!", "color": "#8c0691", "bold": true, "italic": true}
+                ],
+                "minecraft:custom_data": {"ancient_netherite_core": 1, "level": 4, "is_artifact": 1},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

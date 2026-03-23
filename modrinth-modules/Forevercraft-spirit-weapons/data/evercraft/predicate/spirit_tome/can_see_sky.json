@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "position": {
+      "dimension": "minecraft:overworld"
+    },
+    "can_see_sky": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:slime_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": "Soothing Balm",
+                "minecraft:lore": [
+                  {"text": "Uncommon Artifact", "color": "blue", "italic": false},
+                  {"text": "Healer — Right-Click to Use", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "A cooling gel that mends flesh", "color": "gray", "italic": true},
+                  {"text": "and quickens the step.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Activate: ", "color": "white", "italic": false, "extra": [{"text": "Heal 2 hearts + Speed I 5s (12 blocks)", "color": "green"}]},
+                  {"text": "Cooldown: ", "color": "white", "italic": false, "extra": [{"text": "16 seconds", "color": "gray"}]},
+                  "",
+                  {"text": "Healer's Oath: ", "color": "red", "italic": false, "extra": [{"text": "Cannot deal damage during cooldown", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "healer_balm",
+                  "is_artifact": true,
+                  "tier": "uncommon",
+                  "healer": true,
+                  "healer_id": "balm"
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

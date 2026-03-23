@@ -1,0 +1,30 @@
+# Era Name Lookup — sets storage evercraft:day_counter args.era_name
+# Reads #era_calc ec.var (1-25), no macro needed
+# 25 RPG-themed era names, cycling every 365 in-game days
+# OPT: return run short-circuits on first match (saves ~12 comparisons on average)
+
+execute if score #era_calc ec.var matches 1 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Dawn"
+execute if score #era_calc ec.var matches 2 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Stone"
+execute if score #era_calc ec.var matches 3 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Embers"
+execute if score #era_calc ec.var matches 4 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Tides"
+execute if score #era_calc ec.var matches 5 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Roots"
+execute if score #era_calc ec.var matches 6 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Iron"
+execute if score #era_calc ec.var matches 7 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Whispers"
+execute if score #era_calc ec.var matches 8 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Wandering"
+execute if score #era_calc ec.var matches 9 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Stars"
+execute if score #era_calc ec.var matches 10 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Discovery"
+execute if score #era_calc ec.var matches 11 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Storms"
+execute if score #era_calc ec.var matches 12 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of the Forge"
+execute if score #era_calc ec.var matches 13 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Shadows"
+execute if score #era_calc ec.var matches 14 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Harvest"
+execute if score #era_calc ec.var matches 15 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Legends"
+execute if score #era_calc ec.var matches 16 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Frost"
+execute if score #era_calc ec.var matches 17 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of the Crest"
+execute if score #era_calc ec.var matches 18 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Echoes"
+execute if score #era_calc ec.var matches 19 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Valor"
+execute if score #era_calc ec.var matches 20 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Depths"
+execute if score #era_calc ec.var matches 21 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of the Crown"
+execute if score #era_calc ec.var matches 22 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Dreams"
+execute if score #era_calc ec.var matches 23 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Twilight"
+execute if score #era_calc ec.var matches 24 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Wonder"
+execute if score #era_calc ec.var matches 25 run return run data modify storage evercraft:day_counter args.era_name set value "The Age of Forever"

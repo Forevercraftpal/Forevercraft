@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 2}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Frostcrystal Shard", "color": "#7DD3FC", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Rare Biome Material", "color": "aqua", "italic": false},
+                  "",
+                  {"text": "A shimmering crystal formed", "color": "gray", "italic": true},
+                  {"text": "in the heart of frozen lands.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "frostcrystal", "cf_biome": 1}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 2, "max": 4}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Scrap Metal",
+                  "color": "gray",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Crude forging material from prospect nodes.",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "forge_mat": "scrap_metal"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

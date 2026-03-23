@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/uncommon/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/nether_bridge"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 2, "max": 3},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:blaze_rod", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 5}}]},
+        {"type": "minecraft:item", "name": "minecraft:wither_skeleton_skull", "weight": 10},
+        {"type": "minecraft:item", "name": "minecraft:gold_ingot", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:rib_armor_trim_smithing_template", "weight": 20},
+        {"type": "minecraft:item", "name": "minecraft:fire_charge", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}]}
+      ]
+    }
+  ]
+}

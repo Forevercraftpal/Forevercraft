@@ -1,0 +1,17 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "location": {
+        "dimension": "minecraft:overworld"
+      },
+      "equipment": {
+        "feet": {
+          "predicates": {
+  "minecraft:custom_data": {"armor": "mushroom_boots"}
+      }        }
+      }
+    }
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "weight": 1,
+                "name": "minecraft:leather_boots",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1
+                  },
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                      "minecraft:repair_cost": 99999,
+                      "minecraft:unbreakable": {},
+                      "minecraft:enchantments": {
+                        "minecraft:feather_falling": 7
+                      },
+                      "minecraft:custom_name": {
+                        "text": "Pointed Boots",
+                        "color": "light_purple",
+                        "italic": true
+                      },
+                      "minecraft:lore": [
+                        {
+                          "text": " "
+                        },
+                        {
+                          "text": "Ability:",
+                          "color": "green",
+                          "italic": false
+                        },
+                        {
+                          "text": "Falling a distance which exceeds ",
+                          "color": "gray",
+                          "italic": false
+                        },
+                        {
+                          "text": "10 blocks or higher will convert",
+                          "color": "gray",
+                          "italic": false
+                        },
+                        {
+                          "text": "the fall damage into damage in a",
+                          "color": "gray",
+                          "italic": false
+                        },
+                        {
+                          "text": "small area. One use only.",
+                          "color": "gray",
+                          "italic": false
+                        }
+                      ],                
+                      "minecraft:dyed_color": 14388552,
+                      "tooltip_display": {
+                        "hidden_components": [
+                          "attribute_modifiers",
+                          "dyed_color"
+                        ]
+                      },
+                      "minecraft:custom_data": {
+                        "weapon": "point"
+                      }
+                    }
+                  }
+                ]
+            }
+        ]
+      }
+    ],
+    "functions": []
+  }

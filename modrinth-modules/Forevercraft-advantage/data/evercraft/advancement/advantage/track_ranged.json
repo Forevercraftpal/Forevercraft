@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "ranged": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_projectile",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:advantage/track/on_ranged"
+  }
+}

@@ -1,0 +1,4267 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Frost Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Taiga",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Replenishes hunger as you walk.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "taiga_pants",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:thorns": {
+                  "min": 0,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.3,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "taiga_pants",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

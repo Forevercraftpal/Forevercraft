@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "blocked_hit": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": true
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/striker/on_block"
+  }
+}

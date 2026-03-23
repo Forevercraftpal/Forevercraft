@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:shield"
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": true
+              },
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:mace",
+                  "predicates": {
+                    "minecraft:custom_data": "{striker:true}"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/striker/impact_use"
+  }
+}

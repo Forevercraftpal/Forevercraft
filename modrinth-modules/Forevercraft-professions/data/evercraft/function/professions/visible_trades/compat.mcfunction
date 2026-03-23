@@ -1,0 +1,2 @@
+#say vs compat
+execute as @e[type=minecraft:villager,nbt={LockedOffers:[{}]},tag=more_professions_verified] if score @s more_professions_visible_trade_progress matches 0 run function evercraft:professions/visible_trades/sync_trade

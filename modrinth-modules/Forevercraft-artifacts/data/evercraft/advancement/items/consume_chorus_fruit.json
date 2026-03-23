@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume_chorus": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{chorus_dreaming_fruit:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/consume_chorus_dreaming_fruit"
+  }
+}

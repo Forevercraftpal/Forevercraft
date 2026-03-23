@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_horn": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:goat_horn",
+          "predicates": {
+            "minecraft:custom_data": "{journey_horn:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/sets/journey/miners_call"
+  }
+}

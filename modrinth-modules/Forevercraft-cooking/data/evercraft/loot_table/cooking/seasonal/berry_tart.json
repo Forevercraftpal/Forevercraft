@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sweet_berries",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Berry Tart","color":"green","italic":false},
+                "minecraft:lore": [
+                  {"text":"Seasonal Spring Meal","color":"green","italic":false},
+                  "",
+                  {"text":"Grants Luck I for 60s","color":"gray","italic":false}
+                ],
+                "minecraft:food": {"nutrition":5,"saturation":4.0,"can_always_eat":true},
+                "minecraft:consumable": {"consume_seconds": 1, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:custom_data": {"ec_meal":true,"meal_id":"berry_tart","meal_cat":"seasonal","meal_season":"spring"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

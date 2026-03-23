@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/miners_lantern"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/seers_compass"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/merchants_coin"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/spelunkers_echo"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/healers_salve"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/wind_chime"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/anglers_pearl"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/soul_lantern_fragment"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/farmers_almanac"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/berserkers_fang"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/cartographers_lens"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/enchanted_monocle"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/phoenix_feather"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/wardens_echo"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/phoenix_plume"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/radiant_censer"}]}
+  ]
+}

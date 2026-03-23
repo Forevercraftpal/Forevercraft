@@ -1,0 +1,214 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Luck-based bonus rolls - adds extra items based on player luck level (0-25)",
+  "pools": [
+    {
+      "comment": "Luck 1-2: +1 bonus roll",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 1, "max": 2}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 3-4: +2 bonus rolls",
+      "rolls": 2,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 3, "max": 4}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 5-6: +3 bonus rolls",
+      "rolls": 3,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 5, "max": 6}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 7-8: +4 bonus rolls",
+      "rolls": 4,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 7, "max": 8}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 9-10: +5 bonus rolls",
+      "rolls": 5,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 9, "max": 10}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 11-12: +6 bonus rolls",
+      "rolls": 6,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 11, "max": 12}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 13-14: +7 bonus rolls",
+      "rolls": 7,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 13, "max": 14}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 15-16: +8 bonus rolls",
+      "rolls": 8,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 15, "max": 16}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 17-18: +9 bonus rolls",
+      "rolls": 9,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 17, "max": 18}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 19-20: +10 bonus rolls",
+      "rolls": 10,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 19, "max": 20}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 21-22: +11 bonus rolls",
+      "rolls": 11,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 21, "max": 22}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 23-24: +12 bonus rolls",
+      "rolls": 12,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 23, "max": 24}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    },
+    {
+      "comment": "Luck 25+: +13 bonus rolls (max, fills chest)",
+      "rolls": 13,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ec.luck": {"min": 25}
+          }
+        }
+      ],
+      "entries": [
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/luck/bonus_items"}
+      ]
+    }
+  ]
+}

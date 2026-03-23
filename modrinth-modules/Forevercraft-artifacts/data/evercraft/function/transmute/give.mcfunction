@@ -1,0 +1,3 @@
+# Give the player a Transmutation Stand
+# A custom lodestone that spawns a transmutation station when placed
+give @s lodestone[custom_name={text:"Transmutation Stand",color:"light_purple",italic:false,bold:true},lore=[{text:"Place and right-click to transmute",color:"gray",italic:false},{text:"artifacts into higher tiers.",color:"gray",italic:false},{text:"",italic:false},{text:"5 Common/Uncommon → next tier",color:"dark_gray",italic:false},{text:"4 Rare/Ornate → next tier",color:"dark_gray",italic:false},{text:"3 Exquisite → Mythical",color:"dark_gray",italic:false},{text:"",italic:false},{text:"Artificer discount: -1 (1/day)",color:"dark_purple",italic:false}],custom_data={artificers_anvil:1b},enchantment_glint_override=true,rarity=epic] 1

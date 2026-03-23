@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 2}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Tideforged Pearl", "color": "#22D3EE", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Rare Biome Material", "color": "aqua", "italic": false},
+                  "",
+                  {"text": "A pearl forged by endless", "color": "gray", "italic": true},
+                  {"text": "ocean tides over centuries.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "tideforged", "cf_biome": 5}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

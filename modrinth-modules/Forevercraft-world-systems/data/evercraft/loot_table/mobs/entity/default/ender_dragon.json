@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.ender_dragon.ambient",
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQxNjk1ODFlYTdjMzQzNjJiNDZmOWJhMmJkNmNkZjY4NzVjNTRlMjc4ZmJiNjI4ZDFkMzhmMWUwNzUzYjM3MCJ9fX0="
+                    }
+                  ]
+                },
+                "minecraft:item_name": {
+                  "translate": "entity.minecraft.ender_dragon"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:storage",
+            "storage": "eden:settings",
+            "path": "bestiary.ender_dragon.mobhead"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:storage",
+            "storage": "eden:settings",
+            "path": "bestiary.mob_drops.dragonelytra"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_egg"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:storage",
+            "storage": "eden:settings",
+            "path": "bestiary.mob_drops.dragonegg"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/drop/regular"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    }
+  ]
+}

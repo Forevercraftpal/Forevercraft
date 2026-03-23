@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:globe_banner_pattern"],
+          "predicates": {
+            "minecraft:custom_data": "{ec:\"rune\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:inscription/on_glyph_use"
+  }
+}

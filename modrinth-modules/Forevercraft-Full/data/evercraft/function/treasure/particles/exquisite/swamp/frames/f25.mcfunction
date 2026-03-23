@@ -1,0 +1,26 @@
+
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.998 ^2.437 ^0.055 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.994 ^2.440 ^0.105 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.988 ^2.442 ^0.155 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.979 ^2.445 ^0.204 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.968 ^2.447 ^0.253 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.954 ^2.450 ^0.301 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.938 ^2.452 ^0.348 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.919 ^2.455 ^0.394 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.898 ^2.457 ^0.440 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.875 ^2.460 ^0.484 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.850 ^2.462 ^0.527 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.822 ^2.465 ^0.569 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.793 ^2.467 ^0.609 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.761 ^2.470 ^0.648 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.728 ^2.472 ^0.686 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.693 ^2.475 ^0.721 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.656 ^2.477 ^0.755 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.617 ^2.480 ^0.787 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.577 ^2.482 ^0.816 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.536 ^2.485 ^0.844 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.493 ^2.487 ^0.870 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.449 ^2.490 ^0.894 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.404 ^2.492 ^0.915 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.357 ^2.495 ^0.934 0.1 0.1 0.1 0.05 1 force @a
+particle entity_effect{color:[0.125,0.380,0.125,1.00]} ^-0.310 ^2.497 ^0.951 0.1 0.1 0.1 0.05 1 force @a

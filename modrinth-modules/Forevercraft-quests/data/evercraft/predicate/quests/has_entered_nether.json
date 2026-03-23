@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "minecraft:player",
+      "advancements": {
+        "minecraft:story/enter_the_nether": true
+      }
+    }
+  }
+}

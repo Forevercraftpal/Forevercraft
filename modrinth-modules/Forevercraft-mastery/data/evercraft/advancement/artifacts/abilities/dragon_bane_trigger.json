@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hit_dragon": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"dragon_bane\"}"
+              }
+            }
+          }
+        },
+        "entity": {
+          "type": "minecraft:ender_dragon"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/dragon_bane"
+  }
+}

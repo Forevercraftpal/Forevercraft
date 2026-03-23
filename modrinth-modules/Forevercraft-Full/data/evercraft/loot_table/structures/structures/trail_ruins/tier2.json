@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/uncommon/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/trial_chambers/supply"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 2, "max": 3},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:emerald", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 5}}]},
+        {"type": "minecraft:item", "name": "minecraft:gold_ingot", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:wayfinder_armor_trim_smithing_template", "weight": 20},
+        {"type": "minecraft:item", "name": "minecraft:brush", "weight": 15},
+        {"type": "minecraft:item", "name": "minecraft:decorated_pot", "weight": 20}
+      ]
+    }
+  ]
+}

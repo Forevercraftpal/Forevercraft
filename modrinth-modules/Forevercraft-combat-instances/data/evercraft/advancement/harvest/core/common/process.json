@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_nugget",
+            "predicates": {
+              "minecraft:custom_data": "{hc_rarity:\"common\",hc_stat:1b}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:harvest/ref/advancement/common/process"
+  }
+}

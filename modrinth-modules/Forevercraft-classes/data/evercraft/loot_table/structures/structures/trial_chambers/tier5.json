@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/exquisite/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/trial_chambers/reward"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 4, "max": 6},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:ominous_trial_key", "weight": 18, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 3, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:diamond_block", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:flow_armor_trim_smithing_template", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:mace", "weight": 12, "functions": [{"function": "minecraft:enchant_with_levels", "levels": {"type": "minecraft:uniform", "min": 20, "max": 30}, "options": "#minecraft:on_random_loot"}]},
+        {"type": "minecraft:item", "name": "minecraft:heavy_core", "weight": 8},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_upgrade_smithing_template", "weight": 10}
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 90},
+        {"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/main", "weight": 10}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Starforged Ingot",
+                  "color": "#5599FF",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Quality forging material. Tier 2.",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "forge_mat": "starforged_ingot"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

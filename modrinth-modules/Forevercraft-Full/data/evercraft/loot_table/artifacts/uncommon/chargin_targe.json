@@ -1,0 +1,150 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Chargin' Targe",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon Artifact",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A highland shield made for",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "charging headfirst into battle.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+1 Armor, +5% Speed",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Tank Class",
+                    "color": "#5B9BD5",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Resistance I ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Mainhand)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Taunt & Shield Bash",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Knight Class",
+                    "color": "#FFD700",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Highland Rush ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Offhand Shift+Use)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "  Speed II + Strength I for 3s",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+1 Damage  ◆  +1 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "uncommon_chargin_targe",
+                  "is_artifact": true,
+                  "tier": "uncommon",
+                  "tank": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "offhand",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:movement_speed",
+                    "amount": 0.05,
+                    "operation": "add_multiplied_base",
+                    "slot": "offhand",
+                    "id": "evercraft:artifact_speed_boost"
+                  },
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 1.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:shield_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_knockback",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:shield_knockback"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

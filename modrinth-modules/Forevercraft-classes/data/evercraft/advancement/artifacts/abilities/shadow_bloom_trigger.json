@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_shadow_bloom": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"shadow_bloom\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/shadow_bloom"
+  }
+}

@@ -1,0 +1,5 @@
+# Quartz particle
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/quartz_trim/quartz_head unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.1 run particle minecraft:white_ash ~ ~2 ~ .1 .03 .1 .05 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/quartz_trim/quartz_chest unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.1 run particle minecraft:white_ash ~ ~1.1 ~ .1 .1 .1 .05 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/quartz_trim/quartz_legs unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.1 run particle minecraft:white_ash ~ ~.6 ~ .1 .2 .1 .05 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/quartz_trim/quartz_feet unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.1 run particle minecraft:white_ash ~ ~.15 ~ .1 .1 .1 .05 1 normal

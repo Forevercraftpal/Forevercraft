@@ -1,0 +1,114 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Hoe of Honor",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Blessed by the spirit of growth, it nurtures the land itself.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Auto-Harvest: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Harvests mature crops",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Grove (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Bountiful Harvest (axe/hoe)",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Archer: +2 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Hunter: +1 Attack Damage + Speed I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Growseer", "color": "green", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "+8 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "hoe_of_honor",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "harvest",
+                  "ability_harvest": true,
+                  "ability_replant": true,
+                  "ability_area_till": true,
+                  "craft_class": 3
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:hoe_honor_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:hoe_honor_speed"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

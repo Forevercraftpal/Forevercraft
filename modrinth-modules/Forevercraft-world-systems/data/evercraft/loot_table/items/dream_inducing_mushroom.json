@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:red_mushroom",
+                "minecraft:custom_name": {"text":"Dream Inducing Mushroom","color":"dark_red","italic":false,"bold":true},
+                "minecraft:lore": [
+                  {"text":"One-Time Consumable","color":"yellow","italic":false},
+                  "",
+                  {"text":"A rare mushroom that grew where","color":"gray","italic":true},
+                  {"text":"dream dust settled into mycelium.","color":"gray","italic":true},
+                  "",
+                  {"text":"Right-click to consume:","color":"white","italic":false},
+                  {"text":"Permanently gain +1 Dream Rate","color":"aqua","italic":false},
+                  "",
+                  {"text":"\"The spores carry visions.\"","color":"dark_gray","italic":true}
+                ],
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "dream_inducing_mushroom": true,
+                  "consumable": true,
+                  "effect": "permanent_luck"
+                },
+                "minecraft:consumable": {"consume_seconds": 1, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

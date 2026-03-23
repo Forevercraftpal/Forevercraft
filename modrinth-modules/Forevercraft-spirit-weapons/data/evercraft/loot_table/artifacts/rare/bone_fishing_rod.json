@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Marrow Caster",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Rare Artifact",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Carved from ancient bone,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "fish are drawn to its pale gleam.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+3 Luck while held",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Bone Lure: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "5% chance for mob crate loot on catch",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Awaken: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Gain scaling Lure & Luck of the Sea",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Sirencall", "color": "aqua", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "+3 Dreams",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "rare_bone_fishing_rod",
+                  "is_artifact": true,
+                  "tier": "rare",
+                  "craft_class": 5
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

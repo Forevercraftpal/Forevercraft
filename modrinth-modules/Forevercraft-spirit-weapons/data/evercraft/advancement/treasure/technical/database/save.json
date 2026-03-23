@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "periodic_tick": 6000
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/database/save/stats"
+  }
+}

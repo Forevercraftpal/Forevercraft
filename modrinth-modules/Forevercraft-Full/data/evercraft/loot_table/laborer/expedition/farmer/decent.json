@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 5, "max": 8},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:wheat", "weight": 18, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 10, "max": 20}}]},
+        {"type": "minecraft:item", "name": "minecraft:carrot", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 8, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:potato", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 8, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:melon_slice", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 10}}]},
+        {"type": "minecraft:item", "name": "minecraft:pumpkin", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:cocoa_beans", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 3, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:sugar_cane", "weight": 13, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 10}}]}
+      ]
+    }
+  ]
+}

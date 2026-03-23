@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_with_cleaving_arc": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"cleaving_arc\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/cleaving_arc"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lodestone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": {"text": "Hearthstone", "color": "#E0B0FF", "bold": true, "italic": false},
+                "minecraft:lore": [
+                  {"text": "Exquisite Relic", "color": "light_purple", "italic": false},
+                  "",
+                  {"text": "Warm to the touch, it remembers the hearth", "color": "gray", "italic": true},
+                  {"text": "you haven't built yet.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Place: ", "color": "white", "italic": false, "extra": [{"text": "Claim a 64x64 home zone", "color": "#E0B0FF"}]},
+                  {"text": "Buffs: ", "color": "white", "italic": false, "extra": [{"text": "Tier-scaling bonuses + chunk loading", "color": "#E0B0FF"}]},
+                  {"text": "Upgrade: ", "color": "white", "italic": false, "extra": [{"text": "Feed Netherite Ingots to expand", "color": "#E0B0FF"}]},
+                  "",
+                  {"text": "\"Home is wherever the heart dares to settle.\"", "color": "dark_gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"hearthstone": true, "evercraft_item": true},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 3158064,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 0,
+                      "duration": 600,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:unluck",
+                      "amplifier": 0,
+                      "duration": 600,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Wanderer's Curse",
+                  "color": "dark_gray",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Common",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Slowness I, Bad Luck (30s)",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Found in an abandoned chest...",
+                    "color": "dark_gray",
+                    "italic": true
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "\"You're going nowhere fast!\"",
+                    "color": "dark_purple",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Nite",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "One half of a blade split between dimensions.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Dual Swordsman Class", "color": "#9B59B6", "bold": true, "italic": false},
+                  {"text": "◆ Dimensional Rift: ", "color": "gray", "italic": false, "extra": [{"text": "5-block cutting line (10s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Blade Storm: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC: Orbiting swords (25s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Whirlwind: ", "color": "gray", "italic": false, "extra": [{"text": "360° strike every 4s", "color": "dark_gray"}]},
+                  {"text": "◆ Twin Blades: ", "color": "gray", "italic": false, "extra": [{"text": "Dual wield deals 2x damage", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+11 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_dual_swordsman_nite",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "dual_swordsman",
+                  "spirit_id": 5,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 11.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -1.2, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:spirit_weapon"},
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

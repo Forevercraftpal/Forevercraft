@@ -1,0 +1,122 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Infernal Hook",
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite Artifact",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Forged in volcanic heat,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "the line sizzles as it hits the water.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "◆ Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+5 Luck while held",
+                        "color": "light_purple"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Nether Dredge: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "5% chance for Nether loot (15% in Nether)",
+                        "color": "gold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Searing Line: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Auto-cooks caught fish",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Lure II: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Fish bite much faster while held",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Awaken: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Scaling enchants replace base levels",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Sirencall", "color": "aqua", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "+5 Dreams",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "exquisite_ember_fishing_rod",
+                  "is_artifact": true,
+                  "tier": "exquisite",
+                  "craft_class": 5
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

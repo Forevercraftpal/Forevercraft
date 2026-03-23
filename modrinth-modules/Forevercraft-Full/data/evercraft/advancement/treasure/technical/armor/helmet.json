@@ -1,0 +1,78 @@
+{
+  "criteria": {
+    "empty": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:air"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "head": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "advancements": {
+              "evercraft:treasure/technical/armor/helmet_durability": false
+            }
+          },
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:leather_helmet",
+                "minecraft:chainmail_helmet",
+                "minecraft:iron_helmet",
+                "minecraft:golden_helmet",
+                "minecraft:diamond_helmet",
+                "minecraft:netherite_helmet",
+                "minecraft:turtle_helmet",
+                "player_head",
+                "zombie_head",
+                "wither_skeleton_skull",
+                "skeleton_skull",
+                "creeper_head",
+                "dragon_head"
+              ]
+            }
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:leather_helmet",
+              "minecraft:chainmail_helmet",
+              "minecraft:iron_helmet",
+              "minecraft:golden_helmet",
+              "minecraft:diamond_helmet",
+              "minecraft:netherite_helmet",
+              "minecraft:turtle_helmet",
+              "player_head",
+              "zombie_head",
+              "wither_skeleton_skull",
+              "skeleton_skull",
+              "creeper_head",
+              "dragon_head"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "empty",
+      "head"
+    ]
+  ],
+  "rewards": {
+    "function": "evercraft:treasure/technical/armor/head_check"
+  }
+}

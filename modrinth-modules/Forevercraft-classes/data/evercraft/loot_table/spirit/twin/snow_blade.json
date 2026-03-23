@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Ghost Fang",
+                "minecraft:lore": [
+                  [{"text": "Spirit Twin", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "The Hollow Fangs' frozen reflection — a blade of silent frost.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Rogue Class", "color": "#9B59B6", "bold": true, "italic": false},
+                  {"text": "◆ Twin: ", "color": "gray", "italic": false, "extra": [{"text": "Backstab damage doubled", "color": "dark_gray"}]},
+                  {"text": "◆ Twin: ", "color": "gray", "italic": false, "extra": [{"text": "Stealth kill CD halved", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+10 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_rogue_ghost_fang",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "rogue",
+                  "spirit_id": 1,
+                  "spirit_twin_item": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 10.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -0.8, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

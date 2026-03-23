@@ -1,0 +1,113 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/stormcaller_bow"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/acacia_ballista"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/aegis_of_the_guardian"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/earthshaker"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/soulreaper_scythe"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/frostbite_bow"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/bulwark_of_flames"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/mjolnir"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/ancient_trident"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/battlestaff"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/tower_shield"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/bone_cudgel"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/cutlass"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/combat_mace"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/diamond_ring"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/heartstone"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/stormcatcher_shard"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/ruin_watch"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/piglin_helmet"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/plate_chestplate"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/highland_leggings"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/dragon_boots"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/opulent_chestplate"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/fantasy_pickaxe"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/bone_fishing_rod"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/mending_chalice"}]
+    },
+    {
+      "rolls": 1,
+      "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/rare/ocean_tower_shield"}]
+    }
+  ]
+}

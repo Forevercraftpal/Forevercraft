@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_spear",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Thornmaw",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "The wilds answer its call.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Beastlord Class", "color": "#2ECC71", "bold": true, "italic": false},
+                  {"text": "◆ Wild Summon: ", "color": "gray", "italic": false, "extra": [{"text": "Summon 3 spectral beasts (15s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Primal Fusion: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC: Merge with pet (45s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Pack Bond: ", "color": "gray", "italic": false, "extra": [{"text": "Active pet +100% combat stats", "color": "dark_gray"}]},
+                  {"text": "◆ Prey Mark: ", "color": "gray", "italic": false, "extra": [{"text": "Pet attacks 25% chance to mark target", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+11 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_beastlord_whispering_spear",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "beastlord",
+                  "spirit_id": 6,
+                  "beastlord": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 11.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -1.4, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

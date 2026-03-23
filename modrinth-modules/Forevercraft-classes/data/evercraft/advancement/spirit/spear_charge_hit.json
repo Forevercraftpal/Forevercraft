@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:spear_mobs",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "looking_at": null
+          },
+          "nbt": "{Tags:[\"ec.sp_active\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:spirit/on_spear_charge_hit"
+  }
+}

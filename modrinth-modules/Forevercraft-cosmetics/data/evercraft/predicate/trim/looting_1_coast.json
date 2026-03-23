@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "direct_attacker",
+  "predicate": {
+    "type": "minecraft:player",
+    "nbt": "{Tags:[\"full_set_coast\"]}",
+    "equipment": {
+      "mainhand": {
+        "items": "#minecraft:swords",
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "minecraft:looting",
+              "levels": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Dragon Fan",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A blade forged from dragon breath and tempered in wind and flame.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "Dragon Incarnate",
+                    "color": "#FF4400",
+                    "bold": true,
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "◆ Wind Gust: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Attack to launch wind charge",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Dragon's Breath: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "RC to fire laser (15s CD)",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Inferno Burst: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Sneak+RC for fire nova (20s CD)",
+                        "color": "#FF6600"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Drain of the Dragon: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Heals on every hit",
+                        "color": "light_purple"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Dragon's Spite: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Up to +25% damage at low HP",
+                        "color": "dark_red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Skyward Strike: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "20% chance to launch mobs skyward",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Dragon's Reach: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+3 block attack range",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Draconic Fury: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "2x attack speed recovery",
+                        "color": "gold"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "◆ Wildcard: ",
+                    "color": "gold",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Counts as any set piece",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+15 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "dragon_fan",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "ability": "dragon_fan",
+                  "looting_bonus": 3,
+                  "flame_strike": 2,
+                  "melee_knockback": 1,
+                  "sweep_attack": 3,
+                  "dragons_spite": true,
+                  "skyward_strike": true,
+                  "drain_of_dragon": true,
+                  "dragon_incarnate": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 15.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragon_fan_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -1.2,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragon_fan_speed"
+                  },
+                  {
+                    "type": "minecraft:sweeping_damage_ratio",
+                    "amount": 1.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragon_fan_sweep"
+                  },
+                  {
+                    "type": "minecraft:entity_interaction_range",
+                    "amount": 3.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragon_fan_reach"
+                  },
+                  {
+                    "type": "minecraft:block_interaction_range",
+                    "amount": 3.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragon_fan_block_reach"
+                  }
+                ],
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

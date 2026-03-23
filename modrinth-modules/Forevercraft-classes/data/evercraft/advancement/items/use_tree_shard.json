@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "use_shard": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{tree_shard:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/use_tree_shard"
+  }
+}

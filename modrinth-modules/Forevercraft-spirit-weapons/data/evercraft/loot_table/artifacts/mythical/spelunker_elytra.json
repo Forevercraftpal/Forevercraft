@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Amethyst Elytra",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Wings that have soared above every structure ever built. ",
+                    "color": "gray",
+                    "italic": true,
+                    "extra": [
+                      {
+                        "text": "Flight",
+                        "color": "light_purple",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Combine with Splendid Chestplate",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "on a beacon for armored flight.",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Part of the ",
+                    "color": "dark_gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Delver's Set",
+                        "color": "light_purple",
+                        "bold": true
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spelunker_elytra",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "splendid"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

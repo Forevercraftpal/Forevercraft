@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Anchor",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Uncommon Artifact",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A salvaged ship's anchor,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "repurposed as a brutal weapon.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Grounding Blow: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Slowness + Fatigue (2s)",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "On Hit: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Heavy blow \u2014 Knockback II",
+                        "color": "dark_aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  {"text": "Berserker Class", "color": "#DC143C", "bold": true, "italic": false},
+                  {"text": "\u25c6 Dual Axes: ", "color": "gray", "italic": false, "extra": [{"text": "2x speed, -7 armor, -5\u2764", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Rage: ", "color": "gray", "italic": false, "extra": [{"text": "Right-click \u2014 10s auto-swing + Str II", "color": "dark_gray"}]}
+                ],
+                "minecraft:consumable": {"consume_seconds": 999999, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:artifact_weapon"},
+                "minecraft:custom_data": {
+                  "artifact": "uncommon_anchor",
+                  "is_artifact": true,
+                  "tier": "uncommon",
+                  "melee_knockback": 2,
+                  "ability": "grounding_blow"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

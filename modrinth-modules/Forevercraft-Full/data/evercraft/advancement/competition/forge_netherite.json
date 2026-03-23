@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "netherite_sword": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_sword_smithing"}},
+    "netherite_pickaxe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_pickaxe_smithing"}},
+    "netherite_axe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_axe_smithing"}},
+    "netherite_shovel": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_shovel_smithing"}},
+    "netherite_hoe": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_hoe_smithing"}},
+    "netherite_helmet": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_helmet_smithing"}},
+    "netherite_chestplate": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_chestplate_smithing"}},
+    "netherite_leggings": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_leggings_smithing"}},
+    "netherite_boots": {"trigger": "minecraft:recipe_crafted", "conditions": {"recipe_id": "minecraft:netherite_boots_smithing"}}
+  },
+  "requirements": [["netherite_sword","netherite_pickaxe","netherite_axe","netherite_shovel","netherite_hoe","netherite_helmet","netherite_chestplate","netherite_leggings","netherite_boots"]],
+  "rewards": {
+    "function": "evercraft:competition/score/forge_netherite"
+  }
+}

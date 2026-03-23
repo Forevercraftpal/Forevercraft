@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "common",
+                "minecraft:custom_name": "Medicinal Bandages",
+                "minecraft:lore": [
+                  {"text": "Common Artifact", "color": "white", "italic": false},
+                  {"text": "Healer — Right-Click to Use", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "Simple linen strips soaked in", "color": "gray", "italic": true},
+                  {"text": "a mild antiseptic tincture.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Activate: ", "color": "white", "italic": false, "extra": [{"text": "Heal all players within 8 blocks for 1 heart", "color": "green"}]},
+                  {"text": "Cooldown: ", "color": "white", "italic": false, "extra": [{"text": "15 seconds", "color": "gray"}]},
+                  "",
+                  {"text": "Healer's Oath: ", "color": "red", "italic": false, "extra": [{"text": "Cannot deal damage during cooldown", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "healer_bandages",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "healer": true,
+                  "healer_id": "bandages"
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Companion Shard", "color": "aqua", "italic": false},
+                "minecraft:lore": [
+                  {"text": "A crystallized fragment of", "color": "gray", "italic": false},
+                  {"text": "companion bond.", "color": "gray", "italic": false},
+                  "",
+                  {"text": "Trade to the Zookeeper", "color": "yellow", "italic": false},
+                  {"text": "for rare crates!", "color": "yellow", "italic": false}
+                ],
+                "minecraft:custom_data": {"companion_shard": true},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_model": "prismarine_shard"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

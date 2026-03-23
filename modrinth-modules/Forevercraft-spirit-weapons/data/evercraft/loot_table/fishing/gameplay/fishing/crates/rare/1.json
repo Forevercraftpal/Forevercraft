@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:fishing/crate_contents/rare/1"
+                },
+                "minecraft:item_name": {
+                  "text": "Rare Fishing Crate",
+                  "bold": true,
+                  "color": "aqua"
+                },
+                "minecraft:custom_data": {
+                  "fc_rarity": "rare",
+                  "fc_stat": false
+                },
+                "minecraft:max_stack_size": 48,
+                "minecraft:custom_name": {
+                  "text": "Rare Fishing Crate",
+                  "bold": true,
+                  "color": "aqua"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "The sea yields its secrets.",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

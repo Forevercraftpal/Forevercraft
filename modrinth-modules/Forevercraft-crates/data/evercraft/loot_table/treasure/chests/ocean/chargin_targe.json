@@ -1,0 +1,126 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Chargin' Targe",
+                "italic": true
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "A reinforced shield for aggressive defense.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ocean Shield (Strong)",
+                  "color": "gold",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "\u25c6 Tank: ",
+                  "color": "white",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "Mainhand grants Resistance I",
+                      "color": "gray"
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": {
+                  "type": "minecraft:uniform",
+                  "min": 4,
+                  "max": 6
+                },
+                "minecraft:mending": 1
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "chargin_targe_speed",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.05,
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "chargin_targe_knockback",
+                  "attribute": "minecraft:attack_knockback",
+                  "amount": 1.5,
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "evercraft:shield_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 1.0,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "evercraft:shield_knockback",
+                  "attribute": "minecraft:attack_knockback",
+                  "amount": 0.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "weapon": "chargin_targe",
+                  "tier": "strong",
+                  "biome": "ocean",
+                  "tank": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

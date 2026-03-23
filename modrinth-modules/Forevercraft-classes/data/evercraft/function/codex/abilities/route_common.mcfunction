@@ -1,0 +1,14 @@
+# Route Common ability display (triggers 100-112)
+execute if entity @s[scores={ec.codex=100}] run function evercraft:codex/abilities/common/bone_slingshot
+execute if entity @s[scores={ec.codex=101}] run function evercraft:codex/abilities/common/boneclub
+execute if entity @s[scores={ec.codex=102}] run function evercraft:codex/abilities/common/broadsword
+execute if entity @s[scores={ec.codex=103}] run function evercraft:codex/abilities/common/deku_shield
+execute if entity @s[scores={ec.codex=104}] run function evercraft:codex/abilities/common/highland_mace
+execute if entity @s[scores={ec.codex=105}] run function evercraft:codex/abilities/common/hunting_bow
+execute if entity @s[scores={ec.codex=106}] run function evercraft:codex/abilities/common/norroen_sword
+execute if entity @s[scores={ec.codex=107}] run function evercraft:codex/abilities/common/plunger
+execute if entity @s[scores={ec.codex=108}] run function evercraft:codex/abilities/common/slingshot
+execute if entity @s[scores={ec.codex=109}] run function evercraft:codex/abilities/common/vex_iron_sword
+execute if entity @s[scores={ec.codex=110}] run function evercraft:codex/abilities/common/pebble_of_dreams
+execute if entity @s[scores={ec.codex=111}] run function evercraft:codex/abilities/common/travelers_charm
+execute if entity @s[scores={ec.codex=112}] run function evercraft:codex/abilities/common/worn_compass

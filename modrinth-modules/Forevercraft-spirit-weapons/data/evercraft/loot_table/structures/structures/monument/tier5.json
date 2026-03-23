@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/exquisite/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/buried_treasure"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 4, "max": 6},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:sponge", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 12, "max": 24}}]},
+        {"type": "minecraft:item", "name": "minecraft:tide_armor_trim_smithing_template", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:heart_of_the_sea", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:trident", "weight": 15, "functions": [{"function": "minecraft:enchant_with_levels", "levels": {"type": "minecraft:uniform", "min": 25, "max": 35}, "options": "#minecraft:on_random_loot"}]},
+        {"type": "minecraft:item", "name": "minecraft:diamond_block", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:conduit", "weight": 12},
+        {"type": "minecraft:item", "name": "minecraft:netherite_upgrade_smithing_template", "weight": 8}
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 90},
+        {"type": "minecraft:loot_table", "value": "evercraft:artifacts/exquisite/main", "weight": 10}
+      ]
+    }
+  ]
+}

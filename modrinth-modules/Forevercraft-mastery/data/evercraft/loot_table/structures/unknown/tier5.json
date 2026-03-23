@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "comment": "Unknown Structure - Exquisite Tier (lucky roll!)",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/exquisite/main"
+        }
+      ]
+    },
+    {
+      "comment": "Vanilla structure loot as base",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/ancient_city",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/end_city_treasure",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/trial_chambers/reward_unique",
+          "weight": 25
+        }
+      ]
+    }
+  ]
+}

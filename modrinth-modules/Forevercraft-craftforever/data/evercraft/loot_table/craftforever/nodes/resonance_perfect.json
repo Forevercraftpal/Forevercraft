@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 2}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Crystallized Ember", "color": "#FF6B35", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Rare Forging Catalyst", "color": "gold", "italic": false},
+                  "",
+                  {"text": "A crystallized spark of", "color": "gray", "italic": true},
+                  {"text": "primordial creation.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_catalyst": true, "cf_mat_id": "crystallized_ember"}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Deepslate Heart", "color": "#555555", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Rare Forging Catalyst", "color": "gold", "italic": false},
+                  "",
+                  {"text": "The beating core of the", "color": "gray", "italic": true},
+                  {"text": "earth's deepest stone.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_catalyst": true, "cf_mat_id": "deepslate_heart"}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 3}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -37,7 +37,7 @@ export default function Support() {
       ``,
       steps ? `### Steps to Reproduce\n${steps}\n` : '',
       `---`,
-      `*Submitted via [Forevercraft Support](https://forevercraft.pages.dev/support)*`,
+      `*Submitted via [Forevercraft Support](https://forevercraft.co/support)*`,
     ].filter(Boolean).join('\n')
 
     const encodedTitle = encodeURIComponent(`[Bug] ${title}`)
@@ -224,7 +224,7 @@ export default function Support() {
                 <p className="font-['Crimson_Pro'] text-base text-stone-500">Support & general inquiries</p>
               </a>
               <a
-                href="https://forevercraft.pages.dev/guide"
+                href="https://forevercraft.co/guide"
                 className="rounded border border-stone-700 hover:border-yellow-800/60 p-5 text-center no-underline transition-colors"
               >
                 <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-300 mb-2">PLAYER GUIDE</p>

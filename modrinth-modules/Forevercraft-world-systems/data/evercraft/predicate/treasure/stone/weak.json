@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ec.break_calcite": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ec.break_sandstone": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ec.break_netherrack": {
+            "min": 1
+          }
+        }
+      }
+    ]
+  }
+]

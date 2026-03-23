@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/common",
+          "weight": 52
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/uncommon",
+          "weight": 26
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/rare",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/ornate",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/exquisite",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/mythical/roll",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

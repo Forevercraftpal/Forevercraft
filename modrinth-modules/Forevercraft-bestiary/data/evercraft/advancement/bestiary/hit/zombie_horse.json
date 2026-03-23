@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:zombie_horse"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:bestiary/bonus/hit/zombie_horse"
+  }
+}

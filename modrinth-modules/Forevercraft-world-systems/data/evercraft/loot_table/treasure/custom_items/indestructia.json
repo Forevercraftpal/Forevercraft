@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:elytra",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "id": "indestructia",
+                    "attribute": "minecraft:armor",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "id": "indestructia",
+                    "attribute": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:repair_cost": 99999,
+                  "minecraft:unbreakable": {},
+                  "minecraft:custom_name": {
+                    "text": "Indestructia",
+                    "color": "gold",
+                    "italic": true
+                  },                
+                  "minecraft:custom_data": {
+                    "armor": "indestructia"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "functions": []
+  }

@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:player_head"
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:player_head"],
+              "predicates": {
+                "minecraft:custom_data": "{fountain_of_dreams:true}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:gacha/fountain/place"
+  }
+}

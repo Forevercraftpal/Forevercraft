@@ -1,0 +1,6 @@
+$tellraw @s [{text:"",color:"gray"},{text:"══════",color:"gold"},{text:" Artisan Rank: ",color:"gray"},{text:"$(rank)",color:"gold",bold:true},{text:" ══════",color:"gold"}]
+$tellraw @s [{text:"  Progress: ",color:"gray"},{text:"$(xp)",color:"white"},{text:" / ",color:"dark_gray"},{text:"$(next)",color:"white"},{text:" XP",color:"gray"}]
+$tellraw @s [{text:"  ",color:"gray"},{text:"Mining: ",color:"gold"},{text:"$(mining)",color:"white"},{text:"  Cooking: ",color:"red"},{text:"$(cooking)",color:"white"}]
+$tellraw @s [{text:"  ",color:"gray"},{text:"Fishing: ",color:"aqua"},{text:"$(fishing)",color:"white"},{text:"  Building: ",color:"green"},{text:"$(building)",color:"white"}]
+$tellraw @s [{text:"  ",color:"gray"},{text:"Foraging: ",color:"dark_purple"},{text:"$(foraging)",color:"white"},{text:"  Forging: ",color:"light_purple"},{text:"$(forging)",color:"white"}]
+tellraw @s [{text:"══════════════════════════",color:"gold"}]

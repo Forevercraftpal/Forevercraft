@@ -1,0 +1,5 @@
+# Guild Menu — Event page: No active event
+# Anchored to bg entity to prevent shift when player rotates to click tabs
+
+execute at @e[type=item_display,tag=ec.guild_menu_bg,distance=..5,limit=1] positioned ^0 ^0.07 ^-0.02 run summon text_display ~ ~ ~ {brightness:{block:15,sky:15},shadow_radius:0f, Tags:["ec.guild_menu_el","ec.guild_page_el"], billboard:"center", text:[{text:"No active event",color:"gray"}], background:1, shadow:1b, transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.05f,0f],scale:[0.405f,0.405f,0.405f]} }
+execute at @e[type=item_display,tag=ec.guild_menu_bg,distance=..5,limit=1] positioned ^0 ^0.07 ^-0.02 run summon text_display ~ ~ ~ {brightness:{block:15,sky:15},shadow_radius:0f, Tags:["ec.guild_menu_el","ec.guild_page_el"], billboard:"center", text:[{text:"Start a competition or pillage",color:"dark_gray"},{text:"\nvia the Guild Book (shift+use)",color:"dark_gray"}], background:1, shadow:1b, transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.12f,0f],scale:[0.338f,0.338f,0.338f]} }

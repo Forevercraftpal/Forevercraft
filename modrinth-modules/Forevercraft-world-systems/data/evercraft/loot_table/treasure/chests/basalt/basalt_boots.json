@@ -1,0 +1,2977 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Netherwalker Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Basalt Deltas",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Standing completely still grants ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "full immunity to projectiles. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "basalt_deltas_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "basalt_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:blast_protection": {
+                  "min": 10,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

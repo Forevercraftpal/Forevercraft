@@ -1,0 +1,121 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Armored Delver's Prisms",
+                  "color": "gold",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Crystal-studded plate and explorer's wings",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "fused through an ancient beacon ritual.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "\u25c6 Amethyst Wings: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Armored Flight",
+                        "color": "light_purple"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "\u25c6 Trap Ward: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Resistance I",
+                        "color": "light_purple"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Place on a beacon to separate.",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Part of the ",
+                    "color": "dark_gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Delver's Set",
+                        "color": "light_purple",
+                        "bold": true
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "splendid_armored_elytra",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "splendid",
+                  "armored_elytra": {
+                    "armored": true,
+                    "elytra_artifact": "spelunker_elytra",
+                    "chest_artifact": "spelunker_chestplate"
+                  }
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:spelunker_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "chest",
+                    "id": "evercraft:spelunker_toughness"
+                  }
+                ],
+                "minecraft:glider": {},
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "asset_id": "evercraft:splendid_armored"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

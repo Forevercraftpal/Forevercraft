@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "minecraft:tipped_arrow",
+                "functions": [
+                  {
+                    "function": "minecraft:limit_count",
+                    "limit": {
+                      "min": 8,
+                      "max": 16
+                    }
+                  },
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                        "minecraft:custom_name": {
+                            "text": "Glowy Arrow",
+                            "color": "#F0B71A",
+                            "italic": false
+                        },
+                      "minecraft:potion_contents": {
+                        "custom_color": 15775514,
+                        "custom_effects": [
+                          {
+                            "id": "minecraft:hunger",
+                            "amplifier": 29,
+                            "duration": 100,
+                            "show_particles": false
+                          },
+                          {
+                            "id": "minecraft:glowing",
+                            "amplifier": 1,
+                            "duration": 100,
+                            "show_particles": false
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+        ]
+      }
+    ],
+    "functions": []
+  }

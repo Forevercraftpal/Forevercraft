@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Crucuble Elytra",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Wings blessed by the spirits of ancient miners. ",
+                    "color": "gray",
+                    "italic": true,
+                    "extra": [
+                      {
+                        "text": "Flight",
+                        "color": "green",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Combine with Journey Chestplate",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "on a beacon for armored flight.",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Part of the ",
+                    "color": "dark_gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Journey Set",
+                        "color": "light_purple",
+                        "bold": true
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "journey_elytra",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "journey"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

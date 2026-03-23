@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "kill_bounty": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"ec.bounty_target\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:bounty/on_kill_adv"
+  }
+}

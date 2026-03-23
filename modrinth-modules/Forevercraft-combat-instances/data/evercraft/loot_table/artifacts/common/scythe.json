@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Scythe",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A curved blade for harvest,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "equally sharp on weed and foe.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Enhanced farming speed",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "+1 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_scythe",
+                  "is_artifact": true,
+                  "tier": "common"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:mining_efficiency",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:scythe_efficiency"
+                  },
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:scythe_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -3.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:scythe_speed"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

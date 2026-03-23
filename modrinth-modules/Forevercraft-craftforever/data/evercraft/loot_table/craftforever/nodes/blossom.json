@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pink_petals",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 2}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Blossom Essence", "color": "#F9A8D4", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Rare Biome Material", "color": "aqua", "italic": false},
+                  "",
+                  {"text": "Crystallized cherry blossom", "color": "gray", "italic": true},
+                  {"text": "petals that shimmer softly.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "blossom", "cf_biome": 15}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "ec.guild_id": {
+            "min": {
+                "type": "score",
+                "target": {
+                    "type": "fixed",
+                    "name": "#Search"
+                },
+                "score": "ec.guild_id"
+            },
+            "max": {
+                "type": "score",
+                "target": {
+                    "type": "fixed",
+                    "name": "#Search"
+                },
+                "score": "ec.guild_id"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "evercraft:gacha/root",
+  "display": {
+    "icon": {"id": "minecraft:nether_star"},
+    "title": {"text": "Dreamy Star", "color": "light_purple"},
+    "description": {"text": "Pull a Mythical from the Fountain"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  }
+}

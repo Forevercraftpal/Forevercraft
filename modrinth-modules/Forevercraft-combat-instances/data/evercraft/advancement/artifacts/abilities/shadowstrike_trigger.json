@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit_while_wearing_shadow_boots": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "feet": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"shadow_walk\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/shadowstrike"
+  }
+}

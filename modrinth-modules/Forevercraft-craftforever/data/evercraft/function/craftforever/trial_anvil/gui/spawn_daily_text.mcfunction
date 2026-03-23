@@ -1,0 +1,3 @@
+# Spawn daily challenge text + button (macro)
+$execute as @p[tag=TT.InMenu,sort=nearest,distance=..5] at @s rotated ~ 0 positioned ^ ^2.1 ^1.78 run summon text_display ~ ~ ~ {brightness:{block:15,sky:15},shadow_radius:0f,Tags:["TT.MenuEl","TT.DailyText"],billboard:"center",text:[{"text":"\u2726 Daily: ","color":"gold"},{"text":"$(daily_name) T$(daily_tier)","color":"yellow","bold":true},{"text":" [Go]","color":"green"}],background:1,shadow:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.25f,0.25f,0.25f]}}
+execute as @p[tag=TT.InMenu,sort=nearest,distance=..5] at @s rotated ~ 0 positioned ^ ^2.08 ^1.8 run summon interaction ~ ~ ~ {Tags:["TT.MenuEl","TT.DailyBtn"],width:0.5f,height:0.04f,response:1b}

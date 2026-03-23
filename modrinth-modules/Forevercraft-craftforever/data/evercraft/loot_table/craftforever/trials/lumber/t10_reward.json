@@ -1,0 +1,155 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.05
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Heartwood",
+                "color": "dark_green",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic",
+                "minecraft:custom_data": {
+                  "spirit_tool": "heartwood",
+                  "st_tier": 1,
+                  "tier": "common"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Spirit Axe",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "The forest lives through your blade.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Haste III + 16-block Magnet",
+                        "color": "dark_green"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Standing: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Spirit Fell \u2014 unlimited tree chop + replant",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Sneaking: ",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Precision Chop \u2014 4 planks per log",
+                        "color": "white"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "\u2726 Living Forest ",
+                    "color": "dark_green",
+                    "bold": true,
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "(Sneak \u2014 90s)",
+                        "color": "gray",
+                        "bold": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Fell all trees in 12-block radius",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/chrono_shard",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

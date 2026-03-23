@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Scarlet Leggings",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Each wound you inflict",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "makes you stronger.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Scarlet (0/4)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Lifesteal on hit",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Scarlet Frenzy + Crimson Burst",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "+1 Damage  ◆  +6 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "blood_leggings",
+                  "is_artifact": true,
+                  "artifact_set": "blood",
+                  "tier": "ornate"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "legs",
+                    "id": "evercraft:artifact_damage"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

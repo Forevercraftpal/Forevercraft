@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 16755200,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:luck",
+                      "amplifier": 1,
+                      "duration": 6000,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:hero_of_the_village",
+                      "amplifier": 0,
+                      "duration": 6000,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Plunderer's Fortune",
+                  "color": "#FFD700",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Exquisite",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Dreams II, +1 Looting (5:00)",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "Riches call to those who seek",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "Better loot in every chest",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

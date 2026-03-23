@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:clock",
+          "predicates": {
+            "minecraft:custom_data": "{artifact:\"ruin_watch\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:structures/storage/ruin_watch_use"
+  }
+}

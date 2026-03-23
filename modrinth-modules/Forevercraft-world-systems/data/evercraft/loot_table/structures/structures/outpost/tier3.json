@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/rare/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/pillager_outpost"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 2, "max": 4},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:diamond", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}]},
+        {"type": "minecraft:item", "name": "minecraft:crossbow", "weight": 18, "functions": [{"function": "minecraft:enchant_with_levels", "levels": {"type": "minecraft:uniform", "min": 20, "max": 30}, "options": "#minecraft:on_random_loot"}]},
+        {"type": "minecraft:item", "name": "minecraft:sentry_armor_trim_smithing_template", "weight": 18},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 12},
+        {"type": "minecraft:item", "name": "minecraft:goat_horn", "weight": 12},
+        {"type": "minecraft:item", "name": "minecraft:golden_apple", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]}
+      ]
+    }
+  ]
+}

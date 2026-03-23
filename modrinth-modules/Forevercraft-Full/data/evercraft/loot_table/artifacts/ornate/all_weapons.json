@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/dragonslayer"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/inferno_blade"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/glacial_edge"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/excalibur"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/katana"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/claymore"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/gungnir"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/ancient_bow"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/blastbreaker_mace"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/coral_blade"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/glaive"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/golden_gauntlet"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/venomfang_crossbow"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/helm_of_shadows"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/warriors_crown"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/titans_plate"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/windwalker_boots"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/leggings_of_fortitude"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/arm_cannon"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/fantasy_trident"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:artifacts/ornate/shuriken_of_ice"}]}
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Sharpened Sword",
+                  "color": "light_purple",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Enemies under half health ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "are afflicted with wither. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "sharpened_sword",
+                    "type": "minecraft:attack_damage",
+                    "amount": 6.5,
+                    "operation": "add_value"
+                  },
+                  {
+                    "id": "sharpened_sword",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value"
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "weapon": "ec.sharpened_sword"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 7.5 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.5 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:unbreaking": {
+                  "min": 2,
+                  "max": 5
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

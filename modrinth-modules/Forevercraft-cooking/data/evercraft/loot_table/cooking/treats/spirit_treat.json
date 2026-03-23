@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wheat_seeds",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:golden_carrot",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_name": {"text": "\u2726 Spirit Treat \u2726", "color": "light_purple", "italic": false, "bold": true},
+                "minecraft:lore": [
+                  {"text": "An ancient delicacy infused with", "color": "gray", "italic": false},
+                  {"text": "otherworldly essence.", "color": "gray", "italic": false},
+                  "",
+                  {"text": "Feed to a Level 100 companion", "color": "aqua", "italic": false},
+                  {"text": "with Eternal Bond to trigger", "color": "aqua", "italic": false},
+                  {"text": "their Ascension.", "color": "aqua", "italic": false},
+                  "",
+                  {"text": "\u2726 Mythical", "color": "light_purple", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "spirit_treat": true
+                },
+                "minecraft:rarity": "epic",
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

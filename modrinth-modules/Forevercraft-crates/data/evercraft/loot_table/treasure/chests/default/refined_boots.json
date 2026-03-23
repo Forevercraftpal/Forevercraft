@@ -1,0 +1,1475 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Celestial Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Refined Netherite Armor",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Armor is worn, the user gains permanent",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Resistance I and 25% more health.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "rn_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:mending": {
+                  "min": 0,
+                  "max": 1
+                },
+                "minecraft:unbreaking": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "refined_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

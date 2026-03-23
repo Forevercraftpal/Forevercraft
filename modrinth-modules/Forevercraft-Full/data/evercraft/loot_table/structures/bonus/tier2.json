@@ -1,0 +1,122 @@
+{
+  "type": "minecraft:chest",
+  "comment": "Tier 2 (Uncommon structures) - 6% base chance, bonus container: 70% uncommon, 22% rare, 6% ornate, 2% exquisite",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/uncommon/main",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/rare/main",
+          "weight": 22
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/ornate/main",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/exquisite/main",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "DREAM AEGIS - 0.01% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 9999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:artifacts/mythical/dream_aegis",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "FOREVER COIN - 20% chance (3 coins)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Forever Coin",
+                  "color": "#E0B0FF",
+                  "italic": false,
+                  "bold": true
+                },
+                "minecraft:custom_data": {
+                  "forever_coin": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Fountain Currency",
+                    "color": "#E0B0FF",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Minted in the dreams of a forgotten age,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "each coin hums with the Fountain's promise.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Spend at the Fountain of Eternal Dreams.",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "rare"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "Chrono Shard — 2% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/chrono_shard",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

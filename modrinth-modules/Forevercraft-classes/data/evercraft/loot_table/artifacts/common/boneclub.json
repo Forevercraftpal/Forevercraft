@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_spear",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Boneclub",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Common Artifact",
+                    "color": "white",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A club fashioned from the",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "bones of fallen creatures.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {"text": "Primal Roar: ", "color": "aqua", "italic": false, "extra": [{"text": "10th hit \u2192 AoE debuff (6 blocks)", "color": "white"}]},
+                  {
+                    "text": "On Hit: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Minor knockback",
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "",
+                  {"text": "Beastlord Class", "color": "#2ECC71", "bold": true, "italic": false},
+                  {"text": "\u25c6 Aura: ", "color": "gray", "italic": false, "extra": [{"text": "Strength to nearby pets", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Warp Strike: ", "color": "gray", "italic": false, "extra": [{"text": "Pets teleport to enemies", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Rally Cry: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Use — buff all pets", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "common_boneclub",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "beastlord": true,
+                  "melee_knockback": 2,
+                  "ability": "primal_roar"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

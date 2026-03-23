@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Fishing potion pool for COMMON crates - 50% chance to roll, weighted by tier",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 50, "comment": "50% no potion"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/unfavored", "weight": 30, "comment": "Bad: 60% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/gills", "weight": 15, "comment": "Basic: 30% of 50%"},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/fishing/angler", "weight": 5, "comment": "Good: 10% of 50%"}
+      ]
+    }
+  ]
+}

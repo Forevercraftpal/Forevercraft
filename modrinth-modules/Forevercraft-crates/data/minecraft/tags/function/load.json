@@ -1,0 +1,11 @@
+{
+  "values": [
+    "evercraft:init",
+    "evercraft:structures/load",
+    "evercraft:fishing/load",
+    "evercraft:harvest/load",
+    "evercraft:treasure/init",
+    "evercraft:tomb/load",
+    "evercraft:armored_elytra/load"
+  ]
+}

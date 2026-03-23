@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "#minecraft:axes",
+          "predicates": {
+            "minecraft:custom_data": "{is_artifact:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/berserker/activate_rage"
+  }
+}

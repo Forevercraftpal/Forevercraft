@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:beacon",
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": {"text": "Ancient Netherite Core", "color": "dark_purple", "bold": true, "italic": true},
+                "minecraft:lore": [
+                  {"text": "An artifact of immense power", "color": "gray", "italic": false},
+                  {"text": "forged in the depths of the Nether.", "color": "gray", "italic": false},
+                  "",
+                  {"text": "Level 1 - Awakened", "color": "gold", "italic": false},
+                  "",
+                  {"text": "Effects:", "color": "aqua", "italic": false},
+                  {"text": "  Speed I + Haste I", "color": "white", "italic": false},
+                  "",
+                  {"text": "Sneak + hold to upgrade", "color": "dark_purple", "italic": true},
+                  {"text": "Next: 34 blocks for Level 2", "color": "gray", "italic": false}
+                ],
+                "minecraft:custom_data": {"ancient_netherite_core": 1, "level": 1, "is_artifact": 1},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

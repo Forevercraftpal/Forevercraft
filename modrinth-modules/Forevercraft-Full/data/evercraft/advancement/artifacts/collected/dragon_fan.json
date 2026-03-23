@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "has_artifact": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{artifact:\"dragon_fan\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:codex/grant_first_artifact"
+  }
+}

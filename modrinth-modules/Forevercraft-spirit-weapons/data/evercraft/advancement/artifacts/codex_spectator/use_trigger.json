@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_codex": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:written_book",
+          "predicates": {
+            "minecraft:custom_data": "{artifact:\"codex_of_everything\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/codex_spectator/try_activate"
+  }
+}

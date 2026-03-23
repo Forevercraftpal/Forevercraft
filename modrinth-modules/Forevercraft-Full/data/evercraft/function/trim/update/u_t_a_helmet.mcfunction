@@ -1,0 +1,1 @@
+$execute if data entity @s equipment.head unless entity @s[tag=single_$(helmet)] run function evercraft:trim/single/$(helmet)/got

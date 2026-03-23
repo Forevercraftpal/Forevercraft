@@ -1,0 +1,10 @@
+particle snowflake ^0.408 ^2.927 ^0.887 0 0 0 0 1 force @a
+particle snowflake ^0.447 ^2.920 ^0.870 0 0 0 0 1 force @a
+particle snowflake ^0.486 ^2.913 ^0.852 0 0 0 0 1 force @a
+particle snowflake ^0.523 ^2.906 ^0.833 0 0 0 0 1 force @a
+particle snowflake ^0.560 ^2.898 ^0.812 0 0 0 0 1 force @a
+particle snowflake ^0.596 ^2.891 ^0.789 0 0 0 0 1 force @a
+particle snowflake ^0.631 ^2.884 ^0.764 0 0 0 0 1 force @a
+particle snowflake ^0.665 ^2.877 ^0.738 0 0 0 0 1 force @a
+particle snowflake ^0.698 ^2.869 ^0.710 0 0 0 0 1 force @a
+particle snowflake ^0.730 ^2.862 ^0.681 0 0 0 0 1 force @a

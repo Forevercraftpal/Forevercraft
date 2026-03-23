@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "feed_slime": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:slime_ball"
+                },
+                "entity": {
+                    "type": "minecraft:happy_ghast"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "evercraft:buddy/happy_ghast/on_feed"
+    }
+}

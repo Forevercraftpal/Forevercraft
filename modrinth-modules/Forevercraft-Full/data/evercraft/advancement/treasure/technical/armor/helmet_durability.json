@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": {
+          "min": 1
+        },
+        "item": {
+          "items": [
+            "minecraft:leather_helmet",
+            "minecraft:chainmail_helmet",
+            "minecraft:iron_helmet",
+            "minecraft:golden_helmet",
+            "minecraft:diamond_helmet",
+            "minecraft:netherite_helmet",
+            "minecraft:turtle_helmet"
+          ]
+        }
+      }
+    }
+  }
+}

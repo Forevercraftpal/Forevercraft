@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:entity",
+  "comment": "Named mob drop rates - 5x higher than regular mobs",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99042
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/common",
+          "weight": 500
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/uncommon",
+          "weight": 250
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/rare",
+          "weight": 100
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/ornate",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/exquisite",
+          "weight": 33
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/death/mythical",
+          "weight": 25
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{custom_name:{}}"
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"mobs.patrons.applied\"]}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

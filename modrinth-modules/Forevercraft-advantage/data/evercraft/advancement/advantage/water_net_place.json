@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:barrel"
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:barrel"],
+              "predicates": {
+                "minecraft:custom_data": "{water_net:true}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:advantage/prestige/abilities/water_net_place"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_key",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Trial Pass", "color": "#FFA500", "bold": true, "italic": false},
+                "minecraft:custom_data": {"trial_pass": true},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:lore": [
+                  {"text": "Right-click to open Harvester Trials", "color": "gray", "italic": false},
+                  {"text": "Consumed when a trial begins", "color": "dark_gray", "italic": false}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

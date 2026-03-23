@@ -1,0 +1,21 @@
+{
+  "values": [
+    "evercraft:init",
+    "evercraft:structures/load",
+    "evercraft:artifacts/accessories/load",
+    "evercraft:artifacts/sets/load",
+    "evercraft:artifacts/graviton_core/load",
+    "evercraft:artifacts/netherite_core/load",
+    "evercraft:artifacts/rings/load",
+    "evercraft:harmonize/load",
+    "evercraft:fishing/load",
+    "evercraft:harvest/load",
+    "evercraft:treasure/init",
+    "evercraft:tomb/load",
+    "evercraft:armored_elytra/load",
+    "evercraft:hero_satchel/load",
+    "evercraft:artifacts/javelin/load",
+    "evercraft:spirit_tome/load",
+    "evercraft:chrono_shard/load"
+  ]
+}

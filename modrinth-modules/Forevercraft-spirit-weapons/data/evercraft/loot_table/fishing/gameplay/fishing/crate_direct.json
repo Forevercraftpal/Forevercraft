@@ -1,0 +1,461 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "comment": "BASE POOL (1.75x) - Common ~1/57, Uncommon ~1/114, Rare ~1/172, Ornate ~1/286, Exquisite ~1/429, Mythical ~1/571",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 96034
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/common/1",
+          "weight": 1750
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/uncommon/1",
+          "weight": 875
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/rare/1",
+          "weight": 583
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/ornate/1",
+          "weight": 350
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/exquisite/1",
+          "weight": 233
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/mythical/1",
+          "weight": 175
+        }
+      ]
+    },
+    {
+      "comment": "LUCK OF THE SEA 1 BONUS POOL (1.75x) - +25% crate chance",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:reference",
+            "name": "evercraft:fishing/enchantments/luck_of_the_sea_2"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 99008
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/common/1",
+          "weight": 438,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/uncommon/1",
+          "weight": 219,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/rare/1",
+          "weight": 145,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/ornate/1",
+          "weight": 88,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/exquisite/1",
+          "weight": 58,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/mythical/1",
+          "weight": 44,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "LUCK OF THE SEA 2 BONUS POOL (1.75x) - +50% crate chance total",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:reference",
+            "name": "evercraft:fishing/enchantments/luck_of_the_sea_3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 98015
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/common/1",
+          "weight": 875,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/uncommon/1",
+          "weight": 438,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/rare/1",
+          "weight": 292,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/ornate/1",
+          "weight": 175,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/exquisite/1",
+          "weight": 117,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/mythical/1",
+          "weight": 88,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "LUCK OF THE SEA 3 BONUS POOL (1.75x) - +75% crate chance total",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:reference",
+            "name": "evercraft:fishing/enchantments/luck_of_the_sea_4"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 97024
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/common/1",
+          "weight": 1313,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/uncommon/1",
+          "weight": 656,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/rare/1",
+          "weight": 438,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/ornate/1",
+          "weight": 263,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/exquisite/1",
+          "weight": 175,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/mythical/1",
+          "weight": 131,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "LUCK OF THE SEA 4 BONUS POOL (1.75x) - +100% crate chance total",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:reference",
+            "name": "evercraft:fishing/enchantments/luck_of_the_sea_5"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 96034
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/common/1",
+          "weight": 1750,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_4"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/uncommon/1",
+          "weight": 875,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_4"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/rare/1",
+          "weight": 583,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_4"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/ornate/1",
+          "weight": 350,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_4"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/exquisite/1",
+          "weight": 233,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_4"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/mythical/1",
+          "weight": 175,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "LUCK OF THE SEA 5 BONUS POOL (1.75x) - +125% crate chance total",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 95039
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/common/1",
+          "weight": 2188,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_5"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/uncommon/1",
+          "weight": 1094,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_5"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/rare/1",
+          "weight": 730,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_5"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/ornate/1",
+          "weight": 438,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_5"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/exquisite/1",
+          "weight": 292,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_5"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/mythical/1",
+          "weight": 219,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "evercraft:fishing/enchantments/luck_of_the_sea_5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

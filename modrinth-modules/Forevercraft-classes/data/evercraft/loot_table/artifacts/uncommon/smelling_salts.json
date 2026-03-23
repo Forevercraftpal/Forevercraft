@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": "Smelling Salts",
+                "minecraft:lore": [
+                  {"text": "Uncommon Artifact", "color": "blue", "italic": false},
+                  {"text": "Healer — Right-Click to Use", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "Pungent mineral salts that", "color": "gray", "italic": true},
+                  {"text": "purge toxins from the body.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Activate: ", "color": "white", "italic": false, "extra": [{"text": "Remove negative effects + heal 1 heart (12 blocks)", "color": "green"}]},
+                  {"text": "Cooldown: ", "color": "white", "italic": false, "extra": [{"text": "18 seconds", "color": "gray"}]},
+                  "",
+                  {"text": "Healer's Oath: ", "color": "red", "italic": false, "extra": [{"text": "Cannot deal damage during cooldown", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "healer_salts",
+                  "is_artifact": true,
+                  "tier": "uncommon",
+                  "healer": true,
+                  "healer_id": "salts"
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

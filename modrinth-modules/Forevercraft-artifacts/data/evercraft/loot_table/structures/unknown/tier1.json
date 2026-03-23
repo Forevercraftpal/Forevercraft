@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "comment": "Unknown Structure - Common Tier (rolled from surface base)",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:structures/common/main"
+        }
+      ]
+    },
+    {
+      "comment": "Vanilla structure loot as base",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/simple_dungeon",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/abandoned_mineshaft",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/ruined_portal",
+          "weight": 20
+        }
+      ]
+    }
+  ]
+}

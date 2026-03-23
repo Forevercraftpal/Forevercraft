@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:goat_horn",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:repair_cost": 99999,
+                  "!minecraft:instrument": {}, 
+                  "max_damage": 500,
+                  "minecraft:damage": 0,
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:item_name": "Leaf Blower",
+                  "minecraft:rarity": "rare",
+                  "minecraft:lore": [
+                    {
+                      "text": " "
+                    },
+                    {
+                      "text": "Ability:",
+                      "color": "green",
+                      "italic": false
+                    },
+                    {
+                      "text": "Insta-mines dirt and other blocks ",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],    
+                  "minecraft:custom_data": {
+                    "item": "ec.leaf_blower"
+                  },
+                  "minecraft:tool": {
+                    "rules": [
+                      {
+                        "blocks": "#evercraft:treasure/leaf_blower",
+                        "speed": 500,
+                        "correct_for_drops": true
+                      }
+                    ],
+                    "default_mining_speed": 1,
+                    "damage_per_block": 1
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "functions": []
+  }

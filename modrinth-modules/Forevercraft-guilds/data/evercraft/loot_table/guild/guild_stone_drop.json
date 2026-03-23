@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lodestone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": {"text": "Guild Stone", "color": "dark_purple", "bold": true, "italic": false},
+                "minecraft:lore": [
+                  {"text": "Place to create your guild's gathering point.", "color": "gray", "italic": false},
+                  {"text": "Right-click to access guild management.", "color": "gray", "italic": false},
+                  {"text": "Claims a 64x64 guild zone.", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {"guild_stone": true, "evercraft_item": true},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Trial Shield",
+                "italic": true
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "A lightweight shield designed for agility.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ocean Shield (Weak)",
+                  "color": "dark_aqua",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Tank Class",
+                  "color": "#5B9BD5",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": "\u25c6 Resistance I ",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "(Mainhand)",
+                      "color": "dark_gray"
+                    }
+                  ]
+                },
+                {
+                  "text": "\u25c6 Taunt & Shield Bash",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Knight Class",
+                  "color": "#FFD700",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": "\u25c6 Challenger's Resolve ",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "(Offhand Shift+Use)",
+                      "color": "dark_gray"
+                    }
+                  ]
+                },
+                {
+                  "text": "  Absorption II for 6s",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": {
+                  "type": "minecraft:uniform",
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "trial_shield",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.075,
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "trial_shield_armor",
+                  "attribute": "minecraft:armor",
+                  "amount": -1,
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "evercraft:shield_knockback",
+                  "attribute": "minecraft:attack_knockback",
+                  "amount": 0.3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "weapon": "trial_shield",
+                  "tier": "weak",
+                  "biome": "ocean",
+                  "tank": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

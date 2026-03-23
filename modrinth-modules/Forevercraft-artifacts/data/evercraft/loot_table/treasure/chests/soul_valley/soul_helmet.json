@@ -1,0 +1,3392 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Wither Helmet",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Soul Sand Valley",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Gains Resistance II when the",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "wearer has 10 health or below.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "dyed_color"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "soul_helmet",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "soul_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 10
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

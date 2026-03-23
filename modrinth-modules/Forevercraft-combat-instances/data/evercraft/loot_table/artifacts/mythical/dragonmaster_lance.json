@@ -1,0 +1,157 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_spear",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Dragonslayer Lance",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "A lance that pierces through scales, stone, and sky alike.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Beastlord Class",
+                    "color": "#2ECC71",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Aura: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Strength to nearby pets",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Warp Strike: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Pets teleport to enemies",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Rally Cry: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Shift+Use — buff all pets",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Journey (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Fortune's Favor — +2 Dream Rate",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Beastlord: Speed I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Healer: Resistance I",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Dragon Avatar — Str III + Fire Res",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Berserker: +4 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Dancer: +30% Attack Speed",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+14 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "dragonmaster_lance",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "artifact_set": "journey",
+                  "ability": "dragon_pierce",
+                  "beastlord": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 14.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragonmaster_lance_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.9,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragonmaster_lance_speed"
+                  },
+                  {
+                    "type": "minecraft:entity_interaction_range",
+                    "amount": 1.5,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:dragonmaster_lance_reach"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

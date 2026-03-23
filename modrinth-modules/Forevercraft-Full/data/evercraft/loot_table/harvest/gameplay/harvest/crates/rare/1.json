@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:harvest/crate_contents/rare/1"
+                },
+                "minecraft:item_name": {
+                  "text": "Rare Harvest Crate",
+                  "bold": true,
+                  "color": "aqua"
+                },
+                "minecraft:custom_data": {
+                  "hc_rarity": "rare",
+                  "hc_stat": false
+                },
+                "minecraft:max_stack_size": 64,
+                "minecraft:custom_name": {
+                  "text": "Rare Harvest Crate",
+                  "bold": true,
+                  "color": "aqua"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Nature's generous gift.",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

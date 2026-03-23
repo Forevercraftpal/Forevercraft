@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:book",
+          "predicates": {
+            "minecraft:custom_data": "{healer:true,healer_id:\"tome\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/healer/use/tome"
+  }
+}

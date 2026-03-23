@@ -1,0 +1,32 @@
+# Help Topic: Artifacts
+# Run as the player (@s = player)
+
+playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.5 1.0
+
+tellraw @s [{"text":"\n"},{"text":"═══════════════════════════════════","color":"light_purple"}]
+tellraw @s [{"text":"  "},{"text":"\u2666 Artifacts","color":"light_purple","bold":true}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"light_purple"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  "},{"text":"334 unique artifacts","color":"light_purple"},{"text":" are waiting to be","color":"white"}]
+tellraw @s [{"text":"  found — weapons, armor sets, accessories,","color":"white"}]
+tellraw @s [{"text":"  rings, tools, and more. They drop from crates,","color":"white"}]
+tellraw @s [{"text":"  structures, and bosses across 6 tiers. Some","color":"white"}]
+tellraw @s [{"text":"  have on-hit abilities like lifesteal, lightning","color":"white"}]
+tellraw @s [{"text":"  strikes, or freeze. Others are full armor sets","color":"white"}]
+tellraw @s [{"text":"  with 2-piece and 4-piece bonuses — Mythical","color":"white"}]
+tellraw @s [{"text":"  sets even give +0.5 DR per piece!","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  ","color":"gray"},{"text":"Constellations","color":"gold","bold":true},{"text":" are themed groups of 10","color":"gray"}]
+tellraw @s [{"text":"  artifacts. Collect a full set and unlock a","color":"gray"}]
+tellraw @s [{"text":"  permanent +0.25 DR bonus. All 10 done? That's","color":"gray"}]
+tellraw @s [{"text":"  +2.5 Dream Rate forever. Worth the hunt.","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Your gear also ","color":"gray"},{"text":"ages","color":"dark_aqua"},{"text":" — the Patina system","color":"gray"}]
+tellraw @s [{"text":"  tracks how long you've used each artifact.","color":"gray"}]
+tellraw @s [{"text":"  After 72 hours of real playtime it reaches","color":"gray"}]
+tellraw @s [{"text":"  Legendary status with bonus lore and a 2%","color":"gray"}]
+tellraw @s [{"text":"  stat nudge. There are also 19 accessories,","color":"gray"}]
+tellraw @s [{"text":"  13 rings, 12 healer artifacts, and a Graviton","color":"gray"}]
+tellraw @s [{"text":"  Core. Check the Codex!","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"light_purple"}]

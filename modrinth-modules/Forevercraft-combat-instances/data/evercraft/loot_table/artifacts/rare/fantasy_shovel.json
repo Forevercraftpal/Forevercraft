@@ -1,0 +1,104 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Fantasy Shovel",
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {
+                    "text": "Rare Artifact",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "More art than tool,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "it slices through earth like butter.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Passive: ",
+                    "color": "white",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "Superior digging speed",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Craft Class: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [{"text": "Terrawarp", "color": "#C2B280", "bold": true}]
+                  },
+                  "",
+                  {
+                    "text": "+3 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "fantasy_shovel",
+                  "is_artifact": true,
+                  "tier": "rare",
+                  "craft_class": 4
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:mining_efficiency",
+                    "amount": 12,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:fantasy_shovel_efficiency"
+                  },
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:fantasy_shovel_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -3.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:fantasy_shovel_speed"
+                  }
+                ],
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

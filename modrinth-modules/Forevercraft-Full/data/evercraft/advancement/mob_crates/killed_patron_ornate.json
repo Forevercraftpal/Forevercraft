@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"ec.patron\",\"ec.patron.ornate\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:mob_crates/drop/patron_ornate"
+  }
+}

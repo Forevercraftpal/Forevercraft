@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 50},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/miners_might", "weight": 5},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/deepslate_elixir", "weight": 20},
+        {"type": "minecraft:loot_table", "value": "evercraft:treasure/potions/dreams_mythical", "weight": 25}
+      ]
+    }
+  ]
+}

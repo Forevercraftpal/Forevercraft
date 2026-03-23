@@ -1,0 +1,19 @@
+{
+  "parent": "evercraft:dreaming_realm/dreamwalker",
+  "display": {
+    "icon": {"id": "minecraft:book"},
+    "title": {"text": "Dream Collector", "color": "#9B59B6"},
+    "description": {"text": "Discover all 5 Dream Lore pieces in the Lore Chamber"},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:quests/advancement_rewards/grant_uncommon"
+  }
+}

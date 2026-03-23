@@ -20,7 +20,7 @@ export default function Privacy() {
             It runs entirely within your Minecraft world on your own computer or server.
           </p>
           <p>
-            Our website (forevercraft.pages.dev) may collect basic, anonymous usage analytics through
+            Our website (forevercraft.co) may collect basic, anonymous usage analytics through
             Cloudflare's built-in analytics to help us understand how visitors use the site. This includes
             page views, country of origin, and browser type. No cookies are used for tracking, and no
             personally identifiable information is collected through the website.

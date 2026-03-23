@@ -1,0 +1,14 @@
+{
+  "parent": "evercraft:gacha/fortune_favors",
+  "display": {
+    "icon": {"id": "minecraft:netherite_ingot"},
+    "title": {"text": "Eternal Wisher", "color": "gold"},
+    "description": {"text": "500 pulls! True dedication!"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  }
+}

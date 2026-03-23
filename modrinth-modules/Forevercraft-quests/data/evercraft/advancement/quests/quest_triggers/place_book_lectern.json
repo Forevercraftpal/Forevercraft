@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "place_book": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:lectern"
+          }
+        ],
+        "item": {
+          "items": "minecraft:written_book"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:quests/board/detect_placement"
+  }
+}

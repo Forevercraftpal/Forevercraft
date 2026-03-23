@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "player",
+      "looking_at": {
+        "type": "#evercraft:treasure/targets",
+        "distance": {
+          "absolute": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "effects": {
+          "minecraft:resistance": {}
+        }
+      }
+    }
+  }
+}

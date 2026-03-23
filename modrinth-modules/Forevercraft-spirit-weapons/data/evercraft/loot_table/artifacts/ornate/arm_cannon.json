@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Power Bow",
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Ornate Artifact", "color": "dark_purple", "italic": false},
+                  "",
+                  {"text": "Ancient technology that fires", "color": "gray", "italic": true},
+                  {"text": "concentrated energy bolts.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Archer Class", "color": "#32CD32", "bold": true, "italic": false},
+                  {"text": "\u25c6 Overcharge: ", "color": "gray", "italic": false, "extra": [{"text": "Deadshot \u2014 Instant Damage II + Slow III", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Disengage: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Draw \u2014 backward leap", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "archer_arm_cannon",
+                  "is_artifact": true,
+                  "tier": "ornate",
+                  "archer": true,
+                  "archer_id": "arm_cannon"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

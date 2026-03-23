@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_shelf",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Pantry", "color": "gold", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Portable Cooking Storage", "color": "gray", "italic": false},
+                  {"text": "27 Slots", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "Store ingredients, meals, and", "color": "gray", "italic": true},
+                  {"text": "utensils for easy access.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Auto-pulls ingredients when cooking!", "color": "green", "italic": true},
+                  "",
+                  {"text": "Right-Click: ", "color": "white", "italic": false, "extra": [{"text": "Open Pantry", "color": "gold"}]},
+                  {"text": "Slots: ", "color": "white", "italic": false, "extra": [{"text": "27", "color": "aqua"}]}
+                ],
+                "minecraft:custom_data": {
+                  "pantry": true,
+                  "pantry_id": 0,
+                  "evercraft_item": true
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "rare",
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "sound": "intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 1,
+                  "cooldown_group": "evercraft:pantry"
+                },
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

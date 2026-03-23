@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block"
+    }
+  },
+  "rewards": {
+    "function": "evercraft:advantage/track/on_place_block"
+  }
+}

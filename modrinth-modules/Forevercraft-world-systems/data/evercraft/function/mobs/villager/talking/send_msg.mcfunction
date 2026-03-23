@@ -1,0 +1,2 @@
+$execute if data storage eden:settings bestiary.villager_settings{talking:"actionbar"} run title @s actionbar [{bold:false,color:"dark_gray",italic:false,text:"- "},{bold:false,color:"white",italic:false,text:"$(message)"},{bold:false,color:"dark_gray",italic:false,text:" -"}]
+$execute if data storage eden:settings bestiary.villager_settings{talking:"chat"} run tellraw @s [{bold:false,color:"white",italic:false,text:"▊ "},{bold:false,color:"white",italic:false,text:"Villager: $(message)"}]

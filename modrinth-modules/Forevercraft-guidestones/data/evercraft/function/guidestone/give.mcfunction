@@ -1,0 +1,4 @@
+# Give the player a Guidestone item
+# A custom lodestone that acts as a placeable fast-travel waypoint
+
+give @s lodestone[custom_name={"text":"Guidestone","color":"#E0B0FF","italic":false,"bold":true},lore=[{"text":"Exquisite Relic","color":"light_purple","italic":false},"",{"text":"An anchor between worlds, humming with","color":"gray","italic":true},{"text":"the paths of those who came before.","color":"gray","italic":true},"",{"text":"Place: ","color":"white","italic":false,"extra":[{"text":"Create a waypoint in the network","color":"#E0B0FF"}]},{"text":"Interact: ","color":"white","italic":false,"extra":[{"text":"Open the teleport menu","color":"#E0B0FF"}]},"",{"text":"\"All roads lead somewhere worth going.\"","color":"dark_gray","italic":true}],custom_data={guidestone:1b,evercraft_item:1b,gs_color:"amethyst"},enchantment_glint_override=true,rarity=epic] 1

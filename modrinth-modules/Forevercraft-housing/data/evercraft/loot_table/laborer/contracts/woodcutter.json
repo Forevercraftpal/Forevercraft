@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": {"text": "Woodcutter Contract", "color": "gold", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Laborer Contract", "color": "yellow", "italic": false},
+                  "",
+                  {"text": "A binding agreement to employ", "color": "gray", "italic": true},
+                  {"text": "a skilled woodcutter at your home.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Use: ", "color": "white", "italic": false, "extra": [{"text": "Right-click while in your home zone", "color": "green"}]},
+                  {"text": "Requires: ", "color": "white", "italic": false, "extra": [{"text": "Artisan Rank 20+", "color": "aqua"}]},
+                  "",
+                  {"text": "Returns logs, rare wood, and", "color": "dark_gray", "italic": false},
+                  {"text": "exotic saplings from expeditions.", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "laborer_contract": true,
+                  "laborer_type": "woodcutter",
+                  "laborer_type_id": 4
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

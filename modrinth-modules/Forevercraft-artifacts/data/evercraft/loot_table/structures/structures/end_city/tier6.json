@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/mythical/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/end_city_treasure"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 5, "max": 8},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:shulker_shell", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 12, "max": 20}}]},
+        {"type": "minecraft:item", "name": "minecraft:dragon_breath", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 8, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_block", "weight": 8},
+        {"type": "minecraft:item", "name": "minecraft:spire_armor_trim_smithing_template", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:elytra", "weight": 20, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_upgrade_smithing_template", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:dragon_egg", "weight": 5},
+        {"type": "minecraft:item", "name": "minecraft:nether_star", "weight": 8}
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 75},
+        {"type": "minecraft:loot_table", "value": "evercraft:artifacts/mythical/main", "weight": 25}
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 95},
+        {"type": "minecraft:loot_table", "value": "evercraft:items/crystal_of_dreams", "weight": 5}
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "END RUNE - end city exclusive (5%)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 95
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/zephyr",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

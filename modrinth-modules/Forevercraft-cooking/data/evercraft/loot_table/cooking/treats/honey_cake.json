@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wheat_seeds",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "minecraft:cookie",
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:custom_name": {"text": "Honey Cake", "color": "yellow", "italic": false, "bold": true},
+                                "minecraft:lore": [
+                                    {"text": "A sweet cake that companions adore.", "color": "gray", "italic": false},
+                                    "",
+                                    {"text": "Hold near a home companion to lure it!", "color": "aqua", "italic": false},
+                                    {"text": "Right-click your companion to feed.", "color": "yellow", "italic": false},
+                                    {"text": "+150 Relationship Points", "color": "green", "italic": false}
+                                ],
+                                "minecraft:custom_data": {
+                                    "CompanionTreat": true,
+                                    "treat_tier": 3
+                                },
+                                "minecraft:rarity": "rare"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

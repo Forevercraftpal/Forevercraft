@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:villager",
+          "components": {
+            "minecraft:villager/variant": "minecraft:snow"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:mobs/villager/talking/trigger/snow"
+  }
+}

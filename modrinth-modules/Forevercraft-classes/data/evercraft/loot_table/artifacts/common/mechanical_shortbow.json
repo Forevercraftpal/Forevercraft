@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Mechanical Shortbow",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {"text": "Common Artifact", "color": "white", "italic": false},
+                  "",
+                  {"text": "Compact and precise, built with", "color": "gray", "italic": true},
+                  {"text": "gears that amplify each shot.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Precision Bolt: ", "color": "aqua", "italic": false, "extra": [{"text": "+2 bonus damage on hit", "color": "white"}]},
+                  "",
+                  {"text": "Archer Class", "color": "#32CD32", "bold": true, "italic": false},
+                  {"text": "\u25c6 Overcharge: ", "color": "gray", "italic": false, "extra": [{"text": "Steady \u2014 Resistance II + Slowness III (4s)", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Disengage: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Draw \u2014 backward leap", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "archer_mechanical_shortbow",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "archer": true,
+                  "archer_id": "mechanical_shortbow",
+                  "ability": "precision_bolt"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

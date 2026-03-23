@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Hunting Bow",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {"text": "Common Artifact", "color": "white", "italic": false},
+                  "",
+                  {"text": "A hunter's reliable companion,", "color": "gray", "italic": true},
+                  {"text": "well-worn from years of use.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Tracker's Mark: ", "color": "aqua", "italic": false, "extra": [{"text": "Glowing (5s) on hit", "color": "white"}]},
+                  "",
+                  {"text": "Archer Class", "color": "#32CD32", "bold": true, "italic": false},
+                  {"text": "\u25c6 Overcharge: ", "color": "gray", "italic": false, "extra": [{"text": "Thorn \u2014 Wither I (4s)", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Disengage: ", "color": "gray", "italic": false, "extra": [{"text": "Shift+Draw \u2014 backward leap", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "archer_hunting_bow",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "archer": true,
+                  "archer_id": "hunting_bow",
+                  "ability": "trackers_mark"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

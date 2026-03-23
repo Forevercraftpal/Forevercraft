@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "kill_furia": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"ec.furia.greater\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:mobs/furia/drop/greater"
+  }
+}

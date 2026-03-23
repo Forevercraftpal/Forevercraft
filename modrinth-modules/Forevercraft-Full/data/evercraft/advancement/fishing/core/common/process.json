@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_nugget",
+            "predicates": {
+              "minecraft:custom_data": "{fc_rarity:\"common\",fc_stat:1b}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:fishing/ref/advancement/common/process"
+  }
+}

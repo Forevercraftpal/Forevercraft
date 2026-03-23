@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:effects_changed",
+        "conditions": {
+          "effects": {
+            "minecraft:unluck": {
+              "amplifier": 193
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "evercraft:treasure/mechanics/small/apply"
+    }
+  }
+  

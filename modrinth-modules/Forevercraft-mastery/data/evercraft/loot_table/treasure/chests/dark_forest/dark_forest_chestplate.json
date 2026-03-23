@@ -1,0 +1,1807 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "dark_forest_chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Shadow Chestplate",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Dark Forest",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Axes deal 25% more damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "dark_forest_chestplate",
+                  "ec": "armor"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:beacon",
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": {"text": "Ancient Netherite Core", "color": "dark_purple", "bold": true, "italic": true},
+                "minecraft:lore": [
+                  {"text": "An artifact of immense power", "color": "gray", "italic": false},
+                  {"text": "forged in the depths of the Nether.", "color": "gray", "italic": false},
+                  "",
+                  {"text": "Unawakened", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "Sneak + hold to consume netherite blocks:", "color": "gold", "italic": false},
+                  {"text": "  Level 1: 9 blocks", "color": "white", "italic": false},
+                  {"text": "  Level 2: 34 blocks", "color": "white", "italic": false},
+                  {"text": "  Level 3: 100 blocks", "color": "white", "italic": false},
+                  {"text": "  Level 4: 244 blocks", "color": "white", "italic": false},
+                  "",
+                  {"text": "Place in Ender Chest for effects", "color": "dark_purple", "italic": true}
+                ],
+                "minecraft:custom_data": {"ancient_netherite_core": 1, "level": 0, "is_artifact": 1},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

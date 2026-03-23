@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_beef",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Windstrider's Feast","color":"dark_purple","italic":false},
+                "minecraft:lore": [
+                  {"text":"Feast Wayfarer Meal","color":"dark_purple","italic":false},
+                  "",
+                  {"text":"Grants Speed II + Jump Boost I for 180s","color":"gray","italic":false},
+                  {"text":"+0.5 Dream Rate (Well-Fed)","color":"gold","italic":false}
+                ],
+                "minecraft:food": {"nutrition":10,"saturation":14.0,"can_always_eat":true},
+                "minecraft:consumable": {"consume_seconds":1.6,"animation":"eat","sound":"minecraft:entity.generic.eat","has_consume_particles":true},
+                "minecraft:custom_data": {"ec_meal":true,"meal_id":"windstriders_feast","meal_cat":"wayfarer","meal_tier":"feast"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

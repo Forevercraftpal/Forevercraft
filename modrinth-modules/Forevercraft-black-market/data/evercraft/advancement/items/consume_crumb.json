@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume_crumb": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{crumb_of_dreams:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/consume_crumb_of_dreams"
+  }
+}

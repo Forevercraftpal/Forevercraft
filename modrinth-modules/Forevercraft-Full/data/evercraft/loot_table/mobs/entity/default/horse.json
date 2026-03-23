@@ -1,0 +1,374 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            }
+          ],
+          "name": "minecraft:leather"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.horse.ambient",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGIwM2ViMTNkNzk4ZjM4MjM3MDMzNTdhYTZlOGZkMjlkZmYzMDEwODcxYjRlNTRmOTI4ZTI3MGQ3NDEwOTY5YiJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.horse"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:horse/variant": "white"
+                    }
+                  }
+                },
+                {
+                  "condition": "killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": {
+                    "type": "minecraft:storage",
+                    "storage": "eden:settings",
+                    "path": "bestiary.horse.mobhead"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.horse.ambient",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk5MDgyMTk1MWZkOWFiOTMwMWFlYmY1ZDc2YTliNjBmMTVlYmY2MTllMWM5ZThkNjY4OTE5ZDM5NGQ5YTkzMyJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.horse"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:horse/variant": "creamy"
+                    }
+                  }
+                },
+                {
+                  "condition": "killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": {
+                    "type": "minecraft:storage",
+                    "storage": "eden:settings",
+                    "path": "bestiary.horse.mobhead"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.horse.ambient",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTk5NjM5OWZmZjljYmNmYjdiYTY3N2RkMGMyZDEwNDIyOWQxY2MyMzA3YTZmMDc1YTg4MmRhNDY5NGVmODBhZSJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.horse"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:horse/variant": "chestnut"
+                    }
+                  }
+                },
+                {
+                  "condition": "killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": {
+                    "type": "minecraft:storage",
+                    "storage": "eden:settings",
+                    "path": "bestiary.horse.mobhead"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.horse.ambient",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk3YTNjMjBkYTVlZWEwMWM0MTMyYzNmZjQ1ZWE4MGEzNjRhZDQyZjc0ZGJmNzk3Y2NhNGY4YWIyZDQyYWRiMyJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.horse"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:horse/variant": "brown"
+                    }
+                  }
+                },
+                {
+                  "condition": "killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": {
+                    "type": "minecraft:storage",
+                    "storage": "eden:settings",
+                    "path": "bestiary.horse.mobhead"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.horse.ambient",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU4OGQ0MjNjMTdjZjZhYWJkM2YxMjU0MjRlOTE4NWE5MzZmNDNlYjdiM2FjMDhjODEzMmQ0Y2IyYTBiYmI3MyJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.horse"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:horse/variant": "black"
+                    }
+                  }
+                },
+                {
+                  "condition": "killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": {
+                    "type": "minecraft:storage",
+                    "storage": "eden:settings",
+                    "path": "bestiary.horse.mobhead"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.horse.ambient",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRhYWJkNjg2NDBhODMzYmQzMGU0N2U4YmI5YTNmMmZjYjE0ZDdlMmYyOGMzOGFmMGJmNTZjZWRkYjhmYTU5In19fQ=="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.horse"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:horse/variant": "gray"
+                    }
+                  }
+                },
+                {
+                  "condition": "killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": {
+                    "type": "minecraft:storage",
+                    "storage": "eden:settings",
+                    "path": "bestiary.horse.mobhead"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.horse.ambient",
+                    "minecraft:profile": {
+                      "properties": [
+                        {
+                          "name": "textures",
+                          "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVjZTE5NGE1NDMxNWFjYzNiZjlkYjdlZGY2ZTdkYTI5ZjQ5NTI0YjFiOGFmMGVmOWU0YWMzZGYyMjgwYjBkOCJ9fX0="
+                        }
+                      ]
+                    },
+                    "minecraft:item_name": {
+                      "translate": "entity.minecraft.horse"
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:horse/variant": "dark_brown"
+                    }
+                  }
+                },
+                {
+                  "condition": "killed_by_player"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": {
+                    "type": "minecraft:storage",
+                    "storage": "eden:settings",
+                    "path": "bestiary.horse.mobhead"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:mob_crates/drop/regular"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    }
+  ]
+}

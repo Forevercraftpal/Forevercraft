@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Universal Rune Pool — 8 non-biome-restricted runes (equal chance)",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/emberheart",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/verdant",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/quicksilver",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/obsidian",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/prism",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/tempest",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/hearthstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/arcanum",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

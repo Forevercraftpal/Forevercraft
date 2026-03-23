@@ -1,0 +1,55 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "predicates": {
+  "minecraft:custom_data": {"ec": "armor"}
+      }            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "predicates": {
+  "minecraft:custom_data": {"ec": "armor"}
+      }            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "predicates": {
+  "minecraft:custom_data": {"ec": "armor"}
+      }            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "feet": {
+              "predicates": {
+  "minecraft:custom_data": {"ec": "armor"}
+      }            }
+          }
+        }
+      }
+    ]
+  }
+]

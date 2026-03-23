@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/common/1",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/uncommon/1",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/rare/1",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/ornate/1",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:fishing/gameplay/fishing/crates/exquisite/1",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

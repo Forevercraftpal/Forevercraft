@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:popped_chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Chorus Dreaming Fruit","color":"light_purple","italic":false,"bold":true},
+                "minecraft:lore": [
+                  {"text":"One-Time Consumable","color":"yellow","italic":false},
+                  "",
+                  {"text":"A chorus fruit crystallized by","color":"gray","italic":true},
+                  {"text":"the void's dreaming whispers.","color":"gray","italic":true},
+                  "",
+                  {"text":"Right-click to consume:","color":"white","italic":false},
+                  {"text":"Permanently gain +1 Dream Rate","color":"aqua","italic":false},
+                  "",
+                  {"text":"\"The End remembers all dreams.\"","color":"dark_gray","italic":true}
+                ],
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "chorus_dreaming_fruit": true,
+                  "consumable": true,
+                  "effect": "permanent_luck"
+                },
+                "minecraft:consumable": {"consume_seconds": 1, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

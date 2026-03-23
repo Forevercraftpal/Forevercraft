@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": {
+          "min": 1
+        },
+        "item": {
+          "items": [
+            "minecraft:leather_chestplate",
+            "minecraft:chainmail_chestplate",
+            "minecraft:iron_chestplate",
+            "minecraft:golden_chestplate",
+            "minecraft:diamond_chestplate",
+            "minecraft:netherite_chestplate",
+            "minecraft:elytra"
+          ]
+        }
+      }
+    }
+  }
+}

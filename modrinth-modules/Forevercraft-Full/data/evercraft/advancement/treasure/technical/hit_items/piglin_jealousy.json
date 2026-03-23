@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ec.absorb_steal\"]}",
+          "flags": {}
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "evercraft:treasure/player_attack",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "entity": {
+          "effects": {
+            "minecraft:absorption": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/technical/hit_items/piglin_jealousy"
+  }
+}

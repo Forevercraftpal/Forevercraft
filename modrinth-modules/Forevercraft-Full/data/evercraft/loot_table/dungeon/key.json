@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_key",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Dungeon Key", "color": "dark_purple", "italic": false},
+                "minecraft:custom_data": {"dungeon_key": true},
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:lore": [
+                  {"text": "Use to begin a dungeon challenge", "color": "gray", "italic": false},
+                  {"text": "Survive 5 waves of enemies!", "color": "dark_gray", "italic": false}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

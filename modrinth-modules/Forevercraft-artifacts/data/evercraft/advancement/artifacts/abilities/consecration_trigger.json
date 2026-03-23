@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "kill_undead_with_cudgel": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{ability:\"undead_slayer\"}"
+              }
+            }
+          }
+        },
+        "entity": {
+          "type": "#minecraft:undead"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/consecration"
+  }
+}

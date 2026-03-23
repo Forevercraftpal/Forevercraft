@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "cast_rod": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "rod": {
+          "predicates": {
+            "minecraft:custom_data": "{trim_abilities_eye_teleport:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/full_set/eye/on_use"
+  }
+}

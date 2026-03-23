@@ -1,0 +1,33 @@
+# Help Topic: Dungeons & Bosses
+# Run as the player (@s = player)
+
+playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.5 1.0
+
+tellraw @s [{"text":"\n"},{"text":"═══════════════════════════════════","color":"red"}]
+tellraw @s [{"text":"  "},{"text":"\u2620 Dungeons & Bosses","color":"red","bold":true}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"red"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Dungeons are 5-wave combat gauntlets with","color":"white"}]
+tellraw @s [{"text":"  ","color":"white"},{"text":"16 unique themes","color":"red"},{"text":". Waves escalate from light","color":"white"}]
+tellraw @s [{"text":"  scouts to diamond-clad vanguards, and Wave 5","color":"white"}]
+tellraw @s [{"text":"  is always a named boss with elite guards. Each","color":"white"}]
+tellraw @s [{"text":"  run rolls a random ","color":"white"},{"text":"modifier","color":"dark_purple"},{"text":" — Relentless,","color":"white"}]
+tellraw @s [{"text":"  Fortified, Shrouded, Volatile, Undying, or","color":"white"}]
+tellraw @s [{"text":"  Frenzied — harder modifiers mean better loot.","color":"white"}]
+tellraw @s [{"text":"  There's a 7-day lockout between runs.","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Difficulty scales with Dream Rate — under 7 DR","color":"gray"}]
+tellraw @s [{"text":"  is Easy, 30+ is Brutal (+100% HP, +50% damage).","color":"gray"}]
+tellraw @s [{"text":"  There's also a Village Defense variant.","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  ","color":"gray"},{"text":"World Bosses","color":"gold","bold":true},{"text":" are separate — they spawn at","color":"gray"}]
+tellraw @s [{"text":"  random near players in the world, but can also","color":"gray"}]
+tellraw @s [{"text":"  spawn via a special boss totem. They have phases","color":"gray"}]
+tellraw @s [{"text":"  and special abilities. They drop 11 exclusive boss","color":"gray"}]
+tellraw @s [{"text":"  artifacts — when all 11 are collected the player","color":"gray"}]
+tellraw @s [{"text":"  earns the ","color":"gray"},{"text":"Hero's Satchel","color":"gold"},{"text":", which allows all boss","color":"gray"}]
+tellraw @s [{"text":"  artifacts to be stored inside to receive their","color":"gray"}]
+tellraw @s [{"text":"  powerful bonuses. Kills are announced realm-wide.","color":"gray"}]
+tellraw @s [{"text":"  Bring a party.","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"red"}]

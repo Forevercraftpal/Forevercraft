@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "offhand": {
+        "predicates": {
+  "minecraft:custom_data": {"weapon": "flower_veil"}
+      }      }
+    }
+  }
+}

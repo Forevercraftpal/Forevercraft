@@ -1,0 +1,151 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_name": "Nameless Blade",
+                "minecraft:lore": [
+                  {
+                    "text": "Mythical Artifact",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Once wielded by a mighty Admin, now corrupted by darkness.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Rogue Class",
+                    "color": "#9B59B6",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": "◆ Auto-Swing: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "4 dmg, 3 targets, 0.5s",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Shadow Strike: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "20% chance Invisibility (1s)",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "◆ Dual Wield: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "+30% swing speed",
+                        "color": "dark_gray"
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "text": "Set: Delver's (0/4)",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "5pc: Explorer's Fortune — +3 Dream Rate",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Rogue: +2 Attack Damage",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "6pc: Twilight Sovereign — Speed II + Night Vision",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "  ◇ Rogue: +2 Attack Damage + Luck II",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "+3 Damage",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "xara_sword",
+                  "is_artifact": true,
+                  "tier": "mythical",
+                  "rogue": true,
+                  "rogue_tier": 5,
+                  "artifact_set": "splendid"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:rogue_damage"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "amount": -3.4,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "id": "evercraft:rogue_speed"
+                  },
+                  {
+                    "type": "minecraft:movement_speed",
+                    "amount": 0.2,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand",
+                    "id": "evercraft:rogue_speed_boost"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 1,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

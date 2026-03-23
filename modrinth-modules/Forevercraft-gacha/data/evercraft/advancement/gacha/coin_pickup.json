@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "pickup": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:amethyst_shard",
+            "predicates": {
+              "minecraft:custom_data": "{forever_coin:true}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:gacha/coin/on_pickup"
+  }
+}

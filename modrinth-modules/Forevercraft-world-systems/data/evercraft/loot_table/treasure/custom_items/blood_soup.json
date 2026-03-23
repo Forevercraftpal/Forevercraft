@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:beetroot_soup",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Wart Soup",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:max_stack_size": 5,
+                  "minecraft:food": {
+                    "nutrition": 2,
+                    "saturation": 2,
+                    "can_always_eat": true
+                  },
+                  "minecraft:consumable": {"consume_seconds": 2, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                  "minecraft:lore": [
+                    {
+                      "text": "Gives Strength III for ",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": "20 seconds",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],                
+                  "minecraft:custom_data": "{food:\"durable\"}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

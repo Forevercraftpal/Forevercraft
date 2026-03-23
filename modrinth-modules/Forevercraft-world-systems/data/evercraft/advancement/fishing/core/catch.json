@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "caught": {
+          "type": "minecraft:item"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:fishing/ref/on_catch"
+  }
+}

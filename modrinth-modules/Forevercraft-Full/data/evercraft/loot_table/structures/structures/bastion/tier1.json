@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/common/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/bastion_treasure"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 1, "max": 2},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:gold_ingot", "weight": 35, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:gilded_blackstone", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:piglin_banner_pattern", "weight": 10},
+        {"type": "minecraft:item", "name": "minecraft:crossbow", "weight": 15, "functions": [{"function": "minecraft:set_damage", "damage": {"type": "minecraft:uniform", "min": 0.1, "max": 0.5}}]},
+        {"type": "minecraft:item", "name": "minecraft:spectral_arrow", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}]}
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "PIGLIN RUNE - bastion exclusive (5%)",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 95
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/runes/gilded",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

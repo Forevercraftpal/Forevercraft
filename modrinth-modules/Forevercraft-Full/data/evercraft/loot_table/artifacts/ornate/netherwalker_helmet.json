@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Star Shield Helmet",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Forged in the depths of the",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "Nether's hottest forges.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Netherwalker (0/7)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: Fire Resistance",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Lava Walking + Blaze Burst",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "+3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "netherwalker_helmet",
+                  "is_artifact": true,
+                  "artifact_set": "netherwalker",
+                  "tier": "ornate"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:burning_time",
+                    "amount": -0.5,
+                    "operation": "add_multiplied_total",
+                    "slot": "head",
+                    "id": "evercraft:artifact_burn"
+                  }
+                ],
+                "minecraft:damage_resistant": {
+                  "types": "#minecraft:is_fire"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

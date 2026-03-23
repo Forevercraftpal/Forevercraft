@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:fire_charge"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{weapon:\"ec.deto_mine\"}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:treasure/items/weapons/deto_mine/start_ray"
+  }
+}

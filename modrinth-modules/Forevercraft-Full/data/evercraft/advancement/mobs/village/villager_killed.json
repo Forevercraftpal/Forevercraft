@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:villager"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:mobs/village/death/player_kill"
+  }
+}

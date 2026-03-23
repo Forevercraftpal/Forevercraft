@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/uncommon/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/pillager_outpost"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 2, "max": 3},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:crossbow", "weight": 20, "functions": [{"function": "minecraft:enchant_with_levels", "levels": {"type": "minecraft:uniform", "min": 10, "max": 20}, "options": "#minecraft:on_random_loot"}]},
+        {"type": "minecraft:item", "name": "minecraft:emerald", "weight": 25, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]},
+        {"type": "minecraft:item", "name": "minecraft:sentry_armor_trim_smithing_template", "weight": 20},
+        {"type": "minecraft:item", "name": "minecraft:iron_axe", "weight": 18, "functions": [{"function": "minecraft:enchant_with_levels", "levels": {"type": "minecraft:uniform", "min": 10, "max": 20}, "options": "#minecraft:on_random_loot"}]},
+        {"type": "minecraft:item", "name": "minecraft:experience_bottle", "weight": 17, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}]}
+      ]
+    }
+  ]
+}

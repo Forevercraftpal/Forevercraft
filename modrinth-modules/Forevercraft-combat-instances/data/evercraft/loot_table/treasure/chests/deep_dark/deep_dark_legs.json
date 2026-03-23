@@ -1,0 +1,5486 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:swift_sneak": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 1,
+                  "max": 6
+                },
+                "minecraft:fire_protection": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 9999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": {
+                  "armor": "deep_dark_leggings",
+                  "ec": "armor"
+                },
+                "minecraft:custom_name": {
+                  "text": "Sculk Leggings",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Deep Dark",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deep Dark Leggings",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "While sneaking the user drains",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hunger to increase their attack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "damage and speed by 25%. Hunger",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "drains extremely fast in this mode. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:sneaking_speed",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "id": "deep_dark_leggings",
+                  "attribute": "minecraft:armor",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

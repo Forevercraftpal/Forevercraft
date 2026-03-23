@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Forge Crystal", "color": "green", "bold": true, "italic": false},
+                "minecraft:lore": [
+                  {"text": "Crystallized artisan mastery.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Hold a Spirit Tool in your offhand.", "color": "dark_green", "italic": true},
+                  {"text": "Right-click to infuse it with 25% power.", "color": "dark_green", "italic": true}
+                ],
+                "minecraft:custom_data": {
+                  "forge_crystal": true
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {"seconds": 3, "cooldown_group": "evercraft:forge_crystal"},
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

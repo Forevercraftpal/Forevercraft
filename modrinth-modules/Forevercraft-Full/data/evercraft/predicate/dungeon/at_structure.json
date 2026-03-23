@@ -1,0 +1,23 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:pillager_outpost"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:desert_pyramid"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:jungle_pyramid"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:monument"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:shipwreck"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:mansion"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:stronghold"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:fortress"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:bastion_remnant"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:end_city"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:trial_chambers"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:ancient_city"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:mineshaft"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:ocean_ruin_cold"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:ocean_ruin_warm"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:ruined_portal"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:igloo"]}},
+    {"condition": "minecraft:location_check", "predicate": {"structures": ["minecraft:swamp_hut"]}}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:lodestone"
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:lodestone"],
+              "predicates": {
+                "minecraft:custom_data": "{artificers_anvil:true}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:transmute/on_place"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:ominous_trial_key"],
+          "predicates": {
+            "minecraft:custom_data": "{house_key:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:housing/satchel/on_use"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "Dragonslayer Boots",
+                "minecraft:lore": [
+                  {
+                    "text": "Ornate Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Swift as a dragon's dive,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "silent as its shadow.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {
+                    "text": "Set: Dragonslayer (0/4)",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "2pc: +20% dragon damage",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "4pc: Fire immunity + Flight burst",
+                    "color": "dark_gray"
+                  },
+                  "",
+                  {
+                    "text": "+3 Armor",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "dragonslayer_boots",
+                  "is_artifact": true,
+                  "artifact_set": "dragonslayer",
+                  "tier": "ornate"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_armor"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_toughness"
+                  },
+                  {
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.15,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_knockback"
+                  },
+                  {
+                    "type": "minecraft:movement_speed",
+                    "amount": 0.02,
+                    "operation": "add_value",
+                    "slot": "feet",
+                    "id": "evercraft:artifact_speed"
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

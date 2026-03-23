@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Nether Ring",
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Ornate Artifact", "color": "dark_purple", "italic": false},
+                  "",
+                  {"text": "Forged in the depths of the Nether.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Effect: ", "color": "white", "italic": false, "extra": [{"text": "Resistance II", "color": "blue"}]}
+                ],
+                "minecraft:custom_data": {"artifact": "ring_nether", "is_artifact": true, "ring": true, "tier": "ornate"},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "evercraft:trim/root",
+  "criteria": {
+    "fall_blocks": {
+      "trigger": "minecraft:fall_from_height",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:['full_set_spire']}"
+        },
+        "distance": {
+          "absolute": {
+            "min": 10
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:trim/full_set/spire/fall_blocks"
+  }
+}

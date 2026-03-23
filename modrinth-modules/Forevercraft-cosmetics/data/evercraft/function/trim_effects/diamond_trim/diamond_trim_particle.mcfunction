@@ -1,0 +1,5 @@
+# Diamond particle
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/diamond_trim/diamond_head unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:dolphin ~ ~2 ~ .2 .03 .2 5 2 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/diamond_trim/diamond_chest unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:dolphin ~ ~1.1 ~ .2 .1 .2 5 2 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/diamond_trim/diamond_legs unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:dolphin ~ ~.6 ~ .2 .2 .2 5 2 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/diamond_trim/diamond_feet unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:dolphin ~ ~.15 ~ .2 .1 .2 5 2 normal

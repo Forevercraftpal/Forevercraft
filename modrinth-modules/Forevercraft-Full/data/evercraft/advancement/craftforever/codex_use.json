@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "use_codex": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:book",
+          "predicates": {
+            "minecraft:custom_data": "{craftforever_codex:1b}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [["use_codex"]],
+  "rewards": {
+    "function": "evercraft:craftforever/codex/on_use"
+  }
+}

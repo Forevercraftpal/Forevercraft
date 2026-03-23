@@ -1,0 +1,17 @@
+# Lore Roll: Pick a universal set based on dimension
+
+# Copy appropriate pool
+execute if score @s ec.lore_dim matches 0 run data modify storage evercraft:lore temp.pool set from storage evercraft:lore pools.ow_universal
+execute if score @s ec.lore_dim matches 1 run data modify storage evercraft:lore temp.pool set from storage evercraft:lore pools.nether_universal
+execute if score @s ec.lore_dim matches 2 run data modify storage evercraft:lore temp.pool set from storage evercraft:lore pools.end_universal
+
+execute store result score #lore_pool_size ec.temp run data get storage evercraft:lore temp.pool
+execute if score #lore_pool_size ec.temp matches ..0 run return 0
+
+execute store result score #lore_pick ec.temp run random value 0..0
+execute if score #lore_pool_size ec.temp matches 2 store result score #lore_pick ec.temp run random value 0..1
+execute if score #lore_pool_size ec.temp matches 3.. store result score #lore_pick ec.temp run random value 0..2
+execute if score #lore_pool_size ec.temp matches 4.. run function evercraft:lore/roll/pick_random_large
+
+execute store result storage evercraft:lore temp.pick_idx int 1 run scoreboard players get #lore_pick ec.temp
+function evercraft:lore/roll/read_pool_entry with storage evercraft:lore temp

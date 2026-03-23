@@ -1,0 +1,31 @@
+# Help Topic: Housing
+# Run as the player (@s = player)
+
+playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.5 1.0
+
+tellraw @s [{"text":"\n"},{"text":"═══════════════════════════════════","color":"white"}]
+tellraw @s [{"text":"  "},{"text":"\u2302 Housing","color":"white","bold":true}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Place a ","color":"white"},{"text":"Hearthstone","color":"gold"},{"text":" and you've","color":"white"}]
+tellraw @s [{"text":"  claimed a home. Everything within 64 blocks","color":"white"}]
+tellraw @s [{"text":"  becomes your zone — 3x3 chunks stay chunk loaded","color":"white"}]
+tellraw @s [{"text":"  and it auto-registers as a Guidestone so you","color":"white"}]
+tellraw @s [{"text":"  can always teleport back. Right-click it for","color":"white"}]
+tellraw @s [{"text":"  the home GUI.","color":"white"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  Upgrade through ","color":"gray"},{"text":"5 tiers","color":"yellow","bold":true},{"text":" using netherite ingots:","color":"gray"}]
+tellraw @s [{"text":"  Tier 1 gives Regen. Tier 3 unlocks the","color":"gray"}]
+tellraw @s [{"text":"  ","color":"gray"},{"text":"Garden","color":"green"},{"text":" (speeds up crop growth within your house","color":"gray"}]
+tellraw @s [{"text":"  boundary!), and Tier 5 grants Resistance I with doubled","color":"gray"}]
+tellraw @s [{"text":"  garden growth.","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"  ","color":"gray"},{"text":"Quick Stash","color":"aqua","bold":true},{"text":" lets you label storage containers","color":"gray"}]
+tellraw @s [{"text":"  with various categories and deposit with one button!","color":"gray"}]
+tellraw @s [{"text":"  Decorate to build your ","color":"gray"},{"text":"Comfort Score","color":"light_purple"},{"text":" —","color":"gray"}]
+tellraw @s [{"text":"  milestones at 100, 500, 1000, 2500, and 5000.","color":"gray"}]
+tellraw @s [{"text":"  If you upgrade your house and comfort score to","color":"gray"}]
+tellraw @s [{"text":"  a certain point there may be a special item to","color":"gray"}]
+tellraw @s [{"text":"  help with your storage problems...","color":"gray"}]
+tellraw @s [{"text":""}]
+tellraw @s [{"text":"═══════════════════════════════════","color":"white"}]

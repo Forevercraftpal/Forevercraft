@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:crates/artifact_uncommon"
+                },
+                "minecraft:custom_data": {
+                  "artc_rarity": "uncommon"
+                },
+                "minecraft:max_stack_size": 64,
+                "minecraft:custom_name": {"text": "Uncommon Artifact Crate", "bold": true, "italic": true, "color": "blue"},
+                "minecraft:lore": [
+                  {"text": "Place to reveal your artifact!", "color": "gray", "italic": true}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

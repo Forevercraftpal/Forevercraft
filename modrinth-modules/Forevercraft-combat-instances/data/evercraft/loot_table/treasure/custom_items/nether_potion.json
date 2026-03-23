@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potion",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:max_stack_size": 5,
+                  "minecraft:custom_name": {
+                    "text": "Nether Potion",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  "minecraft:potion_contents": {
+                    "custom_color": 12393500,
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:strength",
+                        "amplifier": 1,
+                        "duration": 600,
+                        "show_particles": true
+                      },
+                      {
+                        "id": "minecraft:instant_damage",
+                        "amplifier": 1,
+                        "duration": 1,
+                        "show_particles": false
+                      },
+                      {
+                        "id": "minecraft:resistance",
+                        "amplifier": 0,
+                        "duration": 600,
+                        "show_particles": true
+                      },
+                      {
+                        "id": "minecraft:fire_resistance",
+                        "amplifier": 1,
+                        "duration": 2400,
+                        "show_particles": true
+                      }
+                    ]
+                  },
+                  "minecraft:custom_data": "{food:\"nether_potion\"}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

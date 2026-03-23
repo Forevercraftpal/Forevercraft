@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mace",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Ashcrown Mace",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "The Ashen Lord's crown, reforged into a weapon of judgment.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Sentinel Class", "color": "#5B9BD5", "bold": true, "italic": false},
+                  {"text": "◆ Fortress: ", "color": "gray", "italic": false, "extra": [{"text": "6-block protection zone (12s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Judgment Strike: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC: Stun + 5x damage (18s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Bulwark: ", "color": "gray", "italic": false, "extra": [{"text": "Blocking absorbs 75% damage", "color": "dark_gray"}]},
+                  {"text": "◆ Shield Charge: ", "color": "gray", "italic": false, "extra": [{"text": "Absorbed damage charges to 100 for burst", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+13 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_sentinel_ashcrown_mace",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "sentinel",
+                  "spirit_id": 7,
+                  "striker": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 13.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -2.4, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:spirit_weapon"},
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

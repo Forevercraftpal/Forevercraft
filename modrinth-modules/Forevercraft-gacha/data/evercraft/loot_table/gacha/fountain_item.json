@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "ewogICJ0aW1lc3RhbXAiIDogMTc3MzQxOTYzODk2NywKICAicHJvZmlsZUlkIiA6ICI4ZjllYTBhNWJhOGE0NTNkYTgzNTBmYjRmNzVmOTJiOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJDeWJlck1pbm55IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJjMzhjN2QxODI4ZmJmODU1OWJlZjJiNDQ5OWY0ODQ5YjViNTIyYTU1MTg4OWM4MzRkYWYyMTk2OWMwMTM1NGUiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                },
+                "minecraft:custom_name": {"text":"Fountain of Eternal Dreams","color":"#E0B0FF","italic":false,"bold":true},
+                "minecraft:custom_data": {"fountain_of_dreams":true,"placeable":true},
+                "minecraft:lore": [
+                  {"text":"Mythical Relic","color":"gold","italic":false},
+                  "",
+                  {"text":"A relic from an age when wishes were","color":"gray","italic":true},
+                  {"text":"answered and dreamers never woke empty-handed.","color":"gray","italic":true},
+                  "",
+                  {"text":"Place: ","color":"white","italic":false,"extra":[{"text":"Summon your personal wishing fountain","color":"#E0B0FF"}]},
+                  {"text":"Interact: ","color":"white","italic":false,"extra":[{"text":"Spend Forever Coins on pulls","color":"#E0B0FF"}]},
+                  "",
+                  {"text":"\"Every dream begins with a single wish.\"","color":"dark_gray","italic":true}
+                ],
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

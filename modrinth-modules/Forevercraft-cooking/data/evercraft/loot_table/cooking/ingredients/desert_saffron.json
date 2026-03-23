@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:orange_tulip",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text":"Desert Saffron","color":"green","italic":false},
+                "minecraft:lore": [
+                  {"text":"Cooking Ingredient","color":"gray","italic":false},
+                  {"text":"Herb","color":"dark_green","italic":false},
+                  "",
+                  {"text":"A vibrant spice from arid dunes.","color":"dark_gray","italic":true}
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:custom_data": {
+                  "ec_ingredient": true,
+                  "ingredient_id": "desert_saffron",
+                  "ingredient_cat": "herb"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

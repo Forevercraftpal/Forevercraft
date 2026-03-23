@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume_mushroom": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{dream_inducing_mushroom:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:items/consume_dream_inducing_mushroom"
+  }
+}

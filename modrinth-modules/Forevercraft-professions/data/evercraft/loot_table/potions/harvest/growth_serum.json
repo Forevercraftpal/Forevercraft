@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 5635925,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:instant_health",
+                      "amplifier": 0,
+                      "duration": 1,
+                      "show_particles": true
+                    }
+                  ],
+                  "potion": "minecraft:thick"
+                },
+                "minecraft:custom_name": {
+                  "text": "Growth Serum",
+                  "color": "dark_green",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Rare",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Grows crops +3 stages in area",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "Throw on crops to accelerate growth",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "(Works like area bone meal)",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:max_stack_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

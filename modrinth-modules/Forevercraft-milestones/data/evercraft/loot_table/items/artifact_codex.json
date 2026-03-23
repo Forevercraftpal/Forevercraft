@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:written_book_content": {
+                  "title": "The Forevercraft Codex",
+                  "author": "Ancient Scholars",
+                  "pages": [
+                    {
+                      "text": "\\n\\n  === ARTIFACT CODEX ===\\n\\n    A complete compendium\\n    of mythical artifacts\\n    scattered across the\\n    realm of Forevercraft.\\n\\n\\n    Right-click to view\\n    your collection!\\n\\n\\n    Progress:\\n    %count% / 50",
+                      "color": "dark_purple",
+                      "bold": true
+                    },
+                    {
+                      "text": "\\n  === RARE ARTIFACTS ===\\n\\n"
+                    },
+                    {
+                      "text": "\\n  === ORNATE ARTIFACTS ===\\n\\n"
+                    },
+                    {
+                      "text": "\\n  === EXQUISITE ARTIFACTS ===\\n\\n"
+                    },
+                    {
+                      "text": "\\n\\n  === COMPLETION ===\\n\\n    Collect all 50 artifacts\\n    to unlock the ultimate\\n    power of Evercraft!\\n\\n    Current Progress:\\n    %count% / 50\\n\\n    Keep exploring to find\\n    more mythical items!",
+                      "color": "gold"
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "codex": true,
+                  "evercraft_item": true
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

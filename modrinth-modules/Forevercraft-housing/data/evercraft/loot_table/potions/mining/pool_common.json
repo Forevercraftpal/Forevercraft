@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:generic",
+  "comment": "Mining potion pool for COMMON crates",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 50},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/cave_sludge", "weight": 30},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/spelunker", "weight": 15},
+        {"type": "minecraft:loot_table", "value": "evercraft:potions/mining/miners_might", "weight": 5}
+      ]
+    }
+  ]
+}

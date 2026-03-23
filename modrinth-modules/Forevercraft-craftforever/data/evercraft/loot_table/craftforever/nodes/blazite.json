@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1, "max": 2}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Blazite Crystal", "color": "#EF4444", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Ornate Biome Material", "color": "dark_purple", "italic": false},
+                  "",
+                  {"text": "Crystallized nether flame,", "color": "gray", "italic": true},
+                  {"text": "pulsing with crimson heat.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "blazite", "cf_biome": 6}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

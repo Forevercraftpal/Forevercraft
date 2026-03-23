@@ -1,0 +1,4 @@
+# Spirit Tome — Replace tome with updated lore (macro)
+# Safety: verify player is still holding the tome (they may have switched slots in the 1-tick delay)
+execute unless items entity @s weapon.mainhand book[custom_data~{spirit_tome:true}] run return fail
+$item replace entity @s weapon.mainhand with book[custom_name={text:"Spirit Tome",color:"aqua",bold:true,italic:false},lore=[{text:"Quest $(part) of 100",color:"gray",italic:true},{text:"",italic:false},{text:"A record of your spirit weapon's journey.",color:"dark_aqua",italic:true},{text:"Use to view and activate your next quest.",color:"dark_aqua",italic:true}],custom_data={spirit_tome:true,evercraft_item:true},consumable={consume_seconds:999999,sound:"intentionally_empty",has_consume_particles:false},use_cooldown={seconds:2,cooldown_group:"evercraft:spirit_tome"},max_stack_size=1,rarity=epic,enchantment_glint_override=true] 1

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/ornate/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/ruined_portal"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 3, "max": 5},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:crying_obsidian", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 6, "max": 12}}]},
+        {"type": "minecraft:item", "name": "minecraft:gold_block", "weight": 18, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:diamond_block", "weight": 12},
+        {"type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 18, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:lodestone", "weight": 15},
+        {"type": "minecraft:item", "name": "minecraft:netherite_scrap", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]}
+      ]
+    }
+  ]
+}

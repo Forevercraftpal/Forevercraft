@@ -1,0 +1,173 @@
+{
+  "type": "minecraft:block",
+  "comment": "Tier 5 - High value (diamond_ore, emerald_ore, gold_ore, nether_gold_ore). Scale 1.0x.",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/common",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#disable_common"
+                },
+                "score": "ec.constant"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:score",
+                "target": {"type": "context", "target": "this"},
+                "score": "ec.common_chance",
+                "scale": 0.000001
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/uncommon",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#disable_uncommon"
+                },
+                "score": "ec.constant"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:score",
+                "target": {"type": "context", "target": "this"},
+                "score": "ec.uncommon_chance",
+                "scale": 0.000001
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/rare",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#disable_rare"
+                },
+                "score": "ec.constant"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:score",
+                "target": {"type": "context", "target": "this"},
+                "score": "ec.rare_chance",
+                "scale": 0.000001
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/ornate",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#disable_ornate"
+                },
+                "score": "ec.constant"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:score",
+                "target": {"type": "context", "target": "this"},
+                "score": "ec.epic_chance",
+                "scale": 0.000001
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/tier/exquisite",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#disable_exquisite"
+                },
+                "score": "ec.constant"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:score",
+                "target": {"type": "context", "target": "this"},
+                "score": "ec.exquisite_chance",
+                "scale": 0.000001
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:treasure/technical/mythical/roll",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#disable_mythical"
+                },
+                "score": "ec.constant"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:score",
+                "target": {"type": "context", "target": "this"},
+                "score": "ec.mythical_chance",
+                "scale": 0.000001
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

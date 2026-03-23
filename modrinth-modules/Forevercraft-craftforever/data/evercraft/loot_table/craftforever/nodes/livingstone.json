@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:moss_carpet",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 2, "max": 4}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Livingstone Moss", "color": "#4ADE80", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Uncommon Biome Material", "color": "blue", "italic": false},
+                  "",
+                  {"text": "Living moss that pulses with", "color": "gray", "italic": true},
+                  {"text": "the jungle's primal energy.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "livingstone", "cf_biome": 4}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

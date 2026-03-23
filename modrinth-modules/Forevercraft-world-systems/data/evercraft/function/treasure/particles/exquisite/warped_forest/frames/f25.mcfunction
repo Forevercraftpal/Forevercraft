@@ -1,0 +1,26 @@
+
+particle warped_spore ^0.681 ^1.425 ^-1.468 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.831 ^1.428 ^-0.718 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.981 ^1.431 ^0.032 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^1.131 ^1.434 ^0.782 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-1.437 ^1.437 ^-1.186 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-1.287 ^1.440 ^-0.436 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-1.137 ^1.443 ^0.314 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-0.987 ^1.446 ^1.064 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-0.837 ^1.449 ^-0.904 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-0.687 ^1.452 ^-0.154 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-0.537 ^1.455 ^0.596 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-0.387 ^1.458 ^-1.373 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-0.237 ^1.461 ^-0.623 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-0.087 ^1.464 ^0.127 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.063 ^1.467 ^0.877 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.213 ^1.470 ^-1.091 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.363 ^1.473 ^-0.341 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.513 ^1.476 ^0.409 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.663 ^1.479 ^1.159 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.813 ^1.482 ^-0.809 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^0.963 ^1.485 ^-0.059 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^1.113 ^1.488 ^0.691 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-1.456 ^1.491 ^-1.278 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-1.306 ^1.494 ^-0.528 0.1 0.1 0.1 0.05 10 force @a
+particle warped_spore ^-1.156 ^1.497 ^0.222 0.1 0.1 0.1 0.05 10 force @a

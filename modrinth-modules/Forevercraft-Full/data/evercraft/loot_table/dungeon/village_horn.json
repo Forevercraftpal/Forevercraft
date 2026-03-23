@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:goat_horn",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:instrument": {
+                  "sound_event": "minecraft:item.goat_horn.sound.0",
+                  "use_duration": 7.0,
+                  "range": 256.0,
+                  "description": "Ponder Goat Horn"
+                },
+                "minecraft:custom_data": "{village_defense:true}",
+                "minecraft:custom_name": {
+                  "text": "Village Defense Horn",
+                  "color": "green",
+                  "italic": false,
+                  "bold": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Sound this horn to rally the village!",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Defend against 5 waves of raiders!",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Reward: Reputation + Hero of the Village",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ],
+                "minecraft:rarity": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

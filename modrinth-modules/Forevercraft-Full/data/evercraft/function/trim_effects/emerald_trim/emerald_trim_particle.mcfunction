@@ -1,0 +1,5 @@
+# Emerald particle
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/emerald_trim/emerald_head unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:happy_villager ~ ~2 ~ .2 .03 .2 1 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/emerald_trim/emerald_chest unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:happy_villager ~ ~1.2 ~ .2 .03 .2 1 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/emerald_trim/emerald_legs unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:happy_villager ~ ~.8 ~ .2 .03 .2 1 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/emerald_trim/emerald_feet unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.2 run particle minecraft:happy_villager ~ ~.3 ~ .2 .03 .2 1 1 normal

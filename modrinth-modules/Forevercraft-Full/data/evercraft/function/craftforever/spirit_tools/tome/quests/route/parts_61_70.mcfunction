@@ -1,0 +1,10 @@
+execute if score @s ec.tq_part matches 61 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/61
+execute if score @s ec.tq_part matches 62 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/62
+execute if score @s ec.tq_part matches 63 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/63
+execute if score @s ec.tq_part matches 64 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/64
+execute if score @s ec.tq_part matches 65 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/65
+execute if score @s ec.tq_part matches 66 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/66
+execute if score @s ec.tq_part matches 67 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/67
+execute if score @s ec.tq_part matches 68 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/68
+execute if score @s ec.tq_part matches 69 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/69
+execute if score @s ec.tq_part matches 70 run function evercraft:craftforever/spirit_tools/tome/quests/route/q/70

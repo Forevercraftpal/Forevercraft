@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "apple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_apple"
+        }
+      }
+    },
+    "carrot": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_carrot"
+        }
+      }
+    },
+    "enchanted": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:enchanted_golden_apple"
+        }
+      }
+    }
+  },
+  "requirements": [["apple", "carrot", "enchanted"]],
+  "rewards": {
+    "function": "evercraft:party/triggers/on_eat_golden"
+  }
+}

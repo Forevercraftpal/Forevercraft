@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:generic",
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "name": "minecraft:iron_nugget",
+      "functions": [{
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:custom_name": {"text": "Awakening Stone", "color": "aqua", "italic": false},
+          "minecraft:lore": [
+            {"text": "Rare", "color": "aqua", "italic": false},
+            {"text": ""},
+            {"text": "Hold artifact in hand or offhand,", "color": "gray", "italic": true},
+            {"text": "or wear matching armor. Right-click", "color": "gray", "italic": true},
+            {"text": "to awaken its hidden potential.", "color": "gray", "italic": true}
+          ],
+          "minecraft:custom_data": {"awakening_stone": true, "stone_tier": "rare"},
+          "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+          "minecraft:rarity": "rare"
+        }
+      }]
+    }]
+  }]
+}

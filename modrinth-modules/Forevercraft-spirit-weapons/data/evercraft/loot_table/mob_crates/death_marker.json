@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:knowledge_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Mob Crate Marker", "color": "gold", "italic": false},
+                "minecraft:custom_data": {
+                  "mob_crate_marker": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

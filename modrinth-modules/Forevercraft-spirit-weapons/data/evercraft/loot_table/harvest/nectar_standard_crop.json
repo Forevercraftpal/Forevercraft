@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:block",
+  "comment": "Standard crop harvest crate drops - references the new harvest_crates system",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:harvest/gameplay/harvest/crate"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:player"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_button",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "ec_harvest_xp": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

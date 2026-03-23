@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "evercraft:structures/mythical/main"}]},
+    {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": "minecraft:chests/buried_treasure"}]},
+    {
+      "rolls": {"type": "minecraft:uniform", "min": 5, "max": 8},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:sponge", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 24, "max": 48}}]},
+        {"type": "minecraft:item", "name": "minecraft:tide_armor_trim_smithing_template", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:heart_of_the_sea", "weight": 15, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 4}}]},
+        {"type": "minecraft:item", "name": "minecraft:trident", "weight": 15, "functions": [{"function": "minecraft:enchant_with_levels", "levels": {"type": "minecraft:uniform", "min": 30, "max": 39}, "options": "#minecraft:on_random_loot"}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_block", "weight": 8},
+        {"type": "minecraft:item", "name": "minecraft:conduit", "weight": 12, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:netherite_upgrade_smithing_template", "weight": 10, "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:nether_star", "weight": 6}
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 75},
+        {"type": "minecraft:loot_table", "value": "evercraft:artifacts/mythical/main", "weight": 25}
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:empty", "weight": 95},
+        {"type": "minecraft:loot_table", "value": "evercraft:items/crystal_of_dreams", "weight": 5}
+      ]
+    }
+  ]
+}

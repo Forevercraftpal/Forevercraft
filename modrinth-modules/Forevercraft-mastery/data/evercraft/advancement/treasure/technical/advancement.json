@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "evercraft:treasure/advancement"
+        }
+      }
+    },
+    "rewards": {
+      "function": "evercraft:treasure/technical/advancement"
+    }
+  }
+  

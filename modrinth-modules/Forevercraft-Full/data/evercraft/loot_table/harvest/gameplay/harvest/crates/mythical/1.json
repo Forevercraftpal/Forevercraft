@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container_loot": {
+                  "loot_table": "evercraft:harvest/crate_contents/mythical/1"
+                },
+                "minecraft:item_name": {
+                  "text": "Mythical Harvest Crate",
+                  "bold": true,
+                  "color": "gold"
+                },
+                "minecraft:custom_data": {
+                  "hc_rarity": "mythical",
+                  "hc_stat": false
+                },
+                "minecraft:max_stack_size": 64,
+                "minecraft:custom_name": {
+                  "text": "Mythical Harvest Crate",
+                  "bold": true,
+                  "color": "gold"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "An ancient treasure from the depths!",
+                    "color": "dark_gray",
+                    "italic": true
+                  }
+                ],
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Totem of Summoning", "color": "gold", "bold": true, "italic": false},
+                "minecraft:rarity": "epic",
+                "minecraft:lore": [
+                  {"text": "Exquisite Artifact", "color": "light_purple", "italic": false},
+                  "",
+                  {"text": "An ancient totem pulsing with dormant power.", "color": "gray", "italic": true},
+                  {"text": "Use to awaken a World Boss in the", "color": "gray", "italic": true},
+                  {"text": "current dimension.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Boss scales with Dream Rate and moon phase.", "color": "dark_purple", "italic": true}
+                ],
+                "minecraft:custom_data": {
+                  "boss_totem": true,
+                  "is_artifact": true,
+                  "tier": "exquisite"
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

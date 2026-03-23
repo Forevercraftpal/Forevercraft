@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Tempest Glyph",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "RUNE",
+                  "color": "gold",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": " ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "Hold an armor a weapon in your off- ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "hand and right click for a random ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "knockback enchantment. Max for",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Hurricane Sword is X, else V. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "rune": "ec.kb_enchant",
+                  "ec": "rune"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

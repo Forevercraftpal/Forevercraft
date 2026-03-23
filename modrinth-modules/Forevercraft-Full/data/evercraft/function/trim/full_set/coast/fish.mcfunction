@@ -1,0 +1,1 @@
+advancement revoke @s only evercraft:trim/fishing_bonus

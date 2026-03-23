@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:cooked_beef", "weight": 3, "functions": [{"function": "minecraft:set_count", "count": {"min": 8, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:cooked_porkchop", "weight": 3, "functions": [{"function": "minecraft:set_count", "count": {"min": 8, "max": 16}}]},
+        {"type": "minecraft:item", "name": "minecraft:golden_carrot", "weight": 2, "functions": [{"function": "minecraft:set_count", "count": {"min": 4, "max": 8}}]},
+        {"type": "minecraft:item", "name": "minecraft:bread", "weight": 2, "functions": [{"function": "minecraft:set_count", "count": {"min": 12, "max": 24}}]}
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:potion", "weight": 3, "functions": [{"function": "minecraft:set_count", "count": 2}, {"function": "minecraft:set_components", "components": {"minecraft:potion_contents": {"potion": "minecraft:healing"}}}]},
+        {"type": "minecraft:item", "name": "minecraft:potion", "weight": 2, "functions": [{"function": "minecraft:set_count", "count": 2}, {"function": "minecraft:set_components", "components": {"minecraft:potion_contents": {"potion": "minecraft:regeneration"}}}]},
+        {"type": "minecraft:item", "name": "minecraft:potion", "weight": 1, "functions": [{"function": "minecraft:set_count", "count": 1}, {"function": "minecraft:set_components", "components": {"minecraft:potion_contents": {"potion": "minecraft:strong_healing"}}}]}
+      ]
+    }
+  ]
+}

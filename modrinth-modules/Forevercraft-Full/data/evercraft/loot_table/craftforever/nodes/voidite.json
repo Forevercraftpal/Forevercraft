@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Voidite Fragment", "color": "#164E63", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Exquisite Biome Material", "color": "#DD55FF", "italic": false},
+                  "",
+                  {"text": "A fragment of condensed void,", "color": "gray", "italic": true},
+                  {"text": "humming with deep resonance.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "voidite", "cf_biome": 3},
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

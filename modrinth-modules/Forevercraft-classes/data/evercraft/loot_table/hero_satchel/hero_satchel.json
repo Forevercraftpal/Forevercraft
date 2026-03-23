@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Hero's Satchel", "color": "#FF4500", "italic": false, "bold": true},
+                "minecraft:lore": [
+                  {"text": "World Boss Conqueror's Reward", "color": "gold", "italic": false},
+                  {"text": "11 Boss Artifact Slots", "color": "dark_gray", "italic": false},
+                  "",
+                  {"text": "A satchel forged from the essence", "color": "gray", "italic": true},
+                  {"text": "of defeated World Bosses.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Stored boss artifacts retain", "color": "light_purple", "italic": true},
+                  {"text": "their area-of-effect abilities.", "color": "light_purple", "italic": true},
+                  "",
+                  {"text": "Right-Click: ", "color": "white", "italic": false, "extra": [{"text": "Open Satchel", "color": "#FF4500"}]},
+                  {"text": "Slots: ", "color": "white", "italic": false, "extra": [{"text": "11", "color": "aqua"}]},
+                  {"text": "Accepts: ", "color": "white", "italic": false, "extra": [{"text": "Boss Artifacts Only", "color": "red"}]}
+                ],
+                "minecraft:custom_data": {
+                  "hero_satchel": true,
+                  "max_slots": 11,
+                  "bag_id": 0,
+                  "evercraft_item": true
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic",
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 999999,
+                  "sound": "intentionally_empty",
+                  "has_consume_particles": false,
+                  "animation": "brush"
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 1,
+                  "cooldown_group": "evercraft:hero_satchel"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "evercraft:init",
+    "evercraft:portal_dial/init",
+    "evercraft:guidestone/load",
+    "evercraft:tomb/load",
+    "evercraft:armored_elytra/load"
+  ]
+}

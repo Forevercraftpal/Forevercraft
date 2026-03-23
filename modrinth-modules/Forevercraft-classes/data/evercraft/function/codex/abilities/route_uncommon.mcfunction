@@ -1,0 +1,14 @@
+# Route Uncommon ability display (triggers 113-125)
+execute if entity @s[scores={ec.codex=113}] run function evercraft:codex/abilities/uncommon/anchor
+execute if entity @s[scores={ec.codex=114}] run function evercraft:codex/abilities/uncommon/chargin_targe
+execute if entity @s[scores={ec.codex=115}] run function evercraft:codex/abilities/uncommon/fantasy_axe
+execute if entity @s[scores={ec.codex=116}] run function evercraft:codex/abilities/uncommon/frying_pan
+execute if entity @s[scores={ec.codex=117}] run function evercraft:codex/abilities/uncommon/hellenic_sword
+execute if entity @s[scores={ec.codex=118}] run function evercraft:codex/abilities/uncommon/kemetian_sword
+execute if entity @s[scores={ec.codex=119}] run function evercraft:codex/abilities/uncommon/longbow
+execute if entity @s[scores={ec.codex=120}] run function evercraft:codex/abilities/uncommon/mechanical_shortbow
+execute if entity @s[scores={ec.codex=121}] run function evercraft:codex/abilities/uncommon/morning_star
+execute if entity @s[scores={ec.codex=122}] run function evercraft:codex/abilities/uncommon/sinitic_sword
+execute if entity @s[scores={ec.codex=123}] run function evercraft:codex/abilities/uncommon/featherweight_stone
+execute if entity @s[scores={ec.codex=124}] run function evercraft:codex/abilities/uncommon/glowstone_pendant
+execute if entity @s[scores={ec.codex=125}] run function evercraft:codex/abilities/uncommon/iron_talisman

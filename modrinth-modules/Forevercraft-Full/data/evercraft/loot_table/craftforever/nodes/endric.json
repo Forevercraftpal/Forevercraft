@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Endric Shard", "color": "#A855F7", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Mythical Biome Material", "color": "gold", "italic": false},
+                  "",
+                  {"text": "A shard of pure end energy,", "color": "gray", "italic": true},
+                  {"text": "vibrating between dimensions.", "color": "gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"cf_material": true, "cf_mat_id": "endric", "cf_biome": 8},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

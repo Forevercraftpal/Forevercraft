@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_name": "Ancient Trident",
+                "minecraft:lore": [
+                  {
+                    "text": "Rare Artifact",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  "",
+                  {
+                    "text": "Recovered from the depths,",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  {
+                    "text": "it calls to the ocean.",
+                    "color": "gray",
+                    "italic": true
+                  },
+                  "",
+                  {"text": "Javelin Class", "color": "#00CED1", "bold": true, "italic": false},
+                  {"text": "\u25c6 Melee: ", "color": "gray", "italic": false, "extra": [{"text": "Water Breathing + Dolphin's Grace", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Thrown: ", "color": "gray", "italic": false, "extra": [{"text": "Tidal Strike (drown + slow)", "color": "dark_gray"}]},
+                  "",
+                  {"text": "Hoplite Class", "color": "#5B9BD5", "bold": true, "italic": false},
+                  {"text": "\u25c6 Resistance I ", "color": "gray", "italic": false, "extra": [{"text": "(Offhand Shield)", "color": "dark_gray"}]},
+                  {"text": "\u25c6 Aegis Burst ", "color": "gray", "italic": false, "extra": [{"text": "(3 Hits \u2192 Absorption II, 15s CD)", "color": "dark_gray"}]}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "ancient_trident",
+                  "is_artifact": true,
+                  "tier": "rare",
+                  "javelin": true,
+                  "hoplite": true,
+                  "javelin_id": 2
+                },
+                "minecraft:enchantments": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

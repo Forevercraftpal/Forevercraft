@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{Tags:[\"wb.verdant_warden\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:bestiary/track/hurt_by/wb_verdant_warden"
+  }
+}

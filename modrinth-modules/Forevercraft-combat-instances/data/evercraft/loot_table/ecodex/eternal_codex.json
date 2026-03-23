@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "written_book",
+                "minecraft:custom_name": {
+                  "text": "The Eternal Codex",
+                  "color": "gold",
+                  "bold": true,
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {"text": "A living record of your journey", "color": "gray", "italic": true},
+                  {"text": "Shift: Cycle Codex | Use: Open Selected", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "eternal_codex": true,
+                  "evercraft_item": true
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 1,
+                "minecraft:consumable": {"consume_seconds": 100, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {
+                  "seconds": 1,
+                  "cooldown_group": "evercraft:ecodex"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"ec.fox_interact\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:foxes/on_interact"
+  }
+}

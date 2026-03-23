@@ -1,0 +1,5 @@
+# Gold particle
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/gold_trim/gold_head unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.1 run particle minecraft:electric_spark ~ ~2 ~ .2 .02 .2 .05 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/gold_trim/gold_chest unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.1 run particle minecraft:electric_spark ~ ~1.1 ~ .2 .1 .2 .05 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/gold_trim/gold_legs unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.1 run particle minecraft:electric_spark ~ ~.6 ~ .2 .2 .2 .05 1 normal
+execute at @s if predicate evercraft:trim_effects/rarity/particle if predicate evercraft:trim_effects/trim/gold_trim/gold_feet unless score @s copper_trim matches 1..4 anchored feet rotated ~ 0 positioned ^ ^ ^-.1 run particle minecraft:electric_spark ~ ~.15 ~ .2 .1 .2 .05 1 normal

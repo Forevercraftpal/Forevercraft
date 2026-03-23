@@ -1,0 +1,4 @@
+execute if data storage eden:settings bestiary.wandering_trader_settings{spawnmsg:"chat"} run tellraw @a[distance=..64] [{bold:false,color:"#75A7FF",italic:false,text:"▊ "},{bold:false,color:"#75A7FF",italic:false,text:"A Wandering Trader spawned nearby."}]
+execute if data storage eden:settings bestiary.wandering_trader_settings{spawnmsg:"actionbar"} run title @a[distance=..64] actionbar [{bold:false,color:"dark_gray",italic:false,text:"- "},{bold:false,color:"#75A7FF",italic:false,text:"Wandering Trader Spawned Nearby"},{bold:false,color:"dark_gray",italic:false,text:" -"}]
+
+execute as @a[distance=..64] at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2

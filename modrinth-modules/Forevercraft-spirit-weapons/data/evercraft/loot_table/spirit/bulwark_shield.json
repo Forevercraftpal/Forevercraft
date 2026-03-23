@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Bulwark Shield",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "An immovable wall of ancient power.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Tank Class", "color": "#5B9BD5", "bold": true, "italic": false},
+                  {"text": "◆ Unbreakable Wall: ", "color": "gray", "italic": false, "extra": [{"text": "Taunt + absorb + explode (15s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Titan's Guard: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC, link + redirect damage (25s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Resistance II: ", "color": "gray", "italic": false, "extra": [{"text": "Permanent damage reduction", "color": "dark_gray"}]},
+                  {"text": "◆ Enhanced Taunt: ", "color": "gray", "italic": false, "extra": [{"text": "Taunted mobs deal -20% damage", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+8 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_tank_bulwark_shield",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "tank",
+                  "spirit_id": 13,
+                  "tank": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 8.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -2.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

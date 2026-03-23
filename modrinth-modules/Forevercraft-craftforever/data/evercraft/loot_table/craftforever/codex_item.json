@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "The Craftforever Codex", "color": "#8BC34A", "italic": false, "bold": true},
+                "minecraft:lore": [
+                  {"text": "The crafter's encyclopedia", "color": "gray", "italic": true},
+                  {"text": "Right-click to open", "color": "dark_gray", "italic": true}
+                ],
+                "minecraft:custom_data": {"craftforever_codex": true, "evercraft_item": true},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_model": "writable_book",
+                "minecraft:consumable": {"consume_seconds": 100, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:cf_codex"},
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

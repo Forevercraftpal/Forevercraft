@@ -1,0 +1,3 @@
+# Give 50 Forever Coins to the player
+give @s minecraft:amethyst_shard[custom_name={"text":"Forever Coin","color":"#E0B0FF","italic":false,"bold":true},custom_data={forever_coin:true},lore=[{"text":"Fountain Currency","color":"#E0B0FF","italic":false},"",{"text":"Minted in the dreams of a forgotten age,","color":"gray","italic":true},{"text":"each coin hums with the Fountain's promise.","color":"gray","italic":true},"",{"text":"Spend at the Fountain of Eternal Dreams.","color":"dark_gray","italic":false}],enchantment_glint_override=true,rarity=rare] 50
+tellraw @s [{text:"[Admin] ",color:"dark_red"},{text:"50 Forever Coins ",color:"light_purple"},{text:"given!",color:"green"}]

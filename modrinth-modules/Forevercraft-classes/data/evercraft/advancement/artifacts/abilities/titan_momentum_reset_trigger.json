@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "player_took_damage": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{artifact:\"golden_goliath_sword\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:artifacts/abilities/titan_momentum_reset"
+  }
+}

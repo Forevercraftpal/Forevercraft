@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mace",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "Pharaoh's Fist",
+                "minecraft:lore": [
+                  [{"text": "Spirit Artifact", "color": "light_purple", "italic": false}, {"text": " - Common", "color": "gray", "italic": false}],
+                  "",
+                  {"text": "The fist of time itself.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Striker Class", "color": "#FF6B00", "bold": true, "italic": false},
+                  {"text": "◆ Chrono Fist: ", "color": "gray", "italic": false, "extra": [{"text": "Freeze enemies 2s, 8-block radius (10s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Titan Breaker: ", "color": "gray", "italic": false, "extra": [{"text": "Sneak+RC, 10x damage punch (20s CD)", "color": "dark_gray"}]},
+                  {"text": "◆ Triple Speed: ", "color": "gray", "italic": false, "extra": [{"text": "3x attack speed", "color": "dark_gray"}]},
+                  {"text": "◆ Sandstorm Flurry: ", "color": "gray", "italic": false, "extra": [{"text": "Triggers every 10 hits", "color": "dark_gray"}]},
+                  "",
+                  {"text": "+10 Damage", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "artifact": "spirit_striker_pharaoh_fist",
+                  "is_artifact": true,
+                  "tier": "common",
+                  "spirit_artifact": true,
+                  "spirit_class": "striker",
+                  "spirit_id": 9,
+                  "striker": true,
+                  "mastery_unlocked": true,
+                  "kills": 0,
+                  "heals": 0,
+                  "quest_part": 0
+                },
+                "minecraft:attribute_modifiers": [
+                  {"type": "minecraft:attack_damage", "amount": 10.0, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_damage"},
+                  {"type": "minecraft:attack_speed", "amount": -0.8, "operation": "add_value", "slot": "mainhand", "id": "evercraft:spirit_speed"}
+                ],
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "brush", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:use_cooldown": {"seconds": 1, "cooldown_group": "evercraft:spirit_weapon"},
+                "minecraft:unbreakable": {},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "uncommon",
+                "minecraft:tooltip_display": {"hidden_components": ["attribute_modifiers"]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

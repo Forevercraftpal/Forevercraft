@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:barrel"],
+              "predicates": {
+                "minecraft:custom_data": "{fc_rarity:\"rare\",fc_stat:false}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:fishing/ref/advancement/rare/place"
+  }
+}

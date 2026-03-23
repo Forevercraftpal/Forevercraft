@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": {"text": "Prospector Contract", "color": "light_purple", "italic": false},
+                "minecraft:lore": [
+                  {"text": "Laborer Contract", "color": "yellow", "italic": false},
+                  "",
+                  {"text": "A binding agreement to employ", "color": "gray", "italic": true},
+                  {"text": "an elite prospector at your home.", "color": "gray", "italic": true},
+                  "",
+                  {"text": "Use: ", "color": "white", "italic": false, "extra": [{"text": "Right-click while in your home zone", "color": "green"}]},
+                  {"text": "Requires: ", "color": "white", "italic": false, "extra": [{"text": "Artisan Rank 50+", "color": "light_purple"}]},
+                  "",
+                  {"text": "Returns biome-specific forging", "color": "dark_gray", "italic": false},
+                  {"text": "materials and rare resources.", "color": "dark_gray", "italic": false}
+                ],
+                "minecraft:custom_data": {
+                  "laborer_contract": true,
+                  "laborer_type": "prospector",
+                  "laborer_type_id": 6
+                },
+                "minecraft:consumable": {"consume_seconds": 0, "animation": "none", "sound": "intentionally_empty", "has_consume_particles": false},
+                "minecraft:max_stack_size": 1,
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

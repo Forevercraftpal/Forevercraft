@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": "minecraft:book",
+          "predicates": {
+            "minecraft:custom_data": "{artisan_tome:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evercraft:craftforever/spirit_tools/tome/on_use"
+  }
+}

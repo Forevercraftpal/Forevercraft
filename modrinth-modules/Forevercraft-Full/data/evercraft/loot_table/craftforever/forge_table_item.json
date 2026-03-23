@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lodestone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {"text": "Artisan Forge", "color": "light_purple", "bold": true, "italic": false},
+                "minecraft:lore": [
+                  {"text": "Place and right-click to open", "color": "gray", "italic": false},
+                  {"text": "the forging workstation.", "color": "gray", "italic": false},
+                  "",
+                  {"text": "Deposit materials and catalysts", "color": "dark_purple", "italic": false},
+                  {"text": "to forge rare alloys through skill.", "color": "dark_purple", "italic": false}
+                ],
+                "minecraft:custom_data": {"artisan_forge": true, "evercraft_item": true},
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

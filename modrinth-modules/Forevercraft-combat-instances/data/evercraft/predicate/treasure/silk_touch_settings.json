@@ -1,0 +1,32 @@
+[
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#disable_silk_touch"
+        },
+        "score": "ec.constant"
+      },
+      "range": 1
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.mainhand": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:silk_touch"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+  

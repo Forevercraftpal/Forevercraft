@@ -1,0 +1,2671 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repair_cost": 99999,
+                "minecraft:unbreakable": {},
+                "minecraft:custom_name": {
+                  "text": "Phantom Boots",
+                  "italic": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Biome Armor: Mushroom Fields",
+                    "color": "dark_aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "12.5% increased armor when above ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "half, -12.5% when under half health. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "armor": "mushroom_boots",
+                  "ec": "armor"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 6
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 8
+                },
+                "minecraft:blast_protection": {
+                  "min": 1,
+                  "max": 3
+                },
+                "minecraft:feather_falling": {
+                  "min": 2,
+                  "max": 7
+                },
+                "minecraft:depth_strider": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "id": "mushroom_boots",
+                  "attribute": "minecraft:max_health",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "comment": "MINERS SLUMBERING GEODE - 0.1% chance",
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 999
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "evercraft:items/miners_slumbering_geode",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
