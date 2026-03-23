@@ -1,6 +1,17 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import JSZip from 'jszip'
 import PageHero from '../components/layout/PageHero'
+
+// Load JSZip dynamically from CDN to avoid build dependency issues
+const loadJSZip = async () => {
+  if ((window as any).JSZip) return (window as any).JSZip
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script')
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js'
+    script.onload = () => resolve((window as any).JSZip)
+    script.onerror = reject
+    document.head.appendChild(script)
+  })
+}
 import ScrollReveal from '../components/effects/ScrollReveal'
 import graphData from '../data/module-graph.json'
 
@@ -233,6 +244,7 @@ export default function Downloads() {
 
   const buildFullPack = async (allMods: Set<string>) => {
     try {
+      const JSZip = await loadJSZip() as any
       const moduleIds = [...allMods]
       const totalMods = moduleIds.length
       let loaded = 0
@@ -314,6 +326,7 @@ export default function Downloads() {
     setBuilding(true)
     setBuildResult(null)
     try {
+      const JSZip = await loadJSZip() as any
       // Client-side build: download each module ZIP and merge them
       const moduleIds = [...resolved]
       const totalMods = moduleIds.length
