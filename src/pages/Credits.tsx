@@ -19,7 +19,7 @@ const CREDITS = {
     },
     {
       name: 'Redpanda300',
-      note: 'Thank you for always supporting in your own way as my sister — even though you deserve a dispenser filled with cavesludge spamming above your house. You\'ve been there since the start of the journey, in real life and in the game.',
+      note: 'Thank you for always supporting in your own way as my sister — even though you deserve a dispenser filled with Cave Sludge spamming above your house. You\'ve been there since the start of the journey, in real life and in the game.',
     },
   ],
   supporters: [] as { name: string; tier: string }[],
