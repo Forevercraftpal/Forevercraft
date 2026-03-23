@@ -76,9 +76,7 @@ export default function DonatePopup() {
               even a small donation means the world to us.
             </p>
             <a
-              href="https://buymeacoffee.com/forevercraft"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/donate"
               className="inline-block px-4 py-2 rounded bg-yellow-600/90 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.55rem] tracking-wider transition-colors no-underline"
             >
               SUPPORT US

@@ -47,7 +47,7 @@ const NAV_ITEMS: NavItem[] = [
   },
   { label: 'Codex', to: '/codex' },
   { label: 'Guide', to: '/guide' },
-  { label: 'Donate', to: '__donate__' },
+  { label: 'Donate', to: '/donate' },
 ]
 
 export default function Navigation() {
@@ -74,16 +74,7 @@ export default function Navigation() {
         <div className="hidden lg:flex items-center gap-1">
           {NAV_ITEMS.map(item => (
             <div key={item.label} className="relative group">
-              {item.to === '__donate__' ? (
-                <a
-                  href="https://buymeacoffee.com/forevercraft"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-4 py-2.5 rounded transition-colors no-underline inline-flex items-center h-10 text-stone-500 hover:text-yellow-600"
-                >
-                  DONATE
-                </a>
-              ) : item.to ? (
+              {item.to ? (
                 <Link
                   to={item.to}
                   className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-4 py-2.5 rounded transition-colors no-underline inline-flex items-center h-10 ${
