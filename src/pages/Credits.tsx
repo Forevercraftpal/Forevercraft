@@ -23,7 +23,7 @@ const CREDITS = {
     },
     {
       name: 'Deiontre3',
-      note: 'Thank you for always helping and supporting, and for being an enormous help building the website. You probably saved me 50+ hours of headaches trying to get it all working. Couldn\'t have done it without you, brother.',
+      note: 'Thank you for always helping and supporting, and for being an enormous help building the website. You probably saved me 50+ hours of headaches trying to get it all working. Couldn\'t have done it without you, my dear brother.',
     },
   ],
   supporters: [] as { name: string; tier: string }[],
