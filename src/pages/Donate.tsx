@@ -26,7 +26,7 @@ const DONATION_METHODS = [
     name: 'CashApp',
     icon: '💰',
     description: 'Quick and easy mobile donation.',
-    url: 'https://cash.app/$forevercraft',
+    url: 'https://cash.app/$emblazeforever',
     buttonText: 'SEND VIA CASHAPP',
     tiers: [],
   },
