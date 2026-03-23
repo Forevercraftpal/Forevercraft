@@ -446,39 +446,63 @@ export default function Downloads() {
       />
 
       <div className="max-w-[1400px] mx-auto px-8 py-12">
-        {/* Full Pack Download */}
+        {/* Java Edition Download */}
         <ScrollReveal>
-          <div className="rounded-lg border border-yellow-800/40 bg-gradient-to-r from-yellow-900/15 to-transparent p-8 mb-12">
+          <div className="rounded-lg border border-yellow-800/40 bg-gradient-to-r from-yellow-900/15 to-transparent p-8 mb-6">
             <div className="flex flex-col items-center text-center gap-4">
-              <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400 mb-1">FULL FOREVERCRAFT</h2>
+              <div className="flex items-center gap-3">
+                <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400">JAVA EDITION</h2>
+                <span className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-700 border border-yellow-800/40 rounded px-2 py-1">v1.0</span>
+              </div>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
                 All 102 systems. 18,111 files. The complete experience including Companions, Mining Crates, and everything else.
+              </p>
+              <p className="font-['Press_Start_2P'] text-[0.5rem] text-stone-600">
+                Minecraft 1.21.11 · Pack Format 94.1
               </p>
               <button
                 onClick={downloadFull}
                 className="px-10 py-4 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors mt-2"
               >
-                DOWNLOAD
+                DOWNLOAD JAVA
               </button>
             </div>
           </div>
         </ScrollReveal>
 
-        {/* Bedrock Edition Download */}
+        {/* Bedrock Edition Downloads */}
         <ScrollReveal delay={100}>
           <div className="rounded-lg border border-cyan-800/40 bg-gradient-to-r from-cyan-900/15 to-transparent p-8 mb-12">
             <div className="flex flex-col items-center text-center gap-4">
-              <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-cyan-400 mb-1">BEDROCK EDITION</h2>
+              <div className="flex items-center gap-3">
+                <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-cyan-400">BEDROCK EDITION</h2>
+                <span className="font-['Press_Start_2P'] text-[0.5rem] text-cyan-700 border border-cyan-800/40 rounded px-2 py-1">v1.0</span>
+              </div>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
                 129 systems. Full Java parity. Script API powered. Console, mobile, and PC.
               </p>
-              <a
-                href="/builds/Forevercraft-Bedrock.mcaddon"
-                download
-                className="inline-block px-10 py-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors mt-2 no-underline"
-              >
-                DOWNLOAD BEDROCK
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4 mt-2">
+                <div className="text-center">
+                  <a
+                    href="/builds/Forevercraft-Bedrock-26.1.mcaddon"
+                    download
+                    className="inline-block px-8 py-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.7rem] transition-colors no-underline"
+                  >
+                    BEDROCK 26.1
+                  </a>
+                  <p className="font-['Press_Start_2P'] text-[0.45rem] text-cyan-700 mt-2">Latest · Recommended</p>
+                </div>
+                <div className="text-center">
+                  <a
+                    href="/builds/Forevercraft-Bedrock-26.10.mcaddon"
+                    download
+                    className="inline-block px-8 py-4 rounded-lg bg-cyan-800/60 hover:bg-cyan-700/60 text-stone-200 font-['Press_Start_2P'] text-[0.7rem] transition-colors no-underline"
+                  >
+                    BEDROCK 26.10
+                  </a>
+                  <p className="font-['Press_Start_2P'] text-[0.45rem] text-stone-600 mt-2">Previous version</p>
+                </div>
+              </div>
             </div>
           </div>
         </ScrollReveal>
