@@ -438,16 +438,14 @@ export default function Downloads() {
         {/* Full Pack Download */}
         <ScrollReveal>
           <div className="rounded-lg border border-yellow-800/40 bg-gradient-to-r from-yellow-900/15 to-transparent p-8 mb-12">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div>
-                <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400 mb-2">FULL FOREVERCRAFT</h2>
-                <p className="font-['Crimson_Pro'] text-lg text-stone-400">
-                  All 102 systems. 18,111 files. The complete experience including Companions, Mining Crates, and everything else.
-                </p>
-              </div>
+            <div className="flex flex-col items-center text-center gap-4">
+              <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400 mb-1">FULL FOREVERCRAFT</h2>
+              <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
+                All 102 systems. 18,111 files. The complete experience including Companions, Mining Crates, and everything else.
+              </p>
               <button
                 onClick={downloadFull}
-                className="shrink-0 px-8 py-3 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.7rem] transition-colors"
+                className="px-10 py-4 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors mt-2"
               >
                 DOWNLOAD FULL PACK
               </button>
