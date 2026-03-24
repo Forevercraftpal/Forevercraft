@@ -8,39 +8,101 @@ interface Message {
   source?: 'kb' | 'rag' | 'claude'
 }
 
-// Fuzzy keyword matching for knowledge base search
+// Synonym expansion for better matching
+const SYNONYMS: Record<string, string[]> = {
+  'class': ['classes', 'weapon class', 'weapon classes', 'combat class', 'fighting style'],
+  'best': ['strongest', 'most powerful', 'top', 'recommended', 'op'],
+  'pet': ['companion', 'companions', 'pets', 'animal'],
+  'boss': ['bosses', 'raid boss', 'raid bosses', 'enemy'],
+  'weapon': ['weapons', 'sword', 'axe', 'bow', 'dagger', 'spear', 'mace', 'trident', 'shield'],
+  'armor': ['armour', 'armor set', 'armor sets', 'gear', 'equipment'],
+  'skill': ['skill tree', 'skill trees', 'advantage', 'advantage tree'],
+  'level': ['levels', 'leveling', 'level up', 'xp', 'experience'],
+  'quest': ['quests', 'mission', 'missions', 'task', 'tasks'],
+  'guild': ['guilds', 'clan', 'clans', 'group'],
+  'cook': ['cooking', 'food', 'meal', 'meals', 'recipe', 'recipes'],
+  'house': ['housing', 'home', 'base', 'hearthstone'],
+  'friend': ['friends', 'friendship', 'social', 'buddy'],
+  'spirit': ['spirit weapon', 'spirit weapons', 'legendary', 'endgame'],
+  'raid': ['raids', 'spirit raid', 'spirit raids', 'dungeon raid'],
+  'lore': ['lore discovery', 'lore fragment', 'story', 'stories'],
+  'dr': ['dream rate', 'dreams', 'luck'],
+  'castle': ['infinite castle', 'tower', 'endless dungeon'],
+  'gacha': ['fountain', 'gacha fountain', 'random', 'lottery'],
+  'marry': ['marriage', 'married', 'wedding', 'family'],
+  'duel': ['duels', 'pvp', 'fight', 'arena'],
+  'cosmetic': ['cosmetics', 'particles', 'titles', 'appearance'],
+  'trim': ['trims', 'armor trim', 'armor trims', 'smithing'],
+}
+
+// Stop words to ignore when matching
+const STOP_WORDS = new Set(['what', 'how', 'does', 'the', 'is', 'are', 'can', 'do', 'get', 'a', 'an', 'i', 'my', 'me', 'to', 'in', 'of', 'for', 'and', 'or', 'with', 'this', 'that', 'there', 'where', 'when', 'why', 'which', 'who', 'have', 'has', 'had', 'be', 'been', 'about', 'it', 'its', 'you', 'your', 'we', 'they', 'them', 'from', 'was', 'were', 'will', 'would', 'should', 'could', 'did', 'does', 'not', 'no', 'so', 'if', 'but', 'all', 'any', 'some', 'on', 'at', 'by', 'up'])
+
 function searchKB(query: string): KBEntry[] {
-  const q = query.toLowerCase()
-  const words = q.split(/\s+/).filter(w => w.length > 2)
+  const q = query.toLowerCase().trim()
+  const allWords = q.split(/\s+/)
+  const contentWords = allWords.filter(w => w.length > 1 && !STOP_WORDS.has(w))
+
+  // Expand query with synonyms
+  const expandedTerms = new Set(contentWords)
+  for (const word of contentWords) {
+    if (SYNONYMS[word]) {
+      for (const syn of SYNONYMS[word]) expandedTerms.add(syn)
+    }
+    // Also check if the word is a synonym value and add its key
+    for (const [key, syns] of Object.entries(SYNONYMS)) {
+      if (syns.includes(word)) expandedTerms.add(key)
+    }
+  }
 
   const scored = KNOWLEDGE_BASE.map(entry => {
     let score = 0
+    const qLower = entry.q.toLowerCase()
+    const catLower = entry.category.toLowerCase()
 
-    // Exact question match
-    if (entry.q.toLowerCase().includes(q)) score += 10
+    // Tier 1: Exact or near-exact question match (highest priority)
+    if (qLower === q) score += 50
+    else if (qLower.includes(q) && q.length > 5) score += 25
 
-    // Keyword matches
+    // Tier 2: Full keyword phrase match (e.g., "dream rate" matches keyword "dream rate")
     for (const kw of entry.keywords) {
-      if (q.includes(kw)) score += 5
-      for (const word of words) {
-        if (kw.includes(word) || word.includes(kw)) score += 2
+      if (q.includes(kw) && kw.length > 2) score += 10
+      if (kw.includes(q) && q.length > 3) score += 8
+    }
+
+    // Tier 3: Content word matches against keywords (word boundaries)
+    for (const kw of entry.keywords) {
+      const kwLower = kw.toLowerCase()
+      for (const word of contentWords) {
+        if (kwLower === word) score += 7
+        else if (kwLower.includes(word) && word.length > 3) score += 3
       }
     }
 
-    // Answer contains query words
-    const aLower = entry.a.toLowerCase()
-    for (const word of words) {
-      if (aLower.includes(word)) score += 1
+    // Tier 4: Expanded synonym matches against keywords
+    for (const kw of entry.keywords) {
+      for (const term of expandedTerms) {
+        if (kw === term && !contentWords.includes(term)) score += 4
+      }
     }
 
-    // Category match
-    if (words.some(w => entry.category.toLowerCase().includes(w))) score += 3
+    // Tier 5: Category match (only content words, not stop words)
+    for (const word of contentWords) {
+      if (catLower === word || catLower.includes(word)) score += 5
+    }
+
+    // Tier 6: Question text contains content words (lower weight)
+    for (const word of contentWords) {
+      if (word.length > 3 && qLower.includes(word)) score += 2
+    }
+
+    // DO NOT score answer text — this causes false positives
 
     return { entry, score }
   })
 
   return scored
-    .filter(s => s.score > 2)
+    .filter(s => s.score > 6)
     .sort((a, b) => b.score - a.score)
     .slice(0, 3)
     .map(s => s.entry)

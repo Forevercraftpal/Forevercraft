@@ -1,4 +1,4 @@
-// Auto-generated knowledge base — 42 entries
+// Forevercraft Knowledge Base — 150+ entries from live datapack codebase
 export interface KBEntry {
   id: number
   category: string
@@ -8,558 +8,204 @@ export interface KBEntry {
 }
 
 export const KNOWLEDGE_BASE: KBEntry[] = [
-  {
-    "id": 0,
-    "category": "Dream Rate",
-    "q": "What is Dream Rate?",
-    "a": "Dream Rate (DR) is the backbone of Forevercraft \u2014 a custom RNG system (cap 50) that connects every system. It affects crate quality, artifact rarity, structure access, pet encounters, and more. Formula: multiplier = 1 + (dreams / 35). Higher DR means better loot from everything.",
-    "keywords": [
-      "dream rate",
-      "dr",
-      "luck",
-      "rng",
-      "dreams"
-    ]
-  },
-  {
-    "id": 1,
-    "category": "Dream Rate",
-    "q": "How do I increase my Dream Rate?",
-    "a": "Permanent sources: Crystal of Dreams (+1), mythical armor (+0.5/piece), artifact constellations (+0.25 each, +2.5 total), profession drops like Miner's Slumbering Geode (+1 each), raid boss DR consumables (+1 each), and 19 world drop consumables. Temporary sources: Potion of Dreams (I-VI), time-of-day buffs, moon phase buffs, weather, and enchantments.",
-    "keywords": [
-      "increase",
-      "raise",
-      "boost",
-      "permanent",
-      "temporary",
-      "sources"
-    ]
-  },
-  {
-    "id": 2,
-    "category": "Dream Rate",
-    "q": "How do I check my Dream Rate?",
-    "a": "Right-click the Forevercraft book in your inventory header to see a full stats breakdown including your Dream Rate, all sources, and history.",
-    "keywords": [
-      "check",
-      "view",
-      "see",
-      "breakdown",
-      "stats"
-    ]
-  },
-  {
-    "id": 3,
-    "category": "Dream Rate",
-    "q": "What structures unlock at each Dream Rate?",
-    "a": "DR 1: Shipwrecks. DR 3: Villages. DR 5: Ocean Ruins, Igloos, Trail Ruins, Ruined Portals. DR 7.5: Desert/Jungle Pyramids, Mineshafts, Dungeons. DR 10: Trial Chambers, Nether Fortress, Ocean Monument. DR 14: Stronghold, Woodland Mansion, Bastion. DR 17.5: Ancient City, End City.",
-    "keywords": [
-      "structures",
-      "unlock",
-      "access",
-      "gate",
-      "requirement"
-    ]
-  },
-  {
-    "id": 4,
-    "category": "Artifacts",
-    "q": "How many artifacts are there?",
-    "a": "408 unique artifacts across 6 tiers: Common, Uncommon, Rare, Ornate, Exquisite, and Mythical. This includes weapons, armor sets, accessories, rings, and healer artifacts.",
-    "keywords": [
-      "artifacts",
-      "total",
-      "count",
-      "how many",
-      "tiers"
-    ]
-  },
-  {
-    "id": 5,
-    "category": "Artifacts",
-    "q": "How do armor sets work?",
-    "a": "There are 28 armor sets \u2014 7 mythical, 5 exquisite, and 16 ornate. Equipping 2 pieces activates the 2-piece bonus, 4 pieces activates the 4-piece bonus, and mythical 5-piece sets have an additional bonus. Mythical armor pieces give +0.5 permanent DR each.",
-    "keywords": [
-      "armor sets",
-      "set bonus",
-      "2 piece",
-      "4 piece",
-      "equipment"
-    ]
-  },
-  {
-    "id": 6,
-    "category": "Artifacts",
-    "q": "What are Artifact Constellations?",
-    "a": "10 thematic groups that tie artifacts together. Complete a constellation by collecting 8-11 specific artifacts and get +0.25 permanent Dream Rate. All 10 = +2.5 total DR. The constellations are: Tidewalker, Pyreborn, Verdant Crown, Frozen Veil, Earthshaker, Starweaver, Shadow's Edge, Dune Sovereign, Stormcaller, and Soulbinder.",
-    "keywords": [
-      "constellations",
-      "collection",
-      "groups",
-      "permanent dr"
-    ]
-  },
-  {
-    "id": 7,
-    "category": "Artifacts",
-    "q": "How does transmutation work?",
-    "a": "Sacrifice same-tier artifacts for one of the next tier: 5 Common = 1 Uncommon, 4 Rare = 1 Ornate, 3 Exquisite = 1 Mythical. An Artificer villager nearby reduces the cost by 1 daily.",
-    "keywords": [
-      "transmute",
-      "transmutation",
-      "upgrade",
-      "sacrifice",
-      "convert"
-    ]
-  },
-  {
-    "id": 8,
-    "category": "Artifacts",
-    "q": "What is the Patina system?",
-    "a": "Artifacts age over real playtime: Fresh \u2192 Worn \u2192 Seasoned \u2192 Storied \u2192 Legendary (72h total). Each stage adds flavor text. Reaching Legendary grants a permanent stat bonus. It rewards loyalty to gear you love.",
-    "keywords": [
-      "patina",
-      "aging",
-      "worn",
-      "seasoned",
-      "legendary",
-      "loyalty"
-    ]
-  },
-  {
-    "id": 9,
-    "category": "Companions",
-    "q": "How many companions are there?",
-    "a": "96 unique companions across 6 tiers: 11 Common, 10 Uncommon, 14 Rare, 23 Ornate, 15 Exquisite, and 23 Mythical. Each has unique abilities that scale from level 1 to 100.",
-    "keywords": [
-      "companions",
-      "pets",
-      "count",
-      "how many",
-      "total"
-    ]
-  },
-  {
-    "id": 10,
-    "category": "Companions",
-    "q": "How do I get companions?",
-    "a": "Companions appear in crates! Each companion has a home biome where they're 10x more likely to appear. Open crates in different biomes for variety. 11 universal companions ignore biome rules entirely.",
-    "keywords": [
-      "get",
-      "find",
-      "obtain",
-      "crates",
-      "biome",
-      "home biome"
-    ]
-  },
-  {
-    "id": 11,
-    "category": "Companions",
-    "q": "How does companion combat work?",
-    "a": "Companions fight alongside you using the whistle. They have tier-specific stats, XP gain, and their own damage calculations. A kill counter tracks every mob your companion helps bring down.",
-    "keywords": [
-      "combat",
-      "fight",
-      "attack",
-      "whistle",
-      "damage"
-    ]
-  },
-  {
-    "id": 12,
-    "category": "Companions",
-    "q": "What are evolved companions?",
-    "a": "6 mythical companions can evolve: Blue Dragon \u2192 Endwalker, Red Dragon \u2192 Ashborn, Phoenix \u2192 Emberheart, Reaper \u2192 Wraith, Warden \u2192 Monolith, Tiger \u2192 Sabertooth. Requires max level + max bond. A 4-phase evolution ceremony marks the transformation.",
-    "keywords": [
-      "evolve",
-      "evolution",
-      "endwalker",
-      "ashborn",
-      "emberheart",
-      "wraith",
-      "monolith",
-      "sabertooth"
-    ]
-  },
-  {
-    "id": 13,
-    "category": "Companions",
-    "q": "How does the relationship system work?",
-    "a": "7 mood states from Lonely to Overjoyed. Feed companions Pet Treats to build your bond. Reach Eternal Bond and abilities hit 50% harder. Neglect them and the bond decays. Companions remember shared adventures \u2014 boss kills, mythical finds, biome discoveries.",
-    "keywords": [
-      "relationship",
-      "bond",
-      "mood",
-      "treats",
-      "eternal bond",
-      "friendship"
-    ]
-  },
-  {
-    "id": 14,
-    "category": "Classes",
-    "q": "How many classes are there?",
-    "a": "14 weapon classes. 13 are known: Archer, Beastlord, Berserker, Dancer, Healer, Hunter, Javelin, Knight, Rogue, Striker, Tank, Hoplite, and Sentinel. The 14th is a secret class that can only be discovered by defeating a specific raid boss.",
-    "keywords": [
-      "classes",
-      "how many",
-      "weapon classes",
-      "list"
-    ]
-  },
-  {
-    "id": 15,
-    "category": "Classes",
-    "q": "How do I choose a class?",
-    "a": "Classes activate automatically when you hold the right weapon type. Pick up daggers and the Rogue class activates. Hold a bow and you're an Archer. Dual-wield axes for Berserker. Each class transforms how you fight.",
-    "keywords": [
-      "choose",
-      "pick",
-      "activate",
-      "select",
-      "weapon"
-    ]
-  },
-  {
-    "id": 16,
-    "category": "Classes",
-    "q": "What is Class Affinity?",
-    "a": "Class Affinity tracks your commitment across all 14 classes. Accumulate XP through combat, dungeons, raids, and passive play to unlock damage boosts from +10% at Uncommon stage to +100% at Spirit tier with a twin weapon active.",
-    "keywords": [
-      "affinity",
-      "commitment",
-      "damage boost",
-      "xp",
-      "tracking"
-    ]
-  },
-  {
-    "id": 17,
-    "category": "Spirit Weapons",
-    "q": "What are Spirit Weapons?",
-    "a": "14 legendary endgame weapons, each belonging to its own class. They progress through 7 tiers (Common \u2192 Spirit) by completing objectives. At Spirit tier, they hit at 125% effectiveness (150% with the solo boost or twin). They are soulbound and return on death.",
-    "keywords": [
-      "spirit weapons",
-      "legendary",
-      "endgame",
-      "soulbound"
-    ]
-  },
-  {
-    "id": 18,
-    "category": "Spirit Weapons",
-    "q": "How do I get a Spirit Weapon?",
-    "a": "Defeat a raid boss \u2014 each has a 5% chance to drop its class Spirit Weapon. There are 14 raid bosses across 12 structures plus Castle floors 20 and 25.",
-    "keywords": [
-      "get",
-      "obtain",
-      "drop",
-      "raid boss",
-      "chance"
-    ]
-  },
-  {
-    "id": 19,
-    "category": "Spirit Weapons",
-    "q": "What is Metamorphosis?",
-    "a": "The final evolution of a Spirit Weapon. Requirements: all glyph slots filled at Exquisite tier, mastery maxed (100,000 XP), all 14 bosses slain, plus weapon-specific objectives like 50,000 kills. Completing metamorphosis transforms the weapon to Spirit tier.",
-    "keywords": [
-      "metamorphosis",
-      "transform",
-      "evolve",
-      "spirit tier",
-      "requirements"
-    ]
-  },
-  {
-    "id": 20,
-    "category": "Spirit Weapons",
-    "q": "What is the Dream Storm Crystal?",
-    "a": "A rare drop (1% per floor after Castle floor 25). Right-click it in main hand with your spirit weapon in offhand to reveal the twin weapon for dual-wield classes. Classes without twins get a permanent 25% effectiveness boost instead.",
-    "keywords": [
-      "dream storm crystal",
-      "twin",
-      "dual wield",
-      "crystal"
-    ]
-  },
-  {
-    "id": 21,
-    "category": "Skill Trees",
-    "q": "How do Advantage Trees work?",
-    "a": "13 skill trees with 25 levels each and 3 prestige cycles. Spend XP to level up. Each tree has scaling XP costs and stat requirements \u2014 you earn levels through play. Max a tree for fireworks + a title. 67 unique prestige abilities across all trees.",
-    "keywords": [
-      "advantage",
-      "skill trees",
-      "prestige",
-      "levels",
-      "xp"
-    ]
-  },
-  {
-    "id": 22,
-    "category": "Skill Trees",
-    "q": "What trees are available?",
-    "a": "13 trees: Agility (speed), Beastmaster (tamed animals), Blacksmith (smelting), Culinary (cooking), Dexterity (attack), Evasion (dodge), Explorer (discovery), Fishing, Gathering (crops), Mining, Stealth (sneaking), Taskmaster (quests), Victorian (trading).",
-    "keywords": [
-      "trees",
-      "list",
-      "available",
-      "names"
-    ]
-  },
-  {
-    "id": 23,
-    "category": "Quests",
-    "q": "How do I start questing?",
-    "a": "Find a village and place a Book and Quill inside a Lectern to spawn a Quest Book. This is per-village \u2014 each village gets its own quest board. Right-click the quest book to browse available quests.",
-    "keywords": [
-      "quests",
-      "start",
-      "begin",
-      "village",
-      "lectern",
-      "book"
-    ]
-  },
-  {
-    "id": 24,
-    "category": "Quests",
-    "q": "How does village reputation work?",
-    "a": "Per-village reputation from Stranger to Legend. Higher rep means better rewards (not better quests). Complete quests to build rep. There's also an exile system for betrayal and a Black Market accessible above the quest book.",
-    "keywords": [
-      "reputation",
-      "village",
-      "rep",
-      "stranger",
-      "legend",
-      "exile"
-    ]
-  },
-  {
-    "id": 25,
-    "category": "Raids",
-    "q": "What are Spirit Raids?",
-    "a": "After clearing Dungeon Floor 10 with DR 10+, Spirit Raids unlock. 10 floors per structure with a boss at floor 10. Floors 1-9 have a vote: continue or evacuate (majority rules). Win: teleport back + 5% spirit weapon drop. Lose: sent home, lose all XP levels (keep gear).",
-    "keywords": [
-      "raids",
-      "spirit raids",
-      "floors",
-      "boss",
-      "voting"
-    ]
-  },
-  {
-    "id": 26,
-    "category": "Raids",
-    "q": "How many raid bosses are there?",
-    "a": "14 total: Hollow Sovereign (Ancient City), Void Architect (End City), Gilded Tyrant (Bastion), Arbiter (Trial Chambers), Gatekeeper (Stronghold), Grand Illusionist (Woodland Mansion), Ashen Lord (Nether Fortress), Leviathan (Ocean Monument), Eternal Pharaoh (Desert Pyramid), Venomweaver (Jungle Pyramid), Deepcrawler (Mineshaft), Mossheart Warden (Dungeon), Iron Phalanx (Castle F20), Crimson Bulwark (Castle F25).",
-    "keywords": [
-      "bosses",
-      "raid bosses",
-      "how many",
-      "list",
-      "names"
-    ]
-  },
-  {
-    "id": 27,
-    "category": "Cooking",
-    "q": "How does cooking work?",
-    "a": "Right-click a cooking utensil around a campfire to open the Cooking GUI. Combine ingredients to create meals with combat buffs. 11 mastery categories, 16 seasonal recipes that change with the calendar. A Pantry stores your food collection.",
-    "keywords": [
-      "cooking",
-      "campfire",
-      "utensil",
-      "gui",
-      "meals",
-      "recipes"
-    ]
-  },
-  {
-    "id": 28,
-    "category": "Guilds",
-    "q": "How do guilds work?",
-    "a": "Form a guild, place a Guild Stone, and build something bigger. Features include member management (invite/kick), donation tracking, expedition bonuses, warp access between bases, and zone buffs that protect your pets.",
-    "keywords": [
-      "guild",
-      "guilds",
-      "create",
-      "stone",
-      "members"
-    ]
-  },
-  {
-    "id": 29,
-    "category": "Housing",
-    "q": "How does housing work?",
-    "a": "Place a Hearthstone (lodestone) to claim a 64-block home zone. 5 upgrade tiers with escalating buffs (Regen \u2192 Resistance I). Features: auto-garden, comfort scoring, Quick Stash for one-button inventory sorting, and hired laborers.",
-    "keywords": [
-      "housing",
-      "home",
-      "hearthstone",
-      "lodge",
-      "stash"
-    ]
-  },
-  {
-    "id": 30,
-    "category": "Infinite Castle",
-    "q": "What is the Infinite Castle?",
-    "a": "An endless escalating dungeon. Bosses every 10 floors. Dream Storm Crystals drop after floor 25 (1% per floor). Floor 30 has an exclusive pet. Floor 100 has a legendary cosmetic set. 3 runs per day. Your highest floor is tracked permanently.",
-    "keywords": [
-      "castle",
-      "infinite",
-      "floors",
-      "endless",
-      "dungeon"
-    ]
-  },
-  {
-    "id": 31,
-    "category": "Buddy System",
-    "q": "What is the Buddy System?",
-    "a": "Form personal bonds with tamed vanilla mobs \u2014 wolves, cats, parrots, horses, foxes, ocelots, even happy ghasts. 7 friendship tiers from Acquaintance to Spiritbound. Each tier unlocks abilities. Promote your Spiritbound companion to Best Buddy for combat AI, equipment slots, and auto-revive.",
-    "keywords": [
-      "buddy",
-      "tamed",
-      "bond",
-      "wolves",
-      "cats",
-      "spiritbound",
-      "best buddy"
-    ]
-  },
-  {
-    "id": 32,
-    "category": "Gacha",
-    "q": "What is the Gacha Fountain?",
-    "a": "A custom RNG fountain that uses Dream Tokens. Throw tokens in and receive random rewards ranging from artifacts to companions to rare consumables. Crumb of Dreams is a gacha-only drop.",
-    "keywords": [
-      "gacha",
-      "fountain",
-      "tokens",
-      "random",
-      "crumb of dreams"
-    ]
-  },
-  {
-    "id": 33,
-    "category": "General",
-    "q": "What is Forevercraft?",
-    "a": "Forevercraft is a complete Fantasy transformation of vanilla Minecraft \u2014 102 interconnected systems, 408 artifacts, 96 companions, 14 spirit weapons, 13 skill trees, 250 quests, 904 lore discoveries, 14 raid bosses, an infinite castle, and a dream-fueled progression system built across 10,994 custom functions.",
-    "keywords": [
-      "forevercraft",
-      "what is",
-      "about",
-      "overview"
-    ]
-  },
-  {
-    "id": 34,
-    "category": "General",
-    "q": "Is there a Bedrock Edition?",
-    "a": "Yes! Forevercraft Bedrock Edition has 129 systems with full Java parity (102/102). Built on Script API 2.6.0 for Bedrock 26.10+. Works on console, mobile, and PC.",
-    "keywords": [
-      "bedrock",
-      "console",
-      "mobile",
-      "xbox",
-      "playstation",
-      "switch"
-    ]
-  },
-  {
-    "id": 35,
-    "category": "General",
-    "q": "What is the Newcomer vs Adventurer choice?",
-    "a": "At the start, you choose between Newcomer (easier progression, class weapons available early, guided experience) or Adventurer (standard progression, earn everything through play). This choice affects early game pacing.",
-    "keywords": [
-      "newcomer",
-      "adventurer",
-      "difficulty",
-      "choice",
-      "start"
-    ]
-  },
-  {
-    "id": 36,
-    "category": "General",
-    "q": "How does the Codex work?",
-    "a": "The Forevercraft Codex is an interactive encyclopedia accessible through your inventory. It tracks all 408 artifacts (found items are clickable, unfound are hidden), boss catalog, and more. Right-click the Forevercraft book in your inventory to access it.",
-    "keywords": [
-      "codex",
-      "encyclopedia",
-      "book",
-      "inventory",
-      "track"
-    ]
-  },
-  {
-    "id": 37,
-    "category": "General",
-    "q": "What is the Reaper/Affinity system?",
-    "a": "Every action has consequences. Kill players and villagers to build Infamy (Villain path). Trade, quest, and protect to build Renown (Peacemonger path). 11 alignment tiers. Villains pacify hostile mobs but attract Hunting Parties. Peacemongers earn Hero of the Village but face Bandits.",
-    "keywords": [
-      "reaper",
-      "affinity",
-      "villain",
-      "peacemonger",
-      "alignment",
-      "infamy",
-      "renown"
-    ]
-  },
-  {
-    "id": 38,
-    "category": "General",
-    "q": "What are world events?",
-    "a": "5+ world events that sweep across the land: Starfall, The Dreaming, Abyssal Tremor, Aurora Bloom, Rift Echo, and Dimensional Rift. Each has a 60-second omen warning. They affect gameplay in unique ways.",
-    "keywords": [
-      "world events",
-      "starfall",
-      "dreaming",
-      "abyssal",
-      "aurora",
-      "rift"
-    ]
-  },
-  {
-    "id": 39,
-    "category": "General",
-    "q": "Can I get married?",
-    "a": "Yes! Forevercraft has a full family system including the ability to get married to another player.",
-    "keywords": [
-      "marriage",
-      "married",
-      "family",
-      "wedding"
-    ]
-  },
-  {
-    "id": 40,
-    "category": "General",
-    "q": "How do achievements work?",
-    "a": "Forevercraft replaces the vanilla achievement system with Personal Milestones \u2014 100 personal and 34 realm milestones across 6 categories. These track your progress across all systems.",
-    "keywords": [
-      "achievements",
-      "milestones",
-      "personal",
-      "tracking",
-      "progress"
-    ]
-  },
-  {
-    "id": 41,
-    "category": "General",
-    "q": "Does archaeology have a DR lockout?",
-    "a": "No! The archaeology system has no Dream Rate lockout \u2014 you can dig up finds at any DR level.",
-    "keywords": [
-      "archaeology",
-      "dig",
-      "lockout",
-      "dr requirement"
-    ]
-  }
+  // ═══════════════════════════════════════════
+  // DREAM RATE (0-5)
+  // ═══════════════════════════════════════════
+  { id: 0, category: "Dream Rate", q: "What is Dream Rate?", a: "Dream Rate (DR) is the backbone of Forevercraft — a custom RNG system (cap 50) that connects every system. It affects crate quality, artifact rarity, structure access, pet encounters, and more. Formula: multiplier = 1 + (dreams / 35). Higher DR means better loot from everything.", keywords: ["dream rate", "dr", "luck", "rng", "dreams", "backbone"] },
+  { id: 1, category: "Dream Rate", q: "How do I increase my Dream Rate?", a: "Permanent sources: Crystal of Dreams (+1), mythical armor (+0.5/piece), artifact constellations (+0.25 each, +2.5 total), profession drops like Miner's Slumbering Geode (+1 each), raid boss DR consumables (+1 each), and 19 world drop consumables. Temporary sources: Potion of Dreams (I-VI), time-of-day buffs, moon phase buffs, weather, and enchantments.", keywords: ["increase", "raise", "boost", "permanent", "temporary", "sources", "crystal of dreams"] },
+  { id: 2, category: "Dream Rate", q: "How do I check my Dream Rate?", a: "Right-click the Forevercraft book in your inventory header to see a full stats breakdown including your Dream Rate, all sources, and history.", keywords: ["check", "view", "see", "breakdown", "stats", "book"] },
+  { id: 3, category: "Dream Rate", q: "What structures unlock at each Dream Rate?", a: "DR 1: Shipwrecks. DR 3: Villages. DR 5: Ocean Ruins, Igloos, Trail Ruins, Ruined Portals. DR 7.5: Desert/Jungle Pyramids, Mineshafts, Dungeons. DR 10: Trial Chambers, Nether Fortress, Ocean Monument. DR 14: Stronghold, Woodland Mansion, Bastion. DR 17.5: Ancient City, End City.", keywords: ["structures", "unlock", "access", "gate", "requirement", "dr requirement"] },
+  { id: 4, category: "Dream Rate", q: "What is the DR cap?", a: "The Dream Rate cap is 50. At DR 35, you hit a 2.0x loot multiplier — every crate rolls twice, making mythical drops realistic. At DR 50, you've mastered the dream.", keywords: ["cap", "maximum", "max", "limit", "50"] },
+  { id: 5, category: "Dream Rate", q: "What are temporary DR buffs?", a: "Time-of-day: morning fishing +0.5, noon mining +1.0, night combat +0.5. Moon phase: Full Moon fishing luck, Harvest Moon (1/8 chance) +1.5 DR and faster crops, New Moon doubles patron/furia spawns. Potion of Dreams I-VI gives up to +6 DR for 7 minutes.", keywords: ["temporary", "buff", "time of day", "moon", "potion", "night", "morning", "noon"] },
+
+  // ═══════════════════════════════════════════
+  // CLASSES (6-20)
+  // ═══════════════════════════════════════════
+  { id: 6, category: "Classes", q: "What classes are there?", a: "14 weapon classes: Archer (bows), Beastlord (spears), Berserker (dual axes), Dancer (gauntlets), Healer (healing staves), Hunter (crossbows), Javelin (tridents), Knight (sword+shield), Rogue (daggers), Striker (maces), Tank (shields), Hoplite (trident+shield), Sentinel (mace+shield), plus a secret 14th class obtainable only through endgame raids.", keywords: ["classes", "class", "weapon class", "weapon classes", "list", "how many", "all classes"] },
+  { id: 7, category: "Classes", q: "What is the best class?", a: "There's no single 'best' class — each excels in different situations. Rogue has the highest single-target DPS with dual daggers. Berserker deals massive AoE but sacrifices armor. Healer is essential for group content. Beastlord shines if you have tamed animals. Dancer is the best survivability class. It depends on your playstyle!", keywords: ["best", "strongest", "most powerful", "recommended", "op", "tier list", "ranking"] },
+  { id: 8, category: "Classes", q: "How do I choose a class?", a: "Classes activate automatically when you hold the right weapon type. Pick up daggers and the Rogue class activates. Hold a bow and you're an Archer. Dual-wield axes for Berserker. Each class transforms how you fight. No permanent commitment — switch anytime by changing weapons.", keywords: ["choose", "pick", "activate", "select", "switch", "change class"] },
+  { id: 9, category: "Classes", q: "How does the Rogue class work?", a: "Hold daggers to activate. Auto-swinging dual wield with 30% speed bonus. Scaling damage and multi-target strikes as tier climbs. 12 daggers across 6 tiers. Spirit weapon: Hollow Fangs with Shadow Step and Thousand Cuts abilities.", keywords: ["rogue", "dagger", "daggers", "dual wield", "shadow step", "hollow fangs"] },
+  { id: 10, category: "Classes", q: "How does the Berserker class work?", a: "Dual-wield axes to activate. Trade 7 armor points and 5 hearts for raw destructive power. Rage mode: 10 seconds of Strength III and Speed II. Below half health: Haste III auto-activates. Trees have a chance to fall in one hit. Spirit weapon: Firebrand with Earthshatter ability.", keywords: ["berserker", "axe", "axes", "rage", "strength", "firebrand"] },
+  { id: 11, category: "Classes", q: "How does the Dancer class work?", a: "Equip gauntlets (unarmed weapons) to activate. Grants evasion, Haste II, Flurry burst, and healing on every hit. Less damage than Berserker but much better survival. 7 gauntlets across tiers.", keywords: ["dancer", "gauntlet", "gauntlets", "evasion", "flurry", "unarmed"] },
+  { id: 12, category: "Classes", q: "How does the Archer class work?", a: "Hold a bow to activate. Overcharge: hold shot past full draw for bonus damage, knockback, or on-hit effects. 12 bows with passive abilities. Disengage launches you backward. Spirit weapon: Soulstring.", keywords: ["archer", "bow", "overcharge", "disengage", "soulstring", "sabrewing"] },
+  { id: 13, category: "Classes", q: "How does the Hunter class work?", a: "Hold a crossbow to activate. Steady Aim: stand still 2 seconds for amplified next shot. Precision Shot narrows spread. Fade turns you invisible after a kill. 6 crossbows for the patient and precise.", keywords: ["hunter", "crossbow", "steady aim", "precision", "fade", "invisible"] },
+  { id: 14, category: "Classes", q: "How does the Beastlord class work?", a: "Hold a spear to activate. Transforms your relationship with tamed animals — wolves hit harder, cats attack creepers, parrots attack small mobs. Warp Strike teleports pets to your target. Rally Cry buffs all tamed animals in range. Works with the Buddy System! Spirit weapon: Whispering Spear.", keywords: ["beastlord", "spear", "tamed", "wolves", "animals", "warp strike", "rally cry", "whispering spear"] },
+  { id: 15, category: "Classes", q: "How does the Knight class work?", a: "Sword + shield hybrid DPS class. Balanced offense and defense. Spirit weapons: Dragonheart Sword + Johan Shield (obtained via Dream Storm Crystal). Twin pair gives enhanced blocking and counter-attack abilities.", keywords: ["knight", "sword", "shield", "dragonheart", "johan"] },
+  { id: 16, category: "Classes", q: "What is the secret 14th class?", a: "The 14th class is a mystery. Some say The Gatekeeper in the Stronghold raid knows something about it. Defeat that boss and perhaps the answer reveals itself. Two blades where one should suffice...", keywords: ["secret", "14th", "hidden", "mystery", "gatekeeper"] },
+  { id: 17, category: "Classes", q: "What is Class Affinity?", a: "Class Affinity tracks your commitment across all 14 classes. Accumulate XP through combat, dungeons, raids, and passive play to unlock damage boosts: +10% at Uncommon, scaling to +100% at Spirit tier with a twin weapon active. Millions of XP required per stage.", keywords: ["affinity", "commitment", "damage boost", "xp", "tracking", "class affinity"] },
+  { id: 18, category: "Classes", q: "What are dual-wield classes?", a: "Rogue (daggers), Berserker (axes), and Dancer (gauntlets) are dual-wield classes that require weapons in both hands. They trade armor/health for increased damage output. Knight, Hoplite, and Sentinel use a weapon + shield combo.", keywords: ["dual wield", "dual", "offhand", "two weapons", "both hands"] },
+  { id: 19, category: "Classes", q: "How does the Striker class work?", a: "Hold a mace to activate. Heavy-hitting single-target class with stagger mechanics. Spirit weapon: Order of the Stone Gauntlet with amber/orange gems.", keywords: ["striker", "mace", "gauntlet", "heavy", "stagger"] },
+  { id: 20, category: "Classes", q: "How does the Tank class work?", a: "Shield-based defensive class. Nearly impervious from front. Spirit weapon obtained from the Crimson Bulwark boss at Castle Floor 25 (5% chance, only if no unique artifact in inventory).", keywords: ["tank", "shield", "defensive", "block", "crimson bulwark"] },
+
+  // ═══════════════════════════════════════════
+  // ARTIFACTS (21-32)
+  // ═══════════════════════════════════════════
+  { id: 21, category: "Artifacts", q: "How many artifacts are there?", a: "408 unique artifacts across 6 tiers: Common, Uncommon, Rare, Ornate, Exquisite, and Mythical. This includes weapons, armor sets, accessories, rings, and healer artifacts. Every artifact has handcrafted abilities instead of vanilla enchantments.", keywords: ["artifacts", "total", "count", "how many", "tiers", "408"] },
+  { id: 22, category: "Artifacts", q: "How do armor sets work?", a: "28 armor sets — 7 mythical, 5 exquisite, and 16 ornate. Equipping 2 pieces activates the 2-piece bonus, 4 pieces activates the 4-piece bonus. Mythical armor pieces give +0.5 permanent DR each. Six ornate sets have been expanded to 7 pieces with matching biome tools.", keywords: ["armor sets", "set bonus", "2 piece", "4 piece", "equipment", "mythical armor"] },
+  { id: 23, category: "Artifacts", q: "What are Artifact Constellations?", a: "10 thematic groups: Tidewalker, Pyreborn, Verdant Crown, Frozen Veil, Earthshaker, Starweaver, Shadow's Edge, Dune Sovereign, Stormcaller, and Soulbinder. Complete each by collecting 8-11 specific artifacts for +0.25 permanent DR. All 10 = +2.5 total.", keywords: ["constellations", "collection", "groups", "permanent dr", "tidewalker", "pyreborn"] },
+  { id: 24, category: "Artifacts", q: "How does transmutation work?", a: "Sacrifice same-tier artifacts for one of the next tier: 5 Common = 1 Uncommon, 4 Rare = 1 Ornate, 3 Exquisite = 1 Mythical. An Artificer villager nearby reduces the cost by 1 daily. Use a lodestone transmute station.", keywords: ["transmute", "transmutation", "upgrade", "sacrifice", "convert", "lodestone"] },
+  { id: 25, category: "Artifacts", q: "What is the Patina system?", a: "Artifacts age over real playtime: Fresh → Worn → Seasoned → Storied → Legendary (72h total). Each stage adds flavor text. Reaching Legendary grants a permanent stat bonus. It rewards loyalty to gear you love.", keywords: ["patina", "aging", "worn", "seasoned", "legendary", "loyalty", "playtime"] },
+  { id: 26, category: "Artifacts", q: "How do accessories work?", a: "46 accessories grant passive effects just by sitting in your inventory. 19 are toggleable with a simple sneak-click. They don't need to be equipped — just having them is enough.", keywords: ["accessories", "passive", "inventory", "toggleable", "sneak"] },
+  { id: 27, category: "Artifacts", q: "How do rings work?", a: "15 rings with passive abilities. Aquamarine Ring gives night vision. Void Ring wraps you in resistance, fire immunity, and slow falling. Each ring provides a unique passive effect while in your inventory.", keywords: ["rings", "ring", "aquamarine", "void ring", "passive", "night vision"] },
+  { id: 28, category: "Artifacts", q: "What are healer artifacts?", a: "12 healer artifacts — two per tier. Right-click to heal yourself and nearby allies. Range: Medicinal Bandages (8 blocks, 1 heart) up to Tears of Mending (32+ blocks, full restore). While ANY healer is on cooldown, Weakness V strips your melee damage and arrows do nothing. The Healer's Oath makes support a real commitment.", keywords: ["healer", "healing", "bandages", "ambrosia", "weakness", "cooldown", "support", "heal"] },
+  { id: 29, category: "Artifacts", q: "What is the Codex?", a: "The Forevercraft Codex is an interactive encyclopedia accessible through your inventory book. It tracks all 408 artifacts — found items are clickable to reveal abilities, unfound ones are hidden behind obfuscated text. Also includes a boss catalog with found/missing status.", keywords: ["codex", "encyclopedia", "book", "inventory", "track", "found", "unfound"] },
+  { id: 30, category: "Artifacts", q: "Where do I find artifacts?", a: "Artifacts drop from crates! 7 sources: mining, fishing, harvesting, mob kills, structures, quests, and achievements. Structure crates have 25% artifact drop rate vs 7% from mining/fishing. Higher Dream Rate = better quality drops.", keywords: ["find", "drop", "crate", "where", "loot", "source"] },
+  { id: 31, category: "Artifacts", q: "What are biome-specific weapons?", a: "Weapons that are stronger in their home biome. Ocean tridents, frost bows, jungle ballistas, desert swords — each with weak and strong versions. They reward fighting where you belong with +25% bonus in matching biomes.", keywords: ["biome", "biome weapon", "ocean", "frost", "jungle", "desert", "matching"] },
+  { id: 32, category: "Artifacts", q: "What is the Dragon Fan?", a: "A mythical sword with seven distinct abilities: launches mobs into the sky, breathes fire in a 15-block line, and hits harder the closer you are to death. One of the most iconic artifacts in Forevercraft.", keywords: ["dragon fan", "mythical", "fire", "launch", "iconic"] },
+
+  // ═══════════════════════════════════════════
+  // COMPANIONS (33-42)
+  // ═══════════════════════════════════════════
+  { id: 33, category: "Companions", q: "How many companions are there?", a: "96 unique companions across 6 tiers: 11 Common, 10 Uncommon, 14 Rare, 23 Ornate, 15 Exquisite, and 23 Mythical. Each has unique abilities that scale from level 1 to 100.", keywords: ["companions", "pets", "count", "how many", "total", "96"] },
+  { id: 34, category: "Companions", q: "How do I get companions?", a: "Companions appear in crates! Each has a home biome where they're 10x more likely to appear. Open crates in different biomes for variety. 11 universal companions ignore biome rules entirely.", keywords: ["get companion", "find companion", "obtain", "crate", "biome", "home biome", "spawn"] },
+  { id: 35, category: "Companions", q: "How do companions fight?", a: "Companions fight alongside you when you use the whistle. They have tier-specific stats, XP gain, and their own damage calculations. A kill counter tracks every mob your companion helps bring down. They do NOT auto-attack.", keywords: ["combat", "fight", "attack", "whistle", "damage", "companion combat"] },
+  { id: 36, category: "Companions", q: "What are evolved companions?", a: "6 mythical companions can evolve: Blue Dragon → Endwalker (death recall), Red Dragon → Ashborn (inferno), Phoenix → Emberheart (rebirth), Reaper → Wraith (shadow cloak), Warden → Monolith (seismic sight), Tiger → Sabertooth (pack bonus). Requires max level + max bond. A 4-phase evolution ceremony marks the transformation.", keywords: ["evolve", "evolution", "endwalker", "ashborn", "emberheart", "wraith", "monolith", "sabertooth"] },
+  { id: 37, category: "Companions", q: "How does the companion relationship work?", a: "7 mood states from Lonely to Overjoyed. Feed companions Pet Treats to build your bond. Reach Eternal Bond and abilities hit 50% harder. Neglect them and the bond decays. Companions remember shared adventures — boss kills, mythical finds, biome discoveries.", keywords: ["relationship", "bond", "mood", "treats", "eternal bond", "friendship", "feed"] },
+  { id: 38, category: "Companions", q: "What are Pet Duels?", a: "Challenge another player's companion to a 30-second 1v1 fight with a bossbar timer. Career stats, win streaks, and bragging rights are tracked. Your pet's HP and attack scale from their level and evolved status.", keywords: ["pet duel", "duels", "pvp", "1v1", "fight", "companion battle"] },
+  { id: 39, category: "Companions", q: "What is the Companion Catalogue?", a: "A floating menu you can craft and open anywhere. Shows your full companion roster, their levels, abilities, home biomes, and collection progress. Like a Pokédex for Forevercraft.", keywords: ["catalogue", "catalog", "roster", "collection", "menu", "pokedex"] },
+  { id: 40, category: "Companions", q: "What are Pet Treats?", a: "5 tiers of craftable treats in the cooking system. Feed them to companions to build your relationship bond and improve their mood. Higher tier treats give more relationship points.", keywords: ["treats", "pet treats", "feed", "food", "craft", "relationship points"] },
+  { id: 41, category: "Companions", q: "What is the best companion?", a: "Some standouts: Golden Dragon (DR + resistance + fire immunity passively), Butterfly (5% instant kill chance on hits), Cow of Eden (passive regen + cleanses negatives), Claude (detects ores through walls), Owl (+5 permanent DR at level 100). Best depends on your needs!", keywords: ["best companion", "best pet", "strongest pet", "golden dragon", "butterfly", "cow of eden"] },
+  { id: 42, category: "Companions", q: "What are rival pets?", a: "Certain companions have rivalries with others — they bristle when they spot each other nearby. It's a fun flavor system that gives personality to your roster.", keywords: ["rival", "rivalry", "bristle", "personality"] },
+
+  // ═══════════════════════════════════════════
+  // SPIRIT WEAPONS (43-52)
+  // ═══════════════════════════════════════════
+  { id: 43, category: "Spirit Weapons", q: "What are Spirit Weapons?", a: "14 legendary endgame weapons, each belonging to its own class. They progress through 7 tiers (Common → Uncommon → Rare → Ornate → Exquisite → Mythical → Spirit) by completing unique objectives. At Spirit tier: 125% effectiveness (150% with twin or solo boost). Soulbound — return on death, only storable in ender chests.", keywords: ["spirit weapons", "legendary", "endgame", "soulbound", "spirit tier"] },
+  { id: 44, category: "Spirit Weapons", q: "How do I get a Spirit Weapon?", a: "Defeat a raid boss — each has a 5% chance to drop its class Spirit Weapon. There are 14 raid bosses across 12 structures plus Castle floors 20 and 25. You need DR 10+ to attempt raids.", keywords: ["get spirit", "obtain spirit", "drop", "raid boss", "5 percent", "chance"] },
+  { id: 45, category: "Spirit Weapons", q: "What Spirit Weapons exist?", a: "Hollow Fangs (Rogue daggers), Soulstring (Archer bow), Firebrand (Berserker axe), Whispering Spear (Beastlord), Dragonheart Sword (Knight), Ellegaard's Trident (Javelin), Ashcrown Mace (Sentinel), Lifewoven Branch (Healer staff), and more. Each has 2 triggerable abilities.", keywords: ["list", "names", "hollow fangs", "soulstring", "firebrand", "whispering spear", "dragonheart", "all spirit weapons"] },
+  { id: 46, category: "Spirit Weapons", q: "What is Metamorphosis?", a: "The final evolution to Spirit tier. Requirements vary per weapon but include: all glyph slots filled at Exquisite, mastery maxed (100,000 XP), all 14 bosses slain, plus weapon-specific objectives like 50,000 kills (combat) or 50,000 health healed (healer). A transformation sequence plays when complete.", keywords: ["metamorphosis", "transform", "evolve", "spirit tier", "requirements", "100000"] },
+  { id: 47, category: "Spirit Weapons", q: "What is the Dream Storm Crystal?", a: "A rare drop (1% per floor after Castle floor 25). Right-click with spirit weapon in offhand to reveal the twin weapon for dual-wield classes (Rogue, Berserker, Dancer, Knight, Hoplite, Sentinel). Solo classes get a permanent 25% effectiveness boost instead. Requires Mythical tier + Spirit Tome quest 50.", keywords: ["dream storm crystal", "twin", "dual wield", "crystal", "castle floor 25", "1 percent"] },
+  { id: 48, category: "Spirit Weapons", q: "How does Spirit Weapon progression work?", a: "Spirit weapons start at Common tier (50% effectiveness, no abilities). Uncommon: 60%. Rare: 70% + first ability unlocked. Ornate: 80%. Exquisite: 90% + second ability. Mythical: 100% + unlocks twin process. Spirit: 125% (150% with twin/solo boost). Each tier requires completing specific objectives.", keywords: ["progression", "tier", "effectiveness", "scaling", "upgrade", "level up spirit"] },
+  { id: 49, category: "Spirit Weapons", q: "What is the Spirit Tome?", a: "A 100-part quest chain that gives mastery XP to aid spirit weapon growth. Each quest gives XP equal to the quest number in levels — quest 1 = 1 level, quest 50 = 50 levels, quest 100 = 100 levels. Total: 5,050 levels of mastery XP. Mix of silly/easy and extremely difficult parts.", keywords: ["spirit tome", "tome", "quest chain", "100 parts", "mastery xp", "tome of awakening"] },
+  { id: 50, category: "Spirit Weapons", q: "What are twin weapons?", a: "7 classes have twin weapons revealed by Dream Storm Crystal: Rogue (Hollow Fangs + Ghost Fang), Berserker (Firebrand + Aqualoch), Dancer (twin fans), Knight (Dragonheart + Johan Shield), Hoplite (trident + Vanguard Shield), Sentinel (mace + shield). Twins share XP/mastery. Both equipped removes penalties and unlocks bonus effects.", keywords: ["twin", "twins", "pair", "ghost fang", "aqualoch", "johan shield", "dual"] },
+  { id: 51, category: "Spirit Weapons", q: "Can I hold two different spirit weapons?", a: "No — a player cannot hold two different class artifacts in hand at the same time. You must commit to one class's spirit weapon set.", keywords: ["two spirit", "hold two", "different", "restriction", "limit"] },
+  { id: 52, category: "Spirit Weapons", q: "Are Spirit Weapons tradeable?", a: "Spirit weapons are soulbound — they return on death and can only be stored in ender chests. However, they CAN be traded to a friend who is a Best Friend, at any stage of the weapon.", keywords: ["trade", "soulbound", "share", "friend", "ender chest", "tradeable"] },
+
+  // ═══════════════════════════════════════════
+  // SKILL TREES (53-58)
+  // ═══════════════════════════════════════════
+  { id: 53, category: "Skill Trees", q: "How do Advantage Trees work?", a: "14 skill trees with 25 levels each and 3 prestige cycles. Spend XP to level up. Scaling costs + stat requirements — you earn levels through play. Max a tree for fireworks + a title. 67 unique prestige abilities. Optional challenges with 75% progress notifications.", keywords: ["advantage", "skill trees", "prestige", "levels", "xp", "how work"] },
+  { id: 54, category: "Skill Trees", q: "What skill trees are available?", a: "14 trees in 3 columns. Adventure: Agility (speed), Dexterity (attack), Evasion (dodge), Stealth (sneaking), Vitality (hearts). Progression: Taskmaster (quests), Beastmaster (tamed animals), Victorian (trading), Culinary (cooking). Gathering: Fishing, Mining, Gathering (crops), Blacksmith (smelting), Explorer (discovery).", keywords: ["trees", "list", "available", "names", "all trees", "agility", "mining", "fishing"] },
+  { id: 55, category: "Skill Trees", q: "What are prestige abilities?", a: "When you max a skill tree (level 25), you can prestige — reset to level 1 but keep bonuses and unlock a unique prestige ability. 3 prestiges per tree. 67 total prestige abilities across all trees. Third prestige reward is intentionally mysterious.", keywords: ["prestige", "reset", "abilities", "max level", "67", "reward"] },
+  { id: 56, category: "Skill Trees", q: "Can I respec my skill trees?", a: "Yes! A rare Seed of Forgetting lets you respec your points. It's not easy to find, so choose wisely — but you're never permanently locked in.", keywords: ["respec", "reset", "seed of forgetting", "redo", "change", "refund"] },
+  { id: 57, category: "Skill Trees", q: "What are skill tree synergies?", a: "Cross-tree synergies reward multi-specialization. Leveling complementary trees unlocks bonus effects that neither tree provides alone. It encourages building a diverse character rather than maxing one tree.", keywords: ["synergy", "synergies", "cross-tree", "multi", "combo", "complementary"] },
+  { id: 58, category: "Skill Trees", q: "How do I open the skill tree menu?", a: "Access it through the Forevercraft Codex — right-click the book in your inventory. The Advantage Tree section shows all 14 trees with your current levels and available upgrades.", keywords: ["open", "menu", "access", "gui", "interface", "codex"] },
+
+  // ═══════════════════════════════════════════
+  // RAIDS & BOSSES (59-66)
+  // ═══════════════════════════════════════════
+  { id: 59, category: "Raids", q: "What are Spirit Raids?", a: "After clearing Dungeon Floor 10 with DR 10+, Spirit Raids unlock. 10 floors per structure with a raid boss at floor 10. Floors 1-9 have a vote: continue or evacuate (majority rules). Floor 10 has a unique scary prompt describing the boss. Win: teleport back + 5% spirit weapon drop. Lose: sent home, lose all XP levels (keep gear).", keywords: ["raids", "spirit raids", "floors", "voting", "evacuate", "continue"] },
+  { id: 60, category: "Raids", q: "How many raid bosses are there?", a: "14 total: Hollow Sovereign (Ancient City/Rogue), Void Architect (End City/Hunter), Gilded Tyrant (Bastion/Berserker), Arbiter (Trial Chambers/Dancer), Gatekeeper (Stronghold/???), Grand Illusionist (Woodland Mansion/Beastlord), Ashen Lord (Nether Fortress/Sentinel), Leviathan (Ocean Monument/Javelin), Eternal Pharaoh (Desert Pyramid/Striker), Venomweaver (Jungle Pyramid/Healer), Deepcrawler (Mineshaft/Archer), Mossheart Warden (Dungeon/Knight), Iron Phalanx (Castle F20/Hoplite), Crimson Bulwark (Castle F25/Tank).", keywords: ["bosses", "raid bosses", "how many", "list", "names", "14 bosses"] },
+  { id: 61, category: "Raids", q: "How does the voting system work?", a: "At each floor (1-9), all party members vote to continue or evacuate. Majority wins. If tied, the group continues. At floor 10 (boss room), the vote has a special scary prompt describing that particular boss. Solo players choose for themselves.", keywords: ["vote", "voting", "continue", "evacuate", "majority", "group decision"] },
+  { id: 62, category: "Raids", q: "What happens if I lose a raid?", a: "You're teleported home and lose ALL XP levels. You keep your gear. It's a harsh penalty that makes the risk real.", keywords: ["lose", "death", "fail", "penalty", "xp levels", "sent home"] },
+  { id: 63, category: "Raids", q: "What is the Infinite Castle?", a: "An endless escalating dungeon with bosses every 10 floors. Dream Storm Crystals drop after floor 25 (1% per floor). Floor 30: exclusive pet. Floor 100: legendary cosmetic set. 3 runs per day. Your highest floor is tracked permanently. The Castle's floor 20 boss is the Iron Phalanx and floor 25 is the Crimson Bulwark.", keywords: ["castle", "infinite castle", "floors", "endless", "dungeon", "floor 30", "floor 100"] },
+  { id: 64, category: "Raids", q: "What are Village Dungeons?", a: "Instanced 5-wave combat at village entrances. 4 difficulty tiers: Easy, Medium, Hard, Brutal — scaled by Dream Rate. 16 instance themes. 6 random modifiers (Relentless, Fortified, Shrouded, Volatile, Undying, Frenzied). Personal leaderboard. Dungeon floors change to 'raid' mode after beating floor 10.", keywords: ["dungeon", "village dungeon", "waves", "difficulty", "easy", "hard", "brutal", "modifiers"] },
+  { id: 65, category: "Raids", q: "What are Heist Gauntlets?", a: "Stealth-based challenges — sneak past guards in 60-second timed gauntlets. Get detected and you fail. Reach the objective and escape for rare loot. A completely different gameplay style from combat raids.", keywords: ["heist", "stealth", "sneak", "guards", "timed", "detected"] },
+  { id: 66, category: "Raids", q: "What are world bosses?", a: "11 world bosses summoned via Boss Totems. Multi-phase encounters with ability sets. Boss catalog tracks found/missing status. Hero's Satchel preserves boss artifact AoE effects. Different from raid bosses — these are open-world encounters.", keywords: ["world boss", "boss totem", "summon", "phases", "hero's satchel", "open world"] },
+
+  // ═══════════════════════════════════════════
+  // QUESTS & REPUTATION (67-72)
+  // ═══════════════════════════════════════════
+  { id: 67, category: "Quests", q: "How do I start questing?", a: "Find a village and place a Book and Quill inside a Lectern to spawn a Quest Book. This is per-village — each village gets its own quest board. Right-click the quest book to browse available quests. Above the quest book is the artifact bounty node.", keywords: ["quests", "start", "begin", "village", "lectern", "book and quill", "quest book"] },
+  { id: 68, category: "Quests", q: "How does village reputation work?", a: "Per-village reputation from Stranger to Legend. Higher rep means better REWARDS (not better quests). Complete quests to build rep. There's an exile system for betrayal and a Black Market accessible above the quest book's artifact bounty node.", keywords: ["reputation", "village", "rep", "stranger", "legend", "exile", "rewards"] },
+  { id: 69, category: "Quests", q: "How many quests are there?", a: "250 quests across 6 tiers: Errand, Task, Mission, Challenge, Expedition, and Heroic. First quest of the day gives bonus rewards. Three daily artifact bounties spawn named elites in target biomes.", keywords: ["how many quests", "250", "tiers", "errand", "heroic", "daily", "bounty"] },
+  { id: 70, category: "Quests", q: "What is the exile system?", a: "Betray a village and you can be exiled. Exiled players lose reputation and access to that village's quest board and special trades. It's a consequence system that makes your choices matter.", keywords: ["exile", "betray", "banished", "consequence", "village"] },
+  { id: 71, category: "Quests", q: "What is the Black Market?", a: "A hidden trading system accessible above the quest book's artifact bounty node in villages. Offers rare deals that aren't available through normal profession villagers.", keywords: ["black market", "hidden", "rare", "trades", "deals", "secret shop"] },
+  { id: 72, category: "Quests", q: "What are bounties?", a: "Three daily artifact bounties spawn named elite Patron mobs in target biomes. Track them down and defeat them for artifact rewards. Available from the bounty board above the quest book in villages.", keywords: ["bounty", "bounties", "patron", "elite", "named", "daily"] },
+
+  // ═══════════════════════════════════════════
+  // COOKING & HOUSING (73-79)
+  // ═══════════════════════════════════════════
+  { id: 73, category: "Cooking", q: "How does cooking work?", a: "Right-click a cooking utensil around a campfire to open the Cooking GUI. Combine ingredients to create meals with combat buffs. 11 mastery categories including Combat, Mining, Fortune, Preservation, and seasonal recipes. A Pantry stores your food collection.", keywords: ["cooking", "campfire", "utensil", "gui", "meals", "recipes", "how cook"] },
+  { id: 74, category: "Cooking", q: "What are seasonal recipes?", a: "16 seasonal recipes that change with the 4 seasons (Spring, Summer, Autumn, Winter). Each season has 4 unique recipes only available during that time. Adds variety and incentive to cook year-round.", keywords: ["seasonal", "recipes", "spring", "summer", "autumn", "winter", "4 seasons"] },
+  { id: 75, category: "Cooking", q: "What is the Pantry?", a: "A storage system for your food collection. Separate from the Quick Stash in housing. Stores ingredients and completed meals in an organized interface.", keywords: ["pantry", "food storage", "ingredients", "organized"] },
+  { id: 76, category: "Housing", q: "How does housing work?", a: "Place a Hearthstone (lodestone) to claim a 64-block home zone. 5 upgrade tiers with escalating buffs (Regen → Resistance I). Features: auto-garden crop growth, comfort scoring (25-block milestones), Quick Stash for one-button inventory sorting with 8 labeled barrel categories, and hired laborers. House Key at Comfort 100 + Tier 3.", keywords: ["housing", "home", "hearthstone", "lodge", "stash", "comfort", "upgrade"] },
+  { id: 77, category: "Housing", q: "What is Quick Stash?", a: "One-button inventory sorting in your home. Label barrels with 8 categories and items automatically sort into the right barrel when you activate Quick Stash. Part of the housing system.", keywords: ["quick stash", "sort", "barrels", "inventory", "organize", "storage"] },
+  { id: 78, category: "Housing", q: "What are laborers?", a: "Hired NPCs that work while you're away. Part of the housing system. They gather resources and complete tasks over time, giving you passive income and materials.", keywords: ["laborers", "hired", "workers", "passive", "away", "gather"] },
+  { id: 79, category: "Housing", q: "What is the comfort system?", a: "Comfort scoring tracks how well-furnished your home is. 25-block milestones grant bonuses. Reach Comfort 100 + Housing Tier 3 to earn a House Key. Higher comfort = better passive buffs while at home.", keywords: ["comfort", "furniture", "milestones", "score", "house key"] },
+
+  // ═══════════════════════════════════════════
+  // SOCIAL SYSTEMS (80-92)
+  // ═══════════════════════════════════════════
+  { id: 80, category: "Guilds", q: "How do guilds work?", a: "Form a guild, place a Guild Stone, and build something bigger. Features: invite/kick members, donation tracking, expedition bonuses, warp access between bases, and zone buffs that protect your pets. No complex management — just invite, kick, and play together.", keywords: ["guild", "guilds", "create", "stone", "members", "warp", "how guild"] },
+  { id: 81, category: "Party", q: "How do parties work?", a: "Invite players to your party for shared sidebar HUD, proximity detection, and 9 combo abilities. DR Leaderboard, shared quest tracking, and dungeon/boss integration. Nearby party members also grant mastery XP bonus.", keywords: ["party", "group", "invite", "combo", "sidebar", "together"] },
+  { id: 82, category: "Party", q: "What are party combo abilities?", a: "9 combos: Pack Tactics (Beastmaster 15+ boosts party pets), Shield Wall (Vitality 15+ block gives allies dodge), Field Medic (Vitality 15+ eating golden food heals allies), Forge Bond (Blacksmith 15+ gives XP), Marked for Death (+25% damage), Blitz (Agility sprint gives allies Haste), Rally Cry (Explorer crate gives +2 DR), Shared Fortunes (mining/gathering shares drops), Tidal Network (Fisher+Explorer mutual buffs).", keywords: ["combo", "party combo", "pack tactics", "shield wall", "field medic", "rally cry", "blitz", "shared fortunes"] },
+  { id: 83, category: "Social", q: "How do friendships work?", a: "Add friends and earn daily Friendship Hearts through proximity — spend time adventuring near each other. Higher friendship levels unlock passive bonuses. A daily reset keeps it fresh. Best Friend status allows trading soulbound spirit weapons.", keywords: ["friends", "friendship", "hearts", "proximity", "best friend", "daily"] },
+  { id: 84, category: "Social", q: "How do duels work?", a: "Challenge another player to open-world or arena PvP. Countdown sequence, team assignment, arena construction, crash recovery, and winner declaration. Clean, structured PvP that doesn't interfere with the rest of the world.", keywords: ["duel", "duels", "pvp", "fight", "arena", "challenge", "1v1"] },
+  { id: 85, category: "Buddy System", q: "What is the Buddy System?", a: "Form personal bonds with tamed vanilla mobs — wolves, cats, parrots, horses, foxes, ocelots, even happy ghasts. 7 friendship tiers: Acquaintance → Familiar → Trusted → Devoted → Eternal → Mythic Bond → Spiritbound. Each tier unlocks abilities like Lucky Paws, Battle Cry, Pack Mule storage, War Companion damage boost, and Buddy Aura.", keywords: ["buddy", "buddy system", "tamed", "wolves", "cats", "spiritbound", "tiers"] },
+  { id: 86, category: "Buddy System", q: "What is Best Buddy?", a: "Promote your Spiritbound companion (tier 6 — highest buddy tier) to Best Buddy for combat AI, equipment slots, and auto-revive. The ultimate bond with a tamed vanilla mob.", keywords: ["best buddy", "spiritbound", "promote", "combat ai", "equipment", "auto-revive"] },
+  { id: 87, category: "Social", q: "Can I get married?", a: "Yes! Forevercraft has a full family system including marriage to another player. Build your family and adventure together.", keywords: ["marriage", "married", "family", "wedding", "spouse"] },
+  { id: 88, category: "Social", q: "What is the reputation/alignment system?", a: "Every action has consequences. Kill players and villagers to build Infamy (Villain path). Trade, quest, and protect to build Renown (Peacemonger path). 11 alignment tiers from Villain to Peacemonger. Villains pacify hostile mobs but attract Hunting Parties. Peacemongers earn Hero of the Village but face Bandits. Both decay over 7 days.", keywords: ["reaper", "affinity", "villain", "peacemonger", "alignment", "infamy", "renown", "reputation", "good", "evil"] },
+  { id: 89, category: "Social", q: "What are competitions?", a: "Friendly competitions between players — compare stats, race through challenges, and compete for bragging rights. Part of the social systems alongside duels and pet duels.", keywords: ["competition", "competitions", "friendly", "race", "compare"] },
+  { id: 90, category: "Social", q: "What are Craft Trials?", a: "Crafting challenges that test your gathering and forging skills. Part of the CraftForever system — 6 trial types test different passive skills. Complete them for rewards and artisan rank progression.", keywords: ["craft trials", "trials", "crafting", "challenge", "test", "artisan"] },
+  { id: 91, category: "Social", q: "What are Campfire Stories?", a: "Auto-narrated stories from server history when 2+ players sit near a campfire at night. 7 event types, up to 50 history entries per player. 10-minute cooldown. A unique social experience that celebrates your shared adventures.", keywords: ["campfire", "stories", "sit", "night", "social", "narrated", "history"] },
+  { id: 92, category: "Social", q: "What is Mount Training?", a: "Training system for horses and other rideable mobs. Complete laps and challenges to improve your mount's stats and abilities.", keywords: ["mount", "training", "horse", "riding", "laps", "speed"] },
+
+  // ═══════════════════════════════════════════
+  // MASTERY & PROGRESSION (93-99)
+  // ═══════════════════════════════════════════
+  { id: 93, category: "Mastery", q: "How does Weapon Mastery work?", a: "Find a tier-matched Awakening Stone (20% drop from any crate), consume it to awaken your weapon. Gain XP from experience orbs while holding it. Enchantments unlock automatically per level. Common caps at level 1, Mythical at level 7. Prestige up to 3 times for higher enchant caps. All 5 gear slots gain XP simultaneously.", keywords: ["weapon mastery", "awakening", "stone", "enchant", "prestige", "xp", "level"] },
+  { id: 94, category: "Mastery", q: "How does Armor Mastery work?", a: "Same system as weapon mastery but for armor. Awaken each armor piece with tier-matched stones. Gain XP, unlock enchantments, prestige up to 3 times. Each slot has its own enchantment progression.", keywords: ["armor mastery", "armor", "enchant", "awakening stone", "slot"] },
+  { id: 95, category: "Mastery", q: "What is the Glyphforge?", a: "A lodestone-based workstation for permanently binding rune enchantments to weapons. 13 glyphs: Emberheart (+1.5 attack), Verdant (+4 health), Quicksilver (+20% attack speed), Obsidian (+2.5 attack), Zephyr (+15% speed), Briar (+3 armor), Stalwart (+2 attack +1 armor), Gilded (+1.5 luck/DR), Tidecall (+6 health), Hearthstone (+3 armor +1 toughness), Prism (+5 toughness), Tempest (+1.5 attack), Arcanum (random). Capacity: 1 base, 3 ornate, 6 exquisite, 13 mythical.", keywords: ["glyphforge", "glyph", "rune", "enchant", "permanent", "emberheart", "obsidian", "quicksilver"] },
+  { id: 96, category: "Mastery", q: "What are trim effects?", a: "16 trim materials with individual per-piece effects + full set bonuses. Iron: Slowness II. Netherite: Resistance II. Emerald: Speed II + dodge. Lapis: Water Breathing. Gold: Fire Resistance + Strength in structures. Resin: Absorption scaling. Copper: Haste II + Regen II. Diamond: Slow Falling + Night Vision. More trims = stronger effect.", keywords: ["trim", "trims", "armor trim", "smithing", "iron", "netherite", "emerald", "copper", "diamond"] },
+  { id: 97, category: "Mastery", q: "What are Awakening Stones?", a: "Items that awaken your weapons and armor for the mastery system. They drop at a 20% rate from every crate across every system. Must match the tier of the item you're awakening (Common stone for Common gear, etc.).", keywords: ["awakening stone", "stones", "awaken", "20 percent", "crate drop"] },
+  { id: 98, category: "Progression", q: "What are Milestones?", a: "Forevercraft replaces vanilla achievements with Personal Milestones — 100 personal and 34 realm milestones across 6 categories. They track your progress across all systems and reward cross-system mastery.", keywords: ["milestones", "achievements", "personal", "tracking", "progress", "100 milestones"] },
+  { id: 99, category: "Progression", q: "What are Anecdotes?", a: "6 mystical guide books (15% drop from structure crates, once per player). Written by: Wanderers, Beastkeepers, Miners, Fisherman, Elders, and Scholars. Each offers lore and hints about different systems.", keywords: ["anecdotes", "books", "guide", "wanderers", "elders", "scholars", "miners"] },
+
+  // ═══════════════════════════════════════════
+  // WORLD SYSTEMS (100-112)
+  // ═══════════════════════════════════════════
+  { id: 100, category: "World", q: "How does the day cycle work?", a: "Days last 72,000 real ticks (1 real hour). Custom counter advances DayTime by 1 every 3 ticks. The slow pace makes each day feel meaningful. Moon phases, seasons, and time-of-day buffs all tie into this cycle.", keywords: ["day cycle", "time", "hour", "72000", "daytime", "slow"] },
+  { id: 101, category: "World", q: "How do moon phases work?", a: "8 moon phases cycling over 8 in-game days. Full Moon: fishing luck boost. Harvest Moon (1/8 chance on Full Moon): +1.5 DR and faster crop growth. New Moon: doubles patron/furia spawns, gives Night Vision. Waxing Gibbous: bonus XP. Each phase has unique effects.", keywords: ["moon", "moon phase", "full moon", "new moon", "harvest moon", "lunar"] },
+  { id: 102, category: "World", q: "How do seasons work?", a: "4 seasons (Spring, Summer, Autumn, Winter) across a 64-day year (16 days per season). Resource pack swaps change the visual look. Seasonal recipes in cooking. Calendar events log to Welcome Back Briefing.", keywords: ["seasons", "spring", "summer", "autumn", "winter", "calendar", "64 day"] },
+  { id: 103, category: "World", q: "What are world events?", a: "5+ named world events: Starfall, The Dreaming, Abyssal Tremor, Aurora Bloom, Rift Echo, and Dimensional Rift (separate from Rift Echo). 60-second omen warnings before each event. They sweep across the land and affect gameplay in unique ways.", keywords: ["world events", "starfall", "dreaming", "abyssal", "aurora", "rift echo", "dimensional rift"] },
+  { id: 104, category: "World", q: "What are Patron mobs?", a: "6-tier elite mobs that spawn at night (5% chance, 10% on New Moon) with 25% crate drop. Mythical Patrons have +1150% HP and +300% damage with full knockback resistance — terrifying but incredible loot.", keywords: ["patron", "elite", "mob", "night", "mythical patron", "powerful mob"] },
+  { id: 105, category: "World", q: "What are Night Terrors?", a: "Special hostile entities that stalk high-DR players (30+) on New Moon nights. Kill them for unique rewards. They're drawn to power — the stronger you become, the more dangerous the nights.", keywords: ["night terrors", "new moon", "dr 30", "stalk", "dangerous"] },
+  { id: 106, category: "World", q: "What is Biome Mastery?", a: "25 tracked biomes. The more time you spend in a biome, the more your mastery grows, granting passive DR bonuses. Companions are 10x more likely to appear in their home biome.", keywords: ["biome mastery", "biome", "25 biomes", "passive", "tracked"] },
+  { id: 107, category: "World", q: "What are Lore Discoveries?", a: "904 discoverable lore fragments forming 163 sets across 4 dimensions. Progress-based rewards. Access your Lore Collection Map through the Forevercraft Codex — shows color-coded completion with up to 10 in-progress sets highlighted.", keywords: ["lore", "discovery", "fragments", "904", "163 sets", "collection", "dimensions"] },
+  { id: 108, category: "World", q: "What is the Guidestone system?", a: "Craftable teleportation network. Craft a Guidestone (amethyst + lodestone), place it, right-click for a floating dimension-filtered menu. 4 color variants. Wormhole: 30 levels for 5,000-10,000 block random launch. Portal Dial: compass with wireless access.", keywords: ["guidestone", "teleport", "travel", "warp", "portal dial", "wormhole", "fast travel"] },
+  { id: 109, category: "World", q: "What are Dream Echoes?", a: "Persistent particle markers at locations where mythical artifacts were found. Click to see what was found and by whom. They create a history of the server's greatest discoveries.", keywords: ["dream echoes", "particle", "mythical", "location", "marker", "found"] },
+  { id: 110, category: "World", q: "What is the Bestiary?", a: "A tracking system for all mobs you've encountered. Access through the Forevercraft Codex as the 'Bestiary Log'. Records mob types, kill counts, and discovery information.", keywords: ["bestiary", "mob tracking", "log", "encountered", "monsters"] },
+  { id: 111, category: "World", q: "What are professions?", a: "12 custom villager professions: Bartender, Wise Wanderer, Artificer, Retired Adventurer, Expeditionist, Spelunker, Apiarist, Archer, Technician, Zookeeper, Nymph, plus a daily featured profession with bonus trades.", keywords: ["professions", "villager", "bartender", "artificer", "nymph", "expeditionist", "custom villager"] },
+  { id: 112, category: "World", q: "Does archaeology have a DR lockout?", a: "No! The archaeology system has no Dream Rate lockout — you can dig up finds at any DR level. One of the few systems with zero gating.", keywords: ["archaeology", "dig", "lockout", "dr requirement", "no gate", "free"] },
+
+  // ═══════════════════════════════════════════
+  // COSMETICS & MISC (113-122)
+  // ═══════════════════════════════════════════
+  { id: 113, category: "Cosmetics", q: "How do cosmetics work?", a: "The Nymph sells Cosmetic Crates for 15 Tree Tokens. 36 cosmetics: 18 particle effects in 4 zones (feet, body, head, ambient) and 18 titles. Equip 2 particles from different zones simultaneously. Mix and match!", keywords: ["cosmetics", "particles", "titles", "nymph", "crate", "appearance", "tree tokens"] },
+  { id: 114, category: "Cosmetics", q: "What particle effects are available?", a: "18 particles in 4 zones: Feet (Frostwalker, Blazeborn, etc.), Body (Stardust, Heartbeat, etc.), Head (Halo, Storm Crown, etc.), Ambient (Fireflies, Void Whispers, etc.). Equip two from different zones for combos.", keywords: ["particles", "frostwalker", "blazeborn", "stardust", "halo", "fireflies", "effects"] },
+  { id: 115, category: "General", q: "What is CraftForever?", a: "The passive endgame. 6 spirit tools: Earthsong (pickaxe, vein mining + auto-smelt), Bloomweaver (hoe, growth pulse), Dustwalker (shovel, 5×5 dig), Heartwood (axe, tree felling), Tidecaller (fishing rod, whirlpool), Silkgrasp (shears, mass shear). Each has 8 mastery stages. A 3-phase forging minigame (Heat → Hammer → Quench).", keywords: ["craftforever", "spirit tools", "earthsong", "bloomweaver", "dustwalker", "forging", "passive endgame"] },
+  { id: 116, category: "General", q: "What is the Grand Forge?", a: "The crafting equivalent of the Infinite Castle — a 5-phase timed gauntlet testing every passive system simultaneously. Complete it to earn the Forge Crystal, a permanent 25% boost to your spirit tool.", keywords: ["grand forge", "gauntlet", "forge crystal", "timed", "5 phase", "endgame crafting"] },
+  { id: 117, category: "General", q: "What is the Gacha Fountain?", a: "A custom RNG fountain using Dream Tokens. Throw tokens in and receive random rewards from artifacts to companions to rare consumables. Crumb of Dreams is a gacha-only drop — can't get it anywhere else.", keywords: ["gacha", "fountain", "tokens", "random", "crumb of dreams", "lottery"] },
+  { id: 118, category: "General", q: "What is Forevercraft?", a: "A complete Fantasy transformation of vanilla Minecraft. 102 interconnected systems, 408 artifacts, 96 companions, 14 spirit weapons, 14 weapon classes, 13 skill trees, 250 quests, 904 lore discoveries, 14 raid bosses, an infinite castle, and a dream-fueled progression system. Available for Java Edition (1.21.11) and Bedrock Edition (26.10+). Free forever.", keywords: ["forevercraft", "what is", "about", "overview", "datapack", "how many systems"] },
+  { id: 119, category: "General", q: "Is Forevercraft available for Bedrock?", a: "Yes! Forevercraft Bedrock Edition has 129 systems with 100% Java parity (102/102 systems). Built on Script API 2.6.0 for Bedrock 26.10+. Runs natively on console (Xbox, PlayStation, Switch), mobile (iOS, Android), and PC. Same dream, every platform.", keywords: ["bedrock", "console", "mobile", "xbox", "playstation", "switch", "ios", "android", "port"] },
+  { id: 120, category: "General", q: "What is the Newcomer vs Adventurer choice?", a: "At the start, choose between Newcomer (easier progression, class weapons available early, guided experience) or Adventurer (standard progression, earn everything through play). Only affects early game pacing — both reach the same endgame.", keywords: ["newcomer", "adventurer", "difficulty", "choice", "start", "beginning", "new player"] },
+  { id: 121, category: "General", q: "What is the Dreaming Realm?", a: "A special realm that triggers when you sleep at DR 30+. A dream-world challenge area with unique encounters and rewards available only through this system.", keywords: ["dreaming realm", "dream", "sleep", "dr 30", "special", "realm"] },
+  { id: 122, category: "General", q: "How does the tomb/death system work?", a: "Full inventory capture on death via a grave marker at your death location. 1-hour grave lifetime. Return to your death location and right-click the grave to recover all items. No item loss!", keywords: ["death", "tomb", "grave", "die", "items", "recover", "inventory"] },
+
+  // ═══════════════════════════════════════════
+  // CRATES & LOOT (123-128)
+  // ═══════════════════════════════════════════
+  { id: 123, category: "Crates", q: "How do crates work?", a: "7 sources: mining, fishing, harvesting, mob kills, structures, quests, and achievements. Animated barrel spawn with tier-colored particles. Structure crates have 25% artifact drop rate vs 7% from gathering. Per-player structure crates refresh every 50 hours. Higher DR = better tier rolls.", keywords: ["crates", "loot", "mining crate", "fishing crate", "how get", "drop rate", "barrel"] },
+  { id: 124, category: "Crates", q: "What are structure crates?", a: "Special crates found in generated structures. Per-player with 50-hour refresh timers. 25% artifact drop rate — much higher than gathering crates. Dream-gated by structure type (higher DR structures = better loot). 25 biome-specific treasure pools.", keywords: ["structure crate", "structure", "chest", "refresh", "50 hour", "per player"] },
+  { id: 125, category: "Crates", q: "What is the Crumb of Dreams?", a: "A rare consumable that grants +1 permanent Dream Rate. It's a gacha-only drop — only obtainable from the Gacha Fountain. Cannot be found anywhere else in the world.", keywords: ["crumb of dreams", "gacha only", "permanent dr", "rare", "consumable"] },
+  { id: 126, category: "Crates", q: "What is Armored Elytra?", a: "Merge a chestplate with elytra for combined armor stats + flight. Unmerge anytime. Lets you fly without sacrificing chest armor protection.", keywords: ["armored elytra", "elytra", "fly", "merge", "chestplate", "flight"] },
+  { id: 127, category: "Crates", q: "What are Harmonic Convergences?", a: "Rare world events that flood everyone with luck — temporary massive DR boost for all players on the server. A celebration of shared fortune.", keywords: ["harmonic", "convergence", "luck", "everyone", "server wide", "boost"] },
+  { id: 128, category: "Crates", q: "What is the Welcome Back Briefing?", a: "Every time you log in, a personalized briefing tells you the time of day, moon phase, season, active events, and a full breakdown of your Dream Rate — every source, every bonus, everything pushing it higher.", keywords: ["briefing", "login", "welcome", "log in", "news", "morning"] },
+
+  // ═══════════════════════════════════════════
+  // COMMON PLAYER QUESTIONS (129-140)
+  // ═══════════════════════════════════════════
+  { id: 129, category: "Help", q: "How do I get started?", a: "Punch trees, craft tools, survive your first night. Find a village (DR 3). Place a Book and Quill in a Lectern to start questing. Open every crate you find. Choose Newcomer or Adventurer when prompted. Check the Player Guide at forevercraft.co/guide for a full walkthrough from DR 0 to 50.", keywords: ["get started", "start", "begin", "new", "first", "beginner", "tutorial", "help"] },
+  { id: 130, category: "Help", q: "What should I do first?", a: "1. Survive and gear up with iron. 2. Find a village. 3. Start questing. 4. Open crates for artifacts and companions. 5. Level your first skill tree. 6. Build a house with a Hearthstone. The game naturally guides you through escalating content as your Dream Rate grows.", keywords: ["first", "priority", "what to do", "early game", "beginning", "new player"] },
+  { id: 131, category: "Help", q: "How do I get better gear?", a: "Open crates from all 7 sources (mining, fishing, harvesting, mob kills, structures, quests, achievements). Higher Dream Rate = better drops. Structure crates have 25% artifact rate. Transmute 5 lower-tier artifacts into 1 higher-tier. Complete armor sets for powerful bonuses.", keywords: ["gear", "better", "upgrade", "loot", "equipment", "improve"] },
+  { id: 132, category: "Help", q: "Is Forevercraft multiplayer?", a: "Absolutely! Guilds, parties with 9 combo abilities, duels, pet duels, marriage, family system, campfire stories, competitions, shared quest tracking, group raids with voting — the social systems are extensive. But everything is also fully solo-playable.", keywords: ["multiplayer", "friends", "together", "coop", "solo", "singleplayer", "server"] },
+  { id: 133, category: "Help", q: "How do I install Forevercraft?", a: "Download the datapack from forevercraft.co/downloads. Drop the ZIP into your world's datapacks folder (saves/YourWorld/datapacks/). Run /reload in-game. For Bedrock, download the .mcaddon file and import it.", keywords: ["install", "download", "setup", "how to install", "datapack folder", "reload"] },
+  { id: 134, category: "Help", q: "Does Forevercraft work with other mods?", a: "Forevercraft is a vanilla datapack — it works alongside most other datapacks and resource packs. It doesn't require any mods. Potential conflicts with datapacks that heavily modify loot tables or tick functions.", keywords: ["mods", "compatible", "other datapacks", "conflict", "vanilla", "resource pack"] },
+  { id: 135, category: "Help", q: "What version of Minecraft does Forevercraft support?", a: "Java Edition: Minecraft 1.21.11 (Pack Format 94.1). Bedrock Edition: 26.10+ with Script API 2.6.0. Both editions receive updates together.", keywords: ["version", "minecraft version", "1.21", "supported", "compatible", "update"] },
+  { id: 136, category: "Help", q: "How long does Forevercraft take to complete?", a: "Hundreds of hours. Reaching DR 50 with all systems explored is a massive journey. The endgame (Spirit Weapons, metamorphosis, Spirit Tome 100-part quest, Infinite Castle floor 100+) is designed for dedicated players over weeks or months of play.", keywords: ["how long", "complete", "finish", "time", "hours", "endgame", "length"] },
+  { id: 137, category: "Help", q: "Can I customize what systems I use?", a: "Yes! Visit forevercraft.co/downloads to build a custom datapack with only the systems you want. The modular builder handles dependencies automatically and generates stubs so nothing breaks.", keywords: ["customize", "modular", "pick and choose", "select", "custom", "builder", "download"] },
+  { id: 138, category: "Help", q: "What makes Forevercraft different from other datapacks?", a: "Scale and interconnection. 102 systems where everything feeds everything else — your Dream Rate affects crates, crates affect artifacts, artifacts affect set bonuses, set bonuses affect Dream Rate. Plus 408 handcrafted artifacts, 96 companions, 14 raid bosses, and an infinite castle. It's a full RPG experience in vanilla Minecraft.", keywords: ["different", "unique", "special", "compared", "other packs", "why"] },
+  { id: 139, category: "Help", q: "Is Forevercraft free?", a: "Yes — free forever. No paywalls, no premium tiers, no pay-to-win. Optional donations at buymeacoffee.com/forevercraft help fund continued development. Every system, every artifact, every companion is available to everyone.", keywords: ["free", "cost", "price", "pay", "money", "donate"] },
+  { id: 140, category: "Help", q: "How often is Forevercraft updated?", a: "Regularly! Updates include new systems, artifacts, companions, bug fixes, and compatibility with new Minecraft versions. Follow forevercraft.co for changelogs and announcements.", keywords: ["update", "updates", "new", "changelog", "version", "patch", "frequency"] },
 ]
