@@ -3,10 +3,10 @@ import ScrollReveal from '../components/effects/ScrollReveal'
 import Spoiler from '../components/ui/Spoiler'
 
 const BEDROCK_STATS = [
-  { label: 'SYSTEMS', value: '129' },
-  { label: 'JAVA PARITY', value: '102/102' },
-  { label: 'SCRIPT API', value: '2.6.0' },
-  { label: 'BEDROCK VER', value: '26.10+' },
+  { label: 'SYSTEMS', value: '130' },
+  { label: 'SCRIPT FILES', value: '139' },
+  { label: 'LINES OF CODE', value: '41,994' },
+  { label: 'ENTITY DEFS', value: '98' },
 ]
 
 const ARCHITECTURE = [
@@ -44,44 +44,49 @@ const ARCHITECTURE = [
 
 const PARITY_SECTIONS = [
   {
-    category: 'Core Progression',
-    count: 8,
-    systems: 'Dream Rate, Weapon Mastery, Armor Mastery, Class Affinity, Patina, Milestones, Achievements, Claim Rewards',
-  },
-  {
     category: 'Combat',
-    count: 12,
-    systems: 'Weapon Classes (10), Spirit Weapons (15), Dual Swordsman, Artifact Abilities (408), Healers (12), Shields, Trim Effects (16), Combat Combos, Tamed Protection, Arrows, Mobs (6-tier Patrons), Health Bars',
+    count: 14,
+    systems: '14 Spirit Weapons, Dual Swordsman, Weapon Mastery, Armor Mastery, Combat Combos, Arrows, Shields, Trim Abilities, Artifact Abilities (408), Healers (12), Mobs (6-tier Patrons), Health Bars, Tamed Protection, Class Detection',
   },
   {
     category: 'Companions',
-    count: 8,
-    systems: '96 Companions, Combat System, Evolution (6 forms), Pet Duels, Relationship System, Catalogue, Treats, Rival Pets',
+    count: 9,
+    systems: '96 Companions, Companion Evolution (6 forms), Pet Duels, Fox/Ocelot Taming, Tamed Protection with Combat AI, Relationship System, Catalogue, Treats, Rival Pets',
   },
   {
-    category: 'World & Events',
-    count: 18,
-    systems: 'Day Cycle, Moon Phases (8), Seasons (4), Calendar, World Events (5+), Biome Mastery (25), Weather Omens, Night Terrors, Encounters, Forage, Prospect, Convergence, Campfire Stories, Ambient Cues, World Features, Cave Darkness, Reaper System, News Broadcast',
-  },
-  {
-    category: 'Dungeons & Raids',
+    category: 'Progression',
     count: 10,
-    systems: 'Village Dungeons (4 difficulties), Spirit Raids (13 bosses), Infinite Castle (100+ floors), Heist Gauntlets, Boss System (11 world bosses), Voting System, Floor Progression, Enrage Timers, Loot Tables, Castle Milestones',
+    systems: 'Advantage Trees (13), Class Affinity (14 classes), Dream Rate, Constellations (10), Biome Mastery (25), Milestones (100 personal + 34 realm), Achievements, Patina Aging, Claim Rewards, Daily Challenges',
+  },
+  {
+    category: 'Economy',
+    count: 8,
+    systems: 'Forever Coins, Gacha Fountain (pity system), Black Market, Bounty Board, Guild Donations, Quick-Sell, Dreamdust Currency, Convergence Events',
+  },
+  {
+    category: 'Crafting',
+    count: 10,
+    systems: 'Cooking (11 categories), Forging, Inscription Stones, Runes (13 glyphs), Transmutation, Glyphforge, Resource Nodes, Craftforever (6 spirit tools), Grand Forge Gauntlet, Artisan Forge',
+  },
+  {
+    category: 'World',
+    count: 14,
+    systems: '13 Raid Bosses, World Bosses (11), World Events (5+), Dungeon System, Castle Dungeon, Heist Gauntlets, Dreaming Realm, Day Cycle, Moon Phases (8), Seasons (4), Biome Mastery, Night Terrors, Encounters, Convergence',
   },
   {
     category: 'Social',
-    count: 14,
-    systems: 'Guilds, Friends, Duels, Party System (9 combos), Buddy System (7 tiers), Marriage, Family, Competitions, Challenges, Reputation (11 tiers), Exile, Pet Duels, Mount Training, Campfire Stories',
+    count: 12,
+    systems: 'Friends, Guilds, Party System (9 combos), Duels, Competitions, Reputation (Infamy/Renown), Marriage, Family, Pet Duels, Mount Training, Campfire Stories, Exile',
   },
   {
-    category: 'Crafting & Economy',
-    count: 13,
-    systems: 'Cooking (11 categories), Craftforever (6 spirit tools), Grand Forge, Trade Trials, Artisan Forge, Transmutation, Glyphforge (13 glyphs), Black Market, Gacha Fountain, Professions (12), Pantry, Housing (5 tiers), Laborers',
-  },
-  {
-    category: 'Discovery',
+    category: 'Quality of Life',
     count: 10,
-    systems: 'Lore (904 fragments), Journal, Anecdotes (6 books), Bestiary, Codex (408 artifacts), Constellations (10), Dream Echoes, Inscription Stones, Guidestones, Portal Dial',
+    systems: 'Phoenix Codex (master menu), Guidestones, Housing (5 tiers), Satchel, Hero\'s Satchel, Journal, Morning Briefing, Bestiary, Lore Discovery (904 fragments), Portal Dial',
+  },
+  {
+    category: 'Buddy System',
+    count: 5,
+    systems: '7-tier bonds (Acquaintance → Spiritbound), Best Buddy combat AI, Pack Mule storage, Mount Charge Attacks, Tamed Animal Protection',
   },
 ]
 
@@ -99,8 +104,8 @@ const BEDROCK_EXCLUSIVE = [
     desc: 'StorageManager caches all dynamic properties in memory. Reads are instant. Writes batch efficiently. No lag spikes from NBT operations.',
   },
   {
-    title: '27 Extra Utility Systems',
-    desc: '129 total systems vs Java\'s 102. The extra modules handle Bedrock-specific infrastructure: EventBridge, StorageManager, ScoreboardInit, and platform adapters.',
+    title: '28 Extra Utility Systems',
+    desc: '130 total systems vs Java\'s 102. The extra modules handle Bedrock-specific infrastructure: EventBridge, StorageManager, ScoreboardInit, and platform adapters. 139 script files, 41,994 lines of code.',
   },
 ]
 
@@ -110,7 +115,7 @@ export default function Bedrock() {
       <PageHero
         title="BEDROCK EDITION"
         badge="CROSS-PLATFORM"
-        subtitle="129 systems. Full Java parity. Built for console, mobile, and PC."
+        subtitle="130 systems. Full Java parity. Built for console, mobile, and PC."
         particleColor="rgba(100, 200, 255, 0.3)"
       />
 
