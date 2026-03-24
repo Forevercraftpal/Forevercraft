@@ -49,7 +49,6 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Codex', to: '/codex' },
   { label: 'Guide', to: '/guide' },
   { label: 'Bedrock', to: '/bedrock' },
-  { label: 'Downloads', to: '/downloads' },
   { label: 'Donate', to: '/donate' },
 ]
 
