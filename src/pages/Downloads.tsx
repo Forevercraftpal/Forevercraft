@@ -496,21 +496,21 @@ export default function Downloads() {
               <div className="flex flex-col sm:flex-row gap-4 mt-2">
                 <div className="text-center">
                   <a
-                    href="/builds/Forevercraft-Bedrock-26.1.mcaddon"
+                    href="/builds/Forevercraft-Bedrock-26.10.zip"
                     download
                     className="inline-block px-8 py-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.7rem] transition-colors no-underline"
                   >
-                    BEDROCK 26.1
+                    BEDROCK 26.10
                   </a>
                   <p className="font-['Press_Start_2P'] text-[0.45rem] text-cyan-700 mt-2">Latest · Recommended</p>
                 </div>
                 <div className="text-center">
                   <a
-                    href="/builds/Forevercraft-Bedrock-26.10.mcaddon"
+                    href="/builds/Forevercraft-Bedrock-1.21.124.zip"
                     download
                     className="inline-block px-8 py-4 rounded-lg bg-cyan-800/60 hover:bg-cyan-700/60 text-stone-200 font-['Press_Start_2P'] text-[0.7rem] transition-colors no-underline"
                   >
-                    BEDROCK 26.10
+                    BEDROCK 1.21.124
                   </a>
                   <p className="font-['Press_Start_2P'] text-[0.45rem] text-stone-600 mt-2">Previous version</p>
                 </div>
