@@ -55,6 +55,30 @@ body {
   80%   { filter: hue-rotate(340deg); }
 }
 
+/* Counter-rotate images to preserve original colors */
+.preserve-color {
+  animation: counter-hue-shift 120s ease-in-out infinite;
+}
+
+@keyframes counter-hue-shift {
+  0%, 83%, 100% { filter: hue-rotate(0deg); }
+  8.5%  { filter: hue-rotate(0deg); }
+  12%   { filter: hue-rotate(-30deg); }
+  20%   { filter: hue-rotate(-30deg); }
+  22%   { filter: hue-rotate(-90deg); }
+  30%   { filter: hue-rotate(-90deg); }
+  32%   { filter: hue-rotate(-150deg); }
+  40%   { filter: hue-rotate(-150deg); }
+  42%   { filter: hue-rotate(-200deg); }
+  50%   { filter: hue-rotate(-200deg); }
+  52%   { filter: hue-rotate(-250deg); }
+  60%   { filter: hue-rotate(-250deg); }
+  62%   { filter: hue-rotate(-300deg); }
+  70%   { filter: hue-rotate(-300deg); }
+  72%   { filter: hue-rotate(-340deg); }
+  80%   { filter: hue-rotate(-340deg); }
+}
+
 ::selection {
   background: rgba(202, 138, 4, 0.4);
   color: #fef3c7;

@@ -6,8 +6,8 @@ const IMAGES = [
   { src: '/gallery/guidestone.png', title: 'Guidestone Network', desc: 'Craftable teleportation waypoints' },
   { src: '/gallery/guidestone-red.png', title: 'Red Guidestone', desc: 'Nether-linked waypoint variant' },
   { src: '/gallery/guidestone-yellow.png', title: 'Yellow Guidestone', desc: 'Gold-tier waypoint variant' },
+  { src: '/gallery/guildstone-blue.png', title: 'Azure Guidestone', desc: 'Azure waypoint variant' },
   { src: '/gallery/guildstone.png', title: 'Guild Stone', desc: 'The heart of your guild base' },
-  { src: '/gallery/guildstone-blue.png', title: 'Blue Guild Stone', desc: 'Ocean guild variant' },
   { src: '/gallery/glyphforge.png', title: 'Glyphforge', desc: 'Permanent rune binding workstation' },
   { src: '/gallery/glyph-totem.png', title: 'Glyph Totem', desc: 'Activated glyph enchantment' },
   { src: '/gallery/hearthstone.png', title: 'Hearthstone', desc: 'Claim your home zone' },
@@ -49,7 +49,7 @@ export default function Gallery() {
                   <img
                     src={img.src}
                     alt={img.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 preserve-color"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -85,7 +85,7 @@ export default function Gallery() {
             <img
               src={IMAGES[lightbox].src}
               alt={IMAGES[lightbox].title}
-              className="max-w-full max-h-[85vh] object-contain rounded-lg"
+              className="max-w-full max-h-[85vh] object-contain rounded-lg preserve-color"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg">
               <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-500 mb-1">
