@@ -244,7 +244,7 @@ export default function Seasons() {
               <div>
                 <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-amber-400 tracking-widest mb-2">CUSTOM TIME SYSTEM</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
-                  Days last 72,000 real ticks (1 real-world hour). DayTime advances by 1 every 3 ticks via a custom counter, with vanilla time advancement disabled. This means the full 24,000-tick day/night cycle plays out over a full hour rather than the default 20 minutes.
+                  Days last 1 real-world hour using Minecraft's native world clock at 0.333x rate. Beds work normally. Seasonal rate switching adjusts pacing: Winter has faster days and slower nights, while Summer has slower days and faster nights — changing how each season feels to play.
                 </p>
               </div>
 
