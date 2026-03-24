@@ -457,15 +457,27 @@ export default function Downloads() {
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
                 All 102 systems. 18,111 files. The complete experience including Companions, Mining Crates, and everything else.
               </p>
-              <p className="font-['Press_Start_2P'] text-[0.5rem] text-stone-600">
-                Minecraft 1.21.11 · Pack Format 94.1
-              </p>
-              <button
-                onClick={downloadFull}
-                className="px-10 py-4 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors mt-2"
-              >
-                DOWNLOAD JAVA
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4 mt-2">
+                <div className="text-center">
+                  <button
+                    onClick={downloadFull}
+                    className="px-8 py-4 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.7rem] transition-colors"
+                  >
+                    MINECRAFT 1.21.11
+                  </button>
+                  <p className="font-['Press_Start_2P'] text-[0.45rem] text-stone-600 mt-2">Pack Format 94.1</p>
+                </div>
+                <div className="text-center">
+                  <a
+                    href="/builds/Forevercraft-26.1.zip"
+                    download
+                    className="inline-block px-8 py-4 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.7rem] transition-colors no-underline"
+                  >
+                    MINECRAFT 26.1
+                  </a>
+                  <p className="font-['Press_Start_2P'] text-[0.45rem] text-stone-600 mt-2">Pack Format 101.1</p>
+                </div>
+              </div>
             </div>
           </div>
         </ScrollReveal>
