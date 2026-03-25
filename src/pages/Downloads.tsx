@@ -230,18 +230,6 @@ export default function Downloads() {
     setSelected(new Set(['core']))
   }
 
-  const downloadFull = async () => {
-    // Select all modules and build
-    const all = new Set(MODULES.map((m: Module) => m.id))
-    setSelected(all)
-    // Slight delay so UI updates, then trigger build
-    setTimeout(() => {
-      setBuilding(true)
-      setBuildResult({ status: 'building', message: 'Building full Forevercraft pack...' })
-      buildFullPack(all)
-    }, 100)
-  }
-
   const buildFullPack = async (allMods: Set<string>) => {
     try {
       const JSZip = await loadJSZip() as any

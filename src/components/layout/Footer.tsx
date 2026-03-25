@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { STATS } from '../../data/constants'
 
 export default function Footer() {
   return (
