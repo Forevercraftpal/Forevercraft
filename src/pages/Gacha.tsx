@@ -10,14 +10,14 @@ const PULL_OPTIONS = [
 ]
 
 const REWARD_POOL = [
-  { name: 'Dreamy Star', rarity: 'Choose ANY artifact (0.05%)', color: 'text-yellow-400' },
+  { name: 'Dreamy Star', rarity: 'Choose ANY artifact (0.05%) — rarest gacha exclusive', color: 'text-yellow-400' },
   { name: 'Companion Crates', rarity: 'All tiers + gacha exclusives', color: 'text-green-400' },
   { name: 'Awakening Stones', rarity: 'All tiers', color: 'text-purple-400' },
   { name: 'Artifact Crates', rarity: 'All tiers', color: 'text-cyan-400' },
   { name: 'Glyphs', rarity: '13 rune types', color: 'text-red-400' },
   { name: 'Dreamdust Crystal', rarity: '+2.5 permanent DR (Mythical)', color: 'text-orange-400' },
   { name: 'Crumb of Dreams', rarity: '+1 DR for 30 minutes', color: 'text-pink-400' },
-  { name: 'Forever Coins', rarity: 'Reinvest into pulls', color: 'text-blue-400' },
+  { name: 'Coin of Lucidity', rarity: '2 free pulls — your roll back + one extra', color: 'text-blue-400' },
 ]
 
 export default function Gacha() {
@@ -86,7 +86,7 @@ export default function Gacha() {
               <div className="rounded-lg border border-yellow-800/30 bg-yellow-950/10 p-4">
                 <p className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-500 mb-2">DREAMY STAR</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
-                  The Dreamy Star (0.05% drop rate) is the rarest gacha reward — it lets you choose ANY
+                  The Dreamy Star (0.05% drop rate) is the rarest gacha-exclusive reward — it lets you choose ANY
                   artifact from the entire game. One-time use. The ultimate wish.
                 </p>
               </div>
