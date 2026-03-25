@@ -212,8 +212,8 @@ export default function Guilds() {
             </ScrollReveal>
             <ScrollReveal delay={160}>
               <div className="rounded-lg border border-pink-900/30 bg-pink-950/10 p-5 text-center h-full">
-                <p className="font-['Press_Start_2P'] text-[0.7rem] text-pink-400 mb-2">DIVORCE</p>
-                <p className="font-['Crimson_Pro'] text-base text-stone-400">If things don't work out... that's available too. No judgment.</p>
+                <p className="font-['Press_Start_2P'] text-[0.7rem] text-pink-400 mb-2">ETERNAL VOW</p>
+                <p className="font-['Crimson_Pro'] text-base text-stone-400">Marriage is a milestone. Your bond strengthens both players with shared DR and perks.</p>
               </div>
             </ScrollReveal>
           </div>
