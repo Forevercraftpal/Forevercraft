@@ -242,10 +242,34 @@ export default function Guide() {
                   </li>
                 </ul>
               </div>
+              <div className="px-8 py-6 border-t border-stone-800/30">
+                <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-red-600 mb-3">☠️ PIONEER</h3>
+                <p className="font-['Crimson_Pro'] text-base text-stone-300 mb-4 leading-relaxed">
+                  True hardcore. Die once and EVERYTHING is wiped — all items, all progression, all stats. The world survives. You start over.
+                </p>
+                <ul className="space-y-2">
+                  <li className="font-['Crimson_Pro'] text-base text-stone-400 flex items-start gap-2">
+                    <span className="text-red-600 mt-1">✦</span>
+                    <span>Death = complete wipe — inventory, armor, scoreboards, tags, advancements, XP — everything</span>
+                  </li>
+                  <li className="font-['Crimson_Pro'] text-base text-stone-400 flex items-start gap-2">
+                    <span className="text-red-600 mt-1">✦</span>
+                    <span>No starter items. No safety net. Punch a tree, Pioneer.</span>
+                  </li>
+                  <li className="font-['Crimson_Pro'] text-base text-stone-400 flex items-start gap-2">
+                    <span className="text-red-600 mt-1">✦</span>
+                    <span>On death: choose to continue as Pioneer, or downgrade to Adventurer or Newcomer</span>
+                  </li>
+                  <li className="font-['Crimson_Pro'] text-base text-stone-400 flex items-start gap-2">
+                    <span className="text-red-600 mt-1">✦</span>
+                    <span>The Salvation Stone can save you — if you can find one</span>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="px-8 py-4 bg-stone-900/30 border-t border-stone-800/30">
               <p className="font-['Crimson_Pro'] text-base text-stone-500 text-center">
-                You can switch between modes with a 14-day cooldown. Choose what feels right — both paths lead to the same endgame.
+                You can switch between modes with a 14-day cooldown. Pioneer is permanent until death — then you choose your next path.
               </p>
             </div>
           </div>
