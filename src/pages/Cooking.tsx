@@ -17,10 +17,10 @@ const MASTERY_CATEGORIES = [
 ]
 
 const MASTERY_TIERS = [
-  { count: 10, title: 'Apprentice', color: 'text-green-400' },
-  { count: 25, title: 'Journeyman', color: 'text-cyan-400' },
-  { count: 50, title: 'Expert', color: 'text-amber-400' },
-  { count: 100, title: 'Master Chef', color: 'text-fuchsia-400' },
+  { count: 100, title: 'Apprentice', color: 'text-green-400' },
+  { count: 250, title: 'Journeyman', color: 'text-cyan-400' },
+  { count: 500, title: 'Expert', color: 'text-amber-400' },
+  { count: 1000, title: 'Master Chef', color: 'text-fuchsia-400' },
 ]
 
 const SEASONAL_RECIPES = [

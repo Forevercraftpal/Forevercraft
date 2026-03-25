@@ -24,11 +24,11 @@ const FORGE_PHASES = [
 
 const MILESTONE_TITLES = [
   { rank: 1, title: 'Novice' },
-  { rank: 10, title: 'Apprentice' },
-  { rank: 25, title: 'Journeyman' },
-  { rank: 50, title: 'Expert' },
-  { rank: 75, title: 'Master' },
-  { rank: 100, title: 'Grand Artisan' },
+  { rank: 100, title: 'Apprentice' },
+  { rank: 250, title: 'Journeyman' },
+  { rank: 500, title: 'Expert' },
+  { rank: 750, title: 'Master' },
+  { rank: 1000, title: 'Grand Artisan' },
 ]
 
 export default function CraftForever() {
