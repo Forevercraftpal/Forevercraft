@@ -16,8 +16,34 @@ body {
 }
 
 /* Hue shift wrapper — applied to #root, NOT body, so popups stay fixed */
+/* Gallery images get counter-rotation via .gallery-img class */
 #root {
   animation: bg-hue-shift 120s ease-in-out infinite;
+}
+
+/* Counter-rotate gallery images so they show true colors */
+.gallery-img {
+  animation: bg-hue-counter 120s ease-in-out infinite;
+}
+
+@keyframes bg-hue-counter {
+  0%, 83%, 100% { filter: hue-rotate(0deg); }
+  8.5%  { filter: hue-rotate(0deg); }
+  12%   { filter: hue-rotate(-30deg); }
+  20%   { filter: hue-rotate(-30deg); }
+  22%   { filter: hue-rotate(-90deg); }
+  30%   { filter: hue-rotate(-90deg); }
+  32%   { filter: hue-rotate(-150deg); }
+  40%   { filter: hue-rotate(-150deg); }
+  42%   { filter: hue-rotate(-200deg); }
+  50%   { filter: hue-rotate(-200deg); }
+  52%   { filter: hue-rotate(-240deg); }
+  60%   { filter: hue-rotate(-240deg); }
+  62%   { filter: hue-rotate(-280deg); }
+  70%   { filter: hue-rotate(-280deg); }
+  72%   { filter: hue-rotate(-330deg); }
+  80%   { filter: hue-rotate(-330deg); }
+  82%   { filter: hue-rotate(-360deg); }
 }
 
 /* Star field — on popup-root's sibling so it's outside the filter context */
