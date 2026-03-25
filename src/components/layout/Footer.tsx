@@ -13,7 +13,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 tracking-widest text-center">
-            {STATS.totalFiles.toLocaleString()} FILES · {STATS.totalFunctions.toLocaleString()} FUNCTIONS · {STATS.totalLines.toLocaleString()} LINES OF CODE · {STATS.totalSystems} SYSTEMS
+            BUILT WITH LOVE · ONE FUNCTION AT A TIME
           </p>
           <div className="flex items-center gap-4">
             <Link to="/privacy" className="font-['Crimson_Pro'] text-stone-600 hover:text-stone-400 text-base no-underline transition-colors">
@@ -29,7 +29,7 @@ export default function Footer() {
               Press Kit
             </Link>
             <span className="font-['Crimson_Pro'] text-stone-600 text-base italic">
-              Minecraft 1.21.11 · Java Edition
+              Minecraft 26.1 · Java & Bedrock
             </span>
           </div>
         </div>

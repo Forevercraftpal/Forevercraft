@@ -18,7 +18,7 @@ const SYSTEM_CARDS = [
   { title: 'INFINITE CASTLE', desc: 'Endless escalating dungeon. Bosses every 10 floors. Dream Storm Crystals.', icon: '🏰', to: '/infinite-castle', color: '#78716C' },
   { title: 'COOKING', desc: '11 mastery categories. Seasonal recipes. Campfire crafting.', icon: '🍳', to: '/cooking', color: '#F59E0B' },
   { title: 'GUILDS & SOCIAL', desc: 'Guilds, parties, duels, buddy system, marriage, and family.', icon: '👥', to: '/guilds', color: '#0EA5E9' },
-  { title: 'GACHA FOUNTAIN', desc: 'Dreamdust Fountain with pulls, Lucid currency, and the exclusive Crumb of Dreams.', icon: '🎰', to: '/gacha', color: '#A855F7' },
+  { title: 'GACHA FOUNTAIN', desc: 'Fountain of Eternal Dreams. Feed it Forever Coins from allowance, quests, crates and more!', icon: '🏺', to: '/gacha', color: '#A855F7' },
 ]
 
 const DR_MILESTONES = [

@@ -12,7 +12,7 @@ const PERMANENT = [
   { name: 'Crystalized Dream Droppings', value: '+1 (5% bat drop)', max: 1 },
   { name: 'Dream Inducing Mushroom', value: '+1 (0.25% mushroom block)', max: 1 },
   { name: 'Chorus Dreaming Fruit', value: '+1 (0.25% chorus plant)', max: 1 },
-  { name: 'Crumb of Dreams', value: '+1 (gacha drop only)', max: 1 },
+  { name: 'Crumb of Dreams', value: '+1 DR for 30 min (temporary, from gacha)', max: 1 },
   { name: 'Harvester\'s Dreamy Seed', value: '+1 (farming drop)', max: 1 },
   { name: 'Tiller\'s Dream Petal', value: '+1 (crop harvest drop)', max: 1 },
   { name: 'Miner\'s Slumbering Geode', value: '+1 (mining drop)', max: 1 },
