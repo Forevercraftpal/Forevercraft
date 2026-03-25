@@ -44,10 +44,10 @@ export default function PressKit() {
                 Forevercraft is a loot-driven fantasy overhaul for vanilla Minecraft with 408 artifacts,
                 96 companions, 14 spirit weapons, 14 raid bosses, an infinite castle, 13 skill trees,
                 250 quests, and 102 interconnected systems. No mods required.
-                Every world has loot. This one has dreams.
+                Every world has treasure. This one has dreams.
               </p>
               <button
-                onClick={() => navigator.clipboard.writeText('Forevercraft is a loot-driven fantasy overhaul for vanilla Minecraft with 408 artifacts, 96 companions, 14 spirit weapons, 14 raid bosses, an infinite castle, 13 skill trees, 250 quests, and 102 interconnected systems. No mods required. Every world has loot. This one has dreams.')}
+                onClick={() => navigator.clipboard.writeText('Forevercraft is a loot-driven fantasy overhaul for vanilla Minecraft with 408 artifacts, 96 companions, 14 spirit weapons, 14 raid bosses, an infinite castle, 13 skill trees, 250 quests, and 102 interconnected systems. No mods required. Every world has treasure. This one has dreams.')}
                 className="mt-4 px-4 py-2 rounded border border-yellow-800/40 hover:border-yellow-600/60 font-['Press_Start_2P'] text-[0.5rem] text-stone-500 hover:text-yellow-500 tracking-widest transition-colors"
               >
                 COPY TO CLIPBOARD
@@ -62,10 +62,10 @@ export default function PressKit() {
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">TAGLINE</h2>
             <div className="rounded-lg border border-stone-800/60 bg-stone-900/30 p-6">
               <p className="font-['Crimson_Pro'] text-2xl italic text-yellow-600/80">
-                "Every world has loot. This one has dreams."
+                "Every world has treasure. This one has dreams."
               </p>
               <button
-                onClick={() => navigator.clipboard.writeText('Every world has loot. This one has dreams.')}
+                onClick={() => navigator.clipboard.writeText('Every world has treasure. This one has dreams.')}
                 className="mt-4 px-4 py-2 rounded border border-yellow-800/40 hover:border-yellow-600/60 font-['Press_Start_2P'] text-[0.5rem] text-stone-500 hover:text-yellow-500 tracking-widest transition-colors"
               >
                 COPY TO CLIPBOARD

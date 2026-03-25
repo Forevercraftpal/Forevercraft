@@ -54,7 +54,7 @@ export default function Home() {
             A Fantasy Minecraft Overhaul
           </p>
           <p className="font-['Crimson_Pro'] italic text-xl md:text-2xl text-stone-400 mb-12 animate-[fade-in-up_0.8s_ease-out_0.4s_both]">
-            Every world has loot. This one has dreams.
+            Every world has treasure. This one has dreams.
           </p>
 
           {/* Stat counters moved to bottom */}
