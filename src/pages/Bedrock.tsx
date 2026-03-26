@@ -51,7 +51,7 @@ const PARITY_SECTIONS = [
   {
     category: 'Companions',
     count: 9,
-    systems: '96 Companions, Companion Evolution (6 forms), Pet Duels, Fox/Ocelot Taming, Tamed Protection with Combat AI, Relationship System, Catalogue, Treats, Rival Pets',
+    systems: '102 Companions, Companion Evolution (6 forms), Pet Duels, Fox/Ocelot Taming, Tamed Protection with Combat AI, Relationship System, Catalogue, Treats, Rival Pets',
   },
   {
     category: 'Progression',
@@ -137,7 +137,7 @@ export default function Bedrock() {
           <div className="text-center mb-16">
             <p className="font-['Crimson_Pro'] text-xl text-stone-400 max-w-3xl mx-auto leading-relaxed">
               Everything that made Forevercraft special on Java — 408 artifacts, 14 spirit weapons,
-              96 companions, 13 raid bosses, an infinite castle, and 102 interconnected systems —
+              102 companions, 13 raid bosses, an infinite castle, and 102 interconnected systems —
               now runs natively on Bedrock Edition through Minecraft's Script API. No mods. No
               experimental toggles. Just install the behavior pack and play.
             </p>

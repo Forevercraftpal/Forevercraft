@@ -9,7 +9,7 @@ const SYSTEM_CARDS = [
   { title: 'DREAM RATE', desc: 'The backbone of everything. A custom RNG system that ties your entire journey together.', icon: '✦', to: '/dream-rate', color: '#FBBF24' },
   { title: 'ARTIFACTS', desc: '408 unique items across six tiers — each with handcrafted abilities.', icon: '⚔️', to: '/artifacts', color: '#FB923C' },
   { title: 'SPIRIT WEAPONS', desc: '14 legendary endgame weapons with twin forms and metamorphosis.', icon: '🗡️', to: '/spirit-weapons', color: '#C084FC' },
-  { title: 'COMPANIONS', desc: '106 companions that fight, level, evolve, and bond with you.', icon: '🐾', to: '/companions', color: '#4ADE80' },
+  { title: 'COMPANIONS', desc: '102 companions that fight, level, evolve, and bond with you.', icon: '🐾', to: '/companions', color: '#4ADE80' },
   { title: 'CLASSES', desc: '14 weapon classes. Some are earned. One is hidden.', icon: '⚡', to: '/classes', color: '#60A5FA' },
   { title: 'RAID BOSSES', desc: '14 multi-phase bosses with puzzles, phases, and unique loot.', icon: '💀', to: '/raid-bosses', color: '#DC2626' },
   { title: 'SKILL TREES', desc: '14 advantage trees with 25 levels each, prestige, and synergies.', icon: '🌳', to: '/skill-trees', color: '#22C55E' },
@@ -19,6 +19,7 @@ const SYSTEM_CARDS = [
   { title: 'COOKING', desc: '11 mastery categories. Seasonal recipes. Campfire crafting.', icon: '🍳', to: '/cooking', color: '#F59E0B' },
   { title: 'GUILDS & SOCIAL', desc: 'Guilds, parties, duels, buddy system, marriage, and family.', icon: '👥', to: '/guilds', color: '#0EA5E9' },
   { title: 'GACHA FOUNTAIN', desc: 'Fountain of Eternal Dreams. Feed it Forever Coins from allowance, quests, crates and more!', icon: '🏺', to: '/gacha', color: '#A855F7' },
+  { title: 'CRAFTFOREVER', desc: '7 craft mastery tracks. 38 biome materials. Forging, chemistry, and the Grand Forge.', icon: '🔨', to: '/craftforever', color: '#E879F9' },
 ]
 
 const DR_MILESTONES = [
