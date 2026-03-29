@@ -1,4 +1,4 @@
-// Forevercraft Knowledge Base — 2804+ entries from live datapack codebase
+// Forevercraft Knowledge Base — 3,000 entries from live datapack codebase
 export interface KBEntry {
   id: number
   category: string
@@ -3652,6 +3652,481 @@ export const KNOWLEDGE_BASE: KBEntry[] = [
   { id: 2802, category: "Dyeing", q: "What is the Dyeing system?", a: "Custom color application for armor and certain items. Extends vanilla dyeing with additional color combinations and gradient effects. Works with the Patina system for evolving color palettes over time.", keywords: ["dyeing", "color", "armor dye", "custom color", "gradient", "dye system"] },
   { id: 2803, category: "Phoenix Codex", q: "What is the Phoenix Codex?", a: "A resurrection and rebirth tracking system. Records your death history, resurrection methods used, and tracks phoenix-related milestones. Part of the unified Ecodex interface.", keywords: ["phoenix codex", "resurrection", "death history", "rebirth tracking", "phoenix milestone"] },
   { id: 2804, category: "Mob Crates", q: "What are Mob Crates?", a: "Crates that drop from killed mobs based on tier. Higher-tier mobs drop better crates. Part of the 7-source crate engine (mining, fishing, harvesting, mob kills, structures, quests, achievements). Mob crate quality scales with Dream Rate.", keywords: ["mob crate", "mob drop crate", "kill crate", "mob loot", "tier mob drop", "dr scaling crate"] },
+
+  // ═══════════════════════════════════════════
+  // DEEP MECHANICS BATCH (2805-3000)
+  // ═══════════════════════════════════════════
+
+  // — Dream Rate Deep Dive —
+  { id: 2805, category: "Dream Rate", q: "What is the Dream Rate formula?", a: "multiplier = 1 + (dreams / 35). At 35 Dreams you get a 2.0x bonus roll multiplier. The cap is 50 DR. Every source stacks additively into the dreams total, then the formula converts to a loot multiplier.", keywords: ["dr formula", "multiplier calculation", "dreams divided 35", "2x bonus", "loot multiplier math"] },
+  { id: 2806, category: "Dream Rate", q: "What permanent DR sources exist?", a: "Mythical Armor: +0.5 per piece. Crystal of Dreams: +1 (consumable). Rabbit's Dreaming Foot: +1 (Killer Bunny drop). Crystallized Dream Droppings: +1 (5% bat drop). Dream Inducing Mushroom: +1 (0.25% mushroom drop). Chorus Dreaming Fruit: +1 (0.25% chorus plant). Owl pet at Lv100: +5.", keywords: ["permanent dr", "dr sources", "crystal of dreams", "rabbit foot", "bat drop", "owl level 100"] },
+  { id: 2807, category: "Dream Rate", q: "What time-of-day DR bonuses exist?", a: "Morning fishing: +0.5. Noon mining: +1.0 (peak). Night combat: +0.5. Full Moon fishing at night: +0.5. New Moon combat: +0.5. Harvest Moon: +1.5 (full night, 1/8 chance on Full Moon). Rain + fishing rod: +0.5.", keywords: ["time bonus dr", "noon mining", "morning fishing", "moon bonus", "harvest moon", "rain fishing"] },
+  { id: 2808, category: "Dream Rate", q: "What are the Dream Rate structure gates?", a: "T1 (Villages, Shipwrecks): DR 5. T2 (Desert Pyramid, Dungeon): DR 7.5. T3 (Trial Chambers, Fortress): DR 10. T4 (Stronghold, Mansion, Bastion): DR 14. Ancient City/End City: DR 17.5. Higher DR = access to rarer structures.", keywords: ["structure gate", "dr requirement", "dream gate", "access requirement", "locked structure", "dr threshold"] },
+  { id: 2809, category: "Dream Rate", q: "Do enchantments affect Dream Rate?", a: "Yes! Fortune, Silk Touch, Luck of the Sea, and Looting each add +0.25 DR per level in their relevant context (mining, fishing, combat). These are temporary bonuses while the enchanted tool is held.", keywords: ["enchantment dr", "fortune bonus", "looting dr", "luck of sea", "silk touch bonus", "tool dr"] },
+
+  // — Day Cycle & Moon —
+  { id: 2810, category: "Day Cycle", q: "How long is a Forevercraft day?", a: "72,000 real ticks = 1 real-world hour. Days are 3x longer than vanilla. Uses gamerule advance_time false with a custom counter advancing DayTime by 1 every 3 ticks on the standard 0-24000 scale.", keywords: ["day length", "72000 ticks", "1 hour", "3x longer", "custom day cycle", "advance time"] },
+  { id: 2811, category: "Moon Phases", q: "How do moon phases work in Forevercraft?", a: "8 phases cycling over 192,000 DayTime ticks. Full Moon: fishing luck +0.5 at night. Harvest Moon: 1/8 chance on Full Moon, sets randomTickSpeed=15, grants +1.5 DR for the night. New Moon: Patron & Furia spawn chance doubled, mob loot luck +0.5.", keywords: ["moon phase", "8 phases", "full moon", "harvest moon", "new moon", "moon cycle bonus"] },
+
+  // — Crate System Deep Dive —
+  { id: 2812, category: "Crates", q: "How many crate sources are there?", a: "7 sources feed one unified crate engine: mining (1,935 functions), fishing (32), harvesting (27), mob kills (99), structures (88), quests (6 loot tables), achievements (12 loot tables). Total: 2,355 functions and 561 loot tables across all systems.", keywords: ["crate sources", "7 sources", "crate engine", "total crates", "loot tables count"] },
+  { id: 2813, category: "Crates", q: "How does the crate animation work per tier?", a: "Common: 10 frames, 0.5s, steel grey. Uncommon: 10 frames, 0.5s, rich blue. Rare: 15 frames, 0.75s, aqua/cyan. Ornate: 20 frames, 1s, rich purple. Exquisite: 25 frames, 1.25s, magenta. Mythical: 30 frames, 1.5s, gold. Higher tiers = longer, more dramatic reveals.", keywords: ["crate animation", "tier colors", "animation frames", "crate visual", "mythical gold", "reveal duration"] },
+  { id: 2814, category: "Crates", q: "What are Awakening Stones?", a: "Every crate at every tier has a 20% chance to drop an Awakening Stone. These are used for weapon mastery progression — consuming stones advances your weapon's mastery level.", keywords: ["awakening stone", "20 percent", "weapon mastery", "stone drop", "crate bonus drop"] },
+  { id: 2815, category: "Crates", q: "How do structure crates work?", a: "Per-player tracking with 50-hour refresh timers. 25 biome-specific treasure pools. Dream Rate-gated — higher DR unlocks richer structures. 88 functions and 131 loot tables power the system.", keywords: ["structure crate", "50 hour refresh", "per player", "biome treasure", "dream gated structure"] },
+
+  // — Patron & Furia Mobs —
+  { id: 2816, category: "Mobs", q: "What are Patron mobs?", a: "Elite hostile mobs with 6 tiers (Common to Mythical). 5% spawn at night (10% on New Moon), 5-min cooldown, 25% crate drop. Depth scaling from 1.0x surface to 1.5x bedrock level. Mythical Patrons have 250 HP, +20 armor, +80% speed, +300% damage.", keywords: ["patron mob", "elite mob", "6 tier", "night spawn", "patron stats", "mythical patron"] },
+  { id: 2817, category: "Mobs", q: "What are Furia mobs?", a: "Stealthier elite mobs with 3 tiers. 10% spawn rate (20% on New Moon), 2.5-min cooldown. Subtle particle effects and random scale variation make them harder to spot. Rarer but more dangerous than standard Patrons.", keywords: ["furia mob", "stealth elite", "3 tier", "subtle particles", "new moon spawn", "random scale"] },
+
+  // — Companion Deep Dive —
+  { id: 2818, category: "Companions", q: "What are companion moods?", a: "7 mood states based on Relationship Points: Lonely (0-249, red italic), Wary (250-499, dark gray), Uneasy (500-1249, gray), Content (1250-2249, green), Happy (2250-3499, green), Elated (3500-4499, yellow), Overjoyed (4500+, gold bold).", keywords: ["pet mood", "companion mood", "relationship points", "7 moods", "lonely wary", "overjoyed gold"] },
+  { id: 2819, category: "Companions", q: "How do companion memories work?", a: "Pets record 10 distinct memory types: boss kills, mythical artifact finds, biome discoveries, and other milestones. At 5+ shared memories, companions gain a bond XP bonus. Memory timeline is viewable in the Pet Menu.", keywords: ["pet memory", "shared memories", "10 types", "bond xp bonus", "memory timeline", "milestone memories"] },
+  { id: 2820, category: "Companions", q: "What is the pet kill counter?", a: "Pets.Kills scoreboard tracks mob kills while a pet is active. Mobs tagged pc.pet_hit by the pet combat system are counted. Displayed in the pet info screen as '⚔ Kills: X'. Resets to 0 when you summon a new pet.", keywords: ["pet kills", "kill counter", "pet combat", "kill tracking", "pets.kills scoreboard"] },
+  { id: 2821, category: "Companions", q: "How does companion biome affinity work?", a: "Companions in their home biome: 7% spawn chance. Outside: ~0.7% chance (10x less likely). Artifacts in matching biome: +25% boost. Universal companions (11 Common) appear anywhere at normal rates.", keywords: ["biome affinity", "home biome", "7 percent", "spawn chance", "universal companion", "biome boost"] },
+
+  // — Companion Evolution —
+  { id: 2822, category: "Evolution", q: "What are the 6 Ascended companion forms?", a: "Endwalker (Blue Dragon, death recall), Ashborn (Red Dragon, inferno aura), Emberheart (Phoenix, rebirth mechanic), Wraith (Reaper, veil cloak), Monolith (Warden, seismic sight), Sabertooth (Tiger, pack bonus). Require max level + max bond on mythical companions.", keywords: ["ascended forms", "6 evolutions", "endwalker", "ashborn", "emberheart", "wraith monolith sabertooth"] },
+  { id: 2823, category: "Evolution", q: "How does companion evolution work?", a: "4-phase ceremony: darkness → particle burst → transform → server announcement. Requires max-level mythical companion at Eternal Bond. 46 evolved abilities total covering Arctic Fox, Butterfly Dreamdust, Dragon forms, Spirit mechanics, and more.", keywords: ["evolution ceremony", "4 phases", "max level", "eternal bond", "evolved abilities", "transform sequence"] },
+
+  // — Quest System —
+  { id: 2824, category: "Quests", q: "What are the 6 quest tiers?", a: "Tier 1 Errand (15 quests, +25 rep, Common crate). Tier 2 Task (15, +75, Uncommon). Tier 3 Contract (13, +150, Rare). Tier 4 Commission (12, +250, Ornate). Tier 5 Expedition (10, +400, Exquisite). Tier 6 Heroic (10, +500, Mythical, 7-day reset).", keywords: ["quest tiers", "6 tiers", "errand task", "contract commission", "expedition heroic", "quest rewards"] },
+  { id: 2825, category: "Quests", q: "How does village reputation work?", a: "6 ranks: Stranger (0), Acquaintance (100), Friend (250), Ally (500), Hero (1000), Legend (2500+). Higher rep = better rewards, better prices, Iron Golem allegiance. Betray a village to face exile.", keywords: ["reputation rank", "stranger legend", "village rep", "golem allegiance", "exile", "rep thresholds"] },
+  { id: 2826, category: "Quests", q: "What are Patron Bounties?", a: "25% of quest slots are targeted patron hunts. A guaranteed patron spawns in the target biome with a distance tracker pointing you to it. Bounty tiers: Contract (Uncommon patron, 2h), Commission (Rare, 2h), Expedition (Ornate, 1h), Heroic (Exquisite, 1h).", keywords: ["patron bounty", "targeted hunt", "distance tracker", "guaranteed spawn", "bounty tier", "patron quest"] },
+
+  // — Weapon Mastery —
+  { id: 2827, category: "Weapon Mastery", q: "How does weapon mastery progression work?", a: "Per-tier max levels: Common=1 (5 XP), Uncommon=2 (20), Rare=3 (50), Ornate=4 (100), Exquisite=5 (175), Mythical=7 (550 XP). Prestige up to 3 times per weapon. Consume Awakening Stones from crate drops to gain XP.", keywords: ["weapon mastery", "mastery levels", "prestige weapon", "awakening stone xp", "tier max level"] },
+
+  // — Glyphforge —
+  { id: 2828, category: "Glyphforge", q: "What are the 12 Glyphs?", a: "Emberheart, Verdant, Quicksilver, Obsidian, Zephyr, Briar, Stalwart, Gilded, Tidecall, Hearthstone, Prism, Tempest. Plus Arcanum (random). Each provides unique passive effects when forged onto weapons/armor.", keywords: ["glyph types", "12 glyphs", "emberheart verdant", "quicksilver obsidian", "rune binding", "glyph list"] },
+  { id: 2829, category: "Glyphforge", q: "How long does glyph forging take?", a: "Formula: (glyph_count + 3) × 72,000 ticks. First glyph: 3 days. Thirteenth glyph: 15 days. Capacity scales with item tier: 1 glyph (base), 3 (Ornate), 6 (Exquisite), 13 (Mythical).", keywords: ["glyph forging time", "forging duration", "72000 ticks", "glyph capacity", "tier slots", "days to forge"] },
+
+  // — Transmute —
+  { id: 2830, category: "Transmute", q: "How does artifact transmutation work?", a: "Sacrifice same-tier artifacts to get one of the next tier. Cost: 5 common/uncommon, 4 rare/ornate, 3 exquisite. Having an Artificer villager nearby reduces cost by 1 (once per day). Uses a placeable lodestone station.", keywords: ["transmute", "artifact upgrade", "sacrifice cost", "artificer discount", "tier up artifact"] },
+
+  // — Healer Artifacts —
+  { id: 2831, category: "Healers", q: "How many healer artifacts exist?", a: "12 healers across 6 tiers. Common: Medicinal Bandages (2♥, 15s CD), Herbal Poultice (3♥+Regen, 18s). Uncommon: Smelling Salts (cleanse 3 debuffs), Soothing Balm. Up to Mythical: Endless Ambrosia (full heal+Resistance II) and Tears of the World Tree (8♥+Regen III+Absorption III).", keywords: ["healer artifact", "12 healers", "healing range", "cooldown", "medicinal bandages", "endless ambrosia"] },
+  { id: 2832, category: "Healers", q: "What is the Healer's Oath?", a: "During cooldown after using a healer artifact, you get Weakness V and arrow damage is zeroed. This prevents healers from being used in combat — you must choose between healing allies and fighting.", keywords: ["healers oath", "weakness v", "combat prevention", "healer cooldown", "no attack healing"] },
+
+  // — Patina System —
+  { id: 2833, category: "Patina", q: "How does artifact aging work?", a: "5 stages based on cumulative wear time: Fresh (0h), Worn (6h, 1st lore line), Seasoned (24h, 2nd lore line), Storied (48h, 3rd lore line), Legendary (72h, full lore + 2% stat modifier). Time accumulates per armor slot via scoreboards.", keywords: ["patina aging", "artifact age", "5 stages", "worn seasoned", "legendary 72 hours", "stat modifier"] },
+
+  // — Dungeon System —
+  { id: 2834, category: "Dungeons", q: "What are the 5 dungeon waves?", a: "Wave 1 The Scouts: 3 light mobs. Wave 2 The Raiders: 5 leather/mixed. Wave 3 The Assault: 6 iron/chainmail. Wave 4 The Vanguard: 9 diamond/vindicators. Wave 5 Boss Wave: named boss + 3 guards. 300-second combat timer per wave.", keywords: ["dungeon waves", "5 waves", "scouts raiders", "assault vanguard", "boss wave", "300 seconds"] },
+  { id: 2835, category: "Dungeons", q: "How does dungeon difficulty scale?", a: "By Dream Rate: Easy (DR 0-6, +0% HP/damage), Normal (7-17, +25%/+15%), Hard (18-29, +50%/+30%), Brutal (30+, +100%/+50%). Rewards also scale: Easy gives Common crate + 16 emeralds, Brutal gives Mythical crate + 4 emerald blocks + 5,000 XP.", keywords: ["dungeon difficulty", "dr scaling", "easy normal hard brutal", "dungeon rewards", "difficulty tier"] },
+  { id: 2836, category: "Dungeons", q: "What are the 6 dungeon modifiers?", a: "Relentless, Fortified, Shrouded, Volatile, Undying, Frenzied. Applied randomly to dungeon mobs to add variety. Each modifier changes mob behavior or stats in different ways.", keywords: ["dungeon modifier", "6 modifiers", "relentless fortified", "shrouded volatile", "undying frenzied"] },
+  { id: 2837, category: "Dungeons", q: "What is the dungeon daily floor limit?", a: "30 floors per day tracked by ec.dg_floors_today. Resets at dawn and also resets on rejoin if you were offline. Prevents unlimited dungeon grinding.", keywords: ["dungeon limit", "30 floors", "daily cap", "dawn reset", "floor limit"] },
+
+  // — Boss System —
+  { id: 2838, category: "Bosses", q: "What are the 11 boss-exclusive artifacts?", a: "Abyssal Pearl, Architect's Design, Behemoth's Heart, Earthshaker Core, Infernal Heart, Nightmare Fragment, Soul Reaver, Soulkeeper's Ember, Thornheart Bloom, Thunderstrike Core, Void Sovereign's Eye. Each drops only from its specific boss.", keywords: ["boss artifact", "11 exclusive", "abyssal pearl", "earthshaker core", "boss loot", "unique drop"] },
+
+  // — Spirit Raids —
+  { id: 2839, category: "Spirit Raids", q: "How do Spirit Raids work?", a: "9 combat floors + 1 boss floor (Floor 10 = immediate boss). Entry requires Dungeon Floor 10 completion with DR 5+. Players vote: Face Boss / Retreat / Timeout (30s). 13 raid bosses with 3-phase mechanics and 10-minute enrage timer.", keywords: ["spirit raid", "9 floors", "boss floor 10", "entry requirement", "vote system", "enrage timer"] },
+  { id: 2840, category: "Spirit Raids", q: "What are the 13 Spirit Raid bosses?", a: "Hollow Sovereign, Void Architect, Gilded Tyrant, Arbiter, Gatekeeper, Grand Illusionist, Ashen Lord, Leviathan, Eternal Pharaoh, Venomweaver, Deepcrawler, Mossheart Warden, Crimson Bulwark. Each has unique abilities and puzzle phases.", keywords: ["raid boss names", "13 bosses", "hollow sovereign", "void architect", "gilded tyrant", "leviathan"] },
+  { id: 2841, category: "Spirit Raids", q: "What are boss DR consumables?", a: "13 boss-specific consumable items that grant permanent DR. Each uses consume_seconds:0 with unique boss_dr_* custom_data. Your Dream History shows checkmarks for each consumed boss. One per boss, permanent +DR on use.", keywords: ["boss consumable", "permanent dr", "boss dr item", "13 consumables", "dream history checkmark"] },
+
+  // — Spirit Weapons —
+  { id: 2842, category: "Spirit Weapons", q: "How does spirit weapon tier progression work?", a: "7 tiers: Common (50% effectiveness), Uncommon (60%), Rare (70%, Ability 1 unlocks), Ornate (80%), Exquisite (90%), Mythical (100%), Spirit (125%, 150% with twin). Each tier requires completing 5 specific objectives.", keywords: ["spirit tier", "7 tiers", "effectiveness scaling", "50 to 125 percent", "tier objectives", "spirit 150"] },
+  { id: 2843, category: "Spirit Weapons", q: "What is Metamorphosis?", a: "The ultimate spirit weapon upgrade to Spirit tier (125% effectiveness). Requirements: all glyph slots filled (Exquisite), mastery maxed (100k XP), all 14 spirit bosses slain, plus weapon-specific unique requirements. Dramatic VFX transformation sequence.", keywords: ["metamorphosis", "spirit tier upgrade", "100k mastery", "14 bosses slain", "glyph slots filled", "ultimate weapon"] },
+  { id: 2844, category: "Spirit Weapons", q: "What are spirit weapon twins?", a: "6 twin weapon variants for dual-wielding: Ashcrown Shield, Vanguard Shield, Aqualoch, Storm Edge, Johan Shield, Ghost Fang. +25% solo boost, +50% when both twins held. Revealed by the Dream Storm Crystal.", keywords: ["twin weapons", "dual wield spirit", "6 twins", "dream storm crystal", "25 percent boost", "twin forms"] },
+  { id: 2845, category: "Spirit Weapons", q: "Are spirit weapons soulbound?", a: "Yes! On death, your spirit weapon is saved in entity data and restored on respawn. You never lose your spirit weapon permanently. 6 soulbound functions handle the save/restore cycle.", keywords: ["soulbound", "death persist", "weapon saved", "restored respawn", "never lose", "spirit death"] },
+
+  // — Infinite Castle —
+  { id: 2846, category: "Castle", q: "How does the Infinite Castle work?", a: "Endless escalating dungeon. 1-3 Dungeon Keys to enter (cost by starting floor). 3 runs per day. 16 random themed arenas built 172 blocks above you. 5 waves per floor. Boss every 10th floor. Scaling: floor + DR + base difficulty.", keywords: ["infinite castle", "endless dungeon", "dungeon key", "3 daily runs", "16 arenas", "boss every 10"] },
+  { id: 2847, category: "Castle", q: "What are Dream Storm Crystals?", a: "Rare drops from Infinite Castle floors 17, 34, 51, 68, 85+. They reveal twin forms of spirit weapons. The weapon equivalent of the Forge Crystal (which comes from the Grand Forge for spirit tools).", keywords: ["dream storm crystal", "twin reveal", "castle drop", "floor 17 34", "rare crystal", "spirit twin"] },
+  { id: 2848, category: "Castle", q: "What are Infinite Castle milestone rewards?", a: "Milestone floors: 10, 20, 30, 40, 50, 75, 100 give bonus rewards + crate coins. Your highest floor is permanently recorded (ic.record). Deaths tracked (ic.deaths). Milestone loot claimed once via bitfield (ic.claimed).", keywords: ["castle milestone", "floor rewards", "10 20 30", "highest record", "milestone loot", "one time claim"] },
+
+  // — Heist System —
+  { id: 2849, category: "Heist", q: "How does the Heist system work?", a: "Sneak near a Black Market barrel with a dungeon key to enter. 60-second timed run through a random gauntlet (10 variants) at Y=300. Elytra stripped. Must reach end zone without taking ANY damage — one hit = instant fail. Reward: Contraband Crate (rare+ loot). 1-day per-barrel cooldown.", keywords: ["heist", "stealth run", "60 seconds", "no damage", "contraband crate", "black market barrel"] },
+
+  // — Bestiary —
+  { id: 2850, category: "Bestiary", q: "How does the Bestiary system work?", a: "Tracks 52 hostile + neutral mobs. Kill counters (bs.k_*) and drop tier bitfields (bs.d_*) per mob. Completing entries grants damage multipliers against that mob type. 5-page GUI interface. 144 functions and 114 advancements.", keywords: ["bestiary", "52 mobs", "kill counter", "damage bonus", "mob tracking", "5 page gui"] },
+
+  // — Professions —
+  { id: 2851, category: "Professions", q: "What are the 11 custom professions?", a: "Artificer (artifact shards), Bartender (potions + Potion of Dreams), Beekeeper (honey), Circuit Board (redstone), Explorer (maps/runes), Hunter (mob drops + Arrow of Lightning), Miner (raw ores), Nymph (nature + Cosmetic Crates), Retired Adventurer (gear recycling + Anecdotes), Wise Wanderer (XP shop), Zookeeper (pet shards).", keywords: ["11 professions", "artificer bartender", "nymph zookeeper", "wise wanderer", "profession list", "villager trades"] },
+  { id: 2852, category: "Professions", q: "What does the Wise Wanderer sell?", a: "XP-to-crate shop: Common=15 levels, Uncommon=30, Rare=50, Ornate=75, Exquisite=125, Mythical=250. Convert your experience into guaranteed crate tiers. Higher tiers cost exponentially more.", keywords: ["wise wanderer", "xp shop", "xp to crate", "level cost", "250 mythical", "experience trade"] },
+
+  // — Cosmetic System —
+  { id: 2853, category: "Cosmetics", q: "What cosmetics can you earn?", a: "36 exclusive cosmetics from Nymph's Cosmetic Crate (costs 15 Tree Tokens): 18 particle effects across 4 zones (Feet, Aura, Head, Ambient) and 18 titles. Dual equip from different zones allowed. Examples: Frostwalker, Stardust, Fireflies, Dreamwalker, The Eternal.", keywords: ["cosmetic crate", "36 cosmetics", "18 particles", "18 titles", "tree tokens", "nymph crate"] },
+  { id: 2854, category: "Cosmetics", q: "What particle zones exist?", a: "4 zones, dual equip from different zones: Feet (5: Frostwalker, Blazeborn, Soulstepper, Mudtreader, Bloomstep), Aura (5: Blossom, Super Hot, Stardust, Cauldron, Heartbeat), Head (4: Halo, Storm Crown, Dripping Honey, Inkcloud), Ambient (4: Fireflies, Spore Cloud, Void Whispers, Ashfall).", keywords: ["particle zones", "feet aura head", "ambient particles", "frostwalker", "stardust", "fireflies"] },
+
+  // — Housing Deep Dive —
+  { id: 2855, category: "Housing", q: "What are the 5 housing upgrade tiers?", a: "T1: Regeneration. T2: +Saturation. T3: +DR bonus + Garden growth. T4: +Fire Resistance. T5: +Resistance I + doubled garden rate. Each tier costs netherite. All buffs active in your 64-block home zone only.", keywords: ["housing tiers", "5 tiers", "home buffs", "regeneration", "resistance", "netherite cost"] },
+  { id: 2856, category: "Housing", q: "How does the auto-garden work?", a: "Random crop growth in a 64-block radius from your Hearthstone. Tier 3 unlocks it. Tier 5 doubles the rate (4 growth attempts per tick vs 2). Works while you're in your home zone.", keywords: ["auto garden", "crop growth", "64 block radius", "tier 3 unlock", "tier 5 double", "hearthstone garden"] },
+  { id: 2857, category: "Housing", q: "What is the Quick Stash system?", a: "One-button inventory sorting into 8 categories: Building, Combat, Food, Ores, Nature, Tools, Brewing, Valuables. Uses labeled barrels in your home zone. House Key unlocked at Comfort 100 + Tier 3.", keywords: ["quick stash", "8 categories", "inventory sort", "labeled barrels", "house key", "comfort 100"] },
+  { id: 2858, category: "Housing", q: "How does comfort scoring work?", a: "Tracks blocks placed in your home zone. Milestones at 25, 50, 100, and 200 blocks. Higher comfort unlocks bonuses like the House Key (100) and decoration-based laborer quality boosts.", keywords: ["comfort score", "block milestones", "25 50 100 200", "decoration score", "comfort bonuses"] },
+
+  // — Party System —
+  { id: 2859, category: "Party", q: "What are the 9 party combos?", a: "Pack Tactics, Shield Wall, Beast Surge, Combined Arms, Harvest Chain, Soul Link, Dream Sync, Iron Phalanx, Wild Hunt. Each triggers when party members meet specific conditions together. One-time discovery notification using bitfield tracking.", keywords: ["party combo", "9 combos", "pack tactics", "shield wall", "dream sync", "combo discovery"] },
+  { id: 2860, category: "Party", q: "Does the party system show a DR leaderboard?", a: "Yes! The Party GUI shows top 3 online players by Dream Rate with 🥇🥈🥉 medal emojis. Uses attribute luck get 10 to fetch DR values and displays integer + decimal formatting.", keywords: ["dr leaderboard", "party gui", "top 3 players", "medal emojis", "dream rate ranking"] },
+
+  // — Cooking Deep Dive —
+  { id: 2861, category: "Cooking", q: "How do seasonal recipes work?", a: "16-day season cycle (Autumn/Winter/Spring/Summer). 16 exclusive seasonal recipes — 4 per season. These recipes can only be cooked during their matching season, adding time-limited incentive to cook.", keywords: ["seasonal recipe", "16 day cycle", "4 per season", "time limited", "season cooking", "exclusive recipe"] },
+  { id: 2862, category: "Cooking", q: "What are the 5 pet treats?", a: "Companion Treat (Bone+Sweet Berries, 75 RP). Meadow Biscuit (Aged Venison+Meadow Thyme, 100 RP). Honey Cake (Honeycomb+Sunbaked Root, 150 RP). Savory Bone Broth (Smoked Boar+Truffle+Bone, 200 RP). Golden Morsel (Golden Root+Highland Sage+Diamond, 300 RP).", keywords: ["pet treat", "5 treats", "companion treat", "meadow biscuit", "golden morsel", "relationship points food"] },
+  { id: 2863, category: "Cooking", q: "What are the cooking mastery tier thresholds?", a: "Per category: 10 meals = Apprentice, 25 = Journeyman, 50 = Expert, 100 = Master Chef. 11 categories total. Recipe discovery tracked via bitfield system (7 scoreboards, 6 bits per category).", keywords: ["mastery tier", "apprentice journeyman", "expert master chef", "10 25 50 100", "cooking rank"] },
+
+  // — Armor Trims —
+  { id: 2864, category: "Armor Trims", q: "How do armor trim effects work?", a: "16 trim materials each have unique per-piece effects and full-set bonuses. More pieces = stronger effect. 209 total functions across 11 trim material folders. Examples: Amethyst, Copper, Diamond, Emerald, Gold, Iron, Lapis, Netherite, Quartz, Redstone, Resin.", keywords: ["armor trim", "16 materials", "per piece effect", "full set bonus", "trim abilities", "209 functions"] },
+
+  // — Lore System —
+  { id: 2865, category: "Lore", q: "How does the Lore Collection Map work?", a: "Trigger: /trigger ec.lore_map. Shows 162 total sets across 4 dimensions: Overworld (81), Nether (30), End (27), Pages (24). Displays per-dimension progress with color-coded bars and up to 10 in-progress sets.", keywords: ["lore map", "162 sets", "4 dimensions", "trigger ec.lore_map", "lore progress", "dimension breakdown"] },
+
+  // — Black Market —
+  { id: 2866, category: "Black Market", q: "How does the Black Market work?", a: "14 daily deals from a 56-item pool: 24 artifacts (4 per tier), 20 vanilla rarities, 4 crates, 8 rings. Prices: 1 Nightmare Ingot (common) to 64 NI (Silence Trim). Sell system: Ornate 1-2 NI, Exquisite 4-6 NI, Mythical 8-12 NI (accessories pay more).", keywords: ["black market", "daily deals", "nightmare ingot", "14 items", "sell artifacts", "56 item pool"] },
+  { id: 2867, category: "Black Market", q: "What is the Black Market escrow system?", a: "List up to 5 items for sale per player. 4% daily sale chance per listing. Store items and collect balance via GUI. A player-to-player economy using Nightmare Ingot currency.", keywords: ["escrow", "5 listings", "4 percent daily", "player trading", "market listing", "sell items"] },
+
+  // — Night Terrors —
+  { id: 2868, category: "Night Terrors", q: "How do Night Terrors work?", a: "New Moon mini-bosses for players with DR 30+. 6 unique terror types that scale by DR tier. Higher DR = harder terrors with better rewards. They spawn nearby, glow dark red, are fire-resistant, and actively hunt you. Drop Nightmare Shards (exclusive currency).", keywords: ["night terror", "dr 30", "new moon", "6 types", "nightmare shard", "mini boss scaling"] },
+
+  // — Biome Mastery —
+  { id: 2869, category: "Biome Mastery", q: "What are the 5 biome mastery levels?", a: "Level 1 (30 min): Discovery title. Level 2 (2h): +0.1 DR in biome. Level 3 (8h): Patron aggro reduction. Level 4 (20h): +0.25 DR in biome. Level 5 (30h): Master title + full bonus. 25 biome-specific mastery titles. Bonuses stack.", keywords: ["biome mastery levels", "5 levels", "30 minutes", "30 hours", "dr biome bonus", "mastery title"] },
+
+  // — Dreaming Realm —
+  { id: 2870, category: "Dreaming Realm", q: "How do you enter the Dreaming Realm?", a: "Triggered on sleep skip. 5% entry chance at DR 30, scaling higher at DR 50. Solo only (no party). Arena constructed at Y=300 above your bed. 5-minute bossbar timer. Emergency wake: /trigger ec.wake.", keywords: ["dreaming realm", "sleep entry", "5 percent chance", "dr 30", "solo arena", "y 300"] },
+  { id: 2871, category: "Dreaming Realm", q: "What are the 3 Dreaming Realm challenges?", a: "Maze (navigate with sequence tracking), Guardians (wave-based combat), Trial (final endurance). Completing all 3 in one visit = Lucid Dreamer achievement + Ethereal Aura cosmetic + Dreamwalker title. All 3 + all lore = Cloak of Dreams.", keywords: ["dreaming challenge", "maze guardians trial", "lucid dreamer", "ethereal aura", "cloak of dreams", "all 3 challenges"] },
+
+  // — Seasonal System —
+  { id: 2872, category: "Seasons", q: "How does the seasonal cycle work?", a: "4 seasons cycle over a 64-day year: Autumn, Winter, Spring, Summer. 16 in-game days per season. Derived from visual_day % 64. Transitions trigger announcements and resource pack swap signals for visual changes.", keywords: ["seasonal cycle", "64 day year", "4 seasons", "16 days per season", "resource pack swap", "visual change"] },
+
+  // — Harmonization —
+  { id: 2873, category: "Harmonization", q: "What is the Harmonization system?", a: "Compound potion effect stacking. Level I + Level I = Level II (exponential). Tracks: Strength, Speed, Haste, Resistance (cap IV), Jump Boost, Regen. Self-scheduling every 1 second. Makes multiple weaker buffs combine into stronger effects.", keywords: ["harmonization", "potion stacking", "compound effects", "level 1 plus 1", "resistance cap iv", "effect combining"] },
+
+  // — Tome of Experience —
+  { id: 2874, category: "Items", q: "What is the Tome of Experience?", a: "XP bank item. Right-click: absorb all XP (levels + points). Sneak-right-click: withdraw everything. 3-second cooldown. Lore updates showing stored balance. Safe way to store XP for later use.", keywords: ["tome experience", "xp bank", "store xp", "absorb levels", "withdraw xp", "xp storage item"] },
+
+  // — Portal Dial —
+  { id: 2875, category: "Items", q: "What is the Portal Dial?", a: "Compass artifact for teleportation. Bind: right-click lodestone (costs 30 levels). Use: teleport to bound lodestone. Sneak-use: opens remote Guidestone network GUI. Validates existence before teleport.", keywords: ["portal dial", "compass teleport", "lodestone bind", "30 levels", "remote guidestone", "teleport item"] },
+
+  // — Guidestone & Wormhole —
+  { id: 2876, category: "Travel", q: "What is the Wormhole?", a: "Costs 30 XP levels. Teleports you 5,000-10,000 blocks in a random direction, 150 blocks up, with Slow Falling + Resistance. A high-risk exploration tool for discovering new biomes and structures.", keywords: ["wormhole", "30 levels", "random teleport", "5000 10000 blocks", "slow falling", "exploration tool"] },
+
+  // — Campfire Stories —
+  { id: 2877, category: "Social", q: "How do Campfire Stories work?", a: "Auto-narrated stories from player history. Requires 2+ players near campfire at night. Tracks 7 event types (boss kills, rare finds, etc.). Up to 50 history entries per player. 10-minute cooldown between stories.", keywords: ["campfire story", "auto narrated", "2 players", "night campfire", "7 events", "10 minute cooldown"] },
+
+  // — Message in a Bottle —
+  { id: 2878, category: "Social", q: "What is the Message in a Bottle system?", a: "Players craft and throw messages into water. 2% catch chance while fishing. 50-message pool with FIFO rotation. A fun social system for leaving notes across the world for other players to discover.", keywords: ["message bottle", "2 percent fishing", "50 message pool", "craft throw", "fifo rotation", "social message"] },
+
+  // — Realm Milestones —
+  { id: 2879, category: "Milestones", q: "What are Realm Milestones?", a: "34 cooperative realm-wide goals across 6 categories: Origins (12), Social (5), Guild (5), Adventure (4), Combat (4), Mastery (4). Firework celebrations and permanent DR bonuses to the entire realm on completion. 60-second check cycle.", keywords: ["realm milestone", "34 goals", "6 categories", "cooperative", "permanent dr bonus", "realm wide"] },
+
+  // — Anecdotes —
+  { id: 2880, category: "Lore", q: "What are Anecdotes?", a: "6 mystical guide books with a 15% drop rate from structure crates (once per player). Authors: The Village Elder, Old Seadog, The Old Prospector, The Nomad Sage, The Archivist, The Old Shepherd. Collectible lore items.", keywords: ["anecdotes", "6 books", "15 percent drop", "structure crate", "village elder", "lore books"] },
+
+  // — Rune Inscription Stones —
+  { id: 2881, category: "Runes", q: "How do Rune Inscription Stones work?", a: "8 rune types with area buffs (speed, regen, resistance, etc.). Max 3 active per player. Persistent effects while chunk is loaded. 3 bonus pools: Personal (3 max), Guild (1 per member), Home (4 max). Priority: guild > home > personal.", keywords: ["rune stone", "8 types", "3 max active", "area buff", "inscription stone", "bonus pool priority"] },
+
+  // — Weather Omens —
+  { id: 2882, category: "World Events", q: "What are Weather Omens?", a: "30-second particle warning before calendar/world events. Two-phase alert: chat message first, then visual particles. Gives players time to prepare for incoming events like Starfall, The Dreaming, Abyssal Tremor, etc.", keywords: ["weather omen", "30 second warning", "particle alert", "event warning", "two phase", "prepare event"] },
+
+  // — World Events —
+  { id: 2883, category: "World Events", q: "What are the named World Events?", a: "Starfall (celestial), The Dreaming (dream-themed), Abyssal Tremor (deep earth), Aurora Bloom (nature/light), Rift Echo (dimensional), Dimensional Rift, Harmonic Convergence, Blood Moon, Dream Surge. Each has unique conditions and 60-second omen warnings.", keywords: ["world events", "starfall", "the dreaming", "abyssal tremor", "aurora bloom", "rift echo"] },
+
+  // — Harmonic Convergence —
+  { id: 2884, category: "World Events", q: "What is a Harmonic Convergence?", a: "4 themed events: Celestial Tide, Veil of Embers, Frozen Aurora, Bloom of Eternity. Lasts 10 minutes. Grants +2.0 luck to all players via attribute modifier. Sparkle particles every 15s. 1-hour cooldown. Countdown warnings at 5min, 1min, 10sec.", keywords: ["harmonic convergence", "4 themes", "10 minutes", "+2.0 luck", "1 hour cooldown", "celestial tide"] },
+
+  // — Cave Darkness —
+  { id: 2885, category: "World", q: "How does Cave Darkness work?", a: "Below Y=16 with block light ≤ 3 and not in water, you get Darkness effect (2s, refreshed every 1s). Overworld only. Makes deep caves genuinely dangerous and atmospheric. Predicate-based for performance.", keywords: ["cave darkness", "y 16", "low light", "darkness effect", "deep cave", "atmospheric"] },
+
+  // — XP Magnet —
+  { id: 2886, category: "QoL", q: "How does XP Magnet work?", a: "Experience orbs within 16 blocks move toward the nearest player at 6 blocks/sec. Gravity disabled on attracted orbs. 2-tick self-scheduling. Capped at 50 orb initializations and 100 movements per tick for performance.", keywords: ["xp magnet", "16 blocks", "6 blocks per sec", "orb attraction", "experience magnet", "auto collect xp"] },
+
+  // — Tamed Animal Protection —
+  { id: 2887, category: "QoL", q: "How does Tamed Animal Protection work?", a: "All tamed mobs tagged ec.tame_protected get instant health (amplifier 5 = 64 HP restore) when hit by players. 5-second scan cycle tags new tamed animals. Prevents accidental friendly fire on your pets.", keywords: ["tamed protection", "friendly fire", "instant health", "ec.tame_protected", "pet safety", "no damage pets"] },
+
+  // — Special Items —
+  { id: 2888, category: "Items", q: "What is the Growth Serum?", a: "Lingering potion that grows nearby crops 3 stages instantly. Throw it on farmland to accelerate crop growth. One of many special items alongside Netherite Core (portable beacon) and 9 types of Hacks.", keywords: ["growth serum", "crop growth", "lingering potion", "3 stages", "instant grow", "special item"] },
+
+  // — Armored Elytra —
+  { id: 2889, category: "Items", q: "What is Armored Elytra?", a: "Merge system combining armor with elytra. 19 functions handle the fusion, preserving both armor stats and flight capability. Wear armor AND fly — no need to swap chestplates.", keywords: ["armored elytra", "armor merge", "elytra fusion", "fly with armor", "chestplate elytra", "19 functions"] },
+
+  // — Laborer System —
+  { id: 2890, category: "Laborers", q: "What are the 6 laborer types?", a: "Miner (Rank 10), Farmer (Rank 10), Fisher (Rank 10), Woodcutter (Rank 20), Forager (Rank 20), Prospector (Rank 50). Hire them in your home zone. They go on expeditions and return with resources.", keywords: ["laborer types", "6 types", "miner farmer", "fisher woodcutter", "forager prospector", "rank requirement"] },
+  { id: 2891, category: "Laborers", q: "How do laborer expeditions work?", a: "Base duration: 432,000 ticks. Tier reduction: 10% per housing tier (min 108,000 at Tier 5). Quality tiers: Meager → Decent → Bountiful → Abundant → Legendary. Quality boosted by your home decoration score (hs.decor / 1000, cap +5).", keywords: ["expedition duration", "432000 ticks", "tier reduction", "quality tiers", "laborer quality", "decoration bonus"] },
+
+  // — CraftForever / Trade Trials —
+  { id: 2892, category: "CraftForever", q: "How do Trade Trials work?", a: "6 categories × 10 tiers = 60 total trials: Mining, Farming, Fishing, Building, Lumber, Artisan. Place a Trial Anvil, select category/tier, teleport to Y=300 arena, complete target score in time. Tier 10 has a 5% chance to drop Spirit Tools.", keywords: ["trade trial", "60 trials", "6 categories", "trial anvil", "y 300 arena", "spirit tool drop"] },
+  { id: 2893, category: "CraftForever", q: "What is Artisan Forging?", a: "3-phase interactive minigame: HEAT (timing bar, click sweet spot 13-15/20), HAMMER (3-6 color pattern memorization), QUENCH (moving cursor, click center). Quality scoring: Fail 0-3, Rough 4-7, Good 8-11, Masterwork 12+. Artisan Rank 0-100 with unlocks at 20/40/60/80.", keywords: ["artisan forging", "3 phase minigame", "heat hammer quench", "quality scoring", "masterwork", "artisan rank"] },
+  { id: 2894, category: "CraftForever", q: "What are the 6 Spirit Tools?", a: "Earthsong (Pickaxe, 5x5 mine + unlimited vein 512 blocks + auto-smelt), Dustwalker (Shovel, 5x5 column dig), Heartwood (Axe, Spirit Fell unlimited tree 512), Bloomweaver (Hoe, growth aura + harvest storm), Silkgrasp (Shears, instant shearing), Tidecaller (Trident, maelstrom whirlpool + underwater speed).", keywords: ["spirit tools", "6 tools", "earthsong pickaxe", "dustwalker shovel", "heartwood axe", "bloomweaver hoe"] },
+
+  // — Grand Forge —
+  { id: 2895, category: "Grand Forge", q: "How does the Grand Forge work?", a: "5-phase challenge: The Gathering (60s mine blocks), The Smelting (45s cook meals), The Assembly (60s place blocks), The Tempering (90s kill forge mobs), The Awakening (30s channel resonance). Requires Artisan Rank 15+. Entry via Forge Catalyst.", keywords: ["grand forge", "5 phases", "gathering smelting", "assembly tempering", "awakening", "artisan rank 15"] },
+  { id: 2896, category: "Grand Forge", q: "What is the Resonance system?", a: "Max score 25. Sources: Advantage tree levels (+1/10 levels), Artisan Rank (+1/4 ranks), Spirit weapon (+2), Spirit tool tier (+1/tier), Active companion (+1), Guild rank (+1/2 ranks, max 3), 4pc artifact set (+1), Well-fed (+1), Artisan Tome progress (+1/25 quests), DR boost (+1). Higher = easier phases.", keywords: ["resonance score", "25 max", "forge resonance", "grand forge bonus", "phase targets", "resonance sources"] },
+  { id: 2897, category: "Grand Forge", q: "What does the Forge Crystal do?", a: "Awarded on first Grand Forge completion. +25% effectiveness to any spirit tool (adds st_boosted:true). Requirements: tool at Mythical+ tier, Artisan Tome quest 50+ done. Mirror: Dream Storm Crystal does the same for spirit weapons.", keywords: ["forge crystal", "25 percent boost", "spirit tool boost", "first completion", "mythical tier required", "mirror dream crystal"] },
+
+  // — Reputation / Reaper —
+  { id: 2898, category: "Reputation", q: "How does the Reaper system work?", a: "Dual-axis: Infamy (0-5000, from player/villager/golem kills) and Renown (0-5000, from trades/quests/raids). 7-day natural decay (12 points/60s). Alignment from -5 Villain to +5 Peacemonger based on dominant axis.", keywords: ["reaper system", "infamy renown", "dual axis", "villain peacemonger", "7 day decay", "alignment tier"] },
+  { id: 2899, category: "Reputation", q: "What happens at high Infamy?", a: "Villain (tier -3+): Mob Pacification (non-undead hostiles ignore you), Iron Golem Aggro, Black Market discount. Hunting Parties spawn near infamy 1000+ (3 composition tiers). Defeating them grants -200 infamy + 50 renown.", keywords: ["villain effects", "mob pacification", "golem aggro", "hunting parties", "infamy 1000", "villain benefits"] },
+  { id: 2900, category: "Reputation", q: "What happens at high Renown?", a: "Peacemonger (tier +2+): Hero of the Village (scaling level), trade discounts. Bandits spawn to target you — 3 tiers with Ravagers and Illusioners, 20% chance to knock held item loose. Both paths have risks and rewards.", keywords: ["peacemonger effects", "hero village", "trade discount", "bandits", "renown benefits", "item knock"] },
+
+  // — Class Affinity —
+  { id: 2901, category: "Class Affinity", q: "How does Class Affinity progression work?", a: "7 stages: Common (1M XP, +0%), Uncommon (3M, +10%), Rare (6M, +20%), Ornate (10M, +30%), Exquisite (15M, +40%), Mythical (22.5M, +50%), Spirit (30M, +75%, +100% with twin). Daily cap: 1M XP/class/day (Spirit weapon holders bypass).", keywords: ["class affinity", "7 stages", "damage boost", "daily cap", "30 million xp", "spirit 75 percent"] },
+  { id: 2902, category: "Class Affinity", q: "How do you earn Class Affinity XP?", a: "Mob kills: +1,200 XP. Dungeons: +60,000. Bosses: +90,000. Raids: +120,000. Bounties: +30,000. Passive income: +7 every 3.6s while holding class weapon. Daily cap: 1,000,000 XP per class per day.", keywords: ["affinity xp sources", "mob kills 1200", "boss 90000", "raid 120000", "passive income", "daily cap million"] },
+
+  // — Buddy System Deep Dive —
+  { id: 2903, category: "Buddy System", q: "What are the 12 buddy-eligible mob types?", a: "Wolf, cat, parrot, horse, donkey, mule, llama, trader_llama, camel, fox, ocelot, happy_ghast. Bond with tamed vanilla mobs through 7 friendship tiers from Acquaintance (0 pts) to Spiritbound (10,000 pts).", keywords: ["buddy eligible", "12 mob types", "wolf cat parrot", "horse donkey mule", "fox ocelot camel", "happy ghast"] },
+  { id: 2904, category: "Buddy System", q: "What is Best Buddy status?", a: "At Spiritbound tier (10,000 points), promote to Best Buddy. Gets: Combat AI (4 base damage, 2-tick cooldown, 8-block range), Equipment slots (weapon/artifact/accessory), Auto-Revive (10-min memento timer summons buddy to player).", keywords: ["best buddy", "spiritbound promoted", "combat ai", "equipment slots", "auto revive", "10000 points"] },
+  { id: 2905, category: "Buddy System", q: "How do mount charge attacks work?", a: "Sprint into enemies while mounted for charge damage: 10/15/20 based on buddy tier. Speed bonuses per bond tier. Breath mechanic: 5s slowdown every 30s of continuous riding.", keywords: ["charge attack", "mount combat", "sprint damage", "10 15 20", "breath mechanic", "speed bonus"] },
+
+  // — Fox & Ocelot Taming —
+  { id: 2906, category: "Taming", q: "How do you tame foxes and ocelots?", a: "Foxes: sweet berries (5-feed, 33% at feeds 3-4, guaranteed at 5). Ocelots: cod/salmon (same mechanic). Sit/stand toggle via interaction entity. Follow behavior with 36-block teleport range.", keywords: ["fox taming", "ocelot taming", "sweet berries", "5 feed", "33 percent", "36 block teleport"] },
+  { id: 2907, category: "Taming", q: "What combat stats do tamed pets have?", a: "Fox: 3 range, 2 damage, bite sound. Cat: 3 range, 2 damage, hiss. Ocelot: 4 range, 3 damage (+Str I = ~6), permanent Strength I. Parrot: 2 range, 1 damage, squawk. Horse: 1 range, 4 damage. All attack hostile mobs every 20 ticks.", keywords: ["pet combat stats", "fox damage", "cat damage", "ocelot strength", "horse kick", "parrot attack"] },
+
+  // — Duel System —
+  { id: 2908, category: "Duels", q: "How does the Duel system work?", a: "Arena (runtime-constructed) or open-world modes. 3-2-1 countdown. Slowness + mining fatigue applied to duelists. Winner gets rewards. Crash recovery handles disconnects mid-duel. Bossbar timer tracks remaining time.", keywords: ["duel arena", "pvp system", "countdown", "winner rewards", "crash recovery", "duel modes"] },
+
+  // — Pet Duel System —
+  { id: 2909, category: "Pet Duels", q: "How do Pet Duels work?", a: "Invite → 20s accept window → 3s countdown → 30s fight → resolution. HP/ATK computed from pet level + evolved bonus. Career tracking: wins/losses/draws/streak. 10-minute cooldown between duels.", keywords: ["pet duel", "30 second fight", "invite accept", "win loss draw", "streak tracking", "10 min cooldown"] },
+
+  // — Mount Training —
+  { id: 2910, category: "Mount Training", q: "What are the mount bond tiers?", a: "5 levels: Unfamiliar (start), Trusted (riding time), Bonded (+biome exploration), Soulbound (+challenges), Eternal (max). Includes Skyrift Derby racing with lap tracking, checkpoints, personal best times, and world records.", keywords: ["mount bond", "5 tiers", "unfamiliar to eternal", "skyrift derby", "racing", "personal best"] },
+
+  // — Artisan Tome —
+  { id: 2911, category: "Artisan Tome", q: "What is the Artisan Tome quest system?", a: "100 serial crafting quests. 4 quest types: Stat Delta (21 subtypes), Threshold (14 subtypes), Interact (15 quests), Meta (2: All-Rounder, Master of All Trades). Milestones at quests 25/50/75/100 with escalating artifact + XP rewards.", keywords: ["artisan tome", "100 quests", "4 types", "stat delta", "threshold interact", "milestone rewards"] },
+  { id: 2912, category: "Artisan Tome", q: "What is the Artisan Tome quest 100 reward?", a: "Mythical artifact + 100 bonus levels + Grand Finale celebration + server-wide announcement. Earlier milestones: Quest 25 (Rare artifact + 25 levels), Quest 50 (Ornate + 50 levels), Quest 75 (Exquisite + 75 levels).", keywords: ["quest 100 reward", "grand finale", "server announcement", "mythical artifact", "100 bonus levels"] },
+
+  // — Spirit Tome —
+  { id: 2913, category: "Spirit Tome", q: "What is the Spirit Tome quest system?", a: "100 serial combat quests. Same 4 types as Artisan Tome: Stat Delta (17 subtypes), Threshold, Interact (15 quests), Meta. Book-based consumable with advancement trigger. Binary-search routing for efficient quest dispatch.", keywords: ["spirit tome", "100 combat quests", "serial quests", "4 quest types", "stat delta", "interact meta"] },
+
+  // — Artifact Bounty Board —
+  { id: 2914, category: "Bounty Board", q: "How does the Artifact Bounty Board work?", a: "Daily rotation of 3 unique random artifacts from a pool of 25. Lectern-based interface with spawned UI entities. Per-player per-slot daily claims (0=unclaimed, 1=claimed). Resets via time query day.", keywords: ["bounty board", "3 daily artifacts", "25 pool", "lectern interface", "daily rotation", "per player claim"] },
+
+  // — Daily News —
+  { id: 2915, category: "News", q: "What is the Daily News system?", a: "Tracks 10 categories: Quests, Bosses, Crates, Dungeons, Glyphs, Wishes, Bounties, Duels, Conflicts, Marriages. Dual counter sets (today + yesterday). Dawn reset copies today→yesterday. 9 AM morning announcement with formatted previous day summary.", keywords: ["daily news", "realm news", "10 categories", "morning announcement", "yesterday summary", "9am report"] },
+
+  // — Difficulty System —
+  { id: 2916, category: "Difficulty", q: "What is Pioneer difficulty?", a: "Third difficulty option alongside Newcomer and Adventurer. Hardcore permadeath — death wipes total progression. Salvation Stones provide one-time death protection (6 guaranteed + 6 RNG sources). 14-day lock timer before switching difficulties.", keywords: ["pioneer difficulty", "permadeath", "hardcore", "salvation stone", "14 day lock", "third difficulty"] },
+
+  // — Tamed Bond —
+  { id: 2917, category: "Tamed Bond", q: "What is the Tamed Bond memento system?", a: "When a named tamed animal dies, it drops a Memento item. Wolves, cats, horses, and parrots eligible. 5-second registration scan tags named tamed entities. Custom loot table: evercraft:tamed_bond/memento.", keywords: ["tamed bond", "memento drop", "pet death", "named tamed", "memorial item", "tamed bond memento"] },
+
+  // — Campfire Healing —
+  { id: 2918, category: "QoL", q: "How does Campfire Healing work?", a: "+0.5 hearts every 7 seconds within 24 blocks of a lit campfire. Includes saturation bonus. Marker-based system using ec.cf_heal tag. Tick schedule: every 140 ticks. A passive way to heal while resting.", keywords: ["campfire healing", "0.5 hearts", "7 seconds", "24 blocks", "passive heal", "lit campfire"] },
+
+  // — World Features —
+  { id: 2919, category: "World", q: "What auto-farming features exist?", a: "Sapling auto-replant chance when trees are cut. Timber chance: axes can fell entire trunks. Birch paper: stripping birch logs yields paper. Crop auto-replant: hoes replant wheat, carrots, potatoes, beetroots, nether wart.", keywords: ["auto replant", "timber chance", "birch paper", "sapling replant", "auto farm", "hoe replant"] },
+
+  // — Performance —
+  { id: 2920, category: "Technical", q: "How optimized is the tick system?", a: "Before optimization: ~384 commands/tick/player. After: ~159 commands/tick/player (59% reduction). Key optimizations: Lazy Load (skip when no players, ~60 cmd saved), Predicate Caching (biome detection cached 5s, ~80% reduction), Batch Cleanup (5s consolidated entity cleanup).", keywords: ["tick optimization", "159 commands", "59 percent reduction", "lazy load", "predicate cache", "batch cleanup"] },
+
+  // — Claim Rewards —
+  { id: 2921, category: "Ecodex", q: "What are the 6 claim reward categories?", a: "Bestiary (63 mobs × 7 stages = 441 claims), Class Affinity (14 × 7 = 98), Lore Sets (163), Biome Mastery (25 × 5 = 125), Personal Milestones (100), CraftForever. 6-tab Ecodex interface with pagination and bulk claim buttons.", keywords: ["claim rewards", "6 categories", "441 bestiary", "98 affinity", "163 lore", "bulk claim"] },
+
+  // — Guild System —
+  { id: 2922, category: "Guilds", q: "How does the Guild warp system work?", a: "Two-click safety: first click highlights row in yellow, second click confirms teleport. Prevents accidental warps. Part of the floating GUI system with member management, donations, and diplomacy.", keywords: ["guild warp", "two click safety", "highlight confirm", "guild teleport", "accidental prevention"] },
+  { id: 2923, category: "Guilds", q: "How does Guild Diplomacy work?", a: "Guild-to-guild relationships: form alliances or declare rivalries. Diplomacy events score activities between allied guilds. Higher guild level + better diplomacy = better expedition bonuses for all members.", keywords: ["guild diplomacy", "alliance rivalry", "diplomacy events", "expedition bonus", "guild cooperation"] },
+
+  // — Gacha / Fountain —
+  { id: 2924, category: "Gacha", q: "How does the Gacha Fountain work?", a: "Placeable Dreamdust Fountain (wishing well). Uses Dreamdust Crystal currency. Single or 8x bulk pulls. Weighted reward pools with pull history and luck tracking. Break detection auto-cleanup.", keywords: ["gacha fountain", "dreamdust crystal", "single pull", "8x bulk", "luck tracking", "wishing well"] },
+
+  // — Friends System —
+  { id: 2925, category: "Friends", q: "How does the Friends system work?", a: "Daily Friendship Hearts earned via proximity (spend time near friends). Progressive friendship levels with bonuses. Automatic level-up notifications. Friend list GUI with detail views. Gift sending with 2-day cooldown.", keywords: ["friends system", "friendship hearts", "proximity bonus", "friend levels", "daily hearts", "friendship gui"] },
+
+  // — Coins —
+  { id: 2926, category: "Economy", q: "What are Forever Coins earned from?", a: "8+ sources: Patron mob kills, general mob kills, boss victories, dungeon completions, bounty completions, constellation progress, companion milestones, vanilla bosses (Dragon, Wither, Warden). Amount scales by content difficulty.", keywords: ["forever coins", "coin sources", "patron kills", "boss coins", "dungeon coins", "bounty coins"] },
+
+  // — Tomb / Death System —
+  { id: 2927, category: "Death", q: "How does the Tomb death system work?", a: "Saves full inventory + equipment via hopper minecart intermediary (needed since player Inventory is read-only in 1.21.5+). Grave has 1-hour lifetime. 45 functions handle the save/restore cycle.", keywords: ["tomb system", "death inventory", "1 hour grave", "hopper minecart", "inventory save", "death protection"] },
+
+  // — Hero's Satchel —
+  { id: 2928, category: "Items", q: "What is the Hero's Satchel?", a: "11-slot satchel for world boss artifacts only. Unlike regular Essentials Satchel, preserves AoE effects from stored boss artifacts. Each satchel has unique bag_id for independent inventories. Stores the 11 boss-exclusive artifacts.", keywords: ["hero satchel", "11 slots", "boss artifacts", "aoe preserved", "unique bag id", "boss storage"] },
+
+  // — Lightning Arrows —
+  { id: 2929, category: "Items", q: "What are Lightning Arrows?", a: "Spectral arrows with custom lightning_arrow tag. On ground contact, they summon lightning and kill the arrow entity. A flashy ranged attack option.", keywords: ["lightning arrow", "spectral arrow", "summon lightning", "ground contact", "ranged attack", "arrow lightning"] },
+
+  // — Health Bar System —
+  { id: 2930, category: "Combat", q: "How does the Health Bar system work?", a: "Raycast-based targeting system. Look at a mob to see its health bar displayed above it. 14 functions handle the raycast, display, and cleanup. Works on all entities including bosses and patrons.", keywords: ["health bar", "raycast target", "mob health", "display health", "look at mob", "health display"] },
+
+  // — Forage & Prospect —
+  { id: 2931, category: "Gathering", q: "How do Forage and Prospect nodes work?", a: "Forage: bush interaction system for hand-gathering plant resources. Prospect: ore node interaction for gathering minerals. 34 functions total (17 each). Scattered across the world in biome-appropriate locations.", keywords: ["forage nodes", "prospect nodes", "bush gathering", "ore node", "hand gathering", "world nodes"] },
+
+  // — Special Potions —
+  { id: 2932, category: "Items", q: "What are the Potions of Dreams?", a: "6 tiers (I-VI) of dream-enhancing potions. Temporarily boost Dream Rate. Available from the Bartender profession villager. Stack with other DR sources for farming runs.", keywords: ["potion of dreams", "6 tiers", "temporary dr", "bartender trade", "dr boost potion", "dream potion"] },
+
+  // — Welcome Back Briefing —
+  { id: 2933, category: "QoL", q: "How does the Welcome Back Briefing work?", a: "On login, shows: Biome, Time, Moon Phase, Active Events, and 'While You Were Away' summary. Tracks 8 event types (7 calendar + world boss kills). Shows up to 5 missed events. FIFO capped at 50 entries. Falls back to 'All quiet while you were gone.'", keywords: ["welcome back", "login briefing", "missed events", "while away", "event log", "rejoin summary"] },
+
+  // — Bounty System —
+  { id: 2934, category: "Bounties", q: "What are the 4 bounty tiers?", a: "T3 Contract (Uncommon patron, 2h, 200 Rep, 40% weight). T4 Commission (Rare, 2h, 350 Rep, 30%). T5 Expedition (Ornate, 1h, 500 Rep, 20%). T6 Heroic (Exquisite, 1h, 750 Rep + 1000 XP, 10%). Target spawns glowing red, fire-resistant, named, persistent.", keywords: ["bounty tiers", "4 tiers", "contract commission", "expedition heroic", "bounty rewards", "patron hunt"] },
+
+  // — Satchel System —
+  { id: 2935, category: "Items", q: "How does the Satchel system work?", a: "Portable storage/inventory extension. 78 functions. 66 artifact effects updated to hide particles (ambient=true) so stored artifacts don't broadcast visible potion clouds while providing buffs.", keywords: ["satchel", "portable storage", "inventory extension", "hidden particles", "ambient true", "artifact storage"] },
+
+  // — Journal System —
+  { id: 2936, category: "Exploration", q: "What is the Journal system?", a: "35 functions for exploration and discovery tracking. Records every region you've explored, structures found, and discoveries made. A personal log of your journey through the world.", keywords: ["journal", "exploration log", "discovery tracking", "region explored", "personal log", "35 functions"] },
+
+  // — Dream Echoes —
+  { id: 2937, category: "Dream Rate", q: "What are Dream Echoes?", a: "Persistent particle markers spawned at locations where Mythical artifacts were found. 3-second particle display loop, creating permanent visual trails of your greatest discoveries across the world. Clickable, drifting, permanent markers.", keywords: ["dream echo", "mythical marker", "particle location", "permanent marker", "greatest discovery", "visual trail"] },
+
+  // — Codex System —
+  { id: 2938, category: "Codex", q: "How big is the Codex system?", a: "535 functions — the second-largest system after Mining Treasure (1,792). Interactive encyclopedia tracking every artifact found. Abilities documented per tier with individual route files. Click-driven navigation with no commands needed.", keywords: ["codex size", "535 functions", "second largest", "artifact encyclopedia", "interactive codex", "click navigation"] },
+
+  // — Class Specific Details —
+  { id: 2939, category: "Classes", q: "How does the Rogue class work?", a: "12 daggers with auto-swing dual-wield and +30% speed bonus. Tier-scaled damage. Shadow Step and Thousand Cuts abilities. Stealth kills for bonus damage. One of the fastest combat styles.", keywords: ["rogue class", "12 daggers", "auto swing", "dual wield", "shadow step", "stealth kill"] },
+  { id: 2940, category: "Classes", q: "How does the Berserker class work?", a: "Dual axes. Trade -7 armor and -5 hearts for raw power. Rage mode: 10s of Strength III + Speed II. Below 50% HP: Haste III. High risk, high reward combat style.", keywords: ["berserker class", "dual axes", "rage mode", "strength iii", "minus armor", "high risk"] },
+  { id: 2941, category: "Classes", q: "How does the Beastlord class work?", a: "9 spears. Buffs tamed wolves/cats/parrots. Abilities: Warp Strike, Rally Cry, Alpha Howl, Mount Speed. The pet-focused combat class that turns your tamed animals into a war pack.", keywords: ["beastlord class", "9 spears", "pet buff", "warp strike", "rally cry", "alpha howl"] },
+  { id: 2942, category: "Classes", q: "How does the Dancer class work?", a: "7 gauntlets with +5-10% evasion. Haste II, Flurry ability, heal on hit. Fast, dodgy combat style focused on speed and sustain rather than raw damage.", keywords: ["dancer class", "7 gauntlets", "evasion", "haste ii", "flurry", "heal on hit"] },
+
+  // — Misc Facts —
+  { id: 2943, category: "Technical", q: "How does the hopper minecart system work?", a: "In Minecraft 1.21.5+, player Inventory is read-only via data modify. Forevercraft uses invisible hopper minecarts as intermediaries: summon cart → copy item to cart → item replace from cart to player → kill cart. Used for ALL item modification.", keywords: ["hopper minecart", "read only inventory", "item modification", "1.21.5 workaround", "invisible cart", "technical system"] },
+  { id: 2944, category: "Technical", q: "What self-scheduling systems exist?", a: "Accessories (1s), Rings (1s), Graviton Core (5t), Harmonize (1s), Patron (1s), Fishing set (1s), Luck (1s), Portal Dial (1s), Elytra (1s), Pet (1h, 3d), XP Magnet (4t). Self-scheduling avoids centralized tick overhead.", keywords: ["self scheduling", "accessories rings", "patron luck", "tick system", "independent schedule", "performance"] },
+
+  // — Fun Facts —
+  { id: 2945, category: "FAQ", q: "What is the largest system by function count?", a: "Mining Treasure (1,792 functions), followed by Codex (862), Artifacts (776), Companions (591), CraftForever (423), Spirit Artifacts (391), Guild (367), Spirit Raids (353), Advantage Trees (309), Mobs (260). Story Mode has the most files overall (4,634).", keywords: ["largest system", "function count", "top 10 systems", "mining treasure", "1792 functions", "system ranking"] },
+  { id: 2946, category: "FAQ", q: "How many total scoreboards does Forevercraft use?", a: "1,800+ scoreboards tracking every aspect of gameplay. From Dream Rate (ec.dreams) to individual boss kill flags (ec.sp_bk1-13) to per-biome mastery (25 biome scores) to cooking recipe discovery (7 bitfield scoreboards).", keywords: ["total scoreboards", "1800 scoreboards", "tracking system", "scoreboard count", "gameplay tracking"] },
+  { id: 2947, category: "FAQ", q: "How many loot tables exist?", a: "3,000+ loot tables across all systems. Mining/biome treasure alone has 347. Structure crates: 131. Mob crates: 21. Fishing: 21. Harvest: 23. CraftForever/Trade Trials: 85. Plus boss loot, quest rewards, and more.", keywords: ["total loot tables", "3000 tables", "loot count", "treasure tables", "structure loot", "loot system size"] },
+  { id: 2948, category: "FAQ", q: "How many advancements exist?", a: "2,600+ advancements. Lore alone: 894. Artifacts: 462. Alt/Statistics: 244. Treasure: 98. Mob Crates: 82. Bestiary: 114. Claim Rewards: 486+. Class Affinity: 98. Most are tracking/trigger based rather than displayed.", keywords: ["total advancements", "2600 advancements", "lore 894", "artifact 462", "advancement count"] },
+
+  // — Seasonal & Calendar Deep —
+  { id: 2949, category: "Calendar", q: "What are the World Event omen warnings?", a: "60-second omen warnings before each event. Two-phase: chat message at 60s, particle effects intensifying until event starts. Events: Starfall, The Dreaming, Abyssal Tremor, Aurora Bloom, Rift Echo, Blood Moon, Dream Surge, Harmonic Convergence.", keywords: ["omen warning", "60 seconds", "event warning", "two phase alert", "particle warning", "prepare event"] },
+
+  // — Village Specialization —
+  { id: 2950, category: "Villages", q: "How does Village Specialization work?", a: "35 functions manage village progression. Villages have upgrade paths and specialization options. Build reputation from Stranger to Legend. Place a Book and Quill in a village lectern to spawn the quest book — each village has its own.", keywords: ["village specialization", "upgrade paths", "village progression", "quest book lectern", "reputation system"] },
+
+  // — Encounter System —
+  { id: 2951, category: "World", q: "What is the Encounter system?", a: "12 functions for random world encounters. Surprise events that spawn as you explore — mini-quests, ambushes, treasure hunts, and NPC interactions scattered throughout the world.", keywords: ["encounter system", "random encounter", "world events", "mini quest", "surprise event", "12 functions"] },
+
+  // — Crop/Ore Ingredient Drops —
+  { id: 2952, category: "Crafting", q: "What is the 3% ingredient drop mechanic?", a: "3% chance when breaking any crop to drop a random cooking ingredient. 3% when mining ore to drop a random forging ingredient. Separate from regular drops — bonus materials that passively feed cooking and forging.", keywords: ["3 percent drop", "crop ingredient", "ore ingredient", "passive material", "bonus drop", "cooking forging"] },
+
+  // — Newcomer Spirit Choice —
+  { id: 2953, category: "Difficulty", q: "What spirit choice do Newcomers get?", a: "Newcomer difficulty grants a free spirit weapon/tool choice: Combatant (pick from 13 weapon classes) or Pacifist (choose from 6 artisan tools: Earthsong, Bloomweaver, Dustwalker, Heartwood, Tidecaller, Silkgrasp).", keywords: ["newcomer choice", "free spirit", "combatant pacifist", "13 weapons", "6 tools", "starting spirit"] },
+
+  // — Zone Pet Buffs —
+  { id: 2954, category: "Housing", q: "Do pets get buffs in home zones?", a: "Yes! Housing and guild zones give Regen I + Resistance I to all tamed pets in the area. Ownership-verified so only your zone affects your pets. Zone overlap grants Regen II instead.", keywords: ["zone pet buff", "regen resistance", "home zone pets", "guild zone pets", "pet buffs", "zone overlap"] },
+
+  // — Healer Tomb Revive —
+  { id: 2955, category: "Healers", q: "Can healers revive dead players?", a: "Yes! Healers with Class Affinity stage 3+ can revive dead players by channeling at their tomb. Channel time: Rare 7s, Ornate 5.5s, Exquisite 4s, Mythical 3s. Slowness V + Blindness during channel. Walk away to cancel.", keywords: ["healer revive", "tomb revive", "channel time", "affinity stage 3", "revive dead player", "slowness blindness"] },
+
+  // — Inscription Stone Bonus —
+  { id: 2956, category: "Runes", q: "How do Inscription Stone bonuses stack?", a: "3 pools: Personal (3 max), Guild (1 per member), Home (4 max). Priority: guild > home > personal. Verdant Glyph grows 1 random spot per tick cycle. Resonance effect doubles growth. Max 3 active per player.", keywords: ["inscription bonus", "3 pools", "guild home personal", "priority order", "verdant glyph", "resonance double"] },
+
+  // — Crate Streak —
+  { id: 2957, category: "Crates", q: "What is the crate streak counter?", a: "Tracks consecutive crate openings. Building a streak can influence future crate quality. Part of the Wave 2 feature expansion, adding a reward loop for consistent crate farming.", keywords: ["crate streak", "consecutive crates", "streak counter", "quality influence", "farming loop"] },
+
+  // — Companion Rivalry —
+  { id: 2958, category: "Companions", q: "What is companion rivalry?", a: "30-second proximity check between companions. If two players' pets are near each other, a rivalry event can trigger with a 2-minute cooldown. Adds competitive flavor to the companion system.", keywords: ["pet rivalry", "companion rivalry", "30 second check", "2 min cooldown", "competitive pets"] },
+
+  // — Dawn Chorus —
+  { id: 2959, category: "World", q: "What is the Dawn Chorus?", a: "Ambient sound event that plays at dawn. 7 audio files provide atmospheric morning sounds. Part of the immersive world feature set that makes Forevercraft feel alive.", keywords: ["dawn chorus", "morning sound", "ambient audio", "7 files", "immersive world", "dawn event"] },
+
+  // — Blood Moon —
+  { id: 2960, category: "World Events", q: "What does Blood Moon do?", a: "Grants +1.0 Dream Rate bonus for the night. Part of the moon phase system. Special visual effects and enhanced mob spawning. A significant temporary DR boost for nighttime activities.", keywords: ["blood moon", "+1.0 dr", "night bonus", "moon event", "enhanced spawning", "dr boost night"] },
+
+  // — DR Milestones —
+  { id: 2961, category: "Dream Rate", q: "What are the DR milestone thresholds?", a: "8 celebration thresholds: DR 5, 10, 15, 20, 25, 30, 40, 50. Each triggers a one-time firework celebration and permanent marker in your journey. DR 50 = Dream Transcendent, the maximum.", keywords: ["dr milestone", "8 thresholds", "firework celebration", "dream transcendent", "dr 50 max", "milestone celebration"] },
+
+  // — Structure First-Find Bonus —
+  { id: 2962, category: "Exploration", q: "What is the structure first-find bonus?", a: "Tiered XP reward (50-200 XP) the first time you discover each structure type. One-time per structure type per player. Encourages exploring every structure in the game.", keywords: ["first find bonus", "structure discovery", "50 200 xp", "one time reward", "exploration bonus", "discover structure"] },
+
+  // — Hero's Journey Eyes —
+  { id: 2963, category: "Exploration", q: "What are Hero's Journey Eyes?", a: "17 custom ender eyes replacing vanilla ones for the End portal. 8 drop once per player from specific structures (Curious Eye from outpost, Eldritch Eye from ancient city, Ominous Eye from trial chambers). Filling the portal becomes a scavenger hunt.", keywords: ["heros journey", "17 eyes", "custom ender eye", "end portal", "scavenger hunt", "structure drop"] },
+
+  // — Zombie Cure Bonus —
+  { id: 2964, category: "Social", q: "What is the Zombie Cure social bonus?", a: "Cure a zombie villager near other players and ALL nearby players receive Hero of the Village effect. More players nearby = more people benefit. Encourages cooperative village restoration.", keywords: ["zombie cure", "hero village", "social bonus", "cooperative", "cure villager", "group benefit"] },
+
+  // — Sleep Skip —
+  { id: 2965, category: "World", q: "How does sleep skip work?", a: "Custom 100-tick all-sleeping requirement. All online players must sleep simultaneously for 100 ticks (~5 seconds) to skip the night. Has a 5% chance to trigger the Dreaming Realm at DR 30+.", keywords: ["sleep skip", "100 ticks", "all players", "night skip", "dreaming realm", "5 percent chance"] },
+
+  // — Pantry System —
+  { id: 2966, category: "Cooking", q: "How does the Pantry storage work?", a: "Separate ingredient storage from main inventory. Withdraw specific slots or all at once. Pre-cook integration: automatically checks pantry for ingredients when cooking. Per-player pantry ID tracking. GUI-based interface.", keywords: ["pantry storage", "ingredient separate", "withdraw slots", "pre cook check", "pantry gui", "per player"] },
+
+  // — Mythical Tools —
+  { id: 2967, category: "Artifacts", q: "What are the Mythical artifact tools?", a: "Journey Pickaxe (3x3 vein mining), Hoe of Honor (area till), Journey Shovel (area dig), Axe of Honor (timber system). Special utility artifacts that upgrade your gathering capabilities significantly.", keywords: ["mythical tools", "journey pickaxe", "hoe of honor", "journey shovel", "axe of honor", "vein mining"] },
+
+  // — Shield Artifacts —
+  { id: 2968, category: "Artifacts", q: "What do shield artifacts do?", a: "Tier-scaled Resistance effect when blocking. Higher tier shields provide stronger Resistance. Part of the Wave 2 feature expansion. Makes shields a viable defensive option with meaningful progression.", keywords: ["shield artifact", "tier resistance", "blocking effect", "shield ability", "defensive artifact"] },
+
+  // — Dungeon Difficulty Selection —
+  { id: 2969, category: "Dungeons", q: "Can you choose dungeon difficulty?", a: "Yes! 6 options: Easy, Normal, Hard, Brutal, Auto (based on DR), and Cancel. Selectable before entering. Auto mode matches difficulty to your Dream Rate for optimal challenge.", keywords: ["difficulty select", "6 options", "easy normal hard", "brutal auto", "choose difficulty", "dungeon setting"] },
+
+  // — Seasonal Ingredient Scarcity —
+  { id: 2970, category: "Cooking", q: "What is seasonal ingredient scarcity?", a: "Certain cooking ingredients become rarer or more common depending on the current season. Adds strategic depth to cooking — stockpile ingredients during their abundant season for use year-round.", keywords: ["ingredient scarcity", "seasonal availability", "stockpile ingredients", "rare ingredients", "season cooking strategy"] },
+
+  // — Cross-System Achievements —
+  { id: 2971, category: "Achievements", q: "What are cross-system achievements?", a: "24 advancement JSONs + 18+ scoreboards tracking milestones that span multiple systems. Example: completing a constellation while at max cooking mastery and having a mythical companion. Rewards scale with complexity.", keywords: ["cross system", "24 advancements", "multi system", "complex achievement", "spanning milestones"] },
+
+  // — Kick Vote System —
+  { id: 2972, category: "Guilds", q: "How does guild kick voting work?", a: "Vote-based kick system to remove members. Multiple guild members must vote to kick. Prevents abuse by requiring consensus. Part of the 246-function guild management system.", keywords: ["guild kick", "vote kick", "member removal", "consensus vote", "guild management"] },
+
+  // — Mob Kill Combo —
+  { id: 2973, category: "Combat", q: "What is the Mob Kill Combo system?", a: "Chain kills to build combos. Consecutive kills within a time window increase your combo counter, granting bonus XP and improved crate quality. Part of the Wave 2 simple ideas features.", keywords: ["kill combo", "chain kills", "combo counter", "bonus xp", "consecutive kills", "combat streak"] },
+
+  // — Rain Fishing Bonus —
+  { id: 2974, category: "Fishing", q: "Does rain affect fishing?", a: "Yes! Rain + fishing rod grants +0.5 Dream Rate bonus. Combines with time-of-day bonuses (morning fishing +0.5) and moon phase bonuses (Full Moon +0.5) for maximum fishing luck.", keywords: ["rain fishing", "+0.5 dr", "fishing bonus", "weather bonus", "rain luck", "fishing dr stack"] },
+
+  // — Expedition Bonuses —
+  { id: 2975, category: "Guilds", q: "What are guild expedition bonuses?", a: "Guild-level-scaled XP and prospecting bonuses for all members. Higher guild level = better expedition rewards. Combined with diplomacy bonuses for allied guilds. Encourages guild progression.", keywords: ["guild expedition", "xp bonus", "prospecting bonus", "guild level scaling", "member benefits"] },
+
+  // — Mushroom & Chorus DR Items —
+  { id: 2976, category: "Dream Rate", q: "How rare are Dream Inducing Mushroom and Chorus Dreaming Fruit?", a: "Both have a 0.25% drop rate (1 in 400). Dream Inducing Mushroom drops from any mushroom. Chorus Dreaming Fruit drops from chorus plants. Each gives +1 permanent DR when consumed.", keywords: ["rare dr item", "0.25 percent", "mushroom dr", "chorus fruit dr", "+1 permanent", "rare consumable"] },
+
+  // — Arrival —
+  { id: 2977, category: "FAQ", q: "What happens on first join?", a: "Welcome message + tutorial trigger. Craft an iron pickaxe to unlock The Forevercraft Codex and begin your adventure. Newcomer/Adventurer/Pioneer difficulty selection. 'Your journey into Forevercraft begins!' message on codex unlock.", keywords: ["first join", "new player", "welcome message", "tutorial", "iron pickaxe", "codex unlock"] },
+
+  // — Constellation Deep Dive —
+  { id: 2978, category: "Constellations", q: "How do artifact constellations give permanent DR?", a: "10 themed groups. Complete all artifacts in a constellation = codex page + permanent +0.25 DR. All 10 = +2.5 DR total. Progress shown via /trigger ec.dreams as '★ Constellations: X/10 (+Y.YY DR)'. Tracked via ec.cn_done bitmask.", keywords: ["constellation dr", "+0.25 each", "+2.5 total", "10 groups", "bitmask tracking", "permanent bonus"] },
+
+  // — Performance Architecture —
+  { id: 2979, category: "Technical", q: "How does the tick chain work?", a: "219 lines processing: DayTime, sleep skip, watchdog, dreams, moon, loot timers, stats, health bar, tomb, Growth Serum, fishing sets, artifact sets, codex, transmute, runeforge GUI, boss HP, dungeon, pet whistle, healer lockout, lore, forage, prospect, campfire. Order matters for dependencies.", keywords: ["tick chain", "219 lines", "processing order", "tick architecture", "command chain", "dependencies"] },
+
+  // — Init Chain —
+  { id: 2980, category: "Technical", q: "What happens on world load?", a: "Init chain (299 lines): gamerules, migrations, codex setup (9 scoreboards), artifacts (10+ systems), dreams, moon, loot timers, stats, anecdotes, crate animation, 22 structure trackers. Plus 28 registered load functions for self-scheduling systems.", keywords: ["init chain", "world load", "299 lines", "28 load functions", "initialization", "startup sequence"] },
+
+  // — Artisan Rank Progression —
+  { id: 2981, category: "CraftForever", q: "What does Artisan Rank unlock?", a: "Rank 0-100 with unlocks at 20/40/60/80. Higher rank = better quality bonus in Artisan Forging minigame. Rank 15+ required for Grand Forge entry. Housing tier provides additional quality boost.", keywords: ["artisan rank", "rank unlocks", "20 40 60 80", "forging quality", "rank 15 grand forge", "rank progression"] },
+
+  // — Spirit Tool Tier Requirements —
+  { id: 2982, category: "Spirit Tools", q: "What are spirit tool tier-up requirements?", a: "T1→2: 5 objectives. T2→3: 6. T3→4: 7. T4→5: 8. T5→6: 9. T6→7: 10 + Grand Forge completion. Per-tool themed objectives (mining, farming, fishing, excavation, lumber, artisan). Cross-cutting: Artisan Rank gates, crate/biome/tome thresholds.", keywords: ["spirit tool tiers", "objective count", "5 to 10 objectives", "grand forge required", "tier up requirements", "themed objectives"] },
+
+  // — Heist Arena Variants —
+  { id: 2983, category: "Heist", q: "How many Heist variants are there?", a: "10 random gauntlet variants. Each has different trap layouts, guard patrols, and paths. Elytra stripped at start. Blindness 1s + Resistance 4 for 8s entry protection. Any damage = instant fail. Contraband Crate reward on success.", keywords: ["heist variants", "10 gauntlets", "random layout", "trap patrol", "elytra stripped", "instant fail damage"] },
+
+  // — Crate Coin Bonus —
+  { id: 2984, category: "Castle", q: "What are Crate Coins?", a: "Currency accumulated during Infinite Castle runs. Earned per floor and per wave. Spent on Castle-specific rewards. Separate from Forever Coins. Your coin total for a run is tracked and awarded on exit.", keywords: ["crate coins", "castle currency", "per floor", "castle reward", "accumulated run", "castle shop"] },
+
+  // — Artifact Discovery Log —
+  { id: 2985, category: "Artifacts", q: "What is the Artifact Discovery Log?", a: "Persistent counter tracking total unique artifacts found. Part of the Wave 2 feature set. Records your collection progress and provides a sense of accomplishment as you discover more of the 408 artifacts.", keywords: ["discovery log", "artifact counter", "persistent tracking", "collection progress", "unique found", "408 tracking"] },
+
+  // — Dungeon Leaderboard —
+  { id: 2986, category: "Dungeons", q: "Is there a dungeon leaderboard?", a: "Yes! Records completion time per dungeon. Stores personal best. Faster completions earn better rankings. Part of the competitive element of the dungeon system.", keywords: ["dungeon leaderboard", "completion time", "personal best", "speed ranking", "dungeon record"] },
+
+  // — Profession Daily Specials —
+  { id: 2987, category: "Professions", q: "Do professions have daily specials?", a: "Yes! 10 professions rotate daily special trades. Each day brings different items and prices. Encourages daily visits to profession villagers for rotating deals.", keywords: ["daily special", "profession rotation", "daily trades", "rotating deals", "visit daily"] },
+
+  // — Recipe Discovery —
+  { id: 2988, category: "Cooking", q: "How does recipe discovery work?", a: "7 scoreboards (ck.disc0-ck.disc6) track per-category discoveries using a bitfield system (6 bits per category). Discover new recipes by experimenting with ingredient combinations at campfire stations.", keywords: ["recipe discovery", "7 scoreboards", "bitfield tracking", "experiment ingredients", "discover recipes"] },
+
+  // — Ancient Spawners —
+  { id: 2989, category: "Items", q: "What are Ancient Spawners?", a: "18 special spawner items found in structures. Placeable spawners that create specific mob encounters. Rare and valuable finds that add replayable content to discovered locations.", keywords: ["ancient spawner", "18 types", "structure find", "placeable spawner", "mob encounter", "rare item"] },
+
+  // — Living World Ambience —
+  { id: 2990, category: "World", q: "What ambient systems make the world feel alive?", a: "Dawn Chorus (morning sounds), Ambient Sound Cues (3 priority tiers), Weather Omens (event warnings), Dream Echoes (mythical find markers), Campfire Stories (auto-narrated history). Together they create an immersive atmosphere.", keywords: ["ambient systems", "living world", "immersive", "dawn chorus", "weather omens", "dream echoes"] },
+
+  // — Guild Stone —
+  { id: 2991, category: "Guilds", q: "What is the Guild Stone?", a: "The heart of your guild base. Placeable headquarters item. Right-click opens the full management GUI with floating text displays. Member management, warp system, donations, diplomacy — all accessed through the Guild Stone.", keywords: ["guild stone", "headquarters", "management gui", "placeable", "guild base", "right click"] },
+
+  // — Essence Tiers —
+  { id: 2992, category: "CraftForever", q: "What is the material progression in CraftForever?", a: "6 tiers: Scrap Metal → Tempered Alloy → Starforged Ingot → Dreamwrought Bar → Eternal Essence → Soulbound Core. Each unlocked through biome nodes, artisan forging, and CraftForever progression.", keywords: ["material tier", "6 tiers", "scrap metal", "tempered alloy", "starforged", "soulbound core"] },
+
+  // — Biome Node System —
+  { id: 2993, category: "CraftForever", q: "What are Biome Nodes?", a: "15 biome-specific mining nodes with resonance minigame mechanic. 40 functions. Codex unlocks required to access each node type. Material progression rewards scale with node tier and resonance score.", keywords: ["biome node", "15 nodes", "resonance minigame", "codex unlock", "node mining", "biome specific"] },
+
+  // — Spider Web DR Gate —
+  { id: 2994, category: "Mobs", q: "What is the spider web DR gate?", a: "Mythical spider cobweb placement now requires the target player to have DR 25+. Prevents low-DR players from encountering endgame spider web mechanics prematurely.", keywords: ["spider web gate", "dr 25", "cobweb placement", "mythical spider", "dr requirement"] },
+
+  // — Healer Affinity Synergy —
+  { id: 2995, category: "Classes", q: "How does Healer class affinity interact with healing?", a: "At Class Affinity stage 3+, healers can revive dead players at their tombs. Higher healer tier = faster channel: Rare 7s, Ornate 5.5s, Exquisite 4s, Mythical 3s. This makes dedicated healers incredibly valuable in endgame content.", keywords: ["healer affinity", "revive synergy", "stage 3 unlock", "tomb revive", "faster channel", "healer value"] },
+
+  // — Whirlwind (Dual Swordsman) —
+  { id: 2996, category: "Classes", q: "What is the Dual Swordsman's Whirlwind?", a: "Random proc AoE attack on cooldown, scaled to attack speed. Triggers while holding spirit weapon mainhand + sword offhand. The hidden 14th class discovered through The Gatekeeper in the Stronghold.", keywords: ["dual swordsman", "whirlwind", "aoe attack", "hidden class", "14th class", "gatekeeper stronghold"] },
+
+  // — Crate Quality Scaling —
+  { id: 2997, category: "Dream Rate", q: "How does DR affect crate quality?", a: "Dream Rate is the core multiplier for all crate drops. Formula: multiplier = 1 + (dreams/35). At DR 35 you get 2x bonus rolls on every crate. At DR 50 (max): 2.43x. This affects all 7 crate sources equally.", keywords: ["crate quality", "dr multiplier", "bonus rolls", "2x at 35", "crate scaling", "loot quality"] },
+
+  // — Potion of Dreams Tiers —
+  { id: 2998, category: "Items", q: "What are the 6 Potion of Dreams tiers?", a: "Potions of Dreams I through VI provide escalating temporary Dream Rate boosts. Available from the Bartender profession. Higher tiers cost more but give bigger DR bonuses. Stack with all other DR sources for optimal farming.", keywords: ["potion dreams tiers", "i through vi", "temporary dr boost", "bartender profession", "6 tiers potion", "dr farming"] },
+
+  // — Final Entry —
+  { id: 2999, category: "FAQ", q: "How many total systems does Forevercraft have?", a: "138 interconnected systems in Java Edition. From Dream Rate to Story Mode, from Companions to Grand Forge — every system feeds into at least one other. The Dream Rate connects them all. 23,639 files, 16,101 functions, 842,566 lines of code. Built one function at a time.", keywords: ["138 systems", "total systems", "interconnected", "system count", "full pack", "everything connects"] },
 ]
 
 
