@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import OfflineChat from './OfflineChat'
 
 const API_URL = 'https://api.forevercraft.co/v1/chat/completions'
 const MODEL = 'mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit'
@@ -90,6 +91,11 @@ export default function ChatWindow({ compact = false }: { compact?: boolean }) {
     } finally {
       setIsLoading(false)
     }
+  }
+
+  // If offline and no messages yet, show the KB search fallback
+  if (!isOnline && messages.length === 0) {
+    return <OfflineChat compact={compact} />
   }
 
   return (
