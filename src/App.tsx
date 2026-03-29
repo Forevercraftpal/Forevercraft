@@ -21,6 +21,9 @@ const CraftForever = lazy(() => import('./pages/CraftForever'))
 const Guilds = lazy(() => import('./pages/Guilds'))
 const Lore = lazy(() => import('./pages/Lore'))
 const Codex = lazy(() => import('./pages/Codex'))
+const Chat = lazy(() => import('./pages/Chat'))
+
+import ChatBubble from './components/chat/ChatBubble'
 
 function Loading() {
   return (
@@ -59,10 +62,12 @@ export default function App() {
             <Route path="/guilds" element={<Guilds />} />
             <Route path="/lore" element={<Lore />} />
             <Route path="/codex" element={<Codex />} />
+            <Route path="/chat" element={<Chat />} />
           </Routes>
         </main>
       </Suspense>
       <Footer />
+      <ChatBubble />
     </BrowserRouter>
   )
 }
