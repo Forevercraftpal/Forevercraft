@@ -1,21 +1,24 @@
 import PageHero from '../components/layout/PageHero'
 import ScrollReveal from '../components/effects/ScrollReveal'
+import { useDownloadTracker } from '../hooks/useDownloadTracker'
 
 const GITHUB_BASE = 'https://github.com/Forevercraftpal/Forevercraft/releases/download/v1.0-resourcepacks'
 
 const PRIME_PACKS = [
-  { name: 'Toodle Pack Prime (1-Day Cycle)', file: 'toodle-pack-prime-1day.zip', size: '58 MB', desc: 'Each texture season lasts 1 in-game day (~1 hour real time). Best for singleplayer or casual servers.', icon: '☀️', color: '#FBBF24' },
-  { name: 'Toodle Pack Prime (2-Day Cycle)', file: 'toodle-pack-prime-2day.zip', size: '58 MB', desc: 'Each texture season lasts 2 in-game days (~2 hours real time). Longer seasons for a more gradual transition.', icon: '🌅', color: '#F59E0B' },
+  { name: 'Toodle Pack Prime (1-Day Cycle)', file: 'toodle-pack-prime-1day.zip', trackKey: 'rp-prime-1day', size: '58 MB', desc: 'Each texture season lasts 1 in-game day (~1 hour real time). Best for singleplayer or casual servers.', icon: '☀️', color: '#FBBF24' },
+  { name: 'Toodle Pack Prime (2-Day Cycle)', file: 'toodle-pack-prime-2day.zip', trackKey: 'rp-prime-2day', size: '58 MB', desc: 'Each texture season lasts 2 in-game days (~2 hours real time). Longer seasons for a more gradual transition.', icon: '🌅', color: '#F59E0B' },
 ]
 
 const SEASONAL_PACKS = [
-  { name: 'Autumn', file: 'toodle-pack-autumn.zip', size: '57 MB', desc: 'Fall foliage, warm amber and orange tones, harvest atmosphere.', icon: '🍂', color: '#D97706' },
-  { name: 'Winter', file: 'toodle-pack-winter.zip', size: '57 MB', desc: 'Snow-covered landscapes, frosted textures, cold blue atmosphere.', icon: '❄️', color: '#38BDF8' },
-  { name: 'Spring', file: 'toodle-pack-spring.zip', size: '57 MB', desc: 'Fresh greens, blooming flowers, gentle pastel renewal.', icon: '🌸', color: '#4ADE80' },
-  { name: 'Summer', file: 'toodle-pack-summer.zip', size: '57 MB', desc: 'Vibrant saturated colors, lush verdant textures, golden sunlight.', icon: '🌻', color: '#FACC15' },
+  { name: 'Autumn', file: 'toodle-pack-autumn.zip', trackKey: 'rp-autumn', size: '57 MB', desc: 'Fall foliage, warm amber and orange tones, harvest atmosphere.', icon: '🍂', color: '#D97706' },
+  { name: 'Winter', file: 'toodle-pack-winter.zip', trackKey: 'rp-winter', size: '57 MB', desc: 'Snow-covered landscapes, frosted textures, cold blue atmosphere.', icon: '❄️', color: '#38BDF8' },
+  { name: 'Spring', file: 'toodle-pack-spring.zip', trackKey: 'rp-spring', size: '57 MB', desc: 'Fresh greens, blooming flowers, gentle pastel renewal.', icon: '🌸', color: '#4ADE80' },
+  { name: 'Summer', file: 'toodle-pack-summer.zip', trackKey: 'rp-summer', size: '57 MB', desc: 'Vibrant saturated colors, lush verdant textures, golden sunlight.', icon: '🌻', color: '#FACC15' },
 ]
 
 export default function ResourcePacks() {
+  const { counts, trackDownload } = useDownloadTracker()
+
   return (
     <div className="bg-stone-950 text-stone-200 min-h-screen">
       <PageHero
@@ -43,10 +46,11 @@ export default function ResourcePacks() {
                   </div>
                   <p className="font-['Crimson_Pro'] text-stone-400 text-base mb-4">{pack.desc}</p>
                   <div className="flex items-center justify-between">
-                    <span className="font-['Press_Start_2P'] text-[0.4rem] text-stone-600">{pack.size}</span>
+                    <span className="font-['Press_Start_2P'] text-[0.4rem] text-stone-600">{pack.size}{counts[pack.trackKey] ? ` · ${counts[pack.trackKey]} downloads` : ''}</span>
                     <a
                       href={`${GITHUB_BASE}/${pack.file}`}
                       download
+                      onClick={() => trackDownload(pack.trackKey)}
                       className="inline-block px-5 py-2 rounded bg-yellow-700 hover:bg-yellow-600 text-stone-950 font-['Press_Start_2P'] text-[0.5rem] transition-colors no-underline"
                     >
                       DOWNLOAD
@@ -74,10 +78,11 @@ export default function ResourcePacks() {
                   </div>
                   <p className="font-['Crimson_Pro'] text-stone-500 text-sm text-center mb-4">{pack.desc}</p>
                   <div className="text-center">
-                    <span className="font-['Press_Start_2P'] text-[0.35rem] text-stone-600 block mb-2">{pack.size}</span>
+                    <span className="font-['Press_Start_2P'] text-[0.35rem] text-stone-600 block mb-2">{pack.size}{counts[pack.trackKey] ? ` · ${counts[pack.trackKey]}` : ''}</span>
                     <a
                       href={`${GITHUB_BASE}/${pack.file}`}
                       download
+                      onClick={() => trackDownload(pack.trackKey)}
                       className="inline-block px-4 py-2 rounded border border-stone-700 hover:border-stone-500 font-['Press_Start_2P'] text-[0.45rem] text-stone-400 hover:text-stone-200 transition-colors no-underline"
                     >
                       DOWNLOAD

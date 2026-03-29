@@ -13,6 +13,7 @@ const loadJSZip = async () => {
   })
 }
 import ScrollReveal from '../components/effects/ScrollReveal'
+import { useDownloadTracker } from '../hooks/useDownloadTracker'
 import graphData from '../data/module-graph.json'
 
 interface Module {
@@ -182,6 +183,7 @@ function resolveRequired(selected: Set<string>): Set<string> {
 }
 
 export default function Downloads() {
+  const { counts, trackDownload } = useDownloadTracker()
   const [selected, setSelected] = useState<Set<string>>(new Set(['core']))
   const [hovered, setHovered] = useState<string | null>(null)
   const [building, setBuilding] = useState(false)
@@ -370,11 +372,13 @@ export default function Downloads() {
               <a
                 href="/builds/Forevercraft-Java-26.1.zip"
                 download
+                onClick={() => trackDownload('java')}
                 className="inline-block px-10 py-4 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors no-underline mt-2"
               >
                 DOWNLOAD JAVA 26.1
               </a>
               <p className="font-['Press_Start_2P'] text-[0.45rem] text-yellow-700 mt-2">Pack Format 101.1</p>
+              {counts.java ? <p className="font-['Crimson_Pro'] text-[0.85rem] text-stone-600 mt-1">{counts.java.toLocaleString()} downloads</p> : null}
             </div>
           </div>
         </ScrollReveal>
@@ -393,11 +397,13 @@ export default function Downloads() {
               <a
                 href="/builds/Forevercraft-Bedrock-26.10.zip"
                 download
+                onClick={() => trackDownload('bedrock-zip')}
                 className="inline-block px-10 py-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors no-underline mt-2"
               >
                 DOWNLOAD BEDROCK 26.10
               </a>
               <p className="font-['Press_Start_2P'] text-[0.45rem] text-cyan-700 mt-2">Script API 2.6.0</p>
+              {counts['bedrock-zip'] ? <p className="font-['Crimson_Pro'] text-[0.85rem] text-stone-600 mt-1">{counts['bedrock-zip'].toLocaleString()} downloads</p> : null}
             </div>
           </div>
         </ScrollReveal>
