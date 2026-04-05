@@ -55,7 +55,7 @@ export default function OfflineChat({ compact = false }: { compact?: boolean }) 
 
     let response: string
     if (results.length > 0) {
-      response = results.map((r, i) =>
+      response = results.map((r) =>
         results.length > 1
           ? `**${r.q}**\n${r.a}`
           : r.a
