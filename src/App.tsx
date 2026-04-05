@@ -38,6 +38,9 @@ const Gallery = lazy(() => import('./pages/Gallery'))
 const PressKit = lazy(() => import('./pages/PressKit'))
 const ResourcePacks = lazy(() => import('./pages/ResourcePacks'))
 const Agency = lazy(() => import('./pages/Agency'))
+const Chat = lazy(() => import('./pages/Chat'))
+
+import ChatBubble from './components/chat/ChatBubble'
 
 function Loading() {
   return (
@@ -91,12 +94,14 @@ export default function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/resource-packs" element={<ResourcePacks />} />
             <Route path="/agency" element={<Agency />} />
+            <Route path="/chat" element={<Chat />} />
           </Routes>
         </main>
       </Suspense>
       <Footer />
       <DonatePopup />
       <ForevercraftAI />
+      <ChatBubble />
     </BrowserRouter>
   )
 }
