@@ -394,26 +394,16 @@ export default function Downloads() {
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
                 138 systems. Full Java parity. Script API powered. Console, mobile, and PC.
               </p>
-              <div className="flex flex-wrap gap-3 mt-2">
-                <a
-                  href="/builds/Forevercraft-Bedrock-26.10.mcaddon"
-                  download
-                  onClick={() => trackDownload('bedrock-mcaddon')}
-                  className="inline-block px-10 py-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors no-underline"
-                >
-                  DOWNLOAD .MCADDON
-                </a>
-                <a
-                  href="/builds/Forevercraft-Bedrock-26.10.zip"
-                  download
-                  onClick={() => trackDownload('bedrock-zip')}
-                  className="inline-block px-8 py-4 rounded-lg border border-cyan-700 hover:border-cyan-500 text-cyan-400 hover:text-cyan-300 font-['Press_Start_2P'] text-[0.65rem] transition-colors no-underline"
-                >
-                  .ZIP
-                </a>
-              </div>
+              <a
+                href="/builds/Forevercraft-Bedrock-26.10.mcaddon"
+                download
+                onClick={() => trackDownload('bedrock-mcaddon')}
+                className="inline-block px-10 py-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors no-underline mt-2"
+              >
+                DOWNLOAD BEDROCK 26.10
+              </a>
               <p className="font-['Press_Start_2P'] text-[0.45rem] text-cyan-700 mt-2">Script API 2.6.0</p>
-              {(counts['bedrock-mcaddon'] || counts['bedrock-zip']) ? <p className="font-['Crimson_Pro'] text-[0.85rem] text-stone-600 mt-1">{((counts['bedrock-mcaddon'] || 0) + (counts['bedrock-zip'] || 0)).toLocaleString()} downloads</p> : null}
+              {counts['bedrock-mcaddon'] ? <p className="font-['Crimson_Pro'] text-[0.85rem] text-stone-600 mt-1">{counts['bedrock-mcaddon'].toLocaleString()} downloads</p> : null}
             </div>
           </div>
         </ScrollReveal>
