@@ -11,7 +11,7 @@ export default function Agency() {
         const controller = new AbortController()
         const timeout = setTimeout(() => controller.abort(), 3000)
 
-        const resp = await fetch('http://josephs-macbook-pro:7777/api/health', {
+        await fetch('http://josephs-macbook-pro:7777/api/health', {
           signal: controller.signal,
           mode: 'no-cors',
         })

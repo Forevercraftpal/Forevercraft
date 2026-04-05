@@ -187,6 +187,7 @@ export default function Downloads() {
   const [selected, setSelected] = useState<Set<string>>(new Set(['core']))
   const [hovered, setHovered] = useState<string | null>(null)
   const [building, setBuilding] = useState(false)
+  const [platform, setPlatform] = useState<'java' | 'bedrock'>('java')
   const containerRef = useRef<HTMLDivElement>(null)
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
 
@@ -247,7 +248,8 @@ export default function Downloads() {
       // Download all module ZIPs in parallel
       const moduleZips = await Promise.all(
         moduleIds.map(async (modId) => {
-          const resp = await fetch(`/modules/${modId}.zip`)
+          const modulePath = platform === 'bedrock' ? `/modules/bedrock/${modId}.zip` : `/modules/${modId}.zip`
+          const resp = await fetch(modulePath)
           if (!resp.ok) throw new Error(`Failed to fetch module: ${modId}`)
           const blob = await resp.blob()
           loaded++
@@ -300,14 +302,11 @@ export default function Downloads() {
         }
       }
 
-      // Add pack.mcmeta
-      output.file('pack.mcmeta', JSON.stringify({
-        pack: {
-          description: `Forevercraft Custom (${moduleIds.length} modules)`,
-          pack_format: 94,
-          supported_formats: { min_inclusive: 94, max_inclusive: 94 }
-        }
-      }, null, 2))
+      // Add pack.mcmeta (platform-aware)
+      output.file('pack.mcmeta', JSON.stringify(platform === 'bedrock'
+        ? { pack: { description: `Forevercraft Custom (${moduleIds.length} modules)`, pack_format: 2, header_uuid: crypto.randomUUID(), modules_uuid: crypto.randomUUID(), min_engine_version: [1, 21, 60] } }
+        : { pack: { description: `Forevercraft Custom (${moduleIds.length} modules)`, min_format: [101, 1], max_format: [101, 1] } }
+      , null, 2))
 
       // Add minecraft tick/load tags
       output.file('data/minecraft/tags/function/tick.json', JSON.stringify({
@@ -326,7 +325,8 @@ export default function Downloads() {
       const url = URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.href = url
-      link.download = `Forevercraft-Custom-${moduleIds.length}mod.zip`
+      const ext = platform === 'bedrock' ? '.mcaddon' : '.zip'
+      link.download = `Forevercraft-${platform === 'bedrock' ? 'Bedrock' : 'Java'}-Custom-${moduleIds.length}mod${ext}`
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
@@ -448,6 +448,30 @@ export default function Downloads() {
               Click modules in the web to toggle them. Required dependencies auto-include.
               Dashed lines show optional connections. The builder generates stubs for missing systems — nothing breaks.
             </p>
+
+            {/* Platform Toggle */}
+            <div className="flex items-center justify-center gap-1 mt-6 bg-stone-900/60 rounded-lg p-1 max-w-xs mx-auto border border-stone-800">
+              <button
+                onClick={() => setPlatform('java')}
+                className={`flex-1 px-4 py-2 rounded-md font-['Press_Start_2P'] text-[0.55rem] transition-all ${
+                  platform === 'java'
+                    ? 'bg-yellow-600 text-stone-950'
+                    : 'text-stone-500 hover:text-stone-300'
+                }`}
+              >
+                JAVA
+              </button>
+              <button
+                onClick={() => setPlatform('bedrock')}
+                className={`flex-1 px-4 py-2 rounded-md font-['Press_Start_2P'] text-[0.55rem] transition-all ${
+                  platform === 'bedrock'
+                    ? 'bg-cyan-600 text-stone-950'
+                    : 'text-stone-500 hover:text-stone-300'
+                }`}
+              >
+                BEDROCK
+              </button>
+            </div>
           </div>
         </ScrollReveal>
 
@@ -473,9 +497,11 @@ export default function Downloads() {
             <button
               onClick={buildCustom}
               disabled={building}
-              className="px-6 py-3 rounded-lg bg-green-600 hover:bg-green-500 disabled:bg-stone-700 text-stone-950 disabled:text-stone-400 font-['Press_Start_2P'] text-[0.65rem] transition-colors"
+              className={`px-6 py-3 rounded-lg disabled:bg-stone-700 text-stone-950 disabled:text-stone-400 font-['Press_Start_2P'] text-[0.65rem] transition-colors ${
+                platform === 'bedrock' ? 'bg-cyan-600 hover:bg-cyan-500' : 'bg-green-600 hover:bg-green-500'
+              }`}
             >
-              {building ? 'BUILDING...' : 'BUILD MY PACK'}
+              {building ? 'BUILDING...' : `BUILD ${platform === 'bedrock' ? 'BEDROCK' : 'JAVA'} PACK`}
             </button>
           </div>
         </div>
