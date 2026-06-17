@@ -2,13 +2,19 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import PageHero from '../components/layout/PageHero'
 
 // Load JSZip dynamically from CDN to avoid build dependency issues
-const loadJSZip = async () => {
-  if ((window as any).JSZip) return (window as any).JSZip
-  return new Promise((resolve, reject) => {
+type JSZipInstance = unknown // opaque — only used as constructor below
+interface WindowWithJSZip extends Window {
+  JSZip?: JSZipInstance
+}
+
+const loadJSZip = async (): Promise<JSZipInstance> => {
+  const w = window as WindowWithJSZip
+  if (w.JSZip) return w.JSZip
+  return new Promise<JSZipInstance>((resolve, reject) => {
     const script = document.createElement('script')
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js'
-    script.onload = () => resolve((window as any).JSZip)
-    script.onerror = reject
+    script.addEventListener('load', () => resolve((window as WindowWithJSZip).JSZip as JSZipInstance))
+    script.addEventListener('error', () => reject(new Error('Failed to load JSZip from CDN')))
     document.head.appendChild(script)
   })
 }
@@ -45,11 +51,11 @@ interface NodePosition {
   vy: number
 }
 
-const MODULES: Module[] = graphData.modules as Module[]
-const EDGES: Edge[] = graphData.edges as Edge[]
+const MODULES: Array<Module> = graphData.modules as Array<Module>
+const EDGES: Array<Edge> = graphData.edges as Array<Edge>
 
 // Simple force simulation
-function useForceSimulation(modules: Module[], width: number, height: number) {
+function useForceSimulation(modules: Array<Module>, width: number, height: number) {
   const [positions, setPositions] = useState<Record<string, NodePosition>>({})
   const animRef = useRef<number>(0)
   const posRef = useRef<Record<string, NodePosition>>({})
@@ -62,14 +68,14 @@ function useForceSimulation(modules: Module[], width: number, height: number) {
 
     // Initialize positions in concentric rings by tier
     const initial: Record<string, NodePosition> = {}
-    const tierGroups: Record<number, Module[]> = {}
+    const tierGroups: Record<number, Array<Module>> = {}
     for (const m of modules) {
       if (!tierGroups[m.tier]) tierGroups[m.tier] = []
       tierGroups[m.tier].push(m)
     }
 
     for (const [tier, mods] of Object.entries(tierGroups)) {
-      const t = parseInt(tier)
+      const t = Number.parseInt(tier, 10)
       const radius = t === 0 ? 0 : 80 + t * 100
       mods.forEach((m, i) => {
         const angle = (i / mods.length) * Math.PI * 2 - Math.PI / 2
@@ -160,6 +166,10 @@ function useForceSimulation(modules: Module[], width: number, height: number) {
   return positions
 }
 
+function getNodeRadius(m: Module): number {
+  return 18 + Math.min(m.fileCount / 200, 18)
+}
+
 function resolveRequired(selected: Set<string>): Set<string> {
   const resolved = new Set<string>(['core'])
   const queue = [...selected, 'core']
@@ -235,11 +245,21 @@ export default function Downloads() {
 
   const [buildResult, setBuildResult] = useState<{status: string, message?: string, downloadUrl?: string} | null>(null)
 
+  // Minimal structural type for the JSZip API surface we actually use
+  interface JSZipFile { dir: boolean; async(type: 'text' | 'string' | 'uint8array' | 'arraybuffer' | 'blob'): Promise<string | Uint8Array> }
+  interface JSZipArchive {
+    files: Record<string, JSZipFile>
+    loadAsync(blob: Blob): Promise<JSZipArchive>
+    file(path: string, content: string | Uint8Array): void
+    generateAsync(opts: Record<string, unknown>): Promise<Blob>
+  }
+  type JSZipCtor = { new(): JSZipArchive; loadAsync(blob: Blob): Promise<JSZipArchive> }
+
   const buildCustom = async () => {
     setBuilding(true)
     setBuildResult(null)
     try {
-      const JSZip = await loadJSZip() as any
+      const JSZip = await loadJSZip() as JSZipCtor
       // Client-side build: download each module ZIP and merge them
       const moduleIds = [...resolved]
       const totalMods = moduleIds.length
@@ -264,21 +284,21 @@ export default function Downloads() {
       const output = new JSZip()
 
       // Track fragment contributions per fragment file
-      const fragmentMap: Record<string, string[]> = {}
+      const fragmentMap: Record<string, Array<string>> = {}
 
       for (const { zip } of moduleZips) {
-        for (const [path, file] of Object.entries(zip.files) as [string, any][]) {
+        for (const [path, file] of Object.entries(zip.files) as Array<[string, JSZipFile]>) {
           if (file.dir) continue
 
           if (path.startsWith('_fragments/')) {
             const fragName = path.replace('_fragments/', '').replace('.txt', '')
-            const content = await file.async('text')
+            // eslint-disable-next-line no-await-in-loop -- serial extraction is intentional; file.async must complete before fragmentMap assignment
+            const content = await file.async('text') as string
             if (!fragmentMap[fragName]) fragmentMap[fragName] = []
             fragmentMap[fragName].push(content)
-          } else {
-            if (!output.files[path]) {
-              output.file(path, await file.async('uint8array'))
-            }
+          } else if (!output.files[path]) {
+            // eslint-disable-next-line no-await-in-loop -- serial extraction by design; parallelizing JSZip file reads causes out-of-order writes
+            output.file(path, await file.async('uint8array'))
           }
         }
       }
@@ -344,10 +364,6 @@ export default function Downloads() {
     }
   }
 
-  const getNodeRadius = (m: Module) => {
-    return 18 + Math.min(m.fileCount / 200, 18)
-  }
-
   return (
     <div className="bg-stone-950 text-stone-200 min-h-screen">
       <PageHero
@@ -360,24 +376,24 @@ export default function Downloads() {
       <div className="max-w-[1400px] mx-auto px-8 py-12">
         {/* Java Edition Download */}
         <ScrollReveal>
-          <div className="rounded-lg border border-yellow-800/40 bg-gradient-to-r from-yellow-900/15 to-transparent p-8 mb-6">
+          <div className="sphere p-8 mb-6" style={{ background: 'radial-gradient(ellipse at 50% 20%, rgba(251, 191, 36, 0.06) 0%, transparent 60%), var(--glass-bg)' }}>
             <div className="flex flex-col items-center text-center gap-4">
               <div className="flex items-center gap-3">
                 <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400">JAVA EDITION</h2>
-                <span className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-700 border border-yellow-800/40 rounded px-2 py-1">v1.0</span>
+                <span className="pill font-['Press_Start_2P'] text-[0.5rem] text-yellow-700">v1.0</span>
               </div>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
                 All 138 systems. 23,639 files. The complete experience including Companions, Mining Crates, and everything else.
               </p>
               <a
-                href="/builds/Forevercraft-Java-26.1.zip"
+                href="/builds/Forevercraft-Java-26.2.zip"
                 download
                 onClick={() => trackDownload('java')}
-                className="inline-block px-10 py-4 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors no-underline mt-2"
+                className="capsule bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] no-underline mt-2 px-10 py-4"
               >
-                DOWNLOAD JAVA 26.1
+                DOWNLOAD JAVA 26.2
               </a>
-              <p className="font-['Press_Start_2P'] text-[0.45rem] text-yellow-700 mt-2">Pack Format 101.1</p>
+              <p className="font-['Press_Start_2P'] text-[0.45rem] text-yellow-700 mt-2">Pack Format 107.1</p>
               {counts.java ? <p className="font-['Crimson_Pro'] text-[0.85rem] text-stone-600 mt-1">{counts.java.toLocaleString()} downloads</p> : null}
             </div>
           </div>
@@ -385,11 +401,11 @@ export default function Downloads() {
 
         {/* Bedrock Edition Downloads */}
         <ScrollReveal delay={100}>
-          <div className="rounded-lg border border-cyan-800/40 bg-gradient-to-r from-cyan-900/15 to-transparent p-8 mb-12">
+          <div className="sphere p-8 mb-12" style={{ background: 'radial-gradient(ellipse at 50% 20%, rgba(6, 182, 212, 0.06) 0%, transparent 60%), var(--glass-bg)', borderColor: 'rgba(6, 182, 212, 0.15)' }}>
             <div className="flex flex-col items-center text-center gap-4">
               <div className="flex items-center gap-3">
                 <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-cyan-400">BEDROCK EDITION</h2>
-                <span className="font-['Press_Start_2P'] text-[0.5rem] text-cyan-700 border border-cyan-800/40 rounded px-2 py-1">v1.0</span>
+                <span className="pill font-['Press_Start_2P'] text-[0.5rem] text-cyan-700" style={{ background: 'rgba(6, 182, 212, 0.08)', borderColor: 'rgba(6, 182, 212, 0.15)' }}>v1.0</span>
               </div>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
                 138 systems. Full Java parity. Script API powered. Console, mobile, and PC.
@@ -398,7 +414,7 @@ export default function Downloads() {
                 href="/builds/Forevercraft-Bedrock-26.10.mcaddon"
                 download
                 onClick={() => trackDownload('bedrock-mcaddon')}
-                className="inline-block px-10 py-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] transition-colors no-underline mt-2"
+                className="capsule bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] no-underline mt-2 px-10 py-4"
               >
                 DOWNLOAD BEDROCK 26.10
               </a>
@@ -410,10 +426,10 @@ export default function Downloads() {
 
         {/* Resource Packs Section */}
         <ScrollReveal>
-          <div className="rounded-lg border border-purple-800/40 bg-purple-950/10 hover:bg-purple-950/20 p-8 mb-6 transition-colors">
+          <div className="sphere p-8 mb-6" style={{ background: 'radial-gradient(ellipse at 50% 20%, rgba(147, 51, 234, 0.06) 0%, transparent 60%), var(--glass-bg)', borderColor: 'rgba(147, 51, 234, 0.15)' }}>
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
-                <span className="font-['Press_Start_2P'] text-[0.55rem] text-purple-600 tracking-widest">TOODLE PACK</span>
+                <span className="pill font-['Press_Start_2P'] text-[0.5rem] text-purple-500 mb-2" style={{ background: 'rgba(147, 51, 234, 0.08)', borderColor: 'rgba(147, 51, 234, 0.15)' }}>TOODLE PACK</span>
                 <h3 className="font-['Press_Start_2P'] text-[0.9rem] text-purple-400 mt-2 mb-2">RESOURCE PACKS</h3>
                 <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                   Seasonal texture overhaul — animated client-side cycling or individual packs for server-side season swapping.
@@ -422,7 +438,7 @@ export default function Downloads() {
               </div>
               <a
                 href="/resource-packs"
-                className="inline-block px-8 py-3 rounded-lg bg-purple-700 hover:bg-purple-600 text-stone-100 font-['Press_Start_2P'] text-[0.65rem] transition-colors no-underline shrink-0"
+                className="capsule bg-purple-700 hover:bg-purple-600 text-stone-100 font-['Press_Start_2P'] text-[0.65rem] no-underline shrink-0 px-8 py-3"
               >
                 VIEW PACKS
               </a>
@@ -440,12 +456,12 @@ export default function Downloads() {
             </p>
 
             {/* Platform Toggle */}
-            <div className="flex items-center justify-center gap-1 mt-6 bg-stone-900/60 rounded-lg p-1 max-w-xs mx-auto border border-stone-800">
+            <div className="flex items-center justify-center gap-1 mt-6 bg-stone-900/60 rounded-full p-1 max-w-xs mx-auto border border-stone-800">
               <button
                 onClick={() => setPlatform('java')}
-                className={`flex-1 px-4 py-2 rounded-md font-['Press_Start_2P'] text-[0.55rem] transition-all ${
+                className={`flex-1 px-4 py-2 rounded-full font-['Press_Start_2P'] text-[0.55rem] transition-all duration-300 ${
                   platform === 'java'
-                    ? 'bg-yellow-600 text-stone-950'
+                    ? 'bg-yellow-600 text-stone-950 shadow-[0_0_16px_rgba(251,191,36,0.2)]'
                     : 'text-stone-500 hover:text-stone-300'
                 }`}
               >
@@ -453,9 +469,9 @@ export default function Downloads() {
               </button>
               <button
                 onClick={() => setPlatform('bedrock')}
-                className={`flex-1 px-4 py-2 rounded-md font-['Press_Start_2P'] text-[0.55rem] transition-all ${
+                className={`flex-1 px-4 py-2 rounded-full font-['Press_Start_2P'] text-[0.55rem] transition-all duration-300 ${
                   platform === 'bedrock'
-                    ? 'bg-cyan-600 text-stone-950'
+                    ? 'bg-cyan-600 text-stone-950 shadow-[0_0_16px_rgba(6,182,212,0.2)]'
                     : 'text-stone-500 hover:text-stone-300'
                 }`}
               >
@@ -468,10 +484,10 @@ export default function Downloads() {
         {/* Controls */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
           <div className="flex gap-3">
-            <button onClick={selectAll} className="px-4 py-2 rounded border border-stone-700 bg-stone-900/50 hover:bg-stone-800/50 font-['Crimson_Pro'] text-base text-stone-400 transition-colors">
+            <button onClick={selectAll} className="px-5 py-2 rounded-full border border-stone-700 bg-stone-900/50 hover:bg-stone-800/50 font-['Crimson_Pro'] text-base text-stone-400 transition-all duration-300 hover:border-yellow-800/40">
               Select All
             </button>
-            <button onClick={selectNone} className="px-4 py-2 rounded border border-stone-700 bg-stone-900/50 hover:bg-stone-800/50 font-['Crimson_Pro'] text-base text-stone-400 transition-colors">
+            <button onClick={selectNone} className="px-5 py-2 rounded-full border border-stone-700 bg-stone-900/50 hover:bg-stone-800/50 font-['Crimson_Pro'] text-base text-stone-400 transition-all duration-300 hover:border-yellow-800/40">
               Core Only
             </button>
           </div>
@@ -487,8 +503,8 @@ export default function Downloads() {
             <button
               onClick={buildCustom}
               disabled={building}
-              className={`px-6 py-3 rounded-lg disabled:bg-stone-700 text-stone-950 disabled:text-stone-400 font-['Press_Start_2P'] text-[0.65rem] transition-colors ${
-                platform === 'bedrock' ? 'bg-cyan-600 hover:bg-cyan-500' : 'bg-green-600 hover:bg-green-500'
+              className={`capsule px-8 py-3 disabled:bg-stone-700 text-stone-950 disabled:text-stone-400 font-['Press_Start_2P'] text-[0.65rem] transition-all duration-300 ${
+                platform === 'bedrock' ? 'bg-cyan-600 hover:bg-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.15)]' : 'bg-green-600 hover:bg-green-500 shadow-[0_0_20px_rgba(34,197,94,0.15)]'
               }`}
             >
               {building ? 'BUILDING...' : `BUILD ${platform === 'bedrock' ? 'BEDROCK' : 'JAVA'} PACK`}
@@ -498,7 +514,7 @@ export default function Downloads() {
 
         {/* Build Result */}
         {buildResult && (
-          <div className={`mb-6 rounded-lg border p-4 ${
+          <div className={`mb-6 rounded-3xl border p-4 ${
             buildResult.status === 'success' ? 'border-green-800/40 bg-green-900/15' :
             buildResult.status === 'error' ? 'border-red-800/40 bg-red-900/15' :
             buildResult.status === 'building' ? 'border-blue-800/40 bg-blue-900/15' :
@@ -522,7 +538,7 @@ export default function Downloads() {
         {/* Interactive Graph */}
         <div
           ref={containerRef}
-          className="rounded-lg border border-stone-800 bg-stone-900/30 overflow-hidden relative"
+          className="rounded-3xl border border-stone-800 bg-stone-900/30 overflow-hidden relative"
           style={{ height: dimensions.height || 600 }}
         >
           <svg width={dimensions.width} height={dimensions.height} className="w-full h-full">
@@ -593,7 +609,7 @@ export default function Downloads() {
                   {/* Main circle */}
                   <circle
                     cx={pos.x} cy={pos.y} r={r}
-                    fill={isSelected ? m.color + '30' : 'rgba(30,30,30,0.8)'}
+                    fill={isSelected ? `${m.color}30` : 'rgba(30,30,30,0.8)'}
                     stroke={isSelected ? m.color : 'rgba(255,255,255,0.1)'}
                     strokeWidth={isHov ? 3 : isSelected ? 2 : 1}
                     style={{ transition: 'fill 0.3s, stroke 0.3s, stroke-width 0.2s' }}
@@ -627,7 +643,7 @@ export default function Downloads() {
                     fontFamily="'Press Start 2P'"
                     style={{ transition: 'fill 0.3s', pointerEvents: 'none' }}
                   >
-                    {m.name.length > 14 ? m.name.substring(0, 12) + '..' : m.name}
+                    {m.name.length > 14 ? `${m.name.slice(0, 12)}..` : m.name}
                   </text>
                 </g>
               )
@@ -645,7 +661,7 @@ export default function Downloads() {
 
             return (
               <div
-                className="absolute pointer-events-none bg-stone-900/95 border border-stone-700 rounded-lg p-4 max-w-xs shadow-xl backdrop-blur-sm z-10"
+                className="absolute pointer-events-none bg-stone-900/95 border border-stone-700 rounded-3xl p-4 max-w-xs shadow-xl backdrop-blur-sm z-10"
                 style={{
                   left: Math.min(pos.x + 20, dimensions.width - 280),
                   top: Math.min(pos.y - 20, dimensions.height - 200)
@@ -664,7 +680,7 @@ export default function Downloads() {
                   <p className="font-['Crimson_Pro'] text-xs text-red-400 mt-2">🔒 Full pack only — not available standalone</p>
                 )}
                 {m.standaloneCodexName && (
-                  <p className="font-['Crimson_Pro'] text-xs text-yellow-400/70 mt-1">Standalone codex: "{m.standaloneCodexName}"</p>
+                  <p className="font-['Crimson_Pro'] text-xs text-yellow-400/70 mt-1">Standalone codex: &quot;{m.standaloneCodexName}&quot;</p>
                 )}
                 {deps.length > 0 && (
                   <p className="font-['Crimson_Pro'] text-xs text-stone-500 mt-2">Requires: {deps.join(', ')}</p>
@@ -705,19 +721,19 @@ export default function Downloads() {
 
         {/* Selected modules panel */}
         <ScrollReveal>
-          <div className="mt-12 rounded-lg border border-stone-800 bg-stone-900/30 p-6">
+          <div className="mt-12 rounded-3xl border border-stone-800 bg-stone-900/30 p-6">
             <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-400 mb-4">SELECTED MODULES ({resolved.size})</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {MODULES.filter(m => resolved.has(m.id)).map(m => (
                 <div
                   key={m.id}
-                  className="flex items-center gap-2 rounded border border-stone-800 bg-stone-900/50 px-3 py-2"
-                  style={{ borderColor: m.color + '30' }}
+                  className="flex items-center gap-2 rounded-full border border-stone-800 bg-stone-900/50 px-4 py-2"
+                  style={{ borderColor:`${m.color}30`}}
                 >
                   <span className="text-sm">{m.icon}</span>
                   <span className="font-['Crimson_Pro'] text-sm" style={{ color: m.color }}>{m.name}</span>
                   {!selected.has(m.id) && m.id !== 'core' && (
-                    <span className="font-['Crimson_Pro'] text-xs text-stone-600 ml-auto">auto</span>
+                    <span className="pill font-['Crimson_Pro'] text-[0.65rem] text-stone-600 ml-auto py-0 px-2">auto</span>
                   )}
                 </div>
               ))}
@@ -733,7 +749,7 @@ export default function Downloads() {
           if (warnings.length === 0) return null
           return (
             <ScrollReveal>
-              <div className="mt-6 rounded-lg border border-yellow-800/30 bg-yellow-900/10 p-5">
+              <div className="mt-6 rounded-3xl border border-yellow-800/30 bg-yellow-900/10 p-5">
                 <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-600 mb-3">OPTIONAL DEPENDENCIES NOT INCLUDED</h3>
                 <div className="space-y-1.5">
                   {warnings.map((w, i) => (
