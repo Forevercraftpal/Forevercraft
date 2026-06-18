@@ -50,7 +50,7 @@ export default function Quests() {
         <div className="space-y-3 max-w-3xl mx-auto">
           {QUEST_TIERS.map((tier, i) => (
             <ScrollReveal key={tier.name} delay={i * 80}>
-              <div className={`flex items-stretch rounded-lg border ${tier.border} ${tier.bg} overflow-hidden`}>
+              <div className={`flex items-stretch rounded-3xl border ${tier.border} ${tier.bg} overflow-hidden`}>
                 <div className="w-1.5 bg-current opacity-40" style={{ color: tier.color.replace('text-', '').includes('stone') ? '#78716c' : undefined }} />
                 <div className="flex items-center gap-4 p-4 flex-1">
                   <div className="flex items-center justify-center w-8 h-8 rounded bg-stone-900/80">
@@ -120,7 +120,7 @@ export default function Quests() {
           <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {BOUNTY_TIERS.map((bounty, i) => (
               <ScrollReveal key={bounty.tier} delay={i * 100}>
-                <div className="rounded-lg border border-stone-800 bg-stone-900/40 p-5">
+                <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-5">
                   <div className="flex items-baseline gap-2 mb-2">
                     <span className={`font-['Press_Start_2P'] text-base ${bounty.color}`}>TIER {bounty.tier}</span>
                     <span className="font-['Crimson_Pro'] text-base text-stone-600">|</span>
@@ -140,7 +140,7 @@ export default function Quests() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <div className="grid md:grid-cols-2 gap-8">
             <ScrollReveal>
-              <div className="rounded-lg border border-yellow-800/30 bg-stone-900/40 p-6">
+              <div className="rounded-3xl border border-yellow-800/30 bg-stone-900/40 p-6">
                 <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-400 mb-3">ARTIFACT BOUNTY BOARD</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400 leading-relaxed mb-3">
                   Found above the Quest Book in every village. Three daily artifact bounties rotate from
@@ -153,7 +153,7 @@ export default function Quests() {
               </div>
             </ScrollReveal>
             <ScrollReveal delay={100}>
-              <div className="rounded-lg border border-red-800/30 bg-stone-900/40 p-6">
+              <div className="rounded-3xl border border-red-800/30 bg-stone-900/40 p-6">
                 <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-red-400 mb-3">EXILE SYSTEM</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400 leading-relaxed mb-3">
                   Betray a village badly enough and the consequences are real. Exile mechanics

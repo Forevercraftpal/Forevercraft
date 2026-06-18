@@ -2,8 +2,8 @@ import type { Tier, SpiritTier } from './types'
 
 // ── Tier Order ────────────────────────────────────────────
 
-export const TIER_ORDER: Tier[] = ['Common', 'Uncommon', 'Rare', 'Ornate', 'Exquisite', 'Mythical']
-export const SPIRIT_TIER_ORDER: SpiritTier[] = [...TIER_ORDER, 'Spirit']
+export const TIER_ORDER: Array<Tier> = ['Common', 'Uncommon', 'Rare', 'Ornate', 'Exquisite', 'Mythical']
+export const SPIRIT_TIER_ORDER: Array<SpiritTier> = [...TIER_ORDER, 'Spirit']
 
 // ── Tier Colors (hex) ─────────────────────────────────────
 
@@ -92,19 +92,27 @@ export const CLASS_COLORS: Record<string, string> = {
 
 // ── Stat Numbers ──────────────────────────────────────────
 
+// Verified against the live datapack 2026-06-18 (Bountiful Harvest audit).
 export const STATS = {
-  totalFiles: 23639,
-  totalFunctions: 16101,
-  totalLines: 842566,
-  totalArtifacts: 408,
-  totalCompanions: 102,
+  totalFiles: 34159,
+  totalFunctions: 22472,
+  totalLines: 1226478,
+  totalArtifacts: 639,
+  totalCompanions: 104,
   totalSpiritWeapons: 14,
-  totalRaidBosses: 14,
+  totalRaidBosses: 13,
+  totalWorldBosses: 11,
   totalSkillTrees: 15,
-  totalQuests: 250,
-  totalLoreFragments: 904,
-  totalArmorSets: 27,
-  totalSystems: 138,
-  dreamRateCap: 50,
-  evolvableCompanions: 6,
+  totalClasses: 21,
+  totalQuests: 452,
+  totalLoreFragments: 896,
+  totalLoreSets: 163,
+  totalArmorSets: 28,
+  totalProfessions: 12,
+  totalCookingCategories: 12,
+  totalStructures: 43,
+  totalMilestones: 505,
+  totalSystems: 150,
+  dreamRateCap: 100,
+  evolvableCompanions: 37,
 }

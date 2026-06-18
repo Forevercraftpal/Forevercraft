@@ -61,7 +61,7 @@ export default function DreamRate() {
       <PageHero
         title="DREAM RATE"
         badge="CORE MECHANIC"
-        subtitle="The backbone of everything. Cap: 50. Formula: multiplier = 1 + (dreams / 35)."
+        subtitle="The backbone of everything. Cap: 100 (raised from 50 in the Bountiful Harvest update)."
       />
 
       <div className="max-w-[1200px] mx-auto px-8 py-16 space-y-12">
@@ -74,7 +74,7 @@ export default function DreamRate() {
             <p className="text-stone-300">
               Dream Rate is a custom RNG system that connects every system in Forevercraft.
               It determines crate quality, artifact rarity, structure accessibility, and companion encounters.
-              At 35 Dreams, you get 2x bonus rolls on every crate. At 50, you're Dream Transcendent.
+              At 35 Dreams, you get 2x bonus rolls on every crate. At 50, you&apos;re Dream Transcendent.
             </p>
             <div className="mt-6 bg-stone-900/60 border border-yellow-900/30 rounded p-4 text-center">
               <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 mb-1">
@@ -98,8 +98,8 @@ export default function DreamRate() {
                 <div key={s.name} className="flex items-center justify-between">
                   <span className="font-['Crimson_Pro'] text-stone-300">{s.name}</span>
                   <div className="flex items-center gap-3">
-                    <div className="w-24 bg-stone-800 rounded-sm h-2 overflow-hidden">
-                      <div className="h-full bg-yellow-500 rounded-sm" style={{ width: `${Math.min((s.max / 13) * 100, 100)}%` }} />
+                    <div className="w-24 bg-stone-800 rounded-2xl h-2 overflow-hidden">
+                      <div className="h-full bg-yellow-500 rounded-2xl" style={{ width: `${Math.min((s.max / 13) * 100, 100)}%` }} />
                     </div>
                     <span className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-500 w-16 text-right">
                       {s.value.split('(')[0].trim()}
@@ -142,9 +142,9 @@ export default function DreamRate() {
                 >
                   {g.tier}
                 </div>
-                <div className="flex-1 bg-stone-800 rounded-sm h-3 overflow-hidden">
+                <div className="flex-1 bg-stone-800 rounded-2xl h-3 overflow-hidden">
                   <div
-                    className="h-full rounded-sm transition-all duration-1000"
+                    className="h-full rounded-2xl transition-all duration-1000"
                     style={{ width: `${(g.dr / 18) * 100}%`, backgroundColor: g.color }}
                   />
                 </div>

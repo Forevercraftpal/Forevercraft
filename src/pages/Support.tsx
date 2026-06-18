@@ -42,7 +42,7 @@ export default function Support() {
 
     const encodedTitle = encodeURIComponent(`[Bug] ${title}`)
     const encodedBody = encodeURIComponent(body)
-    const encodedLabels = encodeURIComponent(label.toLowerCase().replace(/ \/ /g, ',').replace(/ /g, '-'))
+    const encodedLabels = encodeURIComponent(label.toLowerCase().replaceAll(' / ', ',').replaceAll(' ', '-'))
 
     window.open(
       `https://github.com/Deiontre10/forevercraft/issues/new?title=${encodedTitle}&body=${encodedBody}&labels=bug,${encodedLabels}`,
@@ -71,7 +71,7 @@ export default function Support() {
       <div className="max-w-[1100px] mx-auto px-8 py-16">
         {/* Bug Report Form */}
         <ScrollReveal>
-          <div className="rounded-lg border border-red-900/40 bg-gradient-to-br from-red-950/10 to-transparent p-8 mb-12">
+          <div className="rounded-3xl border border-red-900/40 bg-gradient-to-br from-red-950/10 to-transparent p-8 mb-12">
             <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-red-400 mb-2">REPORT A BUG</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 mb-8">
               Found something broken? Fill out the form below and it will be sent directly to our
@@ -142,7 +142,7 @@ export default function Support() {
               <button
                 onClick={submitBugReport}
                 disabled={!title.trim() || !description.trim() || submitted}
-                className={`px-8 py-3 rounded-lg font-['Press_Start_2P'] text-[0.7rem] tracking-wider transition-colors ${
+                className={`px-8 py-3 rounded-3xl font-['Press_Start_2P'] text-[0.7rem] tracking-wider transition-colors ${
                   submitted
                     ? 'bg-green-700 text-green-100 cursor-default'
                     : !title.trim() || !description.trim()
@@ -154,7 +154,7 @@ export default function Support() {
               </button>
 
               <p className="font-['Crimson_Pro'] text-base text-stone-600">
-                This will open a pre-filled GitHub issue. You'll need a free GitHub account to submit.
+                This will open a pre-filled GitHub issue. You&apos;ll need a free GitHub account to submit.
               </p>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function Support() {
 
         {/* FAQ */}
         <ScrollReveal delay={100}>
-          <div className="rounded-lg border border-stone-800 p-8 mb-12">
+          <div className="rounded-3xl border border-stone-800 p-8 mb-12">
             <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-yellow-400 mb-6">FAQ</h2>
             <div className="space-y-6">
               {[
@@ -202,7 +202,7 @@ export default function Support() {
 
         {/* Contact */}
         <ScrollReveal delay={200}>
-          <div className="rounded-lg border border-stone-800 p-8">
+          <div className="rounded-3xl border border-stone-800 p-8">
             <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-yellow-400 mb-4">CONTACT US</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a

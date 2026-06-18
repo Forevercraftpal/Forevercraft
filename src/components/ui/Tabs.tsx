@@ -6,7 +6,7 @@ interface Tab {
 }
 
 interface Props {
-  tabs: Tab[]
+  tabs: Array<Tab>
   defaultTab?: number
 }
 

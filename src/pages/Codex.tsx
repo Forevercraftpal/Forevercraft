@@ -15,7 +15,7 @@ const healerCount = artifacts.filter(a => a.type === 'Healer').length
 const toolCount = artifacts.filter(a => a.type === 'Tool').length
 const shieldCount = artifacts.filter(a => a.type === 'Shield').length
 
-const CATEGORIES: { key: CategoryKey; label: string; count: number }[] = [
+const CATEGORIES: Array<{ key: CategoryKey; label: string; count: number }> = [
   { key: 'all', label: 'All', count: artifacts.length + companions.length + spiritWeapons.length + classes.length },
   { key: 'weapons', label: 'Weapons', count: weaponCount },
   { key: 'armor', label: 'Armor', count: armorCount },
@@ -49,8 +49,8 @@ export default function Codex() {
   const [search, setSearch] = useState('')
   const [activeCategory, setActiveCategory] = useState<CategoryKey>('all')
 
-  const allItems = useMemo<SearchResult[]>(() => {
-    const items: SearchResult[] = []
+  const allItems = useMemo<Array<SearchResult>>(() => {
+    const items: Array<SearchResult> = []
 
     for (const a of artifacts) {
       items.push({
@@ -110,7 +110,7 @@ export default function Codex() {
   }, [search, activeCategory, allItems])
 
   const grouped = useMemo(() => {
-    const groups: Record<string, SearchResult[]> = {}
+    const groups: Record<string, Array<SearchResult>> = {}
     for (const item of filtered) {
       if (!groups[item.category]) groups[item.category] = []
       groups[item.category].push(item)
@@ -132,7 +132,7 @@ export default function Codex() {
             placeholder="Search the codex..."
             value={search}
             onChange={e => setSearch(e.target.value)}
-            className="w-full bg-stone-900/80 border border-yellow-900/50 rounded-lg px-6 py-4 text-stone-200 placeholder-stone-600 font-['Crimson_Pro'] text-lg focus:outline-none focus:border-yellow-600 transition-colors shadow-lg shadow-black/30"
+            className="w-full bg-stone-900/80 border border-yellow-900/50 rounded-3xl px-6 py-4 text-stone-200 placeholder-stone-600 font-['Crimson_Pro'] text-lg focus:outline-none focus:border-yellow-600 transition-colors shadow-lg shadow-black/30"
           />
         </div>
       </PageHero>
@@ -177,7 +177,7 @@ export default function Codex() {
                     return (
                       <div
                         key={`${item.category}-${item.name}-${i}`}
-                        className={`rounded-lg border ${tierStyle.split(' ').slice(1).join(' ')} bg-stone-900/30 p-4`}
+                        className={`rounded-3xl border ${tierStyle.split(' ').slice(1).join(' ')} bg-stone-900/30 p-4`}
                       >
                         <div className="flex items-baseline justify-between mb-1">
                           <h3 className={`font-['Press_Start_2P'] text-[0.65rem] ${tierText}`}>{item.name}</h3>

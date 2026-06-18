@@ -186,7 +186,7 @@ export default function Guide() {
               handcrafted abilities, to 14 spirit weapons that grow through seven tiers of
               metamorphosis. This guide walks you through the natural progression — from
               punching your first tree to wielding a transcendent weapon at Dream Rate 50.
-              Take it at your own pace. Every player's journey is different.
+              Take it at your own pace. Every player&apos;s journey is different.
             </p>
             <p className="font-['Crimson_Pro'] text-base text-stone-500 mt-3">
               Have a question? Click the <span className="text-yellow-500">❓</span> in the bottom corner to ask our Forevercraft Guide — it knows every system inside and out.
@@ -196,7 +196,7 @@ export default function Guide() {
 
         {/* Difficulty Choice */}
         <ScrollReveal>
-          <div className="mb-12 rounded-lg border border-yellow-800/30 overflow-hidden">
+          <div className="mb-12 rounded-3xl border border-yellow-800/30 overflow-hidden">
             <div className="px-8 py-5 bg-gradient-to-r from-yellow-900/15 to-transparent">
               <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-yellow-400 mb-2">CHOOSE YOUR PATH</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 italic">
@@ -282,7 +282,7 @@ export default function Guide() {
           {PHASES.map((phase, i) => (
             <ScrollReveal key={phase.phase} delay={i * 60}>
               <div
-                className="rounded-lg border overflow-hidden"
+                className="rounded-3xl border overflow-hidden"
                 style={{ borderColor: `${phase.color}30` }}
               >
                 {/* Phase Header */}
@@ -364,10 +364,10 @@ export default function Guide() {
         <ScrollReveal delay={400}>
           <div className="mt-16 text-center">
             <p className="font-['Crimson_Pro'] italic text-xl text-stone-500 max-w-3xl mx-auto leading-relaxed">
-              "The journey from zero to fifty isn't a race. It's a story — your story.
+              &quot;The journey from zero to fifty isn&apos;t a race. It&apos;s a story — your story.
               Every artifact found, every companion bonded, every boss defeated is a chapter.
               Take your time, the committed win the race to glory, the quick fall into
-              the traps the world has laid before you."
+              the traps the world has laid before you.&quot;
             </p>
           </div>
         </ScrollReveal>

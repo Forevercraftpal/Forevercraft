@@ -66,7 +66,7 @@ export default function InfiniteCastle() {
         <div className="grid md:grid-cols-3 gap-4 mb-16">
           {MECHANICS.map((m, i) => (
             <ScrollReveal key={m.label} delay={i * 60}>
-              <div className="rounded-lg border border-red-900/30 bg-gradient-to-br from-red-950/20 to-stone-950 p-5 h-full">
+              <div className="rounded-3xl border border-red-900/30 bg-gradient-to-br from-red-950/20 to-stone-950 p-5 h-full">
                 <p className="font-['Press_Start_2P'] text-[0.6rem] text-red-700 mb-1">{m.label}</p>
                 <p className="font-['Press_Start_2P'] text-[0.6rem] text-red-400 mb-2">{m.value}</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">{m.detail}</p>
@@ -83,7 +83,7 @@ export default function InfiniteCastle() {
         </ScrollReveal>
 
         <ScrollReveal delay={100}>
-          <div className="max-w-3xl mx-auto rounded-lg border border-stone-800 bg-stone-900/30 p-6 mb-16">
+          <div className="max-w-3xl mx-auto rounded-3xl border border-stone-800 bg-stone-900/30 p-6 mb-16">
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <span className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 1–9</span>
@@ -131,7 +131,7 @@ export default function InfiniteCastle() {
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
             {BOSSES.map((boss, i) => (
               <ScrollReveal key={boss.name} delay={i * 100}>
-                <div className={`rounded-lg border ${boss.border} bg-gradient-to-br ${boss.bg} p-6 h-full`}>
+                <div className={`rounded-3xl border ${boss.border} bg-gradient-to-br ${boss.bg} p-6 h-full`}>
                   <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 mb-1">FLOOR {boss.floor}</p>
                   <h3 className={`font-['Press_Start_2P'] text-[0.7rem] ${boss.color} mb-1`}>{boss.name}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-500 italic mb-3">{boss.title}</p>
@@ -143,7 +143,7 @@ export default function InfiniteCastle() {
 
           {/* Dream Storm Crystals */}
           <ScrollReveal delay={200}>
-            <div className="rounded-lg border border-purple-800/40 bg-gradient-to-r from-purple-900/20 to-purple-950/5 p-5 max-w-xl mx-auto text-center">
+            <div className="rounded-3xl border border-purple-800/40 bg-gradient-to-r from-purple-900/20 to-purple-950/5 p-5 max-w-xl mx-auto text-center">
               <p className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 mb-2">DREAM STORM CRYSTALS</p>
               <p className="font-['Crimson_Pro'] text-base text-stone-400 mb-1">
                 Extraordinarily rare crafting materials that drop from floor 25 onward.
@@ -167,7 +167,7 @@ export default function InfiniteCastle() {
           <div className="max-w-2xl mx-auto space-y-3">
             {MILESTONES.map((m, i) => (
               <ScrollReveal key={m.floor} delay={i * 60}>
-                <div className="flex items-center gap-4 rounded-lg border border-stone-800 bg-stone-900/30 p-4">
+                <div className="flex items-center gap-4 rounded-3xl border border-stone-800 bg-stone-900/30 p-4">
                   <div className="flex items-center justify-center w-12 h-12 rounded bg-stone-800/80 shrink-0">
                     <span className={`font-['Press_Start_2P'] text-[0.55rem] ${m.color}`}>{m.floor}</span>
                   </div>

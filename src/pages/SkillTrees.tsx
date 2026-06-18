@@ -86,7 +86,7 @@ export default function SkillTrees() {
         {/* Selected Tree Detail */}
         {selected && (
           <ScrollReveal>
-            <div className="rounded-lg border border-yellow-900/40 bg-stone-900/40 p-6 md:p-8">
+            <div className="rounded-3xl border border-yellow-900/40 bg-stone-900/40 p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-3xl">{selected.icon}</span>
                 <div>
@@ -114,7 +114,7 @@ export default function SkillTrees() {
                         onClick={() => setLockedLevel(lockedLevel === lv ? null : lv)}
                         onMouseEnter={() => setHoveredLevel(lv)}
                         onMouseLeave={() => setHoveredLevel(null)}
-                        className={`flex-1 h-5 rounded-sm transition-all duration-150 cursor-pointer relative ${
+                        className={`flex-1 h-5 rounded-2xl transition-all duration-150 cursor-pointer relative ${
                           isActive
                             ? isExact
                               ? 'bg-yellow-400 shadow-[0_0_8px_rgba(234,179,8,0.5)]'

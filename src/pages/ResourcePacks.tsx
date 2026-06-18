@@ -39,9 +39,9 @@ export default function ResourcePacks() {
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {PRIME_PACKS.map(pack => (
-                <div key={pack.file} className="rounded-lg border border-yellow-800/40 bg-yellow-950/10 p-6 hover:bg-yellow-950/20 transition-colors">
+                <div key={pack.file} className="sphere p-6" style={{ background: `radial-gradient(ellipse at 50% 20%, ${pack.color}08 0%, transparent 60%), var(--glass-bg)` }}>
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-2xl">{pack.icon}</span>
+                    <span className="text-2xl" style={{ filter: `drop-shadow(0 0 10px ${pack.color}40)` }}>{pack.icon}</span>
                     <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-400 leading-relaxed">{pack.name}</h3>
                   </div>
                   <p className="font-['Crimson_Pro'] text-stone-400 text-base mb-4">{pack.desc}</p>
@@ -51,7 +51,7 @@ export default function ResourcePacks() {
                       href={`${GITHUB_BASE}/${pack.file}`}
                       download
                       onClick={() => trackDownload(pack.trackKey)}
-                      className="inline-block px-5 py-2 rounded bg-yellow-700 hover:bg-yellow-600 text-stone-950 font-['Press_Start_2P'] text-[0.5rem] transition-colors no-underline"
+                      className="capsule px-6 py-2 bg-yellow-700 hover:bg-yellow-600 text-stone-950 font-['Press_Start_2P'] text-[0.5rem] no-underline"
                     >
                       DOWNLOAD
                     </a>
@@ -67,13 +67,13 @@ export default function ResourcePacks() {
           <div className="mb-16">
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-green-500 tracking-widest mb-2">SERVER-SIDE SEASONAL</h2>
             <p className="font-['Crimson_Pro'] text-stone-400 text-lg mb-8">
-              Individual season packs for server operators. Swap the active pack when the in-game season changes for pixel-perfect visual sync with the datapack's 64-day year cycle.
+              Individual season packs for server operators. Swap the active pack when the in-game season changes for pixel-perfect visual sync with the datapack&apos;s 64-day year cycle.
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
               {SEASONAL_PACKS.map(pack => (
-                <div key={pack.file} className="rounded-lg border border-stone-800 bg-stone-900/30 p-5 hover:border-stone-700 transition-colors">
-                  <div className="text-center mb-3">
-                    <span className="text-3xl">{pack.icon}</span>
+                <div key={pack.file} className="sphere p-5 text-center" style={{ background: `radial-gradient(ellipse at 50% 30%, ${pack.color}06 0%, transparent 60%), var(--glass-bg)` }}>
+                  <div className="mb-3">
+                    <span className="text-3xl" style={{ filter: `drop-shadow(0 0 10px ${pack.color}30)` }}>{pack.icon}</span>
                     <h3 className="font-['Press_Start_2P'] text-[0.55rem] mt-2" style={{ color: pack.color }}>{pack.name.toUpperCase()}</h3>
                   </div>
                   <p className="font-['Crimson_Pro'] text-stone-500 text-sm text-center mb-4">{pack.desc}</p>
@@ -83,7 +83,7 @@ export default function ResourcePacks() {
                       href={`${GITHUB_BASE}/${pack.file}`}
                       download
                       onClick={() => trackDownload(pack.trackKey)}
-                      className="inline-block px-4 py-2 rounded border border-stone-700 hover:border-stone-500 font-['Press_Start_2P'] text-[0.45rem] text-stone-400 hover:text-stone-200 transition-colors no-underline"
+                      className="capsule px-5 py-2 border border-stone-700 hover:border-stone-500 font-['Press_Start_2P'] text-[0.45rem] text-stone-400 hover:text-stone-200 no-underline bg-transparent"
                     >
                       DOWNLOAD
                     </a>
@@ -96,7 +96,7 @@ export default function ResourcePacks() {
 
         {/* ── Server Setup Guide ────────────────────── */}
         <ScrollReveal delay={200}>
-          <div className="rounded-lg border border-stone-800 bg-stone-900/20 p-8">
+          <div className="sphere p-8" style={{ background: 'radial-gradient(ellipse at 50% 10%, rgba(255,255,255,0.02) 0%, transparent 50%), rgba(15, 13, 22, 0.5)' }}>
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">SERVER-SIDE TEXTURE SWITCHING GUIDE</h2>
 
             <div className="font-['Crimson_Pro'] text-stone-300 text-lg leading-relaxed space-y-6">
@@ -104,7 +104,7 @@ export default function ResourcePacks() {
                 <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-stone-200 mb-2">HOW IT WORKS</h3>
                 <p>
                   The Forevercraft datapack runs a 64-day year cycle with 4 seasons of 16 days each.
-                  When a season transition occurs, the datapack sets <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded text-sm">#season_swap_pending ec.var</code> to <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded text-sm">1</code>.
+                  When a season transition occurs, the datapack sets <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">#season_swap_pending ec.var</code> to <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">1</code>.
                   Your server wrapper watches for this signal and swaps the active resource pack.
                 </p>
               </div>
@@ -146,29 +146,29 @@ export default function ResourcePacks() {
                 <div className="space-y-4 text-stone-400">
                   <div>
                     <p className="text-stone-300 font-semibold">1. Host your seasonal packs</p>
-                    <p>Upload all 4 ZIPs to a web server, CDN, or GitHub Releases. Note the SHA-1 hash of each file (<code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded text-sm">shasum filename.zip</code>).</p>
+                    <p>Upload all 4 ZIPs to a web server, CDN, or GitHub Releases. Note the SHA-1 hash of each file (<code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">shasum filename.zip</code>).</p>
                   </div>
                   <div>
                     <p className="text-stone-300 font-semibold">2. Create a swap script</p>
-                    <p>A script that reads the current season ID, updates <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded text-sm">server.properties</code> with the correct resource-pack URL and SHA-1 hash, then restarts the server.</p>
+                    <p>A script that reads the current season ID, updates <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">server.properties</code> with the correct resource-pack URL and SHA-1 hash, then restarts the server.</p>
                   </div>
                   <div>
                     <p className="text-stone-300 font-semibold">3. Detect the season change</p>
-                    <p>Use RCON polling to check <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded text-sm">#season_swap_pending ec.var</code> every 30 seconds. When it's 1, read <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded text-sm">#season_id ec.var</code>, reset the flag, stop the server, swap the pack, and restart.</p>
+                    <p>Use RCON polling to check <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">#season_swap_pending ec.var</code> every 30 seconds. When it&apos;s 1, read <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">#season_id ec.var</code>, reset the flag, stop the server, swap the pack, and restart.</p>
                   </div>
                   <div>
                     <p className="text-stone-300 font-semibold">4. Set the initial pack</p>
-                    <p>Before first launch, set <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded text-sm">require-resource-pack=true</code> in server.properties with the correct seasonal URL and hash.</p>
+                    <p>Before first launch, set <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">require-resource-pack=true</code> in server.properties with the correct seasonal URL and hash.</p>
                   </div>
                 </div>
               </div>
 
               <div className="border-t border-stone-800 pt-6">
-                <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-cyan-400 mb-2">DON'T WANT SERVER SETUP?</h3>
+                <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-cyan-400 mb-2">DON&apos;T WANT SERVER SETUP?</h3>
                 <p className="text-stone-400">
                   Use <strong className="text-yellow-400">Toodle Pack Prime</strong> instead. It contains animated textures that automatically cycle
                   through all 4 seasons on the client side — no server restart needed. The trade-off is that cycling is tick-based
-                  and won't be perfectly synced with the datapack's season system, but it provides a similar visual experience.
+                  and won&apos;t be perfectly synced with the datapack&apos;s season system, but it provides a similar visual experience.
                 </p>
               </div>
             </div>

@@ -153,7 +153,7 @@ export default function Seasons() {
         <div className="grid md:grid-cols-2 gap-6">
           {SEASONS.map((season, i) => (
             <ScrollReveal key={season.name} delay={i * 100}>
-              <div className={`rounded-lg border ${season.border} bg-gradient-to-br ${season.accent} p-6 h-full`}>
+              <div className={`rounded-3xl border ${season.border} bg-gradient-to-br ${season.accent} p-6 h-full`}>
                 <div className="flex items-baseline gap-3 mb-3">
                   <h3 className={`font-['Press_Start_2P'] text-base ${season.textColor}`}>{season.name}</h3>
                   <span className="font-['Crimson_Pro'] text-base text-stone-500">Days {season.days}</span>
@@ -191,7 +191,7 @@ export default function Seasons() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {WORLD_EVENTS.map((event, i) => (
               <ScrollReveal key={event.name} delay={i * 80}>
-                <div className={`rounded-lg border ${event.border} bg-gradient-to-br ${event.bg} p-5 h-full flex flex-col`}>
+                <div className={`rounded-3xl border ${event.border} bg-gradient-to-br ${event.bg} p-5 h-full flex flex-col`}>
                   <h3 className={`font-['Press_Start_2P'] text-[0.6rem] ${event.color} mb-3`}>{event.name}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-300 flex-1">{event.description}</p>
                 </div>
@@ -218,7 +218,7 @@ export default function Seasons() {
               {MOON_PHASES.map(phase => (
                 <div
                   key={phase.name}
-                  className="text-center rounded-lg border border-stone-800 bg-stone-900/50 p-3"
+                  className="text-center rounded-3xl border border-stone-800 bg-stone-900/50 p-3"
                 >
                   <div className="text-2xl mb-2">{phase.icon}</div>
                   <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-300 mb-1 leading-relaxed">{phase.name}</p>
@@ -230,7 +230,7 @@ export default function Seasons() {
 
           {/* Harvest Moon highlight */}
           <ScrollReveal delay={200}>
-            <div className="rounded-lg border border-red-800/50 bg-gradient-to-br from-red-900/20 to-red-950/10 p-6 max-w-xl mx-auto text-center">
+            <div className="rounded-3xl border border-red-800/50 bg-gradient-to-br from-red-900/20 to-red-950/10 p-6 max-w-xl mx-auto text-center">
               <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-red-400 mb-2">{HARVEST_MOON.name}</h3>
               <p className="font-['Press_Start_2P'] text-[0.55rem] text-red-700 mb-3">{HARVEST_MOON.chance}</p>
               <p className="font-['Crimson_Pro'] text-base text-stone-300 mb-2">{HARVEST_MOON.description}</p>
@@ -244,7 +244,7 @@ export default function Seasons() {
               <div>
                 <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-amber-400 tracking-widest mb-2">CUSTOM TIME SYSTEM</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
-                  Days last 1 real-world hour using Minecraft's native world clock at 0.333x rate. Beds work normally. Seasonal rate switching adjusts pacing: Winter has faster days and slower nights, while Summer has slower days and faster nights — changing how each season feels to play.
+                  Days last 1 real-world hour using Minecraft&apos;s native world clock at 0.333x rate. Beds work normally. Seasonal rate switching adjusts pacing: Winter has faster days and slower nights, while Summer has slower days and faster nights — changing how each season feels to play.
                 </p>
               </div>
 

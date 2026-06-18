@@ -7,12 +7,12 @@ interface Props {
   search: string
   onSearchChange: (v: string) => void
   searchPlaceholder?: string
-  filters?: {
+  filters?: Array<{
     label: string
     value: string
-    options: FilterOption[]
+    options: Array<FilterOption>
     onChange: (v: string) => void
-  }[]
+  }>
   resultCount?: number
   resultLabel?: string
 }

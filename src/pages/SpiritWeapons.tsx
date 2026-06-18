@@ -28,7 +28,7 @@ export default function SpiritWeapons() {
         {spiritWeapons.map((weapon, i) => (
           <ScrollReveal key={weapon.id} delay={i * 50}>
             <section
-              className="relative rounded-lg border border-stone-800 overflow-hidden transition-all duration-500"
+              className="relative rounded-3xl border border-stone-800 overflow-hidden transition-all duration-500"
               style={{
                 borderColor: `${weapon.color}30`,
                 background: `linear-gradient(135deg, ${weapon.color}08 0%, transparent 50%, ${weapon.color}05 100%)`,
@@ -67,7 +67,7 @@ export default function SpiritWeapons() {
 
                 {/* Lore */}
                 <p className="font-['Crimson_Pro'] italic text-stone-400 mt-3 text-base">
-                  "{weapon.lore}"
+                  &quot;{weapon.lore}&quot;
                 </p>
 
                 {/* Boss */}
@@ -99,7 +99,7 @@ export default function SpiritWeapons() {
                               onClick={() => setSelectedTier(selectedTier === tier ? null : tier)}
                             >
                               <div
-                                className={`h-3 rounded-sm mb-2 transition-all duration-200 ${
+                                className={`h-3 rounded-2xl mb-2 transition-all duration-200 ${
                                   tier === 'Spirit' && isExact ? 'animate-[mythical-pulse_2s_ease-in-out_infinite]' : ''
                                 } ${isExact ? 'shadow-[0_0_10px_rgba(234,179,8,0.5)]' : ''}`}
                                 style={{
@@ -140,11 +140,11 @@ export default function SpiritWeapons() {
                             {selectedTier === 'Mythical' && 'Full 100% effectiveness. Twin process becomes available via Dream Storm Crystal.'}
                             {selectedTier === 'Spirit' && 'Maximum power: 125% effectiveness. All abilities at full strength. Soulbound.'}
                           </div>
-                          {weapon.abilities.filter(a => {
+                          {weapon.abilities.some(a => {
                             const unlockIdx = SPIRIT_TIER_ORDER.indexOf((a.unlockTier || 'Common') as SpiritTier)
                             const selIdx2 = SPIRIT_TIER_ORDER.indexOf(selectedTier!)
                             return unlockIdx <= selIdx2
-                          }).length > 0 && (
+                          }) && (
                             <div className="mt-2 pt-2 border-t border-stone-800/50">
                               <p className="font-['Press_Start_2P'] text-[0.7rem] text-green-500 mb-1">UNLOCKED ABILITIES:</p>
                               {weapon.abilities.filter(a => {

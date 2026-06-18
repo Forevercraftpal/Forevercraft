@@ -97,15 +97,15 @@ export default function ArmorSets() {
       <section className="max-w-[1400px] mx-auto px-8 py-16">
         <ScrollReveal>
           <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-16">
-            <div className="text-center rounded-lg border border-yellow-700/40 bg-yellow-900/10 p-4">
+            <div className="text-center rounded-3xl border border-yellow-700/40 bg-yellow-900/10 p-4">
               <p className="font-['Press_Start_2P'] text-lg text-yellow-400">8</p>
               <p className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-700 mt-1">MYTHICAL (5pc)</p>
             </div>
-            <div className="text-center rounded-lg border border-purple-700/40 bg-purple-900/10 p-4">
+            <div className="text-center rounded-3xl border border-purple-700/40 bg-purple-900/10 p-4">
               <p className="font-['Press_Start_2P'] text-lg text-purple-400">5</p>
               <p className="font-['Press_Start_2P'] text-[0.55rem] text-purple-700 mt-1">EXQUISITE (4pc)</p>
             </div>
-            <div className="text-center rounded-lg border border-stone-700/40 bg-stone-900/10 p-4">
+            <div className="text-center rounded-3xl border border-stone-700/40 bg-stone-900/10 p-4">
               <p className="font-['Press_Start_2P'] text-lg text-stone-400">{STANDARD_COUNT}</p>
               <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 mt-1">STANDARD (4pc)</p>
             </div>
@@ -125,7 +125,7 @@ export default function ArmorSets() {
         <div className="space-y-4 mb-16">
           {MYTHICAL_SETS.map((set, i) => (
             <ScrollReveal key={set.name} delay={i * 60}>
-              <div className={`rounded-lg border ${TIER_CONFIG.mythical.border} bg-gradient-to-r ${TIER_CONFIG.mythical.bg} p-5`}>
+              <div className={`rounded-3xl border ${TIER_CONFIG.mythical.border} bg-gradient-to-r ${TIER_CONFIG.mythical.bg} p-5`}>
                 <div className="flex flex-col md:flex-row md:items-start gap-4">
                   <div className="md:w-1/3">
                     <div className="flex items-center gap-2 mb-2">
@@ -166,7 +166,7 @@ export default function ArmorSets() {
         <div className="grid md:grid-cols-2 gap-4">
           {EXQUISITE_SETS.map((set, i) => (
             <ScrollReveal key={set.name} delay={i * 80}>
-              <div className={`rounded-lg border ${TIER_CONFIG.exquisite.border} bg-gradient-to-r ${TIER_CONFIG.exquisite.bg} p-5 h-full`}>
+              <div className={`rounded-3xl border ${TIER_CONFIG.exquisite.border} bg-gradient-to-r ${TIER_CONFIG.exquisite.bg} p-5 h-full`}>
                 <div className="flex items-center gap-2 mb-2">
                   <span className={`font-['Press_Start_2P'] text-[0.6rem] px-2 py-1 rounded ${TIER_CONFIG.exquisite.badge}`}>EXQUISITE</span>
                 </div>
@@ -189,7 +189,7 @@ export default function ArmorSets() {
 
         {/* Standard note */}
         <ScrollReveal delay={200}>
-          <div className="mt-12 text-center rounded-lg border border-stone-800 bg-stone-900/30 p-6">
+          <div className="mt-12 text-center rounded-3xl border border-stone-800 bg-stone-900/30 p-6">
             <p className="font-['Press_Start_2P'] text-[0.7rem] text-stone-500 mb-2">{STANDARD_COUNT} STANDARD SETS</p>
             <p className="font-['Crimson_Pro'] text-base text-stone-500">
               Standard 4-piece armor sets provide 2-piece and 4-piece set bonuses. Discover them through crafting, dungeon loot, and quest rewards throughout your adventure.

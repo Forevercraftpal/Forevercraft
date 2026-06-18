@@ -1,9 +1,9 @@
 import type { Artifact, Tier, ArtifactType } from './types'
 
-export const TIERS: Tier[] = ['Common', 'Uncommon', 'Rare', 'Ornate', 'Exquisite', 'Mythical']
-export const TYPES: ArtifactType[] = ['Weapon', 'Armor', 'Accessory', 'Ring', 'Healer', 'Tool', 'Shield']
+export const TIERS: Array<Tier> = ['Common', 'Uncommon', 'Rare', 'Ornate', 'Exquisite', 'Mythical']
+export const TYPES: Array<ArtifactType> = ['Weapon', 'Armor', 'Accessory', 'Ring', 'Healer', 'Tool', 'Shield']
 
-export const artifacts: Artifact[] = [
+export const artifacts: Array<Artifact> = [
   { id: 1, name: 'Bone Slingshot', tier: 'Common', type: 'Weapon',  subtype: 'Bow', description: '', abilities: [] },
   { id: 2, name: 'Boneclub', tier: 'Common', type: 'Weapon',  subtype: 'Mace', description: '', abilities: [] },
   { id: 3, name: 'Broadsword', tier: 'Common', type: 'Weapon',  subtype: 'Sword', description: '', abilities: [] },

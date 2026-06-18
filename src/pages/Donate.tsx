@@ -49,7 +49,7 @@ export default function Donate() {
             <p className="font-['Crimson_Pro'] text-xl text-stone-400 max-w-3xl mx-auto leading-relaxed">
               Forevercraft is and always will be <span className="text-yellow-500 font-semibold">completely free</span>.
               No paywalls, no locked features, no premium tiers in-game. Every system, every artifact,
-              every companion — free for everyone. If you'd like to help us keep building, any contribution
+              every companion — free for everyone. If you&apos;d like to help us keep building, any contribution
               means the world. Choose whichever method works best for you.
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function Donate() {
 
         {/* What Your Support Funds */}
         <ScrollReveal delay={100}>
-          <div className="mb-16 rounded-lg border border-yellow-800/30 bg-yellow-950/5 p-8">
+          <div className="mb-16 rounded-3xl border border-yellow-800/30 bg-yellow-950/5 p-8">
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6 text-center">
               WHERE YOUR SUPPORT GOES
             </h2>
@@ -91,7 +91,7 @@ export default function Donate() {
               ].map(qr => (
                 <div key={qr.name} className="text-center">
                   <div
-                    className="rounded-lg border p-6 bg-stone-900/30 inline-block"
+                    className="rounded-3xl border p-6 bg-stone-900/30 inline-block"
                     style={{ borderColor: `${qr.color}30` }}
                   >
                     <img
@@ -117,7 +117,7 @@ export default function Donate() {
         <div className="space-y-8">
           {DONATION_METHODS.map((method, i) => (
             <ScrollReveal key={method.name} delay={i * 80}>
-              <div className="rounded-lg border border-stone-800/60 bg-stone-900/30 overflow-hidden">
+              <div className="rounded-3xl border border-stone-800/60 bg-stone-900/30 overflow-hidden">
                 <div className="px-8 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div className="flex items-center gap-4">
                     <span className="text-4xl">{method.icon}</span>
@@ -177,8 +177,8 @@ export default function Donate() {
         <ScrollReveal delay={400}>
           <div className="mt-16 text-center">
             <p className="font-['Crimson_Pro'] italic text-xl text-stone-500 max-w-2xl mx-auto">
-              "Whether you donate or not, you are part of this journey. Thank you for playing
-              Forevercraft. That alone means everything."
+              &quot;Whether you donate or not, you are part of this journey. Thank you for playing
+              Forevercraft. That alone means everything.&quot;
             </p>
           </div>
         </ScrollReveal>

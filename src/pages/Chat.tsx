@@ -34,7 +34,7 @@ export default function Chat() {
         ) : isOnline ? (
           /* Online — show chat */
           <>
-            <div className="bg-stone-950 border border-yellow-900/30 rounded-lg shadow-xl shadow-yellow-900/10
+            <div className="bg-stone-950 border border-yellow-900/30 rounded-3xl shadow-xl shadow-yellow-900/10
                             h-[calc(100vh-14rem)] flex flex-col overflow-hidden">
               <ChatWindow />
             </div>
@@ -44,7 +44,7 @@ export default function Chat() {
           </>
         ) : (
           /* Offline fallback */
-          <div className="text-center py-16 border border-stone-800/50 rounded-lg bg-stone-900/20">
+          <div className="text-center py-16 border border-stone-800/50 rounded-3xl bg-stone-900/20">
             <div className="text-4xl mb-4">🌙</div>
             <h2 className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500 mb-4">
               AI IS SLEEPING
@@ -54,16 +54,16 @@ export default function Chat() {
               In the meantime, explore our knowledge base!
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <a href="/artifacts" className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-lg text-sm transition-colors">
+              <a href="/artifacts" className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-3xl text-sm transition-colors">
                 Artifacts
               </a>
-              <a href="/companions" className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-lg text-sm transition-colors">
+              <a href="/companions" className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-3xl text-sm transition-colors">
                 Companions
               </a>
-              <a href="/dream-rate" className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-lg text-sm transition-colors">
+              <a href="/dream-rate" className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-3xl text-sm transition-colors">
                 Dream Rate
               </a>
-              <a href="/lore" className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-lg text-sm transition-colors">
+              <a href="/lore" className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-3xl text-sm transition-colors">
                 Lore
               </a>
             </div>

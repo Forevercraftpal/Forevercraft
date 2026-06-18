@@ -4,10 +4,10 @@ export interface KBEntry {
   category: string
   q: string
   a: string
-  keywords: string[]
+  keywords: Array<string>
 }
 
-export const KNOWLEDGE_BASE: KBEntry[] = [
+export const KNOWLEDGE_BASE: Array<KBEntry> = [
   // ═══════════════════════════════════════════
   // DREAM RATE (0-5)
   // ═══════════════════════════════════════════

@@ -86,7 +86,7 @@ export default function Agency() {
         </div>
         <a
           href="http://josephs-macbook-pro:7777"
-          className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-['Press_Start_2P'] text-xs rounded-lg transition-colors"
+          className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-['Press_Start_2P'] text-xs rounded-3xl transition-colors"
         >
           ENTER COMMAND CENTER
         </a>

@@ -40,11 +40,11 @@ export default function StatCounter({ end, label, duration = 2000, prefix = '', 
   const formatted = count.toLocaleString()
 
   return (
-    <div ref={ref} className="bg-yellow-950/60 border border-yellow-800/50 rounded px-4 py-3 text-center">
-      <div className="font-['Press_Start_2P'] text-[0.7rem] md:text-[0.85rem] text-yellow-400 mb-1">
+    <div ref={ref} className="orb w-24 h-24 md:w-28 md:h-28 animate-breathe" style={{ animationDelay: `${Math.random() * 2}s` }}>
+      <div className="font-['Press_Start_2P'] text-[0.65rem] md:text-[0.75rem] text-yellow-400 mb-0.5">
         {prefix}{formatted}{suffix}
       </div>
-      <div className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-700 tracking-widest uppercase">
+      <div className="font-['Press_Start_2P'] text-[0.4rem] md:text-[0.45rem] text-yellow-700 tracking-widest uppercase text-center px-1">
         {label}
       </div>
     </div>

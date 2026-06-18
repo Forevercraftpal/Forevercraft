@@ -4,15 +4,17 @@ import { Link, useLocation } from 'react-router-dom'
 interface NavItem {
   label: string
   to?: string
-  children?: { label: string; to: string }[]
+  children?: Array<{ label: string; to: string }>
 }
 
-const NAV_ITEMS: NavItem[] = [
+const NAV_ITEMS: Array<NavItem> = [
   { label: 'Home', to: '/' },
+  { label: 'Expansion', to: '/bountiful-harvest' },
   { label: 'Gallery', to: '/gallery' },
   {
     label: 'Systems',
     children: [
+      { label: 'Bountiful Harvest ✦', to: '/bountiful-harvest' },
       { label: 'Dream Rate', to: '/dream-rate' },
       { label: 'Skill Trees', to: '/skill-trees' },
       { label: 'CraftForever', to: '/craftforever' },
@@ -58,11 +60,11 @@ export default function Navigation() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
   const isActive = (to: string) => location.pathname === to
-  const isChildActive = (children?: { to: string }[]) =>
+  const isChildActive = (children?: Array<{ to: string }>) =>
     children?.some(c => location.pathname === c.to)
 
   return (
-    <nav className="sticky top-0 z-50 bg-stone-950/95 backdrop-blur-sm border-b-2 border-yellow-800/80 shadow-lg shadow-black/30">
+    <nav className="sticky top-0 z-50 bg-stone-950/90 backdrop-blur-xl border-b border-yellow-800/30 shadow-[0_4px_30px_rgba(0,0,0,0.4),0_0_60px_rgba(251,191,36,0.03)]" style={{ borderRadius: '0 0 24px 24px' }}>
       <div className="max-w-[1600px] mx-auto px-4 md:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 no-underline shrink-0">
@@ -79,10 +81,10 @@ export default function Navigation() {
               {item.to ? (
                 <Link
                   to={item.to}
-                  className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-4 py-2.5 rounded transition-colors no-underline inline-flex items-center h-10 ${
+                  className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 ${
                     isActive(item.to)
-                      ? 'text-yellow-400 bg-yellow-950/40'
-                      : 'text-stone-500 hover:text-yellow-600'
+                      ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
+                      : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
                   }`}
                 >
                   {item.label.toUpperCase()}
@@ -90,22 +92,22 @@ export default function Navigation() {
               ) : (
                 <>
                   <button
-                    className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-4 py-2.5 rounded transition-colors inline-flex items-center h-10 ${
+                    className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 inline-flex items-center h-9 ${
                       isChildActive(item.children)
-                        ? 'text-yellow-400 bg-yellow-950/40'
-                        : 'text-stone-500 hover:text-yellow-600'
+                        ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
+                        : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
                     }`}
                   >
                     {item.label.toUpperCase()} <span className="text-[0.7rem] ml-1">▾</span>
                   </button>
                   {/* Dropdown */}
-                  <div className="absolute top-full left-0 pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                    <div className="bg-stone-900 border border-yellow-900/50 rounded shadow-xl shadow-black/40 py-1 min-w-[220px]">
+                  <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="bg-stone-900/95 backdrop-blur-xl border border-yellow-900/30 rounded-3xl shadow-xl shadow-black/40 py-2 min-w-[220px] overflow-hidden">
                       {item.children?.map(child => (
                         <Link
                           key={child.to}
                           to={child.to}
-                          className={`block px-5 py-2.5 font-['Press_Start_2P'] text-[0.65rem] tracking-wider no-underline transition-colors ${
+                          className={`block px-5 py-2.5 font-['Press_Start_2P'] text-[0.65rem] tracking-wider no-underline transition-all duration-200 ${
                             isActive(child.to)
                               ? 'text-yellow-400 bg-yellow-950/40'
                               : 'text-stone-400 hover:text-yellow-500 hover:bg-yellow-950/20'
@@ -124,10 +126,10 @@ export default function Navigation() {
           {/* Downloads — last item, after Donate */}
           <Link
             to="/downloads"
-            className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-4 py-2.5 rounded transition-colors no-underline inline-flex items-center h-10 shrink-0 ${
+            className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 shrink-0 ${
               isActive('/downloads')
-                ? 'text-yellow-400 bg-yellow-950/40'
-                : 'text-stone-500 hover:text-yellow-600'
+                ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
+                : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
             }`}
           >
             DOWNLOADS
@@ -145,7 +147,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-stone-900 border-t border-yellow-900/30 max-h-[70vh] overflow-y-auto">
+        <div className="lg:hidden bg-stone-900/95 backdrop-blur-xl border-t border-yellow-900/20 max-h-[70vh] overflow-y-auto" style={{ borderRadius: '0 0 24px 24px' }}>
           {NAV_ITEMS.map(item => (
             <div key={item.label}>
               {item.to ? (

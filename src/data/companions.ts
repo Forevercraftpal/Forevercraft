@@ -1,6 +1,6 @@
 import type { Companion } from './types'
 
-export const companions: Companion[] = [
+export const companions: Array<Companion> = [
   { id: 1, signature: 'chick', displayName: 'Chick', tier: 'Common', abilityName: 'Tiny Legs', abilityDescription: 'Speed +0.003 to +0.015', canEvolve: false },
   { id: 2, signature: 'cow', displayName: 'Cow', tier: 'Common', abilityName: 'Pastoral', abilityDescription: 'Saturation effect', canEvolve: false },
   { id: 3, signature: 'duck', displayName: 'Duck', tier: 'Common', abilityName: 'Waddle', abilityDescription: 'Swim speed +0.05 to +0.5', canEvolve: false },

@@ -9,6 +9,7 @@ import StarField from './components/effects/StarField'
 import ForevercraftAI from './components/ai/ForevercraftAI'
 
 const Home = lazy(() => import('./pages/Home'))
+const BountifulHarvest = lazy(() => import('./pages/BountifulHarvest'))
 const Artifacts = lazy(() => import('./pages/Artifacts'))
 const ArmorSets = lazy(() => import('./pages/ArmorSets'))
 const SpiritWeapons = lazy(() => import('./pages/SpiritWeapons'))
@@ -65,6 +66,7 @@ export default function App() {
         <main className="min-h-screen">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/bountiful-harvest" element={<BountifulHarvest />} />
             <Route path="/artifacts" element={<Artifacts />} />
             <Route path="/armor-sets" element={<ArmorSets />} />
             <Route path="/spirit-weapons" element={<SpiritWeapons />} />

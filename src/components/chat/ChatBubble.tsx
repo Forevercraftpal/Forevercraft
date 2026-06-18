@@ -25,7 +25,7 @@ export default function ChatBubble() {
       {/* Chat Window */}
       {isOpen && (
         <div className="fixed bottom-20 right-4 z-50 w-[380px] h-[520px] max-w-[calc(100vw-2rem)] max-h-[calc(100vh-6rem)]
-                        bg-stone-950 border border-yellow-900/40 rounded-lg shadow-2xl shadow-yellow-900/20
+                        bg-stone-950 border border-yellow-900/40 rounded-3xl shadow-2xl shadow-yellow-900/20
                         flex flex-col overflow-hidden">
           {/* Header */}
           <div className="flex items-center justify-between px-4 py-3 bg-stone-900/80 border-b border-yellow-900/30">

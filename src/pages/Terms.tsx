@@ -47,7 +47,7 @@ export default function Terms() {
           </p>
           <p>
             Refund requests for one-time donations should be directed to Buy Me a Coffee support.
-            Membership refunds follow Buy Me a Coffee's standard refund policy.
+            Membership refunds follow Buy Me a Coffee&apos;s standard refund policy.
           </p>
 
           <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CUSTOM LORE CONTRIBUTIONS</h2>

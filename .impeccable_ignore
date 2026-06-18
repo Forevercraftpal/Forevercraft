@@ -1,0 +1,30 @@
+# Paths the Impeccable 2.0 scanner should skip in this frontend.
+# Format: gitignore-lite — one glob per line, `#` starts a comment.
+# Negation (`!`) is not supported; delete a line to un-ignore.
+
+# Build output & vendored code
+node_modules/
+dist/
+build/
+out/
+.turbo/
+.vercel/
+coverage/
+functions/
+modrinth-modules/
+
+# Test and story files — lower-signal for design anti-patterns
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+*.stories.ts
+*.stories.tsx
+__tests__/
+__mocks__/
+
+# Generated
+*.d.ts
+
+# Convex generated client (not hand-written design surface)
+convex/_generated/

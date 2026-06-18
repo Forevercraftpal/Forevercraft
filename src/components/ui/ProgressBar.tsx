@@ -25,9 +25,9 @@ export default function ProgressBar({
           {showValue && <span className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500">{value}/{max}</span>}
         </div>
       )}
-      <div className={`w-full bg-stone-800 rounded-sm overflow-hidden ${height}`}>
+      <div className={`w-full bg-stone-800 rounded-2xl overflow-hidden ${height}`}>
         <div
-          className="h-full rounded-sm transition-all duration-1000 ease-out"
+          className="h-full rounded-2xl transition-all duration-1000 ease-out"
           style={{ width: `${pct}%`, backgroundColor: barColor }}
         />
       </div>

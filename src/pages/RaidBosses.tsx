@@ -48,7 +48,7 @@ export default function RaidBosses() {
             <div>
               <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">STRUCTURE &amp; PROGRESSION</h3>
               <p className="font-['Crimson_Pro'] text-base text-stone-400">
-                Each structure dungeon has a 10-floor layout. Fight through all 10 floors to reach the raid boss on floor 10. After clearing floor 10, dungeon prompts change from "dungeon" to "raid" to reflect the increased challenge tier.
+                Each structure dungeon has a 10-floor layout. Fight through all 10 floors to reach the raid boss on floor 10. After clearing floor 10, dungeon prompts change from &quot;dungeon&quot; to &quot;raid&quot; to reflect the increased challenge tier.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function RaidBosses() {
         {BOSSES.map((boss, i) => (
           <ScrollReveal key={boss.name} delay={i * 40}>
             <div
-              className="rounded-lg border overflow-hidden transition-all duration-300 cursor-pointer hover:shadow-lg"
+              className="rounded-3xl border overflow-hidden transition-all duration-300 cursor-pointer hover:shadow-lg"
               style={{
                 borderColor: expandedIdx === i ? `${boss.color}60` : `${boss.color}20`,
                 background: expandedIdx === i
@@ -131,7 +131,7 @@ export default function RaidBosses() {
                 <div className="overflow-hidden">
                   <div className="px-5 pb-5 space-y-4 border-t border-stone-800/30 pt-4">
                     <p className="font-['Crimson_Pro'] italic text-stone-400">
-                      "{boss.lore}"
+                      &quot;{boss.lore}&quot;
                     </p>
 
                     {/* Phases */}

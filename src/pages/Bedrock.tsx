@@ -124,7 +124,7 @@ export default function Bedrock() {
         <ScrollReveal>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
             {BEDROCK_STATS.map(stat => (
-              <div key={stat.label} className="text-center p-4 rounded-lg border border-cyan-800/30 bg-cyan-950/10">
+              <div key={stat.label} className="text-center p-4 rounded-3xl border border-cyan-800/30 bg-cyan-950/10">
                 <div className="font-['Press_Start_2P'] text-[1.2rem] text-cyan-400 mb-1">{stat.value}</div>
                 <div className="font-['Press_Start_2P'] text-[0.55rem] text-stone-500 tracking-widest">{stat.label}</div>
               </div>
@@ -138,7 +138,7 @@ export default function Bedrock() {
             <p className="font-['Crimson_Pro'] text-xl text-stone-400 max-w-3xl mx-auto leading-relaxed">
               Everything that made Forevercraft special on Java — 408 artifacts, 14 spirit weapons,
               102 companions, 14 raid bosses, an infinite castle, and 138 interconnected systems —
-              now runs natively on Bedrock Edition through Minecraft's Script API. No mods. No
+              now runs natively on Bedrock Edition through Minecraft&apos;s Script API. No mods. No
               experimental toggles. Just install the behavior pack and play.
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function Bedrock() {
             </h2>
             <div className="grid md:grid-cols-3 gap-5">
               {ARCHITECTURE.map(item => (
-                <div key={item.title} className="rounded-lg border border-stone-800/60 bg-stone-900/30 p-5">
+                <div key={item.title} className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-5">
                   <span className="text-2xl block mb-2">{item.icon}</span>
                   <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-stone-100 mb-2">{item.title.toUpperCase()}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{item.desc}</p>
@@ -164,7 +164,7 @@ export default function Bedrock() {
 
         {/* Bedrock Advantages */}
         <ScrollReveal delay={200}>
-          <div className="mb-16 rounded-lg border border-cyan-800/30 bg-cyan-950/5 p-8">
+          <div className="mb-16 rounded-3xl border border-cyan-800/30 bg-cyan-950/5 p-8">
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-cyan-500 tracking-widest mb-6 text-center">
               BEDROCK ADVANTAGES
             </h2>
@@ -210,7 +210,7 @@ export default function Bedrock() {
 
         {/* Key Differences from Java */}
         <ScrollReveal delay={300}>
-          <div className="mb-16 rounded-lg border border-yellow-800/30 bg-yellow-950/5 p-8">
+          <div className="mb-16 rounded-3xl border border-yellow-800/30 bg-yellow-950/5 p-8">
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6 text-center">
               KEY DIFFERENCES FROM JAVA
             </h2>
@@ -248,7 +248,7 @@ export default function Bedrock() {
             </p>
             <a
               href="/downloads"
-              className="inline-block px-8 py-4 rounded-lg bg-cyan-600/90 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.7rem] tracking-wider transition-colors no-underline"
+              className="inline-block px-8 py-4 rounded-3xl bg-cyan-600/90 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.7rem] tracking-wider transition-colors no-underline"
             >
               DOWNLOADS
             </a>
@@ -259,7 +259,7 @@ export default function Bedrock() {
         <ScrollReveal delay={400}>
           <div className="text-center">
             <p className="font-['Crimson_Pro'] italic text-xl text-stone-500 max-w-2xl mx-auto">
-              "Same dream. Every platform."
+              &quot;Same dream. Every platform.&quot;
             </p>
           </div>
         </ScrollReveal>

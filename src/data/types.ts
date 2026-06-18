@@ -19,7 +19,7 @@ export interface Artifact {
   type: ArtifactType
   subtype?: WeaponSubtype | string
   description: string
-  abilities: string[]
+  abilities: Array<string>
   setId?: string
   biome?: string
 }
@@ -38,8 +38,8 @@ export interface ArmorSet {
   name: string
   tier: Tier
   theme: string
-  pieces: ArmorSetPiece[]
-  weapons?: string[]
+  pieces: Array<ArmorSetPiece>
+  weapons?: Array<string>
   twoPiece?: string
   fourPiece?: string
   fivePiece?: string
@@ -64,8 +64,8 @@ export interface SpiritWeapon {
   hasTwin: boolean
   twinName?: string
   lore: string
-  abilities: SpiritAbility[]
-  metamorphosisRequirements: string[]
+  abilities: Array<SpiritAbility>
+  metamorphosisRequirements: Array<string>
   color: string
 }
 
@@ -82,9 +82,9 @@ export interface GameClass {
   archetype: string
   weaponType: string
   coreMechanic: string
-  strengths: string[]
-  weaknesses: string[]
-  abilities: ClassAbility[]
+  strengths: Array<string>
+  weaknesses: Array<string>
+  abilities: Array<ClassAbility>
   subclassOf?: string
   subclass?: string
   spiritWeapon?: string
@@ -112,8 +112,8 @@ export interface Companion {
 export interface BossPhase {
   phase: number
   hpThreshold: string
-  abilities: string[]
-  mechanics: string[]
+  abilities: Array<string>
+  mechanics: Array<string>
 }
 
 export interface RaidBoss {
@@ -123,7 +123,7 @@ export interface RaidBoss {
   structure: string
   className: string
   spiritWeapon: string
-  phases: BossPhase[]
+  phases: Array<BossPhase>
   puzzle: string
   enrageTimer: string
   difficulty: number
@@ -140,7 +140,7 @@ export interface SkillTree {
   description: string
   maxLevel: number
   maxPrestige: number
-  prestigeAbilities: string[]
+  prestigeAbilities: Array<string>
   icon: string
 }
 
@@ -159,7 +159,7 @@ export interface WorldEvent {
   id: string
   name: string
   description: string
-  effects: string[]
+  effects: Array<string>
   duration: string
   omenWarning: string
   color: string
@@ -200,7 +200,7 @@ export interface QuestTier {
 export interface ReputationLevel {
   name: string
   threshold: number
-  perks: string[]
+  perks: Array<string>
 }
 
 // ── Cooking ───────────────────────────────────────────────
@@ -208,7 +208,7 @@ export interface ReputationLevel {
 export interface Recipe {
   name: string
   category: string
-  ingredients: string[]
+  ingredients: Array<string>
   effect: string
   duration?: string
   seasonal?: string
@@ -220,7 +220,7 @@ export interface SpiritTool {
   id: string
   name: string
   toolType: string
-  abilities: string[]
+  abilities: Array<string>
   lore: string
 }
 

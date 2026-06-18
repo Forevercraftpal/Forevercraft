@@ -26,7 +26,7 @@ const CREDITS = {
       note: 'Thank you for always helping and supporting, and for being an enormous help building the website. You probably saved me 50+ hours of headaches trying to get it all working. Couldn\'t have done it without you, my dear brother.',
     },
   ],
-  supporters: [] as { name: string; tier: string }[],
+  supporters: [] as Array<{ name: string; tier: string }>,
 }
 
 export default function Credits() {
@@ -74,7 +74,7 @@ export default function Credits() {
               {CREDITS.family.map((person, i) => (
                 <div
                   key={i}
-                  className="rounded-lg border border-yellow-800/30 bg-gradient-to-r from-yellow-950/10 to-transparent p-6"
+                  className="rounded-3xl border border-yellow-800/30 bg-gradient-to-r from-yellow-950/10 to-transparent p-6"
                 >
                   <p className="font-['Press_Start_2P'] text-[0.8rem] text-yellow-400 mb-3">{person.name}</p>
                   <p className="font-['Crimson_Pro'] text-lg text-stone-400 italic leading-relaxed">{person.note}</p>
@@ -105,7 +105,7 @@ export default function Credits() {
                 ))}
               </div>
             ) : (
-              <div className="rounded-lg border border-dashed border-yellow-800/30 p-10">
+              <div className="rounded-3xl border border-dashed border-yellow-800/30 p-10">
                 <p className="font-['Crimson_Pro'] text-lg text-stone-600 italic">
                   Be the first name on the wall.
                 </p>
@@ -113,7 +113,7 @@ export default function Credits() {
                   href="https://buymeacoffee.com/forevercraft"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 px-6 py-2.5 rounded-lg bg-yellow-600/90 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.6rem] tracking-wider transition-colors no-underline"
+                  className="inline-block mt-4 px-6 py-2.5 rounded-3xl bg-yellow-600/90 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.6rem] tracking-wider transition-colors no-underline"
                 >
                   SUPPORT US
                 </a>
@@ -126,7 +126,7 @@ export default function Credits() {
         <ScrollReveal delay={400}>
           <div className="text-center">
             <p className="font-['Crimson_Pro'] italic text-xl text-stone-500 max-w-2xl mx-auto">
-              "Take your time, the committed win the race to glory, the quick fall into the traps the world has laid before you."
+              &quot;Take your time, the committed win the race to glory, the quick fall into the traps the world has laid before you.&quot;
             </p>
           </div>
         </ScrollReveal>

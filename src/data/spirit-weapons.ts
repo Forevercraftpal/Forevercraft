@@ -1,6 +1,6 @@
 import type { SpiritWeapon } from './types'
 
-export const spiritWeapons: SpiritWeapon[] = [
+export const spiritWeapons: Array<SpiritWeapon> = [
   {
     id: 1, name: 'Hollow Fangs', className: 'Rogue', weaponType: 'Dagger',
     bossName: 'The Hollow Sovereign', structure: 'Ancient City',

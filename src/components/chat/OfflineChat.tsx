@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { KNOWLEDGE_BASE, type KBEntry } from '../../data/knowledge-base'
 
-function searchKB(query: string, limit = 3): KBEntry[] {
+function searchKB(query: string, limit = 3): Array<KBEntry> {
   const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2)
   if (!terms.length) return []
 
@@ -38,7 +38,7 @@ interface Message {
 }
 
 export default function OfflineChat({ compact = false }: { compact?: boolean }) {
-  const [messages, setMessages] = useState<Message[]>([])
+  const [messages, setMessages] = useState<Array<Message>>([])
   const [input, setInput] = useState('')
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -108,7 +108,7 @@ export default function OfflineChat({ compact = false }: { compact?: boolean }) 
         {messages.map((msg, i) => (
           <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
             <div
-              className={`max-w-[85%] px-3 py-2 rounded-lg text-sm leading-relaxed ${
+              className={`max-w-[85%] px-3 py-2 rounded-3xl text-sm leading-relaxed ${
                 msg.role === 'user'
                   ? 'bg-yellow-700/20 text-yellow-100 border border-yellow-900/30'
                   : 'bg-stone-900/60 text-stone-300 border border-stone-800/50'
@@ -132,7 +132,7 @@ export default function OfflineChat({ compact = false }: { compact?: boolean }) 
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
             placeholder="Search the knowledge base..."
-            className="flex-1 bg-stone-900 border border-stone-800 rounded-lg px-3 py-2
+            className="flex-1 bg-stone-900 border border-stone-800 rounded-3xl px-3 py-2
                        text-sm text-stone-200 placeholder:text-stone-600
                        focus:outline-none focus:border-yellow-900/60
                        transition-colors"
@@ -141,7 +141,7 @@ export default function OfflineChat({ compact = false }: { compact?: boolean }) 
             onClick={sendMessage}
             disabled={!input.trim()}
             className="px-4 py-2 bg-yellow-700 hover:bg-yellow-600 disabled:bg-stone-800
-                       disabled:text-stone-600 text-stone-950 rounded-lg text-sm font-medium
+                       disabled:text-stone-600 text-stone-950 rounded-3xl text-sm font-medium
                        transition-colors"
           >
             Search

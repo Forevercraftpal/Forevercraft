@@ -39,7 +39,7 @@ export default function PressKit() {
         <ScrollReveal>
           <div className="mb-16">
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">SHORT DESCRIPTION</h2>
-            <div className="rounded-lg border border-stone-800/60 bg-stone-900/30 p-6">
+            <div className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-6">
               <p className="font-['Crimson_Pro'] text-lg text-stone-300 leading-relaxed">
                 Forevercraft is a loot-driven fantasy overhaul for vanilla Minecraft with 408 artifacts,
                 102 companions, 14 spirit weapons, 14 raid bosses, an infinite castle, 15 skill trees,
@@ -60,9 +60,9 @@ export default function PressKit() {
         <ScrollReveal delay={50}>
           <div className="mb-16">
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">TAGLINE</h2>
-            <div className="rounded-lg border border-stone-800/60 bg-stone-900/30 p-6">
+            <div className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-6">
               <p className="font-['Crimson_Pro'] text-2xl italic text-yellow-600/80">
-                "Every world has treasure. This one has dreams."
+                &quot;Every world has treasure. This one has dreams.&quot;
               </p>
               <button
                 onClick={() => navigator.clipboard.writeText('Every world has treasure. This one has dreams.')}
@@ -80,7 +80,7 @@ export default function PressKit() {
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">QUICK FACTS</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {QUICK_FACTS.map(fact => (
-                <div key={fact.label} className="rounded-lg border border-stone-800/60 bg-stone-900/30 p-4 text-center">
+                <div key={fact.label} className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-4 text-center">
                   <div className="font-['Press_Start_2P'] text-[1rem] text-yellow-400 mb-1">{fact.value}</div>
                   <div className="font-['Press_Start_2P'] text-[0.5rem] text-stone-500 tracking-widest">{fact.label.toUpperCase()}</div>
                 </div>
@@ -95,7 +95,7 @@ export default function PressKit() {
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">DOWNLOADABLE ASSETS</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {ASSETS.map(asset => (
-                <div key={asset.name} className="rounded-lg border border-stone-800/60 bg-stone-900/30 p-5 flex items-center gap-4">
+                <div key={asset.name} className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-5 flex items-center gap-4">
                   <img src={asset.file} alt={asset.name} className="w-16 h-16 rounded" style={{ imageRendering: 'pixelated' }} />
                   <div className="flex-1">
                     <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-stone-200 mb-1">{asset.name}</h3>
@@ -118,7 +118,7 @@ export default function PressKit() {
         <ScrollReveal delay={200}>
           <div className="mb-16">
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">OFFICIAL LINKS</h2>
-            <div className="rounded-lg border border-stone-800/60 bg-stone-900/30 p-6 space-y-3">
+            <div className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-6 space-y-3">
               {[
                 { label: 'Website', url: 'https://forevercraft.co' },
                 { label: 'Player Guide', url: 'https://forevercraft.co/guide' },

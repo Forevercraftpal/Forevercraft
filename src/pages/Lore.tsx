@@ -43,7 +43,7 @@ export default function Lore() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           {LORE_STATS.map((stat, i) => (
             <ScrollReveal key={stat.label} delay={i * 80}>
-              <div className="text-center rounded-lg border border-purple-900/30 bg-purple-950/15 p-5">
+              <div className="text-center rounded-3xl border border-purple-900/30 bg-purple-950/15 p-5">
                 <p className="font-['Press_Start_2P'] text-xl text-purple-400">{stat.value}</p>
                 <p className="font-['Press_Start_2P'] text-[0.55rem] text-purple-700 mt-1 mb-2">{stat.label}</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-500">{stat.detail}</p>
@@ -57,13 +57,13 @@ export default function Lore() {
           <div className="text-center mb-10">
             <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">LORE COLLECTION MAP</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
-              Open the Lore Collection Map through the Forevercraft Codex to see which fragments you've found and which sets remain incomplete. Color-coded by completion status, with up to 10 in-progress sets highlighted.
+              Open the Lore Collection Map through the Forevercraft Codex to see which fragments you&apos;ve found and which sets remain incomplete. Color-coded by completion status, with up to 10 in-progress sets highlighted.
             </p>
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay={100}>
-          <div className="max-w-xl mx-auto rounded-lg border border-purple-800/30 bg-purple-950/10 p-5 text-center mb-16">
+          <div className="max-w-xl mx-auto rounded-3xl border border-purple-800/30 bg-purple-950/10 p-5 text-center mb-16">
             <p className="font-['Crimson_Pro'] text-base text-stone-400">
               Fragments are found in structures, dropped by bosses, sold by rare merchants, and hidden in the environment. Some only appear during specific seasons or world events.
             </p>
@@ -86,7 +86,7 @@ export default function Lore() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {GUIDE_BOOKS.map((book, i) => (
               <ScrollReveal key={book.title} delay={i * 60}>
-                <div className="rounded-lg border border-stone-800 bg-stone-900/40 p-5 h-full flex flex-col">
+                <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-5 h-full flex flex-col">
                   <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 mb-1 leading-relaxed">{book.title}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-600 italic mb-3">by {book.author}</p>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400 flex-1">{book.description}</p>
@@ -126,7 +126,7 @@ export default function Lore() {
           <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {MILESTONE_INFO.map((m, i) => (
               <ScrollReveal key={m.title} delay={i * 60}>
-                <div className="rounded-lg border border-stone-800 bg-stone-900/30 p-5 h-full">
+                <div className="rounded-3xl border border-stone-800 bg-stone-900/30 p-5 h-full">
                   <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-500 mb-2">{m.title}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{m.description}</p>
                 </div>
@@ -180,13 +180,13 @@ export default function Lore() {
       <section className="max-w-2xl mx-auto px-6 pb-20">
         <div className="opacity-[0.15] hover:opacity-100 transition-opacity duration-1000">
           <p className="font-['Crimson_Pro'] italic text-[0.7rem] text-stone-600 text-center leading-relaxed">
-            "I met a traveler once, at the foot of a stronghold, who carried two swords where
-            all others carried one. I asked him his class. He said nothing. I asked him his weapon's
-            name. He whispered something — 'Nite' — and then laughed, as if the word itself was
-            a secret he wasn't supposed to tell. When I looked again, he was gone.
+            &quot;I met a traveler once, at the foot of a stronghold, who carried two swords where
+            all others carried one. I asked him his class. He said nothing. I asked him his weapon&apos;s
+            name. He whispered something — &apos;Nite&apos; — and then laughed, as if the word itself was
+            a secret he wasn&apos;t supposed to tell. When I looked again, he was gone.
             His twin blade caught the dawn light as he vanished — dark orange, like the last ember
             of a fire you thought was dead. I have searched every codex since. The fourteenth
-            class does not exist. And yet I saw it with my own eyes."
+            class does not exist. And yet I saw it with my own eyes.&quot;
           </p>
           <p className="font-['Crimson_Pro'] italic text-[0.6rem] text-stone-700 text-center mt-2">
             — A Torn Page, found near the End Portal

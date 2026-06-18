@@ -142,7 +142,7 @@ export default function CraftForever() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {SPIRIT_TOOLS.map((tool, i) => (
             <ScrollReveal key={tool.name} delay={i * 80}>
-              <div className="rounded-lg border border-stone-800 bg-stone-900/40 p-5 h-full">
+              <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-5 h-full">
                 <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 mb-1">{tool.type}</p>
                 <h3 className={`font-['Press_Start_2P'] text-[0.6rem] ${tool.color} mb-2`}>{tool.name}</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">{tool.description}</p>
@@ -167,7 +167,7 @@ export default function CraftForever() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
             {TRADE_TRIAL_CATEGORIES.map((cat, i) => (
               <ScrollReveal key={cat} delay={i * 60}>
-                <div className="text-center rounded-lg border border-yellow-900/30 bg-yellow-900/10 p-4">
+                <div className="text-center rounded-3xl border border-yellow-900/30 bg-yellow-900/10 p-4">
                   <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400">{cat}</p>
                   <p className="font-['Crimson_Pro'] text-base text-stone-500 mt-1">10 tiers</p>
                 </div>
@@ -176,7 +176,7 @@ export default function CraftForever() {
           </div>
 
           <ScrollReveal delay={400}>
-            <div className="max-w-xl mx-auto text-center rounded-lg border border-yellow-800/30 bg-yellow-900/10 p-4">
+            <div className="max-w-xl mx-auto text-center rounded-3xl border border-yellow-800/30 bg-yellow-900/10 p-4">
               <p className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-600 mb-1">MASTER TRIAL (TIER 10)</p>
               <p className="font-['Crimson_Pro'] text-base text-stone-400">
                 Spawns a procedural arena tailored to your trade. Unique obstacles, time pressure, and the ultimate test of skill.
@@ -194,19 +194,19 @@ export default function CraftForever() {
               <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">ARTIFACT FORGE MATERIALS</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 28 crafting materials across 4 categories and 7 tiers. Found through prospect mining, biome-inclined drops,
-                and chemistry. Forge them at the Artisan's Table to create artifacts — or fail and still have a 7% chance at one.
+                and chemistry. Forge them at the Artisan&apos;s Table to create artifacts — or fail and still have a 7% chance at one.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={100}>
             <div className="grid md:grid-cols-2 gap-6 mb-10">
-              <div className="rounded-lg border border-stone-800 bg-stone-900/40 p-5">
+              <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-5">
                 <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-amber-400 mb-3">FORGE MATERIALS</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400 mb-3">Weapon, Armor, Tool, and Accessory materials in 7 tiers — from Raw Blade Shards to the legendary Doomforge Core.</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-500">Store them in the <span className="text-stone-300">Ore Bag</span> (earned at Blacksmith level 1). 28 slots, 3 pages of portable forge storage.</p>
               </div>
-              <div className="rounded-lg border border-purple-800/40 bg-purple-950/10 p-5">
+              <div className="rounded-3xl border border-purple-800/40 bg-purple-950/10 p-5">
                 <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-purple-400 mb-3">CHEMISTRY MATERIALS</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400 mb-3">Potion ingredients and chemical reagents for the new Chemistry advantage track. Brew potions, create elixirs, and push your craft.</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-500">Store them in the <span className="text-stone-300">Ingredient Binder</span> (earned at Chemistry level 1). 28 slots, 3 pages of portable chemistry storage.</p>
@@ -215,7 +215,7 @@ export default function CraftForever() {
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <div className="rounded-lg border border-stone-800 bg-stone-900/30 p-5">
+            <div className="rounded-3xl border border-stone-800 bg-stone-900/30 p-5">
               <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-stone-400 mb-3">BIOME-INCLINED DROPS</h3>
               <p className="font-['Crimson_Pro'] text-base text-stone-400">
                 Materials drop with biome weighting — mine in the Desert for more Weapon and Accessory materials,
@@ -243,7 +243,7 @@ export default function CraftForever() {
           <div className="grid md:grid-cols-2 gap-6">
             {CRAFT_TRACKS.map((track, i) => (
               <ScrollReveal key={track.name} delay={i * 60}>
-                <div className="rounded-lg border border-stone-800/60 bg-stone-900/30 p-5">
+                <div className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-5">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-2xl">{track.icon}</span>
                     <h3 className="font-['Press_Start_2P'] text-[0.7rem]" style={{ color: track.color }}>{track.name.toUpperCase()}</h3>
@@ -318,7 +318,7 @@ export default function CraftForever() {
           <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto mb-8">
             {MILESTONE_TITLES.map((m, i) => (
               <ScrollReveal key={m.rank} delay={i * 60}>
-                <div className="text-center rounded-lg border border-stone-800 bg-stone-900/40 px-5 py-3">
+                <div className="text-center rounded-3xl border border-stone-800 bg-stone-900/40 px-5 py-3">
                   <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 mb-1">RANK {m.rank}</p>
                   <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400">{m.title}</p>
                 </div>
@@ -327,7 +327,7 @@ export default function CraftForever() {
           </div>
 
           <ScrollReveal delay={400}>
-            <div className="text-center rounded-lg border border-yellow-800/30 bg-yellow-900/10 p-5 max-w-xl mx-auto">
+            <div className="text-center rounded-3xl border border-yellow-800/30 bg-yellow-900/10 p-5 max-w-xl mx-auto">
               <p className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-600 mb-2">ARTISAN TOME</p>
               <p className="font-['Crimson_Pro'] text-base text-stone-400">
                 Once you earn a Spirit Tool, its Artisan Tome unlocks — a 100-part quest chain that levels and awakens the tool through crafting challenges. Complete the full chain to reach its ultimate form.

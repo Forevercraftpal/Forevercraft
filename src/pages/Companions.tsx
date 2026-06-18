@@ -54,10 +54,10 @@ export default function Companions() {
         <ScrollReveal delay={300}>
           <Spoiler label="Companion system deep mechanics...">
             <div className="space-y-3 font-['Crimson_Pro'] text-base text-stone-400">
-              <p><span className="text-yellow-500 font-semibold">Home Biomes:</span> Each companion has preferred biomes. They're 10x more likely to appear in crates opened in their home biome (7% vs 0.7% elsewhere).</p>
+              <p><span className="text-yellow-500 font-semibold">Home Biomes:</span> Each companion has preferred biomes. They&apos;re 10x more likely to appear in crates opened in their home biome (7% vs 0.7% elsewhere).</p>
               <p><span className="text-yellow-500 font-semibold">Relationship States:</span> Lonely → Neutral → Content → Happy → Joyful → Overjoyed → Eternal Bond. Feed Pet Treats and adventure together to build RP.</p>
               <p><span className="text-yellow-500 font-semibold">Shared Memories:</span> 20+ milestone events are recorded as shared adventures — boss kills, mythical finds, biome discoveries. 5 shared memories = XP bonus.</p>
-              <p><span className="text-yellow-500 font-semibold">Pet Duels:</span> Challenge another player's companion to a 30-second 1v1 with bossbar timer. Career stats and win streaks are tracked.</p>
+              <p><span className="text-yellow-500 font-semibold">Pet Duels:</span> Challenge another player&apos;s companion to a 30-second 1v1 with bossbar timer. Career stats and win streaks are tracked.</p>
               <p><span className="text-yellow-500 font-semibold">Rival Pets:</span> Some companions have natural rivalries that affect interactions.</p>
               <p><span className="text-yellow-500 font-semibold">Companion Catalogue:</span> A floating interactive catalogue you can open anywhere to browse your entire roster.</p>
             </div>

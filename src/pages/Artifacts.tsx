@@ -57,7 +57,7 @@ export default function Artifacts() {
               <p><span className="text-yellow-500 font-semibold">Patina System:</span> Tracks playtime with each artifact. Fresh → Worn → Seasoned → Storied → Legendary over 72+ hours. Each stage adds flavor text and a permanent stat bonus.</p>
               <p><span className="text-yellow-500 font-semibold">Constellations:</span> 10 thematic groupings of artifacts. Complete a constellation = +0.25 permanent Dream Rate (up to +2.5 total).</p>
               <p><span className="text-yellow-500 font-semibold">Transmutation:</span> Sacrifice same-tier artifacts for one of the next tier. 5 Common → 1 Uncommon, 4 Rare → 1 Ornate, 3 Exquisite → 1 Mythical. Artificer nearby reduces cost by 1 daily.</p>
-              <p><span className="text-yellow-500 font-semibold">Healer Artifacts:</span> 12 right-click healing items (2 per tier). Healer's Oath: during any healer cooldown, Weakness V is applied and arrows are neutralized.</p>
+              <p><span className="text-yellow-500 font-semibold">Healer Artifacts:</span> 12 right-click healing items (2 per tier). Healer&apos;s Oath: during any healer cooldown, Weakness V is applied and arrows are neutralized.</p>
               <p><span className="text-yellow-500 font-semibold">Glyphforge:</span> Permanent rune binding on artifacts. 12 glyphs + Arcanum (random). Capacity scales: 1 (base) to 13 (mythical). Time-gated: 3 days for first glyph, 15 for thirteenth.</p>
             </div>
           </Spoiler>

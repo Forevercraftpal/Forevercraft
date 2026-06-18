@@ -65,7 +65,7 @@ export default function Cooking() {
             { title: 'Culinary Skill Tree', description: 'One of the 15 Advantage Trees. +10% Well-Fed duration per 5 levels. Leveled by meals cooked (50 to 1,250).' },
           ].map((feat, i) => (
             <ScrollReveal key={feat.title} delay={i * 80}>
-              <div className="rounded-lg border border-stone-800 bg-stone-900/30 p-5 h-full">
+              <div className="rounded-3xl border border-stone-800 bg-stone-900/30 p-5 h-full">
                 <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-400 mb-2">{feat.title}</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">{feat.description}</p>
               </div>
@@ -89,7 +89,7 @@ export default function Cooking() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {MASTERY_CATEGORIES.map((cat, i) => (
               <ScrollReveal key={cat.name} delay={i * 50}>
-                <div className="text-center rounded-lg border border-stone-800 bg-stone-900/40 p-4 h-full">
+                <div className="text-center rounded-3xl border border-stone-800 bg-stone-900/40 p-4 h-full">
                   <div className="text-2xl mb-2">{cat.icon}</div>
                   <h3 className="font-['Press_Start_2P'] text-[0.6rem] mb-2" style={{ color: cat.color }}>{cat.name}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-500">{cat.description}</p>
@@ -131,7 +131,7 @@ export default function Cooking() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
             {SEASONAL_RECIPES.map((s, i) => (
               <ScrollReveal key={s.season} delay={i * 100}>
-                <div className={`rounded-lg border ${s.border} bg-gradient-to-br ${s.bg} p-5 text-center`}>
+                <div className={`rounded-3xl border ${s.border} bg-gradient-to-br ${s.bg} p-5 text-center`}>
                   <h3 className={`font-['Press_Start_2P'] text-[0.55rem] ${s.color} mb-2`}>{s.season}</h3>
                   <p className="font-['Crimson_Pro'] text-stone-400 text-sm">{s.count} exclusive recipes</p>
                 </div>
@@ -156,7 +156,7 @@ export default function Cooking() {
           <div className="max-w-xl mx-auto space-y-3">
             {PET_TREATS.map((treat, i) => (
               <ScrollReveal key={treat.tier} delay={i * 60}>
-                <div className="flex items-center justify-between rounded-lg border border-stone-800 bg-stone-900/30 px-5 py-3">
+                <div className="flex items-center justify-between rounded-3xl border border-stone-800 bg-stone-900/30 px-5 py-3">
                   <span className={`font-['Press_Start_2P'] text-[0.65rem] ${treat.color}`}>{treat.tier}</span>
                 </div>
               </ScrollReveal>

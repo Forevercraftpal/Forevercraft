@@ -103,7 +103,7 @@ export default function DonatePopup() {
                 marginTop: 0,
               }}
             >
-              Enjoying Forevercraft? If you'd like to help us keep creating and updating the pack,
+              Enjoying Forevercraft? If you&apos;d like to help us keep creating and updating the pack,
               even a small donation means the world to us.
             </p>
             <a

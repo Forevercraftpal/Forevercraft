@@ -25,7 +25,7 @@ interface Message {
 }
 
 export default function ChatWindow({ compact = false }: { compact?: boolean }) {
-  const [messages, setMessages] = useState<Message[]>([])
+  const [messages, setMessages] = useState<Array<Message>>([])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isOnline, setIsOnline] = useState(true)
@@ -135,7 +135,7 @@ export default function ChatWindow({ compact = false }: { compact?: boolean }) {
         {messages.map((msg, i) => (
           <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
             <div
-              className={`max-w-[85%] px-3 py-2 rounded-lg text-sm leading-relaxed ${
+              className={`max-w-[85%] px-3 py-2 rounded-3xl text-sm leading-relaxed ${
                 msg.role === 'user'
                   ? 'bg-yellow-700/20 text-yellow-100 border border-yellow-900/30'
                   : 'bg-stone-900/60 text-stone-300 border border-stone-800/50'
@@ -148,7 +148,7 @@ export default function ChatWindow({ compact = false }: { compact?: boolean }) {
 
         {isLoading && (
           <div className="flex justify-start">
-            <div className="bg-stone-900/60 border border-stone-800/50 px-3 py-2 rounded-lg">
+            <div className="bg-stone-900/60 border border-stone-800/50 px-3 py-2 rounded-3xl">
               <div className="flex gap-1">
                 <span className="w-2 h-2 bg-yellow-700 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
                 <span className="w-2 h-2 bg-yellow-700 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
@@ -176,7 +176,7 @@ export default function ChatWindow({ compact = false }: { compact?: boolean }) {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
             placeholder="Ask about Forevercraft..."
-            className="flex-1 bg-stone-900 border border-stone-800 rounded-lg px-3 py-2
+            className="flex-1 bg-stone-900 border border-stone-800 rounded-3xl px-3 py-2
                        text-sm text-stone-200 placeholder:text-stone-600
                        focus:outline-none focus:border-yellow-900/60
                        transition-colors"
@@ -186,7 +186,7 @@ export default function ChatWindow({ compact = false }: { compact?: boolean }) {
             onClick={sendMessage}
             disabled={isLoading || !input.trim()}
             className="px-4 py-2 bg-yellow-700 hover:bg-yellow-600 disabled:bg-stone-800
-                       disabled:text-stone-600 text-stone-950 rounded-lg text-sm font-medium
+                       disabled:text-stone-600 text-stone-950 rounded-3xl text-sm font-medium
                        transition-colors"
           >
             Send

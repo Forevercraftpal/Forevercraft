@@ -1,0 +1,176 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "env": {
+    "browser": true,
+    "es2024": true,
+    "node": true
+  },
+  "plugins": [
+    "typescript",
+    "react",
+    "import",
+    "unicorn",
+    "oxc"
+  ],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "perf": "error",
+    "restriction": "off",
+    "pedantic": "off",
+    "style": "off",
+    "nursery": "off"
+  },
+  "rules": {
+    "typescript/no-explicit-any": "error",
+    "typescript/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "typescript/consistent-type-imports": "warn",
+    "typescript/no-non-null-asserted-optional-chain": "error",
+    "typescript/no-misused-new": "error",
+    "typescript/no-empty-object-type": "error",
+    "typescript/no-unsafe-function-type": "error",
+    "typescript/no-wrapper-object-types": "error",
+    "typescript/prefer-as-const": "error",
+    "typescript/triple-slash-reference": "error",
+    "typescript/array-type": [
+      "warn",
+      {
+        "default": "generic"
+      }
+    ],
+    "eslint/no-console": "warn",
+    "eslint/no-debugger": "error",
+    "eslint/no-alert": "error",
+    "eslint/no-eval": "error",
+    "eslint/no-var": "error",
+    "eslint/prefer-const": "error",
+    "eslint/no-new-wrappers": "error",
+    "eslint/no-array-constructor": "error",
+    "eslint/no-useless-escape": "error",
+    "eslint/no-useless-catch": "error",
+    "eslint/no-useless-rename": "error",
+    "eslint/no-empty": "error",
+    "eslint/no-empty-pattern": "error",
+    "eslint/require-yield": "error",
+    "eslint/use-isnan": "error",
+    "eslint/valid-typeof": "error",
+    "eslint/curly": [
+      "warn",
+      "multi-line"
+    ],
+    "eslint/default-case-last": "error",
+    "eslint/default-param-last": "error",
+    "eslint/eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "eslint/no-duplicate-imports": "error",
+    "eslint/no-else-return": "warn",
+    "eslint/no-lonely-if": "warn",
+    "eslint/no-loop-func": "error",
+    "eslint/no-param-reassign": "warn",
+    "eslint/no-return-assign": "error",
+    "eslint/no-sequences": "error",
+    "eslint/no-throw-literal": "error",
+    "eslint/no-unneeded-ternary": "warn",
+    "eslint/no-useless-concat": "warn",
+    "eslint/no-useless-return": "warn",
+    "eslint/prefer-object-spread": "warn",
+    "eslint/prefer-template": "warn",
+    "eslint/radix": "error",
+    "eslint/symbol-description": "warn",
+    "react/react-in-jsx-scope": "off",
+    "eslint/id-length": "off",
+    "eslint/no-ternary": "off",
+    "eslint/sort-keys": "off",
+    "eslint/sort-imports": "off",
+    "eslint/func-style": "off",
+    "eslint/max-statements": "off",
+    "eslint/capitalized-comments": "off",
+    "eslint/no-nested-ternary": "off",
+    "import/no-named-export": "off",
+    "import/group-exports": "off",
+    "import/exports-last": "off",
+    "import/prefer-default-export": "off",
+    "import/consistent-type-specifier-style": "off",
+    "import/no-duplicates": "error",
+    "unicorn/no-null": "off",
+    "unicorn/no-nested-ternary": "off",
+    "unicorn/no-array-sort": "off",
+    "unicorn/switch-case-braces": "off",
+    "unicorn/numeric-separators-style": "off",
+    "unicorn/prefer-ternary": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/no-abusive-eslint-disable": "error",
+    "unicorn/consistent-empty-array-spread": "error",
+    "unicorn/consistent-function-scoping": "warn",
+    "unicorn/no-hex-escape": "error",
+    "unicorn/no-invalid-fetch-options": "error",
+    "unicorn/no-typeof-undefined": "error",
+    "unicorn/no-useless-promise-resolve-reject": "error",
+    "unicorn/no-useless-spread": "error",
+    "unicorn/prefer-array-flat-map": "warn",
+    "unicorn/prefer-array-index-of": "warn",
+    "unicorn/prefer-array-some": "warn",
+    "unicorn/prefer-at": "warn",
+    "unicorn/prefer-node-protocol": "error",
+    "unicorn/prefer-number-properties": "warn",
+    "unicorn/prefer-optional-catch-binding": "warn",
+    "unicorn/prefer-set-size": "warn",
+    "unicorn/prefer-string-replace-all": "warn",
+    "unicorn/prefer-string-slice": "warn",
+    "unicorn/prefer-structured-clone": "warn",
+    "unicorn/catch-error-name": [
+      "warn",
+      {
+        "name": "err"
+      }
+    ],
+    "unicorn/text-encoding-identifier-case": "warn",
+    "react/jsx-max-depth": "off",
+    "react/no-array-index-key": "off",
+    "react/iframe-missing-sandbox": "off",
+    "react/jsx-key": "error",
+    "react/jsx-no-comment-textnodes": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/jsx-no-undef": "error",
+    "react/no-children-prop": "error",
+    "react/no-danger-with-children": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/no-is-mounted": "error",
+    "react/no-render-return-value": "error",
+    "react/no-string-refs": "error",
+    "react/no-unescaped-entities": "warn",
+    "react/no-unknown-property": "error",
+    "react/require-render-return": "error",
+    "oxc/no-async-await": "off",
+    "import/no-cycle": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.config.*",
+        "**/vite.config.*",
+        "**/oxlint.config.*"
+      ],
+      "rules": {
+        "eslint/no-console": "off"
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "dist/**",
+    "node_modules/**",
+    "build/**",
+    "coverage/**",
+    "**/*.d.ts",
+    "**/.oxlintrc.json"
+  ]
+}

@@ -1,6 +1,6 @@
 import type { GameClass } from './types'
 
-export const classes: GameClass[] = [
+export const classes: Array<GameClass> = [
   {
     id: 'rogue', name: 'Rogue', archetype: 'Stealth DPS', weaponType: 'Dual Daggers',
     coreMechanic: 'Auto-swing dual daggers with stealth kills and speed bonuses',

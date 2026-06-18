@@ -42,7 +42,7 @@ export default function Gallery() {
           {IMAGES.map((img, i) => (
             <ScrollReveal key={img.src} delay={i * 50}>
               <div
-                className="group cursor-pointer rounded-lg overflow-hidden border border-stone-800/40 hover:border-yellow-800/60 transition-all duration-300"
+                className="group cursor-pointer rounded-3xl overflow-hidden border border-stone-800/40 hover:border-yellow-800/60 transition-all duration-300"
                 onClick={() => setLightbox(i)}
               >
                 <div className="relative overflow-hidden">
@@ -85,7 +85,7 @@ export default function Gallery() {
             <img
               src={IMAGES[lightbox].src}
               alt={IMAGES[lightbox].title}
-              className="max-w-full max-h-[85vh] object-contain rounded-lg gallery-img"
+              className="max-w-full max-h-[85vh] object-contain rounded-3xl gallery-img"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg">
               <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-500 mb-1">

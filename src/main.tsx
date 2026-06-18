@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ConvexProvider, ConvexReactClient } from 'convex/react'
+// eslint-disable-next-line import/no-unassigned-import -- global stylesheet side-effect import
 import './index.css'
 import App from './App.tsx'
 

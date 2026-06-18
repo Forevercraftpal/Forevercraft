@@ -21,7 +21,7 @@ export default function Privacy() {
           </p>
           <p>
             Our website (forevercraft.co) may collect basic, anonymous usage analytics through
-            Cloudflare's built-in analytics to help us understand how visitors use the site. This includes
+            Cloudflare&apos;s built-in analytics to help us understand how visitors use the site. This includes
             page views, country of origin, and browser type. No cookies are used for tracking, and no
             personally identifiable information is collected through the website.
           </p>
@@ -31,8 +31,8 @@ export default function Privacy() {
             Donations are processed through Buy Me a Coffee and Stripe. When you make a donation, your
             payment information is handled entirely by these third-party services. We never see, store,
             or have access to your credit card numbers or banking details. Please refer to
-            {' '}<a href="https://www.buymeacoffee.com/privacy" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline">Buy Me a Coffee's Privacy Policy</a> and
-            {' '}<a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline">Stripe's Privacy Policy</a> for
+            {' '}<a href="https://www.buymeacoffee.com/privacy" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline">Buy Me a Coffee&apos;s Privacy Policy</a> and
+            {' '}<a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline">Stripe&apos;s Privacy Policy</a> for
             details on how they handle your payment data.
           </p>
           <p>
@@ -42,14 +42,14 @@ export default function Privacy() {
             delivering the membership benefits you signed up for.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CHILDREN'S PRIVACY</h2>
+          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CHILDREN&apos;S PRIVACY</h2>
           <p>
             Forevercraft is a Minecraft modification suitable for all ages. We do not knowingly collect
             personal information from children under 13. Donations require a payment method, which
             inherently requires the user to be of legal age or have parental consent.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">DATA WE DON'T COLLECT</h2>
+          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">DATA WE DON&apos;T COLLECT</h2>
           <ul className="list-disc list-inside space-y-2 text-stone-400">
             <li>We do not collect in-game data from the datapack</li>
             <li>We do not use tracking cookies on our website</li>

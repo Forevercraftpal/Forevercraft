@@ -32,7 +32,7 @@ export default function Classes() {
         <ScrollReveal delay={100}>
           <Spoiler label="How classes work under the hood...">
             <div className="space-y-3 font-['Crimson_Pro'] text-base text-stone-400">
-              <p><span className="text-yellow-500 font-semibold">Activation:</span> Equip the class weapon type in your mainhand. The class activates automatically based on what you're holding.</p>
+              <p><span className="text-yellow-500 font-semibold">Activation:</span> Equip the class weapon type in your mainhand. The class activates automatically based on what you&apos;re holding.</p>
               <p><span className="text-yellow-500 font-semibold">Dual-Wield Classes:</span> Rogue (daggers), Berserker (axes), Dancer (fans) require weapons in both hands. They trade armor for damage.</p>
               <p><span className="text-yellow-500 font-semibold">Shield Classes:</span> Knight (sword+shield), Hoplite (trident+shield), Sentinel (mace+shield) gain defensive bonuses from the offhand shield.</p>
               <p><span className="text-yellow-500 font-semibold">Spirit Weapons:</span> Each class has a corresponding Spirit Weapon dropped by a specific raid boss at 5%. These are the ultimate expression of the class.</p>
@@ -91,7 +91,7 @@ export default function Classes() {
         {selected && (
           <ScrollReveal>
             <div
-              className="rounded-lg border p-6 md:p-8 transition-all"
+              className="rounded-3xl border p-6 md:p-8 transition-all"
               style={{
                 borderColor: `${selected.color}40`,
                 background: `linear-gradient(135deg, ${selected.color}08 0%, transparent 60%)`,

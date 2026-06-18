@@ -7,20 +7,22 @@ import { STATS } from '../data/constants'
 
 const SYSTEM_CARDS = [
   { title: 'DREAM RATE', desc: 'The backbone of everything. A custom RNG system that ties your entire journey together.', icon: '✦', to: '/dream-rate', color: '#FBBF24' },
-  { title: 'ARTIFACTS', desc: '408 unique items across six tiers — each with handcrafted abilities.', icon: '⚔️', to: '/artifacts', color: '#FB923C' },
+  { title: 'ARTIFACTS', desc: '600+ unique items across six tiers — each with handcrafted abilities.', icon: '⚔️', to: '/artifacts', color: '#FB923C' },
   { title: 'SPIRIT WEAPONS', desc: '14 legendary endgame weapons with twin forms and metamorphosis.', icon: '🗡️', to: '/spirit-weapons', color: '#C084FC' },
-  { title: 'COMPANIONS', desc: '102 companions that fight, level, evolve, and bond with you.', icon: '🐾', to: '/companions', color: '#4ADE80' },
+  { title: 'COMPANIONS', desc: '104 companions that fight, level, evolve, and bond with you.', icon: '🐾', to: '/companions', color: '#4ADE80' },
   { title: 'CLASSES', desc: '14 weapon classes. Some are earned. One is hidden.', icon: '⚡', to: '/classes', color: '#60A5FA' },
-  { title: 'RAID BOSSES', desc: '14 multi-phase bosses with puzzles, phases, and unique loot.', icon: '💀', to: '/raid-bosses', color: '#DC2626' },
+  { title: 'RAID BOSSES', desc: '13 multi-phase raid bosses plus 11 roaming world bosses.', icon: '💀', to: '/raid-bosses', color: '#DC2626' },
   { title: 'SKILL TREES', desc: '15 advantage trees with 25 levels each, prestige, and synergies.', icon: '🌳', to: '/skill-trees', color: '#22C55E' },
   { title: 'ARMOR SETS', desc: '28 armor sets with 2-piece, 4-piece, and mythical 5-piece bonuses.', icon: '🛡️', to: '/armor-sets', color: '#9CA3AF' },
-  { title: 'QUESTS', desc: '75 quests across 6 tiers. Village reputation. Patron bounties.', icon: '📜', to: '/quests', color: '#D97706' },
+  { title: 'QUESTS', desc: '450+ quests across a village board and 7 questlines. Village reputation. Bounties.', icon: '📜', to: '/quests', color: '#D97706' },
   { title: 'INFINITE CASTLE', desc: 'Endless escalating dungeon. Bosses every 10 floors. Dream Storm Crystals.', icon: '🏰', to: '/infinite-castle', color: '#78716C' },
-  { title: 'COOKING', desc: '11 mastery categories. Seasonal recipes. Campfire crafting.', icon: '🍳', to: '/cooking', color: '#F59E0B' },
+  { title: 'COOKING', desc: '12 mastery categories. Seasonal recipes. Campfire crafting.', icon: '🍳', to: '/cooking', color: '#F59E0B' },
   { title: 'GUILDS & SOCIAL', desc: 'Guilds, parties, duels, buddy system, marriage, and family.', icon: '👥', to: '/guilds', color: '#0EA5E9' },
   { title: 'GACHA FOUNTAIN', desc: 'Fountain of Eternal Dreams. Feed it Forever Coins from allowance, quests, crates and more!', icon: '🏺', to: '/gacha', color: '#A855F7' },
-  { title: 'CRAFTFOREVER', desc: '7 craft mastery tracks. 38 biome materials. Forging, chemistry, and the Grand Forge.', icon: '🔨', to: '/craftforever', color: '#E879F9' },
-  { title: 'STORY MODE', desc: '50-chapter narrative across 5 acts. Dual paths — Dream Resonance and Chaos Resonance. The Hollow awaits.', icon: '📖', to: '/lore', color: '#F472B6' },
+  { title: 'CRAFTFOREVER', desc: '7 craft mastery tracks. 15 biome materials feed a 28-material, 7-tier Forge. Chemistry and the Grand Forge.', icon: '🔨', to: '/craftforever', color: '#E879F9' },
+  { title: "GATHERER'S PATH", desc: '7 node families with skill-based harvest rolls — prospect, forage, fish, chop, dig — plus Dreamy Pull bonus games. NEW.', icon: '🌿', to: '/bountiful-harvest', color: '#A3E635' },
+  { title: 'TINKERING', desc: 'Fuse accessories at the Tinkerer\'s Plinth into capstone Spirit Artifacts across 11 fusion families. NEW.', icon: '⚙️', to: '/bountiful-harvest', color: '#C084FC' },
+  { title: 'STORY MODE', desc: '480-chapter saga across 8 branches. Walk the Adventurer\'s Chronicle or the Artisan\'s Almanac. The Hollow awaits.', icon: '📖', to: '/lore', color: '#F472B6' },
   { title: 'PROFESSIONS', desc: '12 custom villager professions. Village reputation from Stranger to Legend. Bounty boards and quest books.', icon: '🏘️', to: '/quests', color: '#A3E635' },
   { title: 'HOUSING', desc: 'Hearthstone home zones with 5 upgrade tiers. Auto-garden, comfort scoring, and Quick Stash sorting.', icon: '🏠', to: '/seasons', color: '#FCD34D' },
   { title: 'BESTIARY', desc: 'Catalog every mob encounter. Track kills, rare spawns, and unlock hidden lore entries.', icon: '📕', to: '/codex', color: '#F87171' },
@@ -41,33 +43,38 @@ const DR_MILESTONES = [
   { dr: 14, title: 'Strongholds & mansions', desc: 'The most dangerous overworld structures. Bastions, strongholds, woodland mansions.' },
   { dr: 17.5, title: 'Ancient City & End City', desc: 'The deepest, most dangerous structures. The rarest artifacts.' },
   { dr: 30, title: 'Night Terrors stalk you', desc: 'On new moon nights, a scaled mini-boss spawns near you. Glowing dark red.' },
-  { dr: 50, title: 'Dream Transcendent', desc: 'Maximum Dream Rate. The world bends to your will. Everything drops.' },
+  { dr: 50, title: 'Dream Transcendent', desc: 'The final named milestone — but no longer the ceiling. The world bends to your will.' },
+  { dr: 100, title: 'The Dream Weaver', desc: 'The true cap, raised from 50 in the Bountiful Harvest update. Everything drops.' },
 ]
 
 export default function Home() {
   return (
     <div className="bg-stone-950 text-stone-200">
       {/* ── Hero ─────────────────────────────────────── */}
-      <div className="relative min-h-[90vh] flex items-center justify-center border-b border-yellow-900/40 bg-[radial-gradient(ellipse_at_top,_#2a1a0a_0%,_#0a0906_70%)] overflow-hidden">
+      <div className="relative min-h-[90vh] flex items-center justify-center border-b border-yellow-900/20 overflow-hidden" style={{ background: 'radial-gradient(ellipse at 50% 30%, rgba(42, 26, 10, 0.8) 0%, rgba(10, 9, 6, 0.95) 50%, var(--surface-0) 100%)' }}>
         <ParticleField count={40} />
+        {/* Cosmic energy rings */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full border border-yellow-800/10 animate-[breathe_8s_ease-in-out_infinite]" />
+          <div className="absolute w-[400px] h-[400px] md:w-[550px] md:h-[550px] rounded-full border border-yellow-700/8 animate-[breathe_6s_ease-in-out_1s_infinite]" />
+          <div className="absolute w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full border border-yellow-600/6 animate-[breathe_4s_ease-in-out_2s_infinite]" />
+        </div>
         <div className="relative z-10 max-w-[1200px] mx-auto px-8 text-center">
           <img
             src="/icon.png"
             alt="Forevercraft"
-            className="w-28 h-auto md:w-36 mx-auto mb-6 drop-shadow-[0_0_30px_rgba(200,140,40,0.4)] animate-[fade-in-up_0.8s_ease-out_both]"
+            className="w-28 h-auto md:w-36 mx-auto mb-6 drop-shadow-[0_0_40px_rgba(200,140,40,0.5)] animate-[spiral-in_1s_cubic-bezier(0.34,1.56,0.64,1)_both]"
             style={{ imageRendering: 'pixelated' }}
           />
-          <h1 className="font-['Press_Start_2P'] text-4xl md:text-6xl text-metallic-gold mb-4 leading-tight animate-[fade-in-up_0.8s_ease-out_0.1s_both]">
+          <h1 className="font-['Press_Start_2P'] text-4xl md:text-6xl text-metallic-gold mb-4 leading-tight animate-[orbit-in_0.8s_cubic-bezier(0.34,1.56,0.64,1)_0.2s_both]">
             FOREVERCRAFT
           </h1>
-          <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-700 tracking-[0.4em] mb-6 uppercase animate-[fade-in-up_0.8s_ease-out_0.2s_both]">
+          <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-700 tracking-[0.4em] mb-6 uppercase animate-[orbit-in_0.8s_cubic-bezier(0.34,1.56,0.64,1)_0.35s_both]">
             A Fantasy Minecraft Overhaul
           </p>
-          <p className="font-['Crimson_Pro'] italic text-xl md:text-2xl text-stone-400 mb-12 animate-[fade-in-up_0.8s_ease-out_0.4s_both]">
+          <p className="font-['Crimson_Pro'] italic text-xl md:text-2xl text-stone-400 mb-12 animate-[orbit-in_0.8s_cubic-bezier(0.34,1.56,0.64,1)_0.5s_both]">
             Every world has treasure. This one has dreams.
           </p>
-
-          {/* Stat counters moved to bottom */}
         </div>
 
         {/* Scroll indicator */}
@@ -76,6 +83,32 @@ export default function Home() {
         </div>
       </div>
 
+      {/* ── Bountiful Harvest Expansion Banner ───────── */}
+      <section className="border-b border-lime-900/20">
+        <div className="max-w-[1200px] mx-auto px-6 pt-16">
+          <ScrollReveal>
+            <Link
+              to="/bountiful-harvest"
+              className="block rounded-[32px] border border-lime-800/30 bg-lime-950/10 hover:bg-lime-950/20 p-8 no-underline transition-all duration-400 group hover:shadow-[0_0_40px_rgba(132,204,22,0.08),0_0_80px_rgba(132,204,22,0.03)]"
+            >
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                  <span className="font-['Press_Start_2P'] text-[0.55rem] text-lime-600 tracking-widest">THE EXPANSION</span>
+                  <h3 className="font-['Press_Start_2P'] text-[0.9rem] text-lime-400 mt-2 mb-2">🌾 THE BOUNTIFUL HARVEST</h3>
+                  <p className="font-['Crimson_Pro'] text-lg text-stone-400">
+                    Our biggest content wave yet — the Gatherer&apos;s Path, antique furniture,
+                    structure boons, the Forever Sack, and a Dream Rate cap raised to 100.
+                  </p>
+                </div>
+                <span className="font-['Press_Start_2P'] text-[0.65rem] text-lime-500 group-hover:text-lime-400 transition-colors shrink-0">
+                  EXPLORE →
+                </span>
+              </div>
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* ── Systems Carousel ─────────────────────────── */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <ScrollReveal>
@@ -83,17 +116,17 @@ export default function Home() {
             Explore the Systems
           </h2>
           <p className="font-['Crimson_Pro'] italic text-stone-400 text-center mb-12 text-lg">
-            138 interconnected systems. Every one handcrafted.
+            150+ interconnected systems. Every one handcrafted.
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SYSTEM_CARDS.map((card, i) => (
-            <ScrollReveal key={card.title} delay={i * 80}>
+            <ScrollReveal key={card.title} delay={i * 60}>
               <Link to={card.to} className="no-underline block h-full">
-                <Card3D className="h-full rounded border border-yellow-900/40 bg-stone-900/50 p-6 hover:border-yellow-700/60 transition-colors">
+                <Card3D className="sphere h-full p-6">
                   <div className="flex items-start gap-3 mb-3">
-                    <span className="text-2xl" style={{ filter: `drop-shadow(0 0 8px ${card.color}40)` }}>
+                    <span className="text-2xl" style={{ filter: `drop-shadow(0 0 12px ${card.color}50)` }}>
                       {card.icon}
                     </span>
                     <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-500 tracking-wider leading-relaxed pt-1">
@@ -131,8 +164,8 @@ export default function Home() {
           {DR_MILESTONES.map((m, i) => (
             <ScrollReveal key={m.dr} delay={i * 100}>
               <div className={`relative flex items-start gap-6 mb-10 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                {/* Node */}
-                <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-yellow-600 border-2 border-yellow-400 shadow-[0_0_12px_rgba(234,179,8,0.4)] z-10" />
+                {/* Node — orb dot */}
+                <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-yellow-600 border-2 border-yellow-400 shadow-[0_0_16px_rgba(234,179,8,0.5),0_0_32px_rgba(234,179,8,0.2)] z-10" />
 
                 {/* Content */}
                 <div className={`ml-14 md:ml-0 md:w-[45%] ${i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
@@ -162,9 +195,9 @@ export default function Home() {
           </h2>
           <p className="text-stone-300">
             Forevercraft is a complete fantasy transformation of vanilla Minecraft — built over
-            hundreds of hours, one function at a time. It doesn't replace the game you love.
+            hundreds of hours, one function at a time. It doesn&apos;t replace the game you love.
             It gives it depth. A reason to keep mining after diamonds. A reason to fish in the rain.
-            A reason to walk into a structure you've seen a hundred times and feel something new.
+            A reason to walk into a structure you&apos;ve seen a hundred times and feel something new.
           </p>
           <p className="mt-4 text-stone-400">
             At its core is the{' '}
@@ -196,7 +229,7 @@ export default function Home() {
 
         <FeatureSection title="Companions">
           <p className="text-stone-300">
-            102 companions, each one different. A Moldwarp that makes you mine faster.
+            104 companions, each one different. A Moldwarp that makes you mine faster.
             A Claude that detects ores through walls. A Butterfly whose Dream Weaver
             ability scales your luck up to +3.0 at max level. A Golden Dragon that
             wraps you in resistance and fire immunity just by existing.
@@ -204,7 +237,7 @@ export default function Home() {
           <p className="mt-4 text-stone-400">
             Companions level from 1 to 100. Feed them, build a relationship, reach{' '}
             <span className="text-yellow-500 font-semibold">Eternal Bond</span> and every ability
-            hits harder. 37 mythical companions can evolve into Ascended forms with unique abilities.
+            hits harder. 37 companions can evolve into Ascended forms with unique abilities.
           </p>
         </FeatureSection>
 
@@ -238,13 +271,13 @@ export default function Home() {
 
         <FeatureSection title="Crate & Loot System">
           <p className="text-stone-300">
-            Seven sources feed one unified crate engine: mining, fishing, harvesting, mob kills,
-            structures, quests, and achievements. Each crate spawns as an animated barrel with
+            Eight sources feed one unified crate engine: mining, fishing, harvesting, mob kills,
+            structures, quests, achievements, and companion &amp; artifact crates. Each spawns as an animated barrel with
             tier-colored particles — the higher the tier, the longer the anticipation builds.
           </p>
           <p className="mt-4 text-stone-400">
-            Structure crates are per-player with 50-hour refresh timers. 25 biome-specific
-            treasure pools. Every crate has a 20% Awakening Stone drop for weapon mastery.
+            Structure crates are per-player with 50-hour refresh timers. 23 biome-specific
+            treasure pools. Every crate has a 10% Awakening Stone drop for weapon mastery.
             Dream Echoes mark the exact spot where a Mythical was found — clickable, drifting,
             permanent markers of your greatest moments.
           </p>
@@ -276,23 +309,23 @@ export default function Home() {
           <p className="mt-4 text-stone-400">
             The{' '}
             <span className="text-yellow-500 font-semibold">Patina system</span> tracks how long
-            you've worn each artifact. Over time, a fresh artifact becomes Worn, then Seasoned,
+            you&apos;ve worn each artifact. Over time, a fresh artifact becomes Worn, then Seasoned,
             then Storied, and finally Legendary — each stage adding flavor text and a stat bonus.
-            16 armor trim materials each have unique per-piece effects and full-set bonuses.
+            18 armor trim patterns and 11 trim materials each carry unique per-piece effects and full-set bonuses.
           </p>
         </FeatureSection>
 
         <FeatureSection title="Exploration & Discovery">
           <p className="text-stone-300">
-            894 discoverable lore fragments forming 162 sets across 4 dimensions. A Lore Collection
+            896 discoverable lore fragments forming 163 sets across 4 dimensions. A Lore Collection
             Map shows your progress — accessible through the Forevercraft Codex. Personal milestones
             replace the vanilla achievement system entirely, tracking your journey from first steps to
-            Legend of Evercraft. A personal journal tracks every region you've explored.
+            Legend of Evercraft. A personal journal tracks every region you&apos;ve explored.
           </p>
           <p className="mt-4 text-stone-400">
             Forage nodes and prospect nodes scatter across the world for hand-gathering resources.
-            The Codex system is a 751-function interactive encyclopedia tracking every artifact you've
-            found. The Bestiary catalogs every mob encounter. Guidestones create a craftable
+            The Codex system is a ~25-tab interactive encyclopedia tracking every artifact you&apos;ve
+            found. The Bestiary catalogs 52 mobs and 11 bosses. Guidestones create a craftable
             teleportation network across dimensions.
           </p>
         </FeatureSection>
@@ -333,14 +366,14 @@ export default function Home() {
           <ScrollReveal>
             <Link
               to="/bedrock"
-              className="block rounded-lg border border-cyan-800/40 bg-cyan-950/10 hover:bg-cyan-950/20 p-8 no-underline transition-colors group"
+              className="block rounded-[32px] border border-cyan-800/30 bg-cyan-950/10 hover:bg-cyan-950/20 p-8 no-underline transition-all duration-400 group hover:shadow-[0_0_40px_rgba(6,182,212,0.08),0_0_80px_rgba(6,182,212,0.03)]"
             >
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                   <span className="font-['Press_Start_2P'] text-[0.55rem] text-cyan-600 tracking-widest">NOW AVAILABLE</span>
                   <h3 className="font-['Press_Start_2P'] text-[0.9rem] text-cyan-400 mt-2 mb-2">BEDROCK EDITION</h3>
                   <p className="font-['Crimson_Pro'] text-lg text-stone-400">
-                    138 systems. Full Java parity. Script API powered.
+                    150+ systems. Full Java parity. Script API powered.
                     Console, mobile, and PC — same dream, every platform.
                   </p>
                 </div>
@@ -354,17 +387,17 @@ export default function Home() {
       </section>
 
       {/* ── Closing ──────────────────────────────────── */}
-      <section className="border-t border-yellow-900/30 bg-[radial-gradient(ellipse_at_bottom,_#1a1200_0%,_#0a0906_70%)]">
+      <section className="border-t border-yellow-900/20 bg-[radial-gradient(ellipse_at_bottom,_#1a1200_0%,_#0a0906_70%)]">
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">
           <ScrollReveal>
             <p className="font-['Crimson_Pro'] italic text-2xl text-stone-400 leading-relaxed mb-4">
-              "Take your time. The committed win the race to glory. The quick fall into the traps
-              the world has laid before you."
+              &quot;Take your time. The committed win the race to glory. The quick fall into the traps
+              the world has laid before you.&quot;
             </p>
             <p className="font-['Crimson_Pro'] text-base text-stone-600 mb-8">
               Got questions? Our <span className="text-yellow-500">❓ Forevercraft Guide</span> is always in the corner, ready to help you navigate every system.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-12">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-12">
               <StatCounter end={STATS.totalArtifacts} label="Artifacts" />
               <StatCounter end={STATS.totalCompanions} label="Companions" />
               <StatCounter end={STATS.totalSpiritWeapons} label="Spirit Weapons" />
@@ -377,7 +410,7 @@ export default function Home() {
             </p>
             <Link
               to="/credits"
-              className="inline-block mt-4 px-6 py-2 rounded border border-yellow-800/40 hover:border-yellow-600/60 font-['Press_Start_2P'] text-[0.55rem] text-stone-500 hover:text-yellow-500 tracking-widest no-underline transition-colors"
+              className="capsule inline-block mt-4 px-8 py-2.5 border border-yellow-800/30 hover:border-yellow-600/50 font-['Press_Start_2P'] text-[0.55rem] text-stone-500 hover:text-yellow-500 tracking-widest no-underline bg-yellow-950/20 hover:bg-yellow-950/30"
             >
               CREDITS
             </Link>
@@ -406,9 +439,9 @@ function FeatureSection({ title, children }: { title: string; children: React.Re
 function Divider() {
   return (
     <div className="flex items-center gap-4 max-w-[1200px] mx-auto px-8">
-      <div className="flex-1 h-px bg-yellow-900/30" />
-      <img src="/icon.png" alt="" className="w-5 h-5 rounded opacity-40" style={{ imageRendering: 'pixelated' }} />
-      <div className="flex-1 h-px bg-yellow-900/30" />
+      <div className="flex-1 h-px bg-gradient-to-r from-transparent via-yellow-900/30 to-transparent" />
+      <img src="/icon.png" alt="" className="w-5 h-5 rounded-full opacity-40 shadow-[0_0_12px_rgba(251,191,36,0.15)]" style={{ imageRendering: 'pixelated' }} />
+      <div className="flex-1 h-px bg-gradient-to-r from-transparent via-yellow-900/30 to-transparent" />
     </div>
   )
 }

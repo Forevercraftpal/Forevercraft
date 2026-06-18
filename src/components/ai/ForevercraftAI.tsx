@@ -9,7 +9,7 @@ interface Message {
 }
 
 // Synonym expansion for better matching
-const SYNONYMS: Record<string, string[]> = {
+const SYNONYMS: Record<string, Array<string>> = {
   'class': ['classes', 'weapon class', 'weapon classes', 'combat class', 'fighting style'],
   'best': ['strongest', 'most powerful', 'top', 'recommended', 'op'],
   'pet': ['companion', 'companions', 'pets', 'animal'],
@@ -43,7 +43,7 @@ interface ScoredResult {
   score: number
 }
 
-function searchKB(query: string): ScoredResult[] {
+function searchKB(query: string): Array<ScoredResult> {
   const q = query.toLowerCase().trim()
   const allWords = q.split(/\s+/)
   const contentWords = allWords.filter(w => w.length > 1 && !STOP_WORDS.has(w))
@@ -151,7 +151,7 @@ const NO_RESULT_RESPONSES = [
 ]
 
 // Conversational follow-up suggestions based on category
-const FOLLOW_UPS: Record<string, string[]> = {
+const FOLLOW_UPS: Record<string, Array<string>> = {
   'Dream Rate': ['How do I increase my DR?', 'What structures unlock at each DR?', 'What are temporary DR sources?'],
   'Artifacts': ['How do armor sets work?', 'What are Constellations?', 'How does transmutation work?'],
   'Companions': ['What are evolved companions?', 'How does the relationship system work?', 'Best companion for combat?'],
@@ -164,15 +164,15 @@ const FOLLOW_UPS: Record<string, string[]> = {
   'FAQ': ['Where can I download Forevercraft?', 'Is there a Bedrock Edition?', 'What Minecraft versions are supported?'],
 }
 
-function pickRandom<T>(arr: T[]): T {
+function pickRandom<T>(arr: Array<T>): T {
   return arr[Math.floor(Math.random() * arr.length)]
 }
 
 function checkSmallTalk(query: string): string | null {
   const q = query.toLowerCase().trim()
-  if (GREETINGS.some(g => q === g || q.startsWith(g + ' ') || q.startsWith(g + '!'))) return pickRandom(GREETING_RESPONSES)
+  if (GREETINGS.some(g => q === g || q.startsWith(`${g} `) || q.startsWith(`${g}!`))) return pickRandom(GREETING_RESPONSES)
   if (THANKS.some(t => q.includes(t))) return pickRandom(THANKS_RESPONSES)
-  if (FAREWELLS.some(f => q === f || q.startsWith(f + ' ') || q.startsWith(f + '!'))) return pickRandom(FAREWELL_RESPONSES)
+  if (FAREWELLS.some(f => q === f || q.startsWith(`${f} `) || q.startsWith(`${f}!`))) return pickRandom(FAREWELL_RESPONSES)
   if (JOKES.some(j => q.includes(j))) return pickRandom(JOKE_RESPONSES)
   if (q === '?' || q === 'help' || q === 'what can you do') return "I'm the Forevercraft Guide! Ask me about any of the 138 systems — artifacts, companions, raids, cooking, classes, Dream Rate, housing, guilds, gacha, spirit weapons, skill trees, and way more. Just type your question!"
   return null
@@ -211,7 +211,7 @@ const CONFIDENCE_INTROS = {
 }
 
 // Format KB results into a conversational response with confidence
-function formatKBResponse(scored: ScoredResult[], query: string): string {
+function formatKBResponse(scored: Array<ScoredResult>, query: string): string {
   if (scored.length === 0) return ''
 
   const main = scored[0]
@@ -243,7 +243,7 @@ function formatKBResponse(scored: ScoredResult[], query: string): string {
       const filtered = suggestions.filter(s => s.toLowerCase() !== main.entry.q.toLowerCase())
       if (filtered.length > 0) {
         const picks = filtered.slice(0, 2)
-        response += '\n\n💡 *You might also want to know:* ' + picks.map(p => `"${p}"`).join(' or ')
+        response +=`\\n\\n💡 *You might also want to know:* ${picks.map(p => `"${p}"`).join(' or ')}`
       }
     }
   }
@@ -283,10 +283,17 @@ async function queryClaude(question: string, context: string): Promise<string | 
   }
 }
 
+function sourceLabel(s?: string): string {
+  if (s === 'kb') return '📚 Knowledge Base'
+  if (s === 'rag') return '🔍 Deep Search'
+  if (s === 'claude') return '✨ AI Powered'
+  return ''
+}
+
 export default function ForevercraftAI() {
   const [open, setOpen] = useState(false)
   const [input, setInput] = useState('')
-  const [messages, setMessages] = useState<Message[]>([
+  const [messages, setMessages] = useState<Array<Message>>([
     { role: 'system', content: 'Welcome, adventurer! I\'m the Forevercraft Guide — ask me anything about the pack\'s 138 systems, artifacts, companions, raids, or progression. I know it all!' }
   ])
   const [loading, setLoading] = useState(false)
@@ -365,13 +372,6 @@ export default function ForevercraftAI() {
       return updated
     })
     setLoading(false)
-  }
-
-  const sourceLabel = (s?: string) => {
-    if (s === 'kb') return '📚 Knowledge Base'
-    if (s === 'rag') return '🔍 Deep Search'
-    if (s === 'claude') return '✨ AI Powered'
-    return ''
   }
 
   // Check if donation popup is visible (shifts AI button up)
