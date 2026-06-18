@@ -1,7 +1,8 @@
 @import 'tailwindcss';
-/* Shared Agency design-system preset — imported BEFORE Forevercraft's own
-   tokens so Forevercraft's gold/cosmic palette continues to override. */
-@import '@agency/ui-core/shadcn-preset/globals.css';
+/* Shared Agency design-system preset — VENDORED into the repo (src/styles/) so the
+   Cloudflare build doesn't depend on the local-only @agency/ui-core package.
+   Imported BEFORE Forevercraft's own tokens so the gold/cosmic palette overrides. */
+@import './styles/agency-ui-core-globals.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
 

@@ -12,8 +12,6 @@
     "lint:fix": "oxlint --config .oxlintrc.json --fix src/"
   },
   "dependencies": {
-    "@agency/ui-core": "/Users/josep/AI_Empire_HQ/packages/ui-core/agency-ui-core-0.1.0.tgz",
-    "@agency/ui-core": "/Users/josep/AI_Empire_HQ/packages/ui-core/agency-ui-core-0.1.0.tgz",
     "convex": "^1.32.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

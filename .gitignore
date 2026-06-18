@@ -26,3 +26,10 @@ dist-ssr
 # Build artifacts
 modrinth-modules/
 build/
+
+# Lockfiles — NOT committed: they pin the local-only @agency/ui-core path and
+# break the Cloudflare build (forces strict `npm ci` against a missing local tgz).
+# The last good production deploy committed no lockfile. Revisit once
+# @agency/ui-core is published to a registry.
+package-lock.json
+bun.lock
