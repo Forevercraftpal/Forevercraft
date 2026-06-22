@@ -10,18 +10,18 @@ const ASSETS = [
 ]
 
 const QUICK_FACTS = [
-  { label: 'Systems', value: '138' },
-  { label: 'Artifacts', value: '408' },
-  { label: 'Companions', value: '102' },
+  { label: 'Systems', value: '150+' },
+  { label: 'Artifacts', value: '600+' },
+  { label: 'Companions', value: '104' },
   { label: 'Spirit Weapons', value: '14' },
-  { label: 'Raid Bosses', value: '14' },
+  { label: 'Raid Bosses', value: '13' },
   { label: 'Skill Trees', value: '15' },
-  { label: 'Quests', value: '250' },
-  { label: 'Lore Fragments', value: '904' },
-  { label: 'Functions', value: '16,101' },
-  { label: 'Total Files', value: '23,639' },
-  { label: 'Minecraft Version', value: '26.1' },
-  { label: 'Pack Format', value: '101.1' },
+  { label: 'Quests', value: '450+' },
+  { label: 'Lore Fragments', value: '896' },
+  { label: 'Functions', value: '22,472' },
+  { label: 'Total Files', value: '34,159' },
+  { label: 'Minecraft Version', value: '26.2' },
+  { label: 'Pack Format', value: '107.1' },
 ]
 
 export default function PressKit() {
@@ -41,13 +41,13 @@ export default function PressKit() {
             <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">SHORT DESCRIPTION</h2>
             <div className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-6">
               <p className="font-['Crimson_Pro'] text-lg text-stone-300 leading-relaxed">
-                Forevercraft is a loot-driven fantasy overhaul for vanilla Minecraft with 408 artifacts,
-                102 companions, 14 spirit weapons, 14 raid bosses, an infinite castle, 15 skill trees,
-                250 quests, and 138 interconnected systems. No mods required.
+                Forevercraft is a loot-driven fantasy overhaul for vanilla Minecraft with 600+ artifacts,
+                104 companions, 14 spirit weapons, 13 raid bosses, an infinite castle, 15 skill trees,
+                450+ quests, and 150+ interconnected systems. No mods required.
                 Every world has treasure. This one has dreams.
               </p>
               <button
-                onClick={() => navigator.clipboard.writeText('Forevercraft is a loot-driven fantasy overhaul for vanilla Minecraft with 408 artifacts, 102 companions, 14 spirit weapons, 14 raid bosses, an infinite castle, 15 skill trees, 250 quests, and 138 interconnected systems. No mods required. Every world has treasure. This one has dreams.')}
+                onClick={() => navigator.clipboard.writeText('Forevercraft is a loot-driven fantasy overhaul for vanilla Minecraft with 600+ artifacts, 104 companions, 14 spirit weapons, 13 raid bosses, an infinite castle, 15 skill trees, 450+ quests, and 150+ interconnected systems. No mods required. Every world has treasure. This one has dreams.')}
                 className="mt-4 px-4 py-2 rounded border border-yellow-800/40 hover:border-yellow-600/60 font-['Press_Start_2P'] text-[0.5rem] text-stone-500 hover:text-yellow-500 tracking-widest transition-colors"
               >
                 COPY TO CLIPBOARD
