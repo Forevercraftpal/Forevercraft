@@ -3,7 +3,7 @@ import PageHero from '../components/layout/PageHero'
 import ScrollReveal from '../components/effects/ScrollReveal'
 import Accordion from '../components/ui/Accordion'
 import Spoiler from '../components/ui/Spoiler'
-import StatCounter from '../components/ui/StatCounter'
+import CountUp from '../components/ui/CountUp'
 import { STATS } from '../data/constants'
 
 interface Sys {
@@ -372,7 +372,7 @@ export default function BountifulHarvest() {
             </p>
             <div className="flex flex-wrap justify-center gap-6 md:gap-10">
               {NUMBERS.map(n => (
-                <StatCounter key={n.label} end={n.value} suffix={n.suffix} label={n.label} />
+                <CountUp key={n.label} end={n.value} suffix={n.suffix} label={n.label} />
               ))}
             </div>
           </section>

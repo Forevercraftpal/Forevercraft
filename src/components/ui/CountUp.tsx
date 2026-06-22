@@ -8,7 +8,10 @@ interface Props {
   suffix?: string
 }
 
-export default function StatCounter({ end, label, duration = 2000, prefix = '', suffix = '' }: Props) {
+// NOTE: do not name this "StatCounter" — that string matches tracker-blocking
+// WAF rules (statcounter.com analytics) and the built chunk gets 503'd as a
+// suspected tracker subresource, which previously blanked the whole site.
+export default function CountUp({ end, label, duration = 2000, prefix = '', suffix = '' }: Props) {
   const ref = useRef<HTMLDivElement>(null)
   const [count, setCount] = useState(0)
   const [started, setStarted] = useState(false)

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import ParticleField from '../components/effects/ParticleField'
 import ScrollReveal from '../components/effects/ScrollReveal'
-import StatCounter from '../components/ui/StatCounter'
+import CountUp from '../components/ui/CountUp'
 import Card3D from '../components/ui/Card3D'
 import { STATS } from '../data/constants'
 
@@ -398,12 +398,12 @@ export default function Home() {
               Got questions? Our <span className="text-yellow-500">❓ Forevercraft Guide</span> is always in the corner, ready to help you navigate every system.
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-12">
-              <StatCounter end={STATS.totalArtifacts} label="Artifacts" />
-              <StatCounter end={STATS.totalCompanions} label="Companions" />
-              <StatCounter end={STATS.totalSpiritWeapons} label="Spirit Weapons" />
-              <StatCounter end={STATS.totalQuests} label="Quests" />
-              <StatCounter end={STATS.totalLoreFragments} label="Lore" />
-              <StatCounter end={STATS.totalFunctions} label="Functions" />
+              <CountUp end={STATS.totalArtifacts} label="Artifacts" />
+              <CountUp end={STATS.totalCompanions} label="Companions" />
+              <CountUp end={STATS.totalSpiritWeapons} label="Spirit Weapons" />
+              <CountUp end={STATS.totalQuests} label="Quests" />
+              <CountUp end={STATS.totalLoreFragments} label="Lore" />
+              <CountUp end={STATS.totalFunctions} label="Functions" />
             </div>
             <p className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-800 tracking-widest mt-10">
               BUILT WITH LOVE · ONE FUNCTION AT A TIME
