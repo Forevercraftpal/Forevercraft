@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { artifacts, TIERS, TYPES } from '../data/artifacts'
 import type { Tier, ArtifactType } from '../data/types'
-import { TIER_CARD, TIER_GLOW } from '../data/constants'
+import { TIER_CARD, TIER_GLOW, STATS } from '../data/constants'
 import PageHero from '../components/layout/PageHero'
 import TierBadge from '../components/ui/TierBadge'
 import ScrollReveal from '../components/effects/ScrollReveal'
@@ -28,17 +28,17 @@ export default function Artifacts() {
       <PageHero
         title="ARTIFACTS"
         badge="ARTIFACT CODEX"
-        subtitle={`${artifacts.length} unique items across six tiers. Every one handcrafted.`}
+        subtitle={`${STATS.totalArtifacts}+ handcrafted items across six tiers — abilities scripted by hand, not borrowed from enchantments.`}
       />
 
       {/* System Overview */}
       <div className="max-w-[1400px] mx-auto px-8 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {[
-            { title: '408 Artifacts', desc: 'Six tiers of handcrafted items — every one with unique abilities.' },
-            { title: '28 Armor Sets', desc: '8 Mythical (5pc), 5 Exquisite (4pc), 15 Ornate (4pc) with set bonuses' },
-            { title: '46 Accessories', desc: 'Passive effects when held in inventory. 19 toggleable via sneak+mainhand.' },
-            { title: '13 Rings', desc: 'Unique passive effects from Amethyst (Night Vision) to Void (Resistance II + Fire Resist + Slow Falling)' },
+            { title: '600+ Artifacts', desc: 'Six tiers — Common to Mythical — each with bespoke, hand-scripted abilities.' },
+            { title: '28 Armor Sets', desc: '2pc and 4pc bonuses; mythical sets push to 5pc ultimates with weapon cross-synergies.' },
+            { title: 'Accessories & Rings', desc: 'Passive effects while carried — many toggleable; fused at the Tinkerer’s Plinth into capstone Spirit Artifacts.' },
+            { title: 'Trims & Glyphs', desc: '18 trim patterns, 11 trim materials, and 13 Glyphforge runes (39 facet effects) layer onto your gear.' },
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 80}>
               <div className="rounded border border-stone-800 bg-stone-900/40 p-4 h-full">
@@ -53,12 +53,13 @@ export default function Artifacts() {
           <Spoiler>
             <div className="space-y-3 font-['Crimson_Pro'] text-base text-stone-400">
               <p><span className="text-yellow-500 font-semibold">Spawn Rates:</span> Non-structure containers: 7% (Common-Exquisite), 10% (Mythical). Structure chests: 25% (Common-Exquisite), 44% (Mythical). Biome matching adds +25%.</p>
-              <p><span className="text-yellow-500 font-semibold">Weapon Mastery:</span> Awaken artifacts with tier-matched Awakening Stones (20% crate drop). Gain XP from orbs, auto-unlock enchantments per level. Prestige up to 3 times. All 5 gear slots gain XP simultaneously.</p>
+              <p><span className="text-yellow-500 font-semibold">Weapon Mastery:</span> Awaken artifacts with tier-matched Awakening Stones (10% crate drop). Gain XP from orbs, auto-unlock enchantments per level. Prestige up to 3 times. All gear slots gain XP simultaneously.</p>
               <p><span className="text-yellow-500 font-semibold">Patina System:</span> Tracks playtime with each artifact. Fresh → Worn → Seasoned → Storied → Legendary over 72+ hours. Each stage adds flavor text and a permanent stat bonus.</p>
               <p><span className="text-yellow-500 font-semibold">Constellations:</span> 10 thematic groupings of artifacts. Complete a constellation = +0.25 permanent Dream Rate (up to +2.5 total).</p>
               <p><span className="text-yellow-500 font-semibold">Transmutation:</span> Sacrifice same-tier artifacts for one of the next tier. 5 Common → 1 Uncommon, 4 Rare → 1 Ornate, 3 Exquisite → 1 Mythical. Artificer nearby reduces cost by 1 daily.</p>
               <p><span className="text-yellow-500 font-semibold">Healer Artifacts:</span> 12 right-click healing items (2 per tier). Healer&apos;s Oath: during any healer cooldown, Weakness V is applied and arrows are neutralized.</p>
-              <p><span className="text-yellow-500 font-semibold">Glyphforge:</span> Permanent rune binding on artifacts. 12 glyphs + Arcanum (random). Capacity scales: 1 (base) to 13 (mythical). Time-gated: 3 days for first glyph, 15 for thirteenth.</p>
+              <p><span className="text-yellow-500 font-semibold">Glyphforge:</span> Permanent rune binding on artifacts. 13 glyphs, each collected as one of three facets (⚔ Offensive / 🛡 Defensive / ✦ Passive) for 39 distinct effects. Capacity scales 1 (base) to 13 (mythical), time-gated from 3 days for the first glyph to 15 for the thirteenth.</p>
+              <p><span className="text-yellow-500 font-semibold">Tinkerer&apos;s Plinth (new):</span> A fusion altar that combines accessories into capstone &ldquo;Spirit Artifacts&rdquo; across 11 fusion families (56 recipes) — the Pebble of Creation, Band of All Rings, Dreamer&apos;s Reliquary, and more. <span className="italic">&ldquo;You have not gained power; you have gained room.&rdquo;</span></p>
             </div>
           </Spoiler>
         </ScrollReveal>
@@ -167,6 +168,20 @@ export default function Artifacts() {
                       </span>
                     )}
                   </div>
+                  {artifact.description && (
+                    <p className="font-['Crimson_Pro'] italic text-stone-400 text-sm leading-relaxed mt-3">
+                      {artifact.description}
+                    </p>
+                  )}
+                  {artifact.abilities.length > 0 && (
+                    <ul className="mt-2 space-y-1 border-t border-stone-800/60 pt-2">
+                      {artifact.abilities.map((ab, j) => (
+                        <li key={j} className="font-['Crimson_Pro'] text-stone-500 text-xs leading-snug">
+                          {ab}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </ScrollReveal>
             ))}
