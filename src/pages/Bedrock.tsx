@@ -3,7 +3,7 @@ import ScrollReveal from '../components/effects/ScrollReveal'
 import Spoiler from '../components/ui/Spoiler'
 
 const BEDROCK_STATS = [
-  { label: 'SYSTEMS', value: '130' },
+  { label: 'SYSTEMS', value: '150+' },
   { label: 'SCRIPT FILES', value: '139' },
   { label: 'LINES OF CODE', value: '41,994' },
   { label: 'ENTITY DEFS', value: '98' },
@@ -46,7 +46,7 @@ const PARITY_SECTIONS = [
   {
     category: 'Combat',
     count: 14,
-    systems: '14 Spirit Weapons, Dual Swordsman, Weapon Mastery, Armor Mastery, Combat Combos, Arrows, Shields, Trim Abilities, Artifact Abilities (408), Healers (12), Mobs (6-tier Patrons), Health Bars, Tamed Protection, Class Detection',
+    systems: '14 Spirit Weapons, Dual Swordsman, Weapon Mastery, Armor Mastery, Combat Combos, Arrows, Shields, Trim Abilities, Artifact Abilities (600+), Healers (12), Mobs (6-tier Patrons), Health Bars, Tamed Protection, Class Detection',
   },
   {
     category: 'Companions',
@@ -115,7 +115,7 @@ export default function Bedrock() {
       <PageHero
         title="BEDROCK EDITION"
         badge="CROSS-PLATFORM"
-        subtitle="130 systems. Full Java parity. Built for console, mobile, and PC."
+        subtitle="150+ systems. Full Java parity. Built for console, mobile, and PC."
         particleColor="rgba(100, 200, 255, 0.3)"
       />
 
@@ -136,8 +136,8 @@ export default function Bedrock() {
         <ScrollReveal delay={100}>
           <div className="text-center mb-16">
             <p className="font-['Crimson_Pro'] text-xl text-stone-400 max-w-3xl mx-auto leading-relaxed">
-              Everything that made Forevercraft special on Java — 408 artifacts, 14 spirit weapons,
-              102 companions, 14 raid bosses, an infinite castle, and 138 interconnected systems —
+              Everything that made Forevercraft special on Java — 600+ artifacts, 14 spirit weapons,
+              104 companions, 13 raid bosses, an infinite castle, and 150+ interconnected systems —
               now runs natively on Bedrock Edition through Minecraft&apos;s Script API. No mods. No
               experimental toggles. Just install the behavior pack and play.
             </p>
