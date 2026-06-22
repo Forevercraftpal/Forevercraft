@@ -7,7 +7,7 @@
       "tier": 0,
       "category": "foundation",
       "color": "#FBBF24",
-      "icon": "⚙️",
+      "icon": "\u2699\ufe0f",
       "fileCount": 450,
       "alwaysIncluded": true
     },
@@ -18,7 +18,7 @@
       "tier": 1,
       "category": "foundation",
       "color": "#F59E0B",
-      "icon": "✦",
+      "icon": "\u2726",
       "fileCount": 120
     },
     {
@@ -28,7 +28,7 @@
       "tier": 1,
       "category": "foundation",
       "color": "#FB923C",
-      "icon": "📦",
+      "icon": "\ud83d\udce6",
       "fileCount": 2800
     },
     {
@@ -38,7 +38,7 @@
       "tier": 1,
       "category": "foundation",
       "color": "#EF4444",
-      "icon": "⚔️",
+      "icon": "\u2694\ufe0f",
       "fileCount": 3200
     },
     {
@@ -48,7 +48,7 @@
       "tier": 2,
       "category": "progression",
       "color": "#8B5CF6",
-      "icon": "⚡",
+      "icon": "\u26a1",
       "fileCount": 800,
       "standaloneCodexName": null,
       "standaloneNote": "Generic weapon names/textures with glint. Includes mastery and glyphforge."
@@ -60,7 +60,7 @@
       "tier": 2,
       "category": "progression",
       "color": "#A855F7",
-      "icon": "📈",
+      "icon": "\ud83d\udcc8",
       "fileCount": 200
     },
     {
@@ -70,7 +70,7 @@
       "tier": 2,
       "category": "progression",
       "color": "#22C55E",
-      "icon": "🌳",
+      "icon": "\ud83c\udf33",
       "fileCount": 400,
       "standaloneCodexName": "Advantage Tree"
     },
@@ -81,7 +81,7 @@
       "tier": 3,
       "category": "content",
       "color": "#4ADE80",
-      "icon": "🐾",
+      "icon": "\ud83d\udc3e",
       "fileCount": 900,
       "fullPackOnly": true
     },
@@ -92,7 +92,7 @@
       "tier": 3,
       "category": "content",
       "color": "#06B6D4",
-      "icon": "📜",
+      "icon": "\ud83d\udcdc",
       "fileCount": 350
     },
     {
@@ -102,7 +102,7 @@
       "tier": 3,
       "category": "content",
       "color": "#DC2626",
-      "icon": "🏰",
+      "icon": "\ud83c\udff0",
       "fileCount": 600
     },
     {
@@ -112,7 +112,7 @@
       "tier": 3,
       "category": "content",
       "color": "#F97316",
-      "icon": "🍖",
+      "icon": "\ud83c\udf56",
       "fileCount": 200
     },
     {
@@ -122,7 +122,7 @@
       "tier": 3,
       "category": "content",
       "color": "#84CC16",
-      "icon": "🏠",
+      "icon": "\ud83c\udfe0",
       "fileCount": 300
     },
     {
@@ -132,7 +132,7 @@
       "tier": 3,
       "category": "content",
       "color": "#3B82F6",
-      "icon": "🛡️",
+      "icon": "\ud83d\udee1\ufe0f",
       "fileCount": 350,
       "standaloneCodexName": "Guild Book"
     },
@@ -143,7 +143,7 @@
       "tier": 3,
       "category": "content",
       "color": "#EC4899",
-      "icon": "💜",
+      "icon": "\ud83d\udc9c",
       "fileCount": 400
     },
     {
@@ -153,7 +153,7 @@
       "tier": 3,
       "category": "content",
       "color": "#D97706",
-      "icon": "📖",
+      "icon": "\ud83d\udcd6",
       "fileCount": 1100
     },
     {
@@ -163,7 +163,7 @@
       "tier": 3,
       "category": "content",
       "color": "#14B8A6",
-      "icon": "🧭",
+      "icon": "\ud83e\udded",
       "fileCount": 150
     },
     {
@@ -173,7 +173,7 @@
       "tier": 3,
       "category": "endgame",
       "color": "#FBBF24",
-      "icon": "🗡️",
+      "icon": "\ud83d\udde1\ufe0f",
       "fileCount": 500
     },
     {
@@ -183,7 +183,7 @@
       "tier": 3,
       "category": "content",
       "color": "#10B981",
-      "icon": "⛏️",
+      "icon": "\u26cf\ufe0f",
       "fileCount": 600
     },
     {
@@ -193,7 +193,7 @@
       "tier": 4,
       "category": "world",
       "color": "#6366F1",
-      "icon": "🌍",
+      "icon": "\ud83c\udf0d",
       "fileCount": 500
     },
     {
@@ -203,7 +203,7 @@
       "tier": 4,
       "category": "world",
       "color": "#8B5CF6",
-      "icon": "👤",
+      "icon": "\ud83d\udc64",
       "fileCount": 450
     },
     {
@@ -213,7 +213,7 @@
       "tier": 3,
       "category": "content",
       "color": "#EF4444",
-      "icon": "📕",
+      "icon": "\ud83d\udcd5",
       "fileCount": 200,
       "standaloneCodexName": "Bestiary Log"
     },
@@ -224,7 +224,7 @@
       "tier": 3,
       "category": "progression",
       "color": "#F59E0B",
-      "icon": "🏆",
+      "icon": "\ud83c\udfc6",
       "fileCount": 200,
       "standaloneCodexName": "Milestone Log"
     },
@@ -235,7 +235,7 @@
       "tier": 4,
       "category": "content",
       "color": "#D946EF",
-      "icon": "✨",
+      "icon": "\u2728",
       "fileCount": 250,
       "standaloneCodexName": "Cosmetic Menu"
     },
@@ -246,7 +246,7 @@
       "tier": 3,
       "category": "content",
       "color": "#A855F7",
-      "icon": "⛲",
+      "icon": "\u26f2",
       "fileCount": 150
     },
     {
@@ -256,7 +256,7 @@
       "tier": 3,
       "category": "content",
       "color": "#374151",
-      "icon": "💀",
+      "icon": "\ud83d\udc80",
       "fileCount": 200
     },
     {
@@ -266,7 +266,7 @@
       "tier": 5,
       "category": "endgame",
       "color": "#7C3AED",
-      "icon": "💫",
+      "icon": "\ud83d\udcab",
       "fileCount": 100
     },
     {
@@ -276,51 +276,446 @@
       "tier": 5,
       "category": "endgame",
       "color": "#F472B6",
-      "icon": "🤝",
+      "icon": "\ud83e\udd1d",
       "fileCount": 200
+    },
+    {
+      "id": "story-mode",
+      "name": "Story Mode",
+      "description": "480-chapter branching narrative across 8 story branches \u2014 cutscenes, choices, and the Chronicle.",
+      "tier": 3,
+      "category": "content",
+      "color": "#60A5FA",
+      "icon": "\ud83d\udcd6",
+      "fileCount": 5000
+    },
+    {
+      "id": "decor",
+      "name": "Decor & Furniture",
+      "description": "Placeable furniture, modular kitchens, bonsai & planters, antiques, and decor crafting nodes.",
+      "tier": 3,
+      "category": "content",
+      "color": "#F472B6",
+      "icon": "\ud83e\ude91",
+      "fileCount": 1125
+    },
+    {
+      "id": "gathering",
+      "name": "Gathering & Nodes",
+      "description": "Chest nodes, gather bonus rounds, and nest harvesting that feed Artisan progression.",
+      "tier": 3,
+      "category": "content",
+      "color": "#34D399",
+      "icon": "\ud83c\udf3f",
+      "fileCount": 235
+    },
+    {
+      "id": "tinkering",
+      "name": "Tinkering & Forging",
+      "description": "Tinkering bench, forging, and satchel forge for reworking gear.",
+      "tier": 3,
+      "category": "content",
+      "color": "#FB923C",
+      "icon": "\ud83d\udd27",
+      "fileCount": 210
+    },
+    {
+      "id": "storage-bags",
+      "name": "Storage & Bags",
+      "description": "Volume-stacking bags \u2014 Forever Sack/Hold, bulk barrel, key satchel, accessory crates, pocket ender.",
+      "tier": 3,
+      "category": "content",
+      "color": "#A78BFA",
+      "icon": "\ud83c\udf92",
+      "fileCount": 169
+    },
+    {
+      "id": "live-events",
+      "name": "Live Events",
+      "description": "Co-op events, node festivals, and the event director scheduling.",
+      "tier": 4,
+      "category": "world",
+      "color": "#FBBF24",
+      "icon": "\ud83c\udf89",
+      "fileCount": 55
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy",
+      "description": "Custom potions and alchemy brewing.",
+      "tier": 3,
+      "category": "content",
+      "color": "#2DD4BF",
+      "icon": "\u2697\ufe0f",
+      "fileCount": 39
+    },
+    {
+      "id": "fishing",
+      "name": "Fishing",
+      "description": "Full fishing system \u2014 rarities, fishing crates, and catches.",
+      "tier": 3,
+      "category": "content",
+      "color": "#38BDF8",
+      "icon": "\ud83c\udfa3",
+      "fileCount": 151
+    },
+    {
+      "id": "enchanting",
+      "name": "Enchanting & Glyphs",
+      "description": "Glyphforge, arcane inscription, and ability harmonization.",
+      "tier": 2,
+      "category": "progression",
+      "color": "#C084FC",
+      "icon": "\u2728",
+      "fileCount": 210
+    },
+    {
+      "id": "creator-tools",
+      "name": "Creator & Cinematic Tools",
+      "description": "Showcase mode, screenshot/freeze-frame, and spectator tools for content creators.",
+      "tier": 4,
+      "category": "world",
+      "color": "#94A3B8",
+      "icon": "\ud83c\udfac",
+      "fileCount": 36
+    },
+    {
+      "id": "minigames",
+      "name": "Minigames & Competitions",
+      "description": "Duels, pet duels, competitions, heists, and node festivals.",
+      "tier": 3,
+      "category": "content",
+      "color": "#F59E0B",
+      "icon": "\ud83c\udfc6",
+      "fileCount": 80
+    },
+    {
+      "id": "mounts",
+      "name": "Mounts & Riding",
+      "description": "Mount training and horse riding progression.",
+      "tier": 3,
+      "category": "content",
+      "color": "#FCD34D",
+      "icon": "\ud83d\udc34",
+      "fileCount": 26
+    },
+    {
+      "id": "achievements",
+      "name": "Achievements & Trophies",
+      "description": "Cross-system achievements and trophy tracking.",
+      "tier": 3,
+      "category": "progression",
+      "color": "#818CF8",
+      "icon": "\ud83c\udfc5",
+      "fileCount": 90
+    },
+    {
+      "id": "onboarding",
+      "name": "Onboarding",
+      "description": "New-player tutorial, briefings, and daily server news.",
+      "tier": 1,
+      "category": "foundation",
+      "color": "#FDE68A",
+      "icon": "\ud83e\udded",
+      "fileCount": 19
     }
   ],
   "edges": [
-    { "from": "dream-rate", "to": "core", "type": "required" },
-    { "from": "crates", "to": "core", "type": "required" },
-    { "from": "artifacts", "to": "core", "type": "required" },
-    { "from": "artifacts", "to": "crates", "type": "required" },
-    { "from": "classes", "to": "artifacts", "type": "required" },
-    { "from": "mastery", "to": "artifacts", "type": "required" },
-    { "from": "advantage", "to": "core", "type": "required" },
-    { "from": "companions", "to": "crates", "type": "required" },
-    { "from": "quests", "to": "core", "type": "required" },
-    { "from": "combat-instances", "to": "artifacts", "type": "required" },
-    { "from": "combat-instances", "to": "crates", "type": "required" },
-    { "from": "cooking", "to": "core", "type": "required" },
-    { "from": "housing", "to": "core", "type": "required" },
-    { "from": "guilds", "to": "core", "type": "required" },
-    { "from": "social", "to": "core", "type": "required" },
-    { "from": "lore", "to": "core", "type": "required" },
-    { "from": "guidestones", "to": "core", "type": "required" },
-    { "from": "spirit-weapons", "to": "classes", "type": "required" },
-    { "from": "spirit-weapons", "to": "combat-instances", "type": "required" },
-    { "from": "craftforever", "to": "core", "type": "required" },
-    { "from": "world-systems", "to": "core", "type": "required" },
-    { "from": "world-systems", "to": "crates", "type": "required" },
-    { "from": "professions", "to": "core", "type": "required" },
-    { "from": "bestiary", "to": "core", "type": "required" },
-    { "from": "milestones", "to": "core", "type": "required" },
-    { "from": "cosmetics", "to": "core", "type": "required" },
-    { "from": "gacha", "to": "core", "type": "required" },
-    { "from": "black-market", "to": "core", "type": "required" },
-    { "from": "dreaming-realm", "to": "core", "type": "required" },
-    { "from": "buddy-system", "to": "core", "type": "required" },
-    { "from": "quests", "to": "advantage", "type": "optional", "reason": "Taskmaster tree bonus on quest completion" },
-    { "from": "quests", "to": "guilds", "type": "optional", "reason": "Guild contribution on quest completion" },
-    { "from": "guilds", "to": "companions", "type": "optional", "reason": "Pet placement in guild" },
-    { "from": "combat-instances", "to": "dream-rate", "type": "optional", "reason": "DR scaling for mob difficulty" },
-    { "from": "gacha", "to": "companions", "type": "optional", "reason": "Companion rewards from fountain" },
-    { "from": "gacha", "to": "crates", "type": "optional", "reason": "Crate rewards from fountain" },
-    { "from": "cooking", "to": "world-systems", "type": "optional", "reason": "Seasonal recipe rotation" },
-    { "from": "housing", "to": "craftforever", "type": "optional", "reason": "Laborer artisan rank requirements" },
-    { "from": "social", "to": "companions", "type": "optional", "reason": "Pet duel challenges" },
-    { "from": "dreaming-realm", "to": "dream-rate", "type": "optional", "reason": "DR triggers dream chance on sleep" },
-    { "from": "buddy-system", "to": "companions", "type": "optional", "reason": "Tamed bond integration" }
+    {
+      "from": "dream-rate",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "crates",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "artifacts",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "artifacts",
+      "to": "crates",
+      "type": "required"
+    },
+    {
+      "from": "classes",
+      "to": "artifacts",
+      "type": "required"
+    },
+    {
+      "from": "mastery",
+      "to": "artifacts",
+      "type": "required"
+    },
+    {
+      "from": "advantage",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "companions",
+      "to": "crates",
+      "type": "required"
+    },
+    {
+      "from": "quests",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "combat-instances",
+      "to": "artifacts",
+      "type": "required"
+    },
+    {
+      "from": "combat-instances",
+      "to": "crates",
+      "type": "required"
+    },
+    {
+      "from": "cooking",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "housing",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "guilds",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "social",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "lore",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "guidestones",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "spirit-weapons",
+      "to": "classes",
+      "type": "required"
+    },
+    {
+      "from": "spirit-weapons",
+      "to": "combat-instances",
+      "type": "required"
+    },
+    {
+      "from": "craftforever",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "world-systems",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "world-systems",
+      "to": "crates",
+      "type": "required"
+    },
+    {
+      "from": "professions",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "bestiary",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "milestones",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "cosmetics",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "gacha",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "black-market",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "dreaming-realm",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "buddy-system",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "quests",
+      "to": "advantage",
+      "type": "optional",
+      "reason": "Taskmaster tree bonus on quest completion"
+    },
+    {
+      "from": "quests",
+      "to": "guilds",
+      "type": "optional",
+      "reason": "Guild contribution on quest completion"
+    },
+    {
+      "from": "guilds",
+      "to": "companions",
+      "type": "optional",
+      "reason": "Pet placement in guild"
+    },
+    {
+      "from": "combat-instances",
+      "to": "dream-rate",
+      "type": "optional",
+      "reason": "DR scaling for mob difficulty"
+    },
+    {
+      "from": "gacha",
+      "to": "companions",
+      "type": "optional",
+      "reason": "Companion rewards from fountain"
+    },
+    {
+      "from": "gacha",
+      "to": "crates",
+      "type": "optional",
+      "reason": "Crate rewards from fountain"
+    },
+    {
+      "from": "cooking",
+      "to": "world-systems",
+      "type": "optional",
+      "reason": "Seasonal recipe rotation"
+    },
+    {
+      "from": "housing",
+      "to": "craftforever",
+      "type": "optional",
+      "reason": "Laborer artisan rank requirements"
+    },
+    {
+      "from": "social",
+      "to": "companions",
+      "type": "optional",
+      "reason": "Pet duel challenges"
+    },
+    {
+      "from": "dreaming-realm",
+      "to": "dream-rate",
+      "type": "optional",
+      "reason": "DR triggers dream chance on sleep"
+    },
+    {
+      "from": "buddy-system",
+      "to": "companions",
+      "type": "optional",
+      "reason": "Tamed bond integration"
+    },
+    {
+      "from": "story-mode",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "decor",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "gathering",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "tinkering",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "storage-bags",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "live-events",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "alchemy",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "fishing",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "enchanting",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "creator-tools",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "minigames",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "mounts",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "achievements",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "onboarding",
+      "to": "core",
+      "type": "required"
+    },
+    {
+      "from": "tinkering",
+      "to": "artifacts",
+      "type": "required"
+    },
+    {
+      "from": "mounts",
+      "to": "companions",
+      "type": "required"
+    }
   ]
 }
