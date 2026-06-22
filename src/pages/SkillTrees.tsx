@@ -38,12 +38,25 @@ export default function SkillTrees() {
     <div className="bg-stone-950 text-stone-200 min-h-screen">
       <PageHero
         title="SKILL TREES"
-        badge="15 ADVANTAGE TREES"
-        subtitle="25 levels each. 3 prestige cycles. 70 unique prestige abilities. Cross-tree synergies."
+        badge="15 ADVANTAGE TREES + THE TREE"
+        subtitle="25 levels each, 3 prestige cycles, 45 prestige abilities — plus a per-class Tree for all 21 classes."
         particleColor="rgba(34, 197, 94, 0.3)"
       />
 
       <div className="max-w-[1600px] mx-auto px-8 py-16">
+        {/* Two progression systems */}
+        <ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-4 mb-12">
+            <div className="rounded-2xl border border-green-800/30 bg-green-950/10 p-5">
+              <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-green-400 tracking-widest mb-2">15 ADVANTAGE TREES</h3>
+              <p className="font-['Crimson_Pro'] text-stone-400 text-base">Account-wide, filled passively just by playing — walking levels Agility, mining levels Mining, cooking levels Culinary. Browse all 15 below.</p>
+            </div>
+            <div className="rounded-2xl border border-purple-800/30 bg-purple-950/10 p-5">
+              <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-purple-400 tracking-widest mb-2">THE TREE — PER-CLASS <span className="text-purple-300">(NEW)</span></h3>
+              <p className="font-['Crimson_Pro'] text-stone-400 text-base">New this update: every one of the 21 classes has its own skill tree. Using a class&apos;s gear earns Mastery XP and Bough Points to spend on nodes — and a slice of every gain cross-trains your other classes. Top nodes unlock a Crown and signature mastery moves.</p>
+            </div>
+          </div>
+        </ScrollReveal>
         {/* Three Column Layout */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {COLUMNS.map(col => (

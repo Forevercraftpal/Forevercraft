@@ -57,7 +57,7 @@ export default function Codex() {
         category: 'Artifact',
         name: a.name,
         tier: a.tier,
-        detail: `${a.tier} ${a.type}${a.subtype ? ` (${a.subtype})` : ''}`,
+        detail: `${a.tier} ${a.type}${a.subtype ? ` (${a.subtype})` : ''}${a.description ? ` — ${a.description}` : ''}`,
       })
     }
 

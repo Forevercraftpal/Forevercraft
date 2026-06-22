@@ -72,9 +72,11 @@ export default function DreamRate() {
               What is Dream Rate?
             </h2>
             <p className="text-stone-300">
-              Dream Rate is a custom RNG system that connects every system in Forevercraft.
+              Dream Rate is a custom luck system that connects every system in Forevercraft.
               It determines crate quality, artifact rarity, structure accessibility, and companion encounters.
-              At 35 Dreams, you get 2x bonus rolls on every crate. At 50, you&apos;re Dream Transcendent.
+              At 35 Dreams you get 2x bonus rolls on every crate. At 50 you&apos;re Dream Transcendent — the
+              final <em>named</em> milestone — and the climb continues all the way to the cap of 100,
+              the Dream Weaver (raised from 50 in the Bountiful Harvest update).
             </p>
             <div className="mt-6 bg-stone-900/60 border border-yellow-900/30 rounded p-4 text-center">
               <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 mb-1">
@@ -84,7 +86,7 @@ export default function DreamRate() {
                 1 + (dreams / 35)
               </p>
               <p className="text-stone-500 text-base mt-2">
-                At 35 Dreams = 2.0x · At 50 Dreams = 2.43x
+                At 35 Dreams = 2.0x · At 50 = 2.43x · At 100 = 3.86x
               </p>
             </div>
           </section>
@@ -167,6 +169,9 @@ export default function DreamRate() {
               <p><span className="text-yellow-500 font-semibold">Moon Phase Bonuses:</span> Full Moon fishing +0.5. New Moon combat +0.5 (also 2x patron/furia spawns). Harvest Moon (1/8 chance on Full Moon) = +1.5 DR + randomTickSpeed=15 for crop growth.</p>
               <p><span className="text-yellow-500 font-semibold">Weather:</span> Rain + fishing rod equipped = +0.5 temporary DR.</p>
               <p><span className="text-yellow-500 font-semibold">Enchantments:</span> Fortune, Silk Touch, Luck of the Sea, Looting each contribute +0.25/level (context-specific — only when relevant to the activity).</p>
+              <p><span className="text-yellow-500 font-semibold">Crate-Tier Gates:</span> The best crates unlock as you climb — Ornate at DR 5, Exquisite at DR 15, Mythical at DR 25.</p>
+              <p><span className="text-yellow-500 font-semibold">Dream Rank:</span> A separate lifetime ladder (G → F → E → D → C → B → A → S → SS → SSS) runs off your accumulated Dream Points, unlocking housing slots and server-wide broadcasts.</p>
+              <p><span className="text-yellow-500 font-semibold">Past DR 30:</span> The new moon stops being safe — glowing Night Terrors hunt the high-luck after dark. Crossing DR 30 for the first time anywhere on the server triggers the one-time world event, The Dreaming.</p>
               <p><span className="text-yellow-500 font-semibold">Check Your DR:</span> Right-click <span className="text-yellow-400">Forevercraft</span> in the book header to reveal a full stats breakdown alongside your Dream Rate breakdown and history.</p>
             </div>
           </Spoiler>
