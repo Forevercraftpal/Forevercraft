@@ -27,8 +27,8 @@ export default function RaidBosses() {
     <div className="bg-stone-950 text-stone-200 min-h-screen">
       <PageHero
         title="RAID BOSSES"
-        badge="14 ENCOUNTERS"
-        subtitle="Multi-phase bosses at the bottom of every structure. 5% to change your world forever."
+        badge="RAID & WORLD BOSSES"
+        subtitle="Multi-phase raid bosses at the bottom of every structure, plus 11 roaming world bosses. 5% to change your world forever."
         particleColor="rgba(220, 38, 38, 0.3)"
       />
 
@@ -62,7 +62,7 @@ export default function RaidBosses() {
             <div>
               <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">BOSS ENCOUNTER</h3>
               <p className="font-['Crimson_Pro'] text-base text-stone-400">
-                The floor 10 boss has a 10-minute enrage timer. If the timer expires, the boss becomes unstoppable and wipes the party. Requires DR 10 (Damage Reduction) to enter the boss floor.
+                The floor 10 boss has a 10-minute enrage timer. If the timer expires, the boss becomes unstoppable and wipes the party. Each boss scales to your party size and Dream Rate, with anti-cheese pull mechanics.
               </p>
             </div>
 
@@ -167,6 +167,34 @@ export default function RaidBosses() {
           </ScrollReveal>
         ))}
       </div>
+
+      {/* World Bosses */}
+      <section className="border-t border-yellow-900/20">
+        <div className="max-w-[1400px] mx-auto px-8 py-16">
+          <ScrollReveal>
+            <div className="text-center mb-8">
+              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">11 ROAMING WORLD BOSSES</h2>
+              <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
+                Beyond the structure raids, 11 titans roam the overworld — spawning naturally every few in-game days, or summoned with a Totem of Summoning.
+              </p>
+            </div>
+          </ScrollReveal>
+          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {[
+              { title: 'Four Phases + Rage', desc: 'Four HP-gated phases with telegraphed attacks, then a final Rage state that turns the fight deadly.' },
+              { title: 'Seasonal & Lunar Buffs', desc: 'The world boosts them — a Blood Moon makes a world boss far more dangerous.' },
+              { title: 'Slayer Titles', desc: 'Kill thresholds award escalating Slayer titles, and each carries a permanent "Realm First!" for whoever fells it first.' },
+            ].map((w, i) => (
+              <ScrollReveal key={w.title} delay={i * 80}>
+                <div className="rounded-3xl border border-red-900/30 bg-red-950/10 p-5 h-full">
+                  <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-red-400 mb-2">{w.title}</h3>
+                  <p className="font-['Crimson_Pro'] text-base text-stone-400">{w.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
