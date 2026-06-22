@@ -13,7 +13,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Soul Rend', description: 'Every 3rd hit marks target to take +25% damage', unlockTier: 'Uncommon' },
       { name: 'Stealth Kill', description: 'Kills from stealth restore 20% HP', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Complete 100 stealth kills in raids', 'Reach Infinite Castle floor 50', 'Defeat Hollow Sovereign solo'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Complete 100 stealth kills in raids', 'Reach Infinite Castle floor 50', 'Defeat Hollow Sovereign solo'],
   },
   {
     id: 2, name: 'Voidpiercer', className: 'Hunter', weaponType: 'Crossbow',
@@ -27,7 +27,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Steady Aim', description: 'Stand still 2s for +200% next shot damage', unlockTier: 'Uncommon' },
       { name: 'Fade', description: 'Invisibility for 5s after a kill', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Land 1,000 critical shots', 'Defeat 500 Endermen', 'Clear End City raid in under 5 minutes'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Land 1,000 critical shots', 'Defeat 500 Endermen', 'Clear End City raid in under 5 minutes'],
   },
   {
     id: 3, name: 'Firebrand', className: 'Berserker', weaponType: 'Axe',
@@ -41,7 +41,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Bloodlust', description: 'Each kill extends Rage by 3s', unlockTier: 'Uncommon' },
       { name: 'Berserker\'s Roar', description: 'Fear nearby mobs for 5s (30s CD)', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Activate Rage Mode 500 times', 'Kill 100 mobs in a single Rage', 'Defeat Gilded Tyrant at full Rage'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Activate Rage Mode 500 times', 'Kill 100 mobs in a single Rage', 'Defeat Gilded Tyrant at full Rage'],
   },
   {
     id: 4, name: 'Zephyr Edge', className: 'Dancer', weaponType: 'Fan',
@@ -55,7 +55,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Grace', description: 'Permanent Haste II and +15% dodge chance', unlockTier: 'Uncommon' },
       { name: 'Healing Rhythm', description: 'Heal 1 heart per hit during Flurry', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Dodge 2,000 attacks', 'Defeat a boss without taking damage', 'Complete Trial Chambers on Brutal difficulty'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Dodge 2,000 attacks', 'Defeat a boss without taking damage', 'Complete Trial Chambers on Brutal difficulty'],
   },
   {
     id: 5, name: '???', className: '???', weaponType: '???',
@@ -81,7 +81,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Rally Cry', description: 'Buff all tamed animals: +50% damage for 15s', unlockTier: 'Uncommon' },
       { name: 'Pack Alpha', description: 'Tamed animals gain regeneration and fire resistance near you', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills with tamed animals', 'Tame 50 unique animals', 'Have 10 tamed animals alive simultaneously', 'Defeat Grand Illusionist with a full war pack'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills with tamed animals', 'Tame 50 unique animals', 'Have 10 tamed animals alive simultaneously', 'Defeat Grand Illusionist with a full war pack'],
   },
   {
     id: 7, name: 'Ashcrown Mace', className: 'Sentinel', weaponType: 'Mace',
@@ -95,7 +95,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Shield Bash', description: 'Stun target for 3s on shield block', unlockTier: 'Uncommon' },
       { name: 'Flame Guard', description: 'Attackers take fire damage when you block', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Block 10,000 attacks', 'Survive 1,000 damage in a single raid', 'Defeat Ashen Lord without healing'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Block 10,000 attacks', 'Survive 1,000 damage in a single raid', 'Defeat Ashen Lord without healing'],
   },
   {
     id: 8, name: 'Ellegaard\'s Trident', className: 'Javelin', weaponType: 'Trident',
@@ -109,7 +109,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Riptide Mastery', description: 'Riptide works without rain, enhanced distance', unlockTier: 'Uncommon' },
       { name: 'Depth Pressure', description: '+50% damage to mobs below sea level', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Kill 5,000 mobs with thrown trident', 'Explore 25 Ocean Monuments', 'Defeat Leviathan in under 8 minutes'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Kill 5,000 mobs with thrown trident', 'Explore 25 Ocean Monuments', 'Defeat Leviathan in under 8 minutes'],
   },
   {
     id: 9, name: 'Pharaoh\'s Fist', className: 'Striker', weaponType: 'Gauntlet',
@@ -123,7 +123,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Iron Fist', description: 'Unarmed damage scales with armor value', unlockTier: 'Uncommon' },
       { name: 'Combo Master', description: 'Each consecutive hit within 2s adds +10% damage, stacking', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Land 100,000 punches', 'Reach a 50-hit combo', 'Defeat Eternal Pharaoh without using abilities'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Land 100,000 punches', 'Reach a 50-hit combo', 'Defeat Eternal Pharaoh without using abilities'],
   },
   {
     id: 10, name: 'Lifewoven Branch', className: 'Healer', weaponType: 'Staff',
@@ -137,7 +137,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Regenerative Aura', description: 'Passive Regen I to all allies within 12 blocks', unlockTier: 'Uncommon' },
       { name: 'Cleansing Light', description: 'Remove all negative effects from allies in range', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 health healed in combat', 'Cleanse 5,000 negative effects', 'Keep all party members alive through a full raid', 'Heal companion to Eternal Bond'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 health healed in combat', 'Cleanse 5,000 negative effects', 'Keep all party members alive through a full raid', 'Heal companion to Eternal Bond'],
   },
   {
     id: 11, name: 'Soulstring', className: 'Archer', weaponType: 'Bow',
@@ -151,7 +151,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Piercing Song', description: '+3 arrow damage + Speed I on hit', unlockTier: 'Uncommon' },
       { name: 'Disengage', description: 'Launch backward 10 blocks + Invisibility 3s (15s CD)', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Land 10,000 overcharged shots', 'Hit a target from 100+ blocks', 'Defeat Deepcrawler without melee'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Land 10,000 overcharged shots', 'Hit a target from 100+ blocks', 'Defeat Deepcrawler without melee'],
   },
   {
     id: 12, name: 'Dragonheart Sword', className: 'Knight', weaponType: 'Sword',
@@ -165,7 +165,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Stalwart', description: '+5 armor and +3 toughness while shield is raised', unlockTier: 'Uncommon' },
       { name: 'Rallying Banner', description: 'Plant banner: allies get Strength I in radius (45s CD)', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Block 20,000 attacks with Johan Shield', 'Protect 100 allies from lethal damage', 'Defeat Mossheart Warden without dropping below 50% HP'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Block 20,000 attacks with Johan Shield', 'Protect 100 allies from lethal damage', 'Defeat Mossheart Warden without dropping below 50% HP'],
   },
   {
     id: 13, name: 'Bulwark Shield', className: 'Tank', weaponType: 'Shield',
@@ -179,7 +179,7 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Taunt', description: 'Force all mobs in range to target you for 10s', unlockTier: 'Uncommon' },
       { name: 'Iron Skin', description: 'Passive: absorb first hit every 30s completely', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 damage absorbed', 'Taunt 10,000 mobs', 'Survive 5 minutes at 1 heart in a raid', 'Defeat Crimson Bulwark while tanking for a full party'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 damage absorbed', 'Taunt 10,000 mobs', 'Survive 5 minutes at 1 heart in a raid', 'Defeat Crimson Bulwark while tanking for a full party'],
   },
   {
     id: 14, name: 'Royal Trident', className: 'Hoplite', weaponType: 'Trident',
@@ -193,6 +193,6 @@ export const spiritWeapons: Array<SpiritWeapon> = [
       { name: 'Shield Advance', description: 'Walk forward slowly: push all mobs in path', unlockTier: 'Uncommon' },
       { name: 'Counter Strike', description: 'After blocking: next attack deals 3x damage', unlockTier: 'Ornate' },
     ],
-    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 14 bosses slain', '50,000 kills', 'Block and counter 5,000 times', 'Maintain Phalanx Formation for 1 hour total', 'Defeat Iron Phalanx without breaking formation'],
+    metamorphosisRequirements: ['All glyph slots filled (Exquisite)', 'Mastery maxed (100,000 XP)', 'All 13 raid bosses slain', '50,000 kills', 'Block and counter 5,000 times', 'Maintain Phalanx Formation for 1 hour total', 'Defeat Iron Phalanx without breaking formation'],
   },
 ]

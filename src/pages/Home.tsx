@@ -204,7 +204,7 @@ export default function Home() {
             <span className="text-yellow-500 font-semibold">Dream Rate</span> — a custom RNG
             system that connects every system. The artifacts you wear, the pets you raise, the
             constellations you complete, the time of day, even the phase of the moon — everything
-            feeds into it. Start at zero. Reach for fifty. The world opens as you do.
+            feeds into it. Start at zero. Climb toward one hundred. The world opens as you do.
           </p>
         </ScrollReveal>
       </section>

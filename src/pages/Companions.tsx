@@ -40,7 +40,7 @@ export default function Companions() {
             { title: 'Levels 1-100', desc: 'Every companion levels through experience, scaling their passive abilities from minimum to maximum.' },
             { title: 'Relationship', desc: 'Bond levels from Neutral to Eternal Bond (4500+ RP). Higher bond = 1.5x ability multiplier.' },
             { title: 'Combat', desc: 'Use the whistle to command your companion to attack nearby hostiles. Kill counter tracks their prowess.' },
-            { title: 'Evolution', desc: '37 mythical companions can evolve into Ascended forms with unique abilities at max level + Eternal Bond.' },
+            { title: 'Evolution', desc: '37 companions evolve into Ascended forms with unique signature abilities at level 100 + Eternal Bond (4,500 RP).' },
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 80}>
               <div className="rounded border border-stone-800 bg-stone-900/40 p-4 h-full">
@@ -59,7 +59,8 @@ export default function Companions() {
               <p><span className="text-yellow-500 font-semibold">Shared Memories:</span> 20+ milestone events are recorded as shared adventures — boss kills, mythical finds, biome discoveries. 5 shared memories = XP bonus.</p>
               <p><span className="text-yellow-500 font-semibold">Pet Duels:</span> Challenge another player&apos;s companion to a 30-second 1v1 with bossbar timer. Career stats and win streaks are tracked.</p>
               <p><span className="text-yellow-500 font-semibold">Rival Pets:</span> Some companions have natural rivalries that affect interactions.</p>
-              <p><span className="text-yellow-500 font-semibold">Companion Catalogue:</span> A floating interactive catalogue you can open anywhere to browse your entire roster.</p>
+              <p><span className="text-yellow-500 font-semibold">Companion Catalogue &amp; Two-Dex:</span> A floating interactive catalogue you can open anywhere to browse your roster — tracking all 104 species across a normal dex and a second golden-shiny dex.</p>
+              <p><span className="text-yellow-500 font-semibold">Shiny Variants:</span> Every companion has a rare gold-tinted, sparkling, chiming shiny form. High-tier crates carry the best shiny odds, and duplicate-fusion advances both the companion&apos;s power and its evolution.</p>
             </div>
           </Spoiler>
         </ScrollReveal>

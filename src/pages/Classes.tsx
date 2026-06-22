@@ -22,9 +22,12 @@ export default function Classes() {
         <ScrollReveal>
           <div className="font-['Crimson_Pro'] text-lg text-stone-400 text-center mb-8 max-w-2xl mx-auto">
             <p>
-              Classes define your combat identity. Each class transforms how you fight —
-              changing your weapon type, granting unique abilities, and opening a path to
-              one of the 14 Spirit Weapons. Class weapons are available from the very start of your journey.
+              You don&apos;t pick a class from a menu — what you&apos;re holding decides it. There are
+              <span className="text-yellow-500 font-semibold"> 21 playable classes</span> in all: the
+              14 combat classes below (one still hidden), plus 7 crafting classes over on CraftForever.
+              Each transforms how you fight, grants unique abilities, builds <span className="text-yellow-500 font-semibold">Affinity</span> as
+              you use its gear, and opens a path to one of the 14 Spirit Weapons. There&apos;s no class-lock —
+              master them all.
             </p>
           </div>
         </ScrollReveal>
@@ -33,6 +36,7 @@ export default function Classes() {
           <Spoiler label="How classes work under the hood...">
             <div className="space-y-3 font-['Crimson_Pro'] text-base text-stone-400">
               <p><span className="text-yellow-500 font-semibold">Activation:</span> Equip the class weapon type in your mainhand. The class activates automatically based on what you&apos;re holding.</p>
+              <p><span className="text-yellow-500 font-semibold">Affinity:</span> Every class earns Affinity as you use its gear, climbing 7 stages that raise that class&apos;s output up to +75% — and beyond when twin-wielding a spirit weapon. Gains are daily-capped, so mastery grows over weeks, and there&apos;s no class-lock.</p>
               <p><span className="text-yellow-500 font-semibold">Dual-Wield Classes:</span> Rogue (daggers), Berserker (axes), Dancer (fans) require weapons in both hands. They trade armor for damage.</p>
               <p><span className="text-yellow-500 font-semibold">Shield Classes:</span> Knight (sword+shield), Hoplite (trident+shield), Sentinel (mace+shield) gain defensive bonuses from the offhand shield.</p>
               <p><span className="text-yellow-500 font-semibold">Spirit Weapons:</span> Each class has a corresponding Spirit Weapon dropped by a specific raid boss at 5%. These are the ultimate expression of the class.</p>
