@@ -325,7 +325,7 @@ export default function Downloads() {
       // Add pack.mcmeta (platform-aware)
       output.file('pack.mcmeta', JSON.stringify(platform === 'bedrock'
         ? { pack: { description: `Forevercraft Custom (${moduleIds.length} modules)`, pack_format: 2, header_uuid: crypto.randomUUID(), modules_uuid: crypto.randomUUID(), min_engine_version: [1, 21, 60] } }
-        : { pack: { description: `Forevercraft Custom (${moduleIds.length} modules)`, min_format: [101, 1], max_format: [101, 1] } }
+        : { pack: { description: `Forevercraft Custom (${moduleIds.length} modules)`, min_format: [107, 1], max_format: [107, 1] } }
       , null, 2))
 
       // Add minecraft tick/load tags

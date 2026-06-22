@@ -1,5 +1,7 @@
-import { lazy, Suspense } from 'react'
+import { Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { lazyWithRetry as lazy } from './lib/lazyWithRetry'
+import ChunkErrorBoundary from './components/ChunkErrorBoundary'
 import Navigation from './components/layout/Navigation'
 import ScrollToTop from './components/effects/ScrollToTop'
 import Footer from './components/layout/Footer'
@@ -62,6 +64,7 @@ export default function App() {
       <ScrollToTop />
       <ScrollProgress />
       <Navigation />
+      <ChunkErrorBoundary>
       <Suspense fallback={<Loading />}>
         <main className="min-h-screen">
           <Routes>
@@ -100,6 +103,7 @@ export default function App() {
           </Routes>
         </main>
       </Suspense>
+      </ChunkErrorBoundary>
       <Footer />
       <DonatePopup />
       <ForevercraftAI />
