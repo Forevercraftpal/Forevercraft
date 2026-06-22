@@ -14,6 +14,7 @@ const MASTERY_CATEGORIES = [
   { name: 'Feast Platters', icon: '🍖', color: '#FF7043', description: 'Large shared meals that buff all nearby players. Party food.' },
   { name: 'Preservation', icon: '🫙', color: '#78909C', description: 'Long-lasting preserved foods. Never spoil, perfect for long journeys.' },
   { name: 'Spirit Cuisine', icon: '👻', color: '#CE93D8', description: 'Endgame recipes requiring rare spirit ingredients. Most powerful effects.' },
+  { name: 'Spiced Dishes', icon: '🌶️', color: '#E57373', description: 'Bold spiced fare with fiery, sharp-edged buffs in its own mastery track.' },
 ]
 
 const MASTERY_TIERS = [
@@ -45,7 +46,7 @@ export default function Cooking() {
       <PageHero
         title="COOKING"
         badge="THE KITCHEN"
-        subtitle="63 functions. 11 mastery categories. Campfire crafting, seasonal recipes, pet treats, and a full mastery progression."
+        subtitle="12 cuisine categories. Campfire crafting, the Chef's Touch skill mini-game, seasonal recipes, pet treats, and per-category mastery."
         particleColor="#f59e0b"
       />
 
@@ -79,9 +80,9 @@ export default function Cooking() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">11 MASTERY CATEGORIES</h2>
+              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">12 MASTERY CATEGORIES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">
-                Each category has its own mastery progression. Cook your way to Master Chef.
+                Each category has its own mastery progression — unlocking Hearty → Gourmet → Feast recipe tiers. Cook your way to Master Chef.
               </p>
             </div>
           </ScrollReveal>

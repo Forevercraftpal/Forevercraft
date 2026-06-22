@@ -3,10 +3,10 @@ import ScrollReveal from '../components/effects/ScrollReveal'
 import Spoiler from '../components/ui/Spoiler'
 
 const LORE_STATS = [
-  { label: 'Fragments', value: '894', detail: 'Individual lore entries scattered across the world' },
-  { label: 'Sets', value: '162', detail: 'Complete collections that tell cohesive stories' },
+  { label: 'Fragments', value: '896', detail: 'Individual lore entries scattered across the world' },
+  { label: 'Sets', value: '163', detail: 'Complete collections that tell cohesive stories' },
   { label: 'Dimensions', value: '4', detail: 'Overworld, Nether, End, and the Dream' },
-  { label: 'Milestones', value: '41', detail: 'Personal milestones replacing the vanilla achievement system' },
+  { label: 'Milestones', value: '505', detail: 'Personal milestones replacing the vanilla achievement system' },
 ]
 
 const GUIDE_BOOKS = [
@@ -20,7 +20,7 @@ const GUIDE_BOOKS = [
 
 // Personal milestones replace vanilla achievements
 const MILESTONE_INFO = [
-  { title: '41 Personal Milestones', description: 'Forevercraft replaces the vanilla achievement system entirely with personal milestones that track your journey across every system.' },
+  { title: '505 Personal Milestones', description: 'Forevercraft replaces the vanilla achievement system entirely with personal milestones that track your journey across every system.' },
   { title: 'Cross-System Mastery', description: 'Milestones reward mastery across multiple systems: Renaissance Player, Dream Architect, Beast Master Chef, and more.' },
   { title: 'Hidden Discoveries', description: 'Many milestones are secret — their conditions are unknown until you unlock them.' },
   { title: 'Meta-Goal Titles', description: 'Milestone thresholds unlock permanent titles as you progress, culminating in Legend of Evercraft.' },
@@ -34,7 +34,7 @@ export default function Lore() {
       <PageHero
         title="LORE & LEGACY"
         badge="THE ARCHIVES"
-        subtitle="894 fragments. 162 sets. Four dimensions of mystery. Every corner of this world has a story to tell."
+        subtitle="896 fragments. 163 sets. Four dimensions of mystery. Every corner of this world has a story to tell."
         particleColor="#8b5cf6"
       />
 
@@ -118,7 +118,7 @@ export default function Lore() {
             <div className="text-center mb-10">
               <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">PERSONAL MILESTONES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
-                41 personal milestones replace the vanilla achievement system. Every milestone tells a story about your journey.
+                Over 500 personal milestones replace the vanilla achievement system. Every milestone tells a story about your journey.
               </p>
             </div>
           </ScrollReveal>
@@ -140,7 +140,7 @@ export default function Lore() {
               <div>
                 <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 tracking-widest mb-2">LORE COLLECTION STRUCTURE</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
-                  The 894 lore fragments form 162 complete sets spread across 4 dimensions (Overworld, Nether, End, and the Dream). Completing sets unlocks progress-based rewards that scale with your total collection.
+                  The 896 lore fragments form 163 complete sets spread across 4 dimensions (Overworld, Nether, End, and the Dream). Completing sets unlocks progress-based rewards that scale with your total collection.
                 </p>
               </div>
 

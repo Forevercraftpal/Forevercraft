@@ -124,7 +124,7 @@ export default function CraftForever() {
       <PageHero
         title="CRAFT FOREVER"
         badge="THE ARTISAN'S PATH"
-        subtitle="Spirit Tools, Trade Trials, the Grand Forge, and a 100-rank Artisan journey. Crafting reimagined."
+        subtitle="Spirit Tools, Craft Trials, the Grand Forge, and a 100-rank Artisan journey. Crafting reimagined."
         particleColor="#f59e0b"
       />
 

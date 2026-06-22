@@ -32,7 +32,7 @@ export default function Quests() {
       <PageHero
         title="QUESTS & BOUNTIES"
         badge="THE ADVENTURER'S PATH"
-        subtitle="250 quests across six tiers. Place a Book & Quill in a village lectern to spawn the Quest Book — each village is independent."
+        subtitle="450+ authored quests — a six-tier village board plus seven questline tomes. Place a Book & Quill in a village lectern to spawn that village's own Quest Book."
         particleColor="#a855f7"
       />
 
@@ -42,7 +42,7 @@ export default function Quests() {
           <div className="text-center mb-12">
             <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">QUEST TIERS</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
-              250 quests organized into six tiers of ascending difficulty and reward. From simple errands to world-shaping heroic undertakings.
+              Every village board carries 75 quests across six tiers of ascending difficulty and reward — from simple errands to world-shaping heroic undertakings — refreshed at dawn.
             </p>
           </div>
         </ScrollReveal>
@@ -64,6 +64,39 @@ export default function Quests() {
               </div>
             </ScrollReveal>
           ))}
+        </div>
+      </section>
+
+      {/* Questline Tomes */}
+      <section className="border-t border-yellow-900/20">
+        <div className="max-w-[1400px] mx-auto px-8 py-16">
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">QUESTLINE TOMES</h2>
+              <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
+                Beyond the village board run seven dedicated questline tomes, a 16-beat Grand Chronicle that weaves them together, and a 20-quest Kingdom line that awaits Pioneers.
+              </p>
+            </div>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl mx-auto">
+            {[
+              { name: "Adventurer's Tome", desc: 'The road, the wilds, the fight.' },
+              { name: "Chemist's Tome", desc: 'Brewing and alchemy mastery.' },
+              { name: "Smith's Tome", desc: 'Forging and metalwork.' },
+              { name: "Cook's Tome", desc: 'The Campfire Kitchen path.' },
+              { name: "Tinkerer's Tome", desc: 'Fusion and the Plinth.' },
+              { name: "Handcrafter's Tome", desc: 'Decor, blueprints, building.' },
+              { name: "Angler's Tome", desc: 'A 250-stage fishing journey all its own.' },
+              { name: 'Grand Chronicle', desc: '16 beats weaving every tome together.' },
+            ].map((t, i) => (
+              <ScrollReveal key={t.name} delay={i * 60}>
+                <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-4 h-full">
+                  <h3 className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-500 mb-2 leading-relaxed">{t.name}</h3>
+                  <p className="font-['Crimson_Pro'] text-base text-stone-400">{t.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 
