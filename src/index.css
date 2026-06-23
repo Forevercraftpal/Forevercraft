@@ -4,7 +4,8 @@
    Imported BEFORE Forevercraft's own tokens so the gold/cosmic palette overrides. */
 @import './styles/agency-ui-core-globals.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+/* Google Fonts are loaded via <link> in index.html (a CSS @import here is dropped
+   because it ends up after Tailwind's expanded rules — @import must be first). */
 
 /* ── Design System Tokens ────────────────────────────── */
 
