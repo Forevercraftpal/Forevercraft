@@ -49,7 +49,7 @@ function Loading() {
   return (
     <div className="min-h-screen bg-stone-950 flex items-center justify-center">
       <div className="text-center">
-        <div className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-700 tracking-widest animate-pulse">
+        <div className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-700 tracking-widest animate-pulse">
           LOADING...
         </div>
       </div>

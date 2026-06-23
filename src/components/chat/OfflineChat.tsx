@@ -74,7 +74,7 @@ export default function OfflineChat({ compact = false }: { compact?: boolean }) 
       <div className="flex-1 overflow-y-auto p-4 space-y-4 min-h-0">
         {messages.length === 0 && (
           <div className="text-center py-8">
-            <div className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-700/60 mb-2">
+            <div className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-700/60 mb-2">
               KNOWLEDGE BASE
             </div>
             <p className="text-stone-500 text-xs mb-1">

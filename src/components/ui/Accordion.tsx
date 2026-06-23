@@ -16,7 +16,7 @@ export default function Accordion({ title, children, defaultOpen = false, titleC
         onClick={() => setOpen(!open)}
         className={`w-full flex items-center justify-between px-4 py-3 bg-stone-900/60 hover:bg-stone-900/80 transition-colors text-left ${titleClass}`}
       >
-        <span className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-500 tracking-wider">
+        <span className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-500 tracking-wider">
           {title}
         </span>
         <span className={`text-yellow-700 text-base transition-transform duration-300 ${open ? 'rotate-180' : ''}`}>

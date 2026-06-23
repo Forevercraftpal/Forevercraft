@@ -379,8 +379,8 @@ export default function Downloads() {
           <div className="sphere p-8 mb-6" style={{ background: 'radial-gradient(ellipse at 50% 20%, rgba(251, 191, 36, 0.06) 0%, transparent 60%), var(--glass-bg)' }}>
             <div className="flex flex-col items-center text-center gap-4">
               <div className="flex items-center gap-3">
-                <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400">JAVA EDITION</h2>
-                <span className="pill font-['Press_Start_2P'] text-[0.5rem] text-yellow-700">v1.0</span>
+                <h2 className="font-['Pixelify_Sans'] text-[0.9rem] text-yellow-400">JAVA EDITION</h2>
+                <span className="pill font-['Pixelify_Sans'] text-[0.55rem] text-yellow-700">v1.0</span>
               </div>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
                 All 150+ systems. 34,000+ files. The complete experience including Companions, Mining Crates, and everything else.
@@ -389,11 +389,11 @@ export default function Downloads() {
                 href="/builds/Forevercraft-Java-26.2.zip"
                 download
                 onClick={() => trackDownload('java')}
-                className="capsule bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] no-underline mt-2 px-10 py-4"
+                className="capsule bg-yellow-600 hover:bg-yellow-500 text-stone-950 font-['Pixelify_Sans'] text-[0.8rem] no-underline mt-2 px-10 py-4"
               >
                 DOWNLOAD JAVA 26.2
               </a>
-              <p className="font-['Press_Start_2P'] text-[0.45rem] text-yellow-700 mt-2">Pack Format 107.1</p>
+              <p className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-700 mt-2">Pack Format 107.1</p>
               {counts.java ? <p className="font-['Crimson_Pro'] text-[0.85rem] text-stone-600 mt-1">{counts.java.toLocaleString()} downloads</p> : null}
             </div>
           </div>
@@ -404,8 +404,8 @@ export default function Downloads() {
           <div className="sphere p-8 mb-12" style={{ background: 'radial-gradient(ellipse at 50% 20%, rgba(6, 182, 212, 0.06) 0%, transparent 60%), var(--glass-bg)', borderColor: 'rgba(6, 182, 212, 0.15)' }}>
             <div className="flex flex-col items-center text-center gap-4">
               <div className="flex items-center gap-3">
-                <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-cyan-400">BEDROCK EDITION</h2>
-                <span className="pill font-['Press_Start_2P'] text-[0.5rem] text-cyan-700" style={{ background: 'rgba(6, 182, 212, 0.08)', borderColor: 'rgba(6, 182, 212, 0.15)' }}>v1.0</span>
+                <h2 className="font-['Pixelify_Sans'] text-[0.9rem] text-cyan-400">BEDROCK EDITION</h2>
+                <span className="pill font-['Pixelify_Sans'] text-[0.55rem] text-cyan-700" style={{ background: 'rgba(6, 182, 212, 0.08)', borderColor: 'rgba(6, 182, 212, 0.15)' }}>v1.0</span>
               </div>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl">
                 150+ systems. Full Java parity. Script API powered. Console, mobile, and PC.
@@ -414,11 +414,11 @@ export default function Downloads() {
                 href="/builds/Forevercraft-Bedrock-26.10.mcaddon"
                 download
                 onClick={() => trackDownload('bedrock-mcaddon')}
-                className="capsule bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.8rem] no-underline mt-2 px-10 py-4"
+                className="capsule bg-cyan-600 hover:bg-cyan-500 text-stone-950 font-['Pixelify_Sans'] text-[0.8rem] no-underline mt-2 px-10 py-4"
               >
                 DOWNLOAD BEDROCK 26.10
               </a>
-              <p className="font-['Press_Start_2P'] text-[0.45rem] text-cyan-700 mt-2">Script API 2.6.0</p>
+              <p className="font-['Pixelify_Sans'] text-[0.55rem] text-cyan-700 mt-2">Script API 2.6.0</p>
               {counts['bedrock-mcaddon'] ? <p className="font-['Crimson_Pro'] text-[0.85rem] text-stone-600 mt-1">{counts['bedrock-mcaddon'].toLocaleString()} downloads</p> : null}
             </div>
           </div>
@@ -429,8 +429,8 @@ export default function Downloads() {
           <div className="sphere p-8 mb-6" style={{ background: 'radial-gradient(ellipse at 50% 20%, rgba(147, 51, 234, 0.06) 0%, transparent 60%), var(--glass-bg)', borderColor: 'rgba(147, 51, 234, 0.15)' }}>
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
-                <span className="pill font-['Press_Start_2P'] text-[0.5rem] text-purple-500 mb-2" style={{ background: 'rgba(147, 51, 234, 0.08)', borderColor: 'rgba(147, 51, 234, 0.15)' }}>TOODLE PACK</span>
-                <h3 className="font-['Press_Start_2P'] text-[0.9rem] text-purple-400 mt-2 mb-2">RESOURCE PACKS</h3>
+                <span className="pill font-['Pixelify_Sans'] text-[0.55rem] text-purple-500 mb-2" style={{ background: 'rgba(147, 51, 234, 0.08)', borderColor: 'rgba(147, 51, 234, 0.15)' }}>TOODLE PACK</span>
+                <h3 className="font-['Pixelify_Sans'] text-[0.9rem] text-purple-400 mt-2 mb-2">RESOURCE PACKS</h3>
                 <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                   Seasonal texture overhaul — animated client-side cycling or individual packs for server-side season swapping.
                   6 packs available plus a full server setup guide.
@@ -438,7 +438,7 @@ export default function Downloads() {
               </div>
               <a
                 href="/resource-packs"
-                className="capsule bg-purple-700 hover:bg-purple-600 text-stone-100 font-['Press_Start_2P'] text-[0.65rem] no-underline shrink-0 px-8 py-3"
+                className="capsule bg-purple-700 hover:bg-purple-600 text-stone-100 font-['Pixelify_Sans'] text-[0.65rem] no-underline shrink-0 px-8 py-3"
               >
                 VIEW PACKS
               </a>
@@ -449,7 +449,7 @@ export default function Downloads() {
         {/* Custom Builder Section */}
         <ScrollReveal>
           <div className="text-center mb-8">
-            <h2 className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400 mb-3">CUSTOM BUILDER</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.9rem] text-yellow-400 mb-3">CUSTOM BUILDER</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
               Click modules in the web to toggle them. Required dependencies auto-include.
               Dashed lines show optional connections. The builder generates stubs for missing systems — nothing breaks.
@@ -459,7 +459,7 @@ export default function Downloads() {
             <div className="flex items-center justify-center gap-1 mt-6 bg-stone-900/60 rounded-full p-1 max-w-xs mx-auto border border-stone-800">
               <button
                 onClick={() => setPlatform('java')}
-                className={`flex-1 px-4 py-2 rounded-full font-['Press_Start_2P'] text-[0.55rem] transition-all duration-300 ${
+                className={`flex-1 px-4 py-2 rounded-full font-['Pixelify_Sans'] text-[0.55rem] transition-all duration-300 ${
                   platform === 'java'
                     ? 'bg-yellow-600 text-stone-950 shadow-[0_0_16px_rgba(251,191,36,0.2)]'
                     : 'text-stone-500 hover:text-stone-300'
@@ -469,7 +469,7 @@ export default function Downloads() {
               </button>
               <button
                 onClick={() => setPlatform('bedrock')}
-                className={`flex-1 px-4 py-2 rounded-full font-['Press_Start_2P'] text-[0.55rem] transition-all duration-300 ${
+                className={`flex-1 px-4 py-2 rounded-full font-['Pixelify_Sans'] text-[0.55rem] transition-all duration-300 ${
                   platform === 'bedrock'
                     ? 'bg-cyan-600 text-stone-950 shadow-[0_0_16px_rgba(6,182,212,0.2)]'
                     : 'text-stone-500 hover:text-stone-300'
@@ -493,17 +493,17 @@ export default function Downloads() {
           </div>
           <div className="flex items-center gap-6">
             <div className="text-right">
-              <div className="font-['Press_Start_2P'] text-[0.65rem] text-stone-500">MODULES</div>
-              <div className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400">{resolved.size}</div>
+              <div className="font-['Pixelify_Sans'] text-[0.65rem] text-stone-500">MODULES</div>
+              <div className="font-['Pixelify_Sans'] text-[0.9rem] text-yellow-400">{resolved.size}</div>
             </div>
             <div className="text-right">
-              <div className="font-['Press_Start_2P'] text-[0.65rem] text-stone-500">FILES</div>
-              <div className="font-['Press_Start_2P'] text-[0.9rem] text-yellow-400">{totalFiles.toLocaleString()}</div>
+              <div className="font-['Pixelify_Sans'] text-[0.65rem] text-stone-500">FILES</div>
+              <div className="font-['Pixelify_Sans'] text-[0.9rem] text-yellow-400">{totalFiles.toLocaleString()}</div>
             </div>
             <button
               onClick={buildCustom}
               disabled={building}
-              className={`capsule px-8 py-3 disabled:bg-stone-700 text-stone-950 disabled:text-stone-400 font-['Press_Start_2P'] text-[0.65rem] transition-all duration-300 ${
+              className={`capsule px-8 py-3 disabled:bg-stone-700 text-stone-950 disabled:text-stone-400 font-['Pixelify_Sans'] text-[0.65rem] transition-all duration-300 ${
                 platform === 'bedrock' ? 'bg-cyan-600 hover:bg-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.15)]' : 'bg-green-600 hover:bg-green-500 shadow-[0_0_20px_rgba(34,197,94,0.15)]'
               }`}
             >
@@ -669,7 +669,7 @@ export default function Downloads() {
               >
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-lg">{m.icon}</span>
-                  <span className="font-['Press_Start_2P'] text-[0.65rem]" style={{ color: m.color }}>{m.name}</span>
+                  <span className="font-['Pixelify_Sans'] text-[0.65rem]" style={{ color: m.color }}>{m.name}</span>
                 </div>
                 <p className="font-['Crimson_Pro'] text-sm text-stone-400 mb-2">{m.description}</p>
                 <div className="flex gap-4 text-xs text-stone-500">
@@ -722,7 +722,7 @@ export default function Downloads() {
         {/* Selected modules panel */}
         <ScrollReveal>
           <div className="mt-12 rounded-3xl border border-stone-800 bg-stone-900/30 p-6">
-            <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-400 mb-4">SELECTED MODULES ({resolved.size})</h3>
+            <h3 className="font-['Pixelify_Sans'] text-[0.75rem] text-yellow-400 mb-4">SELECTED MODULES ({resolved.size})</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {MODULES.filter(m => resolved.has(m.id)).map(m => (
                 <div
@@ -750,7 +750,7 @@ export default function Downloads() {
           return (
             <ScrollReveal>
               <div className="mt-6 rounded-3xl border border-yellow-800/30 bg-yellow-900/10 p-5">
-                <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-600 mb-3">OPTIONAL DEPENDENCIES NOT INCLUDED</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.65rem] text-yellow-600 mb-3">OPTIONAL DEPENDENCIES NOT INCLUDED</h3>
                 <div className="space-y-1.5">
                   {warnings.map((w, i) => (
                     <p key={i} className="font-['Crimson_Pro'] text-sm text-stone-400">

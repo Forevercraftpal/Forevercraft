@@ -20,7 +20,7 @@ export default function Tabs({ tabs, defaultTab = 0 }: Props) {
           <button
             key={tab.label}
             onClick={() => setActive(i)}
-            className={`font-['Press_Start_2P'] text-[0.65rem] px-4 py-3 tracking-wider transition-all whitespace-nowrap border-b-2 ${
+            className={`font-['Pixelify_Sans'] text-[0.65rem] px-4 py-3 tracking-wider transition-all whitespace-nowrap border-b-2 ${
               active === i
                 ? 'text-yellow-400 border-yellow-500 bg-yellow-950/20'
                 : 'text-stone-500 border-transparent hover:text-yellow-700 hover:border-yellow-900/50'

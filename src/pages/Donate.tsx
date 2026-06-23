@@ -58,7 +58,7 @@ export default function Donate() {
         {/* What Your Support Funds */}
         <ScrollReveal delay={100}>
           <div className="mb-16 rounded-3xl border border-yellow-800/30 bg-yellow-950/5 p-8">
-            <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6 text-center">
+            <h2 className="font-['Pixelify_Sans'] text-[0.75rem] text-yellow-500 tracking-widest mb-6 text-center">
               WHERE YOUR SUPPORT GOES
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
@@ -69,7 +69,7 @@ export default function Donate() {
               ].map(item => (
                 <div key={item.title} className="text-center">
                   <span className="text-3xl block mb-3">{item.icon}</span>
-                  <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-stone-200 mb-2">{item.title}</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.65rem] text-stone-200 mb-2">{item.title}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{item.desc}</p>
                 </div>
               ))}
@@ -80,7 +80,7 @@ export default function Donate() {
         {/* QR Codes */}
         <ScrollReveal delay={100}>
           <div className="mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest text-center mb-8">
+            <h2 className="font-['Pixelify_Sans'] text-[0.75rem] text-yellow-500 tracking-widest text-center mb-8">
               SCAN TO DONATE
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
@@ -102,7 +102,7 @@ export default function Donate() {
                     />
                   </div>
                   <p
-                    className="font-['Press_Start_2P'] text-[0.6rem] mt-3 tracking-wider"
+                    className="font-['Pixelify_Sans'] text-[0.6rem] mt-3 tracking-wider"
                     style={{ color: qr.color }}
                   >
                     {qr.name.toUpperCase()}
@@ -122,7 +122,7 @@ export default function Donate() {
                   <div className="flex items-center gap-4">
                     <span className="text-4xl">{method.icon}</span>
                     <div>
-                      <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-stone-100 mb-1">
+                      <h3 className="font-['Pixelify_Sans'] text-[0.75rem] text-stone-100 mb-1">
                         {method.name.toUpperCase()}
                       </h3>
                       <p className="font-['Crimson_Pro'] text-base text-stone-400">
@@ -134,7 +134,7 @@ export default function Donate() {
                     href={method.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-3 rounded bg-yellow-600/90 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.6rem] tracking-wider transition-colors no-underline text-center shrink-0"
+                    className="inline-block px-6 py-3 rounded bg-yellow-600/90 hover:bg-yellow-500 text-stone-950 font-['Pixelify_Sans'] text-[0.6rem] tracking-wider transition-colors no-underline text-center shrink-0"
                   >
                     {method.buttonText}
                   </a>
@@ -143,7 +143,7 @@ export default function Donate() {
                 {/* Membership Tiers */}
                 {method.tiers.length > 0 && (
                   <div className="px-8 pb-6 pt-2 border-t border-stone-800/30">
-                    <h4 className="font-['Press_Start_2P'] text-[0.55rem] text-stone-500 tracking-widest mb-4">
+                    <h4 className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-500 tracking-widest mb-4">
                       MEMBERSHIP TIERS
                     </h4>
                     <div className="grid md:grid-cols-3 gap-4">
@@ -153,7 +153,7 @@ export default function Donate() {
                           className="rounded border border-stone-700/40 bg-stone-900/40 p-4"
                         >
                           <div className="flex items-baseline justify-between mb-2">
-                            <span className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-500">
+                            <span className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-500">
                               {tier.name.toUpperCase()}
                             </span>
                             <span className="font-['Crimson_Pro'] text-base text-stone-300 font-semibold">

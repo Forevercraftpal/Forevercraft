@@ -337,7 +337,7 @@ export default function BountifulHarvest() {
         {/* What's New */}
         <ScrollReveal>
           <section>
-            <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
+            <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
               ✨ What&apos;s New
             </h2>
             <p className="font-['Crimson_Pro'] italic text-stone-400 text-center mb-10 text-lg">
@@ -348,7 +348,7 @@ export default function BountifulHarvest() {
                 <div key={f.title} className="rounded-2xl border border-lime-900/30 bg-lime-950/10 p-5">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-xl">{f.icon}</span>
-                    <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-lime-400/90 tracking-wider">
+                    <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-lime-400/90 tracking-wider">
                       {f.title}
                     </h3>
                   </div>
@@ -364,7 +364,7 @@ export default function BountifulHarvest() {
         {/* By the Numbers */}
         <ScrollReveal>
           <section>
-            <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
+            <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
               📊 By the Numbers
             </h2>
             <p className="font-['Crimson_Pro'] italic text-stone-400 text-center mb-10 text-lg">
@@ -381,7 +381,7 @@ export default function BountifulHarvest() {
         {/* The Systems */}
         <section className="space-y-12">
           <ScrollReveal>
-            <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
+            <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
               🎮 The Systems
             </h2>
             <p className="font-['Crimson_Pro'] italic text-stone-400 text-center text-lg">
@@ -392,7 +392,7 @@ export default function BountifulHarvest() {
           {GROUPS.map(group => (
             <ScrollReveal key={group.heading}>
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-stone-300 tracking-widest mb-4 uppercase flex items-center gap-3">
+                <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-300 tracking-widest mb-4 uppercase flex items-center gap-3">
                   <span className="text-base">{group.icon}</span>
                   {group.heading}
                 </h3>
@@ -426,18 +426,18 @@ export default function BountifulHarvest() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 to="/downloads"
-                className="capsule inline-block px-8 py-2.5 border border-lime-800/40 hover:border-lime-600/60 font-['Press_Start_2P'] text-[0.6rem] text-lime-500 hover:text-lime-400 tracking-widest no-underline bg-lime-950/20 hover:bg-lime-950/30"
+                className="capsule inline-block px-8 py-2.5 border border-lime-800/40 hover:border-lime-600/60 font-['Pixelify_Sans'] text-[0.6rem] text-lime-500 hover:text-lime-400 tracking-widest no-underline bg-lime-950/20 hover:bg-lime-950/30"
               >
                 DOWNLOAD
               </Link>
               <Link
                 to="/guide"
-                className="capsule inline-block px-8 py-2.5 border border-yellow-800/30 hover:border-yellow-600/50 font-['Press_Start_2P'] text-[0.6rem] text-stone-500 hover:text-yellow-500 tracking-widest no-underline bg-yellow-950/20 hover:bg-yellow-950/30"
+                className="capsule inline-block px-8 py-2.5 border border-yellow-800/30 hover:border-yellow-600/50 font-['Pixelify_Sans'] text-[0.6rem] text-stone-500 hover:text-yellow-500 tracking-widest no-underline bg-yellow-950/20 hover:bg-yellow-950/30"
               >
                 READ THE GUIDE
               </Link>
             </div>
-            <p className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-800 tracking-widest mt-12">
+            <p className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-800 tracking-widest mt-12">
               BUILT WITH LOVE · ONE FUNCTION AT A TIME
             </p>
           </section>

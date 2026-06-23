@@ -31,7 +31,7 @@ export default function ChatBubble() {
           <div className="flex items-center justify-between px-4 py-3 bg-stone-900/80 border-b border-yellow-900/30">
             <div className="flex items-center gap-2">
               <div className={`w-2 h-2 rounded-full ${isOnline ? 'bg-emerald-500 animate-pulse' : 'bg-red-500'}`} />
-              <span className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-600 tracking-wider">
+              <span className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-600 tracking-wider">
                 FOREVERCRAFT AI
               </span>
             </div>

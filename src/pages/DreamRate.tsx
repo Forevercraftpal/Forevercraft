@@ -68,7 +68,7 @@ export default function DreamRate() {
         {/* What is Dream Rate */}
         <ScrollReveal>
           <section className="font-['Crimson_Pro'] text-lg leading-relaxed">
-            <h2 className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-600 tracking-widest mb-6 uppercase">
+            <h2 className="font-['Pixelify_Sans'] text-[0.65rem] text-yellow-600 tracking-widest mb-6 uppercase">
               What is Dream Rate?
             </h2>
             <p className="text-stone-300">
@@ -79,10 +79,10 @@ export default function DreamRate() {
               the Dream Weaver (raised from 50 in the Bountiful Harvest update).
             </p>
             <div className="mt-6 bg-stone-900/60 border border-yellow-900/30 rounded p-4 text-center">
-              <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 mb-1">
+              <p className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 mb-1">
                 MULTIPLIER FORMULA
               </p>
-              <p className="font-['Press_Start_2P'] text-lg text-yellow-300">
+              <p className="font-['Pixelify_Sans'] text-lg text-yellow-300">
                 1 + (dreams / 35)
               </p>
               <p className="text-stone-500 text-base mt-2">
@@ -103,7 +103,7 @@ export default function DreamRate() {
                     <div className="w-24 bg-stone-800 rounded-2xl h-2 overflow-hidden">
                       <div className="h-full bg-yellow-500 rounded-2xl" style={{ width: `${Math.min((s.max / 13) * 100, 100)}%` }} />
                     </div>
-                    <span className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-500 w-16 text-right">
+                    <span className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-500 w-16 text-right">
                       {s.value.split('(')[0].trim()}
                     </span>
                   </div>
@@ -120,7 +120,7 @@ export default function DreamRate() {
               {TEMPORARY.map(s => (
                 <div key={s.name} className="flex items-center justify-between">
                   <span className="font-['Crimson_Pro'] text-stone-300">{s.name}</span>
-                  <span className="font-['Press_Start_2P'] text-[0.55rem] text-stone-500">{s.value}</span>
+                  <span className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-500">{s.value}</span>
                 </div>
               ))}
             </div>
@@ -129,7 +129,7 @@ export default function DreamRate() {
 
         {/* Dream Gates */}
         <ScrollReveal delay={300}>
-          <h2 className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-600 tracking-widest mb-6 uppercase">
+          <h2 className="font-['Pixelify_Sans'] text-[0.65rem] text-yellow-600 tracking-widest mb-6 uppercase">
             Dream Gates
           </h2>
           <p className="font-['Crimson_Pro'] text-stone-400 mb-6">
@@ -139,7 +139,7 @@ export default function DreamRate() {
             {GATES.map(g => (
               <div key={g.tier} className="flex items-center gap-4 bg-stone-900/50 rounded border border-stone-800/50 p-3">
                 <div
-                  className="font-['Press_Start_2P'] text-[0.65rem] w-10 text-center shrink-0"
+                  className="font-['Pixelify_Sans'] text-[0.65rem] w-10 text-center shrink-0"
                   style={{ color: g.color }}
                 >
                   {g.tier}
@@ -150,7 +150,7 @@ export default function DreamRate() {
                     style={{ width: `${(g.dr / 18) * 100}%`, backgroundColor: g.color }}
                   />
                 </div>
-                <div className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-500 w-12 text-right shrink-0">
+                <div className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-500 w-12 text-right shrink-0">
                   DR {g.dr}
                 </div>
                 <p className="font-['Crimson_Pro'] text-stone-400 text-base hidden md:block w-48 shrink-0">

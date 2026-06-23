@@ -98,16 +98,16 @@ export default function ArmorSets() {
         <ScrollReveal>
           <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-16">
             <div className="text-center rounded-3xl border border-yellow-700/40 bg-yellow-900/10 p-4">
-              <p className="font-['Press_Start_2P'] text-lg text-yellow-400">8</p>
-              <p className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-700 mt-1">MYTHICAL (5pc)</p>
+              <p className="font-['Pixelify_Sans'] text-lg text-yellow-400">8</p>
+              <p className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-700 mt-1">MYTHICAL (5pc)</p>
             </div>
             <div className="text-center rounded-3xl border border-purple-700/40 bg-purple-900/10 p-4">
-              <p className="font-['Press_Start_2P'] text-lg text-purple-400">5</p>
-              <p className="font-['Press_Start_2P'] text-[0.55rem] text-purple-700 mt-1">EXQUISITE (4pc)</p>
+              <p className="font-['Pixelify_Sans'] text-lg text-purple-400">5</p>
+              <p className="font-['Pixelify_Sans'] text-[0.55rem] text-purple-700 mt-1">EXQUISITE (4pc)</p>
             </div>
             <div className="text-center rounded-3xl border border-stone-700/40 bg-stone-900/10 p-4">
-              <p className="font-['Press_Start_2P'] text-lg text-stone-400">{STANDARD_COUNT}</p>
-              <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 mt-1">STANDARD (4pc)</p>
+              <p className="font-['Pixelify_Sans'] text-lg text-stone-400">{STANDARD_COUNT}</p>
+              <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600 mt-1">STANDARD (4pc)</p>
             </div>
           </div>
         </ScrollReveal>
@@ -115,7 +115,7 @@ export default function ArmorSets() {
         {/* Mythical Sets */}
         <ScrollReveal>
           <div className="text-center mb-8">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-2">MYTHICAL ARMOR SETS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-2">MYTHICAL ARMOR SETS</h2>
             <p className="font-['Crimson_Pro'] text-base text-stone-500">
               5-piece sets with three bonus tiers. Each piece grants +0.5 Dreams.
             </p>
@@ -129,23 +129,23 @@ export default function ArmorSets() {
                 <div className="flex flex-col md:flex-row md:items-start gap-4">
                   <div className="md:w-1/3">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className={`font-['Press_Start_2P'] text-[0.6rem] px-2 py-1 rounded ${TIER_CONFIG.mythical.badge}`}>MYTHICAL</span>
+                      <span className={`font-['Pixelify_Sans'] text-[0.6rem] px-2 py-1 rounded ${TIER_CONFIG.mythical.badge}`}>MYTHICAL</span>
                       <span className="font-['Crimson_Pro'] text-base text-stone-600">{set.pieces} pieces</span>
                     </div>
-                    <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-400 mb-2">{set.name}</h3>
+                    <h3 className="font-['Pixelify_Sans'] text-[0.65rem] text-yellow-400 mb-2">{set.name}</h3>
                     <p className="font-['Crimson_Pro'] text-base text-stone-500 italic">{set.theme}</p>
                   </div>
                   <div className="md:w-2/3 space-y-2">
                     <div className="flex items-start gap-2">
-                      <span className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-700 shrink-0 mt-1">2pc</span>
+                      <span className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-700 shrink-0 mt-1">2pc</span>
                       <span className="font-['Crimson_Pro'] text-base text-stone-300">{set.twoBonus}</span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-600 shrink-0 mt-1">4pc</span>
+                      <span className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-600 shrink-0 mt-1">4pc</span>
                       <span className="font-['Crimson_Pro'] text-base text-stone-300">{set.fourBonus}</span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-400 shrink-0 mt-1">5pc</span>
+                      <span className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-400 shrink-0 mt-1">5pc</span>
                       <span className="font-['Crimson_Pro'] text-base text-stone-200">{set.fiveBonus}</span>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function ArmorSets() {
         {/* Exquisite Sets */}
         <ScrollReveal>
           <div className="text-center mb-8">
-            <h2 className="font-['Press_Start_2P'] text-base text-purple-400 mb-2">EXQUISITE ARMOR SETS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-purple-400 mb-2">EXQUISITE ARMOR SETS</h2>
             <p className="font-['Crimson_Pro'] text-base text-stone-500">4-piece sets with two bonus tiers.</p>
           </div>
         </ScrollReveal>
@@ -168,17 +168,17 @@ export default function ArmorSets() {
             <ScrollReveal key={set.name} delay={i * 80}>
               <div className={`rounded-3xl border ${TIER_CONFIG.exquisite.border} bg-gradient-to-r ${TIER_CONFIG.exquisite.bg} p-5 h-full`}>
                 <div className="flex items-center gap-2 mb-2">
-                  <span className={`font-['Press_Start_2P'] text-[0.6rem] px-2 py-1 rounded ${TIER_CONFIG.exquisite.badge}`}>EXQUISITE</span>
+                  <span className={`font-['Pixelify_Sans'] text-[0.6rem] px-2 py-1 rounded ${TIER_CONFIG.exquisite.badge}`}>EXQUISITE</span>
                 </div>
-                <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-purple-400 mb-1">{set.name}</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-purple-400 mb-1">{set.name}</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-500 italic mb-3">{set.theme}</p>
                 <div className="space-y-1.5">
                   <div className="flex items-start gap-2">
-                    <span className="font-['Press_Start_2P'] text-[0.55rem] text-purple-700 shrink-0 mt-1">2pc</span>
+                    <span className="font-['Pixelify_Sans'] text-[0.55rem] text-purple-700 shrink-0 mt-1">2pc</span>
                     <span className="font-['Crimson_Pro'] text-base text-stone-300">{set.twoBonus}</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="font-['Press_Start_2P'] text-[0.55rem] text-purple-400 shrink-0 mt-1">4pc</span>
+                    <span className="font-['Pixelify_Sans'] text-[0.55rem] text-purple-400 shrink-0 mt-1">4pc</span>
                     <span className="font-['Crimson_Pro'] text-base text-stone-200">{set.fourBonus}</span>
                   </div>
                 </div>
@@ -190,7 +190,7 @@ export default function ArmorSets() {
         {/* Standard note */}
         <ScrollReveal delay={200}>
           <div className="mt-12 text-center rounded-3xl border border-stone-800 bg-stone-900/30 p-6">
-            <p className="font-['Press_Start_2P'] text-[0.7rem] text-stone-500 mb-2">{STANDARD_COUNT} STANDARD SETS</p>
+            <p className="font-['Pixelify_Sans'] text-[0.7rem] text-stone-500 mb-2">{STANDARD_COUNT} STANDARD SETS</p>
             <p className="font-['Crimson_Pro'] text-base text-stone-500">
               Standard 4-piece armor sets provide 2-piece and 4-piece set bonuses. Discover them through crafting, dungeon loot, and quest rewards throughout your adventure.
             </p>

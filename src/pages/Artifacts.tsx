@@ -42,7 +42,7 @@ export default function Artifacts() {
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 80}>
               <div className="rounded border border-stone-800 bg-stone-900/40 p-4 h-full">
-                <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-500 mb-2">{item.title}</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-500 mb-2">{item.title}</h3>
                 <p className="font-['Crimson_Pro'] text-stone-400 text-sm">{item.desc}</p>
               </div>
             </ScrollReveal>
@@ -83,7 +83,7 @@ export default function Artifacts() {
                 <button
                   key={tier}
                   onClick={() => setSelectedTier(tier)}
-                  className={`font-['Press_Start_2P'] text-[0.38rem] px-2.5 py-2 rounded border transition-all ${
+                  className={`font-['Pixelify_Sans'] text-[0.55rem] px-2.5 py-2 rounded border transition-all ${
                     selectedTier === tier
                       ? 'bg-yellow-900/60 border-yellow-600 text-yellow-400'
                       : 'bg-stone-900 border-stone-700 text-stone-500 hover:border-yellow-900'
@@ -102,7 +102,7 @@ export default function Artifacts() {
                 <button
                   key={type}
                   onClick={() => setSelectedType(type)}
-                  className={`font-['Press_Start_2P'] text-[0.38rem] px-2.5 py-2 rounded border transition-all ${
+                  className={`font-['Pixelify_Sans'] text-[0.55rem] px-2.5 py-2 rounded border transition-all ${
                     selectedType === type
                       ? 'bg-yellow-900/60 border-yellow-600 text-yellow-400'
                       : 'bg-stone-900 border-stone-700 text-stone-500 hover:border-yellow-900'
@@ -120,7 +120,7 @@ export default function Artifacts() {
                   <button
                     key={sub}
                     onClick={() => setSelectedSubtype(sub)}
-                    className={`font-['Press_Start_2P'] text-[0.55rem] px-2 py-1.5 rounded border transition-all ${
+                    className={`font-['Pixelify_Sans'] text-[0.55rem] px-2 py-1.5 rounded border transition-all ${
                       selectedSubtype === sub
                         ? 'bg-yellow-900/60 border-yellow-600 text-yellow-400'
                         : 'bg-stone-900 border-stone-700 text-stone-500 hover:border-yellow-900'
@@ -133,7 +133,7 @@ export default function Artifacts() {
             )}
           </div>
 
-          <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 tracking-widest">
+          <p className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-600 tracking-widest">
             {filtered.length} ARTIFACT{filtered.length !== 1 ? 'S' : ''} FOUND
           </p>
         </div>
@@ -141,7 +141,7 @@ export default function Artifacts() {
         {/* Grid */}
         {filtered.length === 0 ? (
           <div className="text-center py-24">
-            <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600">NO ARTIFACTS FOUND</p>
+            <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600">NO ARTIFACTS FOUND</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -153,17 +153,17 @@ export default function Artifacts() {
                   }`}
                 >
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-stone-100 leading-relaxed">
+                    <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-stone-100 leading-relaxed">
                       {artifact.name}
                     </h3>
                     <TierBadge tier={artifact.tier} />
                   </div>
                   <div className="flex gap-2">
-                    <span className="font-['Press_Start_2P'] text-[0.55rem] text-stone-500 tracking-widest">
+                    <span className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-500 tracking-widest">
                       {artifact.type.toUpperCase()}
                     </span>
                     {artifact.subtype && (
-                      <span className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 tracking-widest">
+                      <span className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600 tracking-widest">
                         · {artifact.subtype.toUpperCase()}
                       </span>
                     )}

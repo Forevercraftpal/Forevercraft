@@ -15,7 +15,7 @@ export default function Chat() {
       <div className="max-w-3xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-6">
-          <h1 className="font-['Press_Start_2P'] text-sm text-yellow-600 tracking-wider mb-3">
+          <h1 className="font-['Pixelify_Sans'] text-sm text-yellow-600 tracking-wider mb-3">
             FOREVERCRAFT AI
           </h1>
           <p className="text-stone-500 text-sm max-w-md mx-auto">
@@ -27,7 +27,7 @@ export default function Chat() {
         {isOnline === null ? (
           /* Loading state */
           <div className="text-center py-20">
-            <div className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-700 animate-pulse">
+            <div className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-700 animate-pulse">
               CONNECTING...
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Chat() {
           /* Offline fallback */
           <div className="text-center py-16 border border-stone-800/50 rounded-3xl bg-stone-900/20">
             <div className="text-4xl mb-4">🌙</div>
-            <h2 className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500 mb-4">
+            <h2 className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-500 mb-4">
               AI IS SLEEPING
             </h2>
             <p className="text-stone-600 text-sm max-w-sm mx-auto mb-6">

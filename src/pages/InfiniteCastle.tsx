@@ -56,7 +56,7 @@ export default function InfiniteCastle() {
       <section className="max-w-[1400px] mx-auto px-8 py-16">
         <ScrollReveal>
           <div className="text-center mb-12">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">CORE MECHANICS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">CORE MECHANICS</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
               Enter with a Dungeon Key. Fight through 5-wave combat floors. Face a boss every 10 floors. The difficulty never stops climbing.
             </p>
@@ -67,8 +67,8 @@ export default function InfiniteCastle() {
           {MECHANICS.map((m, i) => (
             <ScrollReveal key={m.label} delay={i * 60}>
               <div className="rounded-3xl border border-red-900/30 bg-gradient-to-br from-red-950/20 to-stone-950 p-5 h-full">
-                <p className="font-['Press_Start_2P'] text-[0.6rem] text-red-700 mb-1">{m.label}</p>
-                <p className="font-['Press_Start_2P'] text-[0.6rem] text-red-400 mb-2">{m.value}</p>
+                <p className="font-['Pixelify_Sans'] text-[0.6rem] text-red-700 mb-1">{m.label}</p>
+                <p className="font-['Pixelify_Sans'] text-[0.6rem] text-red-400 mb-2">{m.value}</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">{m.detail}</p>
               </div>
             </ScrollReveal>
@@ -78,7 +78,7 @@ export default function InfiniteCastle() {
         {/* Floor Progression */}
         <ScrollReveal>
           <div className="text-center mb-8">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">FLOOR PROGRESSION</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">FLOOR PROGRESSION</h2>
           </div>
         </ScrollReveal>
 
@@ -86,28 +86,28 @@ export default function InfiniteCastle() {
           <div className="max-w-3xl mx-auto rounded-3xl border border-stone-800 bg-stone-900/30 p-6 mb-16">
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <span className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 1–9</span>
+                <span className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 1–9</span>
                 <div className="flex-1 h-2 rounded-full bg-stone-800">
                   <div className="h-full w-1/6 rounded-full bg-gradient-to-r from-green-700 to-green-600" />
                 </div>
                 <span className="font-['Crimson_Pro'] text-base text-green-500">Normal</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 10–24</span>
+                <span className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 10–24</span>
                 <div className="flex-1 h-2 rounded-full bg-stone-800">
                   <div className="h-full w-2/6 rounded-full bg-gradient-to-r from-yellow-700 to-yellow-600" />
                 </div>
                 <span className="font-['Crimson_Pro'] text-base text-yellow-500">Raid</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 25–49</span>
+                <span className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 25–49</span>
                 <div className="flex-1 h-2 rounded-full bg-stone-800">
                   <div className="h-full w-3/6 rounded-full bg-gradient-to-r from-orange-700 to-orange-500" />
                 </div>
                 <span className="font-['Crimson_Pro'] text-base text-orange-500">Heroic</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 50+</span>
+                <span className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-600 w-20 shrink-0">Floors 50+</span>
                 <div className="flex-1 h-2 rounded-full bg-stone-800">
                   <div className="h-full w-full rounded-full bg-gradient-to-r from-red-700 to-red-500" />
                 </div>
@@ -123,7 +123,7 @@ export default function InfiniteCastle() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">NAMED BOSSES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">NAMED BOSSES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">Powerful adversaries that guard key floors.</p>
             </div>
           </ScrollReveal>
@@ -132,8 +132,8 @@ export default function InfiniteCastle() {
             {BOSSES.map((boss, i) => (
               <ScrollReveal key={boss.name} delay={i * 100}>
                 <div className={`rounded-3xl border ${boss.border} bg-gradient-to-br ${boss.bg} p-6 h-full`}>
-                  <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 mb-1">FLOOR {boss.floor}</p>
-                  <h3 className={`font-['Press_Start_2P'] text-[0.7rem] ${boss.color} mb-1`}>{boss.name}</h3>
+                  <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600 mb-1">FLOOR {boss.floor}</p>
+                  <h3 className={`font-['Pixelify_Sans'] text-[0.7rem] ${boss.color} mb-1`}>{boss.name}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-500 italic mb-3">{boss.title}</p>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{boss.description}</p>
                 </div>
@@ -144,11 +144,11 @@ export default function InfiniteCastle() {
           {/* Dream Storm Crystals */}
           <ScrollReveal delay={200}>
             <div className="rounded-3xl border border-purple-800/40 bg-gradient-to-r from-purple-900/20 to-purple-950/5 p-5 max-w-xl mx-auto text-center">
-              <p className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 mb-2">DREAM STORM CRYSTALS</p>
+              <p className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400 mb-2">DREAM STORM CRYSTALS</p>
               <p className="font-['Crimson_Pro'] text-base text-stone-400 mb-1">
                 Extraordinarily rare crafting materials that drop from floor 25 onward.
               </p>
-              <p className="font-['Press_Start_2P'] text-[0.6rem] text-purple-600">1% DROP CHANCE</p>
+              <p className="font-['Pixelify_Sans'] text-[0.6rem] text-purple-600">1% DROP CHANCE</p>
             </div>
           </ScrollReveal>
         </div>
@@ -159,7 +159,7 @@ export default function InfiniteCastle() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">MILESTONE REWARDS</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">MILESTONE REWARDS</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">Permanent rewards for reaching key floors.</p>
             </div>
           </ScrollReveal>
@@ -169,7 +169,7 @@ export default function InfiniteCastle() {
               <ScrollReveal key={m.floor} delay={i * 60}>
                 <div className="flex items-center gap-4 rounded-3xl border border-stone-800 bg-stone-900/30 p-4">
                   <div className="flex items-center justify-center w-12 h-12 rounded bg-stone-800/80 shrink-0">
-                    <span className={`font-['Press_Start_2P'] text-[0.55rem] ${m.color}`}>{m.floor}</span>
+                    <span className={`font-['Pixelify_Sans'] text-[0.55rem] ${m.color}`}>{m.floor}</span>
                   </div>
                   <p className="font-['Crimson_Pro'] text-base text-stone-300">{m.reward}</p>
                 </div>
@@ -181,35 +181,35 @@ export default function InfiniteCastle() {
           <Spoiler label="Full mechanics: keys, arenas, waves, rewards, and rare drops...">
             <div className="space-y-4">
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">DUNGEON KEYS</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-red-400 tracking-widest mb-2">DUNGEON KEYS</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   A Dungeon Key is required to enter the Infinite Castle. Keys are consumed on entry and obtained from world loot, quest rewards, and rare merchant trades. No key, no entry.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">ARENA THEMES</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-red-400 tracking-widest mb-2">ARENA THEMES</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Each floor generates a randomly themed arena. Themes include ice, nether, and end environments, each with unique hazards and visual identity. You never know what you are walking into.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">WAVE COMBAT</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-red-400 tracking-widest mb-2">WAVE COMBAT</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Every floor consists of 5 combat waves. Wave difficulty scales with the floor number, so floor 50 waves are vastly harder than floor 5. A boss encounter replaces the final wave every 10 floors.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">REWARD STRUCTURE</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-red-400 tracking-widest mb-2">REWARD STRUCTURE</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Milestone rewards are granted every 10 floors, with a special mega reward at floor 100 (Eternal Trophy + Legendary Cosmetic Set). Crate coins accumulate as you climb, rewarding sustained progress even on failed runs. Your highest floor reached is permanently tracked.
                 </p>
               </div>
 
               <div className="rounded border border-purple-800/30 bg-purple-950/10 p-4">
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 tracking-widest mb-2">DREAM STORM CRYSTAL</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400 tracking-widest mb-2">DREAM STORM CRYSTAL</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Starting from floor 25, every floor clear has a 1% chance to drop a Dream Storm Crystal — an extraordinarily rare crafting material used in endgame recipes. The drop chance does not increase with floor number.
                 </p>

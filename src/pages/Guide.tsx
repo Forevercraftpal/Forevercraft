@@ -198,14 +198,14 @@ export default function Guide() {
         <ScrollReveal>
           <div className="mb-12 rounded-3xl border border-yellow-800/30 overflow-hidden">
             <div className="px-8 py-5 bg-gradient-to-r from-yellow-900/15 to-transparent">
-              <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-yellow-400 mb-2">CHOOSE YOUR PATH</h2>
+              <h2 className="font-['Pixelify_Sans'] text-[0.85rem] text-yellow-400 mb-2">CHOOSE YOUR PATH</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 italic">
                 When you first join, Forevercraft asks you one question. It shapes everything that follows.
               </p>
             </div>
             <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-stone-800/30">
               <div className="px-8 py-6">
-                <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-green-400 mb-3">🌱 NEWCOMER</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.75rem] text-green-400 mb-3">🌱 NEWCOMER</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-300 mb-4 leading-relaxed">
                   For those who want to experience the world at their own pace, with a helping hand.
                 </p>
@@ -225,7 +225,7 @@ export default function Guide() {
                 </ul>
               </div>
               <div className="px-8 py-6">
-                <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-red-400 mb-3">⚔️ ADVENTURER</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.75rem] text-red-400 mb-3">⚔️ ADVENTURER</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-300 mb-4 leading-relaxed">
                   The intended Forevercraft experience. Every reward is earned. Nothing is given.
                 </p>
@@ -245,7 +245,7 @@ export default function Guide() {
                 </ul>
               </div>
               <div className="px-8 py-6 border-t border-stone-800/30">
-                <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-red-600 mb-3">☠️ PIONEER</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.75rem] text-red-600 mb-3">☠️ PIONEER</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-300 mb-4 leading-relaxed">
                   True hardcore. Die once and EVERYTHING is wiped — all items, all progression, all stats. The world survives. You start over.
                 </p>
@@ -292,19 +292,19 @@ export default function Guide() {
                 >
                   <div className="flex items-center gap-4 mb-3">
                     <div
-                      className="font-['Press_Start_2P'] text-[0.8rem] px-4 py-2 rounded"
+                      className="font-['Pixelify_Sans'] text-[0.8rem] px-4 py-2 rounded"
                       style={{ backgroundColor: `${phase.color}20`, color: phase.color, border: `1px solid ${phase.color}40` }}
                     >
                       PHASE {phase.phase}
                     </div>
                     <div
-                      className="font-['Press_Start_2P'] text-[0.7rem] px-3 py-1.5 rounded bg-stone-900/60"
+                      className="font-['Pixelify_Sans'] text-[0.7rem] px-3 py-1.5 rounded bg-stone-900/60"
                       style={{ color: phase.color }}
                     >
                       DR {phase.dr}
                     </div>
                   </div>
-                  <h2 className="font-['Press_Start_2P'] text-[0.85rem] md:text-[1rem] text-stone-100 mb-2">
+                  <h2 className="font-['Pixelify_Sans'] text-[0.85rem] md:text-[1rem] text-stone-100 mb-2">
                     {phase.title}
                   </h2>
                   <p className="font-['Crimson_Pro'] text-lg text-stone-400 italic">
@@ -314,14 +314,14 @@ export default function Guide() {
 
                 {/* Steps */}
                 <div className="px-8 py-6 border-t border-stone-800/30">
-                  <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-stone-500 tracking-widest mb-4">
+                  <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-stone-500 tracking-widest mb-4">
                     WHAT TO DO
                   </h3>
                   <div className="space-y-3">
                     {phase.steps.map((step, j) => (
                       <div key={j} className="flex items-start gap-4">
                         <span
-                          className="font-['Press_Start_2P'] text-[0.7rem] mt-1 shrink-0 w-6 text-center"
+                          className="font-['Pixelify_Sans'] text-[0.7rem] mt-1 shrink-0 w-6 text-center"
                           style={{ color: phase.color }}
                         >
                           {j + 1}
@@ -334,7 +334,7 @@ export default function Guide() {
 
                 {/* Tips */}
                 <div className="px-8 py-5 border-t border-stone-800/30 bg-stone-900/20">
-                  <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-700 tracking-widest mb-3">
+                  <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-700 tracking-widest mb-3">
                     TIPS
                   </h3>
                   <div className="space-y-2.5">

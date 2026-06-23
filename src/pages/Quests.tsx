@@ -40,7 +40,7 @@ export default function Quests() {
       <section className="max-w-[1400px] mx-auto px-8 py-16">
         <ScrollReveal>
           <div className="text-center mb-12">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">QUEST TIERS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">QUEST TIERS</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
               Every village board carries 75 quests across six tiers of ascending difficulty and reward — from simple errands to world-shaping heroic undertakings — refreshed at dawn.
             </p>
@@ -54,10 +54,10 @@ export default function Quests() {
                 <div className="w-1.5 bg-current opacity-40" style={{ color: tier.color.replace('text-', '').includes('stone') ? '#78716c' : undefined }} />
                 <div className="flex items-center gap-4 p-4 flex-1">
                   <div className="flex items-center justify-center w-8 h-8 rounded bg-stone-900/80">
-                    <span className={`font-['Press_Start_2P'] text-[0.7rem] ${tier.color}`}>{i + 1}</span>
+                    <span className={`font-['Pixelify_Sans'] text-[0.7rem] ${tier.color}`}>{i + 1}</span>
                   </div>
                   <div>
-                    <h3 className={`font-['Press_Start_2P'] text-[0.55rem] ${tier.color} mb-1`}>{tier.name}</h3>
+                    <h3 className={`font-['Pixelify_Sans'] text-[0.55rem] ${tier.color} mb-1`}>{tier.name}</h3>
                     <p className="font-['Crimson_Pro'] text-base text-stone-400">{tier.description}</p>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export default function Quests() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">QUESTLINE TOMES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">QUESTLINE TOMES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Beyond the village board run seven dedicated questline tomes, a 16-beat Grand Chronicle that weaves them together, and a 20-quest Kingdom line that awaits Pioneers.
               </p>
@@ -91,7 +91,7 @@ export default function Quests() {
             ].map((t, i) => (
               <ScrollReveal key={t.name} delay={i * 60}>
                 <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-4 h-full">
-                  <h3 className="font-['Press_Start_2P'] text-[0.5rem] text-yellow-500 mb-2 leading-relaxed">{t.name}</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-500 mb-2 leading-relaxed">{t.name}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{t.desc}</p>
                 </div>
               </ScrollReveal>
@@ -105,7 +105,7 @@ export default function Quests() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">VILLAGE REPUTATION</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">VILLAGE REPUTATION</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Your standing with each village determines what quests, prices, and opportunities are available. Climb the ladder from unknown outsider to living legend.
               </p>
@@ -121,11 +121,11 @@ export default function Quests() {
                 <ScrollReveal key={level.name} delay={i * 80}>
                   <div className="flex items-start gap-5 pl-2">
                     <div className="relative z-10 flex items-center justify-center w-9 h-9 rounded-full bg-stone-900 border border-stone-700 shrink-0">
-                      <span className={`font-['Press_Start_2P'] text-[0.6rem] ${level.color}`}>{i + 1}</span>
+                      <span className={`font-['Pixelify_Sans'] text-[0.6rem] ${level.color}`}>{i + 1}</span>
                     </div>
                     <div className="pt-1">
                       <div className="flex items-baseline gap-3 mb-1">
-                        <h3 className={`font-['Press_Start_2P'] text-[0.55rem] ${level.color}`}>{level.name}</h3>
+                        <h3 className={`font-['Pixelify_Sans'] text-[0.55rem] ${level.color}`}>{level.name}</h3>
                         <span className="font-['Crimson_Pro'] text-base text-stone-600">{level.threshold} rep</span>
                       </div>
                       <p className="font-['Crimson_Pro'] text-base text-stone-400">{level.description}</p>
@@ -143,7 +143,7 @@ export default function Quests() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">BOUNTY SYSTEM</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">BOUNTY SYSTEM</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Named elite mobs spawn in biomes across the world. Hunt them down within the time limit for escalating rewards. Four tiers of increasing danger.
               </p>
@@ -155,11 +155,11 @@ export default function Quests() {
               <ScrollReveal key={bounty.tier} delay={i * 100}>
                 <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-5">
                   <div className="flex items-baseline gap-2 mb-2">
-                    <span className={`font-['Press_Start_2P'] text-base ${bounty.color}`}>TIER {bounty.tier}</span>
+                    <span className={`font-['Pixelify_Sans'] text-base ${bounty.color}`}>TIER {bounty.tier}</span>
                     <span className="font-['Crimson_Pro'] text-base text-stone-600">|</span>
                     <span className="font-['Crimson_Pro'] text-base text-stone-500">{bounty.time} limit</span>
                   </div>
-                  <p className={`font-['Press_Start_2P'] text-[0.65rem] ${bounty.color} mb-2`}>{bounty.target}</p>
+                  <p className={`font-['Pixelify_Sans'] text-[0.65rem] ${bounty.color} mb-2`}>{bounty.target}</p>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{bounty.reward}</p>
                 </div>
               </ScrollReveal>
@@ -174,7 +174,7 @@ export default function Quests() {
           <div className="grid md:grid-cols-2 gap-8">
             <ScrollReveal>
               <div className="rounded-3xl border border-yellow-800/30 bg-stone-900/40 p-6">
-                <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-400 mb-3">ARTIFACT BOUNTY BOARD</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.75rem] text-yellow-400 mb-3">ARTIFACT BOUNTY BOARD</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400 leading-relaxed mb-3">
                   Found above the Quest Book in every village. Three daily artifact bounties rotate from
                   a pool of 25, displayed with floating UI and gold dust particles.
@@ -187,7 +187,7 @@ export default function Quests() {
             </ScrollReveal>
             <ScrollReveal delay={100}>
               <div className="rounded-3xl border border-red-800/30 bg-stone-900/40 p-6">
-                <h3 className="font-['Press_Start_2P'] text-[0.75rem] text-red-400 mb-3">EXILE SYSTEM</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.75rem] text-red-400 mb-3">EXILE SYSTEM</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400 leading-relaxed mb-3">
                   Betray a village badly enough and the consequences are real. Exile mechanics
                   strip your reputation and lock you out of quest boards, trade discounts, and

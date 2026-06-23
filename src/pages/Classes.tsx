@@ -61,7 +61,7 @@ export default function Classes() {
               }`}
             >
               {cls.isSecret && (
-                <div className="absolute -top-1 -right-1 bg-purple-600 text-[0.7rem] font-['Press_Start_2P'] text-white px-1.5 py-0.5 rounded">
+                <div className="absolute -top-1 -right-1 bg-purple-600 text-[0.7rem] font-['Pixelify_Sans'] text-white px-1.5 py-0.5 rounded">
                   SECRET
                 </div>
               )}
@@ -81,7 +81,7 @@ export default function Classes() {
                  cls.weaponType.includes('Staff') ? '🪄' :
                  cls.weaponType.includes('Sword') ? '⚔️' : cls.isSecret ? '❓' : '⚔️'}
               </div>
-              <p className="font-['Press_Start_2P'] text-[0.38rem] text-stone-300 leading-relaxed">
+              <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-300 leading-relaxed">
                 {cls.name.toUpperCase()}
               </p>
               <p className="font-['Crimson_Pro'] text-[0.65rem] text-stone-500 mt-0.5">
@@ -105,16 +105,16 @@ export default function Classes() {
                 {/* Left: Info */}
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-1">
-                    <h2 className="font-['Press_Start_2P'] text-xl" style={{ color: selected.color }}>
+                    <h2 className="font-['Pixelify_Sans'] text-xl" style={{ color: selected.color }}>
                       {selected.name}
                     </h2>
                     {selected.isSecret && (
-                      <span className="font-['Press_Start_2P'] text-[0.55rem] bg-purple-600 text-white px-2 py-1 rounded">
+                      <span className="font-['Pixelify_Sans'] text-[0.55rem] bg-purple-600 text-white px-2 py-1 rounded">
                         SECRET CLASS
                       </span>
                     )}
                   </div>
-                  <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500 tracking-widest mb-4">
+                  <p className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-500 tracking-widest mb-4">
                     {selected.archetype.toUpperCase()} · {selected.weaponType.toUpperCase()}
                   </p>
 
@@ -127,7 +127,7 @@ export default function Classes() {
                   {/* Strengths / Weaknesses */}
                   <div className="grid md:grid-cols-2 gap-4 mb-6">
                     <div>
-                      <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-green-500 tracking-widest mb-2">STRENGTHS</h3>
+                      <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-green-500 tracking-widest mb-2">STRENGTHS</h3>
                       {selected.strengths.map(s => (
                         <p key={s} className="font-['Crimson_Pro'] text-stone-400 text-base flex gap-2">
                           <span className="text-green-600">+</span> {s}
@@ -135,7 +135,7 @@ export default function Classes() {
                       ))}
                     </div>
                     <div>
-                      <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-red-500 tracking-widest mb-2">WEAKNESSES</h3>
+                      <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-red-500 tracking-widest mb-2">WEAKNESSES</h3>
                       {selected.weaknesses.map(w => (
                         <p key={w} className="font-['Crimson_Pro'] text-stone-400 text-base flex gap-2">
                           <span className="text-red-600">−</span> {w}
@@ -147,11 +147,11 @@ export default function Classes() {
 
                 {/* Right: Abilities */}
                 <div className="md:w-[340px]">
-                  <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-600 tracking-widest mb-3">ABILITIES</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.65rem] text-yellow-600 tracking-widest mb-3">ABILITIES</h3>
                   <div className="space-y-3">
                     {selected.abilities.map(a => (
                       <div key={a.name} className="bg-stone-900/60 rounded border border-stone-800/50 p-3">
-                        <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-200 mb-1">{a.name}</p>
+                        <p className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-200 mb-1">{a.name}</p>
                         <p className="font-['Crimson_Pro'] text-stone-400 text-sm">{a.description}</p>
                       </div>
                     ))}
@@ -159,7 +159,7 @@ export default function Classes() {
 
                   {/* Spirit Weapon */}
                   <div className="mt-4 bg-purple-950/20 border border-purple-800/30 rounded p-3">
-                    <p className="font-['Press_Start_2P'] text-[0.55rem] text-purple-400 tracking-widest mb-1">SPIRIT WEAPON</p>
+                    <p className="font-['Pixelify_Sans'] text-[0.55rem] text-purple-400 tracking-widest mb-1">SPIRIT WEAPON</p>
                     <p className="font-['Crimson_Pro'] text-stone-300">
                       {selected.spiritWeapon}
                     </p>
@@ -176,7 +176,7 @@ export default function Classes() {
         {/* No selection prompt */}
         {!selected && (
           <div className="text-center py-12">
-            <p className="font-['Press_Start_2P'] text-[0.7rem] text-stone-600">
+            <p className="font-['Pixelify_Sans'] text-[0.7rem] text-stone-600">
               SELECT A CLASS ABOVE TO VIEW DETAILS
             </p>
           </div>

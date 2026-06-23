@@ -9,7 +9,7 @@ interface Props {
 export default function TierBadge({ tier, size = 'sm' }: Props) {
   const sizeClass = size === 'sm' ? 'text-[0.6rem] px-2 py-0.5' : 'text-[0.7rem] px-3 py-1'
   return (
-    <span className={`font-['Press_Start_2P'] rounded shrink-0 ${sizeClass} ${TIER_BADGE[tier]}`}>
+    <span className={`font-['Pixelify_Sans'] rounded shrink-0 ${sizeClass} ${TIER_BADGE[tier]}`}>
       {tier.toUpperCase()}
     </span>
   )

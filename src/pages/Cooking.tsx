@@ -54,7 +54,7 @@ export default function Cooking() {
       <section className="max-w-[1400px] mx-auto px-8 py-16">
         <ScrollReveal>
           <div className="text-center mb-12">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">HOW IT WORKS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">HOW IT WORKS</h2>
           </div>
         </ScrollReveal>
 
@@ -67,7 +67,7 @@ export default function Cooking() {
           ].map((feat, i) => (
             <ScrollReveal key={feat.title} delay={i * 80}>
               <div className="rounded-3xl border border-stone-800 bg-stone-900/30 p-5 h-full">
-                <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-400 mb-2">{feat.title}</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-400 mb-2">{feat.title}</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">{feat.description}</p>
               </div>
             </ScrollReveal>
@@ -80,7 +80,7 @@ export default function Cooking() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">12 MASTERY CATEGORIES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">12 MASTERY CATEGORIES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                 Each category has its own mastery progression — unlocking Hearty → Gourmet → Feast recipe tiers. Cook your way to Master Chef.
               </p>
@@ -92,7 +92,7 @@ export default function Cooking() {
               <ScrollReveal key={cat.name} delay={i * 50}>
                 <div className="text-center rounded-3xl border border-stone-800 bg-stone-900/40 p-4 h-full">
                   <div className="text-2xl mb-2">{cat.icon}</div>
-                  <h3 className="font-['Press_Start_2P'] text-[0.6rem] mb-2" style={{ color: cat.color }}>{cat.name}</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.6rem] mb-2" style={{ color: cat.color }}>{cat.name}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-500">{cat.description}</p>
                 </div>
               </ScrollReveal>
@@ -106,7 +106,7 @@ export default function Cooking() {
                 <div className="space-y-2">
                   {MASTERY_TIERS.map(t => (
                     <div key={t.title} className="flex items-center justify-between">
-                      <span className={`font-['Press_Start_2P'] text-[0.6rem] ${t.color}`}>{t.title}</span>
+                      <span className={`font-['Pixelify_Sans'] text-[0.6rem] ${t.color}`}>{t.title}</span>
                       <span className="font-['Crimson_Pro'] text-base text-stone-500">{t.count} meals in category</span>
                     </div>
                   ))}
@@ -122,7 +122,7 @@ export default function Cooking() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">SEASONAL RECIPES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">SEASONAL RECIPES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                 16 exclusive recipes — 4 per season. Only available during their season.
               </p>
@@ -133,7 +133,7 @@ export default function Cooking() {
             {SEASONAL_RECIPES.map((s, i) => (
               <ScrollReveal key={s.season} delay={i * 100}>
                 <div className={`rounded-3xl border ${s.border} bg-gradient-to-br ${s.bg} p-5 text-center`}>
-                  <h3 className={`font-['Press_Start_2P'] text-[0.55rem] ${s.color} mb-2`}>{s.season}</h3>
+                  <h3 className={`font-['Pixelify_Sans'] text-[0.55rem] ${s.color} mb-2`}>{s.season}</h3>
                   <p className="font-['Crimson_Pro'] text-stone-400 text-sm">{s.count} exclusive recipes</p>
                 </div>
               </ScrollReveal>
@@ -147,7 +147,7 @@ export default function Cooking() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">PET TREATS</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">PET TREATS</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                 Cook treats for your companions. Six tiers of treats to build your bond.
               </p>
@@ -158,7 +158,7 @@ export default function Cooking() {
             {PET_TREATS.map((treat, i) => (
               <ScrollReveal key={treat.tier} delay={i * 60}>
                 <div className="flex items-center justify-between rounded-3xl border border-stone-800 bg-stone-900/30 px-5 py-3">
-                  <span className={`font-['Press_Start_2P'] text-[0.65rem] ${treat.color}`}>{treat.tier}</span>
+                  <span className={`font-['Pixelify_Sans'] text-[0.65rem] ${treat.color}`}>{treat.tier}</span>
                 </div>
               </ScrollReveal>
             ))}

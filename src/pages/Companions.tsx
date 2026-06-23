@@ -44,7 +44,7 @@ export default function Companions() {
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 80}>
               <div className="rounded border border-stone-800 bg-stone-900/40 p-4 h-full">
-                <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-500 mb-2">{item.title}</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-500 mb-2">{item.title}</h3>
                 <p className="font-['Crimson_Pro'] text-stone-400 text-sm">{item.desc}</p>
               </div>
             </ScrollReveal>
@@ -82,7 +82,7 @@ export default function Companions() {
                 <button
                   key={tier}
                   onClick={() => setSelectedTier(tier)}
-                  className={`font-['Press_Start_2P'] text-[0.38rem] px-2.5 py-2 rounded border transition-all ${
+                  className={`font-['Pixelify_Sans'] text-[0.55rem] px-2.5 py-2 rounded border transition-all ${
                     selectedTier === tier
                       ? 'bg-yellow-900/60 border-yellow-600 text-yellow-400'
                       : 'bg-stone-900 border-stone-700 text-stone-500 hover:border-yellow-900'
@@ -93,7 +93,7 @@ export default function Companions() {
               ))}
             </div>
           </div>
-          <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 tracking-widest">
+          <p className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-600 tracking-widest">
             {filtered.length} COMPANION{filtered.length !== 1 ? 'S' : ''} FOUND
           </p>
         </div>
@@ -104,16 +104,16 @@ export default function Companions() {
             <ScrollReveal key={companion.id} delay={Math.min(i * 25, 300)}>
               <div className={`rounded border p-4 transition-all duration-200 hover:scale-[1.02] hover:shadow-lg ${TIER_CARD[companion.tier]} ${TIER_GLOW[companion.tier]}`}>
                 <div className="flex items-start justify-between gap-2 mb-2">
-                  <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-stone-100 leading-relaxed">
+                  <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-stone-100 leading-relaxed">
                     {companion.displayName}
                   </h3>
                   <TierBadge tier={companion.tier} />
                 </div>
-                <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-500 tracking-widest mb-2">
+                <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-500 tracking-widest mb-2">
                   #{companion.id}
                 </p>
                 <div className="mt-2 pt-2 border-t border-stone-700/30">
-                  <p className="font-['Press_Start_2P'] text-[0.38rem] mb-1" style={{ color: companion.tier === 'Mythical' ? '#FBBF24' : '#9CA3AF' }}>
+                  <p className="font-['Pixelify_Sans'] text-[0.55rem] mb-1" style={{ color: companion.tier === 'Mythical' ? '#FBBF24' : '#9CA3AF' }}>
                     {companion.abilityName}
                   </p>
                   {companion.abilityDescription && (

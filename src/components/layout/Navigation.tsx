@@ -69,7 +69,7 @@ export default function Navigation() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 no-underline shrink-0">
           <img src="/icon.png" alt="Forevercraft" className="w-10 h-auto" style={{ imageRendering: 'pixelated' }} />
-          <span className="font-['Press_Start_2P'] text-[0.7rem] md:text-[0.8rem] text-metallic-gold tracking-wider">
+          <span className="font-['Pixelify_Sans'] text-[0.7rem] md:text-[0.8rem] text-metallic-gold tracking-wider">
             FOREVERCRAFT
           </span>
         </Link>
@@ -81,7 +81,7 @@ export default function Navigation() {
               {item.to ? (
                 <Link
                   to={item.to}
-                  className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 ${
+                  className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 ${
                     isActive(item.to)
                       ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
                       : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
@@ -92,7 +92,7 @@ export default function Navigation() {
               ) : (
                 <>
                   <button
-                    className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 inline-flex items-center h-9 ${
+                    className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 inline-flex items-center h-9 ${
                       isChildActive(item.children)
                         ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
                         : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
@@ -107,7 +107,7 @@ export default function Navigation() {
                         <Link
                           key={child.to}
                           to={child.to}
-                          className={`block px-5 py-2.5 font-['Press_Start_2P'] text-[0.65rem] tracking-wider no-underline transition-all duration-200 ${
+                          className={`block px-5 py-2.5 font-['Pixelify_Sans'] text-[0.65rem] tracking-wider no-underline transition-all duration-200 ${
                             isActive(child.to)
                               ? 'text-yellow-400 bg-yellow-950/40'
                               : 'text-stone-400 hover:text-yellow-500 hover:bg-yellow-950/20'
@@ -126,7 +126,7 @@ export default function Navigation() {
           {/* Downloads — last item, after Donate */}
           <Link
             to="/downloads"
-            className={`font-['Press_Start_2P'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 shrink-0 ${
+            className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 shrink-0 ${
               isActive('/downloads')
                 ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
                 : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
@@ -154,7 +154,7 @@ export default function Navigation() {
                 <Link
                   to={item.to}
                   onClick={() => setMobileOpen(false)}
-                  className={`block px-6 py-3 font-['Press_Start_2P'] text-[0.65rem] tracking-wider no-underline ${
+                  className={`block px-6 py-3 font-['Pixelify_Sans'] text-[0.65rem] tracking-wider no-underline ${
                     isActive(item.to) ? 'text-yellow-400 bg-yellow-950/30' : 'text-stone-400'
                   }`}
                 >
@@ -164,7 +164,7 @@ export default function Navigation() {
                 <>
                   <button
                     onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
-                    className={`w-full text-left px-6 py-3 font-['Press_Start_2P'] text-[0.65rem] tracking-wider ${
+                    className={`w-full text-left px-6 py-3 font-['Pixelify_Sans'] text-[0.65rem] tracking-wider ${
                       isChildActive(item.children) ? 'text-yellow-400' : 'text-stone-400'
                     }`}
                   >
@@ -175,7 +175,7 @@ export default function Navigation() {
                       key={child.to}
                       to={child.to}
                       onClick={() => setMobileOpen(false)}
-                      className={`block px-10 py-2.5 font-['Press_Start_2P'] text-[0.6rem] tracking-wider no-underline ${
+                      className={`block px-10 py-2.5 font-['Pixelify_Sans'] text-[0.6rem] tracking-wider no-underline ${
                         isActive(child.to) ? 'text-yellow-400' : 'text-stone-500 hover:text-yellow-600'
                       }`}
                     >
@@ -190,7 +190,7 @@ export default function Navigation() {
             href="https://buymeacoffee.com/forevercraft"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mx-6 my-3 px-4 py-3 font-['Press_Start_2P'] text-[0.7rem] tracking-wider text-center no-underline text-stone-500 hover:text-yellow-600 transition-colors"
+            className="block mx-6 my-3 px-4 py-3 font-['Pixelify_Sans'] text-[0.7rem] tracking-wider text-center no-underline text-stone-500 hover:text-yellow-600 transition-colors"
           >
             DONATE
           </a>

@@ -14,7 +14,7 @@ export default function Terms() {
         <div className="font-['Crimson_Pro'] text-lg text-stone-300 leading-relaxed space-y-6">
           <p className="text-stone-500 text-base">Last updated: March 22, 2026</p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">THE DATAPACK</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">THE DATAPACK</h2>
           <p>
             Forevercraft is a free, community-made Minecraft datapack. It is provided as-is, without
             warranty of any kind. You are free to download, use, and enjoy Forevercraft in your personal
@@ -25,7 +25,7 @@ export default function Terms() {
             Minecraft is a trademark of Mojang Studios.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">USAGE RIGHTS</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">USAGE RIGHTS</h2>
           <ul className="list-disc list-inside space-y-2 text-stone-400">
             <li>You may use Forevercraft in personal and public Minecraft servers</li>
             <li>You may use the modular download system to create custom combinations</li>
@@ -35,7 +35,7 @@ export default function Terms() {
             <li>You may credit Forevercraft and link to our website when sharing</li>
           </ul>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">DONATIONS & MEMBERSHIPS</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">DONATIONS & MEMBERSHIPS</h2>
           <p>
             Donations are entirely voluntary and are not required to use Forevercraft. The full datapack
             is and will always remain free. Donations support ongoing development, bug fixes, and updates.
@@ -50,7 +50,7 @@ export default function Terms() {
             Membership refunds follow Buy Me a Coffee&apos;s standard refund policy.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CUSTOM LORE CONTRIBUTIONS</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CUSTOM LORE CONTRIBUTIONS</h2>
           <p>
             Mythical-tier members may submit custom lore pieces to be added to the datapack. All
             submissions are subject to review and may be edited for tone, length, or content to fit
@@ -59,14 +59,14 @@ export default function Terms() {
             and may be experienced by all players.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">THE WEBSITE</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">THE WEBSITE</h2>
           <p>
             The Forevercraft website (forevercraft.co) is provided for informational purposes
             and as a download hub for the datapack. We strive to keep information accurate but make no
             guarantees that all stats, numbers, or descriptions are current at all times.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">LIMITATION OF LIABILITY</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">LIMITATION OF LIABILITY</h2>
           <p>
             Forevercraft is provided as-is. We are not responsible for any issues arising from the use
             of the datapack, including but not limited to: world corruption, incompatibility with other
@@ -74,14 +74,14 @@ export default function Terms() {
             installing any datapack.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CONTACT</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CONTACT</h2>
           <p>
             For questions about these terms, reach out through our
             {' '}<a href="https://buymeacoffee.com/forevercraft" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline">Buy Me a Coffee page</a> or
             {' '}<a href="https://github.com/Deiontre10/forevercraft" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline">GitHub repository</a>.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CHANGES</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CHANGES</h2>
           <p>
             We may update these terms from time to time. Changes will be posted on this page with an
             updated date. Continued use of the datapack or website after changes constitutes acceptance

@@ -143,7 +143,7 @@ export default function Seasons() {
       <section className="max-w-[1400px] mx-auto px-8 py-16">
         <ScrollReveal>
           <div className="text-center mb-12">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">THE FOUR SEASONS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">THE FOUR SEASONS</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
               Each season lasts 16 in-game days, forming a complete 64-day year cycle. The world transforms with each turning — lighting, particles, spawns, and mechanics all shift to match the season.
             </p>
@@ -155,7 +155,7 @@ export default function Seasons() {
             <ScrollReveal key={season.name} delay={i * 100}>
               <div className={`rounded-3xl border ${season.border} bg-gradient-to-br ${season.accent} p-6 h-full`}>
                 <div className="flex items-baseline gap-3 mb-3">
-                  <h3 className={`font-['Press_Start_2P'] text-base ${season.textColor}`}>{season.name}</h3>
+                  <h3 className={`font-['Pixelify_Sans'] text-base ${season.textColor}`}>{season.name}</h3>
                   <span className="font-['Crimson_Pro'] text-base text-stone-500">Days {season.days}</span>
                 </div>
                 <p className="font-['Crimson_Pro'] text-base text-stone-300 mb-4">{season.description}</p>
@@ -178,12 +178,12 @@ export default function Seasons() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-4">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">WORLD EVENTS</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">WORLD EVENTS</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Five cataclysmic events can strike at any time. A 60-second omen warning gives players time to prepare — or flee.
               </p>
             </div>
-            <p className="text-center font-['Press_Start_2P'] text-[0.6rem] text-yellow-700 tracking-widest mb-10">
+            <p className="text-center font-['Pixelify_Sans'] text-[0.6rem] text-yellow-700 tracking-widest mb-10">
               60 SECOND OMEN WARNING BEFORE EACH EVENT
             </p>
           </ScrollReveal>
@@ -192,7 +192,7 @@ export default function Seasons() {
             {WORLD_EVENTS.map((event, i) => (
               <ScrollReveal key={event.name} delay={i * 80}>
                 <div className={`rounded-3xl border ${event.border} bg-gradient-to-br ${event.bg} p-5 h-full flex flex-col`}>
-                  <h3 className={`font-['Press_Start_2P'] text-[0.6rem] ${event.color} mb-3`}>{event.name}</h3>
+                  <h3 className={`font-['Pixelify_Sans'] text-[0.6rem] ${event.color} mb-3`}>{event.name}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-300 flex-1">{event.description}</p>
                 </div>
               </ScrollReveal>
@@ -206,7 +206,7 @@ export default function Seasons() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">MOON PHASES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">MOON PHASES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Eight lunar phases cycle through the nights. Certain phases carry powerful gameplay effects.
               </p>
@@ -221,7 +221,7 @@ export default function Seasons() {
                   className="text-center rounded-3xl border border-stone-800 bg-stone-900/50 p-3"
                 >
                   <div className="text-2xl mb-2">{phase.icon}</div>
-                  <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-300 mb-1 leading-relaxed">{phase.name}</p>
+                  <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-300 mb-1 leading-relaxed">{phase.name}</p>
                   <p className="font-['Crimson_Pro'] text-[0.7rem] text-stone-500 leading-tight">{phase.effect}</p>
                 </div>
               ))}
@@ -231,10 +231,10 @@ export default function Seasons() {
           {/* Harvest Moon highlight */}
           <ScrollReveal delay={200}>
             <div className="rounded-3xl border border-red-800/50 bg-gradient-to-br from-red-900/20 to-red-950/10 p-6 max-w-xl mx-auto text-center">
-              <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-red-400 mb-2">{HARVEST_MOON.name}</h3>
-              <p className="font-['Press_Start_2P'] text-[0.55rem] text-red-700 mb-3">{HARVEST_MOON.chance}</p>
+              <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-red-400 mb-2">{HARVEST_MOON.name}</h3>
+              <p className="font-['Pixelify_Sans'] text-[0.55rem] text-red-700 mb-3">{HARVEST_MOON.chance}</p>
               <p className="font-['Crimson_Pro'] text-base text-stone-300 mb-2">{HARVEST_MOON.description}</p>
-              <p className="font-['Press_Start_2P'] text-[0.6rem] text-red-500">{HARVEST_MOON.effect}</p>
+              <p className="font-['Pixelify_Sans'] text-[0.6rem] text-red-500">{HARVEST_MOON.effect}</p>
             </div>
           </ScrollReveal>
 
@@ -242,35 +242,35 @@ export default function Seasons() {
           <Spoiler label="Under the hood: time system, moon cycles, and event mechanics...">
             <div className="space-y-4">
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-amber-400 tracking-widest mb-2">CUSTOM TIME SYSTEM</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-amber-400 tracking-widest mb-2">CUSTOM TIME SYSTEM</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Days last 1 real-world hour using Minecraft&apos;s native world clock at 0.333x rate. Beds work normally. Seasonal rate switching adjusts pacing: Winter has faster days and slower nights, while Summer has slower days and faster nights — changing how each season feels to play.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-amber-400 tracking-widest mb-2">SLEEP SKIP</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-amber-400 tracking-widest mb-2">SLEEP SKIP</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Sleep skipping uses a custom detection system. When all players have been sleeping for 100 consecutive ticks, the night is skipped and dawn arrives. This replaces vanilla sleep behavior entirely.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-amber-400 tracking-widest mb-2">MOON PHASE CYCLE</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-amber-400 tracking-widest mb-2">MOON PHASE CYCLE</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   The 8 moon phases cycle over 192,000 DayTime ticks (8 full days). Each phase lasts exactly one in-game day, creating a predictable lunar calendar that experienced players can plan around.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-amber-400 tracking-widest mb-2">WORLD EVENT WARNINGS</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-amber-400 tracking-widest mb-2">WORLD EVENT WARNINGS</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   All world events are preceded by a 60-second omen warning before they begin, giving players time to prepare or seek shelter. The Harvest Festival event has a bonus crate pool with exclusive seasonal rewards.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-amber-400 tracking-widest mb-2">CALENDAR LOGGING</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-amber-400 tracking-widest mb-2">CALENDAR LOGGING</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   All calendar events are logged to the Welcome Back Briefing, so players who were offline during a world event or seasonal transition can see what they missed when they next log in.
                 </p>

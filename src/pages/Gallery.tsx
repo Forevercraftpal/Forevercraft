@@ -55,7 +55,7 @@ export default function Gallery() {
                   <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <div className="p-4 bg-stone-900/50">
-                  <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-500 tracking-wider mb-1">
+                  <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-500 tracking-wider mb-1">
                     {img.title.toUpperCase()}
                   </h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{img.desc}</p>
@@ -88,7 +88,7 @@ export default function Gallery() {
               className="max-w-full max-h-[85vh] object-contain rounded-3xl gallery-img"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg">
-              <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-500 mb-1">
+              <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-500 mb-1">
                 {IMAGES[lightbox].title.toUpperCase()}
               </h3>
               <p className="font-['Crimson_Pro'] text-base text-stone-300">{IMAGES[lightbox].desc}</p>

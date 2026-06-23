@@ -36,7 +36,7 @@ export default function RaidBosses() {
       <section className="max-w-[1400px] mx-auto px-8 pt-16 pb-8">
         <ScrollReveal>
           <div className="text-center mb-6">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">HOW RAIDS WORK</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">HOW RAIDS WORK</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
               Raid bosses lurk at the bottom of every major structure in the world. Locate the structure, fight through its defenders, and face the boss at the end. Defeat it for a chance at a spirit weapon that permanently changes your combat identity.
             </p>
@@ -46,21 +46,21 @@ export default function RaidBosses() {
         <Spoiler label="Detailed raid mechanics and rules...">
           <div className="space-y-4">
             <div>
-              <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">STRUCTURE &amp; PROGRESSION</h3>
+              <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-red-400 tracking-widest mb-2">STRUCTURE &amp; PROGRESSION</h3>
               <p className="font-['Crimson_Pro'] text-base text-stone-400">
                 Each structure dungeon has a 10-floor layout. Fight through all 10 floors to reach the raid boss on floor 10. After clearing floor 10, dungeon prompts change from &quot;dungeon&quot; to &quot;raid&quot; to reflect the increased challenge tier.
               </p>
             </div>
 
             <div>
-              <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">VOTING SYSTEM</h3>
+              <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-red-400 tracking-widest mb-2">VOTING SYSTEM</h3>
               <p className="font-['Crimson_Pro'] text-base text-stone-400">
                 After each floor, the party votes: Continue deeper or Evacuate with current rewards. Majority rules. If the vote is tied, the party continues. A 30-second timer forces a decision — no stalling allowed.
               </p>
             </div>
 
             <div>
-              <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 tracking-widest mb-2">BOSS ENCOUNTER</h3>
+              <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-red-400 tracking-widest mb-2">BOSS ENCOUNTER</h3>
               <p className="font-['Crimson_Pro'] text-base text-stone-400">
                 The floor 10 boss has a 10-minute enrage timer. If the timer expires, the boss becomes unstoppable and wipes the party. Each boss scales to your party size and Dream Rate, with anti-cheese pull mechanics.
               </p>
@@ -68,7 +68,7 @@ export default function RaidBosses() {
 
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded border border-green-800/30 bg-green-950/10 p-3">
-                <h4 className="font-['Press_Start_2P'] text-[0.6rem] text-green-400 tracking-widest mb-2">WIN REWARDS</h4>
+                <h4 className="font-['Pixelify_Sans'] text-[0.6rem] text-green-400 tracking-widest mb-2">WIN REWARDS</h4>
                 <ul className="font-['Crimson_Pro'] text-base text-stone-400 space-y-1">
                   <li>Teleported back to the structure entrance</li>
                   <li>5% chance to receive a spirit weapon drop</li>
@@ -76,7 +76,7 @@ export default function RaidBosses() {
                 </ul>
               </div>
               <div className="rounded border border-red-800/30 bg-red-950/10 p-3">
-                <h4 className="font-['Press_Start_2P'] text-[0.6rem] text-red-400 tracking-widest mb-2">LOSE PENALTIES</h4>
+                <h4 className="font-['Pixelify_Sans'] text-[0.6rem] text-red-400 tracking-widest mb-2">LOSE PENALTIES</h4>
                 <ul className="font-['Crimson_Pro'] text-base text-stone-400 space-y-1">
                   <li>Sent home (respawn point)</li>
                   <li>Lose all XP levels</li>
@@ -104,11 +104,11 @@ export default function RaidBosses() {
               {/* Header */}
               <div className="px-5 py-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
                 <div>
-                  <h3 className="font-['Press_Start_2P'] text-[0.6rem] md:text-[0.7rem] text-stone-100"
+                  <h3 className="font-['Pixelify_Sans'] text-[0.6rem] md:text-[0.7rem] text-stone-100"
                       style={{ textShadow: `0 0 15px ${boss.color}30` }}>
                     {boss.name}
                   </h3>
-                  <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-500 tracking-widest mt-1">
+                  <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-500 tracking-widest mt-1">
                     {boss.structure.toUpperCase()} · {boss.class.toUpperCase()} CLASS
                   </p>
                 </div>
@@ -120,7 +120,7 @@ export default function RaidBosses() {
                       </span>
                     ))}
                   </div>
-                  <span className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600">
+                  <span className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600">
                     {expandedIdx === i ? '▲' : '▼'}
                   </span>
                 </div>
@@ -136,10 +136,10 @@ export default function RaidBosses() {
 
                     {/* Phases */}
                     <div>
-                      <h4 className="font-['Press_Start_2P'] text-[0.6rem] text-red-400 tracking-widest mb-2">PHASES</h4>
+                      <h4 className="font-['Pixelify_Sans'] text-[0.6rem] text-red-400 tracking-widest mb-2">PHASES</h4>
                       {boss.phases.map((phase, j) => (
                         <div key={j} className="flex items-start gap-2 mb-1.5">
-                          <span className="font-['Press_Start_2P'] text-[0.55rem] text-red-600 mt-0.5 shrink-0">
+                          <span className="font-['Pixelify_Sans'] text-[0.55rem] text-red-600 mt-0.5 shrink-0">
                             P{j + 1}
                           </span>
                           <p className="font-['Crimson_Pro'] text-stone-400 text-sm">{phase}</p>
@@ -149,7 +149,7 @@ export default function RaidBosses() {
 
                     {/* Loot */}
                     <div className="bg-purple-950/20 border border-purple-800/30 rounded p-3">
-                      <p className="font-['Press_Start_2P'] text-[0.55rem] text-purple-400 tracking-widest mb-1">
+                      <p className="font-['Pixelify_Sans'] text-[0.55rem] text-purple-400 tracking-widest mb-1">
                         SPIRIT WEAPON DROP · 5% CHANCE
                       </p>
                       <p className="font-['Crimson_Pro'] text-stone-300">
@@ -157,7 +157,7 @@ export default function RaidBosses() {
                       </p>
                     </div>
 
-                    <p className="font-['Press_Start_2P'] text-[0.7rem] text-red-800 tracking-widest">
+                    <p className="font-['Pixelify_Sans'] text-[0.7rem] text-red-800 tracking-widest">
                       ENRAGE TIMER: 10 MINUTES · LOSE: ALL LEVELS LOST, SENT HOME
                     </p>
                   </div>
@@ -173,7 +173,7 @@ export default function RaidBosses() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-8">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">11 ROAMING WORLD BOSSES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">11 ROAMING WORLD BOSSES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Beyond the structure raids, 11 titans roam the overworld — spawning naturally every few in-game days, or summoned with a Totem of Summoning.
               </p>
@@ -187,7 +187,7 @@ export default function RaidBosses() {
             ].map((w, i) => (
               <ScrollReveal key={w.title} delay={i * 80}>
                 <div className="rounded-3xl border border-red-900/30 bg-red-950/10 p-5 h-full">
-                  <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-red-400 mb-2">{w.title}</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-red-400 mb-2">{w.title}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{w.desc}</p>
                 </div>
               </ScrollReveal>

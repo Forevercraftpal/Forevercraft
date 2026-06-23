@@ -60,7 +60,7 @@ export default function Guilds() {
       <section className="max-w-[1400px] mx-auto px-8 py-16">
         <ScrollReveal>
           <div className="text-center mb-10">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">GUILDS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">GUILDS</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
               Found a guild, build a headquarters, and embark on exclusive expeditions together.
             </p>
@@ -71,7 +71,7 @@ export default function Guilds() {
           {GUILD_FEATURES.map((feat, i) => (
             <ScrollReveal key={feat.name} delay={i * 60}>
               <div className="rounded-3xl border border-blue-900/30 bg-blue-950/15 p-5 h-full">
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-blue-400 mb-2">{feat.name}</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-blue-400 mb-2">{feat.name}</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">{feat.description}</p>
               </div>
             </ScrollReveal>
@@ -84,7 +84,7 @@ export default function Guilds() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">PARTY COMBOS</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">PARTY COMBOS</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 9 combo abilities that activate when party members fight together. Coordination is rewarded.
               </p>
@@ -96,8 +96,8 @@ export default function Guilds() {
               <ScrollReveal key={combo.name} delay={i * 50}>
                 <div className="rounded-3xl border border-stone-800 bg-stone-900/30 p-4 h-full">
                   <div className="flex items-baseline justify-between mb-2">
-                    <h3 className={`font-['Press_Start_2P'] text-[0.65rem] ${combo.color}`}>{combo.name}</h3>
-                    <span className="font-['Press_Start_2P'] text-[0.7rem] text-stone-600">{combo.players}+ players</span>
+                    <h3 className={`font-['Pixelify_Sans'] text-[0.65rem] ${combo.color}`}>{combo.name}</h3>
+                    <span className="font-['Pixelify_Sans'] text-[0.7rem] text-stone-600">{combo.players}+ players</span>
                   </div>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{combo.description}</p>
                 </div>
@@ -112,7 +112,7 @@ export default function Guilds() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">DUELS</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">DUELS</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                 Test your strength in open-world duels, arena matches, and pet battles.
               </p>
@@ -123,7 +123,7 @@ export default function Guilds() {
             {DUEL_FEATURES.map((duel, i) => (
               <ScrollReveal key={duel.type} delay={i * 80}>
                 <div className="rounded-3xl border border-red-900/30 bg-red-950/10 p-5 h-full">
-                  <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-red-400 mb-2">{duel.type}</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-red-400 mb-2">{duel.type}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{duel.description}</p>
                 </div>
               </ScrollReveal>
@@ -137,7 +137,7 @@ export default function Guilds() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">BUDDY SYSTEM</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">BUDDY SYSTEM</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Form a deep bond with a tamed vanilla mob. Your Best Buddy fights alongside you, gains equipment, and grows through 7 tiers of loyalty.
               </p>
@@ -148,8 +148,8 @@ export default function Guilds() {
             {BUDDY_TIERS.map((bt, i) => (
               <ScrollReveal key={bt.tier} delay={i * 50}>
                 <div className="text-center rounded-3xl border border-stone-800 bg-stone-900/40 px-4 py-3">
-                  <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 mb-1">TIER {bt.tier}</p>
-                  <p className={`font-['Press_Start_2P'] text-[0.65rem] ${bt.color}`}>{bt.name}</p>
+                  <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600 mb-1">TIER {bt.tier}</p>
+                  <p className={`font-['Pixelify_Sans'] text-[0.65rem] ${bt.color}`}>{bt.name}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -162,7 +162,7 @@ export default function Guilds() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">FRIENDSHIP</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">FRIENDSHIP</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Build friendships with other players through daily hearts. Four levels of deepening connection with passive bonuses.
               </p>
@@ -174,7 +174,7 @@ export default function Guilds() {
               <ScrollReveal key={fl.level} delay={i * 80}>
                 <div className="rounded-3xl border border-stone-800 bg-stone-900/30 p-4">
                   <div className="flex items-baseline justify-between mb-1">
-                    <h3 className={`font-['Press_Start_2P'] text-[0.7rem] ${fl.color}`}>{fl.name}</h3>
+                    <h3 className={`font-['Pixelify_Sans'] text-[0.7rem] ${fl.color}`}>{fl.name}</h3>
                     <span className="font-['Crimson_Pro'] text-base text-stone-600">{fl.hearts} hearts</span>
                   </div>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{fl.bonus}</p>
@@ -190,7 +190,7 @@ export default function Guilds() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">FAMILY & MARRIAGE</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">FAMILY & MARRIAGE</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Reach Best Friend status (90+ hearts) and you can propose marriage. Married players share perks and build a family together.
               </p>
@@ -200,19 +200,19 @@ export default function Guilds() {
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             <ScrollReveal delay={0}>
               <div className="rounded-3xl border border-pink-900/30 bg-pink-950/10 p-5 text-center h-full">
-                <p className="font-['Press_Start_2P'] text-[0.7rem] text-pink-400 mb-2">PROPOSAL</p>
+                <p className="font-['Pixelify_Sans'] text-[0.7rem] text-pink-400 mb-2">PROPOSAL</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">Requires Best Friend status. Both players must be online to accept.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={80}>
               <div className="rounded-3xl border border-pink-900/30 bg-pink-950/10 p-5 text-center h-full">
-                <p className="font-['Press_Start_2P'] text-[0.7rem] text-pink-400 mb-2">SHARED PERKS</p>
+                <p className="font-['Pixelify_Sans'] text-[0.7rem] text-pink-400 mb-2">SHARED PERKS</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">Married players gain shared bonuses and can build a family together.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={160}>
               <div className="rounded-3xl border border-pink-900/30 bg-pink-950/10 p-5 text-center h-full">
-                <p className="font-['Press_Start_2P'] text-[0.7rem] text-pink-400 mb-2">ETERNAL VOW</p>
+                <p className="font-['Pixelify_Sans'] text-[0.7rem] text-pink-400 mb-2">ETERNAL VOW</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">Marriage is a milestone. Your bond strengthens both players with shared DR and perks.</p>
               </div>
             </ScrollReveal>

@@ -37,7 +37,7 @@ export default function FilterBar({
               <button
                 key={opt.value}
                 onClick={() => f.onChange(opt.value)}
-                className={`font-['Press_Start_2P'] text-[0.6rem] px-3 py-2 rounded border transition-all ${
+                className={`font-['Pixelify_Sans'] text-[0.6rem] px-3 py-2 rounded border transition-all ${
                   f.value === opt.value
                     ? 'bg-yellow-900/60 border-yellow-600 text-yellow-400'
                     : 'bg-stone-900 border-stone-700 text-stone-500 hover:border-yellow-900'
@@ -50,7 +50,7 @@ export default function FilterBar({
         ))}
       </div>
       {resultCount !== undefined && (
-        <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-600 tracking-widest">
+        <p className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-600 tracking-widest">
           {resultCount} {resultLabel}
         </p>
       )}

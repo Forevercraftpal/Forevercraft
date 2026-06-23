@@ -66,10 +66,10 @@ export default function Home() {
             className="w-28 h-auto md:w-36 mx-auto mb-6 drop-shadow-[0_0_40px_rgba(200,140,40,0.5)] animate-[spiral-in_1s_cubic-bezier(0.34,1.56,0.64,1)_both]"
             style={{ imageRendering: 'pixelated' }}
           />
-          <h1 className="font-['Press_Start_2P'] text-4xl md:text-6xl text-metallic-gold mb-4 leading-tight animate-[orbit-in_0.8s_cubic-bezier(0.34,1.56,0.64,1)_0.2s_both]">
+          <h1 className="font-['Pixelify_Sans'] text-4xl md:text-6xl text-metallic-gold mb-4 leading-tight animate-[orbit-in_0.8s_cubic-bezier(0.34,1.56,0.64,1)_0.2s_both]">
             FOREVERCRAFT
           </h1>
-          <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-700 tracking-[0.4em] mb-6 uppercase animate-[orbit-in_0.8s_cubic-bezier(0.34,1.56,0.64,1)_0.35s_both]">
+          <p className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-700 tracking-[0.4em] mb-6 uppercase animate-[orbit-in_0.8s_cubic-bezier(0.34,1.56,0.64,1)_0.35s_both]">
             A Fantasy Minecraft Overhaul
           </p>
           <p className="font-['Crimson_Pro'] italic text-xl md:text-2xl text-stone-400 mb-12 animate-[orbit-in_0.8s_cubic-bezier(0.34,1.56,0.64,1)_0.5s_both]">
@@ -93,14 +93,14 @@ export default function Home() {
             >
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
-                  <span className="font-['Press_Start_2P'] text-[0.55rem] text-lime-600 tracking-widest">THE EXPANSION</span>
-                  <h3 className="font-['Press_Start_2P'] text-[0.9rem] text-lime-400 mt-2 mb-2">🌾 THE BOUNTIFUL HARVEST</h3>
+                  <span className="font-['Pixelify_Sans'] text-[0.55rem] text-lime-600 tracking-widest">THE EXPANSION</span>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.9rem] text-lime-400 mt-2 mb-2">🌾 THE BOUNTIFUL HARVEST</h3>
                   <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                     Our biggest content wave yet — the Gatherer&apos;s Path, antique furniture,
                     structure boons, the Forever Sack, and a Dream Rate cap raised to 100.
                   </p>
                 </div>
-                <span className="font-['Press_Start_2P'] text-[0.65rem] text-lime-500 group-hover:text-lime-400 transition-colors shrink-0">
+                <span className="font-['Pixelify_Sans'] text-[0.65rem] text-lime-500 group-hover:text-lime-400 transition-colors shrink-0">
                   EXPLORE →
                 </span>
               </div>
@@ -112,7 +112,7 @@ export default function Home() {
       {/* ── Systems Carousel ─────────────────────────── */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <ScrollReveal>
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
             Explore the Systems
           </h2>
           <p className="font-['Crimson_Pro'] italic text-stone-400 text-center mb-12 text-lg">
@@ -129,7 +129,7 @@ export default function Home() {
                     <span className="text-2xl" style={{ filter: `drop-shadow(0 0 12px ${card.color}50)` }}>
                       {card.icon}
                     </span>
-                    <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-500 tracking-wider leading-relaxed pt-1">
+                    <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-500 tracking-wider leading-relaxed pt-1">
                       {card.title}
                     </h3>
                   </div>
@@ -149,7 +149,7 @@ export default function Home() {
       {/* ── Dream Rate Journey ───────────────────────── */}
       <section className="max-w-[1200px] mx-auto px-8 py-20">
         <ScrollReveal>
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-600 tracking-widest mb-3 text-center uppercase">
             The Dream Rate Journey
           </h2>
           <p className="font-['Crimson_Pro'] italic text-stone-400 text-center mb-14 text-lg">
@@ -169,10 +169,10 @@ export default function Home() {
 
                 {/* Content */}
                 <div className={`ml-14 md:ml-0 md:w-[45%] ${i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                  <div className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-500 mb-1">
+                  <div className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-500 mb-1">
                     DR {m.dr}
                   </div>
-                  <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-stone-200 mb-2 leading-relaxed">
+                  <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-200 mb-2 leading-relaxed">
                     {m.title}
                   </h3>
                   <p className="font-['Crimson_Pro'] text-stone-400 text-base">
@@ -190,7 +190,7 @@ export default function Home() {
       {/* ── The Vision ───────────────────────────────── */}
       <section className="max-w-[1200px] mx-auto px-8 py-20 font-['Crimson_Pro'] text-lg leading-relaxed">
         <ScrollReveal>
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-8 uppercase">
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-600 tracking-widest mb-8 uppercase">
             The Vision
           </h2>
           <p className="text-stone-300">
@@ -370,14 +370,14 @@ export default function Home() {
             >
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
-                  <span className="font-['Press_Start_2P'] text-[0.55rem] text-cyan-600 tracking-widest">NOW AVAILABLE</span>
-                  <h3 className="font-['Press_Start_2P'] text-[0.9rem] text-cyan-400 mt-2 mb-2">BEDROCK EDITION</h3>
+                  <span className="font-['Pixelify_Sans'] text-[0.55rem] text-cyan-600 tracking-widest">NOW AVAILABLE</span>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.9rem] text-cyan-400 mt-2 mb-2">BEDROCK EDITION</h3>
                   <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                     150+ systems. Full Java parity. Script API powered.
                     Console, mobile, and PC — same dream, every platform.
                   </p>
                 </div>
-                <span className="font-['Press_Start_2P'] text-[0.65rem] text-cyan-500 group-hover:text-cyan-400 transition-colors shrink-0">
+                <span className="font-['Pixelify_Sans'] text-[0.65rem] text-cyan-500 group-hover:text-cyan-400 transition-colors shrink-0">
                   LEARN MORE →
                 </span>
               </div>
@@ -405,12 +405,12 @@ export default function Home() {
               <CountUp end={STATS.totalLoreFragments} label="Lore" />
               <CountUp end={STATS.totalFunctions} label="Functions" />
             </div>
-            <p className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-800 tracking-widest mt-10">
+            <p className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-800 tracking-widest mt-10">
               BUILT WITH LOVE · ONE FUNCTION AT A TIME
             </p>
             <Link
               to="/credits"
-              className="capsule inline-block mt-4 px-8 py-2.5 border border-yellow-800/30 hover:border-yellow-600/50 font-['Press_Start_2P'] text-[0.55rem] text-stone-500 hover:text-yellow-500 tracking-widest no-underline bg-yellow-950/20 hover:bg-yellow-950/30"
+              className="capsule inline-block mt-4 px-8 py-2.5 border border-yellow-800/30 hover:border-yellow-600/50 font-['Pixelify_Sans'] text-[0.55rem] text-stone-500 hover:text-yellow-500 tracking-widest no-underline bg-yellow-950/20 hover:bg-yellow-950/30"
             >
               CREDITS
             </Link>
@@ -426,7 +426,7 @@ function FeatureSection({ title, children }: { title: string; children: React.Re
     <ScrollReveal>
       <div className="flex items-center gap-4 mb-4">
         <div className="flex-1 h-px bg-yellow-900/30" />
-        <h2 className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-600 tracking-widest uppercase shrink-0">
+        <h2 className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-600 tracking-widest uppercase shrink-0">
           {title}
         </h2>
         <div className="flex-1 h-px bg-yellow-900/30" />

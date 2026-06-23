@@ -125,8 +125,8 @@ export default function Bedrock() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
             {BEDROCK_STATS.map(stat => (
               <div key={stat.label} className="text-center p-4 rounded-3xl border border-cyan-800/30 bg-cyan-950/10">
-                <div className="font-['Press_Start_2P'] text-[1.2rem] text-cyan-400 mb-1">{stat.value}</div>
-                <div className="font-['Press_Start_2P'] text-[0.55rem] text-stone-500 tracking-widest">{stat.label}</div>
+                <div className="font-['Pixelify_Sans'] text-[1.2rem] text-cyan-400 mb-1">{stat.value}</div>
+                <div className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-500 tracking-widest">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -147,14 +147,14 @@ export default function Bedrock() {
         {/* Architecture */}
         <ScrollReveal delay={150}>
           <div className="mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-cyan-400 tracking-widest text-center mb-8">
+            <h2 className="font-['Pixelify_Sans'] text-[0.85rem] text-cyan-400 tracking-widest text-center mb-8">
               ARCHITECTURE
             </h2>
             <div className="grid md:grid-cols-3 gap-5">
               {ARCHITECTURE.map(item => (
                 <div key={item.title} className="rounded-3xl border border-stone-800/60 bg-stone-900/30 p-5">
                   <span className="text-2xl block mb-2">{item.icon}</span>
-                  <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-stone-100 mb-2">{item.title.toUpperCase()}</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.65rem] text-stone-100 mb-2">{item.title.toUpperCase()}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{item.desc}</p>
                 </div>
               ))}
@@ -165,7 +165,7 @@ export default function Bedrock() {
         {/* Bedrock Advantages */}
         <ScrollReveal delay={200}>
           <div className="mb-16 rounded-3xl border border-cyan-800/30 bg-cyan-950/5 p-8">
-            <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-cyan-500 tracking-widest mb-6 text-center">
+            <h2 className="font-['Pixelify_Sans'] text-[0.75rem] text-cyan-500 tracking-widest mb-6 text-center">
               BEDROCK ADVANTAGES
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -173,7 +173,7 @@ export default function Bedrock() {
                 <div key={item.title} className="flex gap-4">
                   <span className="text-cyan-400 text-xl mt-1">◆</span>
                   <div>
-                    <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-stone-200 mb-1">{item.title.toUpperCase()}</h3>
+                    <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-200 mb-1">{item.title.toUpperCase()}</h3>
                     <p className="font-['Crimson_Pro'] text-base text-stone-400">{item.desc}</p>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ export default function Bedrock() {
         {/* Full Parity Breakdown */}
         <ScrollReveal delay={250}>
           <div className="mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-cyan-400 tracking-widest text-center mb-3">
+            <h2 className="font-['Pixelify_Sans'] text-[0.85rem] text-cyan-400 tracking-widest text-center mb-3">
               FULL JAVA PARITY
             </h2>
             <p className="font-['Crimson_Pro'] text-base text-stone-500 text-center mb-8">
@@ -197,8 +197,8 @@ export default function Bedrock() {
                 {PARITY_SECTIONS.map(section => (
                   <div key={section.category} className="rounded border border-stone-800/40 bg-stone-900/20 p-4">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="font-['Press_Start_2P'] text-[0.6rem] text-cyan-400">{section.category.toUpperCase()}</h3>
-                      <span className="font-['Press_Start_2P'] text-[0.55rem] text-stone-500">{section.count} systems</span>
+                      <h3 className="font-['Pixelify_Sans'] text-[0.6rem] text-cyan-400">{section.category.toUpperCase()}</h3>
+                      <span className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-500">{section.count} systems</span>
                     </div>
                     <p className="font-['Crimson_Pro'] text-base text-stone-400">{section.systems}</p>
                   </div>
@@ -211,7 +211,7 @@ export default function Bedrock() {
         {/* Key Differences from Java */}
         <ScrollReveal delay={300}>
           <div className="mb-16 rounded-3xl border border-yellow-800/30 bg-yellow-950/5 p-8">
-            <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6 text-center">
+            <h2 className="font-['Pixelify_Sans'] text-[0.75rem] text-yellow-500 tracking-widest mb-6 text-center">
               KEY DIFFERENCES FROM JAVA
             </h2>
             <div className="space-y-4">
@@ -239,7 +239,7 @@ export default function Bedrock() {
         {/* Download */}
         <ScrollReveal delay={350}>
           <div className="text-center mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-cyan-400 tracking-widest mb-4">
+            <h2 className="font-['Pixelify_Sans'] text-[0.85rem] text-cyan-400 tracking-widest mb-4">
               GET BEDROCK EDITION
             </h2>
             <p className="font-['Crimson_Pro'] text-base text-stone-400 mb-6 max-w-2xl mx-auto">
@@ -248,7 +248,7 @@ export default function Bedrock() {
             </p>
             <a
               href="/downloads"
-              className="inline-block px-8 py-4 rounded-3xl bg-cyan-600/90 hover:bg-cyan-500 text-stone-950 font-['Press_Start_2P'] text-[0.7rem] tracking-wider transition-colors no-underline"
+              className="inline-block px-8 py-4 rounded-3xl bg-cyan-600/90 hover:bg-cyan-500 text-stone-950 font-['Pixelify_Sans'] text-[0.7rem] tracking-wider transition-colors no-underline"
             >
               DOWNLOADS
             </a>

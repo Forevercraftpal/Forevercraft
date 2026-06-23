@@ -34,7 +34,7 @@ export default function Gacha() {
       <section className="max-w-[1400px] mx-auto px-8 py-16">
         <ScrollReveal>
           <div className="text-center mb-12">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">HOW IT WORKS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">HOW IT WORKS</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
               Place a Fountain of Eternal Dreams in the world. Feed it Forever Coins earned from
               allowance, quests, crates and more! Each pull draws from a weighted reward pool —
@@ -48,8 +48,8 @@ export default function Gacha() {
             <ScrollReveal key={opt.name} delay={i * 80}>
               <div className="rounded-3xl border border-purple-900/30 bg-purple-950/15 p-5 h-full">
                 <div className="flex items-baseline justify-between mb-2">
-                  <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400">{opt.name}</h3>
-                  <span className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-500">{opt.cost}</span>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400">{opt.name}</h3>
+                  <span className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-500">{opt.cost}</span>
                 </div>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">{opt.description}</p>
               </div>
@@ -63,7 +63,7 @@ export default function Gacha() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">REWARD POOL</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">REWARD POOL</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                 Every pull draws from this pool. Some items are common, others exceptionally rare.
               </p>
@@ -74,7 +74,7 @@ export default function Gacha() {
             {REWARD_POOL.map((reward, i) => (
               <ScrollReveal key={reward.name} delay={i * 50}>
                 <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-4 text-center h-full">
-                  <h3 className={`font-['Press_Start_2P'] text-[0.6rem] ${reward.color} mb-2`}>{reward.name}</h3>
+                  <h3 className={`font-['Pixelify_Sans'] text-[0.6rem] ${reward.color} mb-2`}>{reward.name}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-500">{reward.rarity}</p>
                 </div>
               </ScrollReveal>
@@ -84,7 +84,7 @@ export default function Gacha() {
           <ScrollReveal delay={400}>
             <div className="mt-8 max-w-xl mx-auto text-center">
               <div className="rounded-3xl border border-yellow-800/30 bg-yellow-950/10 p-4">
-                <p className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-500 mb-2">DREAMY STAR</p>
+                <p className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-500 mb-2">DREAMY STAR</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   The Dreamy Star (0.05% drop rate) is the rarest gacha-exclusive reward — it lets you choose ANY
                   artifact from the entire game. One-time use. The ultimate wish.
@@ -100,26 +100,26 @@ export default function Gacha() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">CURRENCIES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">CURRENCIES</h2>
             </div>
           </ScrollReveal>
 
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             <ScrollReveal delay={0}>
               <div className="rounded-3xl border border-yellow-900/30 bg-yellow-950/10 p-5 text-center h-full">
-                <p className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 mb-2">FOUNTAIN COINS</p>
+                <p className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 mb-2">FOUNTAIN COINS</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">Primary pull currency. Earned from allowance, quests, crates, companion pickups, and more.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={80}>
               <div className="rounded-3xl border border-purple-900/30 bg-purple-950/10 p-5 text-center h-full">
-                <p className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 mb-2">LUCID</p>
+                <p className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400 mb-2">LUCID</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">Bonus currency from pulls. Accumulates over time for guaranteed targeted rewards.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={160}>
               <div className="rounded-3xl border border-cyan-900/30 bg-cyan-950/10 p-5 text-center h-full">
-                <p className="font-['Press_Start_2P'] text-[0.7rem] text-cyan-400 mb-2">DREAMDUST</p>
+                <p className="font-['Pixelify_Sans'] text-[0.7rem] text-cyan-400 mb-2">DREAMDUST</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">Exchange currency for the Dreamdust shop. Buy specific items instead of gambling.</p>
               </div>
             </ScrollReveal>

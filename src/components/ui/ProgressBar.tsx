@@ -22,7 +22,7 @@ export default function ProgressBar({
       {(label || showValue) && (
         <div className="flex justify-between mb-1">
           {label && <span className="font-['Crimson_Pro'] text-stone-400 text-sm">{label}</span>}
-          {showValue && <span className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500">{value}/{max}</span>}
+          {showValue && <span className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-500">{value}/{max}</span>}
         </div>
       )}
       <div className={`w-full bg-stone-800 rounded-2xl overflow-hidden ${height}`}>

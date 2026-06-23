@@ -43,7 +43,7 @@ export default class ChunkErrorBoundary extends Component<Props, State> {
     return (
       <div className="min-h-screen bg-stone-950 flex items-center justify-center px-6">
         <div className="text-center max-w-md">
-          <div className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-600 tracking-widest mb-5">
+          <div className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-600 tracking-widest mb-5">
             {this.state.isChunkError ? 'CONNECTION HICCUP' : 'SOMETHING BROKE'}
           </div>
           <p className="font-['Crimson_Pro'] text-stone-300 text-base leading-relaxed mb-6">
@@ -54,7 +54,7 @@ export default class ChunkErrorBoundary extends Component<Props, State> {
           <button
             type="button"
             onClick={this.handleReload}
-            className="inline-block px-5 py-2 rounded font-['Press_Start_2P'] text-[0.55rem] tracking-wider text-stone-950 bg-yellow-600 hover:bg-yellow-500 transition-colors"
+            className="inline-block px-5 py-2 rounded font-['Pixelify_Sans'] text-[0.55rem] tracking-wider text-stone-950 bg-yellow-600 hover:bg-yellow-500 transition-colors"
           >
             RELOAD
           </button>

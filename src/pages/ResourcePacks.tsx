@@ -33,7 +33,7 @@ export default function ResourcePacks() {
         {/* ── Prime Packs (Client-Side) ──────────────── */}
         <ScrollReveal>
           <div className="mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-2">CLIENT-SIDE ANIMATED</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.75rem] text-yellow-500 tracking-widest mb-2">CLIENT-SIDE ANIMATED</h2>
             <p className="font-['Crimson_Pro'] text-stone-400 text-lg mb-8">
               No server setup needed. Drop into your resourcepacks folder. Textures cycle through all 4 seasons automatically using animated textures.
             </p>
@@ -42,16 +42,16 @@ export default function ResourcePacks() {
                 <div key={pack.file} className="sphere p-6" style={{ background: `radial-gradient(ellipse at 50% 20%, ${pack.color}08 0%, transparent 60%), var(--glass-bg)` }}>
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl" style={{ filter: `drop-shadow(0 0 10px ${pack.color}40)` }}>{pack.icon}</span>
-                    <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-yellow-400 leading-relaxed">{pack.name}</h3>
+                    <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-yellow-400 leading-relaxed">{pack.name}</h3>
                   </div>
                   <p className="font-['Crimson_Pro'] text-stone-400 text-base mb-4">{pack.desc}</p>
                   <div className="flex items-center justify-between">
-                    <span className="font-['Press_Start_2P'] text-[0.4rem] text-stone-600">{pack.size}{counts[pack.trackKey] ? ` · ${counts[pack.trackKey]} downloads` : ''}</span>
+                    <span className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600">{pack.size}{counts[pack.trackKey] ? ` · ${counts[pack.trackKey]} downloads` : ''}</span>
                     <a
                       href={`${GITHUB_BASE}/${pack.file}`}
                       download
                       onClick={() => trackDownload(pack.trackKey)}
-                      className="capsule px-6 py-2 bg-yellow-700 hover:bg-yellow-600 text-stone-950 font-['Press_Start_2P'] text-[0.5rem] no-underline"
+                      className="capsule px-6 py-2 bg-yellow-700 hover:bg-yellow-600 text-stone-950 font-['Pixelify_Sans'] text-[0.55rem] no-underline"
                     >
                       DOWNLOAD
                     </a>
@@ -65,7 +65,7 @@ export default function ResourcePacks() {
         {/* ── Seasonal Packs (Server-Side) ────────────── */}
         <ScrollReveal delay={100}>
           <div className="mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-green-500 tracking-widest mb-2">SERVER-SIDE SEASONAL</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.75rem] text-green-500 tracking-widest mb-2">SERVER-SIDE SEASONAL</h2>
             <p className="font-['Crimson_Pro'] text-stone-400 text-lg mb-8">
               Individual season packs for server operators. Swap the active pack when the in-game season changes for pixel-perfect visual sync with the datapack&apos;s 64-day year cycle.
             </p>
@@ -74,16 +74,16 @@ export default function ResourcePacks() {
                 <div key={pack.file} className="sphere p-5 text-center" style={{ background: `radial-gradient(ellipse at 50% 30%, ${pack.color}06 0%, transparent 60%), var(--glass-bg)` }}>
                   <div className="mb-3">
                     <span className="text-3xl" style={{ filter: `drop-shadow(0 0 10px ${pack.color}30)` }}>{pack.icon}</span>
-                    <h3 className="font-['Press_Start_2P'] text-[0.55rem] mt-2" style={{ color: pack.color }}>{pack.name.toUpperCase()}</h3>
+                    <h3 className="font-['Pixelify_Sans'] text-[0.55rem] mt-2" style={{ color: pack.color }}>{pack.name.toUpperCase()}</h3>
                   </div>
                   <p className="font-['Crimson_Pro'] text-stone-500 text-sm text-center mb-4">{pack.desc}</p>
                   <div className="text-center">
-                    <span className="font-['Press_Start_2P'] text-[0.35rem] text-stone-600 block mb-2">{pack.size}{counts[pack.trackKey] ? ` · ${counts[pack.trackKey]}` : ''}</span>
+                    <span className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600 block mb-2">{pack.size}{counts[pack.trackKey] ? ` · ${counts[pack.trackKey]}` : ''}</span>
                     <a
                       href={`${GITHUB_BASE}/${pack.file}`}
                       download
                       onClick={() => trackDownload(pack.trackKey)}
-                      className="capsule px-5 py-2 border border-stone-700 hover:border-stone-500 font-['Press_Start_2P'] text-[0.45rem] text-stone-400 hover:text-stone-200 no-underline bg-transparent"
+                      className="capsule px-5 py-2 border border-stone-700 hover:border-stone-500 font-['Pixelify_Sans'] text-[0.55rem] text-stone-400 hover:text-stone-200 no-underline bg-transparent"
                     >
                       DOWNLOAD
                     </a>
@@ -97,11 +97,11 @@ export default function ResourcePacks() {
         {/* ── Server Setup Guide ────────────────────── */}
         <ScrollReveal delay={200}>
           <div className="sphere p-8" style={{ background: 'radial-gradient(ellipse at 50% 10%, rgba(255,255,255,0.02) 0%, transparent 50%), rgba(15, 13, 22, 0.5)' }}>
-            <h2 className="font-['Press_Start_2P'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">SERVER-SIDE TEXTURE SWITCHING GUIDE</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.75rem] text-yellow-500 tracking-widest mb-6">SERVER-SIDE TEXTURE SWITCHING GUIDE</h2>
 
             <div className="font-['Crimson_Pro'] text-stone-300 text-lg leading-relaxed space-y-6">
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-stone-200 mb-2">HOW IT WORKS</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-200 mb-2">HOW IT WORKS</h3>
                 <p>
                   The Forevercraft datapack runs a 64-day year cycle with 4 seasons of 16 days each.
                   When a season transition occurs, the datapack sets <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">#season_swap_pending ec.var</code> to <code className="text-yellow-400 bg-stone-800 px-1.5 py-0.5 rounded-full text-sm">1</code>.
@@ -110,15 +110,15 @@ export default function ResourcePacks() {
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-stone-200 mb-2">SEASON TIMING</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-200 mb-2">SEASON TIMING</h3>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="border-b border-stone-700">
-                        <th className="text-left py-2 text-yellow-500 font-['Press_Start_2P'] text-[0.4rem]">Season</th>
-                        <th className="text-left py-2 text-yellow-500 font-['Press_Start_2P'] text-[0.4rem]">ID</th>
-                        <th className="text-left py-2 text-yellow-500 font-['Press_Start_2P'] text-[0.4rem]">Days</th>
-                        <th className="text-left py-2 text-yellow-500 font-['Press_Start_2P'] text-[0.4rem]">Real Time</th>
+                        <th className="text-left py-2 text-yellow-500 font-['Pixelify_Sans'] text-[0.55rem]">Season</th>
+                        <th className="text-left py-2 text-yellow-500 font-['Pixelify_Sans'] text-[0.55rem]">ID</th>
+                        <th className="text-left py-2 text-yellow-500 font-['Pixelify_Sans'] text-[0.55rem]">Days</th>
+                        <th className="text-left py-2 text-yellow-500 font-['Pixelify_Sans'] text-[0.55rem]">Real Time</th>
                       </tr>
                     </thead>
                     <tbody className="text-stone-400">
@@ -132,7 +132,7 @@ export default function ResourcePacks() {
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-stone-200 mb-2">WHAT YOU NEED</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-200 mb-2">WHAT YOU NEED</h3>
                 <ol className="list-decimal list-inside space-y-1 text-stone-400">
                   <li>The <strong className="text-stone-200">Forevercraft datapack</strong> installed in your world</li>
                   <li>The <strong className="text-stone-200">4 seasonal resource packs</strong> (download above)</li>
@@ -142,7 +142,7 @@ export default function ResourcePacks() {
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-stone-200 mb-2">SETUP STEPS</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-200 mb-2">SETUP STEPS</h3>
                 <div className="space-y-4 text-stone-400">
                   <div>
                     <p className="text-stone-300 font-semibold">1. Host your seasonal packs</p>
@@ -164,7 +164,7 @@ export default function ResourcePacks() {
               </div>
 
               <div className="border-t border-stone-800 pt-6">
-                <h3 className="font-['Press_Start_2P'] text-[0.55rem] text-cyan-400 mb-2">DON&apos;T WANT SERVER SETUP?</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.55rem] text-cyan-400 mb-2">DON&apos;T WANT SERVER SETUP?</h3>
                 <p className="text-stone-400">
                   Use <strong className="text-yellow-400">Toodle Pack Prime</strong> instead. It contains animated textures that automatically cycle
                   through all 4 seasons on the client side — no server restart needed. The trade-off is that cycling is tick-based

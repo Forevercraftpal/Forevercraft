@@ -14,7 +14,7 @@ export default function Privacy() {
         <div className="font-['Crimson_Pro'] text-lg text-stone-300 leading-relaxed space-y-6">
           <p className="text-stone-500 text-base">Last updated: March 22, 2026</p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">WHAT WE COLLECT</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">WHAT WE COLLECT</h2>
           <p>
             Forevercraft is a free Minecraft datapack. The datapack itself collects no personal data whatsoever.
             It runs entirely within your Minecraft world on your own computer or server.
@@ -26,7 +26,7 @@ export default function Privacy() {
             personally identifiable information is collected through the website.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">DONATIONS</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">DONATIONS</h2>
           <p>
             Donations are processed through Buy Me a Coffee and Stripe. When you make a donation, your
             payment information is handled entirely by these third-party services. We never see, store,
@@ -42,14 +42,14 @@ export default function Privacy() {
             delivering the membership benefits you signed up for.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CHILDREN&apos;S PRIVACY</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CHILDREN&apos;S PRIVACY</h2>
           <p>
             Forevercraft is a Minecraft modification suitable for all ages. We do not knowingly collect
             personal information from children under 13. Donations require a payment method, which
             inherently requires the user to be of legal age or have parental consent.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">DATA WE DON&apos;T COLLECT</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">DATA WE DON&apos;T COLLECT</h2>
           <ul className="list-disc list-inside space-y-2 text-stone-400">
             <li>We do not collect in-game data from the datapack</li>
             <li>We do not use tracking cookies on our website</li>
@@ -58,14 +58,14 @@ export default function Privacy() {
             <li>We do not share data with third parties beyond payment processing</li>
           </ul>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CONTACT</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CONTACT</h2>
           <p>
             If you have questions about this privacy policy, you can reach us through our
             {' '}<a href="https://buymeacoffee.com/forevercraft" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline">Buy Me a Coffee page</a> or
             {' '}<a href="https://github.com/Deiontre10/forevercraft" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline">GitHub repository</a>.
           </p>
 
-          <h2 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CHANGES</h2>
+          <h2 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mt-10 mb-3">CHANGES</h2>
           <p>
             We may update this policy from time to time. Changes will be posted on this page with an
             updated date. Continued use of the website or datapack after changes constitutes acceptance

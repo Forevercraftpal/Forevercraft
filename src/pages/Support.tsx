@@ -72,7 +72,7 @@ export default function Support() {
         {/* Bug Report Form */}
         <ScrollReveal>
           <div className="rounded-3xl border border-red-900/40 bg-gradient-to-br from-red-950/10 to-transparent p-8 mb-12">
-            <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-red-400 mb-2">REPORT A BUG</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.85rem] text-red-400 mb-2">REPORT A BUG</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 mb-8">
               Found something broken? Fill out the form below and it will be sent directly to our
               GitHub issue tracker where we can investigate and fix it.
@@ -81,7 +81,7 @@ export default function Support() {
             <div className="space-y-6">
               {/* Category */}
               <div>
-                <label className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500 tracking-widest block mb-2">
+                <label className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-500 tracking-widest block mb-2">
                   CATEGORY
                 </label>
                 <select
@@ -98,7 +98,7 @@ export default function Support() {
 
               {/* Title */}
               <div>
-                <label className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500 tracking-widest block mb-2">
+                <label className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-500 tracking-widest block mb-2">
                   SHORT SUMMARY *
                 </label>
                 <input
@@ -112,7 +112,7 @@ export default function Support() {
 
               {/* Description */}
               <div>
-                <label className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500 tracking-widest block mb-2">
+                <label className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-500 tracking-widest block mb-2">
                   WHAT HAPPENED? *
                 </label>
                 <textarea
@@ -126,7 +126,7 @@ export default function Support() {
 
               {/* Steps to Reproduce */}
               <div>
-                <label className="font-['Press_Start_2P'] text-[0.6rem] text-stone-500 tracking-widest block mb-2">
+                <label className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-500 tracking-widest block mb-2">
                   STEPS TO REPRODUCE (OPTIONAL)
                 </label>
                 <textarea
@@ -142,7 +142,7 @@ export default function Support() {
               <button
                 onClick={submitBugReport}
                 disabled={!title.trim() || !description.trim() || submitted}
-                className={`px-8 py-3 rounded-3xl font-['Press_Start_2P'] text-[0.7rem] tracking-wider transition-colors ${
+                className={`px-8 py-3 rounded-3xl font-['Pixelify_Sans'] text-[0.7rem] tracking-wider transition-colors ${
                   submitted
                     ? 'bg-green-700 text-green-100 cursor-default'
                     : !title.trim() || !description.trim()
@@ -163,7 +163,7 @@ export default function Support() {
         {/* FAQ */}
         <ScrollReveal delay={100}>
           <div className="rounded-3xl border border-stone-800 p-8 mb-12">
-            <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-yellow-400 mb-6">FAQ</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.85rem] text-yellow-400 mb-6">FAQ</h2>
             <div className="space-y-6">
               {[
                 {
@@ -203,7 +203,7 @@ export default function Support() {
         {/* Contact */}
         <ScrollReveal delay={200}>
           <div className="rounded-3xl border border-stone-800 p-8">
-            <h2 className="font-['Press_Start_2P'] text-[0.85rem] text-yellow-400 mb-4">CONTACT US</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.85rem] text-yellow-400 mb-4">CONTACT US</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
                 href="https://github.com/Deiontre10/forevercraft/issues"
@@ -211,7 +211,7 @@ export default function Support() {
                 rel="noopener noreferrer"
                 className="rounded border border-stone-700 hover:border-yellow-800/60 p-5 text-center no-underline transition-colors"
               >
-                <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-300 mb-2">GITHUB</p>
+                <p className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-300 mb-2">GITHUB</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-500">Bug reports & feature requests</p>
               </a>
               <a
@@ -220,14 +220,14 @@ export default function Support() {
                 rel="noopener noreferrer"
                 className="rounded border border-stone-700 hover:border-yellow-800/60 p-5 text-center no-underline transition-colors"
               >
-                <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-300 mb-2">BUY ME A COFFEE</p>
+                <p className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-300 mb-2">BUY ME A COFFEE</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-500">Support & general inquiries</p>
               </a>
               <a
                 href="https://forevercraft.co/guide"
                 className="rounded border border-stone-700 hover:border-yellow-800/60 p-5 text-center no-underline transition-colors"
               >
-                <p className="font-['Press_Start_2P'] text-[0.6rem] text-stone-300 mb-2">PLAYER GUIDE</p>
+                <p className="font-['Pixelify_Sans'] text-[0.6rem] text-stone-300 mb-2">PLAYER GUIDE</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-500">Step-by-step progression help</p>
               </a>
             </div>

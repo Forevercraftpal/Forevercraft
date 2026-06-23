@@ -7,11 +7,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <img src="/icon.png" alt="Forevercraft" className="w-7 h-auto" style={{ imageRendering: 'pixelated' }} />
-            <span className="font-['Press_Start_2P'] text-[0.65rem] text-metallic-gold tracking-wider">
+            <span className="font-['Pixelify_Sans'] text-[0.65rem] text-metallic-gold tracking-wider">
               FOREVERCRAFT
             </span>
           </div>
-          <p className="font-['Press_Start_2P'] text-[0.55rem] text-stone-600 tracking-widest text-center">
+          <p className="font-['Pixelify_Sans'] text-[0.55rem] text-stone-600 tracking-widest text-center">
             BUILT WITH LOVE · ONE FUNCTION AT A TIME
           </p>
           <div className="flex items-center gap-4">

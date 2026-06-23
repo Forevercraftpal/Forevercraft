@@ -20,11 +20,11 @@ export default function PageHero({ title, subtitle, badge, children, particles =
       </div>
       <div className="relative z-10 max-w-[1400px] mx-auto px-8 py-16 md:py-20 text-center">
         {badge && (
-          <p className="pill font-['Press_Start_2P'] text-[0.55rem] text-yellow-600 tracking-[0.3em] mb-5 uppercase mx-auto">
+          <p className="pill font-['Pixelify_Sans'] text-[0.55rem] text-yellow-600 tracking-[0.3em] mb-5 uppercase mx-auto">
             {badge}
           </p>
         )}
-        <h1 className="font-['Press_Start_2P'] text-2xl md:text-4xl text-metallic-gold mb-4 leading-tight animate-[orbit-in_0.7s_cubic-bezier(0.34,1.56,0.64,1)_both]">
+        <h1 className="font-['Pixelify_Sans'] text-2xl md:text-4xl text-metallic-gold mb-4 leading-tight animate-[orbit-in_0.7s_cubic-bezier(0.34,1.56,0.64,1)_both]">
           {title}
         </h1>
         {subtitle && (

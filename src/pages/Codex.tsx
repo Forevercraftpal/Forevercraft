@@ -144,7 +144,7 @@ export default function Codex() {
             <button
               key={cat.key}
               onClick={() => setActiveCategory(cat.key)}
-              className={`font-['Press_Start_2P'] text-[0.38rem] px-3 py-2 rounded border transition-all ${
+              className={`font-['Pixelify_Sans'] text-[0.55rem] px-3 py-2 rounded border transition-all ${
                 activeCategory === cat.key
                   ? 'bg-yellow-900/60 border-yellow-600 text-yellow-400'
                   : 'bg-stone-900 border-stone-700 text-stone-500 hover:border-yellow-900'
@@ -158,7 +158,7 @@ export default function Codex() {
         {/* Results */}
         {filtered.length === 0 ? (
           <div className="text-center py-20">
-            <p className="font-['Press_Start_2P'] text-[0.7rem] text-stone-600 mb-2">NO RESULTS</p>
+            <p className="font-['Pixelify_Sans'] text-[0.7rem] text-stone-600 mb-2">NO RESULTS</p>
             <p className="font-['Crimson_Pro'] text-base text-stone-500">Try a different search term or category.</p>
           </div>
         ) : (
@@ -166,7 +166,7 @@ export default function Codex() {
             {Object.entries(grouped).map(([category, items]) => (
               <div key={category}>
                 <div className="flex items-baseline gap-3 mb-4">
-                  <h2 className="font-['Press_Start_2P'] text-[0.6rem] text-yellow-400">{category.toUpperCase()}S</h2>
+                  <h2 className="font-['Pixelify_Sans'] text-[0.6rem] text-yellow-400">{category.toUpperCase()}S</h2>
                   <span className="font-['Crimson_Pro'] text-base text-stone-600">{items.length} results</span>
                 </div>
 
@@ -180,9 +180,9 @@ export default function Codex() {
                         className={`rounded-3xl border ${tierStyle.split(' ').slice(1).join(' ')} bg-stone-900/30 p-4`}
                       >
                         <div className="flex items-baseline justify-between mb-1">
-                          <h3 className={`font-['Press_Start_2P'] text-[0.65rem] ${tierText}`}>{item.name}</h3>
+                          <h3 className={`font-['Pixelify_Sans'] text-[0.65rem] ${tierText}`}>{item.name}</h3>
                           {item.tier && (
-                            <span className={`font-['Press_Start_2P'] text-[0.7rem] ${tierText} opacity-60`}>{item.tier}</span>
+                            <span className={`font-['Pixelify_Sans'] text-[0.7rem] ${tierText} opacity-60`}>{item.tier}</span>
                           )}
                         </div>
                         <p className="font-['Crimson_Pro'] text-base text-stone-500">{item.detail}</p>

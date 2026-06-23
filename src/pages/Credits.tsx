@@ -43,10 +43,10 @@ export default function Credits() {
         {/* Creators */}
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.8rem] text-yellow-400 tracking-widest mb-8">CREATED BY</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.8rem] text-yellow-400 tracking-widest mb-8">CREATED BY</h2>
             {CREDITS.creators.map((person, i) => (
               <div key={i} className="mb-4">
-                <p className="font-['Press_Start_2P'] text-[0.9rem] text-stone-200">{person.name}</p>
+                <p className="font-['Pixelify_Sans'] text-[0.9rem] text-stone-200">{person.name}</p>
                 <p className="font-['Crimson_Pro'] text-lg text-stone-500 italic">{person.role}</p>
               </div>
             ))}
@@ -56,10 +56,10 @@ export default function Credits() {
         {/* AI Partner */}
         <ScrollReveal delay={100}>
           <div className="text-center mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.8rem] text-yellow-400 tracking-widest mb-8">BUILT WITH</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.8rem] text-yellow-400 tracking-widest mb-8">BUILT WITH</h2>
             {CREDITS.tools.map((tool, i) => (
               <div key={i} className="mb-4">
-                <p className="font-['Press_Start_2P'] text-[0.9rem] text-stone-200">{tool.name}</p>
+                <p className="font-['Pixelify_Sans'] text-[0.9rem] text-stone-200">{tool.name}</p>
                 <p className="font-['Crimson_Pro'] text-lg text-stone-500 italic">{tool.role}</p>
               </div>
             ))}
@@ -69,14 +69,14 @@ export default function Credits() {
         {/* Family */}
         <ScrollReveal delay={200}>
           <div className="mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.8rem] text-yellow-400 tracking-widest mb-8 text-center">THE ONES WHO MADE IT POSSIBLE</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.8rem] text-yellow-400 tracking-widest mb-8 text-center">THE ONES WHO MADE IT POSSIBLE</h2>
             <div className="space-y-6">
               {CREDITS.family.map((person, i) => (
                 <div
                   key={i}
                   className="rounded-3xl border border-yellow-800/30 bg-gradient-to-r from-yellow-950/10 to-transparent p-6"
                 >
-                  <p className="font-['Press_Start_2P'] text-[0.8rem] text-yellow-400 mb-3">{person.name}</p>
+                  <p className="font-['Pixelify_Sans'] text-[0.8rem] text-yellow-400 mb-3">{person.name}</p>
                   <p className="font-['Crimson_Pro'] text-lg text-stone-400 italic leading-relaxed">{person.note}</p>
                 </div>
               ))}
@@ -87,7 +87,7 @@ export default function Credits() {
         {/* Supporters */}
         <ScrollReveal delay={300}>
           <div className="text-center mb-16">
-            <h2 className="font-['Press_Start_2P'] text-[0.8rem] text-yellow-400 tracking-widest mb-4">SUPPORTERS</h2>
+            <h2 className="font-['Pixelify_Sans'] text-[0.8rem] text-yellow-400 tracking-widest mb-4">SUPPORTERS</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-500 italic mb-8">
               Thank you to everyone who believes in the dream.
             </p>
@@ -99,7 +99,7 @@ export default function Credits() {
                     key={i}
                     className="rounded border border-stone-800 p-4 hover:border-yellow-800/40 transition-colors"
                   >
-                    <p className="font-['Press_Start_2P'] text-[0.65rem] text-stone-300">{supporter.name}</p>
+                    <p className="font-['Pixelify_Sans'] text-[0.65rem] text-stone-300">{supporter.name}</p>
                     <p className="font-['Crimson_Pro'] text-base text-stone-600 mt-1">{supporter.tier}</p>
                   </div>
                 ))}
@@ -113,7 +113,7 @@ export default function Credits() {
                   href="https://buymeacoffee.com/forevercraft"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 px-6 py-2.5 rounded-3xl bg-yellow-600/90 hover:bg-yellow-500 text-stone-950 font-['Press_Start_2P'] text-[0.6rem] tracking-wider transition-colors no-underline"
+                  className="inline-block mt-4 px-6 py-2.5 rounded-3xl bg-yellow-600/90 hover:bg-yellow-500 text-stone-950 font-['Pixelify_Sans'] text-[0.6rem] tracking-wider transition-colors no-underline"
                 >
                   SUPPORT US
                 </a>

@@ -33,7 +33,7 @@ export default function Agency() {
       <div className="min-h-screen bg-stone-950 flex items-center justify-center">
         <div className="text-center">
           <div className="w-8 h-8 border-2 border-purple-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="font-['Press_Start_2P'] text-xs text-stone-500">Verifying access...</p>
+          <p className="font-['Pixelify_Sans'] text-xs text-stone-500">Verifying access...</p>
         </div>
       </div>
     )
@@ -44,7 +44,7 @@ export default function Agency() {
       <div className="min-h-screen bg-stone-950 flex items-center justify-center px-4">
         <div className="text-center max-w-lg">
           <div className="text-6xl mb-6">🔒</div>
-          <h1 className="font-['Press_Start_2P'] text-xl text-red-500 mb-6">ACCESS DENIED</h1>
+          <h1 className="font-['Pixelify_Sans'] text-xl text-red-500 mb-6">ACCESS DENIED</h1>
           <div className="bg-red-950/30 border border-red-900/50 rounded-xl p-6 mb-6">
             <p className="font-['Crimson_Pro'] text-stone-400 text-lg leading-relaxed mb-4">
               This area is restricted to authorized personnel on the
@@ -75,7 +75,7 @@ export default function Agency() {
     <div className="min-h-screen bg-stone-950 flex items-center justify-center px-4">
       <div className="text-center max-w-lg">
         <div className="text-6xl mb-6">🏢</div>
-        <h1 className="font-['Press_Start_2P'] text-xl text-purple-400 mb-6">AGENCY</h1>
+        <h1 className="font-['Pixelify_Sans'] text-xl text-purple-400 mb-6">AGENCY</h1>
         <div className="bg-purple-950/30 border border-purple-900/50 rounded-xl p-6 mb-6">
           <p className="font-['Crimson_Pro'] text-stone-400 text-lg leading-relaxed mb-4">
             Network verified. Welcome back, Director.
@@ -86,7 +86,7 @@ export default function Agency() {
         </div>
         <a
           href="http://josephs-macbook-pro:7777"
-          className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-['Press_Start_2P'] text-xs rounded-3xl transition-colors"
+          className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-['Pixelify_Sans'] text-xs rounded-3xl transition-colors"
         >
           ENTER COMMAND CENTER
         </a>

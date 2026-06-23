@@ -44,8 +44,8 @@ export default function Lore() {
           {LORE_STATS.map((stat, i) => (
             <ScrollReveal key={stat.label} delay={i * 80}>
               <div className="text-center rounded-3xl border border-purple-900/30 bg-purple-950/15 p-5">
-                <p className="font-['Press_Start_2P'] text-xl text-purple-400">{stat.value}</p>
-                <p className="font-['Press_Start_2P'] text-[0.55rem] text-purple-700 mt-1 mb-2">{stat.label}</p>
+                <p className="font-['Pixelify_Sans'] text-xl text-purple-400">{stat.value}</p>
+                <p className="font-['Pixelify_Sans'] text-[0.55rem] text-purple-700 mt-1 mb-2">{stat.label}</p>
                 <p className="font-['Crimson_Pro'] text-base text-stone-500">{stat.detail}</p>
               </div>
             </ScrollReveal>
@@ -55,7 +55,7 @@ export default function Lore() {
         {/* Lore Collection */}
         <ScrollReveal>
           <div className="text-center mb-10">
-            <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">LORE COLLECTION MAP</h2>
+            <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">LORE COLLECTION MAP</h2>
             <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
               Open the Lore Collection Map through the Forevercraft Codex to see which fragments you&apos;ve found and which sets remain incomplete. Color-coded by completion status, with up to 10 in-progress sets highlighted.
             </p>
@@ -76,7 +76,7 @@ export default function Lore() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">THE SIX ANECDOTES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">THE SIX ANECDOTES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400">
                 Six guide books written by scholars of the world. Each reveals a different facet of the lore.
               </p>
@@ -87,7 +87,7 @@ export default function Lore() {
             {GUIDE_BOOKS.map((book, i) => (
               <ScrollReveal key={book.title} delay={i * 60}>
                 <div className="rounded-3xl border border-stone-800 bg-stone-900/40 p-5 h-full flex flex-col">
-                  <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 mb-1 leading-relaxed">{book.title}</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400 mb-1 leading-relaxed">{book.title}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-600 italic mb-3">by {book.author}</p>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400 flex-1">{book.description}</p>
                 </div>
@@ -102,7 +102,7 @@ export default function Lore() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-6">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">ARCHAEOLOGY</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">ARCHAEOLOGY</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Brush suspicious blocks to uncover ancient treasures. Archaeology has no Dream Rate lockout — anyone can dig for history at any stage of the game.
               </p>
@@ -116,7 +116,7 @@ export default function Lore() {
         <div className="max-w-[1400px] mx-auto px-8 py-16">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <h2 className="font-['Press_Start_2P'] text-base text-yellow-400 mb-3">PERSONAL MILESTONES</h2>
+              <h2 className="font-['Pixelify_Sans'] text-base text-yellow-400 mb-3">PERSONAL MILESTONES</h2>
               <p className="font-['Crimson_Pro'] text-lg text-stone-400 max-w-2xl mx-auto">
                 Over 500 personal milestones replace the vanilla achievement system. Every milestone tells a story about your journey.
               </p>
@@ -127,7 +127,7 @@ export default function Lore() {
             {MILESTONE_INFO.map((m, i) => (
               <ScrollReveal key={m.title} delay={i * 60}>
                 <div className="rounded-3xl border border-stone-800 bg-stone-900/30 p-5 h-full">
-                  <h3 className="font-['Press_Start_2P'] text-[0.65rem] text-yellow-500 mb-2">{m.title}</h3>
+                  <h3 className="font-['Pixelify_Sans'] text-[0.65rem] text-yellow-500 mb-2">{m.title}</h3>
                   <p className="font-['Crimson_Pro'] text-base text-stone-400">{m.description}</p>
                 </div>
               </ScrollReveal>
@@ -138,35 +138,35 @@ export default function Lore() {
           <Spoiler label="Deep dive: lore maps, achievement secrets, and meta-goals...">
             <div className="space-y-4">
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 tracking-widest mb-2">LORE COLLECTION STRUCTURE</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400 tracking-widest mb-2">LORE COLLECTION STRUCTURE</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   The 896 lore fragments form 163 complete sets spread across 4 dimensions (Overworld, Nether, End, and the Dream). Completing sets unlocks progress-based rewards that scale with your total collection.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 tracking-widest mb-2">LORE COLLECTION MAP</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400 tracking-widest mb-2">LORE COLLECTION MAP</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Access the Lore Collection Map through the Forevercraft Codex. Sets are color-coded by completion status, and up to 10 in-progress sets are highlighted so you can focus your search.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 tracking-widest mb-2">HIDDEN ACHIEVEMENTS</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400 tracking-widest mb-2">HIDDEN ACHIEVEMENTS</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Many achievements across the 7 tabs are hidden — their conditions are unknown until you unlock them. The Secret tab (115 achievements) is entirely hidden by design.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-purple-400 tracking-widest mb-2">CROSS-SYSTEM ACHIEVEMENTS</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-purple-400 tracking-widest mb-2">CROSS-SYSTEM ACHIEVEMENTS</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Special achievements reward mastery across multiple systems: Renaissance Player (multi-discipline), Dream Architect (building + lore), and Beast Master Chef (pets + cooking). These require deep engagement with different parts of the game.
                 </p>
               </div>
 
               <div className="rounded border border-yellow-800/30 bg-yellow-950/10 p-4">
-                <h3 className="font-['Press_Start_2P'] text-[0.7rem] text-yellow-400 tracking-widest mb-2">META-GOALS</h3>
+                <h3 className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-400 tracking-widest mb-2">META-GOALS</h3>
                 <p className="font-['Crimson_Pro'] text-base text-stone-400">
                   Achievement milestones unlock meta-goal titles as you progress: starting at 200 achievements and culminating in the Legend of Evercraft title at 700. Each milestone grants a permanent title and cosmetic reward.
                 </p>
