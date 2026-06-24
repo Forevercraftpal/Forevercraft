@@ -58,6 +58,18 @@ export default function Navigation() {
   const location = useLocation()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [theme, setTheme] = useState<'dark' | 'light'>(() =>
+    typeof document !== 'undefined' && document.documentElement.classList.contains('light') ? 'light' : 'dark'
+  )
+  const toggleTheme = () => {
+    setTheme(prev => {
+      const next = prev === 'dark' ? 'light' : 'dark'
+      document.documentElement.classList.toggle('light', next === 'light')
+      try { localStorage.setItem('fc-theme', next) } catch { /* storage may be blocked */ }
+      return next
+    })
+  }
+  const themeLabel = theme === 'dark' ? 'Switch to day mode' : 'Switch to night mode'
 
   const isActive = (to: string) => location.pathname === to
   const isChildActive = (children?: Array<{ to: string }>) =>
@@ -134,15 +146,37 @@ export default function Navigation() {
           >
             DOWNLOADS
           </Link>
+
+          {/* Day / Night toggle */}
+          <button
+            onClick={toggleTheme}
+            aria-label={themeLabel}
+            title={themeLabel}
+            data-noinvert
+            className="fc-theme-toggle ml-2 text-xl shrink-0 hover:scale-110 transition-transform"
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
         </div>
 
-        {/* Mobile Hamburger */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden text-yellow-600 text-xl p-2"
-        >
-          {mobileOpen ? '✕' : '☰'}
-        </button>
+        {/* Mobile: theme toggle + hamburger */}
+        <div className="lg:hidden flex items-center gap-1">
+          <button
+            onClick={toggleTheme}
+            aria-label={themeLabel}
+            title={themeLabel}
+            data-noinvert
+            className="fc-theme-toggle text-xl p-2"
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-yellow-600 text-xl p-2"
+          >
+            {mobileOpen ? '✕' : '☰'}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

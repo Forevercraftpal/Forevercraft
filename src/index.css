@@ -7,6 +7,18 @@
 /* Google Fonts are loaded via <link> in index.html (a CSS @import here is dropped
    because it ends up after Tailwind's expanded rules — @import must be first). */
 
+/* ── Day / Night mode ──────────────────────────────────────────────────
+   The site is authored dark. Light mode inverts the whole canvas (hue-rotate
+   preserves the gold/cosmic hues) and counter-inverts real media so photos and
+   the pixel logo stay true. StarField is hidden in light mode to avoid a dark
+   fixed canvas fighting the inverted page. */
+html.light { filter: invert(0.93) hue-rotate(180deg); background-color: #e7e4dd; }
+html.light img,
+html.light video,
+html.light [data-noinvert] { filter: invert(1) hue-rotate(180deg); }
+html.light #star-field { display: none !important; }
+.fc-theme-toggle { background: none; border: none; cursor: pointer; line-height: 1; }
+
 /* ── Design System Tokens ────────────────────────────── */
 
 :root {
