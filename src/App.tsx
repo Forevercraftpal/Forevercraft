@@ -33,6 +33,7 @@ const Guide = lazy(() => import('./pages/Guide'))
 const Downloads = lazy(() => import('./pages/Downloads'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const Terms = lazy(() => import('./pages/Terms'))
+const License = lazy(() => import('./pages/License'))
 const Support = lazy(() => import('./pages/Support'))
 const Credits = lazy(() => import('./pages/Credits'))
 const Donate = lazy(() => import('./pages/Donate'))
@@ -91,6 +92,7 @@ export default function App() {
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/license" element={<License />} />
             <Route path="/support" element={<Support />} />
             <Route path="/credits" element={<Credits />} />
             <Route path="/donate" element={<Donate />} />

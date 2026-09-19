@@ -21,6 +21,9 @@ export default function Footer() {
             <Link to="/terms" className="font-['Crimson_Pro'] text-stone-600 hover:text-stone-400 text-base no-underline transition-colors">
               Terms
             </Link>
+            <Link to="/license" className="font-['Crimson_Pro'] text-stone-600 hover:text-stone-400 text-base no-underline transition-colors">
+              License
+            </Link>
             <Link to="/support" className="font-['Crimson_Pro'] text-stone-600 hover:text-stone-400 text-base no-underline transition-colors">
               Support
             </Link>
