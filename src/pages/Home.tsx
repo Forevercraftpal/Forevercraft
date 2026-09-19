@@ -168,7 +168,7 @@ export default function Home() {
                 <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-yellow-600 border-2 border-yellow-400 shadow-[0_0_16px_rgba(234,179,8,0.5),0_0_32px_rgba(234,179,8,0.2)] z-10" />
 
                 {/* Content */}
-                <div className={`ml-14 md:ml-0 md:w-[45%] ${i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
+                <div className={`ml-14 md:ml-0 md:w-[45%] ${i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 md:text-left'}`}>
                   <div className="font-['Pixelify_Sans'] text-[0.7rem] text-yellow-500 mb-1">
                     DR {m.dr}
                   </div>

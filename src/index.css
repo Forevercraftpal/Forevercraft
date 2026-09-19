@@ -900,3 +900,41 @@ body::before {
   outline-offset: 3px;
   border-radius: 6px;
 }
+
+
+/* ════════════════════════════════════════════════════════════════════════════
+   CENTERING PASS — 2026-09-18
+   Every PageHero is text-center and every page body under it was ragged-left,
+   so a page read as two designs stacked. One rule on the single <main> in
+   App.tsx centres all 35 routes and every future one, and deliberately does NOT
+   reach the chrome outside it — Navigation, Footer, the donate popup and the
+   chat bubble keep their own alignment.
+   ════════════════════════════════════════════════════════════════════════════ */
+
+main {
+  text-align: center;
+}
+
+/* Three things inside a page must NOT follow it.
+   :where() contributes no specificity, so these match `main` alone (0,0,1) and
+   any explicit text-left/right utility on the element still wins. */
+
+/* A data table's columns have to share one alignment. The season table's <th>
+   carry a hard-coded text-left while its <td> carry nothing, so centring would
+   have split every column head from its own cells. */
+main :where(th, td) {
+  text-align: left;
+}
+
+/* Typing into a centred field is disorienting — the caret starts mid-box and
+   the text grows outward in both directions. Search boxes, the support form
+   and both chat inputs live under main. */
+main :where(input, textarea, select) {
+  text-align: left;
+}
+
+/* Monospace is aligned by column. Centring a code block or a command line
+   destroys the only reason it is set in that face. */
+main :where(pre, code) {
+  text-align: left;
+}

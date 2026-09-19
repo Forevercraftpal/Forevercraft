@@ -11,10 +11,19 @@ interface NavItem {
 // pack. "Home" pointing at the chooser and nothing pointing at /forevercraft would strand anyone
 // reading an interior page — every one of the 28 Forevercraft pages below belongs to a landing
 // page that would otherwise be unreachable from the menu.
+//
+// All three live under ONE dropdown, not three top-level links. Three of them measured 336px of
+// a bar that only has room for about 1220, which is what pushed the whole site into a 269px
+// horizontal scroll — and "which pack" is one question, so it should be one menu.
 const NAV_ITEMS: Array<NavItem> = [
-  { label: 'Packs', to: '/' },
-  { label: 'Forevercraft', to: '/forevercraft' },
-  { label: 'Furniture', to: '/furniture' },
+  {
+    label: 'Packs',
+    children: [
+      { label: 'Both Packs', to: '/' },
+      { label: 'Forevercraft', to: '/forevercraft' },
+      { label: 'All The Furniture', to: '/furniture' },
+    ],
+  },
   { label: 'Expansion', to: '/bountiful-harvest' },
   { label: 'Gallery', to: '/gallery' },
   {
@@ -81,9 +90,12 @@ export default function Navigation() {
   const isChildActive = (children?: Array<{ to: string }>) =>
     children?.some(c => location.pathname === c.to)
 
+  // overflow-x-clip, not hidden: `clip` creates no scroll container, so the bar stays sticky
+  // and the dropdowns still fall BELOW it (overflow-y stays visible). It is there only so a
+  // decorative, invisible panel can never give the whole document a sideways scrollbar.
   return (
-    <nav className="sticky top-0 z-50 bg-stone-950/90 backdrop-blur-xl border-b border-yellow-800/30 shadow-[0_4px_30px_rgba(0,0,0,0.4),0_0_60px_rgba(251,191,36,0.03)]" style={{ borderRadius: '0 0 24px 24px' }}>
-      <div className="max-w-[1600px] mx-auto px-4 md:px-8 flex items-center justify-between h-16">
+    <nav className="sticky top-0 z-50 overflow-x-clip bg-stone-950/90 backdrop-blur-xl border-b border-yellow-800/30 shadow-[0_4px_30px_rgba(0,0,0,0.4),0_0_60px_rgba(251,191,36,0.03)]" style={{ borderRadius: '0 0 24px 24px' }}>
+      <div className="max-w-[1600px] mx-auto px-4 md:px-8 flex items-center justify-between gap-2 min-h-16 py-2">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 no-underline shrink-0">
           <img src="/icon.png" alt="Forevercraft" className="w-10 h-auto" style={{ imageRendering: 'pixelated' }} />
@@ -93,13 +105,13 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden lg:flex flex-wrap items-center justify-center gap-1 min-w-0">
           {NAV_ITEMS.map(item => (
             <div key={item.label} className="relative group">
               {item.to ? (
                 <Link
                   to={item.to}
-                  className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 ${
+                  className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-4 2xl:px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 ${
                     isActive(item.to)
                       ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
                       : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
@@ -110,7 +122,7 @@ export default function Navigation() {
               ) : (
                 <>
                   <button
-                    className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 inline-flex items-center h-9 ${
+                    className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-4 2xl:px-5 py-2 rounded-full transition-all duration-300 inline-flex items-center h-9 ${
                       isChildActive(item.children)
                         ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
                         : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
@@ -118,8 +130,11 @@ export default function Navigation() {
                   >
                     {item.label.toUpperCase()} <span className="text-[0.7rem] ml-1">▾</span>
                   </button>
-                  {/* Dropdown */}
-                  <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  {/* Dropdown — centred under its own label, not left-anchored. A hidden panel
+                      still takes part in layout, so a 220px menu hanging off the right-hand
+                      item gave the whole page 63px of horizontal scroll at 1024px even though
+                      nothing was visible. Centred, it stays inside the bar at every width. */}
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div className="bg-stone-900/95 backdrop-blur-xl border border-yellow-900/30 rounded-3xl shadow-xl shadow-black/40 py-2 min-w-[220px] overflow-hidden">
                       {item.children?.map(child => (
                         <Link
@@ -144,7 +159,7 @@ export default function Navigation() {
           {/* Downloads — last item, after Donate */}
           <Link
             to="/downloads"
-            className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 shrink-0 ${
+            className={`font-['Pixelify_Sans'] text-[0.75rem] tracking-wider px-4 2xl:px-5 py-2 rounded-full transition-all duration-300 no-underline inline-flex items-center h-9 shrink-0 ${
               isActive('/downloads')
                 ? 'text-yellow-400 bg-yellow-950/50 shadow-[0_0_16px_rgba(251,191,36,0.15),0_0_4px_rgba(251,191,36,0.1)]'
                 : 'text-stone-500 hover:text-yellow-500 hover:bg-yellow-950/20'
