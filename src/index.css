@@ -23,11 +23,14 @@ html.light #star-field { display: none !important; }
 
 :root {
   /* Surface palette — deep, layered darks */
-  --surface-0: #06050a;
-  --surface-1: #0c0b12;
-  --surface-2: #13111d;
-  --surface-3: #1a1726;
-  --surface-4: #221e30;
+  /* Lifted off pure black (was #06050a). Near-black maximises the contrast of
+     every glow and edge drawn on top of it, which is what made the UI feel
+     harsh; a few points of lightness costs nothing and softens everything. */
+  --surface-0: #0d0c11;
+  --surface-1: #14131a;
+  --surface-2: #1b1a23;
+  --surface-3: #23212c;
+  --surface-4: #2b2936;
 
   /* Gold accent ramp */
   --gold-50:  #fef9e7;
@@ -49,8 +52,11 @@ html.light #star-field { display: none !important; }
   /* Shadows */
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.4);
-  --shadow-glow-gold: 0 0 30px rgba(251, 191, 36, 0.15), 0 0 60px rgba(251, 191, 36, 0.05);
-  --shadow-glow-gold-strong: 0 0 40px rgba(251, 191, 36, 0.25), 0 0 80px rgba(251, 191, 36, 0.1);
+  /* Halved. Glow reads as emphasis only when it is rare — at the old strength
+     every card, pill and heading glowed, so none of them stood out and the page
+     just looked hazy. */
+  --shadow-glow-gold: 0 0 24px rgba(251, 191, 36, 0.07), 0 0 48px rgba(251, 191, 36, 0.025);
+  --shadow-glow-gold-strong: 0 0 32px rgba(251, 191, 36, 0.12), 0 0 64px rgba(251, 191, 36, 0.05);
   --shadow-inset-glow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
   /* Animation */
@@ -66,9 +72,9 @@ html.light #star-field { display: none !important; }
   --radius-orb: 50%;
 
   /* Cosmic palette */
-  --nebula-1: rgba(88, 28, 135, 0.08);
-  --nebula-2: rgba(30, 58, 138, 0.06);
-  --nebula-3: rgba(15, 118, 110, 0.04);
+  --nebula-1: rgba(88, 28, 135, 0.05);
+  --nebula-2: rgba(30, 58, 138, 0.04);
+  --nebula-3: rgba(15, 118, 110, 0.03);
   --cosmic-glow: rgba(251, 191, 36, 0.12);
 }
 
@@ -76,7 +82,11 @@ html.light #star-field { display: none !important; }
 
 html {
   scroll-behavior: smooth;
-  font-size: 118%;
+  /* 118% pushed every page a size larger than it was designed at, which is why
+     text crowded its containers and the pixel headings turned to mush. */
+  font-size: 106%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -99,7 +109,11 @@ body::before {
     radial-gradient(ellipse at 80% 30%, var(--nebula-2) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 80%, var(--nebula-3) 0%, transparent 50%),
     radial-gradient(ellipse at 70% 60%, rgba(120, 53, 15, 0.04) 0%, transparent 40%);
-  animation: nebula-rotate 180s linear infinite;
+  /* The nebula stays, because a flat near-black page looks dead — but it no
+     longer spins. A 180s rotation on a full-viewport gradient is invisible as
+     motion and expensive as compositing; what it actually produced was a slow
+     unexplained shift in where the page felt brighter. */
+  animation: none;
   pointer-events: none;
 }
 
@@ -108,15 +122,24 @@ body::before {
   to { transform: rotate(360deg); }
 }
 
-/* Hue shift wrapper — applied to #root, NOT body, so popups stay fixed */
-/* Gallery images get counter-rotation via .gallery-img class */
+/* ── The hue rotation is GONE (2026-09-18) ──────────────────────────────────
+   `#root` used to run `bg-hue-shift 120s infinite`: the entire site cycled the
+   colour wheel — gold to rose to violet to teal to green and back — every two
+   minutes. It is the single reason the site was hard to look at for any length
+   of time, and it had a cost beyond comfort: no colour on the page meant
+   anything. Gold was only gold for part of the cycle, the tier colours the
+   datapack calls sacred were whatever the clock said, and every image needed a
+   counter-rotating animation (.gallery-img, .preserve-color) purely to undo it.
+   Those counter-animations are now no-ops kept only so any page still using the
+   class does not break; the keyframes below are left defined for the same
+   reason. Nothing applies them. */
 #root {
-  animation: bg-hue-shift 120s ease-in-out infinite;
+  animation: none;
 }
 
 /* Counter-rotate gallery images so they show true colors */
 .gallery-img {
-  animation: bg-hue-counter 120s ease-in-out infinite;
+  animation: none;   /* nothing to counter-rotate any more */
 }
 
 @keyframes bg-hue-counter {
@@ -176,7 +199,7 @@ body::before {
 
 /* Counter-rotate images to preserve original colors */
 .preserve-color {
-  animation: counter-hue-shift 120s ease-in-out infinite;
+  animation: none;   /* nothing to counter-rotate any more */
 }
 
 @keyframes counter-hue-shift {
@@ -830,4 +853,50 @@ body::before {
 @keyframes slideUp {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+
+/* ════════════════════════════════════════════════════════════════════════════
+   READABILITY PASS — 2026-09-18
+   Applied here rather than across 30 page files: these are corrections to how
+   the existing palette lands, not a redesign of any individual page, and doing
+   it at the bottom of the global sheet means every page gets it at once and a
+   future page gets it for free.
+   ════════════════════════════════════════════════════════════════════════════ */
+
+/* Muted text was failing contrast badly. Tailwind's stone-600 (#57534e) on the
+   page background sits near 3:1 — below the 4.5:1 floor for body text — and the
+   site uses it for captions, counts, footers and every "quiet" line. These lift
+   the three muted greys to pass while staying visibly secondary. */
+.text-stone-600 { color: #8b8579; }
+.text-stone-500 { color: #a39c8e; }
+.text-stone-700 { color: #6f6a60; }
+
+/* The pixel face is a display font. Below about 0.6rem with wide tracking it
+   stops being readable and becomes texture — and it was being used at 0.55rem
+   for real information, including download counts and nav labels. */
+[class*="Pixelify"],
+[class*="Press_Start"] {
+  letter-spacing: 0.08em;
+}
+
+/* Respect the system setting. The site animated continuously — nebula, hue,
+   starfield, orbit-in on headings, scroll reveals — with no way to opt out. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible keyboard focus. There was none, so tabbing through the site was
+   invisible — every link and button is a silent target without this. */
+:where(a, button, [role='button'], input, select, textarea):focus-visible {
+  outline: 2px solid var(--gold-300);
+  outline-offset: 3px;
+  border-radius: 6px;
 }

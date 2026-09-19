@@ -7,8 +7,14 @@ interface NavItem {
   children?: Array<{ label: string; to: string }>
 }
 
+// `/` is the two-pack chooser now, so the nav needs BOTH a way back to it and a way into each
+// pack. "Home" pointing at the chooser and nothing pointing at /forevercraft would strand anyone
+// reading an interior page — every one of the 28 Forevercraft pages below belongs to a landing
+// page that would otherwise be unreachable from the menu.
 const NAV_ITEMS: Array<NavItem> = [
-  { label: 'Home', to: '/' },
+  { label: 'Packs', to: '/' },
+  { label: 'Forevercraft', to: '/forevercraft' },
+  { label: 'Furniture', to: '/furniture' },
   { label: 'Expansion', to: '/bountiful-harvest' },
   { label: 'Gallery', to: '/gallery' },
   {

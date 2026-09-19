@@ -31,7 +31,7 @@ export default function Footer() {
               Press Kit
             </Link>
             <span className="font-['Crimson_Pro'] text-stone-600 text-base italic">
-              Minecraft 26.1 · Java & Bedrock
+              Minecraft 26.3 · Java & Bedrock
             </span>
           </div>
         </div>
